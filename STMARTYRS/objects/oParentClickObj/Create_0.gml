@@ -1,0 +1,3 @@
+pressed = false;
+cObjID = noone;
+

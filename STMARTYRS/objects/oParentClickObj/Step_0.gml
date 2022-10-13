@@ -1,0 +1,2 @@
+
+visible = (ojeu.ClickObj[cObjID].room == room);

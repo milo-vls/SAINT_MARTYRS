@@ -1,0 +1,232 @@
+
+//convertit une chaîne en fichier
+function stringToFichier(nom_fichier, _string)
+{
+
+var _buffer = buffer_create(string_byte_length(_string) + 1, buffer_fixed, 1);
+buffer_write(_buffer, buffer_string, _string);
+buffer_save(_buffer, nom_fichier);
+buffer_delete(_buffer);
+
+
+
+}
+//conversion de fichier en json
+function fichierToJson(nom_fichier)
+{
+	var _buffer = buffer_load(nom_fichier);
+	var _string = buffer_read(_buffer, buffer_string);
+	buffer_delete(_buffer);
+	var _json = json_parse(_string);
+	return _json
+
+}
+//sauvegarde générale
+function save()
+{
+
+//listes des structs à sauvegarder
+var _nbusii = array_length(oJeu.usii);
+var _nbTueur = array_length(oJeu.strTueur);
+var _nbPSC = array_length(oJeu.strPSC);
+var _nbFils = global.nbFils;
+
+//strut principale
+var _mainStruct = {
+	tCaught : oJeu.tCaught,
+	jour : oJeu.jour,
+	piece : room,
+	nbusii : _nbusii,
+	usii : array_create(_nbusii),
+	nbTueur : _nbTueur,
+	strTueur : array_create(_nbTueur),
+	nbPSC : _nbPSC,
+	strPSC : array_create(_nbPSC),
+	nbFils : _nbFils,
+	Fils : array_create(_nbFils),
+}
+//remplir les structures
+for (var i = 0;i < _nbusii;i ++)//usii
+{
+	_mainStruct.usii[i] = {
+		actif : oJeu.usii[i].actif,
+		nom : oJeu.usii[i].nom,
+		prenom : oJeu.usii[i].prenom,
+		vivant : oJeu.usii[i].vivant,
+		placer : oJeu.usii[i].placer,
+		x : oJeu.usii[i].x,
+		y : oJeu.usii[i].y,
+		hbox : oJeu.usii[i].hbox,
+		emplacmnt : oJeu.usii[i].emplacmnt,
+		spr : oJeu.usii[i].spr,
+		port : oJeu.usii[i].port,
+		angle : oJeu.usii[i].angle,
+		
+	}
+}
+for (var i = 0;i < _nbTueur;i ++)//tueur
+{
+	_mainStruct.strTueur[i] = {
+		nom : oJeu.strTueur[i].nom,
+		actif : oJeu.strTueur[i].actif,
+		dateLim : oJeu.strTueur[i].dateLim,
+		sansSuite : oJeu.strTueur[i].sansSuite, 
+		jourCaught : oJeu.strTueur[i].jourCaught,
+	}
+}
+for (var i = 0;i < _nbPSC;i ++)//psc
+{
+	_mainStruct.strPSC[i] = {
+		x : oJeu.strPSC[i].x,
+		y : oJeu.strPSC[i].y,
+		prenom : oJeu.strPSC[i].prenom,
+		nom : oJeu.strPSC[i].nom,
+		age : oJeu.strPSC[i].age,
+		col : oJeu.strPSC[i].col,
+		i_tueur : oJeu.strPSC[i].i_tueur,
+		dateAppa : oJeu.strPSC[i].dateAppa,
+		hbox : oJeu.strPSC[i].hbox, 
+		adresse : oJeu.strPSC[i].adresse, 
+		port : oJeu.strPSC[i].port,
+		indice1 : oJeu.strPSC[i].indice1,
+		indice2 : oJeu.strPSC[i].indice2,
+		indice3 : oJeu.strPSC[i].indice3,
+		indice4 : oJeu.strPSC[i].indice4, 
+	}
+		
+}
+for (var i = 0;i < _nbFils;i ++)//fils
+{
+	_mainStruct.Fils[i] ={
+		fil1	: global.MapFils[i].fil1,
+		fil2	: global.MapFils[i].fil2,
+		x		: global.MapFils[i].x,
+		y		: global.MapFils[i].y,
+	}
+}
+
+//convertir en string puis en fichier
+
+var _str = json_stringify(_mainStruct);
+
+stringToFichier("save.txt", _str);
+
+}
+//chargement générale
+function load()
+{
+var _fichier = "save.txt";
+if !file_exists(_fichier) {return};//lacer le script s'il y a un fichier
+
+var _mainStruct = fichierToJson(_fichier)
+
+global.lastRoom	= _mainStruct.piece;
+oJeu.jour = _mainStruct.jour;
+oJeu.tCaught = _mainStruct.tCaught;
+global.nbFils = _mainStruct.nbFils;
+
+for (var i = 0;i < _mainStruct.nbusii;i++)
+{
+	oJeu.usii[i] = {
+		actif : _mainStruct.usii[i].actif,
+		nom : _mainStruct.usii[i].nom,
+		prenom : _mainStruct.usii[i].prenom,
+		vivant : _mainStruct.usii[i].vivant,
+		placer : _mainStruct.usii[i].placer,
+		x : _mainStruct.usii[i].x,
+		y : _mainStruct.usii[i].y,
+		hbox : _mainStruct.usii[i].hbox,
+		emplacmnt : _mainStruct.usii[i].emplacmnt,
+		spr : _mainStruct.usii[i].spr,
+		port : _mainStruct.usii[i].port,
+		angle : _mainStruct.usii[i].angle,
+	}
+}
+for (var i = 0;i < _mainStruct.nbTueur;i++)
+{
+	oJeu.strTueur[i] = {
+		nom : _mainStruct.strTueur[i].nom,
+		actif : _mainStruct.strTueur[i].actif,
+		dateLim : _mainStruct.strTueur[i].dateLim,
+		sansSuite : _mainStruct.strTueur[i].sansSuite, 
+		jourCaught : _mainStruct.strTueur[i].jourCaught,
+	}
+}
+for (var i = 0;i < _mainStruct.nbPSC;i++)
+{
+	oJeu.strPSC[i] = {
+		x : _mainStruct.strPSC[i].x,
+		y : _mainStruct.strPSC[i].y,
+		prenom : _mainStruct.strPSC[i].prenom,
+		nom : _mainStruct.strPSC[i].nom,
+		age : _mainStruct.strPSC[i].age,
+		col : _mainStruct.strPSC[i].col,
+		i_tueur : _mainStruct.strPSC[i].i_tueur,
+		dateAppa : _mainStruct.strPSC[i].dateAppa,
+		hbox : _mainStruct.strPSC[i].hbox, 
+		adresse : _mainStruct.strPSC[i].adresse, 
+		port : _mainStruct.strPSC[i].port,
+		indice1 : _mainStruct.strPSC[i].indice1,
+		indice2 : _mainStruct.strPSC[i].indice2,
+		indice3 : _mainStruct.strPSC[i].indice3,
+		indice4 : _mainStruct.strPSC[i].indice4, 
+	}
+}
+for (var i = 0;i < _mainStruct.nbFils;i++)
+{
+	global.MapFils[i] ={
+		fil1	: _mainStruct.Fils[i].fil1,
+		fil2	: _mainStruct.Fils[i].fil2,
+		x		: _mainStruct.Fils[i].x,
+		y		: _mainStruct.Fils[i].y,
+	}
+}
+}
+
+
+#region chargement et sauvegardes particuliers et en jeu
+// Sauvegarde des fils en jeu, pour les charger à chaque entrée dans la room pCarte
+// A éxécuter tout le temps sur la carte
+function sauvegardeMap()
+{
+
+global.MapFils = array_create(0);
+
+with (oFil)
+{
+	var _filSauve =
+	{
+		fil1	: pscFil1,
+		fil2	: pscFil2,
+		x		: x,
+		y		: y
+	}
+	
+	array_push(global.MapFils, _filSauve);
+}
+global.nbFils = array_length(global.MapFils);
+
+
+}
+	
+function chargementMap()
+{
+if global.nbFils != 0
+{
+	for (var i = 0 ; i < global.nbFils ;  i ++)
+	{
+		with instance_create_layer(0 ,0, "fil", oFil)
+		{
+			y = global.MapFils[i].y;
+			x = global.MapFils[i].x;
+			pscFil1 = global.MapFils[i].fil1;
+			pscFil2 = global.MapFils[i].fil2;
+		}
+		
+	}
+	
+	
+}
+}
+
+#endregion
