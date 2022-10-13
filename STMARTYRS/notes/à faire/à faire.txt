@@ -10,3 +10,4 @@ FAIT	A CODER					rendre inaccessible le menu d'explo (démo)
 FAIT	A CORRIGER				BUG: le jeu s'interromp (comme game_end ou alt f4) lorsqu'on utilise une flèche rapidement après être entré dans la pièce (liens avec oGoToRoom ?)
 			A CORRIGER				GUI sur des écran d'autre ratios
 			A CORRIGER				Initialisation des crimes (ajout des type de crime)
+			CONCEVOIR				sauvegarde
