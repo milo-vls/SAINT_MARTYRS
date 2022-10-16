@@ -1,5 +1,7 @@
 
 function addCrime(_tueur, _nomPrenom, _portrait, _date, _x, _y, _type)
+
+
 {
 	var indexCrime = ojeu.nbCrimes;
 	ojeu.crime[indexCrime] = {
@@ -14,14 +16,13 @@ function addCrime(_tueur, _nomPrenom, _portrait, _date, _x, _y, _type)
 	ojeu.nbCrimes ++;
 }
 
-#region ORDI ET WEB
 
-//construction de la page
+
 #macro	RESSOURCE_TYPE_WEB_SPRITE "spr"
 #macro	RESSOURCE_TYPE_WEB_TEXTE "txt"
 function addWebElement(_ressource, _decalage = 20)
 {
-	
+	// Feather disable GM2043
 	#region transformation de la resource
 
 		if is_string(_ressource)	
@@ -62,4 +63,3 @@ function addWebElement(_ressource, _decalage = 20)
 	
 }
 
-#endregion

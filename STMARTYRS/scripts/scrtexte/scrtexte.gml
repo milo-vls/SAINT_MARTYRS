@@ -1,4 +1,8 @@
+// Feather disable GM1051
+// Feather disable GM2017
+
 #region MACROS
+
 #macro JOUR_SELON_DIALOGUES ojeu.numeroJour-3
 #macro r "r"
 #macro l "l"

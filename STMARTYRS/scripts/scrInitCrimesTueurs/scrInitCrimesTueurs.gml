@@ -1,14 +1,8 @@
-enum KILLER_STATE
-{
-ACTIVE,
-FLED,
-CAUGHT,	
-}
-
+enum KILLER_STATE{ACTIVE,FLED,CAUGHT}
 #macro pastCrime crime[nbCrimes - 1]
 #macro jourSuivant date_inc_day(crime[nbCrimes - 1].date, 1)
 
-enum TYPE_OF_CRIME{};
+enum TYPE_OF_CRIME{ROBBERY, AGGRESSION, MURDER};
 
 
 function init_crimes_tueurs() begin
@@ -23,9 +17,9 @@ dateLim : date_create_datetime(2012, 12, 25, date_get_hour(startingDate), 0, 0),
 nbTueurActifs = 0;
 nbCrimes = 0;
 	
-addCrime(0, "Géraud Loigaud",portArmandusi, date_inc_hour(date_inc_day(startingDate, 1), -9), 500, 500);
-addCrime(0, "Léo Meinard", portErnestusi, jourSuivant, pastCrime.x +100, pastCrime.y +100);
-addCrime(0, "Lukas Sennouris",  portDidierusi, jourSuivant, pastCrime.x +100, pastCrime.y +100);
+addCrime(0, "Géraud Loigaud",portArmandusi, date_inc_hour(date_inc_day(startingDate, 1), -9), 500, 500, TYPE_OF_CRIME.ROBBERY);
+addCrime(0, "Léo Meinard", portErnestusi, jourSuivant, pastCrime.x +100, pastCrime.y +100, TYPE_OF_CRIME.ROBBERY);
+addCrime(0, "Lukas Sennouris",  portDidierusi, jourSuivant, pastCrime.x +100, pastCrime.y +100, TYPE_OF_CRIME.ROBBERY);
 		
 for (var i = 0;i < nbCrimes;i++)
 {

@@ -9,7 +9,8 @@ there's no limit in the number of points
 
 */
 
-function point_in_convexe(pointX, pointY, listeDeX, listeDeY){
+function point_in_convexe(pointX, pointY, listeDeX, listeDeY)
+{
 	//check if the number of argument is right
 	
 	if array_length(listeDeX) == array_length(listeDeY)
@@ -54,7 +55,7 @@ function point_in_convexe(pointX, pointY, listeDeX, listeDeY){
 }	
 	
 function draw_convexe(listeDeX, listeDeY, couleur = noone){
-	
+	// Feather disable GM1044
 	nbTriangles = array_length(listeDeY) - 2
 	
 	if array_length(listeDeX) == array_length(listeDeY)

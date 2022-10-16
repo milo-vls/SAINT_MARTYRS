@@ -424,6 +424,7 @@ function __scribble_class_element(_string, _unique_id) constructor
             __scribble_error("Wrong number of arguments (", argument_count, ") provided\nExpecting 0 or 8");
         }
         
+        // Feather disable GM2043
         if (!array_equals(bezier_array, _bezier_array))
         {
             model_cache_name_dirty = true;

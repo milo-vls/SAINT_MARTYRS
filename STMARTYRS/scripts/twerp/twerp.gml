@@ -17,7 +17,8 @@ x = twerp(TwerpType.inout_cubic, start, end, timer / length);
 */
 
 ///@func twerp(TwerpType, start, end, pos, [looped], [option1], [option2]);
-function twerp(_type, _start, _end, _pos, _looped = false) {
+function twerp(_type, _start, _end, _pos, _looped = false) // Feather disable GM2044
+{
   _type = clamp(_type,0,TwerpType.count);
   _pos = clamp(_looped ? _pos % 1 : _pos,0,1);
   var _chng = _end-_start;
