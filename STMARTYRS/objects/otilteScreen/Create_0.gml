@@ -1,7 +1,7 @@
 option[0] = {
 	txt : str("Play demo    "),
 	command : function(){
-		startObs("WELCOME DEMO");
+		//startObs("WELCOME DEMO");
 		GoToRoom(global.startingRoom, noone, true, noone/*, function(){
 			sprite_prefetch_multi(ojeu.pageTexture[PAGE_TEXTURE_BACKGROUND]);
 			sprite_prefetch_multi(ojeu.pageTexture[PAGE_TEXTURE_PERSONNAGE]);

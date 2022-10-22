@@ -9,6 +9,10 @@ yCentralSlide = lerp(yCentralSlide, -200, 0.1);
 #endregion
 
 #region portrait
+cptr ++
+numSubImage = (cptr mod 6 == 0) ? irandom_range(1, 5) : numSubImage //+        ((( cptr div 10)mod 4) * irandom_range(1, 4))
+
+
 if bulle[currentBulle].side == "r"
 {
 	if bulle[currentBulle].char != noone
@@ -112,6 +116,7 @@ if !setupPort
 	setupPort = !setupPort
 }
 
+
 //DESSIN PORTRAIT ACTUEL
 draw_set_alpha(1);
 if setup{
@@ -135,7 +140,7 @@ if rightPort != noone and rightPort != PAS_D_ECOUTEUR
 	
 	
 	if bulle[currentBulle].side == "r"and bulle[currentBulle].typist.get_state() <1
-	draw_sprite_ext(rightPort, 0, xrightPort, yrightPort, targetHPort/sprite_get_height(rightPort), scale, 0, -1, alphaRPort);
+	draw_sprite_ext(rightPort, numSubImage, xrightPort, yrightPort, targetHPort/sprite_get_height(rightPort), scale, 0, -1, alphaRPort);
 	else
 	draw_sprite_ext(rightPort, 0, xrightPort, yrightPort, targetHPort/sprite_get_height(rightPort), targetHPort/sprite_get_height(rightPort), 0, -1, alphaRPort);
 }
@@ -149,13 +154,16 @@ if leftPort != noone and leftPort != PAS_D_ECOUTEUR
 	alphaLPort = approach(alphaLPort, 1, 0.1);	
 	if bulle[currentBulle].side == "l" and bulle[currentBulle].typist.get_state() <1
 	{
-		draw_sprite_ext(leftPort, 0, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), scale, 0, -1, alphaLPort);
+		draw_sprite_ext(leftPort, numSubImage, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), scale, 0, -1, alphaLPort);
 	}else
 	{
 	draw_sprite_ext(leftPort, 0, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), targetHPort/sprite_get_height(leftPort), 0, -1, alphaLPort);
 	}
 }
+
 }
+
+
 //DESSIN PORTRAIT PARTANT DU CADRE
 if antRightPort != noone
 {
@@ -175,6 +183,7 @@ if antLeftPort != noone
 	//yleftPort = display_get_gui_height();//display_get_gui_height()/2 - (sprite_get_height(leftPort)*scale)/2;
 	
 	alphaLPort = approach(alphaLPort, 1, 0.1);	
+	
 	
 	draw_sprite_ext(antLeftPort, 0, xleftPort, yleftPort, scale, scale, 0, -1, 1);
 

@@ -8,11 +8,11 @@ switch(global.char[p.Enzino].proximite)
 {
 	case 0:{
 		D "Vous êtes pas du coin, si ?", p.Enzino, r, p.player);
-		D "J'ai été muté ici" pl
+		D "J'ai été muté iuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuci" el
 		D "Muté ?"enr
-		D "J'ai eu mon diplôme et on m'envoie ici faire mes preuves si tu veux"pl
+		D "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"pl
 		D "Je vois le genre, il te plaît ton boulot ?"enr
-		D"On verra bien, j'ai pas encore commencé"pl
+		D"On verra bien, j'ai pas encore commencé"el
 		D"Bonne chance alors"enr
 		
 		

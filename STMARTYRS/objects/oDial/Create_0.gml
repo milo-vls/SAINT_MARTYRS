@@ -58,10 +58,13 @@
 
 #endregion
 #region animation portrait
+//---REBOND
 targetHPort = hPort;
 vitesseScale = 7;
 tensionScale = 0.5;
-
+//---SYNCHRONIE LABIALE
+cptr = 0;
+numSubImage = 1
 #endregion
 #region To load
 	nbBulles = 0;

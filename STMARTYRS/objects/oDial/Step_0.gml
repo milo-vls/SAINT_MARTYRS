@@ -1,4 +1,5 @@
 draw_set_font(font);
+
 if !setup
 {
 	for (var i = 0;i < nbBulles;i ++)

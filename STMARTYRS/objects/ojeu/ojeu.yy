@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "meta",
-    "path": "folders/OBJECTS/meta.yy",
+    "name": "STMARTYRS",
+    "path": "STMARTYRS.yyp",
   },
 }
