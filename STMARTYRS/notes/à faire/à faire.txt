@@ -11,3 +11,5 @@ FAIT	A CORRIGER				BUG: le jeu s'interromp (comme game_end ou alt f4) lorsqu'on 
 			A CORRIGER				GUI sur des écran d'autre ratios
 FAIT	A CORRIGER				Initialisation des crimes (ajout des type de crime)
 			CONCEVOIR				sauvegarde
+			CODER						MENU carte
+		

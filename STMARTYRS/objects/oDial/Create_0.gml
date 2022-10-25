@@ -13,8 +13,8 @@
 	xBulle = display_get_gui_width()/2 - wBulle/2;
 	hChoiceBox = display_get_height()/5;
 	xChoiceBox = xCentralSlide;
-	yChoiceBoxMin = display_get_height();
-	yChoiceBoxMax = display_get_height()-hChoiceBox;
+	yChoiceBoxMin = room_height;
+	yChoiceBoxMax = room_height-hChoiceBox;
 	xtxt = xCentralSlide + decaBulleSlide + decaTexteBulle;
 	font = ftDial;
 	draw_set_font(font);

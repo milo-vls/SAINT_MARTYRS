@@ -51,6 +51,7 @@ draw_set_alpha(1);
 draw_set_font(ftDial);
 draw_set_color(c_black);
 draw_text(room_width/2, 100, ojeu.nbTueurActifs)
+
 #region menu usi
 #region fond noir
 //alphaFondNoir = lerp(alphaFondNoir, tarAlphaFondNoir, 0.2);

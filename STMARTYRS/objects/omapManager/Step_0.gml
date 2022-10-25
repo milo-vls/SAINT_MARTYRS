@@ -29,10 +29,7 @@ maj_nb_tueur();
 //-------MENU------//
 switch (currentMenu)
 {
-	case noone:{
-		
-		
-	}break;
+	default:{}break;
 	case "options":{
 		if !instance_exists(oMapPause)
 		{
@@ -77,7 +74,7 @@ switch (currentMenu)
 	tarAlphaMenupsc = 1;
 	alphaMenupsc = 1;
 	
-	//quitter
+	//QUITTER L'ÉCRAN PSC
 	if !point_in_circle(mouse_x, mouse_y, x2RSup, y1RCentral, dcoin*1.25)
 	{
 		backbuttonPressed = false;

@@ -9,7 +9,7 @@ function quitMap()
 }
 function clickToChangeMenu(_menuID)
 {
-	if !position_meeting(mouse_x, mouse_y, self)
+if !position_meeting(mouse_x, mouse_y, self)
 	{
 		iconPressed = false;
 		if object_index == ocrime
