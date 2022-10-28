@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Enzino",
-    "path": "folders/SPRITES/personnages/VILLE/Enzino.yy",
+    "path": "folders/SPRITES/CHARACTERS/VILLE/Enzino.yy",
   },
 }

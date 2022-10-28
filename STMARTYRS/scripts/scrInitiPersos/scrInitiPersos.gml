@@ -14,6 +14,7 @@ enum p
 	Martine,
 	Incel,
 	Amandine,
+	ryuto,
 }
 
 #macro PREMIER_PNJ p.Enzino
@@ -193,6 +194,24 @@ enum p
 		mapIcone : noone,
 		mapX : noone,
 		mapY : noone,
+	}
+	global.char[p.ryuto]	=	{
+		colFnt : c_white,
+		portrait : Sprite159,
+		name : "Martine",
+		room : P_FAKE_RUE_BLUE,
+		dialID : p.Martine,
+		col : noone,
+		voice : [ voice_test_0],
+		spr : noone,
+		num : 1324876,
+		enPossession : false,
+		phoneID : "phoneID",	
+				//icone map
+		mapIcone : mapIconeMartine,
+		mapX : noone,
+		mapY : noone,
+	
 	}
 #endregion
 

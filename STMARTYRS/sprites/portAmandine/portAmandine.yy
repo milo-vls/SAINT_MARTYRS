@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Amandine",
-    "path": "folders/SPRITES/personnages/VILLE/Amandine.yy",
+    "path": "folders/SPRITES/CHARACTERS/VILLE/Amandine.yy",
   },
 }

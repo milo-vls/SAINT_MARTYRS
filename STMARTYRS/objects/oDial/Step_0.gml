@@ -35,13 +35,13 @@ if bulle[currentBulle].drewchar < string_length(bulle[currentBulle].txt)
 	yCurrentBulle = yChoiceBox-decaHChoiceBulle - sprite_get_height(sprAnsIcone)*5;
 
 	//tar y
-	bulle[currentBulle].tarY = yCurrentBulle;
+	bulle[currentBulle].y = yCurrentBulle;
 	//vérification des bulles de la bulle actuelle vers le bas
 	var _arrLen = array_length(bulle)
 	for (var i = currentBulle+1;i < _arrLen; i ++)
 	{
 		bulle[i].tarY = bulle[i-1].y + bulle[i-1].h + decaBulle;
-		bulle[i].y = bulle[i].tarY;
+		//bulle[i].y = bulle[i].tarY;
 	}
 	//vérification des bulles de la bulle actuelles vers le dessus
 	for (var i = currentBulle-1;i > -1; i --)

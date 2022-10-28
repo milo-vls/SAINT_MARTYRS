@@ -11,15 +11,15 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 287,
+  "bbox_right": 299,
   "bbox_top": 0,
-  "bbox_bottom": 163,
+  "bbox_bottom": 175,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "DynamicTexturePage": false,
-  "width": 288,
-  "height": 164,
+  "width": 300,
+  "height": 176,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -45,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0226d97e-7973-4e84-a721-0482115de36d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e58eea3e-10c3-4671-9a6d-c507d8d10f39","path":"sprites/sprBulle2/sprBulle2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5df1b2e2-4563-4010-b1ac-b926ace36e48","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e58eea3e-10c3-4671-9a6d-c507d8d10f39","path":"sprites/sprBulle2/sprBulle2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -64,13 +64,13 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9a74dd64-82c4-4280-a7bf-d01c301f9361","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f127979f-4511-467a-abec-0d4405f60d18","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
   ],
   "nineSlice": {
-    "left": 44,
-    "top": 44,
-    "right": 44,
-    "bottom": 41,
+    "left": 110,
+    "top": 35,
+    "right": 115,
+    "bottom": 35,
     "guideColour": [
       4294902015,
       4294902015,

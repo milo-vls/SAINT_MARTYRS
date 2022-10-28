@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "usi",
-    "path": "folders/SPRITES/personnages/USI/usi.yy",
+    "path": "folders/SPRITES/CHARACTERS/USI/usi.yy",
   },
 }

@@ -140,7 +140,7 @@ if rightPort != noone and rightPort != PAS_D_ECOUTEUR
 	
 	
 	if bulle[currentBulle].side == "r"and bulle[currentBulle].typist.get_state() <1
-	draw_sprite_ext(rightPort, numSubImage, xrightPort, yrightPort, targetHPort/sprite_get_height(rightPort), scale, 0, -1, alphaRPort);
+	draw_sprite_ext(rightPort, numSubImage, xrightPort, yrightPort, targetHPort/sprite_get_height(rightPort), targetHPort/sprite_get_height(rightPort), 0, -1, alphaRPort);
 	else
 	draw_sprite_ext(rightPort, 0, xrightPort, yrightPort, targetHPort/sprite_get_height(rightPort), targetHPort/sprite_get_height(rightPort), 0, -1, alphaRPort);
 }
@@ -154,11 +154,9 @@ if leftPort != noone and leftPort != PAS_D_ECOUTEUR
 	alphaLPort = approach(alphaLPort, 1, 0.1);	
 	if bulle[currentBulle].side == "l" and bulle[currentBulle].typist.get_state() <1
 	{
-		draw_sprite_ext(leftPort, numSubImage, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), scale, 0, -1, alphaLPort);
+		draw_sprite_ext(leftPort, numSubImage, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), targetHPort/sprite_get_height(leftPort), 0, -1, alphaLPort);
 	}else
-	{
 	draw_sprite_ext(leftPort, 0, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), targetHPort/sprite_get_height(leftPort), 0, -1, alphaLPort);
-	}
 }
 
 }
@@ -197,7 +195,7 @@ if antLeftPort != noone
 	{
 		#region quel alpha? quelle couleur?
 			//taralpha
-			bulle[currentBulle].tarAlpha = 0.9;
+			bulle[currentBulle].alpha = 0.9;
 			if currentBulle > i
 			{
 				bulle[i].tarAlpha = 0.5;

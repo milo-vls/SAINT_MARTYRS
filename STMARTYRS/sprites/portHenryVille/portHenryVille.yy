@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Henry (Incel)",
-    "path": "folders/SPRITES/personnages/VILLE/Henry (Incel).yy",
+    "path": "folders/SPRITES/CHARACTERS/VILLE/Henry (Incel).yy",
   },
 }

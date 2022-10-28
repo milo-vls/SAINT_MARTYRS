@@ -1,20 +1,16 @@
-// Les actifs du script ont changé pour v2.3.0 Voir
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 pour plus d’informations
+
 function txtEnzino() begin
 
 
 
 switch(global.char[p.Enzino].proximite)
 {
+	
+	
 	case 0:{
-		D "Vous êtes pas du coin, si ?", p.Enzino, r, p.player);
-		D "J'ai été muté iuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuci" el
-		D "Muté ?"enr
-		D "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"pl
-		D "Je vois le genre, il te plaît ton boulot ?"enr
-		D"On verra bien, j'ai pas encore commencé"el
-		D"Bonne chance alors"enr
-		
+		D "Yo man, ça va ???? Moi oui!", p.Ernest, l, p.Enzino);
+		D"Je vais bien, salut, merci"enr
+		D"'Frappe le printemps en son coeur et normalise l''action banale du courrant que consomme la plupart des oui voilà exactement j'osais pas le dire"pl
 		
 	}break;
 	case 1:{

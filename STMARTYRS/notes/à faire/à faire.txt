@@ -4,12 +4,14 @@ FAIT	A CORRIGER				PSC détecte usi lors de sa création mais pas lors de son ap
 FAIT	A CODER					Repos USI => corriger fin repos
 FAIT	A CORRIGER				chargement scène de crime
 FAIT	A CORRIGER				montre joueur selon temps global
-FAIT	VÉRIFIER				si tout les objets arrows sont sur le calque appropriés
+FAIT	VÉRIFIER					si tout les objets arrows sont sur le calque appropriés
 FAIT	A CODER					modif° des flèches si elles renvoient la pièce d'où provient le joeur.
 FAIT	A CODER					rendre inaccessible le menu d'explo (démo)
 FAIT	A CORRIGER				BUG: le jeu s'interromp (comme game_end ou alt f4) lorsqu'on utilise une flèche rapidement après être entré dans la pièce (liens avec oGoToRoom ?)
-			A CORRIGER				GUI sur des écran d'autre ratios
+FAIT	A CORRIGER				GUI sur des écran d'autre ratios
 FAIT	A CORRIGER				Initialisation des crimes (ajout des type de crime)
 			CONCEVOIR				sauvegarde
 			CODER						MENU carte
-		
+			CODER						Retirer l'effet rebond des dialogues.
+			CODER						EFFET BRUT APPARITION BULLE DE DIALOGUES
+			
