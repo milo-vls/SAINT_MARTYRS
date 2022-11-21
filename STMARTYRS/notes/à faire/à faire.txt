@@ -14,4 +14,5 @@ FAIT	A CORRIGER				Initialisation des crimes (ajout des type de crime)
 			CODER						MENU carte
 			CODER						Retirer l'effet rebond des dialogues.
 			CODER						EFFET BRUT APPARITION BULLE DE DIALOGUES
+			CODER						finir résurgence
 			

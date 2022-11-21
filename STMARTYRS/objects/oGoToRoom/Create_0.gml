@@ -5,3 +5,5 @@ if room == pMG_ClickTarget
 	showDate = true;
 }	
 else showDate = false;
+
+deplacementFait = false

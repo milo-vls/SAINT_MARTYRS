@@ -1,6 +1,6 @@
 
 //----MISE A JOUR DATE CARTE-----------------------//
-if !mapTimeMAJ and !instance_exists(oGoToRoom)
+if recapEnCours()
 {
 	time_source_pause(ojeu.minuterie);
 	timer ++;
@@ -29,22 +29,22 @@ maj_nb_tueur();
 //-------MENU------//
 switch (currentMenu)
 {
-	default:{}break;
-	case "options":{
-		if !instance_exists(oMapPause)
-		{
-			createChoiceBox("Quitter la carte", quitMap, "Retour", noMenu);
-		}
-		else
-		{
-			GoToRoom(ojeu.lastRoom);
-		}
+	default:{
 		
+		if player_free()
+		{
+			//d'abord tâches, puis compo usi
+		}
+	
+	}break;
+	case "explo":{
+
+		createChoiceBox("Quitter la carte", quitMap, "Retour", noMenu);
+
 	}break;
 	case "usi":{
-		
-		
-		if !instance_exists(oMapPause)
+#region ANCIEN MENU USI
+		/*if !instance_exists(oMapPause)
 		{
 		tarAlphaFondNoir = 0.7;
 		tarAlphaCadran = 1;
@@ -63,11 +63,29 @@ switch (currentMenu)
 			tarAlphaCadran = 0;
 			noMenu();
 		}
-		}
-		else
+		}*/
+		#endregion
+
+		for( var i = 0; i!=6;i++)
 		{
-			createChoiceBox("Retourner à la gendarmerie ", returnToGend,"Retour", noMenu);
-		}	
+			
+			//POSITION DES PANNEAUX
+			if i == 0
+			{
+				temps[0] ++;
+				currentY[0] = twerp(TwerpType.out_elastic, yWhenHidden, yWhenShown, temps[i]/duree);
+			}
+			else
+			{
+				if temps[i-1] > duree/3{
+					temps[i] ++;
+					currentY[i] = twerp(TwerpType.out_elastic, yWhenHidden, yWhenShown, temps[i]/duree);}
+			}
+
+		}
+		if keyboard_check(vk_space) then currentMenu = noone
+		
+		
 	}break;
 	case "psc":{
 	tarAlphaFondNoir = 0.7;
@@ -132,6 +150,13 @@ switch (currentMenu)
 		}
 	}
 	}break;
+	case "téléphone":{
+		
+		GoToRoom(pCall);
+	}break;
+	case "ordi":{
+		GoToRoom(pordi)
+	}
 }
 
 //---MODIFICATION USI---//

@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "éléments de menu",
-    "path": "folders/OBJECTS/exclu pièce/carte/éléments de menu.yy",
+    "name": "menu",
+    "path": "folders/OBJECTS/exclu pièce/carte/menu.yy",
   },
 }

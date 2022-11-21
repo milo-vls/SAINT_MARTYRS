@@ -52,7 +52,8 @@ draw_set_font(ftDial);
 draw_set_color(c_black);
 draw_text(room_width/2, 100, ojeu.nbTueurActifs)
 
-#region menu usi
+#region menu usi *OLD*
+/*
 #region fond noir
 //alphaFondNoir = lerp(alphaFondNoir, tarAlphaFondNoir, 0.2);
 alphaFondNoir = tarAlphaFondNoir;
@@ -175,7 +176,13 @@ for (var i = 0;i < array_length(ojeu.usi);i ++)
 }
 
 #endregion
+*/
 #endregion
+
+
+
+
+
 
 #region psc
 	#region cradran
@@ -231,3 +238,26 @@ for (var i = 0;i < array_length(ojeu.usi);i ++)
 
 
 
+#region USI
+draw_set_alpha(1);
+draw_set_color(c_grey);
+var _usi = ojeu.usi
+for (var i = 0; i!=6;i++)
+{
+	//position
+	var _x = xMin + wPanUsi*i
+	var _y = currentY[i]
+	//rectangle
+	draw_rectangle(_x, _y, _x + wPanUsi, _y + hPanUsi, false);
+	//portrait
+	var _port = _usi[i].port;
+	var _width = sprite_get_width(_port)
+	var _scale = wPanUsi/(_width)
+	draw_sprite_ext(_port, 0, _x+ (_width*_scale)/2, _y, _scale, _scale, 0, -1, 1);
+	
+	
+}
+
+
+
+#endregion

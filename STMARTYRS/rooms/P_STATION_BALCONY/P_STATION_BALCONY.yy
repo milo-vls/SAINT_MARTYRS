@@ -56,7 +56,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "PAST_STMARTYRS_VERSION",
-    "path": "folders/PIECES/PAST_STMARTYRS_VERSION.yy",
+    "name": "V2",
+    "path": "folders/PIECES/VILLE EXPLORABLE/V2.yy",
   },
 }

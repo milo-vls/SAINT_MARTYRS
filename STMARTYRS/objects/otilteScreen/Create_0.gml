@@ -1,5 +1,5 @@
 option[0] = {
-	txt : str("Play demo    "),
+	txt : str("Nouvelle partie"),
 	command : function(){
 		//startObs("WELCOME DEMO");
 		GoToRoom(global.startingRoom, noone, true, noone/*, function(){

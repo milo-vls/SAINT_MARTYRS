@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "ajout Struct Array",
-    "path": "folders/SCRIPTS/initialisation/ajout Struct Array.yy",
+    "path": "folders/SCRIPTS/ajout Struct Array.yy",
   },
 }

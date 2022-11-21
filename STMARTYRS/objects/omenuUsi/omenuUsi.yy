@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "omenuUsi",
   "spriteId": {
-    "name": "sprPaneauUsi",
-    "path": "sprites/sprPaneauUsi/sprPaneauUsi.yy",
+    "name": "sprIconeTel",
+    "path": "sprites/sprIconeTel/sprIconeTel.yy",
   },
   "solid": false,
   "visible": true,
@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "éléments de menu",
-    "path": "folders/OBJECTS/exclu pièce/carte/éléments de menu.yy",
+    "name": "icônes",
+    "path": "folders/OBJECTS/exclu pièce/carte/icônes.yy",
   },
 }

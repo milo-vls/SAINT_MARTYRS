@@ -15,7 +15,10 @@ function init_time()
 	minuteInSeconds		= 2;//il faut attendre 2 secondes avant d'ajouter une minute au compteur  
 	var _plusUneMinute	= function(_minutes)
 {
+	if !explore()
 	global.currentDate = date_inc_minute(global.currentDate, _minutes);
+	else
+	global.currentDate = date_inc_second(global.currentDate, ojeu.minuteInSeconds);
 }
 	minuterie						= time_source_create(time_source_game, minuteInSeconds, time_source_units_seconds,_plusUneMinute , [1], -1);
 	

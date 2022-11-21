@@ -7,19 +7,15 @@ NOT_AVAILABLE,
 PATROL,
 
 }
+enum USI
+{ARMAND, DIDIER, LIZA, ERNEST, ROSALIE, JULIEN}
 
+compoUsiDone = false;
 
 function init_usi()
 {
-	usi[0] = {
-		etat			: USI_STATE.NOT_AVAILABLE,
-		_name		: "usi 0",
-		tpsRepos	: 72,
-		tpsPatrol	: 7,
-		hbox			: DidierHbxUsi,			
-		port			: portPlayerusi,
-	}
-	usi[1] = {
+	
+	usi[USI.DIDIER] = {
 		etat			: USI_STATE.AVAILABLE,
 		_name		:"DIDIER",
 		tpsRepos	: 5,					
@@ -27,7 +23,7 @@ function init_usi()
 		hbox			: DidierHbxUsi,
 		port			: portDidierusi,
 	}
-	usi[2] = {
+	usi[USI.LIZA] = {
 		etat			: USI_STATE.AVAILABLE,
 		_name			: "LIZA",
 		tpsRepos		: 72,				
@@ -35,23 +31,7 @@ function init_usi()
 		hbox				: DidierHbxUsi,
 		port				: portLizausi,
 	}
-	usi[3] = {
-		etat			: USI_STATE.NOT_AVAILABLE,
-		_name		: "usi 3",
-		tpsRepos	: 72,					
-		tpsPatrol	: 7,
-		hbox			: DidierHbxUsi,
-		port			: portLizausi,
-	}
-	usi[4] = {
-		etat			: USI_STATE.NOT_AVAILABLE,
-		_name		: "usi 4",
-		tpsRepos	: 72,					
-		tpsPatrol	: 7,
-		hbox			: DidierHbxUsi,
-		port			: portArmandusi,
-	}
-	usi[5] = {
+	usi[USI.ROSALIE] = {
 		etat			: USI_STATE.AVAILABLE,
 		_name		: "ROSALIE",
 		tpsRepos	: 72,						 
@@ -59,7 +39,7 @@ function init_usi()
 		hbox			: DidierHbxUsi,
 		port			: portRosalieusi,
 	}
-	usi[6] = {
+	usi[USI.ARMAND] = {
 		etat			: USI_STATE.AVAILABLE,
 		_name : "ARMAND",
 		tpsRepos	: 72,						
@@ -67,23 +47,7 @@ function init_usi()
 		hbox			: DidierHbxUsi,
 		port			: portArmandusi,
 	}
-	usi[7] = {
-		etat			: USI_STATE.NOT_AVAILABLE,
-		_name		: "usi 7",
-		tpsRepos	: 72,						
-		tpsPatrol	: 7,
-		hbox			: DidierHbxUsi,
-		port			: portErnestusi,
-	}
-	usi[8] = {
-		etat			: USI_STATE.NOT_AVAILABLE,
-		_name		: "usi 8",
-		tpsRepos	: 72,						 
-		tpsPatrol	: 7,
-		hbox			: DidierHbxUsi,
-		port			: portErnestusi,
-	}
-	usi[9] = {
+	usi[USI.ERNEST] = {
 		etat			: USI_STATE.AVAILABLE,
 		_name		: "ERNEST",
 		tpsRepos	: 72,						 
@@ -91,7 +55,7 @@ function init_usi()
 		hbox			: DidierHbxUsi,
 		port			: portErnestusi,
 	}
-	usi[10] = {
+	usi[USI.JULIEN] = {
 		etat			: USI_STATE.AVAILABLE,
 		_name		: "JULIEN",
 		tpsRepos	: 5,						
@@ -99,15 +63,8 @@ function init_usi()
 		hbox			: DidierHbxUsi,
 		port			: portJulienusi,
 	}
-	usi[11] = {
-		etat			: USI_STATE.NOT_AVAILABLE,
-		_name		: "usi 11",
-		tpsRepos	: 72,						
-		tpsPatrol	: 7,
-		hbox			: DidierHbxUsi,
-		port			: portErnestusi,
-	}
 		
+	
 	var _nbusi = array_length(usi)
 	for (var i = 0; i <  _nbusi;i++)
 	{

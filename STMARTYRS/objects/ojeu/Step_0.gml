@@ -1,11 +1,16 @@
-/////-----------SOMEIL FORCÉ
+
 if player_free()
 {
+	/////-----------SOMEIL FORCÉ
 	if heureCouche <= date_get_hour(global.currentDate) and date_get_hour(global.currentDate) < heureReveil
 	{
-		GoToRoom(ptestexplo3, noone, true);
+		GoToRoom(pcarte, noone, true);
 	}
+	
 }
+
+
+
 
 
 

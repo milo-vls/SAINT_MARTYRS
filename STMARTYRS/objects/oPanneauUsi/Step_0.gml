@@ -1,0 +1,4 @@
+if omapManager.currentMenu == "usi"
+{
+	
+}

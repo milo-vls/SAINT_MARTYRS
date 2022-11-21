@@ -17,3 +17,7 @@ return (omapManager.selectedUsi == noone and omapManager.currentMenu == noone);
 else
 return true;
 }
+	
+function explore(){
+return (room != pstart and room != pcarte and !instance_exists(oDial) and !instance_exists(oParentManagerMG))
+}

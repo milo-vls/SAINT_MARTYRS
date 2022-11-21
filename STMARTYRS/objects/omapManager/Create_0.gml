@@ -1,5 +1,6 @@
 currentMenu = noone;
-#region menu usi
+
+#region OLD MENU USI
 //fond noir
 alphaFondNoir = 0;
 tarAlphaFondNoir = 0;
@@ -25,6 +26,7 @@ hCadranNomUsi = hcadreUsi/3;
 //demo hbox
 demoHboxRot = 0;
 #endregion
+
 #region modif usi
 selectedUsi = noone;
 drawUsiModification = false;
@@ -126,3 +128,21 @@ mapTimeMAJ = false;
 					timer = 0;
 /*end*/		diffTempsMinutes = date_minute_span(global.currentDate, global.mapDate);
 /*durée*/	duree = room_speed * 3;
+
+#region USI MENU
+
+hPanUsi = display_get_gui_height() * (3/4);
+wPanUsi = display_get_gui_width()/9
+xMin = ((display_get_gui_width() * (3/9))/2)// + wPanUsi
+yWhenShown = display_get_gui_height()/2 - hPanUsi/2;
+yWhenHidden = display_get_gui_height()
+currentY = [yWhenHidden, yWhenHidden, yWhenHidden, yWhenHidden, yWhenHidden, yWhenHidden];
+//twerp arguments
+temps =[0, 0, 0, 0, 0, 0];;
+duree = room_speed/2;//une seconde
+
+
+
+#endregion
+
+

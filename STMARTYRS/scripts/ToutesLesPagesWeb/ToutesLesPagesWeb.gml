@@ -10,6 +10,8 @@ margeImage		=	50;
 couleurSecondPlan = c_orange;
 hauteurPage = 0;
 layer_background_sprite(idBackground, sprOrdiChargement);
+
+
 switch(_IDWeb)
 {
 	case "demo":{

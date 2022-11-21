@@ -1,6 +1,6 @@
 depth = dpojeu;
 
-if room != pstart and room != pcarte and !instance_exists(oDial) and !instance_exists(oParentManagerMG)
+if explore()
 {
 
 	#region menu explo

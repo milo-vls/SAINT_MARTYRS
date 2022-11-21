@@ -1,7 +1,7 @@
 depth = ojeu.depth - 1
 var _alpha = global.alphaBlackScreen;
 if !instance_exists(oDial)
-if room != piece 
+if !deplacementFait 
 {
 	global.inputOn = false;
 	global.blackScreen = true;
@@ -10,7 +10,7 @@ if room != piece
 	{
 		ojeu.lastRoom = room;
 		room_goto(piece);
-		
+		deplacementFait = true
 		if sndToPlay != noone
 		playsound(sndToPlay);
 		if dayNext
@@ -20,7 +20,7 @@ if room != piece
 		}
 	}
 }
-if room == piece
+if deplacementFait
 {
 	if instanceToCreate != noone
 	{
