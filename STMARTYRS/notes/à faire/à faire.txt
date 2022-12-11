@@ -12,7 +12,10 @@ FAIT	A CORRIGER				GUI sur des écran d'autre ratios
 FAIT	A CORRIGER				Initialisation des crimes (ajout des type de crime)
 			CONCEVOIR				sauvegarde
 			CODER						MENU carte
-			CODER						Retirer l'effet rebond des dialogues.
-			CODER						EFFET BRUT APPARITION BULLE DE DIALOGUES
-			CODER						finir résurgence
-			
+FAIT	CODER						Retirer l'effet rebond des dialogues.
+FAIT	CODER						EFFET BRUT APPARITION BULLE DE DIALOGUES
+FAIT	CODER						finir résurgence
+			DESSINER					Cadran heure
+
+
+

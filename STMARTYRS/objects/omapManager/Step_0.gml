@@ -1,4 +1,7 @@
-
+if ojeu.resurgence == ojeu.resurgenceMax
+{
+	reach_max_res();
+}
 //----MISE A JOUR DATE CARTE-----------------------//
 if recapEnCours()
 {
@@ -21,70 +24,163 @@ else
 	if !instance_exists(oGoToRoom)
 	global.mapDate = global.currentDate;
 }
-//----MISE A JOUR ÉLÉMENTS SUR LA CARTE---//
 
+
+//----MISE A JOUR ÉLÉMENTS SUR LA CARTE---//
 maj_meurtre();
 maj_nb_tueur();
+
 
 //-------MENU------//
 switch (currentMenu)
 {
 	default:{
-		
+		//--JOUEUR LIBRE--//
 		if player_free()
 		{
-			//d'abord tâches, puis compo usi
+			//TASKS
+			var _lenTasks = array_length(ojeu.mapTasks)
+			if _lenTasks>0
+			{
+				var _currentTasks = depile(ojeu.mapTasks)
+				switch(_currentTasks.type)
+				{
+					case TASK_TYPE.USI_DEATH:{
+						if ojeu.nbUsiVivants == 1
+						{
+							//AJOUTER FIN 0
+						}
+						else
+						{
+							var _usidead = false;
+							while !_usidead
+							{
+								var _irandom = irandom(5);
+								if !ojeu.usi[_irandom].etat = USI_STATE.DEAD
+								{
+									ojeu.usi[_irandom].etat = USI_STATE.DEAD;
+									_usidead = true;
+								}
+							}
+						}
+						
+					}break;
+					case TASK_TYPE.DIALOGUE:{
+						startDial(_currentTasks.dialogueId)
+					}break;
+				}
+				
+				ojeu.nbTasks --;
+			}
+			
+			
+			//COMPO USIs
+			if !ojeu.compoUsiDone
+			{
+				currentMenu = "usi";
+			}
+			
 		}
 	
+	
+		//---MODIFICATION USI---//
+		if selectedUsi != noone
+		{
+			if selectedUsi.pressed
+			{
+				drawUsiModification = false;
+			}
+		}
+		else
+		{
+			drawUsiModification = false;
+		}
 	}break;
 	case "explo":{
-
-		createChoiceBox("Quitter la carte", quitMap, "Retour", noMenu);
-
-	}break;
-	case "usi":{
-#region ANCIEN MENU USI
-		/*if !instance_exists(oMapPause)
+		tpsBufferInputExplo ++;
+		if global.cRlLeft
 		{
-		tarAlphaFondNoir = 0.7;
-		tarAlphaCadran = 1;
-		
-		if !point_in_circle(mouse_x, mouse_y, xbackbutton + lbackbutton/2, ybackbutton + lbackbutton/2, lbackbutton/2)
-		{
-			backbuttonPressed = false;
-		}
-		if point_in_circle(mouse_x, mouse_y, xbackbutton + lbackbutton/2, ybackbutton + lbackbutton/2, lbackbutton/2) and global.cPrLeft
-		{
-			backbuttonPressed = true;
-		}
-		if backbuttonPressed and global.cRlLeft and point_in_circle(mouse_x, mouse_y, xbackbutton + lbackbutton/2, ybackbutton + lbackbutton/2, lbackbutton/2)
-		{
-			tarAlphaFondNoir = 0;
-			tarAlphaCadran = 0;
-			noMenu();
-		}
-		}*/
-		#endregion
-
-		for( var i = 0; i!=6;i++)
-		{
-			
-			//POSITION DES PANNEAUX
-			if i == 0
+			if  lieuSurvole == noone 
 			{
-				temps[0] ++;
-				currentY[0] = twerp(TwerpType.out_elastic, yWhenHidden, yWhenShown, temps[i]/duree);
+				if tpsBufferInputExplo > bufferInpupExplo 
+				currentMenu = noone
 			}
 			else
 			{
-				if temps[i-1] > duree/3{
-					temps[i] ++;
-					currentY[i] = twerp(TwerpType.out_elastic, yWhenHidden, yWhenShown, temps[i]/duree);}
+				var _lieu = ojeu.lieu[lieuSurvole]
+				GoToRoom(_lieu.piece)
+				
+				if _lieu.connu != CONNAISSANCE_LIEU.VISITE
+				{
+					_lieu.connu = CONNAISSANCE_LIEU.VISITE
+					var _lenConnections = array_length(_lieu.connections)
+					for (var i = 0;i < _lenConnections;i ++)
+					{
+						if ojeu.lieu[_lieu.connections[i]].connu == CONNAISSANCE_LIEU.INCONNU{ojeu.lieu[_lieu.connections[i]].connu = CONNAISSANCE_LIEU.JUXTAPOSE}
+					}
+				}
 			}
-
 		}
-		if keyboard_check(vk_space) then currentMenu = noone
+																																		//createChoiceBox("Quitter la carte", quitMap, "Retour", noMenu);
+
+	}break;
+	case "usi":{
+		time_source_pause(ojeu.minuterie);
+		//MENU USI
+		if ojeu.nbUsiPatrol != 3
+		{
+			for(var i = 0; i!=6;i++)
+			{
+				var _x = xMin + wPanUsi*i
+				var _y = currentY[i]
+				var _CorrectPosMouse = (mouse_x>_x) and (mouse_x< _x + wPanUsi) and (mouse_y>_y) and (mouse_y<_y+hPanUsi)
+				if !(_CorrectPosMouse)
+				{
+					ojeu.usi[i].pressed = false;
+				}
+				if global.cPrLeft and _CorrectPosMouse
+				{
+					ojeu.usi[i].pressed = true;
+				}
+				if ojeu.usi[i].pressed and global.cRlLeft
+				{
+					if ojeu.usi[i].etat != USI_STATE.DEAD and ojeu.usi[i].etat !=USI_STATE.PATROL and ojeu.nbUsiToDie == 0
+					{
+						ojeu.usi[i].pressed = false;
+						ojeu.usi[i].etat = USI_STATE.PATROL;
+						ojeu.usiPatrol[ojeu.nbUsiPatrol] = i;
+						ojeu.nbUsiPatrol++;
+						with instance_create_layer(mouse_x, mouse_y, "usi", ousi)
+						{
+							x = mouse_x;
+							y = mouse_y;
+							usiID = i;
+						}
+					}
+				}
+			}
+		}
+		else
+		{
+			ojeu.compoUsiDone = true;
+			currentMenu = noone
+			time_source_resume(ojeu.minuterie);
+		}
 		
+		if ojeu.nbUsiToDie != 0
+		{
+			var _usiKilled = false;
+			while !_usiKilled
+			{
+				var _random = irandom(5)
+				if ojeu.usi[_random].etat != USI_STATE.DEAD
+				{
+					_usiKilled = true;
+					ojeu.usi[_random].etat = USI_STATE.DEAD
+				}
+			}
+			ojeu.nbUsiToDie --;
+		}
 		
 	}break;
 	case "psc":{
@@ -159,6 +255,7 @@ switch (currentMenu)
 	}
 }
 
+
 //---MODIFICATION USI---//
 if selectedUsi != noone
 {
@@ -171,6 +268,12 @@ else
 {
 	drawUsiModification = false;
 }
+
+
+
+
+
+
 
 
 

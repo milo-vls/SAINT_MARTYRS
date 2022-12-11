@@ -58,14 +58,3 @@ function recapEnCours()
 {
 	return  !omapManager.mapTimeMAJ and !instance_exists(oGoToRoom)
 }
-function resMaxAtteinte()
-{
-	if recapEnCours()
-	{
-		omapManager.nbUsiToDie ++;
-	}
-	else
-	{
-		
-	}
-}

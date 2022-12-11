@@ -23,6 +23,7 @@ for (var i = 0; i < array_length(ojeu.crime);i++)
 {
 	if !ojeu.crime[i].appeared and ojeu.tueur[ojeu.crime[i].tueur].etat == KILLER_STATE.ACTIVE and ojeu.crime[i].date < global.mapDate
 	{
+		ajout_resurgence(ojeu.crime[i].coutResurgence)
 		ojeu.crime[i].appeared = true;
 		with instance_create_layer(ojeu.crime[i].x, ojeu.crime[i].y, "crime", ocrime)
 		{
@@ -31,6 +32,12 @@ for (var i = 0; i < array_length(ojeu.crime);i++)
 	}
 }	
 
+}
+//-----------	ajout résurgence									-----------//
+function ajout_resurgence(_res)
+{
+	ojeu.resurgence += _res;
+	ojeu.resurgence = clamp(ojeu.resurgence, 0, ojeu.resurgenceMax);
 }
 //-----------	chargement icônes habitants			-----------//
 function maj_npc()
@@ -73,7 +80,8 @@ for (var i = 0; i < array_length(ojeu.crime);i++)
 {
 	if ojeu.crime[i].appeared and ojeu.tueur[ojeu.crime[i].tueur].etat == KILLER_STATE.ACTIVE and ojeu.crime[i].date < global.mapDate
 	{
-		ojeu.crime[i].appeared = true;
+			ojeu.crime[i].appeared = true;
+
 		with instance_create_layer(ojeu.crime[i].x, ojeu.crime[i].y, "crime", ocrime)
 		{
 			crimeID = i;

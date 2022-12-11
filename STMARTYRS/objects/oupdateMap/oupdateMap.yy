@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "carte",
-    "path": "folders/OBJECTS/exclu pièce/carte.yy",
+    "name": "méta",
+    "path": "folders/OBJECTS/exclu pièce/carte/méta.yy",
   },
 }

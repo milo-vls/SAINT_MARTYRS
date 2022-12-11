@@ -16,6 +16,14 @@ global.char[_personnage].mapX = _mapx;
 //ROOM DE CHAQUE PERSOS
 //tout ce que tu veux en fait, selon le jour
 function init_day(){
+//reset usi
+for (var i = 0; i!=6;i++)
+{
+	ojeu.usi[i].etat = USI_STATE.AVAILABLE;
+}
+ojeu.compoUsiDone = false;
+ojeu.usiPatrol = array_create(0);
+ojeu.nbUsiPatrol = 0
 //réinitialisation
 for (var i = 0; i < ojeu.nbPersonnages; i ++)
 {

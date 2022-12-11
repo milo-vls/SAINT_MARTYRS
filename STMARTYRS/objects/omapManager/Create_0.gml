@@ -84,7 +84,9 @@ yDecCol = yIncCol;
 #endregion
 
 #region affichage rue
-
+lieuSurvole = noone;
+bufferInpupExplo = 10;
+tpsBufferInputExplo = 0
 var nbLimiteRue = instance_number(olimiteRue);
 
 
@@ -146,3 +148,4 @@ duree = room_speed/2;//une seconde
 #endregion
 
 
+///------------affichage lieux

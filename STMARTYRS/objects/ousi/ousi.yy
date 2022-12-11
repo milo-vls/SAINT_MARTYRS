@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "menu",
-    "path": "folders/OBJECTS/exclu pièce/carte/menu.yy",
+    "name": "épingles carte",
+    "path": "folders/OBJECTS/exclu pièce/carte/épingles carte.yy",
   },
 }

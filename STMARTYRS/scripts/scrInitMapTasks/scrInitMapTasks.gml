@@ -3,9 +3,12 @@ enum TASK_TYPE
 	USI_DEATH, 
 	GO_TO_ROOM, 
 	DIALOGUE
-	}
-
-array_create(0, mapTasks)
+}
+function init_map_tasks()
+{
+	nbTasks = 0
+	mapTasks = array_create(0)
+}
 
 function task_add_usi_death()
 {
@@ -22,4 +25,5 @@ function task_add_dialogue(_dialogueId)
 		type : TASK_TYPE.DIALOGUE,
 		dialogueId : _dialogueId
 	}
+	nbTasks ++;
 }

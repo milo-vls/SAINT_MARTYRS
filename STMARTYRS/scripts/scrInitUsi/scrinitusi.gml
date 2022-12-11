@@ -10,10 +10,15 @@ PATROL,
 enum USI
 {ARMAND, DIDIER, LIZA, ERNEST, ROSALIE, JULIEN}
 
-compoUsiDone = false;
+
 
 function init_usi()
 {
+	compoUsiDone = false;
+	
+	
+	usiPatrol = array_create(0);
+	nbUsiPatrol = 0;
 	
 	usi[USI.DIDIER] = {
 		etat			: USI_STATE.AVAILABLE,
@@ -75,7 +80,10 @@ function init_usi()
 		usi[i].y							= noone;			
 		usi[i].rot						= noone;				//rotation sur la carte de l'hitbox 
 		usi[i].hauteur				= sprite_get_height(usi[i].port);
+		//-------menu------//
+		usi[i].pressed = false;
 	}
 
+	nbUsiVivants = 6;
 
 }

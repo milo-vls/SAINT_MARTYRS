@@ -1,3 +1,5 @@
+#macro ABS_MAP  
+
 enum L
 {
 	AMANDINE_DEADEND,
@@ -26,18 +28,20 @@ enum L
 	
 }
 
+enum CONNAISSANCE_LIEU{VISITE, JUXTAPOSE, INCONNU}
+
+function add_lieu(_enumeration, _room, _x, _y, _connection, _connu = CONNAISSANCE_LIEU.INCONNU)
+{
+	lieu[_enumeration] = {piece : _room, xMap : _x ABS_MAP, yMap : _y ABS_MAP, connections : _connection, connu : _connu}
+}
+
+
 function init_map()
 { 
-	lieu[L.AMANDINE_DEADEND] = {
-		piece : P_AMANDINE_DEADEND,
-		yAbsMap : 1,
-		xAbsMap : 1,
-		liens : [0, 1, 2],
-		
-	}
-	
-	
-	
-	
+	add_lieu(L.AMANDINE_DEADEND, P_AMANDINE_DEADEND, 836, 543, [L.BACK_TABLE, L.BENCH_AGAINST_WALL]);
+	add_lieu(L.BACK_TABLE,  P_BACK_TABLE,866,462, [L.AMANDINE_DEADEND, L.BENCH_AGAINST_WALL]);
+	add_lieu(L.BACK_WATER_TOWER, P_BACK_WATER_TOWER, 931, 555, [L.BENCH_AGAINST_WALL]);
+	add_lieu(L.BENCH_AGAINST_WALL, P_BENCH_AGAINST_WALL,95, 471, [L.AMANDINE_DEADEND, L.BACK_TABLE, L.AMANDINE_DEADEND]);
+	add_lieu(L.BLANK_WALL, P_POLICE_STATION,200,200,[L.AMANDINE_DEADEND], CONNAISSANCE_LIEU.JUXTAPOSE);
 	
 }

@@ -7,14 +7,19 @@ gd => si res = resMax alors un usi meurt => si meurt pendant récap, on attend l
 
 */
 function init_resurgence()
-begin
+{
 
 resurgenceMax = 100;
 resurgence = 0;
 
+nbUsiToDie = 0
 
 
 
+}
 
-end
-
+function reach_max_res()
+{
+ojeu.nbUsiToDie ++
+ojeu.resurgence -= 70;
+}

@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "icônes",
-    "path": "folders/OBJECTS/exclu pièce/carte/icônes.yy",
+    "name": "affichages sans inter",
+    "path": "folders/OBJECTS/exclu pièce/carte/affichages sans inter.yy",
   },
 }

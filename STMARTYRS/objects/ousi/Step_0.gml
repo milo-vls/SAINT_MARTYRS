@@ -1,15 +1,4 @@
 
-//----initialisation date fin de patrouille----//
-if ojeu.usi[usiID].retireDate == noone
-{
-		ojeu.usi[usiID].retireDate = date_inc_hour(global.currentDate, ojeu.usi[usiID].tpsPatrol);
-}
-
-//----DATE FIN DE PATROUILLE ATTEINTE----//
-if date_compare_date(global.mapDate, ojeu.usi[usiID].retireDate)//global.mapDate > ojeu.usi[usiID].retireDate 
-{
-	instance_destroy();
-}
 
 
 

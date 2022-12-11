@@ -52,6 +52,86 @@ draw_set_font(ftDial);
 draw_set_color(c_black);
 draw_text(room_width/2, 100, ojeu.nbTueurActifs)
 
+#region menu explo
+
+if currentMenu == "explo"
+{
+	draw_set_alpha(1)
+	draw_visitables();
+}
+
+
+
+
+#endregion
+#region USI
+
+//----POSITION DES PANNEAUX
+
+if currentMenu == "usi"
+{
+	for( var i = 0; i!=6;i++)
+	{
+			
+		//POSITION DES PANNEAUX
+		if i == 0
+		{
+			temps[0] ++;
+			currentY[0] = twerp(TwerpType.out_elastic, yWhenHidden, yWhenShown, temps[i]/duree);
+		}
+		else
+		{
+			if temps[i-1] > duree/3
+			{
+				temps[i] ++;
+				currentY[i] = twerp(TwerpType.out_elastic, yWhenHidden, yWhenShown, temps[i]/duree);
+			}
+		}
+	}
+}
+else
+{
+	for( var i = 0; i!=6;i++)
+	{
+		currentY[i] = approach(currentY[i], yWhenHidden, 60);
+	}
+}
+
+
+draw_set_alpha(1);
+
+var _usi = ojeu.usi
+for (var i = 0; i!=6;i++)
+{
+	//position
+	var _x = xMin + wPanUsi*i
+	var _y = currentY[i]
+	//couleur
+	if _usi[i].etat = USI_STATE.PATROL
+	draw_set_color(c_grey)
+	else
+	draw_set_color(c_orange)
+	//rectangle
+	draw_rectangle(_x, _y, _x + wPanUsi, _y + hPanUsi, false);
+	//portrait
+	var _port = _usi[i].port;
+	var _width = sprite_get_width(_port)
+	var _scale = wPanUsi/(_width)
+	draw_sprite_ext(_port, 0, _x+ (_width*_scale)/2, _y, _scale, _scale, 0, -1, 1);
+	
+	
+}
+
+
+
+#endregion
+
+
+
+
+
+
+
 #region menu usi *OLD*
 /*
 #region fond noir
@@ -179,85 +259,6 @@ for (var i = 0;i < array_length(ojeu.usi);i ++)
 */
 #endregion
 
-
-
-
-
-
-#region psc
-	#region cradran
-	alphaMenupsc = approach(alphaMenupsc, tarAlphaMenupsc, 0.4);
-	draw_set_alpha(alphaMenupsc);
-	draw_set_color(cMpsc);
-	draw_set_circle_precision(64);
-
-	draw_rectangle(x1RCentral, y1RCentral, x2RCentral, y2RCentral, false);
-	draw_rectangle(x1RSup, y1RSup, x2RSup, y2RSup, false);
-	draw_rectangle(x1RInf, y1RInf, x2RInf, y2RInf, false);
-
-	draw_circle(x1RSup, y1RCentral, dcoin, false);//haut gauche
-	draw_circle(x1RSup, y2RCentral, dcoin, false);//bas gauche
-	draw_circle(x2RSup, y1RCentral, dcoin, false);//haut droite
-	draw_circle(x2RSup, y2RCentral, dcoin, false);
-
-	#endregion
-	#region quitter
-
-	draw_sprite_stretched(sprBack, 0, x2RSup - sprite_get_width(sprBack), y1RCentral - sprite_get_height(sprBack)*2, dcoin*2.25, dcoin*2.25);
-
-	#endregion
-	if selectpsc != noone
-	{
-		//portrait
-		draw_sprite_stretched(ojeu.crime[selectpsc].port, 0, xport, yport, lport, hport);
-		//nom
-		draw_set_valign(fa_top);
-		draw_set_halign(fa_left);
-		draw_set_color(c_white);	
-		draw_set_font(ftMenu);
-		draw_text(xname,yname,ojeu.crime[selectpsc]._name);
-		//date
-		var _day = string(date_get_day(ojeu.crime[selectpsc].date));
-		if string_length(_day) == 1
-		{
-			var _day = "0"+string(date_get_day(ojeu.crime[selectpsc].date));
-		}
-		var _minute = string(date_get_minute(ojeu.crime[selectpsc].date));
-		if string_length(_minute) == 1
-		{
-			var _minute = "0" + string(date_get_minute(ojeu.crime[selectpsc].date));
-		}
-		draw_text(xdate, ydate, _day +"/"+ string(date_get_month(ojeu.crime[selectpsc].date))+ " " + ojeu.hour[date_get_hour(ojeu.crime[selectpsc].date)]+":"+_minute)
-		//changement de couleur
-		draw_sprite(sprChangeCol, 0, xIncCol, yIncCol);
-		draw_sprite(sprChangeCol, 0, xDecCol, yDecCol);
-		draw_sprite_ext(sprCrime,0, xColPreview, yColPreview, 1, 1, 0, global.crimeCol[ojeu.crime[selectpsc].col], alphaMenupsc);
-	
-	}
-#endregion
-
-
-
-#region USI
+var _x = display_get_gui_width();
 draw_set_alpha(1);
-draw_set_color(c_grey);
-var _usi = ojeu.usi
-for (var i = 0; i!=6;i++)
-{
-	//position
-	var _x = xMin + wPanUsi*i
-	var _y = currentY[i]
-	//rectangle
-	draw_rectangle(_x, _y, _x + wPanUsi, _y + hPanUsi, false);
-	//portrait
-	var _port = _usi[i].port;
-	var _width = sprite_get_width(_port)
-	var _scale = wPanUsi/(_width)
-	draw_sprite_ext(_port, 0, _x+ (_width*_scale)/2, _y, _scale, _scale, 0, -1, 1);
-	
-	
-}
-
-
-
-#endregion
+draw_healthbar(_x, 0, _x-50, display_get_gui_height(), (ojeu.resurgence/ojeu.resurgenceMax)*100, c_white, c_white, c_red, 2, false, false);

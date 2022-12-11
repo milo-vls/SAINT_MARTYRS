@@ -1,17 +1,18 @@
 
-function addCrime(_tueur, _nomPrenom, _portrait, _date, _x, _y, _type)
+function addCrime(_tueur, _nomPrenom, _portrait, _date, _x, _y, _type, _resurgence)
 
 
 {
 	var indexCrime = ojeu.nbCrimes;
 	ojeu.crime[indexCrime] = {
-		tueur			: _tueur,
-		_name		: _nomPrenom,
-		port			: _portrait,
-		date			: _date,
-		x					: _x,
-		y					: _y,
-		type			: _type,
+		tueur						: _tueur,
+		_name					: _nomPrenom,
+		port						: _portrait,
+		date						: _date,
+		x								: _x,
+		y								: _y,
+		type						: _type,
+		coutResurgence	: _resurgence
 	}
 	ojeu.nbCrimes ++;
 }
