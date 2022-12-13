@@ -45,15 +45,28 @@ switch(ID)
 	break;
 	case "WELCOME DEMO":
 	obs("This demo's only purpose is to show the exploration system and the dialogue system")
-	obs("Thus, this version provides no game play")
-	obs("The few dialogues are written in french (Ravan if you see this, I'll make a translated version)")
-	obs("Art by (@Ravenghautsiart on twitter")
-	obs("Music by @freddiejunioor on instagram")
-	
+
 	
 	break;
 	#endregion
+	#region map option
+	case "nombre de tueur":{
+		var _nbTueur = ojeu.nbTueurActifs
+		if _nbTueur  == 0
+		{
+			obs("Aucun criminel menace Saints Martyrs")
+		}
+		else
+		{
+			if _nbTueur == 1
+			obs("1 criminel menace Saints Martyrs")
+			else
+			obs(string(_nbTueur) + "criminels menacent Saints Martyrs");
+		}
+	}break;
 	
+	
+	#endregion
 }
 		
 }

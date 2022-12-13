@@ -148,4 +148,62 @@ duree = room_speed/2;//une seconde
 #endregion
 
 
-///------------affichage lieux
+//--BANDE NOIRE SUP (MENU)
+hBarreSup = display_get_gui_height()/6.5;
+wBarreSup = display_get_gui_width();
+
+mapOption[0] = {
+	txt : function()
+			{
+					return string(ojeu.nbTueurActifs)
+			},
+	fonction : function(){ startObs("nombre de tueur")},
+	pressed : false,
+	}
+mapOption[1] = {
+	txt : "Ville",
+	fonction : function()
+		{
+				omapManager.currentMenu = "explo"
+		},
+	pressed : false,
+	}
+mapOption[2] = {
+	txt : "Ordi",
+	fonction : function()
+	{
+		omapManager.currentMenu = "ordi"
+	},
+	pressed : false
+}
+mapOption[3] = {
+	txt : "Tel",
+	fonction : function()
+		{
+			omapManager.currentMenu = "téléphone"
+		},
+	pressed : false,
+}
+mapOption[4] = {
+	txt : "Fiches",
+	fonction : function(){},
+	pressed : false,
+		
+}
+mapOption[5] = {
+	txt : function()
+		{
+			var _heure = string(date_get_hour(global.mapDate));
+			var _minute = string(date_get_minute(global.mapDate));
+			var _addHour =( string_length(_heure) == 1 ?  "0": "");
+			var _addMinute = (string_length(_minute) != 2 ? "0": "");
+			return _addHour+ _heure +":\n" +  _addMinute + _minute;
+		},
+	fonction : function(){},
+	pressed : false,
+}
+nbMapOption = 6
+
+wMapOption = wBarreSup/nbMapOption
+_yTxt = hBarreSup/5
+

@@ -47,10 +47,7 @@ if currentMenu == noone
 	}
 }
 
-draw_set_alpha(1);
-draw_set_font(ftDial);
-draw_set_color(c_black);
-draw_text(room_width/2, 100, ojeu.nbTueurActifs)
+
 
 #region menu explo
 
@@ -64,10 +61,70 @@ if currentMenu == "explo"
 
 
 #endregion
+
+
+draw_set_color(#124526 );
+draw_rectangle(0,0, wBarreSup, hBarreSup, false)
+
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_font(ftMenu);
+draw_set_color(c_white);
+
+for(var i = 0 ; i <nbMapOption ; i ++)
+{
+	//--DONNÉES POUR LE TEXTE
+	if is_method(mapOption[i].txt)
+	{
+		var _txtToDraw =  mapOption[i].txt()
+	}
+	else
+	{
+		var _txtToDraw =  mapOption[i].txt
+	}
+	var _xTxt = wMapOption/2+wMapOption*i
+	var _txtcol = "c_white";
+	var _shake = "";
+	
+	
+	//---COMPORTEMENT ET CLIQUE
+	if currentMenu == noone
+	{
+		if point_in_rectangle(mouse_x, mouse_y,_xTxt-wMapOption/2, 0, _xTxt+wMapOption/2, hBarreSup)
+		{
+			if global.cPrLeft
+			{
+				if  mapOption[i].fonction != noone
+				{
+					mapOption[i].fonction();
+				}
+			}
+			draw_set_color(c_yellow);
+			_txtcol = "c_yellow";
+			_shake = "[shake]";
+		}
+		
+	}
+	
+	
+	//---DESSIN
+	scribble("["+_txtcol+"][fa_middle][fa_center]"+_shake+_txtToDraw).draw(_xTxt, _yTxt)
+}
+
+
+
+var _x = display_get_gui_width();
+draw_set_alpha(1);
+draw_healthbar(_x, 0, _x-50, display_get_gui_height(), (ojeu.resurgence/ojeu.resurgenceMax)*100, c_white, c_white, c_red, 2, false, false);
+
+
 #region USI
 
-//----POSITION DES PANNEAUX
+draw_set_alpha(1);
 
+
+
+//----POSITION DES PANNEAUX
 if currentMenu == "usi"
 {
 	for( var i = 0; i!=6;i++)
@@ -98,7 +155,7 @@ else
 }
 
 
-draw_set_alpha(1);
+
 
 var _usi = ojeu.usi
 for (var i = 0; i!=6;i++)
@@ -125,140 +182,3 @@ for (var i = 0; i!=6;i++)
 
 
 #endregion
-
-
-
-
-
-
-
-#region menu usi *OLD*
-/*
-#region fond noir
-//alphaFondNoir = lerp(alphaFondNoir, tarAlphaFondNoir, 0.2);
-alphaFondNoir = tarAlphaFondNoir;
-draw_set_alpha(alphaFondNoir);
-draw_set_color(c_black);
-//draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
-
-#endregion
-#region cadran noir
-//alphaCadran = lerp(alphaCadran, tarAlphaCadran, 0.1);
-alphaCadran = tarAlphaCadran;
-draw_set_alpha(alphaCadran);
-draw_set_color(c_black);
-draw_rectangle(x1Cadran+lCadran/4, y1Cadran, x2Cadran-lCadran/4, y2Cadran, false);
-#endregion
-#region back button
-	draw_sprite_stretched(sprBack, 0, xbackbutton, ybackbutton, lbackbutton, lbackbutton);
-
-#endregion
-#region portrait usi & +
-for (var i = 0;i < array_length(ojeu.usi);i ++)
-{
-	// xy ?
-	if i < 4 
-	{
-		xcadranUsi = x1Cadran + (lcadreUsi * i);
-		ycadranUsi = y1Cadran;
-	}
-	else
-	{
-		if i < 8
-		{
-			xcadranUsi = x1Cadran + (lcadreUsi * (i-4));
-			ycadranUsi = y1Cadran + hcadreUsi;
-		}
-		else
-		{
-			xcadranUsi = x1Cadran + (lcadreUsi * (i-8));
-			ycadranUsi = y1Cadran + hcadreUsi*2;
-		}
-	}
-	
-	switch (ojeu.usi[i].etat)
-	{
-	case USI_STATE.AVAILABLE:{
-		//Portrait
-		var _scale = hcadreUsi/ojeu.usi[i].hauteur;
-		draw_sprite_ext(ojeu.usi[i].port, 0, xcadranUsi + lcadreUsi/2, ycadranUsi, _scale, _scale, 0, -1, alphaCadran);
-		//FOND NOIR
-		draw_set_alpha(alphaCadran - 0.5);
-		draw_rectangle_color(xcadranUsi, ycadranUsi + hcadreUsi - hCadranNomUsi, xcadranUsi + lcadreUsi, ycadranUsi + hcadreUsi, c_black, c_black, c_black, c_black, false);
-		draw_set_font(ftMenu);
-		draw_set_color(c_white);
-		draw_set_valign(fa_middle);
-		draw_set_halign(fa_center);
-		draw_set_alpha(alphaCadran);
-		//nom portrait
-		draw_text(xcadranUsi + lcadreUsi/2, ycadranUsi + hcadreUsi - hCadranNomUsi/2, ojeu.usi[i]._name);
-		draw_sprite_stretched(sprCadreUsi, 0, xcadranUsi, ycadranUsi, lcadreUsi, hcadreUsi);
-		//----PRÉVISUALISATION HITBOX---//		
-		if point_in_rectangle(mouse_x, mouse_y, xcadranUsi+1, ycadranUsi+1, xcadranUsi + lcadreUsi-1, ycadranUsi + hcadreUsi-1)
-		{
-			demoHboxSprite = ojeu.usi[i].hbox;
-			demoHboxRot ++;
-			if currentMenu == "usi" and demoHboxSprite != noone
-			{
-				draw_sprite_ext(ojeu.usi[i].hbox, 0, mouse_x, mouse_y, 1, 1, demoHboxRot, -1, 0.8);
-				if global.cPrLeft
-				{
-					with instance_create_layer(mouse_x, mouse_y, "usi", ousi)
-					{
-						omapManager.selectedUsi = self;
-						usiID = i;
-					}
-					tarAlphaFondNoir = 0;
-					tarAlphaCadran = 0;
-					noMenu();
-					//---changement d'état
-					ojeu.usi[i].etat = USI_STATE.PATROL;
-					
-				}
-			}
-			else
-			{
-				demoHboxSprite = noone;
-						
-			}
-		}
-		else
-		{
-			demoHboxSprite = noone;
-					
-		}
-	}break;
-	case USI_STATE.NOT_AVAILABLE:{
-	
-	}break;
-	case USI_STATE.DEAD:{
-		draw_sprite_stretched(sprCadreUsiDead, 0, xcadranUsi, ycadranUsi, lcadreUsi, hcadreUsi);
-	}break;
-	case USI_STATE.RESTING:{
-		draw_sprite_stretched(sprCadreUsiRest, 0, xcadranUsi, ycadranUsi, lcadreUsi, hcadreUsi);
-		
-		show_debug_message( str(ojeu.usi[i].dispoDate));
-		show_debug_message( str(ojeu.usi[i].dispoDate - global.mapDate));
-		
-		if date_compare_date(global.mapDate, ojeu.usi[i].dispoDate)//ojeu.usi[i].dispoDate< global.mapDate
-		{
-			ojeu.usi[i].dispoDate	= noone;
-			ojeu.usi[i].retireDate	= noone;
-			ojeu.usi[i].etat				= USI_STATE.AVAILABLE;
-		}
-	}break;
-	case USI_STATE.PATROL:{
-		draw_sprite_stretched(sprCadreUsiPlaced, 0, xcadranUsi, ycadranUsi, lcadreUsi, hcadreUsi);
-	}break;
-	}
-	
-	
-}
-
-#endregion
-*/
-#endregion
-
-var _x = display_get_gui_width();
-draw_set_alpha(1);
-draw_healthbar(_x, 0, _x-50, display_get_gui_height(), (ojeu.resurgence/ojeu.resurgenceMax)*100, c_white, c_white, c_red, 2, false, false);

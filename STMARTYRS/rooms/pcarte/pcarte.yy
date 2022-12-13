@@ -17,11 +17,7 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"coverable_instances","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D519488","properties":[],"isDnd":false,"objectId":{"name":"oexplo","path":"objects/oexplo/oexplo.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.4,"scaleY":0.4,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":607.3559,"y":96.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7C69A54A","properties":[],"isDnd":false,"objectId":{"name":"otelephone","path":"objects/otelephone/otelephone.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.4,"scaleY":0.4,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":367.3559,"y":16.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E44E4E2","properties":[],"isDnd":false,"objectId":{"name":"oiconeOrdi","path":"objects/oiconeOrdi/oiconeOrdi.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.4,"scaleY":0.4,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":207.3559,"y":16.0,},
-      ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"coverable_instances","instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"updateMap","instances":[],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"crime","instances":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"usi","instances":[],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
@@ -36,11 +32,8 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_5D519488","path":"rooms/pcarte/pcarte.yy",},
     {"name":"inst_121BA020","path":"rooms/pcarte/pcarte.yy",},
     {"name":"inst_3CACDB83","path":"rooms/pcarte/pcarte.yy",},
-    {"name":"inst_7C69A54A","path":"rooms/pcarte/pcarte.yy",},
-    {"name":"inst_2E44E4E2","path":"rooms/pcarte/pcarte.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

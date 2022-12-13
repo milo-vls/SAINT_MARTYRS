@@ -8,9 +8,9 @@ switch(global.char[p.Enzino].proximite)
 	
 	
 	case 0:{
-		D "Yo man, ça va ???? Moi oui!", p.Ernest, l, p.Enzino);
-		D"Je vais bien, salut, merci"enr
-		D"'Frappe le printemps en son coeur et normalise l''action banale du courrant que consomme la plupart des oui voilà exactement j'osais pas le dire"pl
+		D "Hi thx for letting me test this one", p.Ernest, l, p.Enzino);
+		D"Pas de problème ;););););););););)"enr
+		D"'Frappe le printemps en son coeur et normalise l''action banale du courrant que consomme la plupart that's long enough"pl
 		
 	}break;
 	case 1:{
