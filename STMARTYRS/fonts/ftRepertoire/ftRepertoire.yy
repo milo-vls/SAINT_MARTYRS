@@ -16,7 +16,7 @@
   "AntiAlias": 1,
   "first": 0,
   "last": 0,
-  "sampleText": "",
+  "sampleText": "12035454atz",
   "includeTTF": false,
   "TTFName": "",
   "textureGroupId": {

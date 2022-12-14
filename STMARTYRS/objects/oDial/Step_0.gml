@@ -4,7 +4,7 @@ if !setup
 {
 	for (var i = 0;i < nbBulles;i ++)
 	{
-		bulle[i].txt = scribble("["+colFnt +"][ftDial][fa_top][fa_left]"+bulle[i].txt).wrap(wtxt);
+		bulle[i].txt = scribble("["+colFnt +"][ftDial][fa_top][fa_left]"+bulle[i].txt.wrap(wtxt);
 		bulle[i].typist = scribble_typist();
 		bulle[i].typist.in(0, fadingSpeed);
 		var _bullechar = bulle[i].char

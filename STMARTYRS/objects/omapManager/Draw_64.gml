@@ -63,7 +63,7 @@ if currentMenu == "explo"
 #endregion
 
 
-draw_set_color(#124526 );
+draw_set_color(#829460 );
 draw_rectangle(0,0, wBarreSup, hBarreSup, false)
 
 draw_set_halign(fa_center);

@@ -6,7 +6,7 @@ global.frameRate = 30;
 game_set_speed(global.frameRate, gamespeed_fps);
 #macro dpojeu 0
 #macro dptxt 5
-global.startingRoom = pcarte;
+global.startingRoom = P_RUE_BLUE;
 global.langage = "fr";//"fr" = français//"en" = anglais//"es" = espagnol
 global.inputOn = true;
 lastRoom = noone;

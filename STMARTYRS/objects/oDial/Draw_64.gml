@@ -1,6 +1,6 @@
 #region slide et fond
 //fond noir
-draw_set_alpha(0.5);
+draw_set_alpha(0.2);
 draw_rectangle_color(0, 0, display_get_gui_width(), display_get_gui_height(), c_black, c_black, c_black, c_black, false);
 //cadran slide
 draw_set_alpha(1);
@@ -195,10 +195,10 @@ if antLeftPort != noone
 	{
 		#region quel alpha? quelle couleur?
 			//taralpha
-			bulle[currentBulle].alpha = 0.9;
+			bulle[currentBulle].alpha = 0.95;
 			if currentBulle > i
 			{
-				bulle[i].tarAlpha = 0.5;
+				bulle[i].tarAlpha = 0.8;
 			}
 		
 			bulle[i].alpha = approach(bulle[i].alpha, bulle[i].tarAlpha, 0.08);

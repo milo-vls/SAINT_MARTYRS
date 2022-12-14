@@ -197,7 +197,7 @@ mapOption[5] = {
 			var _minute = string(date_get_minute(global.mapDate));
 			var _addHour =( string_length(_heure) == 1 ?  "0": "");
 			var _addMinute = (string_length(_minute) != 2 ? "0": "");
-			return _addHour+ _heure +":\n" +  _addMinute + _minute;
+			return _addHour+ _heure +":" +  _addMinute + _minute;
 		},
 	fonction : function(){},
 	pressed : false,
