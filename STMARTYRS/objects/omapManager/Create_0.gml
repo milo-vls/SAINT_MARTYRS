@@ -190,7 +190,7 @@ mapOption[4] = {
 	pressed : false,
 		
 }
-mapOption[5] = {
+mapOption[4] = {
 	txt : function()
 		{
 			var _heure = string(date_get_hour(global.mapDate));
@@ -202,8 +202,8 @@ mapOption[5] = {
 	fonction : function(){},
 	pressed : false,
 }
-nbMapOption = 6
+nbMapOption = 5
 
 wMapOption = wBarreSup/nbMapOption
-_yTxt = hBarreSup/5
+_yTxt = hBarreSup/2
 

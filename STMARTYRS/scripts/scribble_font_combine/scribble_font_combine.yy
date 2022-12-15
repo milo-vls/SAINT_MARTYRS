@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Font Modification",
-    "path": "folders/SCRIPTS/texte/Scribble/Font Modification.yy",
+    "name": "Deprecated",
+    "path": "folders/SCRIPTS/texte/Scribble/(System - don't call these functions)/Deprecated.yy",
   },
 }

@@ -11,7 +11,7 @@ if recapEnCours()
 	//minuteToAdd = lerp(minuteToAdd, diffTempsMinutes, 0.004)
 	global.mapDate = date_inc_minute(initMapDate, minuteToAdd);
 	
-	if timer/duree == 1
+	if timer==duree
 	{
 		global.mapDate = global.currentDate;
 		mapTimeMAJ = true;

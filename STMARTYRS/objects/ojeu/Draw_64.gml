@@ -52,7 +52,7 @@ if explore()
 			var _xPauseOption = lPauseOption*i;
 			var _xtxtPauseOption = _xPauseOption + lPauseOption/2;
 			var _txtcol = "c_white";
-			var _shake = "";
+			var _shake = "[shake]";
 					
 					
 			//---CLIQUER SUR UNE OPTION DU MENU PAUSE (+modif couleur texte)
@@ -67,12 +67,12 @@ if explore()
 					}
 					draw_set_color(c_yellow);
 					_txtcol = "c_yellow";
-					_shake = "[shake]";
+					_shake = "";
 				}
 			}
 					
 			//---DESSIN DU TEXTE DES OPTIONS
-			scribble("["+_txtcol+"][fa_middle][fa_center]"+_shake+pauseOption[i].txt)
+			scribble("["+_txtcol+"][fa_middle][fa_center][ftMenu]"+_shake+pauseOption[i].txt)
 			.draw(_xtxtPauseOption, yPauseMenu + hPauseMenu/4)
 					
 		

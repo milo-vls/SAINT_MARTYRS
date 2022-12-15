@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Font Setup",
-    "path": "folders/SCRIPTS/texte/Scribble/Font Setup.yy",
+    "name": "Fonts",
+    "path": "folders/SCRIPTS/texte/Scribble/Fonts.yy",
   },
 }

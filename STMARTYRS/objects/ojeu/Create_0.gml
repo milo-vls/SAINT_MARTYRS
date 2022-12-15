@@ -13,7 +13,6 @@ lastRoom = noone;
 repertoire = false;
 global.alphaBlackScreen = 0
 global.blackScreen = false;
-scribble_font_add_all();
 
 blur = false;
 radiusBlur = 0;	//valeur qui évolue

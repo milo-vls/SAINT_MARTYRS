@@ -64,6 +64,7 @@ if currentMenu == "explo"
 
 
 draw_set_color(#829460 );
+draw_set_alpha(1)
 draw_rectangle(0,0, wBarreSup, hBarreSup, false)
 
 draw_set_halign(fa_center);
@@ -108,7 +109,7 @@ for(var i = 0 ; i <nbMapOption ; i ++)
 	
 	
 	//---DESSIN
-	scribble("["+_txtcol+"][fa_middle][fa_center]"+_shake+_txtToDraw).draw(_xTxt, _yTxt)
+	scribble("["+_txtcol+"][fa_middle][fa_center][ftMenu]"+_shake+_txtToDraw).draw(_xTxt, _yTxt)
 }
 
 

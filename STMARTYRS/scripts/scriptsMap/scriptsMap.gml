@@ -56,5 +56,5 @@ function returnToGend()
 
 function recapEnCours()
 {
-	return  !omapManager.mapTimeMAJ and !instance_exists(oGoToRoom)
+	return  !omapManager.mapTimeMAJ and !instance_exists(oGoToRoom)// and omapManager.currentMenu != "usi"
 }

@@ -3,7 +3,7 @@
 function init_scribble_typist_events(){
 
 //termine la bulle de dialogue automatiquement sans attendre une action du joueur
-scribble_typewriter_add_event("skip",forcedDialogueSkip);
+scribble_typists_add_event("skip",forcedDialogueSkip);
 
 
 
