@@ -1,23 +1,21 @@
+//ENSEMBLE DE PROCÉDURE AJOUTANT à UNE LISTE UNE STRUCT PRÉVUES 
 
-function addCrime(_tueur, _nomPrenom, _portrait, _date, _x, _y, _type, _resurgence)
 
-
+function addScriptedCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _res, _genProc)
 {
-	var indexCrime = ojeu.nbCrimes;
-	ojeu.crime[indexCrime] = {
-		tueur						: _tueur,
-		_name					: _nomPrenom,
-		port						: _portrait,
-		date						: _date,
-		x								: _x,
-		y								: _y,
-		type						: _type,
-		coutResurgence	: _resurgence
-	}
+	ojeu.crime[ojeu.nbCrimes] = new setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _res, _genProc)
 	ojeu.nbCrimes ++;
 }
-
-
+function addScriptedKiller()
+{
+	ojeu.tueur[ojeu.nbTueurs] = new setKiller(noone, 0);
+	ojeu.nbTueurs ++;
+}
+function addProceduralKiller(_pattern, _diffVariance)
+{
+	ojeu.tueurProc[ojeu.nbTueurProc] = new setKiller(_pattern, _diffVariance);
+	ojeu.nbTueurProc ++;
+}
 
 #macro	RESSOURCE_TYPE_WEB_SPRITE "spr"
 #macro	RESSOURCE_TYPE_WEB_TEXTE "txt"

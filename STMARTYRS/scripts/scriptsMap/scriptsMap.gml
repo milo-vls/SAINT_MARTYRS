@@ -53,8 +53,10 @@ function returnToGend()
 	GoToRoom(ptestexplo2);
 	ojeu.pause = false;
 }
-
 function recapEnCours()
 {
 	return  !omapManager.mapTimeMAJ and !instance_exists(oGoToRoom)// and omapManager.currentMenu != "usi"
 }
+
+
+//OBJET CRIME

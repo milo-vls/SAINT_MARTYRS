@@ -27,6 +27,7 @@ else
 
 
 //----MISE A JOUR ÉLÉMENTS SUR LA CARTE---//
+
 maj_meurtre();
 maj_nb_tueur();
 
@@ -254,24 +255,6 @@ switch (currentMenu)
 		GoToRoom(pordi)
 	}
 }
-
-
-//---MODIFICATION USI---//
-if selectedUsi != noone
-{
-	if selectedUsi.pressed
-	{
-		drawUsiModification = false;
-	}
-}
-else
-{
-	drawUsiModification = false;
-}
-
-
-
-
 
 
 

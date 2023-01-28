@@ -1,15 +1,19 @@
-// Les actifs du script ont changé pour v2.3.0 Voir
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 pour plus d’informations
+	
+	
+	#macro START_OF_NIGHT_HOUR 9
+	#macro END_OF_NIGHT_HOUR  7
+	#macro START_TENSE_NIGHT 1
+	
 function init_time()
 {
-	//sleep
-	heureReveil = 19;
-	heureCouche = 7;
-	//
-	numeroJour							= 3;
+	
+	tenseNight = false
+	heureReveil = 19
+
+	numeroJour								= 3;
 	startingDate							= date_create_datetime(2012, 12, 19, 19, 45, 0)
 	global.currentDate				= date_inc_day(startingDate, -1);							//Mis à jour constamment 
-	global.mapDate					= global.currentDate;												//mis à jour uniquement si présent sur la carte
+	global.mapDate						= global.currentDate;												//mis à jour uniquement si présent sur la carte
 	
 	//// ÉCOULEMENT DU TEMPS
 	minuteInSeconds		= 2;//il faut attendre 2 secondes avant d'ajouter une minute au compteur  

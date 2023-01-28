@@ -52,7 +52,7 @@ if explore()
 			var _xPauseOption = lPauseOption*i;
 			var _xtxtPauseOption = _xPauseOption + lPauseOption/2;
 			var _txtcol = "c_white";
-			var _shake = "[shake]";
+			var _shake = "";
 					
 					
 			//---CLIQUER SUR UNE OPTION DU MENU PAUSE (+modif couleur texte)
@@ -67,7 +67,7 @@ if explore()
 					}
 					draw_set_color(c_yellow);
 					_txtcol = "c_yellow";
-					_shake = "";
+					_shake = "[shake]";
 				}
 			}
 					

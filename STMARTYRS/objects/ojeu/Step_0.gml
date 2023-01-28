@@ -8,16 +8,33 @@ if keyboard_check_pressed(vk_shift) then ajout_resurgence(5);
 
 if player_free()
 {
-	/////-----------SOMEIL FORCÉ
-	if heureCouche <= date_get_hour(global.currentDate) and date_get_hour(global.currentDate) < heureReveil
+	var _heureActuelle = date_get_hour(global.currentDate)
+	
+	if END_OF_NIGHT_HOUR <= _heureActuelle and _heureActuelle < START_OF_NIGHT_HOUR
 	{
 		GoToRoom(pcarte, noone, true);
 	}
-	
+
+	tenseNight = START_TENSE_NIGHT <= _heureActuelle and _heureActuelle <= END_OF_NIGHT_HOUR
+
 }
 
 
 
+show_debug_message(string(array_length(crimeProc) == 0))
+
+if tenseNight and array_length(crimeProc) == 0
+{
+	
+	tueurProc = killerProceduralGeneration(new setNightDiff(4, [PATTERN.RECTILIGNE], 0, 1), START_TENSE_NIGHT, END_OF_NIGHT_HOUR);
+	nbTueurProc = array_length(tueurProc);
+	
+	for (var _tueur = 0; _tueur < nbTueurProc; _tueur ++)
+	{
+		array_push_array(crimeProc, crimeProceduralGeneration(_tueur))
+	}
+	
+}
 
 
 

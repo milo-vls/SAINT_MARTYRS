@@ -1,34 +1,3 @@
-enum KILLER_STATE{ACTIVE,FLED,CAUGHT}
-#macro pastCrime crime[nbCrimes - 1]
-#macro jourSuivant date_inc_day(crime[nbCrimes - 1].date, 1)
-
-enum TYPE_OF_CRIME{ROBBERY, AGGRESSION, MURDER};
-
-
-function init_crimes_tueurs() begin
-
-tueur[0] = {
-dateLim : date_create_datetime(2012, 12, 25, date_get_hour(startingDate), 0, 0),
-}
-	
-
-	
-
-nbTueurActifs = 0;
-nbCrimes = 0;
-	
-addCrime(0, "Géraud Loigaud",portArmandusi, date_inc_hour(date_inc_day(startingDate, 1), -9), 500, 500, TYPE_OF_CRIME.ROBBERY, 10);
-addCrime(0, "Léo Meinard", portErnestusi, jourSuivant, pastCrime.x +100, pastCrime.y +100, TYPE_OF_CRIME.ROBBERY, 20);
-addCrime(0, "Lukas Sennouris",  portDidierusi, jourSuivant, pastCrime.x +100, pastCrime.y +100, TYPE_OF_CRIME.ROBBERY, 30);
-		
-for (var i = 0;i < nbCrimes;i++)
-{
-	crime[i].col				= 0;
-	crime[i].appeared	= false;
-	crime[i].vulnerable	= true;
-}
-	
-	
 #region psc col
 	global.crimeCol[0] = c_white;
 	global.crimeCol[1] = c_red;
@@ -37,36 +6,42 @@ for (var i = 0;i < nbCrimes;i++)
 	global.crimeCol[4] = c_black;
 	global.crimeCol[5] = c_lime;
 	global.crimeCol[6] = c_grey;
-	#endregion
-	
+#endregion
 
-var nbTueurs = array_length(tueur)
-for (var i = 0;i < nbTueurs;i ++)
+
+
+
+enum KILLER_STATE{ACTIVE,FLED,CAUGHT}
+enum TYPE_OF_CRIME{ROBBERY, AGGRESSION, MURDER};
+
+//MACRO SCRIPTAGE CRIME
+#macro pastCrime crime[nbCrimes - 1]
+#macro jourSuivant date_inc_day(crime[nbCrimes - 1].date, 1)
+
+
+
+
+function init_crimes_tueurs() 
 {
-	tueur[i].jourCaught = noone;
-	tueur[i].etat = KILLER_STATE.ACTIVE;
-	tueur[i].startActivityDate = date_create_datetime(3000, 0, 0, 0, 0, 0);
-	tueur[i].endActivityDate = date_create_datetime(1990, 0, 0, 0, 0, 0);
-	for (var j = 0; j< nbCrimes; j++)
-	{
-		if crime[j].tueur == i 
-		{
-			if crime[j].date < tueur[i].startActivityDate
-			{
-				tueur[i].startActivityDate = date_inc_day(crime[j].date, -1);
-			}
-			if crime[j].date > tueur[i].endActivityDate
-			{
-				tueur[i].endActivityDate = crime[j].date;
-			}
-		}
-	}
+nbTueurActifs = 0;
+nbTueurProc = 0;
+nbTueurs = 0;
+nbCrimeProc = 0;
+nbCrimes = 0;
+
+tueurProc	= []		//liste tueurs procéduraux, reset chaque matin
+tueur				= []		//liste tueurs scriptés
+crimeProc	= []		//liste crimes procéduraux, reset chaque matin
+crime				= []		//liste crimes scriptés 
+
+addScriptedKiller()
+
+addScriptedCrime(0, "Nouveaux crimes 0", startingDate, false, 400, 400, 15, false)
+addScriptedCrime(0, "Nouveaux crimes 1", date_inc_day(startingDate, 1), false, 470, 440, 30, false)
+addScriptedCrime(0, "Nouveaux crimes 2", date_inc_day(startingDate, 2), true, 540, 440, 10, false)
+
+
+
+
+
 }
-
-
-
-
-
-
-
-end

@@ -28,7 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"da6d342c-d6fb-497e-bc13-f6822cb3cac3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c91eceb1-2988-4743-9fa6-25f852abb3b4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e3c128f2-8f6d-46ac-b44b-eaac8f7ba2a0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dbd272c6-81e9-4bcc-942d-917612f5ca76",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1e24323a-70f9-4e24-9792-fc8bce427414",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"42b5a702-872a-47b5-822c-bef017f9d78f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dd6605d6-0634-4538-9c8e-5d9684ef9893",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -40,12 +45,17 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 6.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2de8f80a-277f-454b-b239-cda7c2d20376","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da6d342c-d6fb-497e-bc13-f6822cb3cac3","path":"sprites/portHenryVille/portHenryVille.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ba4fea8b-9507-4e6c-8004-25a9fc0f3aba","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c91eceb1-2988-4743-9fa6-25f852abb3b4","path":"sprites/portHenryVille/portHenryVille.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"00194f17-023c-49ad-8840-f0a7dd51706a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e3c128f2-8f6d-46ac-b44b-eaac8f7ba2a0","path":"sprites/portHenryVille/portHenryVille.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a2f3fd63-d8b1-4a03-a698-8f667b05cd02","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dbd272c6-81e9-4bcc-942d-917612f5ca76","path":"sprites/portHenryVille/portHenryVille.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4c72b6ad-5556-4b66-ada2-bdcdc170aae2","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1e24323a-70f9-4e24-9792-fc8bce427414","path":"sprites/portHenryVille/portHenryVille.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9eb07adb-94c7-4dce-8bc1-11beefbf5b40","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"42b5a702-872a-47b5-822c-bef017f9d78f","path":"sprites/portHenryVille/portHenryVille.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6fc625c4-8cc5-48ae-bc5e-0949bd3f1327","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd6605d6-0634-4538-9c8e-5d9684ef9893","path":"sprites/portHenryVille/portHenryVille.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -64,11 +74,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"30e09bc9-11d2-4838-a10b-809b3a511519","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"05c0ca96-8697-4ec9-a80e-fec040533148","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Henry (Incel)",
-    "path": "folders/SPRITES/CHARACTERS/VILLE/Henry (Incel).yy",
+    "name": "Henry",
+    "path": "folders/SPRITES/CHARACTERS/VILLE/Henry.yy",
   },
 }

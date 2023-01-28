@@ -11,7 +11,7 @@ ojeu.usi[usiID].y = y;
 #endregion
 
 
-#region cliquer sur l'usi
+#region clique gauche
 if omapManager.currentMenu==noone and position_meeting(mouse_x, mouse_y, self) and global.cPrLeft
 {
 	omapManager.selectedUsi = self;
@@ -31,4 +31,23 @@ if pressed
 	y = mouse_y;
 	
 }
+#endregion
+
+
+#region clique droit
+if omapManager.currentMenu==noone and position_meeting(mouse_x, mouse_y, self) and global.cPrRight
+{
+	startRotX = mouse_x;
+	pressedRight = true
+}
+if global.cRight and pressedRight
+{
+	ojeu.usi[usiID].rot = mouse_x - startRotX
+}
+else
+{
+	pressedRight = false
+	startRotX = -4
+}
+
 #endregion

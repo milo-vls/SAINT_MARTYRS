@@ -1,4 +1,8 @@
 draw_set_alpha(1);
+
+//Modification USI
+#region ancien modif' usi
+/*
 if currentMenu == noone
 {
 	if drawUsiModification
@@ -8,6 +12,7 @@ if currentMenu == noone
 		draw_sprite(sprtrash, 0, _xbutton, selectedUsi.y);
 		draw_sprite(sprrotateUsi, 0, _xbutton, selectedUsi.y+sprite_get_height(sprtrash)+5);
 		//SUPPRIMER L'USI
+		/*
 		if point_in_circle(mouse_x, mouse_y, _xbutton+sprite_get_width(sprtrash)/2, selectedUsi.y+sprite_get_height(sprtrash)/2, sprite_get_width(sprtrash)/2) and global.cPrLeft
 		{
 			drawUsiModification = false;
@@ -25,10 +30,33 @@ if currentMenu == noone
 		{
 			rotateHeld = false;
 		}
+		
 		if rotateHeld
 		{
 			ojeu.usi[selectedUsi.usiID].rot ++;
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		if global.cPrLeft and !position_meeting(mouse_x, mouse_y, selectedUsi)
 		{
@@ -46,8 +74,8 @@ if currentMenu == noone
 		}
 	}
 }
-
-
+*/
+#endregion
 
 #region menu explo
 
@@ -65,8 +93,8 @@ if currentMenu == "explo"
 
 draw_set_color(#829460 );
 draw_set_alpha(1)
-draw_rectangle(0,0, wBarreSup, hBarreSup, false)
-
+//draw_rectangle(0,0, wBarreSup, hBarreSup, false)
+draw_sprite_stretched_ext(sprBarreSup, 0, 0, 0, wBarreSup, hBarreSup, #829460, 1)
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_font(ftMenu);
