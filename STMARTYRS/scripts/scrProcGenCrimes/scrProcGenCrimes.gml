@@ -21,7 +21,7 @@ for (var _demiMinute = 0; _demiMinute <_nbDemiMinutes; _demiMinute ++)
 		{
 			_scoreRestantPourDemiMinute -= _pattern.cout
 			array_push(_listePatterns, _pattern);
-			var _checkDate = date_inc_second(global.currentDate, irandom(29)+_demiMinute*30)
+			var _checkDate = date_inc_minute(global.currentDate, irandom(29)+_demiMinute*30)
 			array_push(_listeKillersToReturn, new setKiller(_pattern, random(10), _checkDate))
 		}
 	}

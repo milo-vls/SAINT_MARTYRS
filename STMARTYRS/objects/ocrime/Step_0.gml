@@ -1,6 +1,6 @@
 
 var _crime = crimeType[crimeID]
-var _tueur = crimeType[_crime.tueur]
+var _tueur = tueurType[_crime.tueur]
 //------CAPTURE-------//
 if !checkCapture
 {

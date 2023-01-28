@@ -4,3 +4,4 @@ penser à réduire les indentations, dry etc etc
 ~tracer des fils entre les crimes (partir des instances ocrime et pas de la liste crime)
 ~control+shift+F moi cette merde et constate enculé  global.month[1] = "JANVIER";
 ~la fonction maj_meurtre oh pétard
+~retirer les variables "_check" servant au debug 

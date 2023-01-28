@@ -12,7 +12,7 @@ patterns[PATTERN.RECTILIGNE] = new setPattern(
 																								function(_firstCrime, _idKiller)	{
 	
 																									var _listeCrimesToReturn = [];
-																									var _delaySeconde             = irandom_range(3, 10)
+																									var _delayMinute	            = irandom_range(3, 10)
 																									var _coeffDirX = irandom_range(-100, 100);
 																									var _coeffDirY = irandom_range(-100, 100);
 	
@@ -24,7 +24,7 @@ patterns[PATTERN.RECTILIGNE] = new setPattern(
 																									{
 																										_precedentPointX += _coeffDirX;
 																										_precedentPointY += _coeffDirY;
-																										var _date = date_inc_second(_firstCrime.date, _delaySeconde*_nbCrimeSupp)
+																										var _date = date_inc_minute(_firstCrime.date, _delayMinute*_nbCrimeSupp)
 																										array_push( _listeCrimesToReturn, new setCrime(_idKiller, randomNomPrenom(),  _date, false, _precedentPointX, _precedentPointY, 30, true));
 																										
 																										_nbCrimeSupp ++;
