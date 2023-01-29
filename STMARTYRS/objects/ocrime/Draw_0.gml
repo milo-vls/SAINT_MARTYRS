@@ -30,6 +30,7 @@ if attachable != noone
 	yfil = crimeType[attachable].y+sprite_width/2;
 	
 	draw_set_alpha(1);
+	if global.crimeCol[crimeType[attachable].col] != c_white
 	draw_line_width_color(x+sprite_width/2, y+sprite_width/2, xfil, yfil, wfil,global.crimeCol[crimeType[attachable].col], global.crimeCol[crimeType[attachable].col]);
 }
 

@@ -16,7 +16,7 @@ function init_time()
 	global.mapDate						= global.currentDate;												//mis à jour uniquement si présent sur la carte
 	
 	//// ÉCOULEMENT DU TEMPS
-	minuteInSeconds		= 2;//il faut attendre 2 secondes avant d'ajouter une minute au compteur  
+	minuteInSeconds		=1;//il faut attendre 2 secondes avant d'ajouter une minute au compteur  
 	var _plusUneMinute	= function(_minutes)
 {
 	if !explore()

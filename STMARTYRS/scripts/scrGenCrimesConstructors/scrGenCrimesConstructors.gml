@@ -51,7 +51,7 @@ function setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _res, _gen
  x = _x;
  y = _y;
  col = 0;
- vulnerable = 0;
+ vulnerable = true;
  spontane = _genProc;
  last = _lastOfKiller;
  appeared = false;

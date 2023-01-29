@@ -4,7 +4,8 @@ var _tueur = tueurType[_crime.tueur]
 //------CAPTURE-------//
 if !checkCapture
 {
-	if place_meeting(x, y, ousi) and _crime.date > date_inc_day(global.currentDate, -1) and _crime.vulnerable
+	var _checkDateComp = _crime.date > date_inc_day(global.currentDate, -1)
+	if place_meeting(x, y, ousi) and _checkDateComp  and _crime.vulnerable
 	{
 		tueurType[_crime.tueur].etat = KILLER_STATE.CAUGHT;
 		tueurType[_crime.tueur].jourCaught = global.currentDate;
@@ -24,6 +25,7 @@ if _crime.last
 //------DÉSACTIVATION----------//
 if _tueur.etat == KILLER_STATE.CAUGHT or _tueur.etat == KILLER_STATE.FLED
 {
+	crimeType[crimeID].col = c_white
 	instance_destroy();
 }
 

@@ -34,13 +34,13 @@ if !position_meeting(mouse_x, mouse_y, self)
 		}
 		else
 		{
-			if ojeu.crime[crimeID].col == array_length(global.crimeCol)-1
+			if crimeType[crimeID].col == array_length(global.crimeCol)-1
 			{
-				ojeu.crime[crimeID].col = 0;
+				crimeType[crimeID].col = 0;
 			}
 			else
 			{
-				ojeu.crime[crimeID].col ++;
+				crimeType[crimeID].col ++;
 			}
 		}
 
