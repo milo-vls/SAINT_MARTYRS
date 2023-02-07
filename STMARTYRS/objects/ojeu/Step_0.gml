@@ -21,7 +21,6 @@ if player_free()
 
 
 
-show_debug_message(string(array_length(crimeProc) == 0))
 
 if tenseNight and array_length(crimeProc) == 0
 {

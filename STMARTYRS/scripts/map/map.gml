@@ -125,6 +125,8 @@ function load_psc()
 			with instance_create_layer(ojeu.crime[i].x, ojeu.crime[i].y, "crime", ocrime)
 			{
 				crimeID = i;
+				crimeType = ojeu.crime;
+				tueurType = ojeu.tueur;
 			}
 		}
 	}

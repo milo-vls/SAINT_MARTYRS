@@ -39,7 +39,7 @@ patterns[PATTERN.RECTILIGNE] = new setPattern(
 																							);
 
 patterns[PATTERN.ZONE_CARRE] = new setPattern(
-																											2,
+																											1,
 																											false,
 																											function()	{
 																													return [irandom_range(300, 1620), irandom_range(250, 830)]

@@ -15,6 +15,10 @@ if !deplacementFait
 		playsound(sndToPlay);
 		if dayNext
 		{
+			ojeu.crimeProc = [];
+			ojeu.nbCrimeProc = 0;
+			ojeu.tueurProc = 0;
+			ojeu.nbTueurProc = 0;
 			showDate = true; 
 			global.currentDate = date_create_datetime(date_get_year(global.currentDate), date_get_month(global.currentDate), date_get_day(global.currentDate), ojeu.heureReveil, 0, 0);
 		}

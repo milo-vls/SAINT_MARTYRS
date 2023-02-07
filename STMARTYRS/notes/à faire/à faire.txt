@@ -11,11 +11,9 @@ FAIT	A CORRIGER				BUG: le jeu s'interromp (comme game_end ou alt f4) lorsqu'on 
 FAIT	A CORRIGER				GUI sur des écran d'autre ratios
 FAIT	A CORRIGER				Initialisation des crimes (ajout des type de crime)
 			CONCEVOIR				sauvegarde
-			CODER						MENU carte
+FAIT	CODER						MENU carte
 FAIT	CODER						Retirer l'effet rebond des dialogues.
 FAIT	CODER						EFFET BRUT APPARITION BULLE DE DIALOGUES
 FAIT	CODER						finir résurgence
-			DESSINER					Cadran heure
-
 
 

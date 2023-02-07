@@ -20,6 +20,6 @@ nbUsiToDie = 0
 
 function reach_max_res()
 {
-ojeu.nbUsiToDie ++
+//ojeu.nbUsiToDie ++
 ojeu.resurgence -= 70;
 }
