@@ -29,10 +29,17 @@ if global.cRlLeft
 	pressed = false;
 	omapManager.selectedUsi = noone;
 }
+
+tarXScale = DROP_SCALE;
+tarYScale = DROP_SCALE;
+
 if pressed and omapManager.selectedUsi == self
 {
 	x = mouse_x - diffSourisUsiX;
 	y = mouse_y - diffSourisUsiY;
+	
+	tarXScale = DRAG_SCALE;
+	tarYScale = DRAG_SCALE;
 	
 }
 #endregion
