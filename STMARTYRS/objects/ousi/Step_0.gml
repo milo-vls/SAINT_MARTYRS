@@ -16,6 +16,9 @@ if omapManager.currentMenu==noone and position_meeting(mouse_x, mouse_y, self) a
 {
 	omapManager.selectedUsi = self;
 	pressed = true;
+	diffSourisUsiX = mouse_x - x;
+	diffSourisUsiY = mouse_y - y;
+	
 }
 if global.cRlLeft
 {
@@ -24,11 +27,12 @@ if global.cRlLeft
 		omapManager.drawUsiModification = true;
 	}
 	pressed = false;
+	omapManager.selectedUsi = noone;
 }
-if pressed
+if pressed and omapManager.selectedUsi == self
 {
-	x = mouse_x;
-	y = mouse_y;
+	x = mouse_x - diffSourisUsiX;
+	y = mouse_y - diffSourisUsiY;
 	
 }
 #endregion
