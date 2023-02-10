@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "STMARTYRS",
   "resources": [
+    {"id":{"name":"oOmbreUsi","path":"objects/oOmbreUsi/oOmbreUsi.yy",},"order":2,},
     {"id":{"name":"scribble_font_get_glyph_ranges","path":"scripts/scribble_font_get_glyph_ranges/scribble_font_get_glyph_ranges.yy",},"order":10,},
     {"id":{"name":"portPSC","path":"sprites/portPSC/portPSC.yy",},"order":0,},
     {"id":{"name":"rose_to_white_hallway","path":"sprites/rose_to_white_hallway/rose_to_white_hallway.yy",},"order":48,},

@@ -18,16 +18,21 @@ if omapManager.currentMenu==noone and position_meeting(mouse_x, mouse_y, self) a
 	pressed = true;
 	diffSourisUsiX = mouse_x - x;
 	diffSourisUsiY = mouse_y - y;
-	
+	instance_create_layer(x, y, "ombre_usi", oOmbreUsi, {sprite_index : ojeu.usi[usiID].hbox, image_blend : c_black, image_alpha : 0.8});
+	depth = layer_get_depth("usi_select");
 }
 if global.cRlLeft
 {
-	if pressed 
+	if pressed and omapManager.selectedUsi == self
 	{
 		omapManager.drawUsiModification = true;
+		x = oOmbreUsi.x;
+		y = oOmbreUsi.y;
 	}
 	pressed = false;
 	omapManager.selectedUsi = noone;
+	instance_destroy(oOmbreUsi);
+	depth = layer_get_depth("usi");
 }
 
 tarXScale = DROP_SCALE;
@@ -38,8 +43,15 @@ if pressed and omapManager.selectedUsi == self
 	x = mouse_x - diffSourisUsiX;
 	y = mouse_y - diffSourisUsiY;
 	
+	oOmbreUsi.x = x - DECALAGE_OMBRE;
+	oOmbreUsi.y = y - DECALAGE_OMBRE;
+	
+	oOmbreUsi.image_angle = image_angle;
+	
 	tarXScale = DRAG_SCALE;
 	tarYScale = DRAG_SCALE;
+	
+	
 	
 }
 #endregion
