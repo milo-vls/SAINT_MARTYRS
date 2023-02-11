@@ -60,9 +60,9 @@ if explore()
 			{		
 				if point_in_rectangle(mouse_x, mouse_y, _xPauseOption, yPauseMenu, _xPauseOption + lPauseOption, hgui )
 				{
-					if global.cPrLeft
+					if global.cPrLeft and pauseOption[i].command != noone
 					{
-						if pauseOption[i].command != noone
+						playsound(snUi, 1);
 						pauseOption[i].command();
 					}
 					draw_set_color(c_yellow);
