@@ -34,7 +34,6 @@ if !ojeu.tenseNight
 	{
 		if !ojeu.crime[i].appeared and ojeu.tueur[ojeu.crime[i].tueur].etat == KILLER_STATE.ACTIVE and ojeu.crime[i].date < global.mapDate
 		{
-			ajout_resurgence(ojeu.crime[i].coutResurgence)
 			ojeu.crime[i].appeared = true;
 			with instance_create_layer(ojeu.crime[i].x, ojeu.crime[i].y, "crime", ocrime)
 			{
@@ -54,7 +53,6 @@ else
 	{
 		if _listeCrimes[_crime].date < global.mapDate and !_listeCrimes[_crime].appeared and _listeTueurs[_listeCrimes[_crime].tueur].etat == KILLER_STATE.ACTIVE
 		{
-			ajout_resurgence(_listeCrimes[_crime].coutResurgence);
 			ojeu.crimeProc[_crime].appeared = true;
 			with instance_create_layer(_listeCrimes[_crime].x, _listeCrimes[_crime].y, "crime", ocrime)
 			{
@@ -68,12 +66,6 @@ else
 }
 
 
-//-----------	ajout résurgence									-----------//
-function ajout_resurgence(_res)
-{
-	ojeu.resurgence += _res;
-	ojeu.resurgence = clamp(ojeu.resurgence, 0, ojeu.resurgenceMax);
-}
 
 
 //-----------	chargement icônes habitants			-----------//

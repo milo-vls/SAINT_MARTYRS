@@ -36,4 +36,3 @@ init_mini_game();
 init_plage_texture();
 init_personnages();
 init_scribble_typist_events();
-init_resurgence();

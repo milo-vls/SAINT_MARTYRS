@@ -10,7 +10,7 @@ patterns[PATTERN.RECTILIGNE] = new setPattern(
 																								function()	{
 																													return [irandom_range(300, 1620), irandom_range(250, 830)]
 																								},
-																								function(_firstCrime, _idKiller)	{
+																								function(_firstCrime, _idKiller, _colour=c_white)	{
 	
 																									var _listeCrimesToReturn = [];
 																									var _delayMinute	            = irandom_range(5, 10)
@@ -26,7 +26,7 @@ patterns[PATTERN.RECTILIGNE] = new setPattern(
 																										_precedentPointX += _coeffDirX;
 																										_precedentPointY += _coeffDirY;
 																										var _date = date_inc_minute(_firstCrime.date, _delayMinute*_nbCrimeSupp)
-																										array_push( _listeCrimesToReturn, new setCrime(_idKiller, randomNomPrenom(),  _date, false, _precedentPointX, _precedentPointY, 30, true));
+																										array_push( _listeCrimesToReturn, new setCrime(_idKiller, randomNomPrenom(),  _date, false, _precedentPointX, _precedentPointY, true, _colour));
 																										
 																										_nbCrimeSupp ++;
 																									}
@@ -44,7 +44,7 @@ patterns[PATTERN.ZONE_CARRE] = new setPattern(
 																											function()	{
 																													return [irandom_range(300, 1620), irandom_range(250, 830)]
 																											},
-																											function(_premierCrime, _killerID) {
+																											function(_premierCrime, _killerID, _colour) {
 																													var _listeCrimesToReturn = [];
 																													var _delayMinute = irandom_range(5, 7);
 																													var _coteCarre = irandom_range(75, 150);
@@ -61,14 +61,14 @@ patterns[PATTERN.ZONE_CARRE] = new setPattern(
 																													repeat(25)
 																													{
 																														
-																														array_push(_listeCrimesToReturn, new setCrime(_killerID, randomNomPrenom(), date_inc_minute(_premierCrime.date, _delayMinute*_nbCrimeSupp), false, irandom_range(min(_x1Carre, _x2Carre), max(_x1Carre, _x2Carre)), irandom_range(min(_y1Carre, _y2Carre), max(_y1Carre, _y2Carre)), 10, true));
+																														array_push(_listeCrimesToReturn, new setCrime(_killerID, randomNomPrenom(), date_inc_minute(_premierCrime.date, _delayMinute*_nbCrimeSupp), false, irandom_range(min(_x1Carre, _x2Carre), max(_x1Carre, _x2Carre)), irandom_range(min(_y1Carre, _y2Carre), max(_y1Carre, _y2Carre)), true, _colour));
 																														_nbCrimeSupp ++;
 																													}
 																													_listeCrimesToReturn[_nbCrimeSupp-2].last = true;
 																													return _listeCrimesToReturn;
 																												},
 																												10
-																												);
+);
 																												
 																												
 																												

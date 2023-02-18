@@ -20,13 +20,12 @@ function setNightDiff(_score,_pool, _diffEv, _diffVariance) constructor
 /// @param premier_point				méthode déterminant le premier point du pattern, renvoie un couple (x, y)
 /// @param variance							méthode déterminant les potentiels 
 /// @param autres_points				méthode pour placer les autres points selon le premier points et les variances.
-function setPattern(_score, _unique, _firstPoint, _nextPoints, _coutResurgence) constructor
+function setPattern(_score, _unique, _firstPoint, _nextPoints) constructor
 {
 	cout = _score;
 	unParNuit = _unique;
 	firstCrimePos = _firstPoint;
 	nextCrimesPos = _nextPoints;
-	coutResurgence = _coutResurgence
 }
 
 
@@ -43,12 +42,11 @@ function setPattern(_score, _unique, _firstPoint, _nextPoints, _coutResurgence) 
  
  
 ///VARIABLE CRIME/POINT CRIME
-function setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _res, _genProc, _couleur=c_white, _first = false) constructor 
+function setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _genProc, _couleur=c_white, _first = false) constructor 
 {
  tueur = _idKiller;
  _name = _nomPrenom;
  date = _date;
- coutResurgence = _res;
  x = _x;
  y = _y;
  col = _couleur;
@@ -62,17 +60,5 @@ function setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _res, _gen
 
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
  

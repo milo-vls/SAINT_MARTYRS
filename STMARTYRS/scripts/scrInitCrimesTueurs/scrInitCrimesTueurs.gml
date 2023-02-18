@@ -34,11 +34,11 @@ tueur				= []		//liste tueurs scriptés
 crimeProc	= []		//liste crimes procéduraux, reset chaque matin
 crime				= []		//liste crimes scriptés 
 
-addScriptedKiller()
+addScriptedKiller(startingDate);
 
-addScriptedCrime(0, "Nouveaux crimes 0", startingDate, false, 400, 400, 15, false)
-addScriptedCrime(0, "Nouveaux crimes 1", date_inc_day(startingDate, 1), false, 470, 440, 30, false)
-addScriptedCrime(0, "Nouveaux crimes 2", date_inc_day(startingDate, 2), true, 540, 440, 10, false)
+addScriptedCrime(0, "Nouveaux crimes 0", startingDate, false, 400, 400, false)
+addScriptedCrime(0, "Nouveaux crimes 1", date_inc_day(startingDate, 1), false, 470, 440, false)
+addScriptedCrime(0, "Nouveaux crimes 2", date_inc_day(startingDate, 2), true, 540, 440, false)
 
 
 

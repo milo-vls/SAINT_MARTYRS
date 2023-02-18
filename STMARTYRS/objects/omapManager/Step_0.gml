@@ -1,7 +1,4 @@
-if ojeu.resurgence == ojeu.resurgenceMax
-{
-	reach_max_res();
-}
+
 //----MISE A JOUR DATE CARTE-----------------------//
 if recapEnCours()
 {
@@ -145,7 +142,7 @@ switch (currentMenu)
 				}
 				if ojeu.usi[i].pressed and global.cRlLeft
 				{
-					if ojeu.usi[i].etat != USI_STATE.DEAD and ojeu.usi[i].etat !=USI_STATE.PATROL and ojeu.nbUsiToDie == 0
+					if ojeu.usi[i].etat != USI_STATE.DEAD and ojeu.usi[i].etat !=USI_STATE.PATROL 
 					{
 						ojeu.usi[i].pressed = false;
 						ojeu.usi[i].etat = USI_STATE.PATROL;
@@ -168,20 +165,6 @@ switch (currentMenu)
 			time_source_resume(ojeu.minuterie);
 		}
 		
-		if ojeu.nbUsiToDie != 0
-		{
-			var _usiKilled = false;
-			while !_usiKilled
-			{
-				var _random = irandom(5)
-				if ojeu.usi[_random].etat != USI_STATE.DEAD
-				{
-					_usiKilled = true;
-					ojeu.usi[_random].etat = USI_STATE.DEAD
-				}
-			}
-			ojeu.nbUsiToDie --;
-		}
 		
 	}break;
 	case "psc":{

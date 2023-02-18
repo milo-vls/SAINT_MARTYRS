@@ -142,10 +142,6 @@ for(var i = 0 ; i <nbMapOption ; i ++)
 
 
 
-var _x = display_get_gui_width();
-draw_set_alpha(1);
-draw_healthbar(_x, 0, _x-50, display_get_gui_height(), (ojeu.resurgence/ojeu.resurgenceMax)*100, c_white, c_white, c_red, 2, false, false);
-
 
 #region USI
 

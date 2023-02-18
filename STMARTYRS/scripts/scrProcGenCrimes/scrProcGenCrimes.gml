@@ -43,7 +43,7 @@ var _killer = ojeu.tueurProc[_idKiller];
 var _pattern = _killer.pattern;
 
 var _firstCrimePos = _pattern.firstCrimePos();
-var _firstCrime        = new setCrime(_idKiller, randomNomPrenom(), _killer.firstCrimeDate, false, _firstCrimePos[0], _firstCrimePos[1], 0, true, _col, true)
+var _firstCrime        = new setCrime(_idKiller, randomNomPrenom(), _killer.firstCrimeDate, false, _firstCrimePos[0], _firstCrimePos[1], true, _col, true)
 array_push(_listeCrimesToReturn,  _firstCrime);
 
 
