@@ -32,6 +32,12 @@ if attachable != noone
 clickToChangeMenu("psc");
 
 //-------DESSIN------//
-draw_self();
+if (crimeType == ojeu.crimeProc) and (_crime.first) 
+{
+	sprite_index = sprFirstCrime;
+	image_xscale = 2*(sprite_get_width(sprCrime)/sprite_get_width(sprFirstCrime));
+	image_yscale =  2*(sprite_get_height(sprCrime)/sprite_get_height(sprFirstCrime));
+}
 image_blend = _crime.col;
 
+draw_self();

@@ -121,6 +121,7 @@
     {"id":{"name":"sprIconeTel","path":"sprites/sprIconeTel/sprIconeTel.yy",},"order":12,},
     {"id":{"name":"P_HALLWAY_TO_CAR","path":"rooms/P_HALLWAY_TO_CAR/P_HALLWAY_TO_CAR.yy",},"order":6,},
     {"id":{"name":"string_height_scribble_ext","path":"scripts/string_height_scribble_ext/string_height_scribble_ext.yy",},"order":3,},
+    {"id":{"name":"sprFirstCrime","path":"sprites/sprFirstCrime/sprFirstCrime.yy",},"order":5,},
     {"id":{"name":"flower_pots_stairs","path":"sprites/flower_pots_stairs/flower_pots_stairs.yy",},"order":25,},
     {"id":{"name":"oTouche2","path":"objects/oTouche2/oTouche2.yy",},"order":10,},
     {"id":{"name":"long_street","path":"sprites/long_street/long_street.yy",},"order":38,},

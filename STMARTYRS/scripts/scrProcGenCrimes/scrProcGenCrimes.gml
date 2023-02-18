@@ -32,9 +32,10 @@ return _listeKillersToReturn
 }
 
 
-
 function crimeProceduralGeneration(_idKiller)
 {
+	
+var _col = make_colour_hsv(random(255), 40, 255);
 	
 var _listeCrimesToReturn = []
 
@@ -42,7 +43,7 @@ var _killer = ojeu.tueurProc[_idKiller];
 var _pattern = _killer.pattern;
 
 var _firstCrimePos = _pattern.firstCrimePos();
-var _firstCrime        = new setCrime(_idKiller, randomNomPrenom(), _killer.firstCrimeDate, false, _firstCrimePos[0], _firstCrimePos[1], 0, true)
+var _firstCrime        = new setCrime(_idKiller, randomNomPrenom(), _killer.firstCrimeDate, false, _firstCrimePos[0], _firstCrimePos[1], 0, true, _col, true)
 array_push(_listeCrimesToReturn,  _firstCrime);
 
 
@@ -53,7 +54,7 @@ array_push_array(_listeCrimesToReturn, _pattern.nextCrimesPos(_firstCrime, _idKi
 return _listeCrimesToReturn
 
 }
-
+ 
 
 
 
