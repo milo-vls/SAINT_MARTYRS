@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Génération procédurale",
-    "path": "folders/Génération procédurale.yy",
+    "path": "folders/SCRIPTS/Génération procédurale.yy",
   },
 }

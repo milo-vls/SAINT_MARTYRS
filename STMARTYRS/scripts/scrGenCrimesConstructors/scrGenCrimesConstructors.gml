@@ -38,11 +38,12 @@ function setPattern(_score, _unique, _firstPoint, _nextPoints, _coutResurgence) 
 	 firstCrimeDate = _firstCrimeDate
 	 jourCaught = noone;
 	 etat = KILLER_STATE.ACTIVE;
+	 color = c_white;
  } 
  
  
 ///VARIABLE CRIME/POINT CRIME
-function setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _res, _genProc) constructor 
+function setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _res, _genProc, _couleur=c_white, _first = false) constructor 
 {
  tueur = _idKiller;
  _name = _nomPrenom;
@@ -50,9 +51,10 @@ function setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _res, _gen
  coutResurgence = _res;
  x = _x;
  y = _y;
- col = 0;
+ col = _couleur;
  vulnerable = true;
  spontane = _genProc;
+ first = _first;
  last = _lastOfKiller;
  appeared = false;
  }

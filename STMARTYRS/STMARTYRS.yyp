@@ -568,7 +568,6 @@
     {"roomId":{"name":"P_WHITE_ORANGE_DEADEND","path":"rooms/P_WHITE_ORANGE_DEADEND/P_WHITE_ORANGE_DEADEND.yy",},},
   ],
   "Folders": [
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Génération procédurale","folderPath":"folders/Génération procédurale.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NOTES","folderPath":"folders/NOTES.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"OBJECTS","folderPath":"folders/OBJECTS.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"exclu pièce","folderPath":"folders/OBJECTS/exclu pièce.yy","order":3,},
@@ -597,6 +596,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ajout Struct Array","folderPath":"folders/SCRIPTS/ajout Struct Array.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"carte","folderPath":"folders/SCRIPTS/carte.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"données","folderPath":"folders/SCRIPTS/données.yy","order":5,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Génération procédurale","folderPath":"folders/SCRIPTS/Génération procédurale.yy","order":7,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"maths et conditions","folderPath":"folders/SCRIPTS/maths et conditions.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"méta","folderPath":"folders/SCRIPTS/méta.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pieces","folderPath":"folders/SCRIPTS/pieces.yy","order":1,},

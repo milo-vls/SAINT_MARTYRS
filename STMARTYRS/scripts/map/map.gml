@@ -1,3 +1,4 @@
+
 //-----------	compte tueurs actifs						-----------//
 function maj_nb_tueur()
 {

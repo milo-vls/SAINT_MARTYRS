@@ -59,4 +59,50 @@ function recapEnCours()
 }
 
 
-//OBJET CRIME
+
+
+function indexCrimeAttachable(_typeDeCrime, _color, _date, _tueur)
+{
+	
+	var _ARenvoyer = noone;
+	
+	if _typeDeCrime ==  ojeu.crime
+	{
+		for (var i = 0; i < array_length(_typeDeCrime );i ++)
+		{
+			if _typeDeCrime[i].x != noone and _typeDeCrime[i].y != noone and _color == _typeDeCrime[i].col  and  _typeDeCrime[i].date < _date
+			{
+				if _ARenvoyer == noone
+				{
+						_ARenvoyer = i;
+				}
+				else if _typeDeCrime[i].date > _typeDeCrime[_ARenvoyer].date
+				{
+						_ARenvoyer = i;
+				}
+			}
+		}
+		
+		return _ARenvoyer;
+		
+	}
+	
+	//pour les crimes procéde*uraux, lier selon le tueur et non la couleur
+	for (var i = 0; i < array_length(_typeDeCrime );i ++)
+		{
+			if _typeDeCrime[i].x != noone and _typeDeCrime[i].y != noone and _tueur == _typeDeCrime[i].tueur  and  _typeDeCrime[i].date < _date
+			{
+				if _ARenvoyer == noone
+				{
+						_ARenvoyer = i;
+				}
+				else if _typeDeCrime[i].date > _typeDeCrime[_ARenvoyer].date
+				{
+						_ARenvoyer = i;
+				}
+			}
+		}
+		
+		return _ARenvoyer;
+		
+}
