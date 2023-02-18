@@ -12,18 +12,25 @@ ojeu.usi[usiID].y = y;
 
 
 #region clique gauche
-if omapManager.currentMenu==noone and position_meeting(mouse_x, mouse_y, self) and global.cPrLeft
+
+if pressed and omapManager.selectedUsi == self and !instance_exists(oOmbreUsi)
 {
-	omapManager.selectedUsi = self;
-	pressed = true;
 	diffSourisUsiX = mouse_x - x;
 	diffSourisUsiY = mouse_y - y;
 	instance_create_layer(x, y, "ombre_usi", oOmbreUsi, {sprite_index : ojeu.usi[usiID].hbox, image_blend : c_black, image_alpha : 0.8});
 	depth = layer_get_depth("usi_select");
 }
+
+
+
+if omapManager.currentMenu==noone and position_meeting(mouse_x, mouse_y, self) and global.cPrLeft
+{
+	omapManager.selectedUsi = self;
+	pressed = true;
+}
 if global.cRlLeft
 {
-	if pressed and omapManager.selectedUsi == self
+	if pressed and omapManager.selectedUsi == self and instance_exists(oOmbreUsi)
 	{
 		omapManager.drawUsiModification = true;
 		x = oOmbreUsi.x;
@@ -38,7 +45,7 @@ if global.cRlLeft
 tarXScale = DROP_SCALE;
 tarYScale = DROP_SCALE;
 
-if pressed and omapManager.selectedUsi == self
+if pressed and omapManager.selectedUsi == self and instance_exists(oOmbreUsi)
 {
 	x = mouse_x - diffSourisUsiX;
 	y = mouse_y - diffSourisUsiY;

@@ -1,26 +1,24 @@
 
 //-----------	compte tueurs actifs						-----------//
-function maj_nb_tueur()
+function maj_nb_tueur_proc()
 {
-var _listeIDTueur = []
-var _toReturn = 0
-for (var i = 0; i < instance_number(ocrime); i ++)
-{
-	var _instanceOcrime = instance_find(ocrime, i)
-	if _instanceOcrime.crimeType == ojeu.crime
+	
+	
+	var _toReturn = 0;
+	
+	
+	for (var i = 0; i < instance_number(ocrime); i ++)
 	{
-		var _idTueur = ojeu.crime[_instanceOcrime.crimeID].tueur
-		if !estDansListe(_idTueur, _listeIDTueur)
+		if ojeu.crimeProc[instance_find(ocrime, i).crimeID].first == true
 		{
-			array_push(_listeIDTueur, _idTueur)
 			_toReturn ++;
 		}
 	}
 	
-}
-
-
-ojeu.nbTueurActifs =  _toReturn;
+	
+	return _toReturn;
+	
+	
 }
 
 

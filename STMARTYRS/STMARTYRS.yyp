@@ -151,7 +151,7 @@
     {"id":{"name":"oexplo","path":"objects/oexplo/oexplo.yy",},"order":4,},
     {"id":{"name":"station_balcony","path":"sprites/station_balcony/station_balcony.yy",},"order":57,},
     {"id":{"name":"oGoToRoom","path":"objects/oGoToRoom/oGoToRoom.yy",},"order":2,},
-    {"id":{"name":"scriptsMap","path":"scripts/scriptsMap/scriptsMap.yy",},"order":0,},
+    {"id":{"name":"scriptsMap","path":"scripts/scriptsMap/scriptsMap.yy",},"order":2,},
     {"id":{"name":"P_BLUE_PORTAL","path":"rooms/P_BLUE_PORTAL/P_BLUE_PORTAL.yy",},"order":38,},
     {"id":{"name":"omapMenuParent","path":"objects/omapMenuParent/omapMenuParent.yy",},"order":1,},
     {"id":{"name":"sprCadreUsiPlaced","path":"sprites/sprCadreUsiPlaced/sprCadreUsiPlaced.yy",},"order":2,},

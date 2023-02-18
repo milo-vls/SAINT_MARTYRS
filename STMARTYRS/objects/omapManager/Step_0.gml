@@ -26,7 +26,7 @@ else
 //----MISE A JOUR ÉLÉMENTS SUR LA CARTE---//
 
 maj_meurtre();
-maj_nb_tueur();
+ojeu.nbTueurProcActifs = maj_nb_tueur_proc();
 
 
 //-------MENU------//

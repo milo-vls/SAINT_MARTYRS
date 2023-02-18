@@ -155,7 +155,7 @@ wBarreSup = display_get_gui_width();
 mapOption[0] = {
 	txt : function()
 			{
-					return string(ojeu.nbTueurActifs)
+					return string(ojeu.nbTueurProcActifs)
 			},
 	fonction : function(){ startObs("nombre de tueur")},
 	pressed : false,

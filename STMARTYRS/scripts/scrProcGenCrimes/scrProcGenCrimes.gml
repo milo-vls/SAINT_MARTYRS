@@ -47,7 +47,7 @@ var _firstCrime        = new setCrime(_idKiller, randomNomPrenom(), _killer.firs
 array_push(_listeCrimesToReturn,  _firstCrime);
 
 
-array_push_array(_listeCrimesToReturn, _pattern.nextCrimesPos(_firstCrime, _idKiller));
+array_push_array(_listeCrimesToReturn, _pattern.nextCrimesPos(_firstCrime, _idKiller, _col));
 
 
 
@@ -62,11 +62,6 @@ function randomNomPrenom()
 {
 	return "ranNom ranPrénom";
 }
-
-
-
-
-
 
 
 

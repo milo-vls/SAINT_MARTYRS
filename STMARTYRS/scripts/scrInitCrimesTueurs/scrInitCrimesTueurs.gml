@@ -23,6 +23,9 @@ enum TYPE_OF_CRIME{ROBBERY, AGGRESSION, MURDER};
 
 function init_crimes_tueurs() 
 {
+nbTueurProcActifs = 0;
+	
+	
 nbTueurActifs = 0;
 nbTueurProc = 0;
 nbTueurs = 0;

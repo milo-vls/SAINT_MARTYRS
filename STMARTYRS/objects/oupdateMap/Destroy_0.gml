@@ -1,4 +1,4 @@
-maj_nb_tueur();
+maj_nb_tueur_proc();
 
 
 
