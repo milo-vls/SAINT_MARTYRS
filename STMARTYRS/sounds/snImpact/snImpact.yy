@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snImpact.wav",
-  "duration": 0.272834,
+  "duration": 0.2322,
   "parent": {
     "name": "EFFETS&BRUITS",
     "path": "folders/SON/EFFETS&BRUITS.yy",

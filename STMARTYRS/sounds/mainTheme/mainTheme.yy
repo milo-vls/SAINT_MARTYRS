@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mainTheme.mp3",
-  "duration": 302.04,
+  "duration": 294.048,
   "parent": {
     "name": "musique",
     "path": "folders/SON/musique.yy",
