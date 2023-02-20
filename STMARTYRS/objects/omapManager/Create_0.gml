@@ -2,29 +2,29 @@ currentMenu = noone;
 
 #region OLD MENU USI
 //fond noir
-alphaFondNoir = 0;
+//alphaFondNoir = 0;
 tarAlphaFondNoir = 0;
 //cadran 
-alphaCadran = 0;
+//alphaCadran = 0;
 tarAlphaCadran = 0;
 lCadran = 1620;
 hCadran = 780;
-x1Cadran = display_get_gui_width()/2 - lCadran/2;
-y1Cadran = display_get_gui_height()/2 - hCadran/2;
-x2Cadran = x1Cadran + lCadran;
-y2Cadran = y1Cadran + hCadran;
+//x1Cadran = display_get_gui_width()/2 - lCadran/2;
+//y1Cadran = display_get_gui_height()/2 - hCadran/2;
+//x2Cadran = x1Cadran + lCadran;
+//y2Cadran = y1Cadran + hCadran;
 //boutton back
 backbuttonPressed = false;
-bufferbackbutton = 10;
-lbackbutton = (display_get_gui_width() - lCadran)/2 - bufferbackbutton*2;
-ybackbutton = 0 + bufferbackbutton;
-xbackbutton = display_get_gui_width()-bufferbackbutton - lbackbutton;
+//bufferbackbutton = 10;
+//lbackbutton = (display_get_gui_width() - lCadran)/2 - bufferbackbutton*2;
+//ybackbutton = 0 + bufferbackbutton;
+//xbackbutton = display_get_gui_width()-bufferbackbutton - lbackbutton;
 // usi
-lcadreUsi = lCadran/4;
-hcadreUsi = hCadran/3;
-hCadranNomUsi = hcadreUsi/3;
+//lcadreUsi = lCadran/4;
+//hcadreUsi = hCadran/3;
+//hCadranNomUsi = hcadreUsi/3;
 //demo hbox
-demoHboxRot = 0;
+//demoHboxRot = 0;
 #endregion
 
 #region modif usi
@@ -33,6 +33,7 @@ drawUsiModification = false;
 rotateHeld = false;
 outPressed = false;
 #endregion
+
 #region psc
 
 selectpsc = noone;
@@ -121,6 +122,7 @@ rueObserve = noone;
 
 #endregion
 
+#region temps
 //----temps----//
 global.inputOn = false;
 time_source_pause(ojeu.minuterie);
@@ -130,6 +132,8 @@ mapTimeMAJ = false;
 					timer = 0;
 /*end*/		diffTempsMinutes = date_minute_span(global.currentDate, global.mapDate);
 /*durée*/	duree = room_speed * 3;
+
+#endregion
 
 #region USI MENU
 
@@ -147,8 +151,7 @@ duree = room_speed/2;//une seconde
 
 #endregion
 
-
-//--BANDE NOIRE SUP (MENU)
+#region menu sup
 hBarreSup = display_get_gui_height()/6.5;
 wBarreSup = display_get_gui_width();
 
@@ -207,3 +210,26 @@ nbMapOption = 5
 wMapOption = wBarreSup/nbMapOption
 _yTxt = hBarreSup/2
 
+#endregion
+
+#region particules
+partSys = part_system_create_layer("icone_pnj", false);
+
+
+typePartPoussiere = part_type_create();
+
+part_type_sprite(typePartPoussiere, sprPartPoussiere, false, false, true);
+part_type_speed(typePartPoussiere, 12, 6, -1, 0);
+part_type_direction(typePartPoussiere, 0, 359, 0, 0);
+part_type_alpha3(typePartPoussiere, 1, 0.6, 0);
+part_type_size(typePartPoussiere, 0.5, 0.6, 0.001, 0.002);
+part_type_orientation(typePartPoussiere, 0, 359, 12, 0, false);
+part_type_life(typePartPoussiere, room_speed*0.4, room_speed*0.6);
+
+
+
+
+
+
+
+#endregion

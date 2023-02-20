@@ -32,6 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "affichages sans inter",
-    "path": "folders/OBJECTS/exclu pièce/carte/affichages sans inter.yy",
+    "path": "folders/OBJECTS/carte/affichages sans inter.yy",
   },
 }

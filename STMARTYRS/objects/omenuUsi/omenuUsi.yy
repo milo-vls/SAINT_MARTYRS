@@ -35,6 +35,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "icônes",
-    "path": "folders/OBJECTS/exclu pièce/carte/icônes.yy",
+    "path": "folders/OBJECTS/carte/icônes.yy",
   },
 }

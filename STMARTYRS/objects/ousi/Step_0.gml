@@ -30,15 +30,16 @@ if omapManager.currentMenu==noone and position_meeting(mouse_x, mouse_y, self) a
 }
 if global.cRlLeft
 {
-	if pressed and omapManager.selectedUsi == self and instance_exists(oOmbreUsi)
+	if pressed and instance_exists(oOmbreUsi)
 	{
 		omapManager.drawUsiModification = true;
-		x = oOmbreUsi.x;
-		y = oOmbreUsi.y;
+		
+		//x = oOmbreUsi.x;
+		//y = oOmbreUsi.y;
 	}
 	pressed = false;
 	omapManager.selectedUsi = noone;
-	instance_destroy(oOmbreUsi);
+	if instance_exists(oOmbreUsi) then  oOmbreUsi.ADetruire= true;
 	depth = layer_get_depth("usi");
 }
 

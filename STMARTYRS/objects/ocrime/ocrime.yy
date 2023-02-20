@@ -33,6 +33,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "épingles carte",
-    "path": "folders/OBJECTS/exclu pièce/carte/épingles carte.yy",
+    "path": "folders/OBJECTS/carte/épingles carte.yy",
   },
 }
