@@ -639,6 +639,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pièces","folderPath":"folders/SPRITES/pièces.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"carte","folderPath":"folders/SPRITES/pièces/carte.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"hbox usi","folderPath":"folders/SPRITES/pièces/carte/hbox usi.yy","order":0,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"PARTICULES","folderPath":"folders/SPRITES/pièces/carte/PARTICULES.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"portraits victimes","folderPath":"folders/SPRITES/pièces/carte/portraits victimes.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/SPRITES/pièces/carte/UI.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"explorations","folderPath":"folders/SPRITES/pièces/explorations.yy","order":2,},
@@ -657,7 +658,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pièces","folderPath":"folders/TESTES ET DEV/pièces.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pnj","folderPath":"folders/TESTES ET DEV/pnj.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"son","folderPath":"folders/TESTES ET DEV/son.yy","order":11,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"PARTICULES","folderPath":"folders/SPRITES/pièces/carte/PARTICULES.yy","order":6,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

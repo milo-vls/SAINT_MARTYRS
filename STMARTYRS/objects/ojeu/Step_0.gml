@@ -24,7 +24,7 @@ if player_free()
 if tenseNight and array_length(crimeProc) == 0
 {
 	
-	tueurProc = killerProceduralGeneration(new setNightDiff(4, [PATTERN.RECTILIGNE, PATTERN.ZONE_CARRE], 0, 0), START_TENSE_NIGHT, END_OF_NIGHT_HOUR);
+	tueurProc = killerProceduralGeneration(new setNightDiff(4, [PATTERN.RECTILIGNE], 0, 0), START_TENSE_NIGHT, END_OF_NIGHT_HOUR);
 	nbTueurProc = array_length(tueurProc);
 	
 	for (var _tueur = 0; _tueur < nbTueurProc; _tueur ++)
