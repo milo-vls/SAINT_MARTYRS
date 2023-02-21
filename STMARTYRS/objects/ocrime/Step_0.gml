@@ -4,11 +4,19 @@ var _tueur = tueurType[_crime.tueur]
 //------CAPTURE-------//
 if !checkCapture
 {
-	var _checkDateComp = _crime.date > date_inc_day(global.currentDate, -1)
-	if place_meeting(x, y, ousi) and _checkDateComp  and _crime.vulnerable
+	var _checkDateComp = _crime.date > date_inc_day(global.currentDate, -1);
+	var _nbUsi = instance_number(ousi);
+	if _checkDateComp  and _crime.vulnerable
 	{
-		tueurType[_crime.tueur].etat = KILLER_STATE.CAUGHT;
-		tueurType[_crime.tueur].jourCaught = global.currentDate;
+		for (var _usi = 0; _usi < _nbUsi; _usi ++)
+		{
+			var _instanceUsi =  instance_find(ousi, _usi)
+			if place_meeting(x, y, _instanceUsi) and _instanceUsi.pressed == false
+			{
+				tueurType[_crime.tueur].etat = KILLER_STATE.CAUGHT;
+				tueurType[_crime.tueur].jourCaught = global.currentDate;	
+			}
+		}
 	}
 	crimeType[crimeID].vulnerable = false;
 	checkCapture = !checkCapture
