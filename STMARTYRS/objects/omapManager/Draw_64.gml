@@ -79,7 +79,7 @@ if currentMenu == noone
 
 #region menu explo
 
-if currentMenu == "explo"
+if currentMenu == MAP_MENU.EXPLO
 {
 	draw_set_alpha(1)
 	draw_visitables();
@@ -150,7 +150,7 @@ draw_set_alpha(1);
 
 
 //----POSITION DES PANNEAUX
-if currentMenu == "usi"
+if currentMenu == MAP_MENU.SELECTION_USI
 {
 	for( var i = 0; i!=6;i++)
 	{

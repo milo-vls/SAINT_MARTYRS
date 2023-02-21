@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "meta",
-    "path": "folders/OBJECTS/carte/meta.yy",
+    "name": "carte",
+    "path": "folders/OBJECTS/carte.yy",
   },
 }

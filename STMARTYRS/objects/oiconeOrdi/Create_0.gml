@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-menuID = "ordi";
+menuID = MAP_MENU.ORDI;

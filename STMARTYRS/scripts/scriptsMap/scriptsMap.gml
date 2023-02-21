@@ -27,7 +27,7 @@ if !position_meeting(mouse_x, mouse_y, self)
 	}
 	if omapManager.currentMenu == noone and iconPressed and global.cRlLeft
 	{
-		if _menuID != "psc"
+		if _menuID != MAP_MENU.CRIME_DETAILS
 		{
 			omapManager.currentMenu = _menuID;
 			
@@ -55,7 +55,7 @@ function returnToGend()
 }
 function recapEnCours()
 {
-	return  !omapManager.mapTimeMAJ and !instance_exists(oGoToRoom)// and omapManager.currentMenu != "usi"
+	return  !omapManager.mapTimeMAJ and !instance_exists(oGoToRoom)// and omapManager.currentMenu != MAP_MENU.SELECTION_USI
 }
 
 

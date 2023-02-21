@@ -1,4 +1,4 @@
-if omapManager.currentMenu == "usi"
+if omapManager.currentMenu == MAP_MENU.SELECTION_USI
 {
 	
 }

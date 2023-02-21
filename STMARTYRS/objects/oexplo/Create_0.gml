@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-menuID = "explo";
+menuID = MAP_MENU.EXPLO;

@@ -29,7 +29,7 @@ if attachable != noone
 
 
 //----MENU CARTE------//
-clickToChangeMenu("psc");
+clickToChangeMenu(MAP_MENU.CRIME_DETAILS);
 
 //-------DESSIN------//
 if (crimeType == ojeu.crimeProc) and (_crime.first) 

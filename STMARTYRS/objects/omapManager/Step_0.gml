@@ -75,7 +75,7 @@ switch (currentMenu)
 			//COMPO USIs
 			if !ojeu.compoUsiDone
 			{
-				currentMenu = "usi";
+				currentMenu = MAP_MENU.SELECTION_USI;
 			}
 			
 		}
@@ -94,7 +94,7 @@ switch (currentMenu)
 			drawUsiModification = false;
 		}
 	}break;
-	case "explo":{
+	case MAP_MENU.EXPLO:{
 		tpsBufferInputExplo ++;
 		if global.cRlLeft
 		{
@@ -122,7 +122,7 @@ switch (currentMenu)
 																																		//createChoiceBox("Quitter la carte", quitMap, "Retour", noMenu);
 
 	}break;
-	case "usi":{
+	case MAP_MENU.SELECTION_USI:{
 		time_source_pause(ojeu.minuterie);
 		//MENU USI
 		if ojeu.nbUsiPatrol != 3
@@ -167,7 +167,7 @@ switch (currentMenu)
 		
 		
 	}break;
-	case "psc":{
+	case MAP_MENU.CRIME_DETAILS:{
 	tarAlphaFondNoir = 0.7;
 	tarAlphaMenupsc = 1;
 	alphaMenupsc = 1;
@@ -230,13 +230,16 @@ switch (currentMenu)
 		}
 	}
 	}break;
-	case "téléphone":{
+	case MAP_MENU.PHONE:{
 		
 		GoToRoom(pCall);
 	}break;
-	case "ordi":{
+	case MAP_MENU.ORDI:{
 		GoToRoom(pordi)
 	}
+	case MAP_MENU.GAME_OVER:{
+		
+	}break;
 }
 
 

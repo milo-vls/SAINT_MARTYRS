@@ -1,4 +1,19 @@
+enum MAP_MENU
+{
+	EXPLO,
+	SELECTION_USI,
+	CRIME_DETAILS,
+	PHONE,
+	ORDI,
+	GAME_OVER,
+}
+
+
+
 currentMenu = noone;
+
+
+
 
 #region OLD MENU USI
 //fond noir
@@ -167,7 +182,7 @@ mapOption[1] = {
 	txt : "Ville",
 	fonction : function()
 		{
-				omapManager.currentMenu = "explo"
+				omapManager.currentMenu = MAP_MENU.EXPLO;
 		},
 	pressed : false,
 	}
@@ -175,7 +190,7 @@ mapOption[2] = {
 	txt : "Ordi",
 	fonction : function()
 	{
-		omapManager.currentMenu = "ordi"
+		omapManager.currentMenu = MAP_MENU.ORDI;
 	},
 	pressed : false
 }
@@ -183,7 +198,7 @@ mapOption[3] = {
 	txt : "Tel",
 	fonction : function()
 		{
-			omapManager.currentMenu = "téléphone"
+			omapManager.currentMenu = MAP_MENU.PHONE
 		},
 	pressed : false,
 }

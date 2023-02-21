@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-menuID = "téléphone";
+menuID = MAP_MENU.PHONE;
