@@ -283,7 +283,7 @@ if explore()
 #region black screen
 	if global.blackScreen == true
 	{
-		global.alphaBlackScreen = approach(global.alphaBlackScreen, 2, 0.2);
+		global.alphaBlackScreen = approach(global.alphaBlackScreen, 2, 0.15);
 	}
 	if global.blackScreen == false
 	{

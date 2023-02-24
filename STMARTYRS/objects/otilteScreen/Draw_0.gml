@@ -59,7 +59,3 @@ for (var i = 0;i < array_length(option);i ++)
 	}
 }
 
-if !audio_is_playing(mainTheme)
-{
-	audio_play_sound(mainTheme, 1, true);
-}

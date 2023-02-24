@@ -25,3 +25,4 @@ option[2] = {
 }
 	
 
+audio_play_sound(mainTheme, 1, true);

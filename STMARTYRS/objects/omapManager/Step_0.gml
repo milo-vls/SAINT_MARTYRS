@@ -30,6 +30,7 @@ ojeu.nbTueurProcActifs = maj_nb_tueur_proc();
 
 
 //-------MENU------//
+
 switch (currentMenu)
 {
 	default:{
@@ -238,11 +239,15 @@ switch (currentMenu)
 		GoToRoom(pordi)
 	}
 	case MAP_MENU.GAME_OVER:{
-		
+		 
+		audio_stop_sound(mainTheme);
+		if !audio_is_playing(snGameOver) playsound(snGameOver, 1);
 	}break;
 }
 
 
 
+//DEBUG
+if keyboard_check(vk_space) then currentMenu = MAP_MENU.GAME_OVER;
 
-
+show_debug_message();

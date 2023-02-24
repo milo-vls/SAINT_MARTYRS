@@ -6,7 +6,7 @@
 	
 function init_time()
 {
-	
+	date_set_timezone(timezone_utc);
 	tenseNight = false
 	heureReveil = 19
 
@@ -18,13 +18,17 @@ function init_time()
 	//// ÉCOULEMENT DU TEMPS
 	minuteInSeconds		=1;//il faut attendre 2 secondes avant d'ajouter une minute au compteur  
 	var _plusUneMinute	= function(_minutes)
-{
-	if !explore()
-	global.currentDate = date_inc_minute(global.currentDate, _minutes);
-	else
-	global.currentDate = date_inc_second(global.currentDate, ojeu.minuteInSeconds);
-}
-	minuterie						= time_source_create(time_source_game, minuteInSeconds, time_source_units_seconds,_plusUneMinute , [1], -1);
+	{
+		if !explore()
+		{
+			global.currentDate = date_inc_minute(global.currentDate, 1);
+		}
+		else
+		{
+			global.currentDate = date_inc_second(global.currentDate, ojeu.minuteInSeconds);
+		}
+	}
+	minuterie	= time_source_create(time_source_game, minuteInSeconds, time_source_units_seconds,_plusUneMinute , [1], -1);
 	
 	time_source_start(minuterie);
 	time_source_pause(minuterie);

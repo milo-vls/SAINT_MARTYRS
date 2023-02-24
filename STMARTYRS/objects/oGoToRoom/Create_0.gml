@@ -7,3 +7,4 @@ if room == pMG_ClickTarget
 else showDate = false;
 
 deplacementFait = false
+

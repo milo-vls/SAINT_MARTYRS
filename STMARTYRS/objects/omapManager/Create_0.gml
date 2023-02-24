@@ -227,6 +227,8 @@ _yTxt = hBarreSup/2
 
 #endregion
 
+
+
 #region particules
 partSys = part_system_create_layer("icone_pnj", false);
 
