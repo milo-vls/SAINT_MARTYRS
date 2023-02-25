@@ -27,8 +27,3 @@ for (var i = 0;i < nbRue;i ++)
 	
 }
 
-
-#region layer fx et effet
-
-
-#endregion

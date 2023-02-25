@@ -209,3 +209,24 @@ for (var i = 0; i!=6;i++)
 #endregion
 
 
+//--GAME OVER
+alphaGameOver = approach(alphaGameOver, tarAlphaGameOver, 0.05);
+draw_set_alpha(alphaGameOver);
+draw_set_color(c_black);
+draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);
+
+if (alphaGameOver == 1)
+{
+	alphaFinDePartie = approach(alphaFinDePartie, 1, 0.01);
+	var _y = scrbblFinDePartie.get_height()*GAME_OVER_TITLE_SCALE;
+	scrbblFinDePartie.blend(c_white, alphaFinDePartie).draw(GAME_WIDTH/2, _y);
+
+}
+if (alphaFinDePartie==1)
+{
+	alphaGameOverOption = approach(alphaGameOverOption, 1, 0.04);
+	for (var i = 0; i < nbGameOverOption; i++)
+	{
+		gameOverOption[i].scrbbl.blend(c_white, alphaGameOverOption).draw(GAME_WIDTH/2, _y*1.5 + (_y/2)*(i+1))
+	}
+}

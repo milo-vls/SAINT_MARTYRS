@@ -239,9 +239,14 @@ switch (currentMenu)
 		GoToRoom(pordi)
 	}
 	case MAP_MENU.GAME_OVER:{
-		 
+		 tarAlphaGameOver = 1;
 		audio_stop_sound(mainTheme);
-		if !audio_is_playing(snGameOver) playsound(snGameOver, 1);
+		if !gameOverSfxPlayed
+		{
+			gameOverSfxPlayed = true;
+			playsound(snGameOver, 1);
+		}
+		
 	}break;
 }
 

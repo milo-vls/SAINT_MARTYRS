@@ -227,7 +227,18 @@ _yTxt = hBarreSup/2
 
 #endregion
 
-
+#region game over 
+#macro GAME_OVER_TITLE_SCALE 2.25
+alphaGameOver = 0;
+tarAlphaGameOver = 0;
+gameOverSfxPlayed = false;
+scrbblFinDePartie = scribble("[ftMenu]Fin de la partie").gradient(c_red, 0.6).align(fa_center, fa_top).transform(GAME_OVER_TITLE_SCALE, GAME_OVER_TITLE_SCALE, 0);
+alphaFinDePartie = 0;
+alphaGameOverOption = 0;
+gameOverOption[0] = {scrbbl: scribble("[ftMenu]Réessayer").gradient(c_red, 0.6).align(fa_center, fa_top)}
+gameOverOption[1] = {scrbbl: scribble("[ftMenu]Sauvegarder et quitter").gradient(c_red, 0.6).align(fa_center, fa_top)}
+nbGameOverOption = array_length(gameOverOption);
+#endregion
 
 #region particules
 partSys = part_system_create_layer("icone_pnj", false);
