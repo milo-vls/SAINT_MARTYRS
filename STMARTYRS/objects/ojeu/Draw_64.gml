@@ -280,6 +280,11 @@ if explore()
 }
 
 
+if room!=pcarte
+{
+		
+}
+
 #region black screen
 	if global.blackScreen == true
 	{
