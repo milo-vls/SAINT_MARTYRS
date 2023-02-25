@@ -212,6 +212,7 @@
     {"name":"scriptsMap","order":2,"path":"scripts/scriptsMap/scriptsMap.yy",},
     {"name":"P_BLUE_PORTAL","order":38,"path":"rooms/P_BLUE_PORTAL/P_BLUE_PORTAL.yy",},
     {"name":"omapMenuParent","order":1,"path":"objects/omapMenuParent/omapMenuParent.yy",},
+    {"name":"scrRandom","order":7,"path":"scripts/scrRandom/scrRandom.yy",},
     {"name":"sprCadreUsiPlaced","order":2,"path":"sprites/sprCadreUsiPlaced/sprCadreUsiPlaced.yy",},
     {"name":"height_hill","order":33,"path":"sprites/height_hill/height_hill.yy",},
     {"name":"sprAnsIcone","order":3,"path":"sprites/sprAnsIcone/sprAnsIcone.yy",},

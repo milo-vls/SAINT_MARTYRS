@@ -12,9 +12,9 @@ patterns[PATTERN.RECTILIGNE] = new setPattern(
 																								function(_firstCrime, _idKiller, _colour=c_white)	{
 	
 																									var _listeCrimesToReturn = [];
-																									var _delayMinute	            = irandom_range(5, 10)
-																									var _coeffDirX = irandom_range(-100, 100);
-																									var _coeffDirY = irandom_range(-100, 100);
+																									var _delayMinute	            = irandom_range(3, 5)
+																									var _coeffDirX = irandom_range(50, 100)*randomSign();
+																									var _coeffDirY = irandom_range(50, 100)*randomSign();
 	
 																									var _precedentPointX = _firstCrime.x;
 																									var _precedentPointY = _firstCrime.y;

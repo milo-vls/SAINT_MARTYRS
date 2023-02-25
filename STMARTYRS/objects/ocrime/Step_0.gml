@@ -6,7 +6,7 @@ if !checkCapture
 {
 	var _checkDateComp = _crime.date > date_inc_day(global.currentDate, -1);
 	var _nbUsi = instance_number(ousi);
-	if _checkDateComp  and _crime.vulnerable
+	if _checkDateComp  and _crime.vulnerable and !_crime.first
 	{
 		for (var _usi = 0; _usi < _nbUsi; _usi ++)
 		{

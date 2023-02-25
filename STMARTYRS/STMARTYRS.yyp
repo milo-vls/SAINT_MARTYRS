@@ -261,6 +261,7 @@
     {"id":{"name":"scriptsMap","path":"scripts/scriptsMap/scriptsMap.yy",},"order":2,},
     {"id":{"name":"P_BLUE_PORTAL","path":"rooms/P_BLUE_PORTAL/P_BLUE_PORTAL.yy",},"order":38,},
     {"id":{"name":"omapMenuParent","path":"objects/omapMenuParent/omapMenuParent.yy",},"order":1,},
+    {"id":{"name":"scrRandom","path":"scripts/scrRandom/scrRandom.yy",},"order":7,},
     {"id":{"name":"sprCadreUsiPlaced","path":"sprites/sprCadreUsiPlaced/sprCadreUsiPlaced.yy",},"order":2,},
     {"id":{"name":"height_hill","path":"sprites/height_hill/height_hill.yy",},"order":33,},
     {"id":{"name":"sprAnsIcone","path":"sprites/sprAnsIcone/sprAnsIcone.yy",},"order":3,},
