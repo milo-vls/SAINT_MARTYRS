@@ -227,6 +227,6 @@ if (alphaFinDePartie==1)
 	alphaGameOverOption = approach(alphaGameOverOption, 1, 0.04);
 	for (var i = 0; i < nbGameOverOption; i++)
 	{
-		gameOverOption[i].scrbbl.blend(c_white, alphaGameOverOption).draw(GAME_WIDTH/2, _y*1.5 + (_y/2)*(i+1))
+		gameOverOption[i].scrbbl.blend(c_white, alphaGameOverOption).draw(GAME_WIDTH/2, _y*1.5 + (_y/2)*(i+1));
 	}
 }
