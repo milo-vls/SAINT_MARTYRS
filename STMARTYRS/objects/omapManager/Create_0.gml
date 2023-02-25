@@ -6,6 +6,7 @@ enum MAP_MENU
 	PHONE,
 	ORDI,
 	GAME_OVER,
+	RECAP,
 }
 
 

@@ -76,7 +76,7 @@ switch (currentMenu)
 			//COMPO USIs
 			if !ojeu.compoUsiDone
 			{
-				currentMenu = MAP_MENU.SELECTION_USI;
+				currentMenu = MAP_MENU.RECAP;
 			}
 			
 		}
@@ -247,6 +247,13 @@ switch (currentMenu)
 			playsound(snGameOver, 1);
 		}
 		
+	}break;
+	case MAP_MENU.RECAP:{
+		time_source_pause(ojeu.minuterie);
+		if global.cRlLeft
+		{
+			currentMenu = MAP_MENU.SELECTION_USI;	
+		}
 	}break;
 }
 
