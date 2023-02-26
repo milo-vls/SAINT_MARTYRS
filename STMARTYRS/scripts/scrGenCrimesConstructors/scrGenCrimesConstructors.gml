@@ -7,7 +7,7 @@
 /// @param difficulté_gen_tueurs		paramètre pouvant influer la variance 
 function setNightDiff(_score,_pool, _diffEv, _diffVariance) constructor
 {
-	scoreMiSeconde = _score;
+	scorePortionTemps = _score;
 	pool = _pool;
 	diffEvolScore = _diffEv;
 	diffVariance = _diffVariance;
