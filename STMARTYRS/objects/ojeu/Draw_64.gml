@@ -288,7 +288,7 @@ if room!=pcarte
 #region black screen
 	if global.blackScreen == true
 	{
-		global.alphaBlackScreen = approach(global.alphaBlackScreen, 2, 0.15);
+		global.alphaBlackScreen = approach(global.alphaBlackScreen, 2, 0.2);
 	}
 	if global.blackScreen == false
 	{
