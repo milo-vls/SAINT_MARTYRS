@@ -218,15 +218,13 @@ draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);
 if (alphaGameOver == 1)
 {
 	alphaFinDePartie = approach(alphaFinDePartie, 1, 0.01);
-	var _y = scrbblFinDePartie.get_height()*GAME_OVER_TITLE_SCALE;
-	scrbblFinDePartie.blend(c_white, alphaFinDePartie).draw(GAME_WIDTH/2, _y);
+	scrbblFinDePartie.blend(c_white, alphaFinDePartie).draw(GAME_WIDTH/2, yFinDePartie);
 
 }
-if (alphaFinDePartie==1)
+if currentMenu == MAP_MENU.GAME_OVER or currentMenu == MAP_MENU.RETRY 
 {
-	alphaGameOverOption = approach(alphaGameOverOption, 1, 0.04);
 	for (var i = 0; i < nbGameOverOption; i++)
 	{
-		gameOverOption[i].scrbbl.blend(c_white, alphaGameOverOption).draw(GAME_WIDTH/2, _y*1.5 + (_y/2)*(i+1));
+		gameOverOption[i].scrbbl.blend(c_white, alphaGameOverOption).draw(GAME_WIDTH/2, gameOverOption[i]._y);
 	}
 }

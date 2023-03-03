@@ -34,7 +34,7 @@ enum p
 		num : -666,
 		enPossession : false,
 		phoneID : "phoneID",
-		voice : [ voice_test_0],
+		voice : [snBlaiseVoice1],
 	}
 	global.char[p.Armand] =	{
 	colFnt : c_red,

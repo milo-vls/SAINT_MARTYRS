@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "voice_test_0",
+  "name": "snBlaiseVoice1",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.096,
+  "duration": 0.137868,
   "parent": {
-    "name": "VOIX",
-    "path": "folders/SON/VOIX.yy",
+    "name": "BLAISE",
+    "path": "folders/SON/VOIX/BLAISE.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "voice_test_0.mp3",
-  "type": 1,
-  "volume": 0.21,
+  "soundFile": "snBlaiseVoice1.wav",
+  "type": 0,
+  "volume": 1.0,
 }

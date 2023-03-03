@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 13.392,
   "parent": {
-    "name": "musique",
-    "path": "folders/SON/musique.yy",
+    "name": "MUSIQUE",
+    "path": "folders/SON/MUSIQUE.yy",
   },
   "preload": false,
   "sampleRate": 44100,

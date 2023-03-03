@@ -247,6 +247,22 @@ switch (currentMenu)
 			playsound(snGameOver, 1);
 		}
 		
+		if (alphaFinDePartie == 1)
+		{
+			alphaGameOverOption = approach(alphaGameOverOption, 1, 0.04);
+			for (var _iOption = 0; _iOption < nbGameOverOption; _iOption ++)
+			{
+				var _option = gameOverOption[_iOption];
+				var _scribble = _option.scrbbl;
+				var _hauteurTexte = _scribble.get_height()/2;
+				var _largeurTexte = _scribble.get_width()/2;
+				if point_in_rectangle(mouse_x, mouse_y, GAME_WIDTH/2 - _largeurTexte, _option._y - _hauteurTexte, GAME_WIDTH/2 + _largeurTexte, _option._y + _hauteurTexte)
+				{
+					if global.cPrLeft _option.procedure();
+				}
+			}
+		}
+		
 	}break;
 	case MAP_MENU.RECAP:{
 		time_source_pause(ojeu.minuterie);
@@ -254,6 +270,9 @@ switch (currentMenu)
 		{
 			currentMenu = MAP_MENU.SELECTION_USI;	
 		}
+	}break;
+	case MAP_MENU.RETRY:{
+		show_message("yo le rap");
 	}break;
 }
 

@@ -6,8 +6,10 @@ enum MAP_MENU
 	PHONE,
 	ORDI,
 	GAME_OVER,
+	RETRY,
+	GAME_OVER_QUIT,
 	RECAP,
-}
+};
 
 
 
@@ -236,9 +238,31 @@ gameOverSfxPlayed = false;
 scrbblFinDePartie = scribble("[ftMenu]Fin de la partie").gradient(c_red, 0.6).align(fa_center, fa_top).transform(GAME_OVER_TITLE_SCALE, GAME_OVER_TITLE_SCALE, 0);
 alphaFinDePartie = 0;
 alphaGameOverOption = 0;
-gameOverOption[0] = {scrbbl: scribble("[ftMenu]Réessayer").gradient(c_red, 0.6).align(fa_center, fa_top)}
-gameOverOption[1] = {scrbbl: scribble("[ftMenu]Sauvegarder et quitter").gradient(c_red, 0.6).align(fa_center, fa_top)}
+gameOverOption[0] = {
+	scrbbl: scribble("[ftMenu]Réessayer").gradient(c_red, 0.6).align(fa_center, fa_top),
+	procedure : function()
+	{
+		currentMenu = MAP_MENU.RETRY;
+	},
+	_y : 0,
+	};
+gameOverOption[1] = {
+	scrbbl: scribble("[ftMenu]Sauvegarder et quitter").gradient(c_red, 0.6).align(fa_center, fa_top),
+	procedure : function()
+	{
+		currentMenu = MAP_MENU.GAME_OVER_QUIT;
+	},
+	_y : 0,
+	};
 nbGameOverOption = array_length(gameOverOption);
+
+yFinDePartie = scrbblFinDePartie.get_height()*GAME_OVER_TITLE_SCALE;
+for (var _option = 0; _option < nbGameOverOption; _option ++)
+{
+	gameOverOption[_option]._y = yFinDePartie*1.5 + (yFinDePartie/2)*(_option+1);
+}
+
+
 #endregion
 
 #region particules
