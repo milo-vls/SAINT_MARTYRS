@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "meta",
-    "path": "folders/OBJECTS/meta.yy",
+    "name": "META",
+    "path": "folders/OBJECTS/META.yy",
   },
   "parentObjectId": null,
   "persistent": true,

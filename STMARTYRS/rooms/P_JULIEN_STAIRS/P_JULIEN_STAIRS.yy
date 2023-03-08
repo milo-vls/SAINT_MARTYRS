@@ -33,7 +33,7 @@
   ],
   "parent": {
     "name": "V2",
-    "path": "folders/PIECES/VILLE EXPLORABLE/V2.yy",
+    "path": "folders/PIECES/EXPLORABLE/V2.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

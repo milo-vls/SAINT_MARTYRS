@@ -29,8 +29,8 @@
       ],"userdefinedDepth":false,"visible":true,},
   ],
   "parent": {
-    "name": "mini jeux",
-    "path": "folders/PIECES/mini jeux.yy",
+    "name": "MINI JEUX",
+    "path": "folders/PIECES/MINI JEUX.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

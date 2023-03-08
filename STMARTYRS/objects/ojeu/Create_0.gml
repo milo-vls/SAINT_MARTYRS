@@ -9,7 +9,7 @@ global.frameRate = 30;
 game_set_speed(global.frameRate, gamespeed_fps);
 #macro dpojeu 0
 #macro dptxt 5
-global.startingRoom = P_RUE_BLUE;
+global.startingRoom = P_PARKING_1;
 global.langage = "fr";//"fr" = français//"en" = anglais//"es" = espagnol
 global.inputOn = true;
 lastRoom = noone;
@@ -36,3 +36,5 @@ init_mini_game();
 init_plage_texture();
 init_personnages();
 init_scribble_typist_events();
+
+init_sound();

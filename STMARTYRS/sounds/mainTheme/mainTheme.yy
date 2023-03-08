@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 294.048,
   "parent": {
-    "name": "MUSIQUE",
-    "path": "folders/SON/MUSIQUE.yy",
+    "name": "BGM",
+    "path": "folders/SON/BGM.yy",
   },
   "preload": false,
   "sampleRate": 44100,

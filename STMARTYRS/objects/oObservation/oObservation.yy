@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "texte",
-    "path": "folders/OBJECTS/texte.yy",
+    "name": "TEXT",
+    "path": "folders/OBJECTS/TEXT.yy",
   },
   "parentObjectId": {
     "name": "oDial",
