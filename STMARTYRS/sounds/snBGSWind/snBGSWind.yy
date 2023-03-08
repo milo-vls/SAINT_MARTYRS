@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 365.9868,
+  "duration": 135.10141,
   "parent": {
     "name": "BGS",
     "path": "folders/SON/BGS.yy",
