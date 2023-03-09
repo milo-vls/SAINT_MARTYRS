@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "exploration",
-    "path": "folders/OBJECTS/exploration.yy",
+    "name": "EXPLO",
+    "path": "folders/OBJECTS/EXPLO.yy",
   },
   "parentObjectId": null,
   "persistent": false,
