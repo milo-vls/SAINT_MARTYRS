@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "touches téléphone",
-    "path": "folders/SPRITES/pièces/touches téléphone.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/touches téléphone.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

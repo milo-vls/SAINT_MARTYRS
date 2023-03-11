@@ -69,7 +69,10 @@ case INTRO_STATE.TITLE_SHOWN:{
 	}
 }break;
 case INTRO_STATE.TRAVEL_TO:{
-	
+	if room == P_TABLEAU_DE_NUIT and !instance_exists(oObservation)
+	{
+		GoToRoom(P_SANITAIRES);
+	}
 }break;
 default:{}break;
 

@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "hbox usi",
-    "path": "folders/SPRITES/pièces/carte/hbox usi.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/carte/hbox usi.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

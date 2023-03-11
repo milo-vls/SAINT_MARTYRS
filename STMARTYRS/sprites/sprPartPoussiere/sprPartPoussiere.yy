@@ -49,7 +49,7 @@
   "origin": 4,
   "parent": {
     "name": "PARTICULES",
-    "path": "folders/SPRITES/pièces/carte/PARTICULES.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/carte/PARTICULES.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

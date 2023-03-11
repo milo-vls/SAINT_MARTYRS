@@ -20,9 +20,6 @@ enum p
 #macro PREMIER_PNJ p.Enzino
 #macro DERNIER_USI p.Rosalie
 
-
-
-
 #region USI
 	global.char[p.player] =	{
 		colFnt : c_white,
@@ -121,7 +118,6 @@ enum p
 		voice : [ voice_test_0],
 	}		
 #endregion
-
 
 #region EN VILLE
 	global.char[p.Martine]	=	{
@@ -243,6 +239,12 @@ enum p
 
 	}	
 		
+#endregion
+
+#region OTHER MACROS
+#macro BLAISES_NEUTRAL_FACE 0
+#macro BLAISES_SMILING_FACE 3
+
 #endregion
 
 }

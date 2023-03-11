@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "mini jeux",
-    "path": "folders/SPRITES/pièces/mini jeux.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/mini jeux.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

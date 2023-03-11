@@ -49,7 +49,7 @@
   "origin": 2,
   "parent": {
     "name": "défilement",
-    "path": "folders/SPRITES/pièces/ordinateur/défilement.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/ordinateur/défilement.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

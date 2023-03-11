@@ -49,7 +49,7 @@
   "origin": 2,
   "parent": {
     "name": "répertoire",
-    "path": "folders/SPRITES/pièces/explorations/répertoire.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/explorations/répertoire.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

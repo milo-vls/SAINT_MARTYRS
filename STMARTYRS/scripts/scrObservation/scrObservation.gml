@@ -1,8 +1,9 @@
 
-function obs(_str)
+function obs(_str, _function = noone)
 {
 	txt[nbPages] = _str;
 	ltxt[nbPages] = string_length(_str);
+	fun[nbPages] = _function;
 	
 	nbPages ++;
 }
@@ -64,6 +65,30 @@ switch(ID)
 			obs(string(_nbTueur) + "criminels menacent Saints Martyrs");
 		}
 	}break;
+	
+	
+	#endregion
+	#region CINÉMATIQUE
+		#region SCENE 1 & 2
+			case OBS_ID_TABLEAU_DE_NUIT:{
+				obs("Il fait déjà nuit.");
+				obs("J'ai du beaucoup marcher.");
+				obs("Le rendez-vous est pour bientôt.");
+				obs("...");
+				obs("Je dois aller mettre mon uniforme.");
+			}break;
+			case OBS_ID_SANITAIRE:{
+				obs("...");
+				obs("C’est pas la mère à boire. Tu t’es investi et maintenant tu y es.");
+				obs("...", function(){oRefletBlaise.image_index = BLAISES_SMILING_FACE});
+				obs("Quitter famille et amis pour bosser dans un coin paumé ? Je me forme, rien de grave, je suis tout juste diplômé je dois apprendre du terrain.");
+				obs("C’est l’histoire d’attendre une mutation à la Capitale, deux petites semaines ici et « ciao les ploucs ». ");
+				obs("...");
+				obs("Bientôt l’heure, reste pas là trop longtemps à parler seul tu vas ficher la trouille à tes très chers futurs collègues.");
+				obs("...", function(){oRefletBlaise.image_index = BLAISES_NEUTRAL_FACE});
+				obs(" . . . ");
+			}break;
+		#endregion
 	
 	
 	#endregion

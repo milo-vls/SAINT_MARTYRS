@@ -50,7 +50,7 @@
   "origin": 0,
   "parent": {
     "name": "ordinateur",
-    "path": "folders/SPRITES/pièces/ordinateur.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/ordinateur.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

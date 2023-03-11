@@ -34,3 +34,14 @@ dureeWaitBeforeTitle = 8 * room_speed;
 titleTxt = "ENTRE CHIEN ET LOUP";
 tpsTitle = 0;
 waitTitle = 9 * room_speed;
+
+
+//--TABLEAU DE NUIT
+#macro OBS_ID_TABLEAU_DE_NUIT "intro_tableau_de_nuit"
+
+
+//--SANITAIRES
+#macro OBS_ID_SANITAIRE "intro_sanitaire"
+
+
+

@@ -18,6 +18,7 @@ wTxtMax = lBoxMax - decaTxtBox *2
 nbPages = 0;
 txt[0] = "";
 ltxt[0] = 0
+fun[0] = noone;
 #endregion
 
 #region évolue

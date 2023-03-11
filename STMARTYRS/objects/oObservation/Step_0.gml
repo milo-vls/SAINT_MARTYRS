@@ -27,6 +27,8 @@ if global.cPrLeft
 	}
 	else
 	{
+		if is_method(fun[page]) then fun[page]();
+		//IL RESTE DES PAGES
 		if page < nbPages - 1
 		{
 			typingSpeed = baseTypingSpeed;
@@ -41,6 +43,7 @@ if global.cPrLeft
 			
 			
 		}
+		//PLUS DE PAGES
 		else
 		{
 			instance_destroy();

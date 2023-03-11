@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "UI",
-    "path": "folders/SPRITES/pièces/carte/UI.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/carte/UI.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "portraits victimes",
-    "path": "folders/SPRITES/pièces/carte/portraits victimes.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/carte/portraits victimes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
