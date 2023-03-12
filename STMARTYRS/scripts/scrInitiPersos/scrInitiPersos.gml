@@ -214,7 +214,7 @@ enum p
 
 
 
-#region valeurs par défauts pour les numéros
+#region valeurs par défauts 
 	nbPersonnages = array_length(global.char);
 	ftRep = ftRepertoire
 	draw_set_font(ftRep);
@@ -232,10 +232,11 @@ enum p
 		}
 	
 		global.char[i].y									= noone;
-		global.char[i].page								= noone;
+		global.char[i].page							= noone;
 		//dialogues relative
-		global.char[i].proximite						= 0;
-		global.char[i].nbInteractionCeJour	= 0
+		global.char[i].proximite					= 0;
+		global.char[i].nbInteractionCeJour	= 0;
+		global.char[i].imageIndexStopTalk	= 0;
 
 	}	
 		

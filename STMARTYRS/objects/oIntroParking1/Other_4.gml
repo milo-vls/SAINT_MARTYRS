@@ -7,4 +7,7 @@ switch room
 	case P_SANITAIRES:{
 		startObs(OBS_ID_SANITAIRE);
 	}break;
+	case P_CORRIDOR:{
+		startDial(DIAL_ID_SCENE_3)
+	}break;
 }

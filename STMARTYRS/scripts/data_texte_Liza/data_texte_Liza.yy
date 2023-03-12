@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "usi",
-    "path": "folders/SCRIPTS/texte/texte scripts perso/DATA DIALOGUES/usi.yy",
+    "name": "USI",
+    "path": "folders/SCRIPTS/TEXTE/PERSO/DATA DIALOGUES/NPC/USI.yy",
   },
 }

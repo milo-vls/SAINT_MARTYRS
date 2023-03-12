@@ -72,6 +72,13 @@ case INTRO_STATE.TRAVEL_TO:{
 	if room == P_TABLEAU_DE_NUIT and !instance_exists(oObservation)
 	{
 		GoToRoom(P_SANITAIRES);
+		currentIntroState = INTRO_STATE.GENDARMERIE;
+	}
+}break;
+case INTRO_STATE.GENDARMERIE:{
+	if room == P_SANITAIRES and !instance_exists(oObservation)
+	{
+		GoToRoom(P_CORRIDOR);
 	}
 }break;
 default:{}break;

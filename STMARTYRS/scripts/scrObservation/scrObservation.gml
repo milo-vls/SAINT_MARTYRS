@@ -79,7 +79,7 @@ switch(ID)
 			}break;
 			case OBS_ID_SANITAIRE:{
 				obs("...");
-				obs("C’est pas la mère à boire. Tu t’es investi et maintenant tu y es.");
+				obs("C’est pas la mer à boire. Tu t’es investi et maintenant tu y es.");
 				obs("...", function(){oRefletBlaise.image_index = BLAISES_SMILING_FACE});
 				obs("Quitter famille et amis pour bosser dans un coin paumé ? Je me forme, rien de grave, je suis tout juste diplômé je dois apprendre du terrain.");
 				obs("C’est l’histoire d’attendre une mutation à la Capitale, deux petites semaines ici et « ciao les ploucs ». ");

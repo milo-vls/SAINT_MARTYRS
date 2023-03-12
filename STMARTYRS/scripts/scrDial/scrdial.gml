@@ -1,7 +1,7 @@
 
 #macro PAS_D_ECOUTEUR "pas d'écouteur"
 
-function d(_txt, tlkingChar, _side, listener = noone)
+function d(_txt, tlkingChar, _side, listener = noone, _endFun = noone, _startFun = noone)
 {
 	
 	if listener == noone and nbBulles != 0
@@ -31,6 +31,8 @@ function d(_txt, tlkingChar, _side, listener = noone)
 		alpha : 0,
 		txtToDraw : "",
 		char2 : listener,
+		startFun : _startFun,
+		endFun : _endFun,
 	}
 	if setup
 	{

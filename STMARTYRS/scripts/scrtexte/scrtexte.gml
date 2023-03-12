@@ -70,20 +70,42 @@ function choiceDial(txtChoix, redirID)
 
 
 function txtData(textID)	
-{nbChoices = 0;
+{
+	nbChoices = 0;
 	switch(textID)
 	{
-		#region usi
-			case p.Liza :	txtLiza()	break;
-			case p.Ernest:	txtErnest()	break;
-			case p.Armand:	txtArmand()	break;
+		#region NPC
+			#region USI
+				case p.Liza :	txtLiza()	break;
+				case p.Ernest:	txtErnest()	break;
+				case p.Armand:	txtArmand()	break;
+			#endregion
+			#region CIVIL
+				case p.Martine:		txtMartine()		break;
+				case p.Enzino:		txtEnzino()			break;
+				case p.Incel:			txtIncel()				break;
+				case p.Amandine:	txtAmandine()	break;
+			#endregion
 		#endregion
-		#region PNJ EN VILLES
-			case p.Martine:		txtMartine()		break;
-			case p.Enzino:		txtEnzino()			break;
-			case p.Incel:			txtIncel()				break;
-			case p.Amandine:	txtAmandine()	break;
+		#region CINÉMATIQUE
+			#region INTRO
+				#region SCENE 3
+					case DIAL_ID_SCENE_3 :{
+						D "Bienvenue à Saints Martyrs. Euh... Blaise, c’est ça ?", p.Didier, l, p.player);
+						D "C’est mon nom oui, enchanté." pr
+						d("Je suis Didier, tutoie-moi, tu pourras me joindre si tu as besoin de renseignements à l’avenir. De toute évidence,[delay, 250] nous serons amenés à nous lier d'amitier ça ne fait aucun doutes! ", p.Didier, l, noone, turnLimpSynchOff);
+						D "[limpOff][delay, 100].[delay, 100].[delay, 100]." pr
+						d("[shake]Parfait!",p.player, r, noone, noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_SMILING_FACE});
+					}break;
+				#endregion
+			#endregion
 		#endregion
+		
+		
+		
+		default:{
+			d("erreur! id dialogue invalide!"pr 
+		}break;
 	}
 }
 

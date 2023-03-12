@@ -19,8 +19,8 @@
 	font = ftDial;
 	draw_set_font(font);
 	sepTxt = string_height("W")-10;
-	baseTypeSpeed = 0.5;
-	maxTypeSpeed = 1;
+	baseTypeSpeed = 1;
+	maxTypeSpeed = 2;
 	spriteBulle = sprBulle;
 	hBulleMin = decaTexteBulle*2 + sepTxt;
 	decaArrChoice = 20;
@@ -63,6 +63,7 @@ targetHPort = hPort;
 vitesseScale = 7;
 tensionScale = 0.5;
 //---SYNCHRONIE LABIALE
+limpSynchSpd = true;
 cptr = 0;
 numSubImage = 1
 #endregion
@@ -81,6 +82,8 @@ numSubImage = 1
 		tarAlpha : 0,
 		alpha : 0,
 		txtToDraw : "",
+		endFun : noone,
+		startFun : noone,
 	}
 	choice[0]={
 	txt : "",

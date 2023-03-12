@@ -133,13 +133,16 @@ if global.cRlLeft or clickAuto
 		
 		if checkState == 1
 		{
+			limpSynchSpd = baseTypeSpeed;
+			
 			if currentBulle < nbBulles -1
 			{
 				typingSpeed = baseTypeSpeed;
 				setupPort = false;
 				currentBulle ++;
 				bulle[currentBulle].typist.in(baseTypeSpeed, fadingSpeed);
-				
+				if is_method(bulle[currentBulle-1].endFun) then bulle[currentBulle-1].endFun();
+				if is_method(bulle[currentBulle].startFun) then bulle[currentBulle].startFun();
 			}
 			else
 			{
@@ -151,6 +154,7 @@ if global.cRlLeft or clickAuto
 				else
 				{
 					typingSpeed = baseTypeSpeed;
+					limpSynchSpd = baseTypeSpeed;
 					showChoice = true;	
 				}
 			}
@@ -159,7 +163,7 @@ if global.cRlLeft or clickAuto
 		{
 			bulle[currentBulle].typist.in(maxTypeSpeed, fadingSpeed);
 			typingSpeed = maxTypeSpeed;	
-	
+			if limpSynchSpd == baseTypeSpeed then limpSynchSpd = maxTypeSpeed;
 		}
 	}
 	else

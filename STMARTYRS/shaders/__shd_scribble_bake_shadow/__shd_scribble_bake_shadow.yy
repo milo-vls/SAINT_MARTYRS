@@ -4,7 +4,7 @@
   "name": "__shd_scribble_bake_shadow",
   "parent": {
     "name": "Shaders",
-    "path": "folders/SCRIPTS/texte/Scribble/(System - don't call these functions)/Shaders.yy",
+    "path": "folders/SCRIPTS/TEXTE/SCRIBBLE/(System - don't call these functions)/Shaders.yy",
   },
   "type": 1,
 }

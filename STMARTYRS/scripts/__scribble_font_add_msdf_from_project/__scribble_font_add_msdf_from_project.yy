@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "(System - don't call these functions)",
-    "path": "folders/SCRIPTS/texte/Scribble/(System - don't call these functions).yy",
+    "path": "folders/SCRIPTS/TEXTE/SCRIBBLE/(System - don't call these functions).yy",
   },
 }

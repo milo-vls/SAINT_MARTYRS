@@ -9,6 +9,7 @@ enum INTRO_STATE
 	WAIT_BEFORE_TITLE,
 	TITLE_SHOWN,
 	TRAVEL_TO,
+	GENDARMERIE,
 }
 
 currentIntroState = 0;
@@ -44,4 +45,5 @@ waitTitle = 9 * room_speed;
 #macro OBS_ID_SANITAIRE "intro_sanitaire"
 
 
-
+//--CORRIDOR GENDARMERIE
+#macro DIAL_ID_SCENE_3 "intro_corridor"

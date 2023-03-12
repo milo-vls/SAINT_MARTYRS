@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "pnj en ville",
-    "path": "folders/SCRIPTS/texte/texte scripts perso/DATA DIALOGUES/pnj en ville.yy",
+    "name": "HABITANTS",
+    "path": "folders/SCRIPTS/TEXTE/PERSO/DATA DIALOGUES/NPC/HABITANTS.yy",
   },
 }

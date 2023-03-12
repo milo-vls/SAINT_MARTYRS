@@ -9,9 +9,16 @@ yCentralSlide = lerp(yCentralSlide, -200, 0.1);
 #endregion
 
 #region portrait
-cptr ++
-numSubImage = (cptr mod 6 == 0) ? irandom_range(1, 5) : numSubImage //+        ((( cptr div 10)mod 4) * irandom_range(1, 4))
 
+if limpSynchSpd > 0
+{
+	cptr += limpSynchSpd;
+	numSubImage = (cptr mod 6 == 0) ? irandom_range(1, 5) : numSubImage //+        ((( cptr div 10)mod 4) * irandom_range(1, 4))
+}
+else
+{
+		numSubImage = 0;
+}
 
 if bulle[currentBulle].side == "r"
 {
@@ -142,7 +149,7 @@ if rightPort != noone and rightPort != PAS_D_ECOUTEUR
 	if bulle[currentBulle].side == "r"and bulle[currentBulle].typist.get_state() <1
 	draw_sprite_ext(rightPort, numSubImage, xrightPort, yrightPort, targetHPort/sprite_get_height(rightPort), targetHPort/sprite_get_height(rightPort), 0, -1, alphaRPort);
 	else
-	draw_sprite_ext(rightPort, 0, xrightPort, yrightPort, targetHPort/sprite_get_height(rightPort), targetHPort/sprite_get_height(rightPort), 0, -1, alphaRPort);
+	draw_sprite_ext(rightPort, global.char[bulle[currentBulle].char].imageIndexStopTalk, xrightPort, yrightPort, targetHPort/sprite_get_height(rightPort), targetHPort/sprite_get_height(rightPort), 0, -1, alphaRPort);
 }
 if leftPort != noone and leftPort != PAS_D_ECOUTEUR
 {
@@ -156,7 +163,7 @@ if leftPort != noone and leftPort != PAS_D_ECOUTEUR
 	{
 		draw_sprite_ext(leftPort, numSubImage, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), targetHPort/sprite_get_height(leftPort), 0, -1, alphaLPort);
 	}else
-	draw_sprite_ext(leftPort, 0, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), targetHPort/sprite_get_height(leftPort), 0, -1, alphaLPort);
+	draw_sprite_ext(leftPort, global.char[bulle[currentBulle].char2].imageIndexStopTalk, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), targetHPort/sprite_get_height(leftPort), 0, -1, alphaLPort);
 }
 
 }
@@ -190,47 +197,47 @@ if antLeftPort != noone
 
 #region bulles et texte
 
-	if setup
-	for (var i = 0; i < array_length(bulle);i ++)
-	{
-		#region quel alpha? quelle couleur?
-			//taralpha
-			bulle[currentBulle].alpha = 0.95;
-			if currentBulle > i
-			{
-				bulle[i].tarAlpha = 0.8;
-			}
+if setup
+for (var i = 0; i < array_length(bulle);i ++)
+{
+	#region quel alpha? quelle couleur?
+		//taralpha
+		bulle[currentBulle].alpha = 0.95;
+		if currentBulle > i
+		{
+			bulle[i].tarAlpha = 0.8;
+		}
 		
-			bulle[i].alpha = approach(bulle[i].alpha, bulle[i].tarAlpha, 0.08);
-			draw_set_alpha(bulle[i].alpha);
-			cBulle = global.char[bulle[i].char].col ?? c_white;
-		#endregion
-		#region dessin bulles
+		bulle[i].alpha = approach(bulle[i].alpha, bulle[i].tarAlpha, 0.08);
+		draw_set_alpha(bulle[i].alpha);
+		cBulle = global.char[bulle[i].char].col ?? c_white;
+	#endregion
+	#region dessin bulles
+		if bulle[i].side == "r"
+			draw_sprite_stretched_ext(spriteBulle, 0, xBulle + decaBulleOtherSide, bulle[i].y, wBulle-decaBulleOtherSide, bulle[i].h -20, cBulle, bulle[i].alpha);
+		if bulle[i].side == "l"
+		{
+			draw_sprite_stretched_ext(sprBulle2, 0, xBulle, bulle[i].y, wBulle - decaBulleOtherSide, bulle[i].h -20, cBulle, bulle[i].alpha);
+		}
+	#endregion
+	#region dessin texte
+		#region position
+			var _ytxt = bulle[i].y + decaTexteBulle/2;
 			if bulle[i].side == "r"
-				draw_sprite_stretched_ext(spriteBulle, 0, xBulle + decaBulleOtherSide, bulle[i].y, wBulle-decaBulleOtherSide, bulle[i].h -20, cBulle, bulle[i].alpha);
-			if bulle[i].side == "l"
 			{
-				draw_sprite_stretched_ext(sprBulle2, 0, xBulle, bulle[i].y, wBulle - decaBulleOtherSide, bulle[i].h -20, cBulle, bulle[i].alpha);
+				var _xtxt = xtxt+decaBulleOtherSide;
+			}
+			else
+			{
+				var _xtxt = xtxt;
 			}
 		#endregion
-		#region dessin texte
-			#region position
-				var _ytxt = bulle[i].y + decaTexteBulle/2;
-				if bulle[i].side == "r"
-				{
-					var _xtxt = xtxt+decaBulleOtherSide;
-				}
-				else
-				{
-					var _xtxt = xtxt;
-				}
-			#endregion
-			draw_set_alpha(bulle[i].alpha);
-			bulle[i].txt.draw(_xtxt, _ytxt, bulle[i].typist);
+		draw_set_alpha(bulle[i].alpha);
+		bulle[i].txt.draw(_xtxt, _ytxt, bulle[i].typist);
 			
-		#endregion
-	}
-	draw_set_color(c_white);
+	#endregion
+}
+draw_set_color(c_white);
 
 #endregion
 
