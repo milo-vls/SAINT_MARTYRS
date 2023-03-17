@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "texte",
-    "path": "folders/SPRITES/texte.yy",
+    "name": "TEXT",
+    "path": "folders/SPRITES/TEXT.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

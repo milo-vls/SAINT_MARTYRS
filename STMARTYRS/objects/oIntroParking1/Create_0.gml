@@ -10,6 +10,8 @@ enum INTRO_STATE
 	TITLE_SHOWN,
 	TRAVEL_TO,
 	GENDARMERIE,
+	TUTO_MAP,
+	
 }
 
 currentIntroState = 0;

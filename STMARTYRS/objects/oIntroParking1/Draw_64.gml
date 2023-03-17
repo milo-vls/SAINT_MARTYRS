@@ -80,6 +80,13 @@ case INTRO_STATE.GENDARMERIE:{
 	{
 		GoToRoom(P_CORRIDOR);
 	}
+	if room == P_CORRIDOR and !instance_exists(oDial)
+	{
+		GoToRoom(pcarte);	
+	}
+}break;
+case INTRO_STATE.TUTO_MAP:{
+	
 }break;
 default:{}break;
 

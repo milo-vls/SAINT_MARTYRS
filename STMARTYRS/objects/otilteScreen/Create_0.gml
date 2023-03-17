@@ -1,5 +1,5 @@
 option[0] = {
-	txt : str("Nouvelle partie"),
+	txt : str("new game"),
 	command : function(){
 		//startObs("WELCOME DEMO");
 		GoToRoom(global.startingRoom, noone, true, noone/*, function(){
@@ -12,13 +12,13 @@ option[0] = {
 	col : c_white,
 }
 option[1] = {
-	txt : "Options     ",
+	txt : "options ",
 	command : function(){startObs("OPTIONS DEMO INDISPO")},
 	_x : 0,
 	col : c_white,
 }
 option[2] = {
-	txt : str("Quit"),
+	txt : str("quit"),
 	command : function() {game_end()},
 	_x : 0,
 	col : c_white,

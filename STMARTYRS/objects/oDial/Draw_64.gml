@@ -163,7 +163,11 @@ if leftPort != noone and leftPort != PAS_D_ECOUTEUR
 	{
 		draw_sprite_ext(leftPort, numSubImage, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), targetHPort/sprite_get_height(leftPort), 0, -1, alphaLPort);
 	}else
-	draw_sprite_ext(leftPort, global.char[bulle[currentBulle].char2].imageIndexStopTalk, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), targetHPort/sprite_get_height(leftPort), 0, -1, alphaLPort);
+	{
+		var _sousCheck = bulle[currentBulle].char2;
+		var _check = global.char[_sousCheck ].imageIndexStopTalk;
+		draw_sprite_ext(leftPort, _check, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), targetHPort/sprite_get_height(leftPort), 0, -1, alphaLPort);
+	}
 }
 
 }

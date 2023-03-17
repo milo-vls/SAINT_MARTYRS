@@ -91,11 +91,15 @@ function txtData(textID)
 			#region INTRO
 				#region SCENE 3
 					case DIAL_ID_SCENE_3 :{
+						oIntroParking1.currentIntroState = INTRO_STATE.TUTO_MAP;
 						D "Bienvenue à Saints Martyrs. Euh... Blaise, c’est ça ?", p.Didier, l, p.player);
 						D "C’est mon nom oui, enchanté." pr
 						d("Je suis Didier, tutoie-moi, tu pourras me joindre si tu as besoin de renseignements à l’avenir. De toute évidence,[delay, 250] nous serons amenés à nous lier d'amitier ça ne fait aucun doutes! ", p.Didier, l, noone, turnLimpSynchOff);
 						D "[limpOff][delay, 100].[delay, 100].[delay, 100]." pr
 						d("[shake]Parfait!",p.player, r, noone, noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_SMILING_FACE});
+						D "Je vais te montrer ton lieu de travail. Je te présenterai à Ernest juste après, il est de ton âge." dl
+						d("Je vais te montrer ton lieu de travail. Je te présenterai à Ernest juste après ça, il est de ton âge vous devriez vous entendre.", p.Didier, l,noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_NEUTRAL_FACE});
+						D "D’accord, ne perdons pas de temps." pr 
 					}break;
 				#endregion
 			#endregion

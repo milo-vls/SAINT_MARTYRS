@@ -11,7 +11,7 @@ y2Rec = room_height;
 x1Rec = 0;
 x2Rec = room_width;
 
-draw_rectangle_color(x1Rec, y1Rec, x2Rec, y2Rec, colRec, colRec, colRec, colRec, false);
+//draw_rectangle_color(x1Rec, y1Rec, x2Rec, y2Rec, colRec, colRec, colRec, colRec, false);
 
 yOptionTitleScreen = y1Rec + 100;
 
@@ -21,7 +21,7 @@ for (var i = 0;i < array_length(option);i ++)
 	option[0]._x = decaMenuTitleScreen;
 	if i != 0
 	{
-		option[i]._x = option[i - 1]._x + string_width(option[i - 1].txt) + decaMenuTitleScreen;
+		option[i]._x =  option[i - 1]._x + string_width(option[i - 1].txt) + decaMenuTitleScreen;
 	}
 	//couleur du texte
 	if mouse_y > y1Rec
@@ -32,7 +32,7 @@ for (var i = 0;i < array_length(option);i ++)
 		}
 		else
 		{
-			option[0].col = c_white;
+			option[0].col = c_grey;
 		}
 		if i != 0
 		{
@@ -42,13 +42,13 @@ for (var i = 0;i < array_length(option);i ++)
 			}
 			else
 			{
-				option[i].col = c_white;
+				option[i].col = c_grey;
 			}
 		}
 	}
 	else
 	{
-		option[i].col = c_white;
+		option[i].col = c_grey;
 	}
 	//dessin
 	draw_text_color(option[i]._x, yOptionTitleScreen, option[i].txt, option[i].col, option[i].col, option[i].col, option[i].col, 1);
