@@ -88,6 +88,14 @@ case INTRO_STATE.TUTO_MAP:{
 		GoToRoom(pcarte);	
 	}
 	
+	switch(tutoMapState)
+	{
+		case 0:
+		{
+			drawRectangleHighLight()
+		}break;
+	}
+	
 }break;
 default:{}break;
 

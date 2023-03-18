@@ -87,7 +87,7 @@
     {"name":"pièces","order":13,"path":"folders/TESTES ET DEV/pièces.yy",},
     {"name":"pnj","order":2,"path":"folders/TESTES ET DEV/pnj.yy",},
     {"name":"son","order":11,"path":"folders/TESTES ET DEV/son.yy",},
-    {"name":"group1","order":10,"path":"folders/SCRIPTS/group1.yy",},
+    {"name":"ACTIONS & MÉCANIQUE","order":10,"path":"folders/SCRIPTS/ACTIONS & MÉCANIQUE.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oOmbreUsi","order":2,"path":"objects/oOmbreUsi/oOmbreUsi.yy",},
