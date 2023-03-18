@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scriptsMap",
+  "name": "scrHighlight",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "MAP",
-    "path": "folders/SCRIPTS/MAP.yy",
+    "name": "AFFICHAGE",
+    "path": "folders/SCRIPTS/AFFICHAGE.yy",
   },
 }

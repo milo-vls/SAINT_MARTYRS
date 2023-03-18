@@ -78,14 +78,15 @@ case INTRO_STATE.TRAVEL_TO:{
 case INTRO_STATE.GENDARMERIE:{
 	if room == P_SANITAIRES and !instance_exists(oObservation)
 	{
-		GoToRoom(P_CORRIDOR);
+		 if !instance_exists(oGoToRoom) GoToRoom(P_CORRIDOR);
 	}
+	
+}break;
+case INTRO_STATE.TUTO_MAP:{
 	if room == P_CORRIDOR and !instance_exists(oDial)
 	{
 		GoToRoom(pcarte);	
 	}
-}break;
-case INTRO_STATE.TUTO_MAP:{
 	
 }break;
 default:{}break;

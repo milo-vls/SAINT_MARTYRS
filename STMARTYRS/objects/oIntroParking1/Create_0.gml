@@ -49,3 +49,7 @@ waitTitle = 9 * room_speed;
 
 //--CORRIDOR GENDARMERIE
 #macro DIAL_ID_SCENE_3 "intro_corridor"
+
+
+//--TUTO_MAP
+tutoMapState = 0;
