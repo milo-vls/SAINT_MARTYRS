@@ -53,3 +53,5 @@ waitTitle = 9 * room_speed;
 
 //--TUTO_MAP
 tutoMapState = 0;
+textTutoMapTest = scribble("Voici comment je mets en lumière une zone : 3");
+typistTextTutoMapTest = scribble_typist().in(1, 0);

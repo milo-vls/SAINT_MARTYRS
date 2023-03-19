@@ -100,7 +100,7 @@ case INTRO_STATE.TUTO_MAP:{
 		}break;
 		case 1:
 		{
-			drawRectangleHighLight(100, 100, 155, 155, c_blue, 0.7);
+			drawRectangleHighlightText(100, 100, 155, 155, c_blue, 0.4, textTutoMapTest, typistTextTutoMapTest);
 			tutoMapState += waitForAnyInputPressed();
 		}break;
 	}
