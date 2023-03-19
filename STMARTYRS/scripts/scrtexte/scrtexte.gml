@@ -91,7 +91,6 @@ function txtData(textID)
 			#region INTRO
 				#region SCENE 3
 					case DIAL_ID_SCENE_3 :{
-						oIntroParking1.currentIntroState = INTRO_STATE.TUTO_MAP;
 						D "Bienvenue à Saints Martyrs. Euh... Blaise, c’est ça ?", p.Didier, l, p.player);
 						D "C’est mon nom oui, enchanté." pr
 						d("Je suis Didier, tutoie-moi, tu pourras me joindre si tu as besoin de renseignements à l’avenir. De toute évidence,[delay, 250] nous serons amenés à nous lier d'amitier ça ne fait aucun doutes! ", p.Didier, l, noone, turnLimpSynchOff);

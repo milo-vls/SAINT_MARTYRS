@@ -1,3 +1,4 @@
-function scrInputs(){
-
+function waitForAnyInputPressed()
+{
+	return (global.cPrLeft or global.cPrRight);
 }

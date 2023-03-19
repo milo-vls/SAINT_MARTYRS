@@ -80,7 +80,11 @@ case INTRO_STATE.GENDARMERIE:{
 	{
 		 if !instance_exists(oGoToRoom) GoToRoom(P_CORRIDOR);
 	}
-	
+	if (!instance_exists(oGoToRoom) and !instance_exists(oDial))
+	{
+		currentIntroState = INTRO_STATE.TUTO_MAP;
+		GoToMap();
+	}
 }break;
 case INTRO_STATE.TUTO_MAP:{
 	if room == P_CORRIDOR and !instance_exists(oDial)
@@ -92,7 +96,12 @@ case INTRO_STATE.TUTO_MAP:{
 	{
 		case 0:
 		{
-			drawRectangleHighLight()
+			if room == pcarte tutoMapState ++;
+		}break;
+		case 1:
+		{
+			drawRectangleHighLight(100, 100, 155, 155, c_blue, 0.7);
+			tutoMapState += waitForAnyInputPressed();
 		}break;
 	}
 	
