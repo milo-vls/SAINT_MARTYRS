@@ -23,7 +23,6 @@ blurDial = 8; //valeur visée
 
 
 
-
 init_map();
 init_time();
 init_crimes_tueurs();

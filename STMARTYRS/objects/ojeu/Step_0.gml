@@ -14,7 +14,10 @@ if player_free()
 		GoToRoom(pcarte, noone, true);
 	}
 
-	tenseNight = START_TENSE_NIGHT <= _heureActuelle and _heureActuelle <= END_OF_NIGHT_HOUR
+	if START_TENSE_NIGHT <= _heureActuelle and _heureActuelle <= END_OF_NIGHT_HOUR and !tenseNight
+	{
+		startTenseNight();	
+	}
 
 }
 

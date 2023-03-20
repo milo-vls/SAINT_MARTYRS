@@ -1,10 +1,10 @@
 {
   "FolderOrderSettings": [
     {"name":"NOTES","order":5,"path":"folders/NOTES.yy",},
-    {"name":"carte","order":4,"path":"folders/OBJECTS/carte.yy",},
-    {"name":"affichages sans inter","order":2,"path":"folders/OBJECTS/carte/affichages sans inter.yy",},
-    {"name":"épingles carte","order":1,"path":"folders/OBJECTS/carte/épingles carte.yy",},
-    {"name":"meta","order":3,"path":"folders/OBJECTS/carte/meta.yy",},
+    {"name":"MAP","order":4,"path":"folders/OBJECTS/MAP.yy",},
+    {"name":"affichages sans inter","order":2,"path":"folders/OBJECTS/MAP/affichages sans inter.yy",},
+    {"name":"épingles carte","order":1,"path":"folders/OBJECTS/MAP/épingles carte.yy",},
+    {"name":"meta","order":3,"path":"folders/OBJECTS/MAP/meta.yy",},
     {"name":"CINEMATIQUES","order":5,"path":"folders/OBJECTS/CINEMATIQUES.yy",},
     {"name":"INTRO","order":2,"path":"folders/OBJECTS/CINEMATIQUES/INTRO.yy",},
     {"name":"exclu pièce","order":2,"path":"folders/OBJECTS/exclu pièce.yy",},
@@ -100,6 +100,7 @@
     {"name":"P_CORNER_FOUNTAIN","order":22,"path":"rooms/P_CORNER_FOUNTAIN/P_CORNER_FOUNTAIN.yy",},
     {"name":"sprCadranHeure","order":11,"path":"sprites/sprCadranHeure/sprCadranHeure.yy",},
     {"name":"P_AMANDINE_DEADEND","order":16,"path":"rooms/P_AMANDINE_DEADEND/P_AMANDINE_DEADEND.yy",},
+    {"name":"bg_tense_night","order":83,"path":"sprites/bg_tense_night/bg_tense_night.yy",},
     {"name":"P_BLANK_WALL","order":20,"path":"rooms/P_BLANK_WALL/P_BLANK_WALL.yy",},
     {"name":"bg_route_1","order":77,"path":"sprites/bg_route_1/bg_route_1.yy",},
     {"name":"P_JULIEN_STAIRS","order":4,"path":"rooms/P_JULIEN_STAIRS/P_JULIEN_STAIRS.yy",},

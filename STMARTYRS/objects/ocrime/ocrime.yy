@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "épingles carte",
-    "path": "folders/OBJECTS/carte/épingles carte.yy",
+    "path": "folders/OBJECTS/MAP/épingles carte.yy",
   },
   "parentObjectId": null,
   "persistent": false,

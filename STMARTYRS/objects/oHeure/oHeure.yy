@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "icônes",
-    "path": "folders/OBJECTS/carte/icônes.yy",
+    "path": "folders/OBJECTS/MAP/icônes.yy",
   },
   "parentObjectId": null,
   "persistent": false,
