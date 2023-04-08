@@ -289,8 +289,14 @@ switch (currentMenu)
 
 if ojeu.tenseNight
 {
+	//-----CALCUL TEMPS PASSÉ-----//
 	var _checkTimeRemaining = time_source_get_time_remaining(minuterie);
 	minuterieTenseNightTimeSpent = currentNightDiff.dureeSeconde - _checkTimeRemaining ;
+	//-----ENCLENCHEMENT GAME OVER------//
+	if ojeu.nbTueurProcActifs > currentNightDiff.nbTueursMax
+	{
+		 currentMenu = MAP_MENU.GAME_OVER;
+	}
 }
 
 

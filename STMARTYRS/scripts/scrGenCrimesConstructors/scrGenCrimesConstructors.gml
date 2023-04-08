@@ -5,13 +5,14 @@
 /// @param liste_indices_pattern_autorisés	liste des INDICES de la liste "patterns" dans ojeu.
 /// @param évolution_difficulté			comment évolue le score d'une trentaine de secondes à une autre
 /// @param difficulté_gen_tueurs		paramètre pouvant influer la variance 
-function setNightDiff(_score,_pool, _diffEv, _diffVariance, _dureeSeconde) constructor
+function setNightDiff(_score,_pool, _diffEv, _diffVariance, _dureeSeconde, _nbTueursMax) constructor
 {
 	scorePortionTemps = _score;
 	pool = _pool;
 	diffEvolScore = _diffEv;
 	diffVariance = _diffVariance;
 	dureeSeconde = _dureeSeconde;
+	nbTueursMax = _nbTueursMax
 }
 
 //VARIABLE PATTERN, PAS UN TUEUR 

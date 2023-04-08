@@ -8,7 +8,7 @@ if ojeu.tenseNight
 	var _id = layer_background_get_id(_layId);
 	layer_background_sprite(_id, bg_tense_night);
 	
-	currentNightDiff = new setNightDiff(8, [PATTERN.RECTILIGNE], 0, 0, 120);
+	currentNightDiff = new setNightDiff(8, [PATTERN.RECTILIGNE], 0, 0, 120, 5);
 	
 	var _endOfTenseNight = function ()
 	{
