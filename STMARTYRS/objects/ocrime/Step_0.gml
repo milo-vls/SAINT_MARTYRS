@@ -1,12 +1,22 @@
 
 var _crime = crimeType[crimeID]
 var _tueur = tueurType[_crime.tueur]
+
+var _isNotProc = (crimeType == ojeu.crimeProc);
 //------CAPTURE-------//
 if !checkCapture
 {
-	var _checkDateComp = _crime.date > date_inc_day(global.currentDate, -1);
+	var _dateIsPassed;
+	if  !_isNotProc
+	{
+		_dateIsPassed = true;
+	}
+	else
+	{
+		_dateIsPassed = _crime.date > date_inc_day(global.currentDate, -1);
+	}
 	var _nbUsi = instance_number(ousi);
-	if _checkDateComp  and _crime.vulnerable and !_crime.first
+	if _dateIsPassed  and _crime.vulnerable and !_crime.first
 	{
 		for (var _usi = 0; _usi < _nbUsi; _usi ++)
 		{
@@ -19,7 +29,7 @@ if !checkCapture
 		}
 	}
 	crimeType[crimeID].vulnerable = false;
-	checkCapture = !checkCapture
+	checkCapture = true;
 }
 
 
@@ -40,4 +50,4 @@ if _tueur.etat == KILLER_STATE.CAUGHT or _tueur.etat == KILLER_STATE.FLED
 
 //------AFFICHAGE------------//
 var _checkBool = (crimeType == ojeu.crimeProc)
-visible = _checkBool == ojeu.tenseNight;
+visible = _checkBool != ojeu.tenseNight;

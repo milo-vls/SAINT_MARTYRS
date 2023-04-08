@@ -125,6 +125,10 @@ switch (currentMenu)
 	}break;
 	case MAP_MENU.SELECTION_USI:{
 		time_source_pause(ojeu.minuterie);
+		if minuterie != noone
+		{
+			time_source_pause(minuterie);
+		}
 		//MENU USI
 		if ojeu.nbUsiPatrol != 3
 		{
@@ -164,6 +168,10 @@ switch (currentMenu)
 			ojeu.compoUsiDone = true;
 			currentMenu = noone
 			time_source_resume(ojeu.minuterie);
+			if minuterie != noone
+			{
+				time_source_resume(minuterie);
+			}
 		}
 		
 		
@@ -277,8 +285,17 @@ switch (currentMenu)
 }
 
 
+//-----TENSE NIGHT-----//
+
+if ojeu.tenseNight
+{
+	var _checkTimeRemaining = time_source_get_time_remaining(minuterie);
+	minuterieTenseNightTimeSpent = currentNightDiff.dureeSeconde - _checkTimeRemaining ;
+}
+
 
 //DEBUG
 if keyboard_check(vk_space) then currentMenu = MAP_MENU.GAME_OVER;
 
 show_debug_message();
+

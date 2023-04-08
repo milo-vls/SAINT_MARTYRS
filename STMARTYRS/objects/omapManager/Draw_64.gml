@@ -59,7 +59,10 @@ if ojeu.tenseNight == false
 	}
 
 }
-
+else
+{
+	scribble("[fa_middle][fa_center][ftMenu]"+string(ojeu.nbTueurProcActifs)).draw(GAME_WIDTH/2, GAME_HEIGHT/2);	
+}
 
 #region USI
 

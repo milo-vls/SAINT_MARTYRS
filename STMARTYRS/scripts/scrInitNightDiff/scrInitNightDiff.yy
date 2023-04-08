@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Génération procédurale",
-    "path": "folders/SCRIPTS/Génération procédurale.yy",
+    "name": "GENERATION PROC",
+    "path": "folders/SCRIPTS/GENERATION PROC.yy",
   },
 }

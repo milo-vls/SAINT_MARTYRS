@@ -9,7 +9,7 @@ function maj_nb_tueur_proc()
 	
 	for (var i = 0; i < instance_number(ocrime); i ++)
 	{
-		if ojeu.crimeProc[instance_find(ocrime, i).crimeID].first == true
+		if omapManager.crimeProc[instance_find(ocrime, i).crimeID].first == true
 		{
 			_toReturn ++;
 		}
@@ -41,26 +41,31 @@ if !ojeu.tenseNight
 			}
 		}
 	}	
+	
+	return 0;
 }
-else
+
+var _listeCrimes = omapManager.crimeProc
+var _nbCrimeProc = array_length(_listeCrimes);
+var _listeTueurs = omapManager.tueurProc;
+for (var _crime = 0; _crime < _nbCrimeProc; _crime ++)
 {
-	var _listeCrimes = ojeu.crimeProc
-	var _nbCrimeProc = array_length(_listeCrimes);
-	var _listeTueurs = ojeu.tueurProc;
-	for (var _crime = 0; _crime < _nbCrimeProc; _crime ++)
+	if _listeCrimes[_crime].date <  minuterieTenseNightTimeSpent and !_listeCrimes[_crime].appeared and _listeTueurs[_listeCrimes[_crime].tueur].etat == KILLER_STATE.ACTIVE
 	{
-		if _listeCrimes[_crime].date < global.mapDate and !_listeCrimes[_crime].appeared and _listeTueurs[_listeCrimes[_crime].tueur].etat == KILLER_STATE.ACTIVE
+		omapManager.crimeProc[_crime].appeared = true;
+		with instance_create_layer(_listeCrimes[_crime].x, _listeCrimes[_crime].y, "crime", ocrime)
 		{
-			ojeu.crimeProc[_crime].appeared = true;
-			with instance_create_layer(_listeCrimes[_crime].x, _listeCrimes[_crime].y, "crime", ocrime)
-			{
-				crimeID = _crime;
-				crimeType = _listeCrimes;
-				tueurType = _listeTueurs;
-			}
+			crimeID = _crime;
+			crimeType = _listeCrimes;
+			tueurType = _listeTueurs;
 		}
 	}
 }
+
+
+
+return 1;
+
 }
 
 

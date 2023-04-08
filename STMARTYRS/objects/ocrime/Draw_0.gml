@@ -38,6 +38,8 @@ if (crimeType == ojeu.crimeProc) and (_crime.first)
 	image_xscale = 2*(sprite_get_width(sprCrime)/sprite_get_width(sprFirstCrime));
 	image_yscale =  2*(sprite_get_height(sprCrime)/sprite_get_height(sprFirstCrime));
 }
+
+draw_set_alpha(1);
 image_blend = _crime.col;
 
 draw_self();

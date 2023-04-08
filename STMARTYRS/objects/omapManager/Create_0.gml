@@ -15,8 +15,16 @@ enum MAP_MENU
 
 currentMenu = noone;
 
+#region tueur
+nbTueurProcActifs = 0;
+nbTueurProc = 0;
+nbCrimeProc = 0;
+tueurProc	= []		//liste tueurs procéduraux, reset chaque matin
+crimeProc	= []		//liste crimes procéduraux, reset chaque matin
 
+currentNightDiff = noone;
 
+#endregion
 
 #region OLD MENU USI
 //fond noir
@@ -24,7 +32,7 @@ currentMenu = noone;
 tarAlphaFondNoir = 0;
 //cadran 
 //alphaCadran = 0;
-tarAlphaCadran = 0;
+//tarAlphaCadran = 0;
 lCadran = 1620;
 hCadran = 780;
 //x1Cadran = display_get_gui_width()/2 - lCadran/2;
@@ -150,6 +158,10 @@ mapTimeMAJ = false;
 					timer = 0;
 /*end*/		diffTempsMinutes = date_minute_span(global.currentDate, global.mapDate);
 /*durée*/	duree = room_speed * 3;
+
+//-----CRIME PROC----//
+minuterieTenseNightTimeSpent = 0;
+minuterie = noone;
 
 #endregion
 

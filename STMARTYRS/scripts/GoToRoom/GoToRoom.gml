@@ -19,26 +19,23 @@ function GoToRoom(targetRoom, _sound = noone, _sleep = false, nouvel_objet = noo
 //usage spécifique
 function GoToMap()
 {
-	//GoToRoom(pcarte);
-	startTenseNight();
+	GoToRoom(pcarte);
+	//startTenseNight();
 }
 	
 function dormir(_sound = noone)
 {
 	switch (global.currentDate)
 	{
-		case ojeu.startingDate :{
-			GoToRoom(pMG_ClickTarget, _sound, false, oclickerMGmanager);
-		}break;
 		default :{
 			GoToRoom(pcarte, _sound, true);
 		}break;
-		
 	}
 }
 
 function startTenseNight()
 {
+	
 	GoToRoom(pcarte, noone, false, noone, function(){ojeu.tenseNight = true}, true);
 }
 

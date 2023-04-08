@@ -22,19 +22,16 @@ enum TYPE_OF_CRIME{ROBBERY, AGGRESSION, MURDER};
 
 
 function init_crimes_tueurs() 
-{
-nbTueurProcActifs = 0;
-	
-	
+{	
 nbTueurActifs = 0;
-nbTueurProc = 0;
+
 nbTueurs = 0;
-nbCrimeProc = 0;
+
 nbCrimes = 0;
 
-tueurProc	= []		//liste tueurs procéduraux, reset chaque matin
+
 tueur				= []		//liste tueurs scriptés
-crimeProc	= []		//liste crimes procéduraux, reset chaque matin
+
 crime				= []		//liste crimes scriptés 
 
 addScriptedKiller(startingDate);

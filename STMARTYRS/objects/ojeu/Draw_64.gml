@@ -280,10 +280,6 @@ if explore()
 }
 
 
-if room!=pcarte
-{
-		
-}
 
 #region black screen
 	if global.blackScreen == true
@@ -303,11 +299,12 @@ if room!=pcarte
 
 
 #region debogage
+/*
 	draw_set_alpha(1);
 	draw_set_font(ftDial);
 	draw_set_color(c_fuchsia);
 	draw_text(50, 50, "heure globale"+string(date_get_day(global.currentDate))+ "  " + string(date_get_hour(global.currentDate))+":"+string(date_get_minute(global.currentDate)));
 	draw_text(50, 150, "heure carte"+string(date_get_day(global.mapDate))+ "  " + string(date_get_hour(global.mapDate))+":"+string(date_get_minute(global.mapDate)));
 	draw_text(50, 250, "secondes restantes" +string(time_source_get_time_remaining(minuterie)));
-
+*/
 #endregion

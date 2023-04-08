@@ -24,7 +24,7 @@ patterns[PATTERN.RECTILIGNE] = new setPattern(
 																									{
 																										_precedentPointX += _coeffDirX;
 																										_precedentPointY += _coeffDirY;
-																										var _date = date_inc_minute(_firstCrime.date, _delayMinute*_nbCrimeSupp)
+																										var _date = _firstCrime.date +( _delayMinute*_nbCrimeSupp)
 																										array_push( _listeCrimesToReturn, new setCrime(_idKiller, randomNomPrenom(),  _date, false, _precedentPointX, _precedentPointY, true, _colour));
 																										
 																										_nbCrimeSupp ++;
