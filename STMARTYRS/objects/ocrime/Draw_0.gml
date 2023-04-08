@@ -18,21 +18,13 @@ if attachable != noone
 	}
 }
 
- 
-
-
-
-
-
-
-
 
 
 //----MENU CARTE------//
 clickToChangeMenu(MAP_MENU.CRIME_DETAILS);
 
 //-------DESSIN------//
-if (crimeType == ojeu.crimeProc) and (_crime.first) 
+if/* (crimeType == ojeu.crimeProc) and*/ (_crime.first) 
 {
 	sprite_index = sprFirstCrime;
 	image_xscale = 2*(sprite_get_width(sprCrime)/sprite_get_width(sprFirstCrime));

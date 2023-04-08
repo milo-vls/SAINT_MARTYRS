@@ -53,5 +53,5 @@ waitTitle = 9 * room_speed;
 
 //--TUTO_MAP
 tutoMapState = 0;
-textTutoMapTest = scribble("Voici comment je mets en lumière une zone : 3");
+textTutoMapTest = scribble("Voici les unités de surveillance et d'intervention de Saints Martyrs, du moins des pense bêtes nous représentant, nous sommes deux, et sous ton commandement : positionne nous à ta guise dans la ville");
 typistTextTutoMapTest = scribble_typist().in(1, 0);
