@@ -21,7 +21,7 @@ for (var i = 0; i!=6;i++)
 {
 	ojeu.usi[i].etat = USI_STATE.AVAILABLE;
 }
-ojeu.compoUsiDone = false;
+ojeu.compoUsiDone = true;
 ojeu.usiPatrol = array_create(0);
 ojeu.nbUsiPatrol = 0
 //réinitialisation

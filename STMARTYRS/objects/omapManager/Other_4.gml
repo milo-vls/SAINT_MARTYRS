@@ -20,11 +20,6 @@ if ojeu.tenseNight
 	time_source_start(minuterie);
 	
 	
-
-	
-	
-	
-	
 	
 	if array_length(crimeProc) == 0
 	{

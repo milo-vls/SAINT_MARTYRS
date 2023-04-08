@@ -95,15 +95,14 @@ function load_usi()
 	for (var _usi = 0; _usi < _nbUsi; _usi ++)
 	{
 		//l'usi doit-il bien être sur la carte ?
-		if ojeu.usi[_usi].etat == USI_STATE.PATROL	
+		if (ojeu.usi[_usi].section == USI_SECTIONS.TACTIC_UNIT and ojeu.tenseNight) or (ojeu.usi[_usi].section == USI_SECTIONS.PREVENTION_UNIT and !ojeu.tenseNight)
 		{
 			with instance_create_layer(ojeu.usi[_usi].x, ojeu.usi[_usi].y, "usi", ousi)
 			{
-				pressed				= false;
+				pressed			= false;
 				isNew				= true;
 				usiID					= _usi;
-			}
-			
+			}	
 		}
 	}
 }
