@@ -146,6 +146,13 @@ if currentMenu == MAP_MENU.GAME_OVER or currentMenu == MAP_MENU.RETRY
 {
 	for (var i = 0; i < nbGameOverOption; i++)
 	{
+		var _option = gameOverOption[i];
+		var _scribble = _option.scrbbl;
+		var _hauteurTexte = _scribble.get_height()/2;
+		var _largeurTexte = _scribble.get_width()/2;
+		draw_set_alpha(0.3);
+		draw_rectangle_color( GAME_WIDTH/2 - _largeurTexte, _option._y - _hauteurTexte/2, GAME_WIDTH/2 + _largeurTexte, _option._y + _hauteurTexte*2, c_blue, c_blue, c_blue, c_blue, false)
+		draw_set_alpha(alphaGameOver);
 		gameOverOption[i].scrbbl.blend(c_white, alphaGameOverOption).draw(GAME_WIDTH/2, gameOverOption[i]._y);
 	}
 }

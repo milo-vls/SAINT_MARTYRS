@@ -255,7 +255,7 @@ switch (currentMenu)
 			playsound(snGameOver, 1);
 		}
 		
-		if (alphaFinDePartie == 1)
+		if (alphaFinDePartie > 0.2)
 		{
 			alphaGameOverOption = approach(alphaGameOverOption, 1, 0.04);
 			for (var _iOption = 0; _iOption < nbGameOverOption; _iOption ++)
@@ -264,9 +264,12 @@ switch (currentMenu)
 				var _scribble = _option.scrbbl;
 				var _hauteurTexte = _scribble.get_height()/2;
 				var _largeurTexte = _scribble.get_width()/2;
-				if point_in_rectangle(mouse_x, mouse_y, GAME_WIDTH/2 - _largeurTexte, _option._y - _hauteurTexte, GAME_WIDTH/2 + _largeurTexte, _option._y + _hauteurTexte)
+				if point_in_rectangle(mouse_x, mouse_y, GAME_WIDTH/2 - _largeurTexte, _option._y - _hauteurTexte/2, GAME_WIDTH/2 + _largeurTexte, _option._y + _hauteurTexte*2)
 				{
-					if global.cPrLeft _option.procedure();
+					if global.cPrLeft
+					{
+						_option.procedure();
+					}
 				}
 			}
 		}
@@ -280,7 +283,7 @@ switch (currentMenu)
 		}
 	}break;
 	case MAP_MENU.RETRY:{
-		show_message("yo le rap");
+		startTenseNight()
 	}break;
 }
 
@@ -293,7 +296,7 @@ if ojeu.tenseNight
 	var _checkTimeRemaining = time_source_get_time_remaining(minuterie);
 	minuterieTenseNightTimeSpent = currentNightDiff.dureeSeconde - _checkTimeRemaining ;
 	//-----ENCLENCHEMENT GAME OVER------//
-	if ojeu.nbTueurProcActifs > currentNightDiff.nbTueursMax
+	if ojeu.nbTueurProcActifs > currentNightDiff.nbTueursMax and (currentMenu != MAP_MENU.RETRY and currentMenu != MAP_MENU.GAME_OVER_QUIT)
 	{
 		 currentMenu = MAP_MENU.GAME_OVER;
 	}
