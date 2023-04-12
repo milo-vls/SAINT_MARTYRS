@@ -50,4 +50,5 @@ if _tueur.etat == KILLER_STATE.CAUGHT or _tueur.etat == KILLER_STATE.FLED
 
 //------AFFICHAGE------------//
 var _checkBool = (crimeType == ojeu.crimeProc)
-visible = _checkBool != ojeu.tenseNight;
+
+visible = _checkBool== ojeu.tenseNight//(_checkBool and ojeu.tenseNight) or (!_checkBool and !ojeu.tenseNight);
