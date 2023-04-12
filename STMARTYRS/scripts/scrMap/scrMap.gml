@@ -88,8 +88,6 @@ return 1;
 }
 
 
-
-
 //-----------	chargement icônes habitants			-----------//
 function maj_npc()
 {

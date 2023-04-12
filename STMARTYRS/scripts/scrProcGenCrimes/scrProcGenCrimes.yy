@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "GENERATION PROC",
-    "path": "folders/SCRIPTS/GENERATION PROC.yy",
+    "path": "folders/SCRIPTS/MAP/GENERATION PROC.yy",
   },
 }

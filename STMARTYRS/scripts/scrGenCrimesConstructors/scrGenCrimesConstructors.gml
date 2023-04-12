@@ -52,7 +52,7 @@ function setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _genProc, 
  y = _y;
  col = _couleur;
  vulnerable = true;
- spontane = _genProc;
+ estProcedural = _genProc;
  first = _first;
  last = _lastOfKiller;
  appeared = false;

@@ -29,7 +29,7 @@
     {"name":"AFFICHAGE","order":9,"path":"folders/SCRIPTS/AFFICHAGE.yy",},
     {"name":"ajout Struct Array","order":6,"path":"folders/SCRIPTS/ajout Struct Array.yy",},
     {"name":"données","order":5,"path":"folders/SCRIPTS/données.yy",},
-    {"name":"GENERATION PROC","order":7,"path":"folders/SCRIPTS/GENERATION PROC.yy",},
+    {"name":"GENERATION PROC","order":4,"path":"folders/SCRIPTS/MAP/GENERATION PROC.yy",},
     {"name":"MAP","order":4,"path":"folders/SCRIPTS/MAP.yy",},
     {"name":"maths et conditions","order":2,"path":"folders/SCRIPTS/maths et conditions.yy",},
     {"name":"pieces","order":1,"path":"folders/SCRIPTS/pieces.yy",},

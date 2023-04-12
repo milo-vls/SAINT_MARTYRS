@@ -49,7 +49,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"AFFICHAGE","folderPath":"folders/SCRIPTS/AFFICHAGE.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ajout Struct Array","folderPath":"folders/SCRIPTS/ajout Struct Array.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"données","folderPath":"folders/SCRIPTS/données.yy","order":5,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GENERATION PROC","folderPath":"folders/SCRIPTS/GENERATION PROC.yy","order":7,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GENERATION PROC","folderPath":"folders/SCRIPTS/MAP/GENERATION PROC.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MAP","folderPath":"folders/SCRIPTS/MAP.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"maths et conditions","folderPath":"folders/SCRIPTS/maths et conditions.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"méta","folderPath":"folders/SCRIPTS/méta.yy","order":0,},

@@ -36,7 +36,7 @@ function dormir(_sound = noone)
 function startTenseNight()
 {
 	
-	GoToRoom(pcarte, noone, false, noone, function(){ojeu.tenseNight = true}, true);
+	GoToRoom(pcarte, noone, false, noone, function(){ojeu.tenseNight = true; instance_destroy(ocrime);}, true);
 }
 
 
