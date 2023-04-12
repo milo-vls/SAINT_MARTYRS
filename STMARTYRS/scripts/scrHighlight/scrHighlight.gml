@@ -37,6 +37,6 @@ function drawRectangleHighlightText(_xLeft, _yTop, _xRight, _yBottom, _colour, _
 		_halign = fa_left;
 	}
 	
-	_scrbbl.align(_halign, _valign).draw(_xScribble, _yScribble, _typist);
+	_scrbbl.align(_halign, _valign).wrap(_xRight - _xLeft).draw(_xScribble, _yScribble, _typist);
 	
 }

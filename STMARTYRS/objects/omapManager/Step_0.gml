@@ -24,13 +24,11 @@ else
 
 
 //----MISE A JOUR ÉLÉMENTS SUR LA CARTE---//
-
 maj_meurtre();
-ojeu.nbTueurProcActifs = maj_nb_tueur_proc();
+
 
 
 //-------MENU------//
-
 switch (currentMenu)
 {
 	default:{
@@ -94,6 +92,9 @@ switch (currentMenu)
 		{
 			drawUsiModification = false;
 		}
+		
+		
+		//---
 	}break;
 	case MAP_MENU.EXPLO:{
 		tpsBufferInputExplo ++;
@@ -285,26 +286,36 @@ switch (currentMenu)
 	case MAP_MENU.RETRY:{
 		startTenseNight()
 	}break;
+	
 }
 
 
 //-----TENSE NIGHT-----//
-
 if ojeu.tenseNight
 {
+	//-----CALCUL NOMBRE DE TUEURS ACTIFS-----//
+	ojeu.nbTueurProcActifs =  maj_nb_tueur_proc();
 	//-----CALCUL TEMPS PASSÉ-----//
 	var _checkTimeRemaining = time_source_get_time_remaining(minuterie);
 	minuterieTenseNightTimeSpent = currentNightDiff.dureeSeconde - _checkTimeRemaining ;
+	
 	//-----ENCLENCHEMENT GAME OVER------//
 	if ojeu.nbTueurProcActifs > currentNightDiff.nbTueursMax and (currentMenu != MAP_MENU.RETRY and currentMenu != MAP_MENU.GAME_OVER_QUIT)
 	{
 		 currentMenu = MAP_MENU.GAME_OVER;
 	}
+
 }
 
 
-//DEBUG
-if keyboard_check(vk_space) then currentMenu = MAP_MENU.GAME_OVER;
+//-----NOT TENSE NIGHT RELATED-------//
+else
+{
+	ojeu.nbTueurActifs = maj_nb_tueurs();
+}
 
-show_debug_message();
+//DEBUG
+if keyboard_check(vk_down) then currentMenu = MAP_MENU.GAME_OVER;
+
+
 

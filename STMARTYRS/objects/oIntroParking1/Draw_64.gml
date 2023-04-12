@@ -94,14 +94,19 @@ case INTRO_STATE.TUTO_MAP:{
 	
 	switch(tutoMapState)
 	{
-		case 0:
-		{
-			if room == pcarte tutoMapState ++;
+		case 0:{
+			if room == pcarte
+			{
+				startDial(DIAL_ID_SCENE_4, false);
+				tutoMapState ++;
+			}
 		}break;
-		case 1:
-		{
-			drawRectangleHighlightText(200, 400, 1600, 650, c_blue, 0.4, textTutoMapTest, typistTextTutoMapTest);
-			tutoMapState += waitForAnyInputPressed();
+		case 1:{
+			if !instance_exists(oDial)
+			{
+				drawRectangleHighlightText(200, 400, 1600, 650, c_black, 0.4, textTutoMapTest, typistTextTutoMapTest);
+				tutoMapState += waitForAnyInputPressed();
+			}
 		}break;
 	}
 	

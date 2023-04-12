@@ -6,8 +6,8 @@ function maj_nb_tueur_proc()
 	
 	var _toReturn = 0;
 	
-	
-	for (var i = 0; i < instance_number(ocrime); i ++)
+	var _nbCrime = instance_number(ocrime)
+	for (var i = 0; i < _nbCrime; i ++)
 	{
 		if omapManager.crimeProc[instance_find(ocrime, i).crimeID].first == true
 		{
@@ -15,16 +15,35 @@ function maj_nb_tueur_proc()
 		}
 	}
 	
-	
 	return _toReturn;
 	
 	
 }
-
+function maj_nb_tueurs()
+{
+	
+	
+	var _nbTueurs = 0;
+	var _nbCrimes = instance_number(ocrime);
+	
+	for (var i = 0; i < _nbCrimes; i ++)
+	{
+		if ojeu.crime[instance_find(ocrime, i).crimeID].first == true
+		{
+			_nbTueurs ++;
+		}
+	}
+	
+	return _nbTueurs;
+	
+	
+}
 
 //-----------	vérification de nouveaux meurtres-----------//
 function maj_meurtre()
 {
+	
+
 if !ojeu.tenseNight
 {
 

@@ -188,7 +188,7 @@ wBarreSup = display_get_gui_width();
 mapOption[0] = {
 	txt : function()
 			{
-					return string(ojeu.nbTueurProcActifs)
+					return string(ojeu.nbTueurActifs);
 			},
 	fonction : function(){ startObs("nombre de tueur")},
 	pressed : false,
@@ -270,7 +270,7 @@ gameOverOption[1] = {
 	};
 	
 
-nbGameOverOption = array_length(gameOverOption);
+nbGameOverOption =1//array_length(gameOverOption);
 
 yFinDePartie = scrbblFinDePartie.get_height()*GAME_OVER_TITLE_SCALE;
 for (var _option = 0; _option < nbGameOverOption; _option ++)

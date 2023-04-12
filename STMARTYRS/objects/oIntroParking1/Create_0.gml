@@ -48,10 +48,10 @@ waitTitle = 9 * room_speed;
 
 
 //--CORRIDOR GENDARMERIE
-#macro DIAL_ID_SCENE_3 "intro_corridor"
-
+#macro DIAL_ID_SCENE_3 "intro corridor"
+#macro DIAL_ID_SCENE_4 "intro map"
 
 //--TUTO_MAP
 tutoMapState = 0;
-textTutoMapTest = scribble("Voici les unités de surveillance et d'intervention de Saints Martyrs, du moins des pense bêtes nous représentant, nous sommes deux, et sous ton commandement : positionne nous à ta guise dans la ville");
+textTutoMapTest = scribble("[ftDial]Cette punaise là, elle représente un crime lié à une affaire encore non résolue. Ton rôle, c’est d’empêcher le malfaiteur de continuer à perturber l’ordre public. Tu as accès à toutes nos informations.");
 typistTextTutoMapTest = scribble_typist().in(1, 0);

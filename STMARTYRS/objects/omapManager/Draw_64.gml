@@ -68,8 +68,6 @@ else
 
 draw_set_alpha(1);
 
-
-
 //----POSITION DES PANNEAUX
 if currentMenu == MAP_MENU.SELECTION_USI
 {
@@ -99,7 +97,6 @@ else
 		currentY[i] = approach(currentY[i], yWhenHidden, 60);
 	}
 }
-
 
 
 

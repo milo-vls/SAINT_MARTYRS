@@ -101,6 +101,11 @@ function txtData(textID)
 						D "D’accord, ne perdons pas de temps." pr 
 					}break;
 				#endregion
+				#region SCENE 4
+					case DIAL_ID_SCENE_4:{
+						d("Voici ton plan de travail, tu reconnais peut-être pas encore le coin, mais c’est bien une fidèle reproduction de Saints-Martyrs.", p.Didier, l, p.player);
+					}break;
+				#endregion
 			#endregion
 		#endregion
 		
