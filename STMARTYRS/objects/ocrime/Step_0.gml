@@ -2,7 +2,7 @@
 var _crime = crimeType[crimeID]
 var _tueur = tueurType[_crime.tueur]
 
-var _isNotProc = (crimeType == ojeu.crimeProc);
+var _isNotProc = !_crime.estProcedural
 //------CAPTURE-------//
 if !checkCapture
 {
@@ -49,6 +49,6 @@ if _tueur.etat == KILLER_STATE.CAUGHT or _tueur.etat == KILLER_STATE.FLED
 
 
 //------AFFICHAGE------------//
-var _checkBool = (crimeType == ojeu.crimeProc)
 
-visible = _checkBool== ojeu.tenseNight//(_checkBool and ojeu.tenseNight) or (!_checkBool and !ojeu.tenseNight);
+
+visible = (_isNotProc and !ojeu.tenseNight) or (!_isNotProc and ojeu.tenseNight)
