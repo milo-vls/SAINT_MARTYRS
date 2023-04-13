@@ -10,6 +10,7 @@ if ojeu.tenseNight == false
 		draw_visitables();
 	}
 
+	//---MENU SUPERIEUR
 	draw_set_color(#829460 );
 	draw_set_alpha(1);
 	draw_sprite_stretched_ext(sprBarreSup, 0, 0, 0, wBarreSup, hBarreSup, #829460, 1);
@@ -17,7 +18,6 @@ if ojeu.tenseNight == false
 	draw_set_valign(fa_middle);
 	draw_set_font(ftMenu);
 	draw_set_color(c_white);
-
 	for(var i = 0 ; i <nbMapOption ; i ++)
 	{
 		//--DONNÉES POUR LE TEXTE
@@ -57,7 +57,15 @@ if ojeu.tenseNight == false
 		//---DESSIN
 		scribble("["+_txtcol+"][fa_middle][fa_center][ftMenu]"+_shake+_txtToDraw).draw(_xTxt, _yTxt)
 	}
-
+	
+	
+	//---VOLET DÉTAIL CRIME---//
+	if instanceCrimeSurvole != noone
+	{
+		
+	}
+	
+	
 }
 else
 {

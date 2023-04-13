@@ -1,6 +1,6 @@
 // Les actifs du script ont changé pour v2.3.0 Voir
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 pour plus d’informations
-function GoToRoom(targetRoom, _sound = noone, _sleep = false, nouvel_objet = noone, _method = noone, _tenseNight = false)
+ function GoToRoom(targetRoom, _sound = noone, _sleep = false, nouvel_objet = noone, _method = noone, _tenseNight = false)
 {
 	with (instance_create_depth(0, 0, 0, oGoToRoom))
 	{

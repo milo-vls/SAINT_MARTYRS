@@ -94,7 +94,10 @@ switch (currentMenu)
 		}
 		
 		
-		//---
+		//---DÉTAILS CRIME---//
+		instanceCrimeSurvole = instance_survole(ocrime, mouse_x, mouse_y);
+
+		
 	}break;
 	case MAP_MENU.EXPLO:{
 		tpsBufferInputExplo ++;

@@ -145,4 +145,37 @@ function load_psc()
 }
 
 
+//----------- détection, hitbox et autres                   -------------//
+function instance_survole(_objID, _x, _y)
+{
+	var _nbInstances = instance_number(_objID);
+	var _instanceTrouvee = noone;
+	var _instance;
+	for (var i = 0; i < _nbInstances; i ++)
+	{
+		_instance = instance_find(ocrime, i);
+		if position_meeting(_x, _y, _instance)
+		{
+			_instanceTrouvee = _instance;	
+		}
+	}
+	
+	return _instanceTrouvee;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
