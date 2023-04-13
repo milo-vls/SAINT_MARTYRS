@@ -305,7 +305,7 @@
     {"id":{"name":"sprrotateUsi","path":"sprites/sprrotateUsi/sprrotateUsi.yy",},"order":6,},
     {"id":{"name":"sprCrime","path":"sprites/sprCrime/sprCrime.yy",},"order":3,},
     {"id":{"name":"plant_front_of_house_hallway","path":"sprites/plant_front_of_house_hallway/plant_front_of_house_hallway.yy",},"order":43,},
-    {"id":{"name":"Script135","path":"scripts/Script135/Script135.yy",},"order":5,},
+    {"id":{"name":"scrDessinMap","path":"scripts/scrDessinMap/scrDessinMap.yy",},"order":5,},
     {"id":{"name":"scribble_external_sound_add","path":"scripts/scribble_external_sound_add/scribble_external_sound_add.yy",},"order":0,},
     {"id":{"name":"Ztemplate_new_explo_room","path":"rooms/Ztemplate_new_explo_room/Ztemplate_new_explo_room.yy",},"order":0,},
     {"id":{"name":"snGameOver","path":"sounds/snGameOver/snGameOver.yy",},"order":1,},

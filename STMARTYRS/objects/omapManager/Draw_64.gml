@@ -1,14 +1,15 @@
-draw_set_alpha(1);
 
 
-
+//-----REGULAR NIGHT
 if ojeu.tenseNight == false
 {
+	//---POINT DE DÉPLACEMENT EN VILLE
 	if currentMenu == MAP_MENU.EXPLO
 	{
 		draw_set_alpha(1)
 		draw_visitables();
 	}
+
 
 	//---MENU SUPERIEUR
 	draw_set_color(#829460 );
@@ -62,16 +63,61 @@ if ojeu.tenseNight == false
 	//---VOLET DÉTAIL CRIME---//
 	if instanceCrimeSurvole != noone
 	{
-		
+		drawCrimeDetails(instanceCrimeSurvole.crimeID, instanceCrimeSurvole.x, instanceCrimeSurvole.y);
 	}
 	
 	
 }
+
+
+//----TENSE NIGHT
 else
 {
+	draw_set_alpha(1);
 	scribble("[fa_middle][fa_center][ftMenu]"+string(ojeu.nbTueurProcActifs)).draw(GAME_WIDTH/2, GAME_HEIGHT/2);	
 }
 
+
+//-----GAME OVER
+alphaGameOver = approach(alphaGameOver, tarAlphaGameOver, 0.05);
+draw_set_alpha(alphaGameOver);
+draw_set_color(c_black);
+draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);
+
+if (alphaGameOver == 1)
+{
+	alphaFinDePartie = approach(alphaFinDePartie, 1, 0.01);
+	scrbblFinDePartie.blend(c_white, alphaFinDePartie).draw(GAME_WIDTH/2, yFinDePartie);
+
+}
+if currentMenu == MAP_MENU.GAME_OVER or currentMenu == MAP_MENU.RETRY 
+{
+	for (var i = 0; i < nbGameOverOption; i++)
+	{
+		var _option = gameOverOption[i];
+		var _scribble = _option.scrbbl;
+		var _hauteurTexte = _scribble.get_height()/2;
+		var _largeurTexte = _scribble.get_width()/2;
+		draw_set_alpha(0.3);
+		draw_rectangle_color( GAME_WIDTH/2 - _largeurTexte, _option._y - _hauteurTexte/2, GAME_WIDTH/2 + _largeurTexte, _option._y + _hauteurTexte*2, c_blue, c_blue, c_blue, c_blue, false)
+		draw_set_alpha(alphaGameOver);
+		gameOverOption[i].scrbbl.blend(c_white, alphaGameOverOption).draw(GAME_WIDTH/2, gameOverOption[i]._y);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//UNUSED//
 #region USI
 
 draw_set_alpha(1);
@@ -133,31 +179,3 @@ for (var i = 0; i!=6;i++)
 
 
 #endregion
-
-
-//--GAME OVER
-alphaGameOver = approach(alphaGameOver, tarAlphaGameOver, 0.05);
-draw_set_alpha(alphaGameOver);
-draw_set_color(c_black);
-draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);
-
-if (alphaGameOver == 1)
-{
-	alphaFinDePartie = approach(alphaFinDePartie, 1, 0.01);
-	scrbblFinDePartie.blend(c_white, alphaFinDePartie).draw(GAME_WIDTH/2, yFinDePartie);
-
-}
-if currentMenu == MAP_MENU.GAME_OVER or currentMenu == MAP_MENU.RETRY 
-{
-	for (var i = 0; i < nbGameOverOption; i++)
-	{
-		var _option = gameOverOption[i];
-		var _scribble = _option.scrbbl;
-		var _hauteurTexte = _scribble.get_height()/2;
-		var _largeurTexte = _scribble.get_width()/2;
-		draw_set_alpha(0.3);
-		draw_rectangle_color( GAME_WIDTH/2 - _largeurTexte, _option._y - _hauteurTexte/2, GAME_WIDTH/2 + _largeurTexte, _option._y + _hauteurTexte*2, c_blue, c_blue, c_blue, c_blue, false)
-		draw_set_alpha(alphaGameOver);
-		gameOverOption[i].scrbbl.blend(c_white, alphaGameOverOption).draw(GAME_WIDTH/2, gameOverOption[i]._y);
-	}
-}
