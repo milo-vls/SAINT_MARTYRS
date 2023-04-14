@@ -1,3 +1,15 @@
+function dateStringFromDate(_date)
+{
+	var _dateJour = date_get_day(_date);
+	var _strJour = str(_dateJour);
+	if _dateJour < 10 then _strJour = "0" + _strJour;
+	
+	var _dateMois = date_get_month(_date);
+	var _strMois = str(_dateMois)
+	if _dateMois < 10 then _strMois = "0" + _strMois;
+	
+	return _strJour + "/" + _strMois;
+}
 
 
 function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
