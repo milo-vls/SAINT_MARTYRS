@@ -88,6 +88,7 @@
     {"name":"pièces","order":13,"path":"folders/TESTES ET DEV/pièces.yy",},
     {"name":"pnj","order":2,"path":"folders/TESTES ET DEV/pnj.yy",},
     {"name":"son","order":11,"path":"folders/TESTES ET DEV/son.yy",},
+    {"name":"VICTIMS PORTRAIT","order":2,"path":"folders/SPRITES/CHARACTERS/VICTIMS PORTRAIT.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oOmbreUsi","order":2,"path":"objects/oOmbreUsi/oOmbreUsi.yy",},

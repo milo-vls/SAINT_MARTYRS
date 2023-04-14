@@ -1,6 +1,3 @@
-//---INFOS CRIME---//
-
-
 //------MENU------//
 iconPressed = false;
 

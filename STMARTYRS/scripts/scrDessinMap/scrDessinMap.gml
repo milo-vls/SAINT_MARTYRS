@@ -1,16 +1,28 @@
 function dateStringFromDate(_date)
 {
 	var _dateJour = date_get_day(_date);
-	var _strJour = str(_dateJour);
+	var _strJour = string(_dateJour);
 	if _dateJour < 10 then _strJour = "0" + _strJour;
 	
 	var _dateMois = date_get_month(_date);
-	var _strMois = str(_dateMois)
+	var _strMois = string(_dateMois)
 	if _dateMois < 10 then _strMois = "0" + _strMois;
 	
 	return _strJour + "/" + _strMois;
 }
 
+function heureStringFromDate(_date)
+{
+	var _heure = date_get_hour(_date);
+	var _strHeure = string(_heure);
+	if _heure < 10 then _strHeure = "0" + _strHeure;
+	
+	var _minute = date_get_minute(_date);
+	var _strMinute = string(_minute);
+	if _minute < 10 then _strMinute = "0" + _minute;
+	
+	return _strHeure + ":" + _strMinute;
+}
 
 function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 {
@@ -64,5 +76,10 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 	//DATE
 	var _xDate = _xPrenom;
 	var _yDate = _yPrenom + string_height("W");
-	draw_text(_xDate, _yDate, string(_crime.date));
+	draw_text(_xDate, _yDate, dateStringFromDate(_crime.date));
+	
+	//HEURE
+	var _xHeure = _xPrenom;
+	var _yHeure = _yDate + string_height("W")*0.75;
+	draw_text(_xHeure, _yHeure, heureStringFromDate(_crime.date));
 }

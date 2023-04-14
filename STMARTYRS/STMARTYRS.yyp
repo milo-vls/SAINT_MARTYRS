@@ -116,6 +116,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pièces","folderPath":"folders/TESTES ET DEV/pièces.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pnj","folderPath":"folders/TESTES ET DEV/pnj.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"son","folderPath":"folders/TESTES ET DEV/son.yy","order":11,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"VICTIMS PORTRAIT","folderPath":"folders/SPRITES/CHARACTERS/VICTIMS PORTRAIT.yy","order":2,},
   ],
   "IncludedFiles": [],
   "isEcma": false,
