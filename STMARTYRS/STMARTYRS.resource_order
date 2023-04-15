@@ -64,6 +64,7 @@
     {"name":"BACKGROUNDS","order":4,"path":"folders/SPRITES/BACKGROUNDS.yy",},
     {"name":"CHARACTERS","order":1,"path":"folders/SPRITES/CHARACTERS.yy",},
     {"name":"usi","order":1,"path":"folders/SPRITES/CHARACTERS/USI/usi.yy",},
+    {"name":"VICTIMS PORTRAIT","order":2,"path":"folders/SPRITES/CHARACTERS/VICTIMS PORTRAIT.yy",},
     {"name":"VILLE","order":1,"path":"folders/SPRITES/CHARACTERS/VILLE.yy",},
     {"name":"Amandine","order":6,"path":"folders/SPRITES/CHARACTERS/VILLE/Amandine.yy",},
     {"name":"Enzino","order":5,"path":"folders/SPRITES/CHARACTERS/VILLE/Enzino.yy",},
@@ -88,7 +89,6 @@
     {"name":"pièces","order":13,"path":"folders/TESTES ET DEV/pièces.yy",},
     {"name":"pnj","order":2,"path":"folders/TESTES ET DEV/pnj.yy",},
     {"name":"son","order":11,"path":"folders/TESTES ET DEV/son.yy",},
-    {"name":"VICTIMS PORTRAIT","order":2,"path":"folders/SPRITES/CHARACTERS/VICTIMS PORTRAIT.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oOmbreUsi","order":2,"path":"objects/oOmbreUsi/oOmbreUsi.yy",},

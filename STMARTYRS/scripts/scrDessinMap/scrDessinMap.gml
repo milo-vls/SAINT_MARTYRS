@@ -82,4 +82,20 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 	var _xHeure = _xPrenom;
 	var _yHeure = _yDate + string_height("W")*0.75;
 	draw_text(_xHeure, _yHeure, heureStringFromDate(_crime.date));
+	
+	//PORTRAIT
+	if _crime.portraitVictime != noone
+	{
+		var _largeurPortrait = _hauteurVolet/1 - _marge;
+		var _xPortrait = _xLeft + _largeurVolet - _marge/2 - _largeurPortrait;
+		var _yPortrait = _yTop + _marge/2;
+		//var _hauteurPortrait = sprite_get_height(_crime.portraitVictime) * (_largeurPortrait/sprite_get_width(_crime.portraitVictime));
+		draw_sprite_stretched(_crime.portraitVictime, 0, _xPortrait, _yPortrait, _largeurPortrait, _largeurPortrait);
+	}
+	
+	//COORDONNÉES
+	 draw_set_color(c_yellow);draw_set_valign(fa_bottom); draw_set_halign(fa_center);
+	 var _xTextPos = _xPrenom + _largeurVolet*0.4;
+	 var _yTextPos = _yTop + _hauteurVolet - _marge/2;
+	 draw_text(_xTextPos, _yTextPos, string(_crime.x) + ", " + string(_crime.y));
 }
