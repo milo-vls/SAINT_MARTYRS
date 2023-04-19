@@ -449,6 +449,7 @@
     {"name":"sprCadreUsi","order":1,"path":"sprites/sprCadreUsi/sprCadreUsi.yy",},
     {"name":"sprOrdiPageWeb","order":1,"path":"sprites/sprOrdiPageWeb/sprOrdiPageWeb.yy",},
     {"name":"enlightened_deadend","order":22,"path":"sprites/enlightened_deadend/enlightened_deadend.yy",},
+    {"name":"snRadioBlaise","order":3,"path":"sounds/snRadioBlaise/snRadioBlaise.yy",},
     {"name":"scrDial","order":1,"path":"scripts/scrDial/scrDial.yy",},
     {"name":"twerp","order":3,"path":"scripts/twerp/twerp.yy",},
     {"name":"__scribble_system","order":10,"path":"scripts/__scribble_system/__scribble_system.yy",},

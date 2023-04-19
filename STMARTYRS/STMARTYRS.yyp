@@ -542,6 +542,7 @@
     {"id":{"name":"sprCadreUsi","path":"sprites/sprCadreUsi/sprCadreUsi.yy",},"order":1,},
     {"id":{"name":"sprOrdiPageWeb","path":"sprites/sprOrdiPageWeb/sprOrdiPageWeb.yy",},"order":1,},
     {"id":{"name":"enlightened_deadend","path":"sprites/enlightened_deadend/enlightened_deadend.yy",},"order":22,},
+    {"id":{"name":"snRadioBlaise","path":"sounds/snRadioBlaise/snRadioBlaise.yy",},"order":3,},
     {"id":{"name":"scrDial","path":"scripts/scrDial/scrDial.yy",},"order":1,},
     {"id":{"name":"twerp","path":"scripts/twerp/twerp.yy",},"order":3,},
     {"id":{"name":"data_texte_martine","path":"scripts/data_texte_martine/data_texte_martine.yy",},"order":0,},
