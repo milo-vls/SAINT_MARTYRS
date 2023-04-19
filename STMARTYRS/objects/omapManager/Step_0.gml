@@ -43,24 +43,6 @@ switch (currentMenu)
 				switch(_currentTasks.type)
 				{
 					case TASK_TYPE.USI_DEATH:{
-						if ojeu.nbUsiVivants == 1
-						{
-							//AJOUTER FIN 0
-						}
-						else
-						{
-							var _usidead = false;
-							while !_usidead
-							{
-								var _irandom = irandom(5);
-								if !ojeu.usi[_irandom].etat = USI_STATE.DEAD
-								{
-									ojeu.usi[_irandom].etat = USI_STATE.DEAD;
-									_usidead = true;
-								}
-							}
-						}
-						
 					}break;
 					case TASK_TYPE.DIALOGUE:{
 						startDial(_currentTasks.dialogueId)
