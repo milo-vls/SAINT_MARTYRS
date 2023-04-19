@@ -1,5 +1,6 @@
 playsound(snImpact, 1);
-playsound(snRadioBlaise, 1);
+
+if random(5) >1 then playsound(snRadioBlaise, 1);
 
 
 

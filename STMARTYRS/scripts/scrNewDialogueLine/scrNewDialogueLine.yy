@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scrDial",
+  "name": "scrNewDialogueLine",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

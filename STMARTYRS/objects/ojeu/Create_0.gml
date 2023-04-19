@@ -1,3 +1,6 @@
+initTranslation();
+
+
 
 randomize();
 global.largeur_jeu = 1920;
@@ -37,3 +40,4 @@ init_personnages();
 init_scribble_typist_events();
 
 init_sound();
+
