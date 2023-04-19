@@ -2,10 +2,7 @@ enum USI_SECTIONS
 {
 	PREVENTION_UNIT,TACTIC_UNIT,	
 }
-enum USI_STATE
-{
-AVAILABLE,
-}
+
 enum USI
 {ARMAND, DIDIER, LIZA, ERNEST, ROSALIE, JULIEN}
 
@@ -21,7 +18,7 @@ function init_usi()
 	
 	usi[USI.DIDIER] = {
 		section		: USI_SECTIONS.PREVENTION_UNIT,
-		etat			: USI_STATE.AVAILABLE,
+		disponible			: true,
 		_name		:"DIDIER",
 		tpsRepos	: 5,					
 		tpsPatrol	: 3,
@@ -30,7 +27,7 @@ function init_usi()
 	}
 	usi[USI.LIZA] = {
 		section			: USI_SECTIONS.PREVENTION_UNIT,
-		etat				: USI_STATE.AVAILABLE,
+		etat				: true,
 		_name			: "LIZA",
 		tpsRepos		: 72,				
 		tpsPatrol		: 7,
@@ -39,7 +36,7 @@ function init_usi()
 	}
 	usi[USI.ROSALIE] = {
 		section		: USI_SECTIONS.TACTIC_UNIT,
-		etat			: USI_STATE.AVAILABLE,
+		disponible			: true,
 		_name		: "ROSALIE",
 		tpsRepos	: 72,						 
 		tpsPatrol	: 7,
@@ -48,7 +45,7 @@ function init_usi()
 	}
 	usi[USI.ARMAND] = {
 		section		: USI_SECTIONS.TACTIC_UNIT,
-		etat			: USI_STATE.AVAILABLE,
+		etat			: true,
 		_name : "ARMAND",
 		tpsRepos	: 72,						
 		tpsPatrol	: 7,
@@ -57,7 +54,7 @@ function init_usi()
 	}
 	usi[USI.ERNEST] = {
 		section		: USI_SECTIONS.TACTIC_UNIT,
-		etat			: USI_STATE.AVAILABLE,
+		etat			: true,
 		_name		: "ERNEST",
 		tpsRepos	: 72,						 
 		tpsPatrol	: 7,
@@ -66,7 +63,7 @@ function init_usi()
 	}
 	usi[USI.JULIEN] = {
 		section		: USI_SECTIONS.PREVENTION_UNIT,
-		etat			: USI_STATE.AVAILABLE,
+		disponible			: true,
 		_name		: "JULIEN",
 		tpsRepos	: 5,						
 		tpsPatrol	: 20,
@@ -86,7 +83,5 @@ function init_usi()
 		//-------menu------//
 		usi[i].pressed = false;
 	}
-
-	nbUsiVivants = 6;
 
 }

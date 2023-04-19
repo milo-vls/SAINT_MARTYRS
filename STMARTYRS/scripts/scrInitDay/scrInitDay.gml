@@ -19,7 +19,7 @@ function init_day(){
 //reset usi
 for (var i = 0; i!=6;i++)
 {
-	ojeu.usi[i].etat = USI_STATE.AVAILABLE;
+	ojeu.usi[i].disponible = true;
 }
 ojeu.usiPatrol = array_create(0);
 ojeu.nbUsiPatrol = 0
