@@ -26,13 +26,13 @@ function heureStringFromDate(_date)
 
 function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 {
-	var _crime = ojeu.crime[_crimeID]
-	
-	var _largeurVolet = GAME_WIDTH*1.5/5
-	var _hauteurVolet = GAME_HEIGHT/5;
-	if _crime.indices == [noone, noone, noone, noone]
+	var _crime = ojeu.crime[_crimeID];
+	var _hauteurVoletMinimale = GAME_HEIGHT/5;
+	var _largeurVolet = GAME_WIDTH*1.5/6;
+	var _hauteurVolet = _hauteurVoletMinimale;
+	if  is_array(_crime.indices)
 	{
-			_hauteurVolet = GAME_HEIGHT/5;
+			_hauteurVolet *= 2;
 	}
 	var _marge = _largeurVolet/12;
 	
@@ -86,7 +86,7 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 	//PORTRAIT
 	if _crime.portraitVictime != noone
 	{
-		var _largeurPortrait = _hauteurVolet/1 - _marge;
+		var _largeurPortrait = _hauteurVoletMinimale/1 - _marge;
 		var _xPortrait = _xLeft + _largeurVolet - _marge/2 - _largeurPortrait;
 		var _yPortrait = _yTop + _marge/2;
 		//var _hauteurPortrait = sprite_get_height(_crime.portraitVictime) * (_largeurPortrait/sprite_get_width(_crime.portraitVictime));
@@ -94,8 +94,24 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 	}
 	
 	//COORDONNÉES
-	 draw_set_color(c_yellow);draw_set_valign(fa_bottom); draw_set_halign(fa_center);
-	 var _xTextPos = _xPrenom + _largeurVolet*0.4;
-	 var _yTextPos = _yTop + _hauteurVolet - _marge/2;
-	 draw_text(_xTextPos, _yTextPos, string(_crime.x) + ", " + string(_crime.y));
+	draw_set_color(c_yellow);
+	var _xTextPos = _xPrenom;
+	var _yTextPos = _yHeure  + string_height("W")*0.75;
+	draw_text(_xTextPos, _yTextPos, string(_crime.x) + ", " + string(_crime.y));
+	 
+	//INDICES
+	if is_array(_crime.indices)
+	{
+		var _coteCarre = min(_hauteurVoletMinimale-_marge/2, _largeurVolet - _marge);
+		var _minLen = min(array_length(_crime.indices), 4)
+		for (var i = 0; i < _minLen; i ++)
+		{
+			var _sprite = _crime.indices[i];
+			var _largeurIndice = _coteCarre/2;
+			var _hauteurIndice = _coteCarre/2;
+			var _yIndice = (_yTop + _hauteurVoletMinimale) + (_hauteurIndice)*(i > 1);
+			var _xIndice = (_xLeft + _largeurVolet/2 - _largeurIndice) + ((_largeurIndice) * ((i) % 2))
+			draw_sprite_stretched(_sprite, 0, _xIndice, _yIndice, _largeurIndice, _hauteurIndice);
+		}
+	}
 }

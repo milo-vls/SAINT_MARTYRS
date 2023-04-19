@@ -294,7 +294,6 @@
     {"id":{"name":"P_STATION_BALCONY","path":"rooms/P_STATION_BALCONY/P_STATION_BALCONY.yy",},"order":10,},
     {"id":{"name":"P_DESCENDING_STAIRS","path":"rooms/P_DESCENDING_STAIRS/P_DESCENDING_STAIRS.yy",},"order":46,},
     {"id":{"name":"__scribble_font_add_msdf_from_project","path":"scripts/__scribble_font_add_msdf_from_project/__scribble_font_add_msdf_from_project.yy",},"order":7,},
-    {"id":{"name":"oPanneauUsi","path":"objects/oPanneauUsi/oPanneauUsi.yy",},"order":9,},
     {"id":{"name":"stair_and_junction","path":"sprites/stair_and_junction/stair_and_junction.yy",},"order":56,},
     {"id":{"name":"snDrag","path":"sounds/snDrag/snDrag.yy",},"order":1,},
     {"id":{"name":"dark_white_rose","path":"sprites/dark_white_rose/dark_white_rose.yy",},"order":16,},

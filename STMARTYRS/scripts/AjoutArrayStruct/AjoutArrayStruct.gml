@@ -1,7 +1,7 @@
 //ENSEMBLE DE PROCÉDURE AJOUTANT à UNE LISTE UNE STRUCT PRÉVUES 
 
 
-function addScriptedCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _portrait = noone, _indices = [noone, noone, noone, noone])
+function addScriptedCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _portrait = noone, _indices = noone)
 {
 	ojeu.crime[ojeu.nbCrimes] = new setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, false, c_white, false, _portrait, _indices)
 	ojeu.nbCrimes ++;

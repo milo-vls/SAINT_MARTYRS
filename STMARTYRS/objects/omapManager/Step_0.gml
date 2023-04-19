@@ -135,7 +135,7 @@ switch (currentMenu)
 		}
 		//MENU USI
 		if ojeu.nbUsiPatrol != 3
-		{
+		{/*
 			for(var i = 0; i!=6;i++)
 			{
 				var _x = xMin + wPanUsi*i
@@ -165,7 +165,7 @@ switch (currentMenu)
 						}
 					}
 				}
-			}
+			}*/
 		}
 		else
 		{
@@ -281,6 +281,7 @@ switch (currentMenu)
 	}break;
 	case MAP_MENU.RECAP:{
 		time_source_pause(ojeu.minuterie);
+		//----FIN RÉCAP
 		if global.cRlLeft
 		{
 			currentMenu = MAP_MENU.SELECTION_USI;	

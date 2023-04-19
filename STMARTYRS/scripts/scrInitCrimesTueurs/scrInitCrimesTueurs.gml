@@ -36,7 +36,7 @@ crime				= []		//liste crimes scriptés
 
 addScriptedKiller(startingDate);
 
-addScriptedCrime(0, "Milo Vilas", date_inc_day(startingDate, -8), false, 50, 950, sprPortraitVictimePlaceHolder);
+addScriptedCrime(0, "Milo Vilas", date_inc_day(startingDate, -8), false, 50, 950, sprPortraitVictimePlaceHolder, [sprPortraitVictimePlaceHolder, sprPortraitVictimePlaceHolder, sprPortraitVictimePlaceHolder, sprPortraitVictimePlaceHolder]);
 addScriptedCrime(0, "R.G.", date_inc_day(startingDate, -1), false, 50, 1000);
 addScriptedCrime(0, "Clipper", date_inc_day(startingDate, 2), true, 50, 1050);
 
