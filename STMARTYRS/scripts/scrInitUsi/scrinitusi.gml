@@ -27,7 +27,7 @@ function init_usi()
 	}
 	usi[USI.LIZA] = {
 		section			: USI_SECTIONS.PREVENTION_UNIT,
-		etat				: true,
+		disponible				: false,
 		_name			: "LIZA",
 		tpsRepos		: 72,				
 		tpsPatrol		: 7,
@@ -36,7 +36,7 @@ function init_usi()
 	}
 	usi[USI.ROSALIE] = {
 		section		: USI_SECTIONS.TACTIC_UNIT,
-		disponible			: true,
+		disponible			: false,
 		_name		: "ROSALIE",
 		tpsRepos	: 72,						 
 		tpsPatrol	: 7,
@@ -45,7 +45,7 @@ function init_usi()
 	}
 	usi[USI.ARMAND] = {
 		section		: USI_SECTIONS.TACTIC_UNIT,
-		etat			: true,
+		disponible			: true,
 		_name : "ARMAND",
 		tpsRepos	: 72,						
 		tpsPatrol	: 7,
@@ -54,7 +54,7 @@ function init_usi()
 	}
 	usi[USI.ERNEST] = {
 		section		: USI_SECTIONS.TACTIC_UNIT,
-		etat			: true,
+		disponible: false,
 		_name		: "ERNEST",
 		tpsRepos	: 72,						 
 		tpsPatrol	: 7,
@@ -63,7 +63,7 @@ function init_usi()
 	}
 	usi[USI.JULIEN] = {
 		section		: USI_SECTIONS.PREVENTION_UNIT,
-		disponible			: true,
+		disponible			: false,
 		_name		: "JULIEN",
 		tpsRepos	: 5,						
 		tpsPatrol	: 20,

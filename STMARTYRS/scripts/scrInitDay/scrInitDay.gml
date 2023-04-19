@@ -1,6 +1,6 @@
 //assigne à un perso une room
 //CR ===> INITIALES DE CHARACTER ROOM 
-function CR(_personnage, _room, _mapx = noone, _mapy=noone){
+function characterInit(_personnage, _room, _mapx = noone, _mapy=noone){
 
 global.char[_personnage].room = _room;
 if _mapy != noone
@@ -19,7 +19,7 @@ function init_day(){
 //reset usi
 for (var i = 0; i!=6;i++)
 {
-	ojeu.usi[i].disponible = true;
+	
 }
 ojeu.usiPatrol = array_create(0);
 ojeu.nbUsiPatrol = 0
