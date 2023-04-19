@@ -127,59 +127,6 @@ switch (currentMenu)
 																																		//createChoiceBox("Quitter la carte", quitMap, "Retour", noMenu);
 
 	}break;
-	case MAP_MENU.SELECTION_USI:{
-		time_source_pause(ojeu.minuterie);
-		if minuterie != noone
-		{
-			time_source_pause(minuterie);
-		}
-		//MENU USI
-		if ojeu.nbUsiPatrol != 3
-		{/*
-			for(var i = 0; i!=6;i++)
-			{
-				var _x = xMin + wPanUsi*i
-				var _y = currentY[i]
-				var _CorrectPosMouse = (mouse_x>_x) and (mouse_x< _x + wPanUsi) and (mouse_y>_y) and (mouse_y<_y+hPanUsi)
-				if !(_CorrectPosMouse)
-				{
-					ojeu.usi[i].pressed = false;
-				}
-				if global.cPrLeft and _CorrectPosMouse
-				{
-					ojeu.usi[i].pressed = true;
-				}
-				if ojeu.usi[i].pressed and global.cRlLeft
-				{
-					if ojeu.usi[i].etat != USI_STATE.DEAD and ojeu.usi[i].etat !=USI_STATE.PATROL 
-					{
-						ojeu.usi[i].pressed = false;
-						ojeu.usi[i].etat = USI_STATE.PATROL;
-						ojeu.usiPatrol[ojeu.nbUsiPatrol] = i;
-						ojeu.nbUsiPatrol++;
-						with instance_create_layer(mouse_x, mouse_y, "usi", ousi)
-						{
-							x = mouse_x;
-							y = mouse_y;
-							usiID = i;
-						}
-					}
-				}
-			}*/
-		}
-		else
-		{
-			ojeu.compoUsiDone = true;
-			currentMenu = noone
-			time_source_resume(ojeu.minuterie);
-			if minuterie != noone
-			{
-				time_source_resume(minuterie);
-			}
-		}
-		
-		
-	}break;
 	case MAP_MENU.CRIME_DETAILS:{
 	tarAlphaFondNoir = 0.7;
 	tarAlphaMenupsc = 1;
@@ -280,12 +227,30 @@ switch (currentMenu)
 		
 	}break;
 	case MAP_MENU.RECAP:{
+		//TIME STOP
 		time_source_pause(ojeu.minuterie);
+		if minuterie != noone
+		{
+			time_source_pause(minuterie);
+		}
+		
+		
 		//----FIN RÉCAP
 		if global.cRlLeft
 		{
-			currentMenu = MAP_MENU.SELECTION_USI;	
+			//SWITCH TO OTHER MENU
+			currentMenu = noone;
+			ojeu.compoUsiDone = true;
+			
+			//RESUME TIME STOPPED
+			time_source_resume(ojeu.minuterie);
+			if minuterie != noone
+			{
+				time_source_resume(minuterie);
+			}
 		}
+		
+		
 	}break;
 	case MAP_MENU.RETRY:{
 		startTenseNight()

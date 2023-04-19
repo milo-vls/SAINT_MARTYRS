@@ -118,6 +118,7 @@ if currentMenu == MAP_MENU.GAME_OVER or currentMenu == MAP_MENU.RETRY
 
 
 //UNUSED//
+/*
 #region USI
 
 draw_set_alpha(1);
