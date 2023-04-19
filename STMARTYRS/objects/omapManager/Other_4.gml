@@ -33,7 +33,7 @@ if ojeu.tenseNight
 	}
 	
 	
-
+	ojeu.recapTenseNight = false;
 	
 }
 

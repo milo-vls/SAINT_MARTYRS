@@ -72,7 +72,7 @@ switch (currentMenu)
 			
 			
 			//COMPO USIs
-			if !ojeu.compoUsiDone
+			if !ojeu.recapTenseNight and ojeu.tenseNight
 			{
 				currentMenu = MAP_MENU.RECAP;
 			}
@@ -240,7 +240,7 @@ switch (currentMenu)
 		{
 			//SWITCH TO OTHER MENU
 			currentMenu = noone;
-			ojeu.compoUsiDone = true;
+			ojeu.recapTenseNight = true;
 			
 			//RESUME TIME STOPPED
 			time_source_resume(ojeu.minuterie);

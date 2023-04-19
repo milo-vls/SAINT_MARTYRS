@@ -18,7 +18,7 @@ enum USI
 
 function init_usi()
 {
-	compoUsiDone = true;
+	recapTenseNight = false;
 	
 	
 	usiPatrol = array_create(0);
