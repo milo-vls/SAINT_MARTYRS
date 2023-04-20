@@ -12,13 +12,13 @@ option[0] = {
 	col : c_white,
 }
 option[1] = {
-	txt : "options ",
+	txt : text("TITLE_SCREEN_OPTIONS", "yo le", " rap"),
 	command : function(){startObs("OPTIONS DEMO INDISPO")},
 	_x : 0,
 	col : c_white,
 }
 option[2] = {
-	txt : "quit",
+	txt : text("TITLE_SCREEN_QUIT"),
 	command : function() {game_end()},
 	_x : 0,
 	col : c_white,

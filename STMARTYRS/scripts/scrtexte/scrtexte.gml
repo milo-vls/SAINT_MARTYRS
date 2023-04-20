@@ -91,19 +91,18 @@ function txtData(textID)
 			#region INTRO
 				#region SCENE 3
 					case DIAL_ID_SCENE_3 :{
-						D "Bienvenue à Saints Martyrs. Euh... Blaise, c’est ça ?", p.Didier, l, p.player);
-						D "C’est mon nom oui, enchanté." pr
-						d("Je suis Didier, tutoie-moi, tu pourras me joindre si tu as besoin de renseignements à l’avenir. De toute évidence,[delay, 250] nous serons amenés à nous lier d'amitier ça ne fait aucun doutes! ", p.Didier, l, noone, turnLimpSynchOff);
-						D "[limpOff][delay, 100].[delay, 100].[delay, 100]." pr
-						d("[shake]Parfait!",p.player, r, noone, noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_SMILING_FACE});
-						D "Je vais te montrer ton lieu de travail. Je te présenterai à Ernest juste après, il est de ton âge." dl
-						d("Je vais te montrer ton lieu de travail. Je te présenterai à Ernest juste après ça, il est de ton âge vous devriez vous entendre.", p.Didier, l,noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_NEUTRAL_FACE});
-						D "D’accord, ne perdons pas de temps." pr 
+						D "S3_L1_DIDIER", p.Didier, l, p.player);
+						D "S3_L2_BLAISE" pr
+						d("S3_L3_DIDIER", p.Didier, l, noone, turnLimpSynchOff);
+						D "S3_L4_BLAISE" pr
+						d("S3_L5_BLAISE",p.player, r, noone, noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_SMILING_FACE});
+						d("S3_L6_DIDIER", p.Didier, l,noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_NEUTRAL_FACE});
+						D "S3_L7_BLAISE" pr 
 					}break;
 				#endregion
 				#region SCENE 4
 					case DIAL_ID_SCENE_4:{
-						d("Voici ton plan de travail, tu reconnais peut-être pas encore le coin, mais c’est bien une fidèle reproduction de Saints-Martyrs.", p.Didier, l, p.player);
+						d("S4_L1_DIDIER", p.Didier, l, p.player);
 					}break;
 				#endregion
 			#endregion
@@ -112,7 +111,7 @@ function txtData(textID)
 		
 		
 		default:{
-			d("erreur! id dialogue invalide!"pr 
+			d("ERROR"pr 
 		}break;
 	}
 }

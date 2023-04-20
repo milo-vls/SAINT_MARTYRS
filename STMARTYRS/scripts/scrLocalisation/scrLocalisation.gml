@@ -68,7 +68,7 @@ function text(txtID)
 		return _txt;
 	}
 	
-	if ojeu.translationsOther[? txtID] != undefined
+	if ojeu.translationsDial[? txtID] != undefined
 	{
 		_txt =	ojeu.dataTxtDial[# 1 + ojeu.language, ojeu.translationsDial[? txtID]];
 		if argument_count > 1
@@ -86,3 +86,5 @@ function text(txtID)
 	return  "IDENTIFIANT TEXTE " + txtID + "INTROUVABLE";
 	
 }
+
+

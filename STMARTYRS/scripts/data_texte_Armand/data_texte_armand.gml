@@ -3,7 +3,7 @@
 function txtArmand(){
 if room == pCall
 {
-	d("Bonjour, c'est bien Armand que vous appelez, je suis ne suis pas dispo. Je dois être au boulot, désolé!", p.Armand, l);
+	d("ERROR", p.Armand, l);
 	exit;	
 }
 }

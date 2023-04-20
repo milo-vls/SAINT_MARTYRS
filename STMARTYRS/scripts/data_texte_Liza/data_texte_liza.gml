@@ -5,8 +5,7 @@ if room == pCall
 {
 	
 	
-d("BONJOUR VOUS ÊTES BIEN SUR LE RÉPONDEUR DE LIZA", p.Liza, l, p.player)
-d("JULIEN SI TU ENTENDS CA TU ME DOIS 15 BALLES OUBLIE PAS", p.Liza, l, p.player)
+d("ERROR", p.Liza, l, p.player);
 exit;
 }
 }

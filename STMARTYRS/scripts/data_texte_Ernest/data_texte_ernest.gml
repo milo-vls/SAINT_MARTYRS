@@ -5,8 +5,7 @@ if room == pCall
 {
 	
 	
-	d("BONJOUR VOUS ÊTES BIEN SUR LE RÉPONDEUR D'ERNEST", p.Ernest, l, p.player)
-	d("MON TÉLÉPHONE EST TROP POURRI POUR PRENDRE LES MESSAGES, ALORS TENTEZ VOTRE CHANCE PLUS TARD. AU REVOIR", p.Ernest, l, p.player)
+	d("ERROR", p.Ernest, l, p.player)
 	exit;
 }
 }

@@ -1,1 +1,17 @@
-TEST,teste,test
+ERROR,Erreur,Error
+,,
+LANGUAGE,Français,English
+,,
+,,
+,,
+SCENE 3,SCENE 3,SCENE 3
+S3_L1_DIDIER,"Bienvenue à Saints Martyrs. Blaise, c’est ça ?",
+S3_L2_BLAISE,"C’est bien ça, oui, enchanté.",
+S3_L3_DIDIER,"Moi c'est Didier, tutoie-moi, tu pourras me joindre si tu as besoin de renseignements à l’avenir. De toute évidence,[delay, 250] nous serons amenés à nous lier d'amitier ça ne fait aucun doutes!",
+S3_L4_BLAISE,"[limpOff][delay, 100].[delay, 100].[delay, 100].",
+S3_L5_BLAISE,[shake]Parfait!,
+S3_L6_DIDIER,"Je vais te montrer ton lieu de travail. Je te présenterai à Ernest juste après ça, il est de ton âge vous devriez vous entendre.",
+S3_L7_BLAISE,"D’accord, ne perdons pas de temps.",
+,,
+SCENE 4,SCENE 4,SCENE 4
+S4_L1_DIDIER,"Voici ton plan de travail, tu reconnais peut-être pas encore le coin, mais c’est bien une fidèle reproduction de Saints-Martyrs.",

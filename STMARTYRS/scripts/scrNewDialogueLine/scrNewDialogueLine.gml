@@ -23,7 +23,7 @@ function d(_txt, tlkingChar, _side, listener = noone, _endFun = noone, _startFun
 		h : 0,			//hauteur de la bulle
 		tarH : 0,		//valeur vers laquelle tendra h
 		side : _side,
-		txt : _txt,		//texte
+		txt : text(_txt),		//texte
 		ltxt : string_length(_txt),		//longeur du texte
 		drewchar : 0,	//nombre de charactères dessinés //évolue durant le dialogue
 		char : tlkingChar,
