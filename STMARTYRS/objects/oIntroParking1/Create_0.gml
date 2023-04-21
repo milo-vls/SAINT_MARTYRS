@@ -14,7 +14,7 @@ enum INTRO_STATE
 	
 }
 
-currentIntroState = 8;
+currentIntroState = 9;
 
 
 col1Rec = c_black;

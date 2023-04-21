@@ -27,7 +27,7 @@
         {"name":"g_RGBNoiseTexture","type":2,"value":"_filter_rgbnoise_noise",},
       ],"spriteId":{"name":"bg_ciel","path":"sprites/bg_ciel/bg_ciel.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":200,"effectEnabled":true,"effectType":"_filter_large_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
-        {"name":"g_Radius","type":0,"value":"3",},
+        {"name":"g_Radius","type":0,"value":"2",},
         {"name":"g_NoiseTexture","type":2,"value":"_filter_large_blur_noise",},
       ],"userdefinedDepth":false,"visible":true,},
   ],

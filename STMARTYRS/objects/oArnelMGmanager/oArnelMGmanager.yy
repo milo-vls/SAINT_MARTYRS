@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Arnel",
-    "path": "folders/OBJECTS/exclu pièce/mini jeux/Arnel.yy",
+    "path": "folders/OBJECTS/EXCLU PIECE/mini jeux/Arnel.yy",
   },
   "parentObjectId": null,
   "persistent": false,

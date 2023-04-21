@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "mini jeux",
-    "path": "folders/OBJECTS/exclu pièce/mini jeux.yy",
+    "path": "folders/OBJECTS/EXCLU PIECE/mini jeux.yy",
   },
   "parentObjectId": null,
   "persistent": false,

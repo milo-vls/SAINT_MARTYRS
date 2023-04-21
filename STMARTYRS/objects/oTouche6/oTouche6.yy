@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "touches chiffre",
-    "path": "folders/OBJECTS/exclu pièce/téléphone/touches chiffre.yy",
+    "path": "folders/OBJECTS/EXCLU PIECE/TELEPHONE/touches chiffre.yy",
   },
   "parentObjectId": {
     "name": "oParentToucheTelephone",
@@ -31,9 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprTouche6",
-    "path": "sprites/sprTouche6/sprTouche6.yy",
+    "name": "sprhitBox",
+    "path": "sprites/sprhitBox/sprhitBox.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

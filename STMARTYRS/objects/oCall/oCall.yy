@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "téléphone",
-    "path": "folders/OBJECTS/exclu pièce/téléphone.yy",
+    "name": "TELEPHONE",
+    "path": "folders/OBJECTS/EXCLU PIECE/TELEPHONE.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "exclu pièce",
-    "path": "folders/OBJECTS/exclu pièce.yy",
+    "name": "TELEPHONE",
+    "path": "folders/OBJECTS/EXCLU PIECE/TELEPHONE.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,5 +30,5 @@
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
