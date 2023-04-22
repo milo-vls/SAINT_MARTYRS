@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "touches chiffre",
-    "path": "folders/OBJECTS/EXCLU PIECE/TELEPHONE/touches chiffre.yy",
+    "name": "TOUCHES",
+    "path": "folders/OBJECTS/EXCLU PIECE/TELEPHONE/TOUCHES.yy",
   },
   "parentObjectId": {
     "name": "oParentToucheTelephone",

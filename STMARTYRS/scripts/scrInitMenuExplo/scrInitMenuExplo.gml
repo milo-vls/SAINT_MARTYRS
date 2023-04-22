@@ -2,11 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 pour plus d’informations
 function init_menu_explo()
 {
-//---DESSIN CARTE DURANT EXPLORATION
-
-
-//---à modifier durant la téléportation
-currentIDLieu = 0;
 //lieuxToShow = array_create(0);
 yCenterMapExplo = display_get_gui_height() *(3/8)
 xCenterMapExplo = display_get_gui_width()/2
@@ -85,8 +80,7 @@ lsprFleche = sprite_get_width(sprFleche);
 yFlecheRep = yRepertoire + hRepertoire - hsprFleche;
 //position numéros
 //liste des numéros aquis par le joueur	
-numObtenu[0] = noone;
-nbNumObtenu = 0;
+
 
 margeVerticale = 50;
 placeUsed = 0; //valeur à laquelle on ajoute toutes les hauteurs des numéros ajoutés jusque là

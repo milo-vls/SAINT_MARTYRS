@@ -1,3 +1,5 @@
-draw_set_valign(fa_top);
-draw_set_halign(fa_left);
-draw_text(10,10,currentNum);
+
+
+
+draw_set_valign(fa_middle); draw_set_halign(fa_center); draw_set_font(ftMenu);
+draw_text(949,371,currentNum);

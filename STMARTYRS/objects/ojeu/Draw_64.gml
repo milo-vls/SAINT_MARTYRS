@@ -213,36 +213,36 @@ if explore()
 		var _xNumPageGauche = xRepertoire - lRepertoire/4*_scalePageGauche;
 		var _xNumPageDroite = xRepertoire + lRepertoire/4*_scalePageGauche;
 		var _yNumMin = yRepertoire + margeVerticale;
-		draw_set_font(ftRep);
+		draw_set_font(ftRepertoire);
 		draw_set_color(c_black);
 		draw_set_valign(fa_top);
 		draw_set_halign(fa_center);
-		nbNumero = nbPersonnages;
+		var _nbNumero = array_length(ojeu.num);
 		if scaleXCouverture <= 0
-		for (var i = 0;i < nbNumero;i ++)
+		for (var i = 0;i < _nbNumero;i ++)
 		{
 			//page gauche
-			if global.char[i].page == currentPageRepNum
+			if ojeu.num[i].page == currentPageRepNum
 			{
-				if 	global.char[i].spr != noone
+				if ojeu.num[i].sprite != noone
 				{
-					draw_sprite_ext(global.char[i].spr, 0, _xNumPageGauche, _yNumMin+global.char[i].y, _scalePageGauche, 1, 0, -1, 1);
+					draw_sprite_ext(ojeu.num[i].sprite, 0, _xNumPageGauche, _yNumMin+ojeu.num[i].y, _scalePageGauche, 1, 0, -1, 1);
 				}
 				else
 				{
-					draw_text_ext_transformed(_xNumPageGauche, _yNumMin+global.char[i].y, string(global.char[i].num), 13, lRepertoire, _scalePageGauche, 1, 0);
+					draw_text_ext_transformed(_xNumPageGauche, _yNumMin+ojeu.num[i].y, ojeu.num[i].numero, 13, lRepertoire, _scalePageGauche, 1, 0);
 				}
 			}
 			//page droite
-			if global.char[i].page == currentPageRepNum + 1
+			if ojeu.num[i].page == currentPageRepNum + 1
 			{
-				if 	global.char[i].spr != noone
+				if 	ojeu.num[i].sprite != noone
 				{
-					draw_sprite_ext(global.char[i].spr, 0, _xNumPageDroite, _yNumMin+global.char[i].y, 1, 1, 0, -1, 1);
+					draw_sprite_ext(ojeu.num[i].sprite, 0, _xNumPageDroite, _yNumMin+ojeu.num[i].y, 1, 1, 0, -1, 1);
 				}
 				else
 				{
-					draw_text_ext_transformed(_xNumPageDroite, _yNumMin+global.char[i].y, string(global.char[i].num), 13, lRepertoire, 1, 1, 0);
+					draw_text_ext_transformed(_xNumPageDroite, _yNumMin+ojeu.num[i].y, ojeu.num[i].numero, 13, lRepertoire, 1, 1, 0);
 				}
 			}
 		}

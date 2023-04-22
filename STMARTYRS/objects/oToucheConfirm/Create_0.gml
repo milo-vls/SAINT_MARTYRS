@@ -6,11 +6,17 @@ event_inherited();
 
 event = function()
 {
-	for (var i = 0;i < ojeu.nbNumero;i ++)
+	var _nbNumero = array_length(ojeu.num);
+	for (var i = 0; i < _nbNumero; i ++)
 	{
-		if string(global.char[i].num) == oCall.currentNum
+		if ojeu.num[i].numero == oCall.currentNum
 		{
-			startDial(i, false);
+			startDial(ojeu.num[i].numero, false);
+		}
+		else
+		{
+			//INCOMPLET
+			//Ce numéro n'est pas attribué ^^
 		}
 	}
 }

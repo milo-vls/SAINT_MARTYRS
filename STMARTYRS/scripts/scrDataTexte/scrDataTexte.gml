@@ -107,8 +107,11 @@ function txtData(textID)
 				#endregion
 			#endregion
 		#endregion
-		
-		
+		#region TÉLÉPHONE
+			case ojeu.num[INDEX_NUM.MAMAN].numero:{
+				d("S3_L1_DIDIER", p.player, l);
+			}break;
+		#endregion
 		
 		default:{
 			d("ERROR"pr 

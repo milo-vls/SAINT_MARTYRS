@@ -165,7 +165,7 @@ if leftPort != noone and leftPort != PAS_D_ECOUTEUR
 	}else
 	{
 		var _sousCheck = bulle[currentBulle].char2;
-		var _check = global.char[_sousCheck ].imageIndexStopTalk;
+		var _check = _sousCheck != -4 ? global.char[_sousCheck ].imageIndexStopTalk : 0;
 		draw_sprite_ext(leftPort, _check, xleftPort, yleftPort, targetHPort/sprite_get_height(leftPort), targetHPort/sprite_get_height(leftPort), 0, -1, alphaLPort);
 	}
 }

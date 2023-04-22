@@ -22,6 +22,6 @@ return true;
 	
 function explore()
 {
-return (room != pstart and room != pcarte and !instance_exists(oDial) and !instance_exists(oParentManagerMG) and !instance_exists(oParentCinematique))
+	return (room != pstart and room != pcarte and !instance_exists(oDial) and !instance_exists(oParentManagerMG))// and !instance_exists(oParentCinematique))
 }
 

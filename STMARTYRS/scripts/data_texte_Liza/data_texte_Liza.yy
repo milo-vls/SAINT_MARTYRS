@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "USI",
-    "path": "folders/SCRIPTS/TEXTE/PERSO/DATA DIALOGUES/NPC/USI.yy",
+    "path": "folders/SCRIPTS/TEXTE/DATA DIALOGUES/NPC/USI.yy",
   },
 }

@@ -1,9 +1,38 @@
+enum INDEX_NUM
+{
+	CASE_1,
+	MAMAN,
+
+}
+
+function getNumeroHauteur(_numero, _sprite = noone)
+{
+	if _sprite == noone
+	{
+		draw_set_font(ftRepertoire);	
+		return string_height(_numero);
+	}
+	
+	return sprite_get_height(_sprite);
+	
+}
+
+function setNumero(_numero, _sprite = noone) constructor
+{
+	numero = _numero;
+	sprite = _sprite;
+	y = 0;
+	page = -1;
+	hauteur = getNumeroHauteur(_numero, _sprite);
+	
+	
+}
 
 function ajoutNumRep(_index_numero)
 {
 var _estDejaObtenu = false;
-
 var _nbNumObtenu = ojeu.nbNumObtenu
+
 for (var i = 0; i < _nbNumObtenu;i ++)
 {
 	if ojeu.numObtenu[i] == _index_numero
@@ -44,3 +73,42 @@ if _estDejaObtenu == false
 
 
 }
+
+function formatageNumero(_numBrut)
+{
+	var _numLength = string_length(_numBrut);
+	if _numLength = 6
+	{
+		var _toReturn = string_insert( " ", _numBrut, 7);
+		return _toReturn;
+	}
+	
+	if _numLength = 3
+	{
+		var _toReturn = string_insert( " ", _numBrut, 3);
+		return _toReturn;
+	}
+	
+	return _numBrut;
+	
+}
+
+function initTelephone()
+{
+	ojeu.numObtenu[0] = noone;
+	ojeu.nbNumObtenu = 0;
+	
+	ojeu.num[INDEX_NUM.CASE_1] = new setNumero("12 582 21");
+	ojeu.num[INDEX_NUM.MAMAN] = new setNumero("55 987 14");
+	
+	
+	
+	
+	
+	
+	ajoutNumRep(INDEX_NUM.MAMAN);
+}
+
+
+
+

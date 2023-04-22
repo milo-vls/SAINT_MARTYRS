@@ -6,5 +6,5 @@ event_inherited();
 
 event = function()
 {
-	oCall.currentNum = string_insert("3", oCall.currentNum, string_length(oCall.currentNum)+1);
+	oCall.currentNum = formatageNumero(string_insert("3", oCall.currentNum, string_length(oCall.currentNum)+1));
 }

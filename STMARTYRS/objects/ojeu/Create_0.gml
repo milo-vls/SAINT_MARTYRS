@@ -41,3 +41,4 @@ init_scribble_typist_events();
 
 init_sound();
 
+initTelephone();

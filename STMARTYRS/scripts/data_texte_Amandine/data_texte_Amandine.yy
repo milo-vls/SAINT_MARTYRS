@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "HABITANTS",
-    "path": "folders/SCRIPTS/TEXTE/PERSO/DATA DIALOGUES/NPC/HABITANTS.yy",
+    "path": "folders/SCRIPTS/TEXTE/DATA DIALOGUES/NPC/HABITANTS.yy",
   },
 }

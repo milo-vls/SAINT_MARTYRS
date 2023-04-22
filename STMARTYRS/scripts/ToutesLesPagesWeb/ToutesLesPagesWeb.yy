@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "ordinateur",
-    "path": "folders/SCRIPTS/pieces/ordinateur.yy",
+    "path": "folders/SCRIPTS/EXCLUS PIECE/ordinateur.yy",
   },
 }
