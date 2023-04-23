@@ -12,7 +12,7 @@ function init_time()
 
 	numeroJour								= 3;
 	startingDate							= date_create_datetime(2012, 12, 19, 19, 45, 0)
-	global.currentDate				= date_inc_day(startingDate, -1);							//Mis à jour constamment 
+	global.currentDate				= startingDate						//Mis à jour constamment 
 	global.mapDate						= global.currentDate;												//mis à jour uniquement si présent sur la carte
 	
 	//// ÉCOULEMENT DU TEMPS
