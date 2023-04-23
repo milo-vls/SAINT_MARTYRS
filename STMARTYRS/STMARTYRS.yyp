@@ -498,6 +498,7 @@
     {"id":{"name":"scrProcGenCrimes","path":"scripts/scrProcGenCrimes/scrProcGenCrimes.yy",},"order":0,},
     {"id":{"name":"sprTouche1","path":"sprites/sprTouche1/sprTouche1.yy",},"order":0,},
     {"id":{"name":"P_FAKE_RUE_BLUE","path":"rooms/P_FAKE_RUE_BLUE/P_FAKE_RUE_BLUE.yy",},"order":0,},
+    {"id":{"name":"scrDataObs","path":"scripts/scrDataObs/scrDataObs.yy",},"order":2,},
     {"id":{"name":"scribble_font_bake_outline_8dir_2px","path":"scripts/scribble_font_bake_outline_8dir_2px/scribble_font_bake_outline_8dir_2px.yy",},"order":2,},
     {"id":{"name":"blue_bench","path":"sprites/blue_bench/blue_bench.yy",},"order":8,},
     {"id":{"name":"DidierHbxUsi","path":"sprites/DidierHbxUsi/DidierHbxUsi.yy",},"order":0,},

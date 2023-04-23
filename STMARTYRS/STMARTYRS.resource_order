@@ -410,6 +410,7 @@
     {"name":"oTouche7","order":7,"path":"objects/oTouche7/oTouche7.yy",},
     {"name":"__shd_scribble_bake_outline_8dir_2px","order":3,"path":"shaders/__shd_scribble_bake_outline_8dir_2px/__shd_scribble_bake_outline_8dir_2px.yy",},
     {"name":"sprOrdiDemarrage","order":2,"path":"sprites/sprOrdiDemarrage/sprOrdiDemarrage.yy",},
+    {"name":"scrDataObs","order":2,"path":"scripts/scrDataObs/scrDataObs.yy",},
     {"name":"scribble_font_bake_outline_8dir_2px","order":2,"path":"scripts/scribble_font_bake_outline_8dir_2px/scribble_font_bake_outline_8dir_2px.yy",},
     {"name":"blue_bench","order":8,"path":"sprites/blue_bench/blue_bench.yy",},
     {"name":"oEnzino","order":2,"path":"objects/oEnzino/oEnzino.yy",},

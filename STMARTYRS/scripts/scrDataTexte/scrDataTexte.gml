@@ -91,30 +91,30 @@ function txtData(textID)
 			#region INTRO
 				#region SCENE 3
 					case DIAL_ID_SCENE_3 :{
-						D "S3_L1_DIDIER", p.Didier, l, p.player);
-						D "S3_L2_BLAISE" pr
-						d("S3_L3_DIDIER", p.Didier, l, noone, turnLimpSynchOff);
-						D "S3_L4_BLAISE" pr
-						d("S3_L5_BLAISE",p.player, r, noone, noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_SMILING_FACE});
-						d("S3_L6_DIDIER", p.Didier, l,noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_NEUTRAL_FACE});
-						D "S3_L7_BLAISE" pr 
+						D text("S3_L1_DIDIER"), p.Didier, l, p.player);
+						D text("S3_L2_BLAISE") pr
+						d(text("S3_L3_DIDIER"), p.Didier, l, noone, turnLimpSynchOff);
+						D text("S3_L4_BLAISE") pr
+						d(text("S3_L5_BLAISE"),p.player, r, noone, noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_SMILING_FACE});
+						d(text("S3_L6_DIDIER"), p.Didier, l,noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_NEUTRAL_FACE});
+						D text("S3_L7_BLAISE") pr 
 					}break;
 				#endregion
 				#region SCENE 4
 					case DIAL_ID_SCENE_4:{
-						d("S4_L1_DIDIER", p.Didier, l, p.player);
+						d(text("S4_L1_DIDIER"), p.Didier, l, p.player);
 					}break;
 				#endregion
 			#endregion
 		#endregion
 		#region TÉLÉPHONE
 			case ojeu.num[INDEX_NUM.MAMAN].numero:{
-				d("S3_L1_DIDIER", p.player, l);
+				d(text("S3_L1_DIDIER"), p.player, l);
 			}break;
 		#endregion
 		
 		default:{
-			d("ERROR"pr 
+			d(text("ERROR")pr 
 		}break;
 	}
 }
