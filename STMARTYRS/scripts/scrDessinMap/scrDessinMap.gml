@@ -63,11 +63,11 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 	}
 	
 	
-	draw_set_alpha(0.8);
+	draw_set_alpha(1);
 	draw_roundrect_color_ext(_x1, _y1, _x2, _y2, _marge, _marge, c_black, c_black, false);
 	
 	
-	draw_set_alpha(1); draw_set_color(c_white); draw_set_font(ftDial);draw_set_valign(fa_top); draw_set_halign(fa_left);
+	draw_set_color(c_white); draw_set_font(ftDial);draw_set_valign(fa_top); draw_set_halign(fa_left);
 	//DESSIN NOM ET PRENOM
 	var _xPrenom = _xLeft + _marge/2;
 	var _yPrenom = _yTop + _marge/2;
@@ -114,4 +114,12 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 			draw_sprite_stretched(_sprite, 0, _xIndice, _yIndice, _largeurIndice, _hauteurIndice);
 		}
 	}
+}
+
+function drawCoordinates(_x, _y,  _width, _height)
+{
+	draw_set_alpha(0.9); draw_set_font(ftDial); draw_set_color(c_black); draw_set_halign(fa_center); draw_set_valign(fa_bottom); 
+	var _yAbs = y_map_absolue(_y, _height);
+	var _xAbs = x_map_absolue(_x, _width)
+	draw_text(_x, _y, string(_xAbs) + ", " + string(_yAbs));
 }

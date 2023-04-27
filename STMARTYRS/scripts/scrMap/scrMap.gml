@@ -168,16 +168,16 @@ function instance_survole(_objID, _x, _y)
 
 
 
+//---------coordonnées relatives-------------------------------//
+#macro HAUTEUR_MAP_ABSOLUE 360
+#macro LARGEUR_MAP_ABSOLUE 640
+function y_map_absolue(_yBrut, _hauteurMapRelative)
+{
+	return round((HAUTEUR_MAP_ABSOLUE * (_yBrut/_hauteurMapRelative)) - (HAUTEUR_MAP_ABSOLUE/2));
+}
 
-
-
-
-
-
-
-
-
-
-
-
+function x_map_absolue(_xBrut, _largeurMapRelative)
+{
+	return round((LARGEUR_MAP_ABSOLUE * (_xBrut/_largeurMapRelative)) - (LARGEUR_MAP_ABSOLUE/2));
+}
 

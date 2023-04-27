@@ -66,7 +66,11 @@ if ojeu.tenseNight == false
 		drawCrimeDetails(instanceCrimeSurvole.crimeID, instanceCrimeSurvole.x, instanceCrimeSurvole.y);
 	}
 	
-	
+	//---COORDONNÉES---//
+	else
+	{
+		drawCoordinates(mouse_x, mouse_y, room_width, room_height);	
+	}
 }
 
 
