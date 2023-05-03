@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oParentArnelMovingObject",
+  "name": "oDreamtTuto",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Arnel",
-    "path": "folders/OBJECTS/EXCLU PIECE/MINI JEUX/ANCIEN/Arnel.yy",
+    "name": "DREAMT TUTORIAL",
+    "path": "folders/OBJECTS/EXCLU PIECE/MINI JEUX/DREAMT TUTORIAL.yy",
   },
   "parentObjectId": null,
   "persistent": false,

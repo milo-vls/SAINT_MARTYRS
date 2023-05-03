@@ -175,7 +175,6 @@ function y_map_absolue(_yBrut, _hauteurMapRelative)
 {
 	return round((HAUTEUR_MAP_ABSOLUE * (_yBrut/_hauteurMapRelative)) - (HAUTEUR_MAP_ABSOLUE/2));
 }
-
 function x_map_absolue(_xBrut, _largeurMapRelative)
 {
 	return round((LARGEUR_MAP_ABSOLUE * (_xBrut/_largeurMapRelative)) - (LARGEUR_MAP_ABSOLUE/2));

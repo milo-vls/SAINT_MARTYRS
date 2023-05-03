@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "mini jeux",
-    "path": "folders/OBJECTS/EXCLU PIECE/mini jeux.yy",
+    "name": "ANCIEN",
+    "path": "folders/OBJECTS/EXCLU PIECE/MINI JEUX/ANCIEN.yy",
   },
   "parentObjectId": null,
   "persistent": false,

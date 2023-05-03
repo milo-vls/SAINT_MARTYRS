@@ -1,8 +1,8 @@
 	
 	
-	#macro START_OF_NIGHT_HOUR 9
-	#macro END_OF_NIGHT_HOUR  7
-	#macro START_TENSE_NIGHT 1
+#macro START_OF_NIGHT_HOUR 9
+#macro END_OF_NIGHT_HOUR  7
+#macro START_TENSE_NIGHT 1
 	
 function init_time()
 {

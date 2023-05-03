@@ -3,7 +3,7 @@
   "resourceVersion": "1.1",
   "name": "optimisations possibles",
   "parent": {
-    "name": "STMARTYRS",
-    "path": "STMARTYRS.yyp",
+    "name": "NOTES",
+    "path": "folders/NOTES.yy",
   },
 }

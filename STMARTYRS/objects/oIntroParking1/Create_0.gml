@@ -25,7 +25,7 @@ col4Rec = c_black;
 tpsWaitBeforeStop = 0;
 dureeWaitBeforeStop = 8 * room_speed;
 
-driversTalkTxt = scribble("[ftDial]Terminus, St. Martyrs, veillez à n’oublier aucun bagage. Merci de nous avoir accompagné au cours de ce voyage, nous espérons vous revoir, à bientôt.")
+driversTalkTxt = scribble(text("DRIVERS_TALK"))
 .wrap(GAME_WIDTH/2)
 .align(fa_center, fa_middle)
 .blend(c_white)
@@ -34,7 +34,7 @@ driversTalkTypist = scribble_typist().in(1, 3);
 tpsWaitBeforeTitle = 0;
 dureeWaitBeforeTitle = 8 * room_speed;
 
-titleTxt = "ENTRE CHIEN ET LOUP";
+titleTxt = text("GAME_TITLE");
 tpsTitle = 0;
 waitTitle = 9 * room_speed;
 
@@ -53,5 +53,5 @@ waitTitle = 9 * room_speed;
 
 //--TUTO_MAP
 tutoMapState = 0;
-textTutoMapTest = scribble("[ftDial]Cette punaise là, elle représente un crime lié à une affaire encore non résolue. Ton rôle, c’est d’empêcher le malfaiteur de continuer à perturber l’ordre public. Tu as accès à toutes nos informations.");
+textTutoMapTest = scribble("[ftDial]Cette punaise c'est un crime lié à une affaire encore non résolue. Empêcher le malfaiteur de continuer à perturber l’ordre public. Tu as accès à toutes nos informations.");
 typistTextTutoMapTest = scribble_typist().in(1, 0);
