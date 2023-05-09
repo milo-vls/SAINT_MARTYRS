@@ -9,11 +9,12 @@ function drawRepInit()
 	global.currentPageRepNum = 0;
 	global.hsprFleche = sprite_get_height(sprArr);
 	
+	#macro HAUTEUR_MENU_EXPLO display_get_gui_height()/4
 	#macro MAX_TAR_X_REPERTOIRE display_get_gui_width()
 	#macro MIN_TAR_X_REPERTOIRE display_get_gui_width()/2
-	#macro HAUTEUR_REPERTOIRE display_get_gui_height() - HAUTEUR_MENU_EXPLO*1.5
-	#macro Y_REPERTOIRE HAUTEUR_REPERTOIRE/6
-	#macro LARGEUR_REPERTOIRE  (16/10)*HAUTEUR_REPERTOIRE
+	#macro HAUTEUR_REPERTOIRE display_get_gui_height() - display_get_gui_height()/4*1.5
+	#macro Y_REPERTOIRE (display_get_gui_height() - display_get_gui_height()/4*1.5)/6
+	#macro LARGEUR_REPERTOIRE  (16/10) *( display_get_gui_height() - display_get_gui_height()/4*1.5)
 	#macro REPERTOIRE_VERTICAL_BUFFER  50
 }
 drawRepInit();
@@ -81,9 +82,11 @@ if global.drawRepertoire
 		
 	if global.scaleXCouverture == global.tarscaleXCouverture
 	global.xRepertoire = approach(global.xRepertoire, global.tarxRepertoire, 60);
+	
 	global.scaleXCouverture = approach(global.scaleXCouverture, global.tarscaleXCouverture, 0.2);
 
 	//-----DESSIN------//
+	draw_set_alpha(1);
 	//page droite
 	draw_sprite_stretched(sprPageRepertoire, 0, global.xRepertoire, Y_REPERTOIRE, LARGEUR_REPERTOIRE/2, HAUTEUR_REPERTOIRE);
 	//page gauche
@@ -92,9 +95,7 @@ if global.drawRepertoire
 	{
 		draw_sprite_stretched(sprPageRepertoireGauche, 0, global.xRepertoire - LARGEUR_REPERTOIRE/2*_scalePageGauche, Y_REPERTOIRE, LARGEUR_REPERTOIRE/2*_scalePageGauche, HAUTEUR_REPERTOIRE);
 	}
-	//couverture
-	draw_sprite_stretched(sprCouvRep, 0, global.xRepertoire, Y_REPERTOIRE, LARGEUR_REPERTOIRE/2*global.scaleXCouverture, HAUTEUR_REPERTOIRE);
-	
+		
 	
 	//dessin numéro
 	var _xNumPageGauche = global.xRepertoire - LARGEUR_REPERTOIRE/4*_scalePageGauche;
@@ -134,6 +135,8 @@ if global.drawRepertoire
 		}
 	}
 	
+	//couverture
+	draw_sprite_stretched(sprCouvRep, 0, global.xRepertoire, Y_REPERTOIRE, LARGEUR_REPERTOIRE/2*global.scaleXCouverture, HAUTEUR_REPERTOIRE);
 	
 	//stop dessin
 	if !global.repertoire and global.xRepertoire == MAX_TAR_X_REPERTOIRE and global.scaleXCouverture == 1
@@ -141,6 +144,5 @@ if global.drawRepertoire
 		global.drawRepertoire = false;
 	}
 }
-
 
 }

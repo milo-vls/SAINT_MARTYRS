@@ -49,7 +49,7 @@ drawPauseMenu = false;
 
 //--POSITIONS MENU GENERAL
 lPauseOption = display_get_gui_width()/nbPauseOption;
-#macro HAUTEUR_MENU_EXPLO display_get_gui_height()/4
+
 yPauseMenu = display_get_gui_height();
 minYPauseMenu = display_get_gui_height() - HAUTEUR_MENU_EXPLO;
 lSpr = sprite_get_height(sprPause);
