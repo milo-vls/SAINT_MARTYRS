@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "meta",
-    "path": "folders/OBJECTS/MAP/meta.yy",
+    "name": "UNUSED",
+    "path": "folders/OBJECTS/MAP/UNUSED.yy",
   },
   "parentObjectId": null,
   "persistent": false,

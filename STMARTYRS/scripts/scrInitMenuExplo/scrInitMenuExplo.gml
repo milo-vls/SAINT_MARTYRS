@@ -22,7 +22,7 @@ dureeHauteurMapExplo = room_speed * 0.5
 pauseOption[0] = {
 txt : "Carte",
 command : function(){
-	ojeu.repertoire = false;
+	global.repertoire = false;
 	GoToRoom(pcarte);
 	},
 pressed : false,
@@ -30,7 +30,7 @@ pressed : false,
 pauseOption[1] = {
 txt : "Répertoire",
 command : function(){
-	ojeu.repertoire = !ojeu.repertoire
+	global.repertoire = !global.repertoire
 	},
 pressed : false,
 	
@@ -49,9 +49,9 @@ drawPauseMenu = false;
 
 //--POSITIONS MENU GENERAL
 lPauseOption = display_get_gui_width()/nbPauseOption;
-hPauseMenu = display_get_gui_height()/4;
+#macro HAUTEUR_MENU_EXPLO display_get_gui_height()/4
 yPauseMenu = display_get_gui_height();
-minYPauseMenu = display_get_gui_height() - hPauseMenu;
+minYPauseMenu = display_get_gui_height() - HAUTEUR_MENU_EXPLO;
 lSpr = sprite_get_height(sprPause);
 hSpr = sprite_get_height(sprPause);
 lgui  = display_get_gui_width();
@@ -61,36 +61,35 @@ xIconeMenu = lgui - lSpr*1.5;
 
 //----------------REPERTOIRE
 //le répertoire est il entrain d'être consulté ?
-drawRepertoire = false;
+
 
 //position et proportion répertoire
-xRepertoire = display_get_gui_width();
-mintarxRepertoire = display_get_gui_width()/2;
-maxtarxRepertoire = display_get_gui_width();
-tarxRepertoire = xRepertoire;
-hRepertoire = display_get_gui_height() - hPauseMenu*1.5;
-yRepertoire = hRepertoire/6;
-lRepertoire = (16/10)*hRepertoire;  
 
-scaleXCouverture = 1;//sert a tourner la page
-tarscaleXCouverture = 1;
-sprFleche = sprArr;
-hsprFleche = sprite_get_height(sprFleche);
-lsprFleche = sprite_get_width(sprFleche);
-yFlecheRep = yRepertoire + hRepertoire - hsprFleche;
+
+
+
+
+
+
+
+//sert a tourner la page
+
+
+
+
 //position numéros
 //liste des numéros aquis par le joueur	
 
 
-margeVerticale = 50;
-placeUsed = 0; //valeur à laquelle on ajoute toutes les hauteurs des numéros ajoutés jusque là
-hZoneEcrivable = hRepertoire - margeVerticale*2;
-nbPageRep = 0;
-currentPageRepNum = 0;
 
-		//---DESSIN BRAS DROIT
-		xBrasDroit			= global.largeur_jeu - sprite_get_width(sprBrasDroit) + sprite_get_xoffset(sprBrasDroit);
-		yBrasDroitBas		= global.hauteur_jeu + sprite_get_height(sprBrasDroit) - sprite_get_yoffset(sprBrasDroit);
-		yBrasDroitHaut	= global.hauteur_jeu - sprite_get_height(sprBrasDroit) + sprite_get_yoffset(sprBrasDroit);
-		yBrasDroit			= yBrasDroitBas;
+placeUsed = 0; //valeur à laquelle on ajoute toutes les hauteurs des numéros ajoutés jusque là
+hZoneEcrivable = HAUTEUR_REPERTOIRE - REPERTOIRE_VERTICAL_BUFFER*2;
+
+
+
+	//---DESSIN BRAS DROIT
+	xBrasDroit			= global.largeur_jeu - sprite_get_width(sprBrasDroit) + sprite_get_xoffset(sprBrasDroit);
+	yBrasDroitBas		= global.hauteur_jeu + sprite_get_height(sprBrasDroit) - sprite_get_yoffset(sprBrasDroit);
+	yBrasDroitHaut	= global.hauteur_jeu - sprite_get_height(sprBrasDroit) + sprite_get_yoffset(sprBrasDroit);
+	yBrasDroit			= yBrasDroitBas;
 }

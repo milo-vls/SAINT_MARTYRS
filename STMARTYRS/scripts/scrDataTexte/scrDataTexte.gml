@@ -6,7 +6,6 @@
 #macro JOUR_SELON_DIALOGUES ojeu.numeroJour-3
 #macro r "r"
 #macro l "l"
-#macro D d(
 
 
 
@@ -91,13 +90,13 @@ function txtData(textID)
 			#region INTRO
 				#region SCENE 3
 					case DIAL_ID_SCENE_3 :{
-						D text("S3_L1_DIDIER"), p.Didier, l, p.player);
-						D text("S3_L2_BLAISE") pr
+						d( text("S3_L1_DIDIER"), p.Didier, l, p.player);
+						d( text("S3_L2_BLAISE") pr
 						d(text("S3_L3_DIDIER"), p.Didier, l, noone, turnLimpSynchOff);
-						D text("S3_L4_BLAISE") pr
+						d( text("S3_L4_BLAISE") pr
 						d(text("S3_L5_BLAISE"),p.player, r, noone, noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_SMILING_FACE});
 						d(text("S3_L6_DIDIER"), p.Didier, l,noone, function(){global.char[p.player].imageIndexStopTalk = BLAISES_NEUTRAL_FACE});
-						D text("S3_L7_BLAISE") pr 
+						d( text("S3_L7_BLAISE") pr 
 					}break;
 				#endregion
 				#region SCENE 4

@@ -78,6 +78,7 @@ for (var _crime = 0; _crime < _nbCrimeProc; _crime ++)
 			crimeType = _listeCrimes;
 			tueurType = _listeTueurs;
 		}
+		
 	}
 }
 

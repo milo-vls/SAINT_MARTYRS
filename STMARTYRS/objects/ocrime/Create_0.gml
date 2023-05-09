@@ -9,3 +9,5 @@ wfil = sprite_get_width(sprCrime)/4;
 
 //------CAPTURE-------//
 checkCapture = false;
+
+

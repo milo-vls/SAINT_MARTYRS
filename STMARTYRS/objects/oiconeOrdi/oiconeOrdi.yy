@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "icônes",
-    "path": "folders/OBJECTS/MAP/icônes.yy",
+    "name": "UNUSED",
+    "path": "folders/OBJECTS/MAP/UNUSED.yy",
   },
   "parentObjectId": {
     "name": "omapMenuParent",

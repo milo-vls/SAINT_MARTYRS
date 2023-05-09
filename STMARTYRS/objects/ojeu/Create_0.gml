@@ -16,7 +16,6 @@ global.startingRoom = P_PARKING_1;
 global.langage = "fr";//"fr" = français//"en" = anglais//"es" = espagnol
 global.inputOn = true;
 lastRoom = noone;
-repertoire = false;
 global.alphaBlackScreen = 0
 global.blackScreen = false;
 

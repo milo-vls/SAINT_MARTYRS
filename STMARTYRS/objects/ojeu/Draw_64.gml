@@ -15,7 +15,7 @@ if explore()
 		{
 			pause = !pause;
 			tpsHauteurMapExplo = 0;
-			repertoire = false;
+			global.repertoire = false;
 			iconeMenuPressed = false;
 		}
 	}
@@ -73,7 +73,7 @@ if explore()
 					
 			//---DESSIN DU TEXTE DES OPTIONS
 			scribble("["+_txtcol+"][fa_middle][fa_center][ftMenu]"+_shake+pauseOption[i].txt)
-			.draw(_xtxtPauseOption, yPauseMenu + hPauseMenu/4)
+			.draw(_xtxtPauseOption, yPauseMenu + HAUTEUR_MENU_EXPLO/4)
 					
 		
 		}
@@ -136,147 +136,11 @@ if explore()
 		}
 	}
 		
-		
-	//---ACTIVATION DESSIN CAHIER ET NUMÉROS
-	if repertoire
-	{
-		drawRepertoire = true;
 	
-	}
-		
-		
-	//---DESSIN CAHIER ET NUMÉROS
-	if drawRepertoire
-	{
-	
-		//comment doit évoluer la scale
-		//BOUTTON PAGES SUIVANTES/PRCEDENTES
-		if repertoire
-		{
-			tarxRepertoire = mintarxRepertoire;
-			tarscaleXCouverture = -1;
-		
-		
-		
-			//-----BOUTTONS
-			if scaleXCouverture == -1
-			{
-				//flèche à droite
-				if (currentPageRepNum + 1 ) < nbPageRep
-				{
-					var _xFlecheDroite = xRepertoire + lRepertoire/2;
-					draw_sprite(sprArr, 0, _xFlecheDroite, yFlecheRep);
-				
-					if point_in_rectangle(mouse_x, mouse_y, _xFlecheDroite, yFlecheRep, _xFlecheDroite + lsprFleche, yFlecheRep + hsprFleche) and global.cPrLeft
-					{
-						currentPageRepNum += 2;
-					}
-				
-				}
-				//flèche à gauche si la page est différente de 0
-				if currentPageRepNum != 0
-				{
-					var _xFlecheGauche = xRepertoire - lRepertoire/2;
-					draw_sprite_ext(sprArr, 0, _xFlecheGauche, yFlecheRep, -1, 1, 0, -1, 1);
-				
-					if point_in_rectangle(mouse_x, mouse_y, _xFlecheGauche, yFlecheRep, _xFlecheGauche - lsprFleche, yFlecheRep + hsprFleche) and global.cPrLeft
-					{
-						currentPageRepNum -= 2;
-					}
-				
-				}
-			}
-		}
-		else
-		{
-			tarxRepertoire = maxtarxRepertoire
-			tarscaleXCouverture = 1;
-		}
-		if scaleXCouverture == tarscaleXCouverture
-		xRepertoire = approach(xRepertoire, tarxRepertoire, 60);
-		scaleXCouverture = approach(scaleXCouverture, tarscaleXCouverture, 0.2);
+	drawRep();
 
-		//-----DESSIN------//
-		//page droite
-		draw_sprite_stretched(sprPageRepertoire, 0, xRepertoire, yRepertoire, lRepertoire/2, hRepertoire);
-		//page gauche
-		var _scalePageGauche = abs(scaleXCouverture);
-		if scaleXCouverture <= 0
-		{
-			draw_sprite_stretched(sprPageRepertoireGauche, 0, xRepertoire - lRepertoire/2*_scalePageGauche, yRepertoire, lRepertoire/2*_scalePageGauche, hRepertoire);
-		}
-		//couverture
-		draw_sprite_stretched(sprCouvRep, 0, xRepertoire, yRepertoire, lRepertoire/2*scaleXCouverture, hRepertoire);
-	
-	
-		//dessin numéro
-		var _xNumPageGauche = xRepertoire - lRepertoire/4*_scalePageGauche;
-		var _xNumPageDroite = xRepertoire + lRepertoire/4*_scalePageGauche;
-		var _yNumMin = yRepertoire + margeVerticale;
-		draw_set_font(ftRepertoire);
-		draw_set_color(c_black);
-		draw_set_valign(fa_top);
-		draw_set_halign(fa_center);
-		var _nbNumero = array_length(ojeu.num);
-		if scaleXCouverture <= 0
-		for (var i = 0;i < _nbNumero;i ++)
-		{
-			//page gauche
-			if ojeu.num[i].page == currentPageRepNum
-			{
-				if ojeu.num[i].sprite != noone
-				{
-					draw_sprite_ext(ojeu.num[i].sprite, 0, _xNumPageGauche, _yNumMin+ojeu.num[i].y, _scalePageGauche, 1, 0, -1, 1);
-				}
-				else
-				{
-					draw_text_ext_transformed(_xNumPageGauche, _yNumMin+ojeu.num[i].y, ojeu.num[i].numero, 13, lRepertoire, _scalePageGauche, 1, 0);
-				}
-			}
-			//page droite
-			if ojeu.num[i].page == currentPageRepNum + 1
-			{
-				if 	ojeu.num[i].sprite != noone
-				{
-					draw_sprite_ext(ojeu.num[i].sprite, 0, _xNumPageDroite, _yNumMin+ojeu.num[i].y, 1, 1, 0, -1, 1);
-				}
-				else
-				{
-					draw_text_ext_transformed(_xNumPageDroite, _yNumMin+ojeu.num[i].y, ojeu.num[i].numero, 13, lRepertoire, 1, 1, 0);
-				}
-			}
-		}
-	
-	
-		//stop dessin
-		if !repertoire and xRepertoire == maxtarxRepertoire and scaleXCouverture == 1
-		{
-			drawRepertoire = false;
-		}
-	}
-		
 
 	
-	
-
-	//--ACTIVATION AFFICHAGE BRAS DROIT
-	yBrasDroit = yBrasDroitBas;
-	if global.cRight and !pause
-	{
-		yBrasDroit = yBrasDroitHaut;
-	}
-	
-	
-	//--DESSIN BRAS DROIT ET CADRAN MONTRE
-	draw_set_alpha(1);
-	draw_sprite(sprBrasDroit, 0, xBrasDroit, yBrasDroit);
-	var _rotAigHeure		= -360 * (date_get_hour(global.currentDate)/24);
-	var _rotAigMinute		= -360 * (date_get_minute(global.currentDate)/60);
-	draw_sprite_ext(sprAiguilleHeure, 0, xBrasDroit, yBrasDroit, 1, 1, _rotAigHeure, -1, 1);
-	draw_sprite_ext(sprAiguilleMinute, 0, xBrasDroit, yBrasDroit, 1, 1, _rotAigMinute, -1, 1);
-	
-
-			
 }
 
 

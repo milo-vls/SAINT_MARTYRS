@@ -95,6 +95,7 @@ function formatageNumero(_numBrut)
 
 function initTelephone()
 {
+	ojeu.nbPageRep = 0;
 	ojeu.numObtenu[0] = noone;
 	ojeu.nbNumObtenu = 0;
 	
