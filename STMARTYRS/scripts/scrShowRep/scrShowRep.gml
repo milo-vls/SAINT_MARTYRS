@@ -2,32 +2,49 @@ function drawRepInit()
 {
 	global.repertoire = false;
 	global.drawRepertoire = false;
-	global.xRepertoire = display_get_gui_width();
-	global.tarxRepertoire = global.xRepertoire;
+	global.repEnMain = false;
+	global.decalageMainRepertoire = 0;
 	global.tarscaleXCouverture = 1;
 	global.scaleXCouverture = 1;
 	global.currentPageRepNum = 0;
 	global.hsprFleche = sprite_get_height(sprArr);
+	global.largeurRepertoire = (16/10) *( display_get_gui_height() - display_get_gui_height()/4*1.5)
+	global.xRepertoire = MAX_TAR_X_REPERTOIRE;
+	global.tarxRepertoire = global.xRepertoire;
 	
 	#macro HAUTEUR_MENU_EXPLO display_get_gui_height()/4
-	#macro MAX_TAR_X_REPERTOIRE display_get_gui_width()
+	#macro MAX_TAR_X_REPERTOIRE display_get_gui_width() - global.largeurRepertoire/7
+	#macro DECALAGE_REPERTOIRE global.largeurRepertoire/7
 	#macro MIN_TAR_X_REPERTOIRE display_get_gui_width()/2
 	#macro HAUTEUR_REPERTOIRE display_get_gui_height() - display_get_gui_height()/4*1.5
 	#macro Y_REPERTOIRE (display_get_gui_height() - display_get_gui_height()/4*1.5)/6
-	#macro LARGEUR_REPERTOIRE  (16/10) *( display_get_gui_height() - display_get_gui_height()/4*1.5)
+	#macro LARGEUR_REPERTOIRE  global.largeurRepertoire
 	#macro REPERTOIRE_VERTICAL_BUFFER  50
+	#macro VITESSE_X_REPERTOIRE 30
+	#macro VITESSE_DEPLI_REPERTOIRE 0.2
 }
 drawRepInit();
 
 function drawRep()
 {
-
+draw_set_alpha(1);
 //---ACTIVATION DESSIN CAHIER ET NUMÉROS
 if global.repertoire
 {
 	global.drawRepertoire = true;
-	
 }
+
+//---POSITION RÉPERTOIRE
+if !global.repEnMain//global.scaleXCouverture == global.tarscaleXCouverture
+{
+	global.xRepertoire = approach(global.xRepertoire, global.tarxRepertoire, VITESSE_X_REPERTOIRE);
+}
+else
+{
+	global.xRepertoire = mouse_x - global.decalageMainRepertoire;
+}
+
+//---DESSIN PAGES
 if global.drawRepertoire
 {
 	
@@ -78,15 +95,11 @@ if global.drawRepertoire
 	}
 		
 		
-		
-		
-	if global.scaleXCouverture == global.tarscaleXCouverture
-	global.xRepertoire = approach(global.xRepertoire, global.tarxRepertoire, 60);
+
 	
-	global.scaleXCouverture = approach(global.scaleXCouverture, global.tarscaleXCouverture, 0.2);
+	global.scaleXCouverture = approach(global.scaleXCouverture, global.tarscaleXCouverture, VITESSE_DEPLI_REPERTOIRE);
 
 	//-----DESSIN------//
-	draw_set_alpha(1);
 	//page droite
 	draw_sprite_stretched(sprPageRepertoire, 0, global.xRepertoire, Y_REPERTOIRE, LARGEUR_REPERTOIRE/2, HAUTEUR_REPERTOIRE);
 	//page gauche
@@ -135,13 +148,63 @@ if global.drawRepertoire
 		}
 	}
 	
-	//couverture
-	draw_sprite_stretched(sprCouvRep, 0, global.xRepertoire, Y_REPERTOIRE, LARGEUR_REPERTOIRE/2*global.scaleXCouverture, HAUTEUR_REPERTOIRE);
-	
+		
 	//stop dessin
 	if !global.repertoire and global.xRepertoire == MAX_TAR_X_REPERTOIRE and global.scaleXCouverture == 1
 	{
 		global.drawRepertoire = false;
+	}
+}
+
+//---DESSIN COUVERTURE
+draw_sprite_stretched(sprCouvRep, 0, global.xRepertoire, Y_REPERTOIRE, LARGEUR_REPERTOIRE/2*global.scaleXCouverture, HAUTEUR_REPERTOIRE);
+
+//---INPUTS
+if !global.repertoire
+{
+	if point_in_rectangle(mouse_x, mouse_y, global.xRepertoire, Y_REPERTOIRE, global.xRepertoire + DECALAGE_REPERTOIRE * global.scaleXCouverture, Y_REPERTOIRE + HAUTEUR_REPERTOIRE)
+	{
+		if (global.cPrLeft)
+		{
+			global.decalageMainRepertoire = mouse_x - global.xRepertoire;
+			global.repEnMain = true;
+		}
+		if (global.cRlLeft) global.repEnMain = false;
+	
+	
+	
+	}
+	else
+	{
+		global.repEnMain = false;
+	}
+}
+else
+{
+	if !point_in_rectangle(mouse_x, mouse_y, global.xRepertoire - LARGEUR_REPERTOIRE/2, Y_REPERTOIRE, global.xRepertoire + LARGEUR_REPERTOIRE/2, Y_REPERTOIRE + HAUTEUR_REPERTOIRE) and global.cPrLeft
+	{
+		global.repertoire = false;
+	}
+}
+
+//---MANIPULATION DU RÉPERTOIRE
+if global.repEnMain
+{
+	if global.repertoire == false
+	{
+		if mouse_x < GAME_WIDTH*2/3
+		{
+			global.repEnMain = false;
+			global.repertoire = true;
+		}
+	}
+	else
+	{
+		if mouse_x > GAME_WIDTH/2 
+		{
+			global.repEnMain = false;
+			global.repertoire = false;
+		}
 	}
 }
 

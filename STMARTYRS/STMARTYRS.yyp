@@ -48,7 +48,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"V2","folderPath":"folders/PIECES/EXPLORABLE/V2.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MINI JEUX","folderPath":"folders/PIECES/MINI JEUX.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"POLICES","folderPath":"folders/POLICES.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SCRIPTS","folderPath":"folders/SCRIPTS.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ACTIONS & MÉCANIQUE","folderPath":"folders/SCRIPTS/ACTIONS & MÉCANIQUE.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ajout Struct Array","folderPath":"folders/SCRIPTS/ajout Struct Array.yy",},
@@ -262,7 +261,6 @@
     {"id":{"name":"sprScroller","path":"sprites/sprScroller/sprScroller.yy",},},
     {"id":{"name":"P_PARKING_1","path":"rooms/P_PARKING_1/P_PARKING_1.yy",},},
     {"id":{"name":"P_RUE_BLUE","path":"rooms/P_RUE_BLUE/P_RUE_BLUE.yy",},},
-    {"id":{"name":"rmSimpleExample","path":"rooms/rmSimpleExample/rmSimpleExample.yy",},},
     {"id":{"name":"data_texte_Liza","path":"scripts/data_texte_Liza/data_texte_Liza.yy",},},
     {"id":{"name":"sprIconeTel","path":"sprites/sprIconeTel/sprIconeTel.yy",},},
     {"id":{"name":"P_PARKING_2","path":"rooms/P_PARKING_2/P_PARKING_2.yy",},},
@@ -738,7 +736,6 @@
     {"roomId":{"name":"P_SANITAIRES","path":"rooms/P_SANITAIRES/P_SANITAIRES.yy",},},
     {"roomId":{"name":"P_CORRIDOR","path":"rooms/P_CORRIDOR/P_CORRIDOR.yy",},},
     {"roomId":{"name":"pDreamtTutorial","path":"rooms/pDreamtTutorial/pDreamtTutorial.yy",},},
-    {"roomId":{"name":"rmSimpleExample","path":"rooms/rmSimpleExample/rmSimpleExample.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

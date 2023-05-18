@@ -28,7 +28,6 @@
     {"name":"V2","order":1,"path":"folders/PIECES/EXPLORABLE/V2.yy",},
     {"name":"MINI JEUX","order":2,"path":"folders/PIECES/MINI JEUX.yy",},
     {"name":"POLICES","order":7,"path":"folders/POLICES.yy",},
-    {"name":"Rooms","order":13,"path":"folders/Rooms.yy",},
     {"name":"SCRIPTS","order":2,"path":"folders/SCRIPTS.yy",},
     {"name":"ACTIONS & MÉCANIQUE","order":10,"path":"folders/SCRIPTS/ACTIONS & MÉCANIQUE.yy",},
     {"name":"ajout Struct Array","order":6,"path":"folders/SCRIPTS/ajout Struct Array.yy",},
