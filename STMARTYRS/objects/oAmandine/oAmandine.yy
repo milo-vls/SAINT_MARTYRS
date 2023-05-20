@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "pnj",
-    "path": "folders/OBJECTS/EXPLO/pnj.yy",
+    "path": "folders/OBJETS/EXPLO/pnj.yy",
   },
   "parentObjectId": {
     "name": "oNPCparent",

@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "carte",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/carte.yy",
+    "name": "VISIBLE PINS",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/MAP/VISIBLE PINS.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

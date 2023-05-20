@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "sprites page web",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/ordinateur/sprites page web.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/ORDI/sprites page web.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

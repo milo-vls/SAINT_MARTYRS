@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ANCIEN",
-    "path": "folders/OBJECTS/EXCLU PIECE/MINI JEUX/ANCIEN.yy",
+    "path": "folders/OBJETS/EXCLU PIECE/MINI JEUX/ANCIEN.yy",
   },
   "parentObjectId": {
     "name": "oParentManagerMG",

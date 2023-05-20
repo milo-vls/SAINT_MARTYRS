@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "TELEPHONE",
-    "path": "folders/OBJECTS/EXCLU PIECE/TELEPHONE.yy",
+    "path": "folders/OBJETS/EXCLU PIECE/TELEPHONE.yy",
   },
   "parentObjectId": null,
   "persistent": false,

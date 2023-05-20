@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "CINEMATIQUES",
-    "path": "folders/OBJECTS/CINEMATIQUES.yy",
+    "path": "folders/OBJETS/CINEMATIQUES.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "mini jeux",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/mini jeux.yy",
+    "name": "[OLD] MINI GAMES",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/[OLD] MINI GAMES.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

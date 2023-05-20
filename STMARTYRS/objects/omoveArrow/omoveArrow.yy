@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "EXPLO",
-    "path": "folders/OBJECTS/EXPLO.yy",
+    "path": "folders/OBJETS/EXPLO.yy",
   },
   "parentObjectId": null,
   "persistent": false,

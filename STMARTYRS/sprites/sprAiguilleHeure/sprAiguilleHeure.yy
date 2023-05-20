@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "montre",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/explorations/montre.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/EXPLO/montre.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

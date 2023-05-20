@@ -168,7 +168,20 @@ function instance_survole(_objID, _x, _y)
 }
 
 
-
+//--------    -fin du récap                            -------------------------------//
+function endRecap()
+{
+	//SWITCH TO OTHER MENU
+	omapManager.currentMenu = noone;
+	ojeu.recapTenseNight = true;
+	
+	//RESUME TIME STOPPED
+	time_source_resume(ojeu.minuterie);
+	if omapManager.minuterie != noone
+	{
+		time_source_resume(omapManager.minuterie);
+	}
+}
 //---------coordonnées relatives-------------------------------//
 #macro HAUTEUR_MAP_ABSOLUE 360
 #macro LARGEUR_MAP_ABSOLUE 640

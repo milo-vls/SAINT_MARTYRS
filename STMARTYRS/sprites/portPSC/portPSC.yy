@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "portraits victimes",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/carte/portraits victimes.yy",
+    "name": "VICTIMS PORTRAITS",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/MAP/VICTIMS PORTRAITS.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

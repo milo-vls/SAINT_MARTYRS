@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "EXCLU PIECE",
-    "path": "folders/OBJECTS/EXCLU PIECE.yy",
+    "path": "folders/OBJETS/EXCLU PIECE.yy",
   },
   "parentObjectId": null,
   "persistent": false,

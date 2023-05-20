@@ -216,22 +216,10 @@ switch (currentMenu)
 			time_source_pause(minuterie);
 		}
 		
-		
-		//----FIN RÉCAP
-		if global.cRlLeft
+		if !instance_exists(oRecap)
 		{
-			//SWITCH TO OTHER MENU
-			currentMenu = noone;
-			ojeu.recapTenseNight = true;
-			
-			//RESUME TIME STOPPED
-			time_source_resume(ojeu.minuterie);
-			if minuterie != noone
-			{
-				time_source_resume(minuterie);
-			}
+			instance_create_layer(-sprite_get_width(sprDocumentBlank)/2, GAME_HEIGHT/2, "Instances", oRecap);	
 		}
-		
 		
 	}break;
 	case MAP_MENU.RETRY:{

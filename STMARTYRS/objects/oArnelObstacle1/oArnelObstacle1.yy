@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Arnel",
-    "path": "folders/OBJECTS/EXCLU PIECE/MINI JEUX/ANCIEN/Arnel.yy",
+    "path": "folders/OBJETS/EXCLU PIECE/MINI JEUX/ANCIEN/Arnel.yy",
   },
   "parentObjectId": {
     "name": "oParentArnelMovingObject",

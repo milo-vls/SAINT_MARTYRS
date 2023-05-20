@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "hbox usi",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/carte/hbox usi.yy",
+    "name": "VISIBLE PINS",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/MAP/VISIBLE PINS.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

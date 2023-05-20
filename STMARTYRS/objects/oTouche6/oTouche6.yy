@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "TOUCHES",
-    "path": "folders/OBJECTS/EXCLU PIECE/TELEPHONE/TOUCHES.yy",
+    "path": "folders/OBJETS/EXCLU PIECE/TELEPHONE/TOUCHES.yy",
   },
   "parentObjectId": {
     "name": "oParentToucheTelephone",

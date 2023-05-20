@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "carte",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/carte.yy",
+    "name": "MAP",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/MAP.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

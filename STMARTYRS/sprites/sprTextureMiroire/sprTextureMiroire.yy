@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "ROOM ET CINEMATIQUES",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES.yy",
+    "name": "CINEMATIQUES",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/CINEMATIQUES.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

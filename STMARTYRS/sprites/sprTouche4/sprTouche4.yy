@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "touches téléphone",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/touches téléphone.yy",
+    "name": "PHONE",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/PHONE.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

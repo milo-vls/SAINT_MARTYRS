@@ -49,8 +49,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "ordinateur",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/ordinateur.yy",
+    "name": "ORDI",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/ORDI.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

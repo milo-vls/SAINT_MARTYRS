@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "META",
-    "path": "folders/OBJECTS/META.yy",
+    "path": "folders/OBJETS/META.yy",
   },
   "parentObjectId": null,
   "persistent": true,

@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Simple Example",
-    "path": "folders/OBJECTS/Simple Example.yy",
+    "path": "folders/OBJETS/Simple Example.yy",
   },
   "parentObjectId": null,
   "persistent": false,

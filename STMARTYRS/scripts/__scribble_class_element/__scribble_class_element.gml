@@ -50,6 +50,9 @@ function __scribble_class_element(_string, _unique_id) constructor
     __origin_y       = 0.0;
     __xscale         = 1.0;
     __yscale         = 1.0;
+	
+	__pre_scale      = 1.0;
+	
     __angle          = 0.0;
     __matrix_dirty   = true;
     __matrix         = undefined;
@@ -363,6 +366,23 @@ function __scribble_class_element(_string, _unique_id) constructor
         return self;
     }
     
+	    /// @param scale
+    static scale = function(_scale)
+    {
+        if (__pre_scale != _scale)
+        {
+            __model_cache_name_dirty = true;
+            
+            __pre_scale = _scale;
+        }
+        
+        return self;
+    }
+	
+	
+	
+	
+	
     static skew = function(_skew_x, _skew_y)
     {
         __skew_x = _skew_x;
@@ -1347,7 +1367,8 @@ function __scribble_class_element(_string, _unique_id) constructor
                 buffer_write(global.__scribble_buffer, buffer_text, string(__starting_colour));     buffer_write(global.__scribble_buffer, buffer_u8,  0x3A);
                 buffer_write(global.__scribble_buffer, buffer_text, string(__starting_halign));     buffer_write(global.__scribble_buffer, buffer_u8,  0x3A);
                 buffer_write(global.__scribble_buffer, buffer_text, string(__starting_valign));     buffer_write(global.__scribble_buffer, buffer_u8,  0x3A);
-                buffer_write(global.__scribble_buffer, buffer_text, string(__line_height_min));     buffer_write(global.__scribble_buffer, buffer_u8,  0x3A);
+                buffer_write(global.__scribble_buffer, buffer_text, string(__pre_scale      ));     buffer_write(global.__scribble_buffer, buffer_u8,  0x3A);
+				buffer_write(global.__scribble_buffer, buffer_text, string(__line_height_min));     buffer_write(global.__scribble_buffer, buffer_u8,  0x3A);
                 buffer_write(global.__scribble_buffer, buffer_text, string(__line_height_max));     buffer_write(global.__scribble_buffer, buffer_u8,  0x3A);
                 buffer_write(global.__scribble_buffer, buffer_text, string(__line_spacing   ));     buffer_write(global.__scribble_buffer, buffer_u8,  0x3A);
                 buffer_write(global.__scribble_buffer, buffer_text, string(__wrap_max_width  - (__padding_l + __padding_r))); buffer_write(global.__scribble_buffer, buffer_u8,  0x3A);

@@ -36,7 +36,7 @@ function init_usi()
 	}
 	usi[USI.ROSALIE] = {
 		section		: USI_SECTIONS.TACTIC_UNIT,
-		disponible			: false,
+		disponible			: true,
 		_name		: "ROSALIE",
 		tpsRepos	: 72,						 
 		tpsPatrol	: 7,
@@ -54,7 +54,7 @@ function init_usi()
 	}
 	usi[USI.ERNEST] = {
 		section		: USI_SECTIONS.TACTIC_UNIT,
-		disponible: false,
+		disponible: true,
 		_name		: "ERNEST",
 		tpsRepos	: 72,						 
 		tpsPatrol	: 7,

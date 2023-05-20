@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "INTRO",
-    "path": "folders/OBJECTS/CINEMATIQUES/INTRO.yy",
+    "path": "folders/OBJETS/CINEMATIQUES/INTRO.yy",
   },
   "parentObjectId": {
     "name": "oParentCinematique",

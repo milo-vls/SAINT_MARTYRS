@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "UNUSED",
-    "path": "folders/OBJECTS/MAP/UNUSED.yy",
+    "path": "folders/OBJETS/MAP/UNUSED.yy",
   },
   "parentObjectId": {
     "name": "omapMenuParent",

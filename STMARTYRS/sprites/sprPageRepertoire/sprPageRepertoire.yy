@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "répertoire",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/explorations/répertoire.yy",
+    "name": "RÉPERTOIRE",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/EXPLO/RÉPERTOIRE.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

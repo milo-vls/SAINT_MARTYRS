@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "DREAMT TUTORIAL",
-    "path": "folders/OBJECTS/EXCLU PIECE/MINI JEUX/DREAMT TUTORIAL.yy",
+    "path": "folders/OBJETS/EXCLU PIECE/MINI JEUX/DREAMT TUTORIAL.yy",
   },
   "parentObjectId": null,
   "persistent": false,
