@@ -18,7 +18,7 @@ currentState = RECAP_STATES.SHIFTING;
 #macro LARGEUR_DOC sprite_get_width(sprDocumentBlank)
 #macro HAUTEUR_DOC sprite_get_height(sprDocumentBlank)
 #macro QUOTIEN_MARGE_DOC sprite_get_width(sprDocumentBlank)/13
-#macro DOC_TEXT_SCALE 3
+#macro DOC_TEXT_SCALE 0.75
 //----SHIFTING
 quotienParcours = 0;
 tpsParcours = room_speed * 1.25;
@@ -37,13 +37,13 @@ titleTypist.in(1, 0);
 #macro TITLE_RECAP_Y y - (HAUTEUR_DOC/2 - QUOTIEN_MARGE_DOC)
 
 //----RAPPEL MISSION
-rappelScribble = scribble("[ftDial]" + text("RECAP_BRIEFING_DOC")).align(fa_left, fa_top).blend(c_black).wrap(LARGEUR_DOC - (2 * QUOTIEN_MARGE_DOC));
+rappelScribble = scribble("[ftDial]" + text("RECAP_BRIEFING_DOC")).align(fa_left, fa_top).blend(c_black).scale(DOC_TEXT_SCALE).wrap(LARGEUR_DOC - (2 * QUOTIEN_MARGE_DOC));
 rappelTypist = scribble_typist();
 rappelTypist.in(1, 0);
 
 #macro RECAP_RECAP_Y TITLE_RECAP_Y + titleScribble.get_height()
 //----UNITS
-unitsScribble = scribble("[ftDial]" + text("UNITS_BRIEFING_DOC")).align(fa_left, fa_top).blend(c_black);
+unitsScribble = scribble("[ftDial]" + text("UNITS_BRIEFING_DOC")).align(fa_left, fa_top).blend(c_black).scale(DOC_TEXT_SCALE);
 unitsTypist = scribble_typist();
 unitsTypist.in(1, 0);
 
@@ -68,14 +68,14 @@ for (var i = 0; i < _nbusi; i ++)
 #macro UNITS_PORTRAIT_SPRITE_Y UNITS_TEXT_RECAP_Y + unitsScribble.get_height()
 #macro INTER_PORTRAIT_USI_DOC  (LARGEUR_DOC - (LARGEUR_PORTRAIT_USI_DOC * 3))/4
 //----POSSIBLES PATTERNS
-patternsScribble = scribble("[ftDial]" + text("PATTERNS_BRIEFING_DOC")).align(fa_left, fa_top).blend(c_black);
+patternsScribble = scribble("[ftDial]" + text("PATTERNS_BRIEFING_DOC")).align(fa_left, fa_top).blend(c_black).scale(DOC_TEXT_SCALE);
 patternsTypist = scribble_typist();
 patternsTypist.in(1, 0);
 patterns = omapManager.currentNightDiff.pool;
 
 
 //----DATES END OF DOC
-datesScribble = scribble("[ftDial]" + text("DATES_BRIEFING_DOC")).align(fa_left, fa_top);
+datesScribble = scribble("[ftDial]" + text("DATES_BRIEFING_DOC")).align(fa_left, fa_top).scale(DOC_TEXT_SCALE);
 datesTypist = scribble_typist();
 datesTypist.in(1, 0);
 

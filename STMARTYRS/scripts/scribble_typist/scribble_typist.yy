@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "SCRIBBLE",
-    "path": "folders/SCRIPTS/TEXTE/SCRIBBLE.yy",
+    "name": "Scribble",
+    "path": "folders/SCRIPTS/TEXTE/Scribble.yy",
   },
 }
