@@ -93,13 +93,21 @@ datesTypist = scribble_typist();
 datesTypist.in(1, 0);
 
 #macro DATES_RECAP_DOC_Y APPERCUS_PATTERN_MIN_Y + HAUTEUR_APPERCUS_PATTERNS
+
+
 //----SIGNEZ Là
+signatureScribble = scribble("[ftDial]" +text("SIGN_HERE_DOC")).align(fa_right, fa_top).scale(DOC_TEXT_SCALE).blend(c_black);
+signatureTypist = scribble_typist().in(1, 0);
+signed = false;
+drawSignHere = false;
 
 
 
 
 
-
-
-
-
+//------END RECAP
+quotienParcoursEndRecap = 0;
+tpsParcoursEndRecap = room_speed * 2;
+xStartEndRecap = xEnd;
+xEndEndRecap = GAME_WIDTH + LARGEUR_DOC*0.75;
+#macro DOCUMENT_DISTANCE_PARCOURS_END (xEndEndRecap - xStartEndRecap)

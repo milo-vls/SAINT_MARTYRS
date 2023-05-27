@@ -4,8 +4,7 @@ switch (currentState)
 {
 	case RECAP_STATES.SHIFTING :{
 		quotienParcours += 1 / tpsParcours;
-		valeurCourbe = animcurve_channel_evaluate(courbe, quotienParcours);
-		x = xStart + (DOCUMENT_DISTANCE_PARCOURS * valeurCourbe);
+		x = xStart + (DOCUMENT_DISTANCE_PARCOURS *animcurve_channel_evaluate(courbe, quotienParcours));
 		
 		//FIN ÉTAT
 		if quotienParcours > 1
@@ -47,16 +46,50 @@ switch (currentState)
 	}break;
 	case RECAP_STATES.POSSIBLE_PATTERN:{
 		drawPatternText = true;
-		drawPatterns = true;
+		
 		
 		if patternsTypist.get_state() == 1
 		{
+			drawPatterns = true;
 			currentState = RECAP_STATES.DATES_END_OF_DOC;
 		}
 	}break;
 	case RECAP_STATES.DATES_END_OF_DOC:{
 		drawDates = true;
 		
+		if datesTypist.get_state() == 1
+		{
+			var _lCadre = LARGEUR_DOC/2 - (QUOTIEN_MARGE_DOC*2);
+			var _hCadre = (HAUTEUR_DOC - DATES_RECAP_DOC_Y - QUOTIEN_MARGE_DOC*3)/3;
+			//var _oSignature = 
+			with instance_create_depth(x + QUOTIEN_MARGE_DOC, DATES_RECAP_DOC_Y + QUOTIEN_MARGE_DOC*2, depth - 1, oSignature)
+			{
+				largeurCadre = 	_lCadre;
+				hauteurCadre = _hCadre;
+				image_xscale = largeurCadre/sprite_get_width(sprite_index);
+				image_yscale = hauteurCadre/sprite_get_height(sprite_index);
+			}
+			currentState = RECAP_STATES.WAITING_FOR_SIGNATURE;	
+		}
+		
+	}break;
+	case RECAP_STATES.WAITING_FOR_SIGNATURE:{
+		drawSignHere = true;
+		
+		if signed
+		{
+			currentState = RECAP_STATES.END_RECAP;	
+		}
+	}break;
+	case RECAP_STATES.END_RECAP:{
+		quotienParcoursEndRecap+= 1 / tpsParcoursEndRecap;
+		var _valeurCourbe = animcurve_channel_evaluate(courbe, quotienParcoursEndRecap);
+		var _distance = DOCUMENT_DISTANCE_PARCOURS_END
+		x = xStartEndRecap + (_distance * _valeurCourbe);
+		if quotienParcoursEndRecap == 1
+		{
+			endRecap()
+		}
 	}break;
 }
 
@@ -84,3 +117,13 @@ if drawPatterns
 	}
 }
 if drawDates datesScribble.draw(TITLE_RECAP_X, DATES_RECAP_DOC_Y, datesTypist);;
+if drawSignHere signatureScribble.draw(oSignature.x, oSignature.y, signatureTypist);
+
+//POSITION SIGNATURE
+var _updatedSignatureX = oRecap.x + QUOTIEN_MARGE_DOC;
+var _updatedSignatureY = DATES_RECAP_DOC_Y + QUOTIEN_MARGE_DOC*2;
+with oSignature
+{
+	x = 	_updatedSignatureX;
+	y = _updatedSignatureY
+}

@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 1,
   "parent": {
-    "name": "usi",
-    "path": "folders/SPRITES/CHARACTERS/USI/usi.yy",
+    "name": "ERNEST",
+    "path": "folders/SPRITES/CHARACTERS/USI/ERNEST.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
