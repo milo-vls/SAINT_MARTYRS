@@ -247,7 +247,7 @@ _yTxt = hBarreSup/2
 alphaGameOver = 0;
 tarAlphaGameOver = 0;
 gameOverSfxPlayed = false;
-scrbblFinDePartie = scribble("[ftMenu]Fin de la partie").gradient(c_red, 0.6).align(fa_center, fa_top).transform(GAME_OVER_TITLE_SCALE, GAME_OVER_TITLE_SCALE, 0);
+scrbblFinDePartie = scribble("[ftMenu]Fin de la partie").gradient(c_red, 0.6).align(fa_center, fa_top).scale(GAME_OVER_TITLE_SCALE);
 alphaFinDePartie = 0;
 alphaGameOverOption = 0;
 

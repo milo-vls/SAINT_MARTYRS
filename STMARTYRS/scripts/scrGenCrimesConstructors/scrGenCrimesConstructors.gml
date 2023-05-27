@@ -21,12 +21,14 @@ function setNightDiff(_score,_pool, _diffEv, _diffVariance, _dureeSeconde, _nbTu
 /// @param premier_point				méthode déterminant le premier point du pattern, renvoie un couple (x, y)
 /// @param variance							méthode déterminant les potentiels 
 /// @param autres_points				méthode pour placer les autres points selon le premier points et les variances.
-function setPattern(_score, _unique, _firstPoint, _nextPoints) constructor
+/// @param illustration						sprite qui sera affiché surant le recap
+function setPattern(_score, _unique, _firstPoint, _nextPoints, _ilu) constructor
 {
 	cout = _score;
 	unParNuit = _unique;
 	firstCrimePos = _firstPoint;
 	nextCrimesPos = _nextPoints;
+	illustration = _ilu
 }
 
 

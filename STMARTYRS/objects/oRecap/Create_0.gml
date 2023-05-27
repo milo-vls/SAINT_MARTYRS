@@ -29,6 +29,7 @@ xEnd = GAME_WIDTH/2;
 
 
 //----TITLE_BRIEFING
+drawTitle = false;
 titleScribble = scribble("[ftDial]" + text("TITLE_BRIEFING_DOC")).align(fa_left, fa_top).blend(c_black);
 titleTypist = scribble_typist();
 titleTypist.in(1, 0);
@@ -37,12 +38,15 @@ titleTypist.in(1, 0);
 #macro TITLE_RECAP_Y y - (HAUTEUR_DOC/2 - QUOTIEN_MARGE_DOC)
 
 //----RAPPEL MISSION
+drawRappel = false;
 rappelScribble = scribble("[ftDial]" + text("RECAP_BRIEFING_DOC")).align(fa_left, fa_top).blend(c_black).scale(DOC_TEXT_SCALE).wrap(LARGEUR_DOC - (2 * QUOTIEN_MARGE_DOC));
 rappelTypist = scribble_typist();
 rappelTypist.in(1, 0);
 
 #macro RECAP_RECAP_Y TITLE_RECAP_Y + titleScribble.get_height()
 //----UNITS
+drawUnitsText = false;
+drawUnits = false;
 unitsScribble = scribble("[ftDial]" + text("UNITS_BRIEFING_DOC")).align(fa_left, fa_top).blend(c_black).scale(DOC_TEXT_SCALE);
 unitsTypist = scribble_typist();
 unitsTypist.in(1, 0);
@@ -68,20 +72,28 @@ for (var i = 0; i < _nbusi; i ++)
 #macro UNITS_PORTRAIT_SPRITE_Y UNITS_TEXT_RECAP_Y + unitsScribble.get_height()
 #macro INTER_PORTRAIT_USI_DOC  (LARGEUR_DOC - (LARGEUR_PORTRAIT_USI_DOC * 3))/4
 //----POSSIBLES PATTERNS
+drawPatternText = false;
+drawPatterns  = false;
 patternsScribble = scribble("[ftDial]" + text("PATTERNS_BRIEFING_DOC")).align(fa_left, fa_top).blend(c_black).scale(DOC_TEXT_SCALE);
 patternsTypist = scribble_typist();
 patternsTypist.in(1, 0);
 patterns = omapManager.currentNightDiff.pool;
+nbPatterns = array_length(patterns);
 
-
+#macro NOMBRE_PATTERNS_MAX_LIGNE 4
+#macro PATTERNS_DOC_TEXT_Y (UNITS_PORTRAIT_SPRITE_Y + LARGEUR_PORTRAIT_USI_DOC*1.2)
+#macro APPERCUS_PATTERN_MIN_Y PATTERNS_DOC_TEXT_Y + patternsScribble.get_height()
+#macro HAUTEUR_APPERCUS_PATTERNS (HAUTEUR_DOC - APPERCUS_PATTERN_MIN_Y)/3
+#macro LARGEUR_APPERCUS_PATTERNS_DOC  (LARGEUR_DOC-(QUOTIEN_MARGE_DOC)*(NOMBRE_PATTERNS_MAX_LIGNE+1))/NOMBRE_PATTERNS_MAX_LIGNE
+#macro INTER_PATTERN_DOC (LARGEUR_DOC - (LARGEUR_PORTRAIT_USI_DOC * min(NOMBRE_PATTERNS_MAX_LIGNE, nbPatterns)))/(min(NOMBRE_PATTERNS_MAX_LIGNE, nbPatterns)+1)
 //----DATES END OF DOC
-datesScribble = scribble("[ftDial]" + text("DATES_BRIEFING_DOC")).align(fa_left, fa_top).scale(DOC_TEXT_SCALE);
+drawDates = false;
+datesScribble = scribble("[ftDial]" + text("DATES_BRIEFING_DOC")).align(fa_left, fa_top).scale(DOC_TEXT_SCALE).wrap(LARGEUR_DOC - (2 * QUOTIEN_MARGE_DOC)).blend(c_black);
 datesTypist = scribble_typist();
 datesTypist.in(1, 0);
 
-
-//----
-
+#macro DATES_RECAP_DOC_Y APPERCUS_PATTERN_MIN_Y + HAUTEUR_APPERCUS_PATTERNS
+//----SIGNEZ Là
 
 
 

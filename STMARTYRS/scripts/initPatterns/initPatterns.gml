@@ -33,8 +33,8 @@ patterns[PATTERN.RECTILIGNE] = new setPattern(
 	
 																									return _listeCrimesToReturn
 	
-																									}
-																							);
+																									},
+																									sprPatternRect);
 
 																	
 																												

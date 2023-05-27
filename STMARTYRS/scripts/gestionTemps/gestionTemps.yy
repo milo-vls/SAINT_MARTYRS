@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "méta",
-    "path": "folders/SCRIPTS/méta.yy",
+    "name": "META",
+    "path": "folders/SCRIPTS/META.yy",
   },
 }

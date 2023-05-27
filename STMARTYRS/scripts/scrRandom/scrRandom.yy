@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "maths et conditions",
-    "path": "folders/SCRIPTS/maths et conditions.yy",
+    "name": "MATHS & CONDITIONS",
+    "path": "folders/SCRIPTS/MATHS & CONDITIONS.yy",
   },
 }

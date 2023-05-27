@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "ajout Struct Array",
-    "path": "folders/SCRIPTS/ajout Struct Array.yy",
+    "name": "jsp",
+    "path": "folders/SCRIPTS/jsp.yy",
   },
 }

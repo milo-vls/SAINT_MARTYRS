@@ -123,3 +123,4 @@ function drawCoordinates(_x, _y,  _width, _height)
 	var _xAbs = x_map_absolue(_x, _width)
 	draw_text(_x, _y, string(_xAbs) + ", " + string(_yAbs));
 }
+

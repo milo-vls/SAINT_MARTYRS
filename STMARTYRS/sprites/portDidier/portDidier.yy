@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "portraits",
-    "path": "folders/SPRITES/CHARACTERS/USI/portraits.yy",
+    "name": "DIDIER",
+    "path": "folders/SPRITES/CHARACTERS/USI/DIDIER.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
