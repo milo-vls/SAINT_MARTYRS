@@ -1,13 +1,14 @@
 
-fonduNoirTar = 0;
-fonduNoir = 0;
-
+//fonduNoirTar = 0;
+//fonduNoir = 0;
+layer_background_visible(layer_background_get_id(layer_get_id("Background2")), false);
 if ojeu.tenseNight
 {
+	instance_destroy(oPanneauLateral);
 	var _layId = layer_get_id("Background");
 	var _id = layer_background_get_id(_layId);
-	layer_background_sprite(_id, bg_tense_night);
-	
+	layer_background_visible(_id, false);
+	layer_background_visible(layer_background_get_id(layer_get_id("Background2")), true);
 	currentNightDiff = new setNightDiff(8, [PATTERN.RECTILIGNE], 0, 0, 120, 5);
 	
 	var _endOfTenseNight = function ()

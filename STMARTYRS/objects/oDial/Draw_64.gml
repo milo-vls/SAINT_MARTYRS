@@ -206,10 +206,10 @@ for (var i = 0; i < array_length(bulle);i ++)
 {
 	#region quel alpha? quelle couleur?
 		//taralpha
-		bulle[currentBulle].alpha = 0.95;
+		bulle[currentBulle].alpha = 1;
 		if currentBulle > i
 		{
-			bulle[i].tarAlpha = 0.8;
+			bulle[i].tarAlpha =1;
 		}
 		
 		bulle[i].alpha = approach(bulle[i].alpha, bulle[i].tarAlpha, 0.08);

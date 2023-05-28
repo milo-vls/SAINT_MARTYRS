@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "épingles carte",
-    "path": "folders/OBJETS/MAP/épingles carte.yy",
+    "name": "ÉPINGLES",
+    "path": "folders/OBJETS/MAP/ÉPINGLES.yy",
   },
   "parentObjectId": null,
   "persistent": false,

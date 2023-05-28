@@ -29,18 +29,18 @@ switch(ID)
 	break;
 	#endregion
 	#region map option
-	case "nombre de tueur":{
+	case "NBTUEURS_OBS_ID":{
 		var _nbTueur = ojeu.nbTueurActifs
 		if _nbTueur  == 0
 		{
-			obs("Aucun criminel menace Saints Martyrs")
+			obs(text("PAS_DE_CRIMINELS"));
 		}
 		else
 		{
 			if _nbTueur == 1
-			obs("1 criminel menace Saints Martyrs")
+			obs(text("UN_CRIMINEL"))
 			else
-			obs(string(_nbTueur) + "criminels menacent Saints Martyrs");
+			obs(text("NOMBRE_CRIMINELS", _nbTueur));
 		}
 	}break;
 	

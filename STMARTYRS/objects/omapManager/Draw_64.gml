@@ -19,7 +19,7 @@ if ojeu.tenseNight == false
 	draw_set_valign(fa_middle);
 	draw_set_font(ftMenu);
 	draw_set_color(c_white);
-	for(var i = 0 ; i <nbMapOption ; i ++)
+	for(var i = 0 ; i < nbMapOption ; i ++)
 	{
 		//--DONNÉES POUR LE TEXTE
 		if is_method(mapOption[i].txt)
@@ -56,7 +56,7 @@ if ojeu.tenseNight == false
 	
 	
 		//---DESSIN
-		scribble("["+_txtcol+"][fa_middle][fa_center][ftMenu]"+_shake+_txtToDraw).draw(_xTxt, _yTxt)
+		scribble("["+_txtcol+"][fa_middle][fa_center][ftDial]"+_shake+_txtToDraw).draw(_xTxt, _yTxt)
 	}
 	
 	

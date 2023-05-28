@@ -64,8 +64,8 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 	
 	
 	draw_set_alpha(1);
-	draw_roundrect_color_ext(_x1, _y1, _x2, _y2, _marge, _marge, c_black, c_black, false);
-	
+	//draw_roundrect_color_ext(_x1, _y1, _x2, _y2, _marge, _marge, c_black, c_black, false);
+	draw_rectangle_color(_x1, _y1, _x2, _y2 + _marge, c_black, c_black, c_black, c_black, false);
 	
 	draw_set_color(c_white); draw_set_font(ftDial);draw_set_valign(fa_top); draw_set_halign(fa_left);
 	//DESSIN NOM ET PRENOM

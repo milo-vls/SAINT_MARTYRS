@@ -190,11 +190,11 @@ mapOption[0] = {
 			{
 					return string(ojeu.nbTueurActifs);
 			},
-	fonction : function(){ startObs("nombre de tueur")},
+	fonction : function(){ startObs("NBTUEURS_OBS_ID")},
 	pressed : false,
 	}
 mapOption[1] = {
-	txt : "Ville",
+	txt : text("EXPLORATION"),
 	fonction : function()
 		{
 				omapManager.currentMenu = MAP_MENU.EXPLO;
@@ -202,7 +202,7 @@ mapOption[1] = {
 	pressed : false,
 	}
 mapOption[2] = {
-	txt : "Ordi",
+	txt : text("ORDINATEUR"),
 	fonction : function()
 	{
 		omapManager.currentMenu = MAP_MENU.ORDI;
@@ -210,7 +210,7 @@ mapOption[2] = {
 	pressed : false
 }
 mapOption[3] = {
-	txt : "Tel",
+	txt : text("TÉLÉPHONE"),
 	fonction : function()
 		{
 			omapManager.currentMenu = MAP_MENU.PHONE
@@ -218,12 +218,12 @@ mapOption[3] = {
 	pressed : false,
 }
 mapOption[4] = {
-	txt : "Fiches",
+	txt : text("FICHES"),
 	fonction : function(){},
 	pressed : false,
 		
 }
-mapOption[4] = {
+mapOption[5] = {
 	txt : function()
 		{
 			var _heure = string(date_get_hour(global.mapDate));
@@ -235,7 +235,7 @@ mapOption[4] = {
 	fonction : function(){},
 	pressed : false,
 }
-nbMapOption = 5
+nbMapOption = 6
 
 wMapOption = wBarreSup/nbMapOption
 _yTxt = hBarreSup/2
