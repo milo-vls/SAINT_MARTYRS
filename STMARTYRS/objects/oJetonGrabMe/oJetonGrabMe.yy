@@ -1,21 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSignature",
+  "name": "oJetonGrabMe",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "BOUTONS",
-    "path": "folders/OBJETS/UI/BOUTONS.yy",
+    "name": "JETONS",
+    "path": "folders/OBJETS/UI/JETONS.yy",
   },
   "parentObjectId": {
-    "name": "oParentButton",
-    "path": "objects/oParentButton/oParentButton.yy",
+    "name": "oParentJeton",
+    "path": "objects/oParentJeton/oParentJeton.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprFrame",
-    "path": "sprites/sprFrame/sprFrame.yy",
+    "name": "sprBlack",
+    "path": "sprites/sprBlack/sprBlack.yy",
   },
   "spriteMaskId": null,
   "visible": true,

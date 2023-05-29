@@ -1,0 +1,92 @@
+{
+  "resourceType": "GMRoom",
+  "resourceVersion": "1.0",
+  "name": "pLanguageSelection",
+  "creationCodeFile": "",
+  "inheritCode": false,
+  "inheritCreationOrder": false,
+  "inheritLayers": false,
+  "instanceCreationOrder": [
+    {"name":"inst_2B23A527","path":"rooms/pLanguageSelection/pLanguageSelection.yy",},
+    {"name":"inst_7AAFABE0","path":"rooms/pLanguageSelection/pLanguageSelection.yy",},
+    {"name":"inst_62A8C18C","path":"rooms/pLanguageSelection/pLanguageSelection.yy",},
+    {"name":"inst_4C47E109","path":"rooms/pLanguageSelection/pLanguageSelection.yy",},
+    {"name":"inst_9E9445A","path":"rooms/pLanguageSelection/pLanguageSelection.yy",},
+  ],
+  "isDnd": false,
+  "layers": [
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2B23A527","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBoiteTexte","path":"objects/oBoiteTexte/oBoiteTexte.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBoiteTexte","path":"objects/oBoiteTexte/oBoiteTexte.yy",},"propertyId":{"name":"str","path":"objects/oBoiteTexte/oBoiteTexte.yy",},"value":"\"What language do you speak ?\\nQuelle langue parles-tu ?\"",},
+          ],"rotation":0.0,"scaleX":261.50006,"scaleY":67.999985,"x":698.55005,"y":72.26878,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4C47E109","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oJetonGrabMe","path":"objects/oJetonGrabMe/oJetonGrabMe.yy",},"properties":[],"rotation":0.0,"scaleX":108.0,"scaleY":51.0,"x":887.00037,"y":856.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_9E9445A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChoixLangue","path":"objects/oChoixLangue/oChoixLangue.yy",},"properties":[],"rotation":0.0,"scaleX":1.4375,"scaleY":1.1168232,"x":0.0,"y":-16.869171,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":"_filter_rgbnoise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7AAFABE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oReceptacleFrench","path":"objects/oReceptacleFrench/oReceptacleFrench.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oParentReceptacle","path":"objects/oParentReceptacle/oParentReceptacle.yy",},"propertyId":{"name":"objectReceiving","path":"objects/oParentReceptacle/oParentReceptacle.yy",},"value":"oChoixLangue",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oParentReceptacle","path":"objects/oParentReceptacle/oParentReceptacle.yy",},"propertyId":{"name":"value","path":"objects/oParentReceptacle/oParentReceptacle.yy",},"value":"LANGUE_DISPOS.FRANCAIS",},
+          ],"rotation":0.0,"scaleX":0.6093965,"scaleY":0.6093966,"x":204.15967,"y":540.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62A8C18C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oReceptacleEnglish","path":"objects/oReceptacleEnglish/oReceptacleEnglish.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oParentReceptacle","path":"objects/oParentReceptacle/oParentReceptacle.yy",},"propertyId":{"name":"objectReceiving","path":"objects/oParentReceptacle/oParentReceptacle.yy",},"value":"oChoixLangue",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oParentReceptacle","path":"objects/oParentReceptacle/oParentReceptacle.yy",},"propertyId":{"name":"value","path":"objects/oParentReceptacle/oParentReceptacle.yy",},"value":"LANGUE_DISPOS.ANGLAIS",},
+          ],"rotation":0.0,"scaleX":0.60939646,"scaleY":0.6786926,"x":1411.8472,"y":540.0106,},
+      ],"layers":[],"properties":[
+        {"name":"g_RGBNoiseIntensity","type":0,"value":"0.15",},
+        {"name":"g_RGBNoiseAnimation","type":0,"value":"0.5",},
+        {"name":"g_RGBNoiseColour","type":1,"value":"#FF8CFF5C",},
+        {"name":"g_RGBNoiseTexture","type":2,"value":"_filter_rgbnoise_noise",},
+      ],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":"_filter_fractal_noise","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_FractalNoiseScale","type":0,"value":"512",},
+        {"name":"g_FractalNoisePersistence","type":0,"value":"0.55",},
+        {"name":"g_FractalNoiseOffset","type":0,"value":"0",},
+        {"name":"g_FractalNoiseOffset","type":0,"value":"0",},
+        {"name":"g_FractalNoiseSpeed","type":0,"value":"0.45",},
+        {"name":"g_FractalNoiseTintColour","type":1,"value":"#FF000000",},
+        {"name":"g_FractalNoiseTexture","type":2,"value":"_filter_fractal_noise_texture",},
+      ],"spriteId":{"name":"sprBackgroundLanguageSelection","path":"sprites/sprBackgroundLanguageSelection/sprBackgroundLanguageSelection.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":300,"effectEnabled":true,"effectType":"_filter_twist_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_TwistBlurCenter","type":0,"value":"0.2",},
+        {"name":"g_TwistBlurCenter","type":0,"value":"0.2",},
+        {"name":"g_TwistBlurIntensity","type":0,"value":"0.015",},
+        {"name":"g_TwistBlurTexture","type":2,"value":"_filter_twist_blur_texture",},
+      ],"userdefinedDepth":false,"visible":true,},
+  ],
+  "parent": {
+    "name": "MINI JEUX",
+    "path": "folders/PIECES/MINI JEUX.yy",
+  },
+  "parentRoom": null,
+  "physicsSettings": {
+    "inheritPhysicsSettings": false,
+    "PhysicsWorld": false,
+    "PhysicsWorldGravityX": 0.0,
+    "PhysicsWorldGravityY": 10.0,
+    "PhysicsWorldPixToMetres": 0.1,
+  },
+  "roomSettings": {
+    "Height": 1080,
+    "inheritRoomSettings": false,
+    "persistent": false,
+    "Width": 1920,
+  },
+  "sequenceId": null,
+  "views": [
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+  ],
+  "viewSettings": {
+    "clearDisplayBuffer": true,
+    "clearViewBackground": false,
+    "enableViews": false,
+    "inheritViewSettings": false,
+  },
+  "volume": 1.0,
+}

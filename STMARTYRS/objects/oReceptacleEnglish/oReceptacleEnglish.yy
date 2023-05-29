@@ -1,15 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oButton",
+  "name": "oReceptacleEnglish",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "BOUTONS",
-    "path": "folders/OBJETS/UI/BOUTONS.yy",
+    "name": "RECEPTACLES",
+    "path": "folders/OBJETS/UI/RECEPTACLES.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oParentReceptacle",
+    "path": "objects/oParentReceptacle/oParentReceptacle.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -25,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprEnglishFlag",
+    "path": "sprites/sprEnglishFlag/sprEnglishFlag.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

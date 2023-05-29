@@ -1,4 +1,4 @@
-depth = ojeu.depth - 1
+depth = dpojeu -1 
 var _alpha = global.alphaBlackScreen;
 if !instance_exists(oDial)
 if !deplacementFait 
@@ -8,7 +8,7 @@ if !deplacementFait
 	time_source_pause(ojeu.minuterie);
 	if _alpha > 1.0
 	{
-		ojeu.lastRoom = room;
+		global.lastRoom = room;
 		room_goto(piece);
 		deplacementFait = true
 		if sndToPlay != noone

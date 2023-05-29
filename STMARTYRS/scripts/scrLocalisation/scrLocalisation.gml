@@ -5,9 +5,9 @@ enum LANGUAGE
 	ESP,
 }
 
-function initTranslation()
+function initTranslation(_langue)
 {
-	language = LANGUAGE.FR;
+	language = _langue;
 	
 	dataTxtOther = load_csv("otherTextData.csv");
 	dataTxtDial = load_csv("dialoguesData.csv");
