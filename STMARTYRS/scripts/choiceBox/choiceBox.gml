@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 pour plus d’informations
 function createChoiceBox(name1, command1, name2=noone, command2=noone, name3=noone, command3=noone, name4=noone, command4=noone, name5=noone, command5=noone)
 {
-	var _depth = dptxt;
+	var _depth = DEPTH_TEXT;
 	if !instance_exists(ochoiceBox)
 	{
 		with instance_create_depth(0,0,_depth-1, ochoiceBox)

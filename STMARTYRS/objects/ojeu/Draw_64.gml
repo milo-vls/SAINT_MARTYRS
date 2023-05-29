@@ -1,4 +1,4 @@
-depth = dpojeu;
+
 
 if explore()
 {

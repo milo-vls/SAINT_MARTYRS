@@ -1,11 +1,17 @@
 
-#macro dpojeu 0
-#macro dptxt 5
+#macro DEPTH_OJEU 0
+#macro DEPTH_TEXT 5
+
+depth = DEPTH_OJEU;
+
 blurFx = fx_create("_filter_large_blur")
 blurLayer = layer_get_id("npc");
 blur = false;
 radiusBlur = 0;	//valeur qui évolue
 blurDial = 8; //valeur visée
+
+
+
 init_map();
 init_time();
 init_crimes_tueurs();

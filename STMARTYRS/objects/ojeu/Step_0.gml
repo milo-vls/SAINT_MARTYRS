@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 if player_free()
 {
 	var _heureActuelle = date_get_hour(global.currentDate)
@@ -36,10 +31,15 @@ if blurLayer!=noone and blurFx != -1 ///FLOU
 
 
 ///----------INPUT 
+//DEV
 if keyboard_check(vk_escape)	{game_end()																					};
 if keyboard_check(vk_f10)		{GoToRoom(ptestexplo3)															};
 if keyboard_check(vk_right)		{global.currentDate = date_inc_hour(global.currentDate, 1)	};
-
+//USER
+if global.canPause and global.inputPause
+{
+	instance_create_depth(0, 0, 0, oPause);
+}
 
 
 ////-------DATES

@@ -43,7 +43,7 @@ function startDial(textIndex, blur = true)
 {
 	if !instance_exists(oDial)
 	{
-		var _depht = dptxt
+		var _depht = DEPTH_TEXT
 		with instance_create_depth(0, 0, _depht, oDial)
 		{
 			self.blur = blur;

@@ -88,8 +88,8 @@ hZoneEcrivable = HAUTEUR_REPERTOIRE - REPERTOIRE_VERTICAL_BUFFER*2;
 
 
 	//---DESSIN BRAS DROIT
-	xBrasDroit			= global.largeur_jeu - sprite_get_width(sprBrasDroit) + sprite_get_xoffset(sprBrasDroit);
-	yBrasDroitBas		= global.hauteur_jeu + sprite_get_height(sprBrasDroit) - sprite_get_yoffset(sprBrasDroit);
-	yBrasDroitHaut	= global.hauteur_jeu - sprite_get_height(sprBrasDroit) + sprite_get_yoffset(sprBrasDroit);
+	xBrasDroit			= GAME_WIDTH - sprite_get_width(sprBrasDroit) + sprite_get_xoffset(sprBrasDroit);
+	yBrasDroitBas		= GAME_HEIGHT + sprite_get_height(sprBrasDroit) - sprite_get_yoffset(sprBrasDroit);
+	yBrasDroitHaut	= GAME_HEIGHT - sprite_get_height(sprBrasDroit) + sprite_get_yoffset(sprBrasDroit);
 	yBrasDroit			= yBrasDroitBas;
 }

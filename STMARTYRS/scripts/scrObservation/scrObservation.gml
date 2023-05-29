@@ -12,7 +12,7 @@ function startObs(_obsID)
 {
 	if !instance_exists(oDial)
 	{
-		with instance_create_depth(0, 0, dptxt, oObservation)
+		with instance_create_depth(0, 0, DEPTH_TEXT, oObservation)
 		{
 			obsData(_obsID);
 		}

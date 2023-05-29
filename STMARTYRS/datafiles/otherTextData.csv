@@ -25,3 +25,8 @@ UN_CRIMINEL,1 criminel menace Saints Martyrs.,
 NOMBRE_CRIMINELS,{0} criminels menacent Saints Martyrs.,
 ,MENU SÉLECTION LANGUE,
 ATTRAPE_MOI,attrape moi,grab me
+,MENU PAUSE,
+PAUSE_BUTTON,pause,
+PAUSE_MENU_CONTINUE,continuer,
+PAUSE_MENU_OPTIONS,paramètres,
+PAUSE_MENU_QUIT,sauvegarder et retourner à l'écran titre,

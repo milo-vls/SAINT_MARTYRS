@@ -1,5 +1,5 @@
 //dessin
-depth = dpojeu +1
+depth = DEPTH_OJEU +1
 var _idlayer = layer_get_id("Background");
 idBackground = layer_background_get_id(_idlayer);
 var _ninesliceFauxEcran = sprite_get_nineslice(sprContourOrdi);

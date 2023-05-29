@@ -1,5 +1,5 @@
 
-display_set_gui_size(global.largeur_jeu, global.hauteur_jeu);
+display_set_gui_size(GAME_WIDTH, GAME_HEIGHT);
 camera_l = 1920;
 camera_h = 1080;
 
@@ -8,9 +8,9 @@ yCam = 0;
 
 
 
-window_set_size(global.largeur_jeu, global.hauteur_jeu);
+window_set_size(GAME_WIDTH, GAME_HEIGHT);
 alarm[0] = 1;
-surface_resize(application_surface, global.largeur_jeu, global.hauteur_jeu);
+surface_resize(application_surface, GAME_WIDTH, GAME_HEIGHT);
 #region carte
 vtsZoom = 0.05;
 TauxZoom = 1;

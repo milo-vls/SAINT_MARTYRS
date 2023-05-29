@@ -138,6 +138,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pièces","folderPath":"folders/TESTES ET DEV/pièces.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pnj","folderPath":"folders/TESTES ET DEV/pnj.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"son","folderPath":"folders/TESTES ET DEV/son.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SAVE","folderPath":"folders/SCRIPTS/SAVE.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"dialoguesData.csv","CopyToMask":-1,"filePath":"datafiles",},
@@ -246,6 +247,7 @@
     {"id":{"name":"scribble_anim_wheel","path":"scripts/scribble_anim_wheel/scribble_anim_wheel.yy",},},
     {"id":{"name":"__scribble_font_add_msdf_from_project","path":"scripts/__scribble_font_add_msdf_from_project/__scribble_font_add_msdf_from_project.yy",},},
     {"id":{"name":"P_WALL_THEN_CROSSROAD","path":"rooms/P_WALL_THEN_CROSSROAD/P_WALL_THEN_CROSSROAD.yy",},},
+    {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},},
     {"id":{"name":"__scribble_class_null_element","path":"scripts/__scribble_class_null_element/__scribble_class_null_element.yy",},},
     {"id":{"name":"__scribble_class_page","path":"scripts/__scribble_class_page/__scribble_class_page.yy",},},
     {"id":{"name":"scrSon","path":"scripts/scrSon/scrSon.yy",},},

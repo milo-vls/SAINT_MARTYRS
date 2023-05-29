@@ -1,4 +1,4 @@
-depth = dpojeu -1 
+depth = DEPTH_OJEU -1 
 var _alpha = global.alphaBlackScreen;
 if !instance_exists(oDial)
 if !deplacementFait 

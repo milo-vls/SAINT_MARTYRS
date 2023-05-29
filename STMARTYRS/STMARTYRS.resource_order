@@ -110,6 +110,7 @@
     {"name":"pièces","order":13,"path":"folders/TESTES ET DEV/pièces.yy",},
     {"name":"pnj","order":2,"path":"folders/TESTES ET DEV/pnj.yy",},
     {"name":"son","order":11,"path":"folders/TESTES ET DEV/son.yy",},
+    {"name":"SAVE","order":11,"path":"folders/SCRIPTS/SAVE.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"__scribble_gen_4_build_words","order":4,"path":"scripts/__scribble_gen_4_build_words/__scribble_gen_4_build_words.yy",},
@@ -187,6 +188,7 @@
     {"name":"scribble_anim_wheel","order":8,"path":"scripts/scribble_anim_wheel/scribble_anim_wheel.yy",},
     {"name":"__scribble_font_add_msdf_from_project","order":8,"path":"scripts/__scribble_font_add_msdf_from_project/__scribble_font_add_msdf_from_project.yy",},
     {"name":"P_WALL_THEN_CROSSROAD","order":8,"path":"rooms/P_WALL_THEN_CROSSROAD/P_WALL_THEN_CROSSROAD.yy",},
+    {"name":"oPause","order":5,"path":"objects/oPause/oPause.yy",},
     {"name":"__scribble_class_null_element","order":4,"path":"scripts/__scribble_class_null_element/__scribble_class_null_element.yy",},
     {"name":"__scribble_class_page","order":5,"path":"scripts/__scribble_class_page/__scribble_class_page.yy",},
     {"name":"back_table","order":1,"path":"sprites/back_table/back_table.yy",},

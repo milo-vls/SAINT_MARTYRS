@@ -1,0 +1,1 @@
+global.canPause = true;

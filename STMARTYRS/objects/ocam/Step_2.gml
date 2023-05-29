@@ -18,5 +18,5 @@ else
 camera_set_view_pos(view, xCam, yCam);
 
 //GUI
-//if window_get_fullscreen() then display_set_gui_size(global.largeur_jeu, global.hauteur_jeu) else ;
+//if window_get_fullscreen() then display_set_gui_size(GAME_WIDTH, global.hauteur_jeu) else ;
 
