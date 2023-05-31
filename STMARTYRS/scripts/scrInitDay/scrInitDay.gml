@@ -21,8 +21,7 @@ for (var i = 0; i!=6;i++)
 {
 	
 }
-ojeu.usiPatrol = array_create(0);
-ojeu.nbUsiPatrol = 0
+
 //réinitialisation
 var _nbChar = array_length(global.char);
 for (var i = 0; i < _nbChar; i ++)

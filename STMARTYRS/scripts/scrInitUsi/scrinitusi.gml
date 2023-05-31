@@ -12,16 +12,10 @@ function init_usi()
 {
 	recapTenseNight = false;
 	
-	
-	usiPatrol = array_create(0);
-	nbUsiPatrol = 0;
-	
 	usi[USI.DIDIER] = {
 		section		: USI_SECTIONS.PREVENTION_UNIT,
 		disponible			: true,
 		_name		:"DIDIER",
-		tpsRepos	: 5,					
-		tpsPatrol	: 3,
 		hbox			: DidierHbxUsi,
 		port			: portDidierusi,
 	}
@@ -29,8 +23,6 @@ function init_usi()
 		section			: USI_SECTIONS.PREVENTION_UNIT,
 		disponible				: false,
 		_name			: "LIZA",
-		tpsRepos		: 72,				
-		tpsPatrol		: 7,
 		hbox				: DidierHbxUsi,
 		port				: portLizausi,
 	}
@@ -38,8 +30,6 @@ function init_usi()
 		section		: USI_SECTIONS.TACTIC_UNIT,
 		disponible			: true,
 		_name		: "ROSALIE",
-		tpsRepos	: 72,						 
-		tpsPatrol	: 7,
 		hbox			: DidierHbxUsi,
 		port			: portRosalieusi,
 	}
@@ -47,8 +37,6 @@ function init_usi()
 		section		: USI_SECTIONS.TACTIC_UNIT,
 		disponible			: true,
 		_name : "ARMAND",
-		tpsRepos	: 72,						
-		tpsPatrol	: 7,
 		hbox			: DidierHbxUsi,
 		port			: portArmandusi,
 	}
@@ -56,8 +44,6 @@ function init_usi()
 		section		: USI_SECTIONS.TACTIC_UNIT,
 		disponible: true,
 		_name		: "ERNEST",
-		tpsRepos	: 72,						 
-		tpsPatrol	: 7,
 		hbox			: DidierHbxUsi,
 		port			: portErnestusi,
 	}
@@ -65,8 +51,6 @@ function init_usi()
 		section		: USI_SECTIONS.PREVENTION_UNIT,
 		disponible			: false,
 		_name		: "JULIEN",
-		tpsRepos	: 5,						
-		tpsPatrol	: 20,
 		hbox			: DidierHbxUsi,
 		port			: portJulienusi,
 	}

@@ -1,3 +1,13 @@
+#macro MARGE_PAUSE_OPTION (GAME_HEIGHT/20)
+#macro OPTIONS_PAUSE_MIN_Y ((GAME_HEIGHT/2) - hauteurOptions/2)
+function optionGetHeight(_option)
+{
+	draw_set_font(ftDial);
+	return (string_height("|") + MARGE_PAUSE_OPTION) * array_length(_option);
+	
+}
+
+
 depth = DEPTH_OJEU;
 
 
@@ -8,10 +18,11 @@ if instance_exists(omapManager)
 	if omapManager.minuterie != noone time_source_pause(omapManager.minuterie);
 }
 instance_deactivate_all(true);
+instance_activate_object(oInputs);
 
 //OPTIONS
 pauseOption[0] = {
-	txt : text("PAUSE_MENU_CONTINUE"),
+	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_MENU_CONTINUE")).align(fa_center, fa_top),
 	fonction : function()
 	{
 		instance_activate_all();
@@ -20,18 +31,19 @@ pauseOption[0] = {
 		{
 			if omapManager.minuterie != noone time_source_resume(omapManager.minuterie);
 		}
-		instance_destroy();
+		instance_destroy(oPause);
 	},
-}
+};
 pauseOption[1] = {
-	txt : text("PAUSE_MENU_OPTIONS"),
+	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_MENU_OPTIONS")).align(fa_center, fa_top),
 	fonction : function()
 	{
-		currentOptions = parametersOptions;
+		oPause.currentOptions = oPause.parametersOptions;
+		oPause.hauteurOptions = oPause.optionGetHeight(oPause.currentOptions);
 	},
 }
 pauseOption[2] = {
-	txt : text(),
+	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_MENU_QUIT")).align(fa_center, fa_top),
 	fonction : function()
 	{
 		sauvegarder();
@@ -39,8 +51,15 @@ pauseOption[2] = {
 }
 
 
-parametersOptions = [];
+parametersOptions[0] = {
+	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_PARAMETERS_RETOUR")).align(fa_center, fa_top),
+	fonction : function()
+	{
+		oPause.currentOptions = oPause.pauseOption;
+		oPause.hauteurOptions = oPause.optionGetHeight(oPause.currentOptions);
+	},
+}
 
 currentOptions = pauseOption;
-
+hauteurOptions = optionGetHeight(currentOptions);
 draw_set_alpha(1);

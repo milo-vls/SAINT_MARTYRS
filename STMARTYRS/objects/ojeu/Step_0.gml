@@ -38,6 +38,7 @@ if keyboard_check(vk_right)		{global.currentDate = date_inc_hour(global.currentD
 //USER
 if global.canPause and global.inputPause
 {
+	global.inputPause = false;
 	instance_create_depth(0, 0, 0, oPause);
 }
 

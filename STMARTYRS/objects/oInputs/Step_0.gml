@@ -8,4 +8,4 @@ global.cPrLeft = global.inputOn ? mouse_check_button_pressed(mb_left) : false;
 global.cRlLeft = global.inputOn ? mouse_check_button_released(mb_left) : false;
 
 
-global.inputPause = global.inputOn ? keyboard_check(ord("p")) : false;
+//global.inputPause = global.inputOn ? keyboard_check(ord("p")) : false;

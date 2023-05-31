@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "INTRO",
-    "path": "folders/OBJETS/CINEMATIQUES/INTRO.yy",
+    "name": "EXCLU PIECE",
+    "path": "folders/OBJETS/EXCLU PIECE.yy",
   },
   "parentObjectId": {
     "name": "oParentCinematique",

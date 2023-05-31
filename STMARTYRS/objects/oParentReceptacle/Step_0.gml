@@ -12,7 +12,7 @@ if place_meeting(x, y, toDetect)
 		_instanceDetected.y = approach(_instanceDetected.y, _tarY, VITESSE_RECEPLACLE_JETON);
 	}
 	
-	if _instanceDetected.x == _tarX and _instanceDetected.y == _tarY
+	if int64(_instanceDetected.x) == int64(_tarX) and int64(_instanceDetected.y) == int64(_tarY)
 	{
 		objectReceiving.value = value;
 	}

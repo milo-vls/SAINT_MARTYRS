@@ -7,29 +7,29 @@ enum LANGUAGE
 
 function initTranslation(_langue)
 {
-	language = _langue;
+	global.language = _langue;
 	
-	dataTxtOther = load_csv("otherTextData.csv");
-	dataTxtDial = load_csv("dialoguesData.csv");
+	global.dataTxtOther = load_csv("otherTextData.csv");
+	global.dataTxtDial = load_csv("dialoguesData.csv");
 	
 	var _traductionsOther= ds_map_create();
-	var _hauteurDsGridOther = ds_grid_height(dataTxtOther);
+	var _hauteurDsGridOther = ds_grid_height(global.dataTxtOther);
 	for (var i = 0; i < _hauteurDsGridOther; i ++)
 	{
-		ds_map_add(_traductionsOther, dataTxtOther[# 0, i], i);
+		ds_map_add(_traductionsOther, global.dataTxtOther[# 0, i], i);
 	}
 	
-	translationsOther = _traductionsOther;
+	global.translationsOther = _traductionsOther;
 	
 	
 	var _traductionsDialogues = ds_map_create();
-	var _hauteurDsGridDial = ds_grid_height(dataTxtDial);
+	var _hauteurDsGridDial = ds_grid_height(global.dataTxtDial);
 	for (var i = 0; i < _hauteurDsGridDial; i ++)
 	{
-		ds_map_add(_traductionsDialogues, dataTxtDial[# 0, i], i);
+		ds_map_add(_traductionsDialogues, global.dataTxtDial[# 0, i], i);
 	}
 	
-	translationsDial = _traductionsDialogues;
+	global.translationsDial = _traductionsDialogues;
 	
 }
 
@@ -53,9 +53,9 @@ function text(txtID)
 {
 	var _txt;
 	
-	if ojeu.translationsOther[? txtID] != undefined
+	if global.translationsOther[? txtID] != undefined
 	{
-		_txt = ojeu.dataTxtOther[# 1 + ojeu.language, ojeu.translationsOther[? txtID]];
+		_txt = global.dataTxtOther[# 1 + global.language, global.translationsOther[? txtID]];
 		if argument_count > 1
 		{
 			var _array = array_create(argument_count -1);
@@ -68,9 +68,9 @@ function text(txtID)
 		return _txt;
 	}
 	
-	if ojeu.translationsDial[? txtID] != undefined
+	if global.translationsDial[? txtID] != undefined
 	{
-		_txt =	ojeu.dataTxtDial[# 1 + ojeu.language, ojeu.translationsDial[? txtID]];
+		_txt =	global.dataTxtDial[# 1 + global.language, global.translationsDial[? txtID]];
 		if argument_count > 1
 		{
 			var _array = array_create(argument_count -1);
