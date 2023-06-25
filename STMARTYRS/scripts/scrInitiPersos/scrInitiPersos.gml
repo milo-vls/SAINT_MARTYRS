@@ -147,7 +147,7 @@ nbPersonnages = array_length(global.char);
 
 for (var i = 0; i < nbPersonnages; i ++)
 {
-	global.char[i].proximite					= 0;
+	global.char[i].proximite			= 0;
 	global.char[i].nbInteractionCeJour	= 0;
 	global.char[i].imageIndexStopTalk	= 0;
 }	

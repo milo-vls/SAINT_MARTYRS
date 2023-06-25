@@ -5,18 +5,55 @@ function sauvegarder()
 		langue : global.language,
 	}
 	
+	//USI
 	var _nbUsi = array_length(ojeu.usi)
 	for (var i = 0; i < _nbUsi; i ++)
 	{
 		_structToSave.usi[i] =
 		{
-			x : ojeu.usi.x,
-			y : ojeu.usi.y,
-			rot : ojeu.usi.rot,
-			disponible :  ojeu.usi.disponible,
+			x : ojeu.usi[i].x,
+			y : ojeu.usi[i].y,
+			rot : ojeu.usi[i].rot,
+			disponible :  ojeu.usi[i].disponible,
 		}
 	}
 	
+	//CHARACTERS
+	var _nbChar = array_length(global.char);
+	for (var i = 0; i < _nbChar; i ++)
+	{
+		_structToSave.char[i] =
+		{
+			proximite : global.char[i],
+			nbInteractionCeJour : global.char[i].nbInteractionCeJour,
+		}
+	}
+	
+	//CRIME scripctés
+	var _nbCrimeScriptes = array_length(ojeu.crime);
+	for (var i = 0; i < _nbCrimeScriptes; i ++)
+	{
+		_structToSave.crime[i] = 
+		{
+			col : ojeu.crime[i].col,
+			vulnerable : ojeu.crime[i].vulnerable,
+			appeared : ojeu.crime[i].appeared,
+		}
+	}
+	
+	//TUEUR scriptés
+	var _nbTueurs = array_length(ojeu.tueur);
+	for (var i = 0; i < _nbTueurs; i ++)
+	{
+		_structToSave.tueur[i] = 
+		{
+			jourCaught : ojeu.tueur[i].jourCaught,
+			etat : ojeu.tueur[i].etat,
+		}
+	}
+	
+	
+	stringToFichier("blaise.view", json_stringify(_structToSave))
 	
 }
 

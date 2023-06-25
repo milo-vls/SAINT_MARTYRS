@@ -15,6 +15,7 @@ if !checkCapture
 	{
 		_dateIsPassed = _crime.date > date_inc_day(global.currentDate, -1);
 	}
+	
 	var _nbUsi = instance_number(ousi);
 	if _dateIsPassed  and _crime.vulnerable and !_crime.first
 	{
