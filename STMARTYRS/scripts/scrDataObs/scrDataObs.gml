@@ -50,7 +50,6 @@ switch(ID)
 		#region SCENE 1 & 2
 			case OBS_ID_TABLEAU_DE_NUIT:{
 				obs("Il fait déjà nuit.");
-				obs("J'ai du beaucoup marcher.");
 				obs("Le rendez-vous est pour bientôt.");
 				obs("...");
 				obs("Je dois aller mettre mon uniforme.");

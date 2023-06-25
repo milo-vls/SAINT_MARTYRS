@@ -561,6 +561,7 @@
     {"name":"scrInitUsi","order":6,"path":"scripts/scrInitUsi/scrInitUsi.yy",},
     {"name":"data_texte_Ernest","order":1,"path":"scripts/data_texte_Ernest/data_texte_Ernest.yy",},
     {"name":"scrTelephone","order":1,"path":"scripts/scrTelephone/scrTelephone.yy",},
+    {"name":"portBlaiseCivil","order":4,"path":"sprites/portBlaiseCivil/portBlaiseCivil.yy",},
     {"name":"portEnzinoVille","order":1,"path":"sprites/portEnzinoVille/portEnzinoVille.yy",},
     {"name":"pPrestart","order":5,"path":"rooms/pPrestart/pPrestart.yy",},
     {"name":"scribble_font_add_msdf","order":3,"path":"scripts/scribble_font_add_msdf/scribble_font_add_msdf.yy",},

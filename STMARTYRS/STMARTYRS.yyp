@@ -688,6 +688,7 @@
     {"id":{"name":"data_texte_Ernest","path":"scripts/data_texte_Ernest/data_texte_Ernest.yy",},},
     {"id":{"name":"scrTelephone","path":"scripts/scrTelephone/scrTelephone.yy",},},
     {"id":{"name":"scribble_anim_blink","path":"scripts/scribble_anim_blink/scribble_anim_blink.yy",},},
+    {"id":{"name":"portBlaiseCivil","path":"sprites/portBlaiseCivil/portBlaiseCivil.yy",},},
     {"id":{"name":"portEnzinoVille","path":"sprites/portEnzinoVille/portEnzinoVille.yy",},},
     {"id":{"name":"pPrestart","path":"rooms/pPrestart/pPrestart.yy",},},
     {"id":{"name":"snBlaiseVoice1","path":"sounds/snBlaiseVoice1/snBlaiseVoice1.yy",},},
