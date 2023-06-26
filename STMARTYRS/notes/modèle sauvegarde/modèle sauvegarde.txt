@@ -113,6 +113,21 @@ stringToFichier("save.txt", _str);
 
 }
 //chargement générale
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function load()
 {
 var _fichier = "save.txt";

@@ -12,14 +12,18 @@ randomize();
 instance_create_depth(0, 0, 0, oInputs);
 game_set_speed(FRAME_RATE, gamespeed_fps);
 
-if file_exists("save.data")
+if file_exists(SAVE_FILE_NAME)
 {
-	/*CHARGER SAUVEGARDE 
-	->déduire la langue
-	->modifier l'écran titre
-	*/
+	with instance_create_depth(0, 0, DEPTH_OJEU, ojeu)
+	{
+	charger_langue();
+	initTranslation(global.language);
+	}
+	charger();
+	room_goto(pstart);
+
 }
 else
 {
-	room_goto(pLanguageSelection);	
+	room_goto(pLanguageSelection);	  
 }

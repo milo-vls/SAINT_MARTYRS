@@ -20,17 +20,23 @@ if instance_exists(omapManager)
 instance_deactivate_all(true);
 instance_activate_object(oInputs);
 
-//OPTIONS
-pauseOption[0] = {
-	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_MENU_CONTINUE")).align(fa_center, fa_top),
-	fonction : function()
-	{
-		instance_activate_all();
+depause = function()
+ {
+	 		instance_activate_all();
 		time_source_resume(ojeu.minuterie);
 		if instance_exists(omapManager)
 		{
 			if omapManager.minuterie != noone time_source_resume(omapManager.minuterie);
 		}
+ }
+
+
+//OPTIONS
+pauseOption[0] = {
+	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_MENU_CONTINUE")).align(fa_center, fa_top),
+	fonction : function()
+	{
+		oPause.depause();
 		instance_destroy(oPause);
 	},
 };
@@ -43,10 +49,21 @@ pauseOption[1] = {
 	},
 }
 pauseOption[2] = {
+	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_MENU_SAVE")).align(fa_center, fa_top),
+	fonction : function()
+	{
+		oPause.depause();
+		sauvegarder();
+		
+	},
+}
+pauseOption[3] = {
 	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_MENU_QUIT")).align(fa_center, fa_top),
 	fonction : function()
 	{
+		oPause.depause();
 		sauvegarder();
+		game_restart();
 	}
 }
 

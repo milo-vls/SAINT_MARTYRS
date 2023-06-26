@@ -131,7 +131,9 @@ function load_psc()
 {
 	for (var i = 0; i < array_length(ojeu.crime);i++)
 	{
-		if ojeu.crime[i].appeared and ojeu.tueur[ojeu.crime[i].tueur].etat == KILLER_STATE.ACTIVE and ojeu.crime[i].date < global.mapDate
+		var _tueurId = ojeu.crime[i].tueur;
+		var _tueurState = ojeu.tueur[_tueurId].etat
+		if ojeu.crime[i].appeared and _tueurState == KILLER_STATE.ACTIVE and ojeu.crime[i].date < global.mapDate
 		{
 				ojeu.crime[i].appeared = true;
 

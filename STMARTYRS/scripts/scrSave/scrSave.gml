@@ -1,8 +1,20 @@
+#macro SAVE_FILE_NAME "blaise.view"
+
 function sauvegarder()
 {
 	var _structToSave = 
 	{
 		langue : global.language,
+		currentDate : global.currentDate,
+		nbPageRep : ojeu.nbPageRep,
+		nbNumObtenu : ojeu.nbNumObtenu,
+		room : room,
+	}
+	
+	//NUMÉROS OBTENUS
+	for (var i = 0; i < ojeu.nbNumObtenu; i ++)
+	{
+		_structToSave.numObtenu[i] = ojeu.numObtenu[i];
 	}
 	
 	//USI
@@ -53,7 +65,7 @@ function sauvegarder()
 	}
 	
 	
-	stringToFichier("blaise.view", json_stringify(_structToSave))
+	stringToFichier(SAVE_FILE_NAME, json_stringify(_structToSave))
 	
 }
 
