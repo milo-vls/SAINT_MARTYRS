@@ -28,7 +28,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TOUCHES","folderPath":"folders/OBJETS/EXCLU PIECE/TELEPHONE/TOUCHES.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"EXPLO","folderPath":"folders/OBJETS/EXPLO.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"parents","folderPath":"folders/OBJETS/EXPLO/parents.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pnj","folderPath":"folders/OBJETS/EXPLO/pnj.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"PNJS","folderPath":"folders/OBJETS/EXPLO/PNJS.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MAP","folderPath":"folders/OBJETS/MAP.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"affichages sans inter","folderPath":"folders/OBJETS/MAP/affichages sans inter.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ÉPINGLES","folderPath":"folders/OBJETS/MAP/ÉPINGLES.yy",},

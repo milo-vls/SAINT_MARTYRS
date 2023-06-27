@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "pnj",
-    "path": "folders/OBJETS/EXPLO/pnj.yy",
+    "name": "PNJS",
+    "path": "folders/OBJETS/EXPLO/PNJS.yy",
   },
   "parentObjectId": {
     "name": "oNPCparent",

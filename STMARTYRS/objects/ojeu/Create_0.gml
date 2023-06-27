@@ -18,7 +18,7 @@ init_crimes_tueurs();
 initPatterns();
 init_usi();
 init_objects();
-init_menu_explo()
+//init_menu_explo()
 init_map_tasks()
 init_mini_game();
 init_plage_texture();

@@ -1,5 +1,5 @@
-
-
+#region ancien menu exploration
+/*
 if explore()
 {
 
@@ -142,8 +142,8 @@ if explore()
 
 	
 }
-
-
+*/
+#endregion
 
 #region black screen
 	if global.blackScreen == true

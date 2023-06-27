@@ -1,19 +1,13 @@
-if !ojeu.pause
+
+if position_meeting(mouse_x, mouse_y, self)  and !(instance_exists(oDial))
 {
-	if position_meeting(mouse_x, mouse_y, self)
+	if global.cPrLeft
 	{
-		if global.cPrLeft
-		{
-			pressed = true;
-		}
-		if global.cRlLeft and pressed
-		{
-			event();
-		}
+		pressed = true;
 	}
-	else
+	if global.cRlLeft and pressed
 	{
-		pressed = false;
+		event();
 	}
 }
 else

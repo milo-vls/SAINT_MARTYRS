@@ -48,11 +48,6 @@ if !position_meeting(mouse_x, mouse_y, self)
 	
 	
 }
-function returnToGend()
-{
-	GoToRoom(ptestexplo2);
-	ojeu.pause = false;
-}
 function recapEnCours()
 {
 	return  !omapManager.mapTimeMAJ and !instance_exists(oGoToRoom)// and omapManager.currentMenu != MAP_MENU.SELECTION_USI

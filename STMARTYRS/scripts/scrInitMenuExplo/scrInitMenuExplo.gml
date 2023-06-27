@@ -1,6 +1,6 @@
 
 
-function init_menu_explo()
+/*function init_menu_explo()
 {
 //lieuxToShow = array_create(0);
 yCenterMapExplo = display_get_gui_height() *(3/8)
@@ -35,15 +35,10 @@ command : function(){
 pressed : false,
 	
 }
-pauseOption[2] = {
-txt : "Options",
-command : noone,
-pressed : false,
-}
+
 nbPauseOption = array_length(pauseOption);
 
 
-pause = false;
 iconeMenuPressed = false;
 drawPauseMenu = false;
 
@@ -82,8 +77,7 @@ xIconeMenu = lgui - lSpr*1.5;
 
 
 
-placeUsed = 0; //valeur à laquelle on ajoute toutes les hauteurs des numéros ajoutés jusque là
-hZoneEcrivable = HAUTEUR_REPERTOIRE - REPERTOIRE_VERTICAL_BUFFER*2;
+
 
 
 

@@ -95,6 +95,8 @@ function formatageNumero(_numBrut)
 
 function initTelephone()
 {
+	ojeu.placeUsed = 0; //valeur à laquelle on ajoute toutes les hauteurs des numéros ajoutés jusque là
+	ojeu.hZoneEcrivable = HAUTEUR_REPERTOIRE - REPERTOIRE_VERTICAL_BUFFER*2;
 	ojeu.nbPageRep = 0;
 	ojeu.numObtenu[0] = noone;
 	ojeu.nbNumObtenu = 0;
