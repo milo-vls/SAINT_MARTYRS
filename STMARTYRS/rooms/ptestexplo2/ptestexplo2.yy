@@ -9,7 +9,6 @@
   "instanceCreationOrder": [
     {"name":"inst_4D681AA6","path":"rooms/ptestexplo2/ptestexplo2.yy",},
     {"name":"inst_1D36029D","path":"rooms/ptestexplo2/ptestexplo2.yy",},
-    {"name":"inst_FC8BE38","path":"rooms/ptestexplo2/ptestexplo2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -22,7 +21,6 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"propertyId":{"name":"spriteArrow","path":"objects/omoveArrow/omoveArrow.yy",},"value":"sprArrRight",},
           ],"rotation":-40.86767,"scaleX":0.68,"scaleY":3.24,"x":1472.0,"y":960.00006,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1D36029D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"otestMap","path":"objects/otestMap/otestMap.yy",},"properties":[],"rotation":0.0,"scaleX":47.22222,"scaleY":22.333334,"x":960.0,"y":352.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_FC8BE38","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnzoTestObs","path":"objects/oEnzoTestObs/oEnzoTestObs.yy",},"properties":[],"rotation":0.0,"scaleX":11.000001,"scaleY":20.222223,"x":1491.0,"y":83.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"sprEscalier","path":"sprites/sprEscalier/sprEscalier.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

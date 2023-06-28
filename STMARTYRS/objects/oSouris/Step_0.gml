@@ -3,114 +3,180 @@ x = mouse_x;
 y = mouse_y;
 
 
+
+
+
+var _touchedButton = objetSurvole();
+
+if _touchedButton != noone
+{
+	
+	if global.cPrLeft
+	{
+		_touchedButton.pressed = true;
+	}
+	
+	if _touchedButton.pressed 
+	if global.cRlLeft 
+	if _touchedButton.comportement != noone
+	{
+		_touchedButton.comportement(_touchedButton);
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //clique/détection
 
-if not  (instance_exists(oDial) or instance_exists(oGoToRoom))
+/*
+if position_meeting(mouse_x, mouse_y, oParentClickObj)
 {
-
-	if position_meeting(mouse_x, mouse_y, oParentClickObj)
+	var _concernedCObj = instance_nearest(mouse_x, mouse_y, oParentClickObj);
+	if global.cPrLeft
 	{
-		var _concernedCObj = instance_nearest(mouse_x, mouse_y, oParentClickObj);
+		_concernedCObj.pressed = true;
+	}
+	if _concernedCObj.pressed and global.cRlLeft
+	{
+		with _concernedCObj
+		{
+			if _concernedCObj.cObjID != noone
+			{
+				ojeu.ClickObj[_concernedCObj.cObjID].event();
+			}	
+		}
+	}
+}
+else
+{
+			
+	if instance_exists(oParentClickObj)
+	oParentClickObj.pressed = false;
+			
+			
+	if position_meeting(mouse_x, mouse_y, oParentObservable)
+	{
+		var _concernedObs = instance_nearest(mouse_x, mouse_y, oParentObservable);
 		if global.cPrLeft
 		{
-			_concernedCObj.pressed = true;
+			_concernedObs.pressed = true;
 		}
-		if _concernedCObj.pressed and global.cRlLeft
+		if _concernedObs.pressed and global.cRlLeft
 		{
-			with _concernedCObj
+			with _concernedObs
 			{
-				if _concernedCObj.cObjID != noone
+				pressed = false;
+				startObs(ojeu.obsObj[obsObjID].obsID);
+				visible = true;
+				if usageUnique
 				{
-					ojeu.ClickObj[_concernedCObj.cObjID].event();
-				}	
+					desac = true;
+				}
+						
 			}
+						
 		}
+
 	}
 	else
 	{
-			
-		if instance_exists(oParentClickObj)
-		oParentClickObj.pressed = false;
-			
-			
-		if position_meeting(mouse_x, mouse_y, oParentObservable)
+				
+		if instance_exists(oParentObservable)
+		oParentObservable.pressed = false;
+				
+				
+		if position_meeting(mouse_x, mouse_y, oNPCparent)
 		{
-			var _concernedObs = instance_nearest(mouse_x, mouse_y, oParentObservable);
+			var _concernedNPC = instance_nearest(mouse_x, mouse_y, oNPCparent);
 			if global.cPrLeft
 			{
-				_concernedObs.pressed = true;
+				_concernedNPC.pressed = true;
 			}
-			if _concernedObs.pressed and global.cRlLeft
+			if global.cRlLeft and _concernedNPC.pressed
 			{
-				with _concernedObs
+				_concernedNPC.pressed = false;
+				with _concernedNPC
 				{
-					pressed = false;
-					startObs(ojeu.obsObj[obsObjID].obsID);
-					visible = true;
-					if usageUnique
-					{
-						desac = true;
-					}
-						
+					startDial(global.char[charID].dialID, self);
 				}
-						
 			}
-
 		}
 		else
 		{
-				
-			if instance_exists(oParentObservable)
-			oParentObservable.pressed = false;
-				
-				
-			if position_meeting(mouse_x, mouse_y, oNPCparent)
+			if instance_exists(oNPCparent)
+			oNPCparent.pressed = false;
+			if position_meeting(mouse_x, mouse_y, omoveArrow)
 			{
-				var _concernedNPC = instance_nearest(mouse_x, mouse_y, oNPCparent);
+				omoveArrow.visible = true;
+				var _concernedArr = instance_nearest(mouse_x, mouse_y, omoveArrow);
 				if global.cPrLeft
 				{
-					_concernedNPC.pressed = true;
+					_concernedArr.pressed = true;
 				}
-				if global.cRlLeft and _concernedNPC.pressed
+				if _concernedArr.pressed and global.cRlLeft
 				{
-					_concernedNPC.pressed = false;
-					with _concernedNPC
+					with _concernedArr
 					{
-						startDial(global.char[charID].dialID, self);
+						GoToRoom(destination, TransiSound);
 					}
 				}
 			}
 			else
 			{
-				if instance_exists(oNPCparent)
-				oNPCparent.pressed = false;
-				if position_meeting(mouse_x, mouse_y, omoveArrow)
+						
+				if instance_exists(omoveArrow)
 				{
 					omoveArrow.visible = true;
-					var _concernedArr = instance_nearest(mouse_x, mouse_y, omoveArrow);
-					if global.cPrLeft
-					{
-						_concernedArr.pressed = true;
-					}
-					if _concernedArr.pressed and global.cRlLeft
-					{
-						with _concernedArr
-						{
-							GoToRoom(destination, TransiSound);
-						}
-					}
-				}
-				else
-				{
-						
-					if instance_exists(omoveArrow)
-					{
-						omoveArrow.visible = true;
-						omoveArrow.pressed = false;
-					}					
-				}
+					omoveArrow.pressed = false;
+				}					
 			}
 		}
 	}
-	
 }
+	

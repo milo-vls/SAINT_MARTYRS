@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "objets",
-    "path": "folders/TESTES ET DEV/objets.yy",
+    "name": "CLIQUABLES",
+    "path": "folders/OBJETS/EXPLO/CLIQUABLES.yy",
   },
   "parentObjectId": {
     "name": "oParentClickObj",

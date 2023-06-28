@@ -1,8 +1,10 @@
+event_inherited();
+
 mouseDetected = point_in_rectangle(mouse_x, mouse_y, x, y, x + largeurCadre, y + hauteurCadre);
-pressed = global.cLeft or global.cRight;
+//pressed = global.cLeft or global.cRight;
 
 drawHighlight = mouseDetected;
-if mouseDetected and pressed
+if  pressed
 {
 	quotienParcours += 1/tpsParcours;
 }

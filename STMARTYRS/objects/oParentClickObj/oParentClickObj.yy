@@ -3,17 +3,20 @@
   "resourceVersion": "1.0",
   "name": "oParentClickObj",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oParentButton","path":"objects/oParentButton/oParentButton.yy",},"propertyId":{"name":"comportement","path":"objects/oParentButton/oParentButton.yy",},"value":"comportementCliqueObjetCliquable",},
+  ],
   "parent": {
-    "name": "parents",
-    "path": "folders/OBJETS/EXPLO/parents.yy",
+    "name": "CLIQUABLES",
+    "path": "folders/OBJETS/EXPLO/CLIQUABLES.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oParentButton",
+    "path": "objects/oParentButton/oParentButton.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -27,7 +30,9 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cObjID","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"noone","varType":4,},
+  ],
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,

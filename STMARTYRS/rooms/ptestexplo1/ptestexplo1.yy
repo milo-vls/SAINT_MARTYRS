@@ -8,8 +8,6 @@
   "inheritLayers": false,
   "instanceCreationOrder": [
     {"name":"inst_7BA4BD70","path":"rooms/ptestexplo1/ptestexplo1.yy",},
-    {"name":"inst_3A8004C0","path":"rooms/ptestexplo1/ptestexplo1.yy",},
-    {"name":"inst_709FDE8E","path":"rooms/ptestexplo1/ptestexplo1.yy",},
     {"name":"inst_6CAC0FC5","path":"rooms/ptestexplo1/ptestexplo1.yy",},
   ],
   "isDnd": false,
@@ -26,8 +24,6 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"propertyId":{"name":"destination","path":"objects/omoveArrow/omoveArrow.yy",},"value":"ptestexplo2",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"propertyId":{"name":"spriteArrow","path":"objects/omoveArrow/omoveArrow.yy",},"value":"sprArrRight",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1856.0,"y":768.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3A8004C0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oArnaud","path":"objects/oArnaud/oArnaud.yy",},"properties":[],"rotation":0.0,"scaleX":2.208824,"scaleY":2.4272368,"x":384.0,"y":320.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_709FDE8E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"otestAjoutNum","path":"objects/otestAjoutNum/otestAjoutNum.yy",},"properties":[],"rotation":0.0,"scaleX":36.0,"scaleY":27.11111,"x":837.0,"y":378.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"bckterrasse","path":"sprites/bckterrasse/bckterrasse.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

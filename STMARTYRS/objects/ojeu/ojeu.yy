@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "STMARTYRS",
-    "path": "STMARTYRS.yyp",
+    "name": "META",
+    "path": "folders/OBJETS/META.yy",
   },
   "parentObjectId": null,
   "persistent": true,

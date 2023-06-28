@@ -2,11 +2,11 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oAmandine",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oNPCparent","path":"objects/oNPCparent/oNPCparent.yy",},"propertyId":{"name":"charID","path":"objects/oNPCparent/oNPCparent.yy",},"value":"p.Amandine",},
+  ],
   "parent": {
     "name": "PNJS",
     "path": "folders/OBJETS/EXPLO/PNJS.yy",

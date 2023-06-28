@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oEnzoTestObs",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "oButtonRetourCarte",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "objets",
-    "path": "folders/TESTES ET DEV/objets.yy",
+    "name": "DÉPLACEMENT",
+    "path": "folders/OBJETS/EXPLO/DÉPLACEMENT.yy",
   },
   "parentObjectId": {
-    "name": "oParentObservable",
-    "path": "objects/oParentObservable/oParentObservable.yy",
+    "name": "oParentButton",
+    "path": "objects/oParentButton/oParentButton.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,9 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprhitBox",
-    "path": "sprites/sprhitBox/sprhitBox.yy",
+    "name": "sprBlack",
+    "path": "sprites/sprBlack/sprBlack.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

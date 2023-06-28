@@ -1,3 +1,5 @@
+event_inherited();
+
 quotienParcours = 0;
 quotienParcoursSignature = 0;
 tpsParcours = room_speed * 2.1;

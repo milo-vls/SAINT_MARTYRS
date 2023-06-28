@@ -3,16 +3,20 @@
   "resourceVersion": "1.0",
   "name": "omoveArrow",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oParentButton","path":"objects/oParentButton/oParentButton.yy",},"propertyId":{"name":"comportement","path":"objects/oParentButton/oParentButton.yy",},"value":"comportementCliqueArrow",},
+  ],
   "parent": {
-    "name": "EXPLO",
-    "path": "folders/OBJETS/EXPLO.yy",
+    "name": "DÉPLACEMENT",
+    "path": "folders/OBJETS/EXPLO/DÉPLACEMENT.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oParentButton",
+    "path": "objects/oParentButton/oParentButton.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -37,5 +41,5 @@
     "path": "sprites/sprArrRight/sprArrRight.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
