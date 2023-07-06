@@ -6,15 +6,10 @@ camera_h = 1080;
 xCam = 0;
 yCam = 0;
 
-
+TauxZoom = 1;
 
 window_set_size(GAME_WIDTH, GAME_HEIGHT);
 alarm[0] = 1;
 surface_resize(application_surface, GAME_WIDTH, GAME_HEIGHT);
-#region carte
-vtsZoom = 0.05;
-TauxZoom = 1;
-zoomage = false;
-vBord = 100;
-hBord = 100;
-#endregion
+
+

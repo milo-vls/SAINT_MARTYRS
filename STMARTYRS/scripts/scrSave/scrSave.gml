@@ -9,6 +9,8 @@ function sauvegarder()
 		nbPageRep : ojeu.nbPageRep,
 		nbNumObtenu : ojeu.nbNumObtenu,
 		room : room,
+		showButtonRetourCarte : ojeu.showButtonRetourCarte,
+		peutAllerGendarmerie : ojeu.peutAllerGendarmerie,
 	}
 	
 	//NUMÉROS OBTENUS

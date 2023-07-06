@@ -1,10 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oButtonRetourCarte",
+  "name": "oRetourCarte",
   "eventList": [],
-  "managed": true,
-  "overriddenProperties": [],
+  "managed": false,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oParentButton","path":"objects/oParentButton/oParentButton.yy",},"propertyId":{"name":"comportement","path":"objects/oParentButton/oParentButton.yy",},"value":"comportementCliqueRetourCarte",},
+  ],
   "parent": {
     "name": "DÉPLACEMENT",
     "path": "folders/OBJETS/EXPLO/DÉPLACEMENT.yy",
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprBlack",
-    "path": "sprites/sprBlack/sprBlack.yy",
+    "name": "sprRetourGendarmerie",
+    "path": "sprites/sprRetourGendarmerie/sprRetourGendarmerie.yy",
   },
   "spriteMaskId": null,
   "visible": true,

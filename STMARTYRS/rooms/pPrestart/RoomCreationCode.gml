@@ -14,6 +14,7 @@ game_set_speed(FRAME_RATE, gamespeed_fps);
 
 if file_exists(SAVE_FILE_NAME)
 {
+	
 	with instance_create_depth(0, 0, DEPTH_OJEU, ojeu)
 	{
 	charger_langue();

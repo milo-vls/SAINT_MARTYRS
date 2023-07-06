@@ -92,7 +92,8 @@ switch (currentMenu)
 			}
 			else
 			{
-				var _lieu = ojeu.lieu[lieuSurvole]
+				var _lieu = ojeu.lieu[lieuSurvole];
+				showButtonRetourCarte = true;
 				GoToRoom(_lieu.piece)
 				
 				if _lieu.connu != CONNAISSANCE_LIEU.VISITE
@@ -173,11 +174,12 @@ switch (currentMenu)
 	}
 	}break;
 	case MAP_MENU.PHONE:{
-		
+		ojeu.showButtonRetourCarte = true;
 		GoToRoom(pCall);
 	}break;
 	case MAP_MENU.ORDI:{
-		GoToRoom(pordi)
+		ojeu.showButtonRetourCarte = true;
+		GoToRoom(pordi);
 	}
 	case MAP_MENU.GAME_OVER:{
 		 tarAlphaGameOver = 1;

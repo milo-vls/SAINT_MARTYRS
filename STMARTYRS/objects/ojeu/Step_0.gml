@@ -32,9 +32,10 @@ if blurLayer!=noone and blurFx != -1 ///FLOU
 
 ///----------INPUT 
 //DEV
-if keyboard_check(vk_escape)	{game_end()																					};
-if keyboard_check(vk_f10)		{GoToRoom(ptestexplo3)															};
-if keyboard_check(vk_right)		{global.currentDate = date_inc_hour(global.currentDate, 1)	};
+if keyboard_check(vk_escape)	{game_end()																					}
+if keyboard_check(vk_f10)		{GoToRoom(ptestexplo3)															}
+if keyboard_check(vk_right)		{global.currentDate = date_inc_hour(global.currentDate, 1)	}
+if keyboard_check(vk_f1)			{ojeu.peutAllerGendarmerie = true; ojeu.showButtonRetourCarte = true}
 //USER
 if global.canPause and global.inputPause
 {

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scrInitMenuExplo",
+  "name": "scrInitExplo",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

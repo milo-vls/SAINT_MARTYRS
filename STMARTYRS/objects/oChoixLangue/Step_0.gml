@@ -1,17 +1,22 @@
 if value == LANGUE_DISPOS.ANGLAIS
 {
-	
-	with instance_create_depth(x, y, DEPTH_OJEU, ojeu)
+	if !instance_exists(ojeu)
 	{
-		initTranslation(LANGUAGE.EN);
+		with instance_create_depth(0, 0, DEPTH_OJEU, ojeu)
+		{
+			initTranslation(LANGUAGE.EN);
+		}
+		GoToRoom(pstart);
 	}
-	GoToRoom(pstart);
 }
 if value == LANGUE_DISPOS.FRANCAIS
 {
-	with instance_create_depth(x, y, DEPTH_OJEU, ojeu)
+	if !instance_exists(ojeu)
 	{
-		initTranslation(LANGUAGE.FR);
+		with instance_create_depth(0, 0, DEPTH_OJEU, ojeu)
+		{
+			initTranslation(LANGUAGE.FR);
+		}
+		GoToRoom(pstart);
 	}
-	GoToRoom(pstart);
 }

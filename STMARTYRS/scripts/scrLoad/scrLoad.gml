@@ -11,6 +11,9 @@ function charger()
 	ojeu.nbPageRep = _structToLoad.nbPageRep;
 	ojeu.nbNumObtenu = _structToLoad.nbNumObtenu;
 	global.startingRoom = _structToLoad.room;
+	ojeu.showButtonRetourCarte = _structToLoad.showButtonRetourCarte;
+	ojeu.peutAllerGendarmerie = _structToLoad.peutAllerGendarmerie;
+
 	
 	//NUMÉROS OBTENUS
 	if ojeu.nbNumObtenu > 0

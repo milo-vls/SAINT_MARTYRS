@@ -30,18 +30,29 @@ enum L
 
 enum CONNAISSANCE_LIEU{VISITE, JUXTAPOSE, INCONNU}
 
-function add_lieu(_enumeration, _room, _x, _y, _connection, _connu = CONNAISSANCE_LIEU.INCONNU)
+function add_lieu(_room, _x, _y, _connection = [], _connu = CONNAISSANCE_LIEU.VISITE)
 {
-	lieu[_enumeration] = {piece : _room, xMap : _x ABS_MAP, yMap : _y ABS_MAP, connections : _connection, connu : _connu}
+	lieu[nbLieux] = {piece : _room, xMap : _x ABS_MAP, yMap : _y ABS_MAP, connections : _connection, connu : _connu}
+	nbLieux ++;
 }
 
 
 function init_map()
 { 
-	add_lieu(L.AMANDINE_DEADEND, P_AMANDINE_DEADEND, 836, 543, [L.BACK_TABLE, L.BENCH_AGAINST_WALL]);
+	nbLieux = 0;
+	add_lieu(P_AMANDINE_DEADEND, 838, 826);
+	add_lieu(P_RUE_BLUE, 922, 757);
+	add_lieu(P_COLUMN, 527, 593,);
+	add_lieu(P_FRONT_BENCH, 1019, 554);
+	add_lieu(P_BLANK_WALL, 888, 946);
+	add_lieu(P_FAKE_RUE_BLUE, 906, 710);
+	add_lieu(P_VEGETAL_DOME_HALLWAY, 504, 746);
+	add_lieu(P_WATER_TOWER_BENCH, 1156, 607);
+	
+	
+	/*
 	add_lieu(L.BACK_TABLE,  P_BACK_TABLE,866,462, [L.AMANDINE_DEADEND, L.BENCH_AGAINST_WALL]);
 	add_lieu(L.BACK_WATER_TOWER, P_BACK_WATER_TOWER, 931, 555, [L.BENCH_AGAINST_WALL]);
-	add_lieu(L.BENCH_AGAINST_WALL, P_BENCH_AGAINST_WALL,95, 471, [L.AMANDINE_DEADEND, L.BACK_TABLE, L.AMANDINE_DEADEND]);
-	add_lieu(L.BLANK_WALL, P_POLICE_STATION,200,200,[L.AMANDINE_DEADEND], CONNAISSANCE_LIEU.JUXTAPOSE);
-	
+	 
+	*/
 }

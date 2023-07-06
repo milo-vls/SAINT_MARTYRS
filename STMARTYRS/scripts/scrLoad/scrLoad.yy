@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "SAVE",
-    "path": "folders/SCRIPTS/SAVE.yy",
+    "name": "SAUVEGARDE",
+    "path": "folders/SCRIPTS/SAUVEGARDE.yy",
   },
 }

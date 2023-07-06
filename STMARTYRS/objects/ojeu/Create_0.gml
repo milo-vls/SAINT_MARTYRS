@@ -11,14 +11,13 @@ radiusBlur = 0;	//valeur qui évolue
 blurDial = 8; //valeur visée
 
 
-
+init_explo();
 init_map();
 init_time();
 init_crimes_tueurs();
 initPatterns();
 init_usi();
 init_objects();
-//init_menu_explo()
 init_map_tasks()
 init_mini_game();
 init_plage_texture();

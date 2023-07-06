@@ -15,7 +15,10 @@ return instance_nearest(mouse_x, mouse_y, oNPCparent);
 	
 if position_meeting(mouse_x, mouse_y, omoveArrow)
 return instance_nearest(mouse_x, mouse_y, omoveArrow);
-	
+
+if position_meeting(mouse_x, mouse_y, oParentButton)
+return instance_nearest(mouse_x, mouse_y, oParentButton);
+
 return noone;
 	
 }
@@ -63,6 +66,11 @@ if _instance.pressed and global.cRlLeft
 
 }
 
+function comportementCliqueRetourCarte(_instance)
+{
+	ojeu.showButtonRetourCarte = true;
+	GoToRoom(pcarte);
+}
 
 
 function desacPress()
