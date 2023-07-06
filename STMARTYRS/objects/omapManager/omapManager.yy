@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "MAP",
-    "path": "folders/OBJETS/MAP.yy",
+    "name": "CARTE",
+    "path": "folders/OBJETS/CARTE.yy",
   },
   "parentObjectId": null,
   "persistent": false,

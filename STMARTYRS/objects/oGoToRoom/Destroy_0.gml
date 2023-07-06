@@ -1,0 +1,2 @@
+
+global.alphaBlackScreen = 0;

@@ -13,7 +13,7 @@ if !checkCapture
 	}
 	else
 	{
-		_dateIsPassed = _crime.date > date_inc_day(global.currentDate, -1);
+		_dateIsPassed = _crime.date = ojeu.numeroJour;
 	}
 	
 	var _nbUsi = instance_number(ousi);
@@ -25,7 +25,7 @@ if !checkCapture
 			if place_meeting(x, y, _instanceUsi) and _instanceUsi.pressed == false
 			{
 				tueurType[_crime.tueur].etat = KILLER_STATE.CAUGHT;
-				tueurType[_crime.tueur].jourCaught = global.currentDate;	
+				tueurType[_crime.tueur].jourCaught = ojeu.numeroJour;	
 			}
 		}
 	}

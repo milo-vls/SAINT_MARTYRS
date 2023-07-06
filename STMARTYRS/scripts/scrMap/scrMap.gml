@@ -49,7 +49,7 @@ if !ojeu.tenseNight
 
 	for (var i = 0; i < array_length(ojeu.crime);i++)
 	{
-		if !ojeu.crime[i].appeared and ojeu.tueur[ojeu.crime[i].tueur].etat == KILLER_STATE.ACTIVE and ojeu.crime[i].date < global.mapDate
+		if !ojeu.crime[i].appeared and ojeu.tueur[ojeu.crime[i].tueur].etat == KILLER_STATE.ACTIVE and ojeu.crime[i].date = ojeu.numeroJour
 		{
 			ojeu.crime[i].appeared = true;
 			with instance_create_layer(ojeu.crime[i].x, ojeu.crime[i].y, "crime", ocrime)
@@ -133,10 +133,8 @@ function load_psc()
 	{
 		var _tueurId = ojeu.crime[i].tueur;
 		var _tueurState = ojeu.tueur[_tueurId].etat
-		if ojeu.crime[i].appeared and _tueurState == KILLER_STATE.ACTIVE and ojeu.crime[i].date < global.mapDate
+		if ojeu.crime[i].appeared and _tueurState == KILLER_STATE.ACTIVE and ojeu.crime[i].date > ojeu.numeroJour
 		{
-				ojeu.crime[i].appeared = true;
-
 			with instance_create_layer(ojeu.crime[i].x, ojeu.crime[i].y, "crime", ocrime)
 			{
 				crimeID = i;
@@ -177,11 +175,10 @@ function endRecap()
 	omapManager.currentMenu = noone;
 	ojeu.recapTenseNight = true;
 	
-	//RESUME TIME STOPPED
-	time_source_resume(ojeu.minuterie);
-	if omapManager.minuterie != noone
+
+	if omapManager.minuterieTenseNight != noone
 	{
-		time_source_resume(omapManager.minuterie);
+		time_source_resume(omapManager.minuterieTenseNight);
 	}
 }
 //---------coordonnées relatives-------------------------------//

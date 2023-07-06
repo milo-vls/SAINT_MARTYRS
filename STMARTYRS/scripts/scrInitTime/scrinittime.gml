@@ -8,30 +8,10 @@ function init_time()
 {
 	date_set_timezone(timezone_utc);
 	tenseNight = false
-	heureReveil = 19
 
-	numeroJour								= 3;
-	startingDate							= date_create_datetime(2012, 12, 19, 19, 45, 0)
-	global.currentDate				= startingDate						//Mis à jour constamment 
-	global.mapDate						= global.currentDate;												//mis à jour uniquement si présent sur la carte
+	numeroJour								= 0;
+	startingDate							= date_create_datetime(2012, 12, 19, 19, 45, 0);
 	
-	//// ÉCOULEMENT DU TEMPS
-	minuteInSeconds		=1;//il faut attendre 2 secondes avant d'ajouter une minute au compteur  
-	var _plusUneMinute	= function(_minutes)
-	{
-		if !explore()
-		{
-			global.currentDate = date_inc_minute(global.currentDate, 1);
-		}
-		else
-		{
-			global.currentDate = date_inc_second(global.currentDate, ojeu.minuteInSeconds);
-		}
-	}
-	minuterie	= time_source_create(time_source_game, minuteInSeconds, time_source_units_seconds,_plusUneMinute , [1], -1);
-	
-	time_source_start(minuterie);
-	time_source_pause(minuterie);
 
 	//transforme en string
 	#region mois
@@ -75,4 +55,9 @@ function init_time()
 		hour[23] = "23";
 	#endregion
 	
+}
+
+function getCurrentDate()
+{
+	return date_inc_day(ojeu.startingDate, ojeu.numeroJour);
 }

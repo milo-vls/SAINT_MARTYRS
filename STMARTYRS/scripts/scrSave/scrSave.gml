@@ -5,7 +5,7 @@ function sauvegarder()
 	var _structToSave = 
 	{
 		langue : global.language,
-		currentDate : global.currentDate,
+		numeroJour : ojeu.numeroJour,
 		nbPageRep : ojeu.nbPageRep,
 		nbNumObtenu : ojeu.nbNumObtenu,
 		room : room,

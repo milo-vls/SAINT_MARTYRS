@@ -7,7 +7,7 @@ function charger()
 	var _structToLoad = fichierToJson(SAVE_FILE_NAME);
 	
 	global.language = _structToLoad.langue;
-	global.currentDate = _structToLoad.currentDate;
+	ojeu.numeroJour = _structToLoad.numeroJour;
 	ojeu.nbPageRep = _structToLoad.nbPageRep;
 	ojeu.nbNumObtenu = _structToLoad.nbNumObtenu;
 	global.startingRoom = _structToLoad.room;

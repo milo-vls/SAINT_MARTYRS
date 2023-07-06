@@ -5,7 +5,6 @@ if !deplacementFait
 {
 	global.inputOn = false;
 	global.blackScreen = true;
-	time_source_pause(ojeu.minuterie);
 	if _alpha > 1.0
 	{
 		global.lastRoom = room;
@@ -20,7 +19,7 @@ if !deplacementFait
 			ojeu.tueurProc = 0;
 			ojeu.nbTueurProc = 0;
 			showDate = true; 
-			global.currentDate = date_create_datetime(date_get_year(global.currentDate), date_get_month(global.currentDate), date_get_day(global.currentDate), ojeu.heureReveil, 0, 0);
+			ojeu.numeroJour ++;
 		}
 	}
 }
@@ -72,8 +71,13 @@ if deplacementFait
 			draw_set_font(ftMenu);
 			draw_set_valign(fa_middle);
 			draw_set_halign(fa_center);
+			var _strDay =string(date_get_day(getCurrentDate()));
+			var _strMonth = global.month[date_get_month(getCurrentDate())];
+			var _strYear = string(date_get_year(getCurrentDate()))
+			var _strDate = _strDay + " " + _strMonth + " " + _strYear;
 	
-			draw_text(display_get_gui_width()/2, display_get_gui_height()/2, global.strDate);
+	
+			draw_text(display_get_gui_width()/2, display_get_gui_height()/2, _strDate);
 		#endregion
 	}
 	else
@@ -87,7 +91,6 @@ if deplacementFait
 	if _alpha == 0
 	{
 		global.inputOn = true;
-		time_source_resume(ojeu.minuterie);
 		instance_destroy();
 	}
 	

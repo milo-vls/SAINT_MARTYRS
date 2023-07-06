@@ -16,9 +16,8 @@ if ojeu.tenseNight
 		ojeu.tenseNight = false;
 		dormir();	
 	}
-	minuterie	= time_source_create(time_source_game, currentNightDiff.dureeSeconde, time_source_units_seconds, _endOfTenseNight, [1], -1);
-	dateStartTenseNight = global.currentDate;
-	time_source_start(minuterie);
+	minuterieTenseNight	= time_source_create(time_source_game, currentNightDiff.dureeSeconde, time_source_units_seconds, _endOfTenseNight, [1], -1);
+	time_source_start(minuterieTenseNight);
 	
 	
 	

@@ -12,21 +12,21 @@ depth = DEPTH_OJEU;
 
 
 //DESACTIVATE everything
-time_source_pause(ojeu.minuterie);
+
 if instance_exists(omapManager)
 {
-	if omapManager.minuterie != noone time_source_pause(omapManager.minuterie);
+	if omapManager.minuterieTenseNight != noone time_source_pause(omapManager.minuterieTenseNight);
 }
 instance_deactivate_all(true);
 instance_activate_object(oInputs);
 
 depause = function()
  {
-	 		instance_activate_all();
-		time_source_resume(ojeu.minuterie);
+	 	instance_activate_all();
+		
 		if instance_exists(omapManager)
 		{
-			if omapManager.minuterie != noone time_source_resume(omapManager.minuterie);
+			if omapManager.minuterieTenseNight != noone time_source_resume(omapManager.minuterieTenseNight);
 		}
  }
 

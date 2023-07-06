@@ -1,28 +1,3 @@
-
-//----MISE A JOUR DATE CARTE-----------------------//
-if recapEnCours()
-{
-	time_source_pause(ojeu.minuterie);
-	timer ++;
-	minuteToAdd = twerp(TwerpType.inout_cubic, 0, diffTempsMinutes, timer/duree);
-	//minuteToAdd = lerp(minuteToAdd, diffTempsMinutes, 0.004)
-	global.mapDate = date_inc_minute(initMapDate, minuteToAdd);
-	
-	if timer==duree
-	{
-		global.mapDate = global.currentDate;
-		mapTimeMAJ = true;
-		global.inputOn = true;
-		time_source_resume(ojeu.minuterie);
-	}
-}
-else
-{
-	if !instance_exists(oGoToRoom)
-	global.mapDate = global.currentDate;
-}
-
-
 //----MISE A JOUR ÉLÉMENTS SUR LA CARTE---//
 maj_meurtre();
 
@@ -211,11 +186,9 @@ switch (currentMenu)
 		
 	}break;
 	case MAP_MENU.RECAP:{
-		//TIME STOP
-		time_source_pause(ojeu.minuterie);
-		if minuterie != noone
+		if minuterieTenseNight != noone
 		{
-			time_source_pause(minuterie);
+			time_source_pause(minuterieTenseNight);
 		}
 		
 		if !instance_exists(oRecap)
@@ -237,7 +210,7 @@ if ojeu.tenseNight
 	//-----CALCUL NOMBRE DE TUEURS ACTIFS-----//
 	ojeu.nbTueurProcActifs =  maj_nb_tueur_proc();
 	//-----CALCUL TEMPS PASSÉ-----//
-	var _checkTimeRemaining = time_source_get_time_remaining(minuterie);
+	var _checkTimeRemaining = time_source_get_time_remaining(minuterieTenseNight);
 	minuterieTenseNightTimeSpent = currentNightDiff.dureeSeconde - _checkTimeRemaining ;
 	
 	//-----ENCLENCHEMENT GAME OVER------//

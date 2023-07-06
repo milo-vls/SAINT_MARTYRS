@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "affichages sans inter",
-    "path": "folders/OBJETS/MAP/affichages sans inter.yy",
+    "path": "folders/OBJETS/CARTE/affichages sans inter.yy",
   },
   "parentObjectId": null,
   "persistent": false,

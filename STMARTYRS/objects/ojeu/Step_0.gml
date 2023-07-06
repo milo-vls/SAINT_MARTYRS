@@ -1,24 +1,4 @@
 
-
-if player_free()
-{
-	var _heureActuelle = date_get_hour(global.currentDate)
-	
-	if END_OF_NIGHT_HOUR <= _heureActuelle and _heureActuelle < START_OF_NIGHT_HOUR
-	{
-		GoToRoom(pcarte, noone, true);
-	}
-
-	if START_TENSE_NIGHT <= _heureActuelle and _heureActuelle <= END_OF_NIGHT_HOUR and !tenseNight
-	{
-		startTenseNight();	
-	}
-
-}
-if keyboard_check(vk_space)     Night();
-
-
-
 ///------------EFFET FLOU
 if blurLayer!=noone and blurFx != -1 ///FLOU
 {
@@ -34,8 +14,9 @@ if blurLayer!=noone and blurFx != -1 ///FLOU
 //DEV
 if keyboard_check(vk_escape)	{game_end()																					}
 if keyboard_check(vk_f10)		{GoToRoom(ptestexplo3)															}
-if keyboard_check(vk_right)		{global.currentDate = date_inc_hour(global.currentDate, 1)	}
 if keyboard_check(vk_f1)			{ojeu.peutAllerGendarmerie = true; ojeu.showButtonRetourCarte = true}
+if keyboard_check(vk_f9)			{dormir()};
+
 //USER
 if global.canPause and global.inputPause
 {
@@ -44,13 +25,8 @@ if global.canPause and global.inputPause
 }
 
 
-////-------DATES
-global.strDay = string(date_get_day(global.currentDate));
-global.strMonth = global.month[date_get_month(global.currentDate)];
-global.strYear = string(date_get_year(global.currentDate))
-global.strDate = global.strDay + " " + global.strMonth + " " + global.strYear;
-	
-	
+
+
 	
 
 	

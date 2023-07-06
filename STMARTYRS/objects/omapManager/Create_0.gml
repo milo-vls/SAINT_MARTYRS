@@ -11,8 +11,6 @@ enum MAP_MENU
 	RECAP,
 };
 
-
-
 currentMenu = noone;
 
 #region tueur
@@ -149,19 +147,10 @@ rueObserve = noone;
 #endregion
 
 #region temps
-//----temps----//
-global.inputOn = false;
-time_source_pause(ojeu.minuterie);
-initMapDate = global.mapDate;
-mapTimeMAJ = false;
-//twerp pour maj timer//
-					timer = 0;
-/*end*/		diffTempsMinutes = date_minute_span(global.currentDate, global.mapDate);
-/*durée*/	duree = room_speed * 3;
 
 //-----CRIME PROC----//
 minuterieTenseNightTimeSpent = 0;
-minuterie = noone;
+minuterieTenseNight = noone;
 
 #endregion
 
@@ -218,24 +207,15 @@ mapOption[3] = {
 	pressed : false,
 }
 mapOption[4] = {
-	txt : text("FICHES"),
-	fonction : function(){},
-	pressed : false,
-		
-}
-mapOption[5] = {
-	txt : function()
-		{
-			var _heure = string(date_get_hour(global.mapDate));
-			var _minute = string(date_get_minute(global.mapDate));
-			var _addHour =( string_length(_heure) == 1 ?  "0": "");
-			var _addMinute = (string_length(_minute) != 2 ? "0": "");
-			return _addHour+ _heure +":" +  _addMinute + _minute;
-		},
-	fonction : function(){},
+	txt : text("TERMINER"),
+	fonction : function()
+	{
+		startTenseNight();
+	},
 	pressed : false,
 }
-nbMapOption = 6
+
+nbMapOption = 5
 
 wMapOption = wBarreSup/nbMapOption
 _yTxt = hBarreSup/2

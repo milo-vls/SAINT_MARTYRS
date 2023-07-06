@@ -25,7 +25,7 @@ function GoToMap()
 	
 function dormir(_sound = noone)
 {
-	switch (global.currentDate)
+	switch (ojeu.numeroJour)
 	{
 		default :{
 			GoToRoom(pcarte, _sound, true);

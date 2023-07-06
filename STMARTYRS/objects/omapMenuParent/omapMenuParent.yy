@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "META",
-    "path": "folders/OBJETS/MAP/META.yy",
+    "path": "folders/OBJETS/CARTE/META.yy",
   },
   "parentObjectId": null,
   "persistent": false,
