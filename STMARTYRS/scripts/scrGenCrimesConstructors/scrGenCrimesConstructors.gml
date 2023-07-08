@@ -45,11 +45,13 @@ function setPattern(_score, _unique, _firstPoint, _nextPoints, _ilu) constructor
  
  
 ///VARIABLE CRIME/POINT CRIME
-function setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _genProc, _couleur=c_white, _first = false, _portraitVictime=noone, _indices = [noone, noone, noone, noone]) constructor 
+function setCrime(_idKiller, _nomPrenom, _date, _lastOfKiller,_x, _y, _genProc, _heure = noone, _minute = noone,_couleur=c_white, _first = false, _portraitVictime=noone, _indices = [noone, noone, noone, noone]) constructor 
 {
  tueur = _idKiller;
  _name = _nomPrenom;
  date = _date;
+ heure = _heure;
+ minute = _minute;
  x = _x;
  y = _y;
  col = _couleur;

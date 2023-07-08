@@ -61,3 +61,8 @@ function getCurrentDate()
 {
 	return date_inc_day(ojeu.startingDate, ojeu.numeroJour);
 }
+
+function getDateFromJour(_jour)
+{
+	return date_inc_day(ojeu.startingDate, _jour);
+}

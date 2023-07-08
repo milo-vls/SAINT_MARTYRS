@@ -11,15 +11,13 @@ function dateStringFromDate(_date)
 	return _strJour + "/" + _strMois;
 }
 
-function heureStringFromDate(_date)
+function heureStringFromDate(_heure, _minute)
 {
-	var _heure = date_get_hour(_date);
 	var _strHeure = string(_heure);
-	if _heure < 10 then _strHeure = "0" + _strHeure;
+	if _heure < 10 then _strHeure = "0" + string(_strHeure);
 	
-	var _minute = date_get_minute(_date);
 	var _strMinute = string(_minute);
-	if _minute < 10 then _strMinute = "0" + _minute;
+	if _minute < 10 then _strMinute = "0" + string(_minute);
 	
 	return _strHeure + ":" + _strMinute;
 }
@@ -76,12 +74,12 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 	//DATE
 	var _xDate = _xPrenom;
 	var _yDate = _yPrenom + string_height("W");
-	draw_text(_xDate, _yDate, dateStringFromDate(_crime.date));
+	draw_text(_xDate, _yDate, dateStringFromDate(getDateFromJour(_crime.date)));
 	
 	//HEURE
 	var _xHeure = _xPrenom;
 	var _yHeure = _yDate + string_height("W")*0.75;
-	draw_text(_xHeure, _yHeure, heureStringFromDate(_crime.date));
+	draw_text(_xHeure, _yHeure, heureStringFromDate(_crime.heure, _crime.minute));
 	
 	//PORTRAIT
 	if _crime.portraitVictime != noone
@@ -106,12 +104,15 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 		var _minLen = min(array_length(_crime.indices), 4)
 		for (var i = 0; i < _minLen; i ++)
 		{
-			var _sprite = _crime.indices[i];
-			var _largeurIndice = _coteCarre/2;
-			var _hauteurIndice = _coteCarre/2;
-			var _yIndice = (_yTop + _hauteurVoletMinimale) + (_hauteurIndice)*(i > 1);
-			var _xIndice = (_xLeft + _largeurVolet/2 - _largeurIndice) + ((_largeurIndice) * ((i) % 2))
-			draw_sprite_stretched(_sprite, 0, _xIndice, _yIndice, _largeurIndice, _hauteurIndice);
+			if _crime.indices[i] != -4
+			{
+				var _sprite = _crime.indices[i];
+				var _largeurIndice = _coteCarre/2;
+				var _hauteurIndice = _coteCarre/2;
+				var _yIndice = (_yTop + _hauteurVoletMinimale) + (_hauteurIndice)*(i > 1);
+				var _xIndice = (_xLeft + _largeurVolet/2 - _largeurIndice) + ((_largeurIndice) * ((i) % 2))
+				draw_sprite_stretched(_sprite, 0, _xIndice, _yIndice, _largeurIndice, _hauteurIndice);
+			}
 		}
 	}
 }

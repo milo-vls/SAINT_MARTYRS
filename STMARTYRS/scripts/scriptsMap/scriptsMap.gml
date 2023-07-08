@@ -50,7 +50,15 @@ if !position_meeting(mouse_x, mouse_y, self)
 }
 
 
+function jourHeureMinuteComparaison(_jour1, _jour2, _heure1, _heure2, _minute1, _minute2)
+{
+//Est ce que date 1 est plus grande que date 2?
 
+if _jour1 != _jour2 return _jour1 > _jour2;
+if _heure1 != _heure2 return _heure1 > _heure2;
+ return _minute1 > _minute2;
+
+}
 
 
 function indexCrimeAttachable(_typeDeCrime, _color, _date, _tueur)

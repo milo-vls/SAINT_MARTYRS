@@ -13,7 +13,7 @@ if !checkCapture
 	}
 	else
 	{
-		_dateIsPassed = _crime.date = ojeu.numeroJour;
+		_dateIsPassed = _crime.date == ojeu.numeroJour;
 	}
 	
 	var _nbUsi = instance_number(ousi);
