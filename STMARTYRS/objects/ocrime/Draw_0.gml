@@ -33,5 +33,4 @@ if/* (crimeType == ojeu.crimeProc) and*/ (_crime.first)
 
 draw_set_alpha(1);
 image_blend = _crime.col;
-
 draw_self();

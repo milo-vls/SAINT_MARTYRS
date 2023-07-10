@@ -21,7 +21,7 @@ currentState = RECAP_STATES.SHIFTING;
 #macro DOC_TEXT_SCALE 0.75
 //----SHIFTING
 quotienParcours = 0;
-tpsParcours = room_speed * 1.25;
+tpsParcours = room_speed * 0.5;
 courbe = animcurve_get_channel(acCourbes, "cDocumentShift");
 xStart = self.x;
 xEnd = GAME_WIDTH/2;
@@ -57,7 +57,7 @@ usisAMontrer = [];
 nbUsisAMontrer = 0;
 nbUsisMontres = 0;
 tpsApparitionPortUsi = 0;
-dureeApparitionPortUsi = room_speed * 0.5;
+dureeApparitionPortUsi = room_speed * 0.2;
 var _nbusi = array_length(ojeu.usi);
 for (var i = 0; i < _nbusi; i ++)
 {
@@ -107,7 +107,7 @@ drawSignHere = false;
 
 //------END RECAP
 quotienParcoursEndRecap = 0;
-tpsParcoursEndRecap = room_speed * 2;
+tpsParcoursEndRecap = room_speed * 0.3;
 xStartEndRecap = xEnd;
 xEndEndRecap = GAME_WIDTH + LARGEUR_DOC*0.75;
 #macro DOCUMENT_DISTANCE_PARCOURS_END (xEndEndRecap - xStartEndRecap)

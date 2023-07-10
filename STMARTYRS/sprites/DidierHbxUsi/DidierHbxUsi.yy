@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "VISIBLE PINS",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/MAP/VISIBLE PINS.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/CARTE/VISIBLE PINS.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

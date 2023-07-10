@@ -11,7 +11,7 @@ function maj_nb_tueur_proc()
 	{
 		if omapManager.crimeProc[instance_find(ocrime, i).crimeID].first == true
 		{
-			_toReturn ++;
+ 			_toReturn ++;
 		}
 	}
 	
@@ -69,6 +69,7 @@ var _nbCrimeProc = array_length(_listeCrimes);
 var _listeTueurs = omapManager.tueurProc;
 for (var _crime = 0; _crime < _nbCrimeProc; _crime ++)
 {
+	
 	if _listeCrimes[_crime].date <  minuterieTenseNightTimeSpent and !_listeCrimes[_crime].appeared and _listeTueurs[_listeCrimes[_crime].tueur].etat == KILLER_STATE.ACTIVE
 	{
 		omapManager.crimeProc[_crime].appeared = true;
@@ -178,7 +179,7 @@ function endRecap()
 
 	if omapManager.minuterieTenseNight != noone
 	{
-		time_source_resume(omapManager.minuterieTenseNight);
+		time_source_start(omapManager.minuterieTenseNight);
 	}
 }
 //---------coordonnées relatives-------------------------------//

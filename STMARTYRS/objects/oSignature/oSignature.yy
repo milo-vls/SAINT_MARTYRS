@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "BOUTONS",
-    "path": "folders/OBJETS/UI/BOUTONS.yy",
+    "name": "CARTE",
+    "path": "folders/OBJETS/CARTE.yy",
   },
   "parentObjectId": {
     "name": "oParentButton",

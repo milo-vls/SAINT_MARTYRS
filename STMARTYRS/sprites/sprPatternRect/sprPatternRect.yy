@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "PATTERN ILLUSTRATION",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/MAP/PATTERN ILLUSTRATION.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/CARTE/PATTERN ILLUSTRATION.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

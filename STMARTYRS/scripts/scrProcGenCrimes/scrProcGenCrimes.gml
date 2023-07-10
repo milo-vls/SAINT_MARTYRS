@@ -44,7 +44,7 @@ var _killer = omapManager.tueurProc[_idKiller];
 var _pattern = _killer.pattern;
 
 var _firstCrimePos = _pattern.firstCrimePos();
-var _firstCrime        = new setCrime(_idKiller, randomNomPrenom(), _killer.firstCrimeDate, false, _firstCrimePos[0], _firstCrimePos[1], true, _col, true)
+var _firstCrime        = new setCrime(_idKiller, randomNomPrenom(), _killer.firstCrimeDate, false, _firstCrimePos[0], _firstCrimePos[1], true, 0, 0, _col, true)
 array_push(_listeCrimesToReturn,  _firstCrime);
 
 

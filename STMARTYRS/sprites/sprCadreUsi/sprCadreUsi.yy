@@ -49,7 +49,7 @@
   "origin": 0,
   "parent": {
     "name": "UI",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/MAP/UI.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/CARTE/UI.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

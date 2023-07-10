@@ -32,10 +32,10 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b10b265b-3034-46ea-981d-8bb949509ea2","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 0,
   "parent": {
     "name": "VISIBLE PINS",
-    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/MAP/VISIBLE PINS.yy",
+    "path": "folders/SPRITES/ROOM ET CINEMATIQUES/CARTE/VISIBLE PINS.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -75,8 +75,8 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 184,
-    "yorigin": 165,
+    "xorigin": 0,
+    "yorigin": 0,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

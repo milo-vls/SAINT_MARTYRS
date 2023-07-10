@@ -78,7 +78,7 @@ if ojeu.tenseNight == false
 else
 {
 	draw_set_alpha(1);
-	scribble("[fa_middle][fa_center][ftMenu]"+string(ojeu.nbTueurProcActifs)).draw(GAME_WIDTH/2, GAME_HEIGHT/2);	
+	scribble("[fa_top][fa_center][ftDial]"+string(ojeu.nbTueurProcActifs)).draw(GAME_WIDTH/2, GAME_HEIGHT/20);	
 }
 
 

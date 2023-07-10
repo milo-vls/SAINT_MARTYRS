@@ -88,7 +88,7 @@ switch (currentState)
 		x = xStartEndRecap + (_distance * _valeurCourbe);
 		if quotienParcoursEndRecap == 1
 		{
-			endRecap()
+			endRecap();
 		}
 	}break;
 }
