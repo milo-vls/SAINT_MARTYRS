@@ -39,7 +39,7 @@ draw_set_alpha(1);
 
 #region premier plan, contour faux écran
 
-draw_sprite_stretched(sprContourOrdi, 0, 0, 0, display_get_gui_width(), display_get_gui_height());
+//draw_sprite_stretched(sprContourOrdi, 0, 0, 0, display_get_gui_width(), display_get_gui_height());
 
 #endregion
 

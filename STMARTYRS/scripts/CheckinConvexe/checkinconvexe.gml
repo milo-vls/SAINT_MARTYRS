@@ -45,7 +45,7 @@ function point_in_convexe(pointX, pointY, listeDeX, listeDeY)
 		}
 		
 		
-		return inConvexe
+		return inConvexe;
 	}
 	else
 	{

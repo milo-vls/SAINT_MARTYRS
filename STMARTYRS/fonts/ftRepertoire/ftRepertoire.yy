@@ -31,6 +31,7 @@
   "italic": false,
   "kerningPairs": [],
   "last": 0,
+  "lineHeight": 0,
   "maintainGms1Font": false,
   "parent": {
     "name": "POLICES",
@@ -42,6 +43,7 @@
   ],
   "regenerateBitmap": false,
   "sampleText": "12035454atz",
+  "sdfSpread": 8,
   "size": 34.0,
   "styleName": "Bold",
   "textureGroupId": {
@@ -49,4 +51,5 @@
     "path": "texturegroups/Default",
   },
   "TTFName": "",
+  "usesSDF": false,
 }

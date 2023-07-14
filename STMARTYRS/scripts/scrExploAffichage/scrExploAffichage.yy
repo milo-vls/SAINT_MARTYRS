@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "MAP",
-    "path": "folders/SCRIPTS/MAP.yy",
+    "name": "CARTE",
+    "path": "folders/SCRIPTS/CARTE.yy",
   },
 }

@@ -61,6 +61,7 @@
     {"amount":-1,"first":57,"second":55,},
   ],
   "last": 0,
+  "lineHeight": 0,
   "maintainGms1Font": false,
   "parent": {
     "name": "POLICES",
@@ -72,6 +73,7 @@
   ],
   "regenerateBitmap": false,
   "sampleText": "20 : 18",
+  "sdfSpread": 8,
   "size": 45.0,
   "styleName": "Regular",
   "textureGroupId": {
@@ -79,4 +81,5 @@
     "path": "texturegroups/Default",
   },
   "TTFName": "",
+  "usesSDF": false,
 }

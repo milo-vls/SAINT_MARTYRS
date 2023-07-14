@@ -5,7 +5,7 @@ iconPressed = false;
 attachable = noone; 
 xfil = false;
 yfil = false;
-wfil = sprite_get_width(sprCrime)/4;
+wfil = sprite_get_width(sprCrime)/10;
 
 //------CAPTURE-------//
 checkCapture = false;

@@ -122,6 +122,7 @@
   "italic": false,
   "kerningPairs": [],
   "last": 0,
+  "lineHeight": 0,
   "maintainGms1Font": false,
   "parent": {
     "name": "POLICES",
@@ -138,6 +139,7 @@
   ],
   "regenerateBitmap": false,
   "sampleText": "abcdef ABCDEF\r\n0123456789 .,<>\"'&!?\r\nthe quick brown fox jumps over the lazy dog\r\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\r\nDefault character: ▯ (9647) NEW GAME\r\nNew Game\r\nContinue\r\nQuit",
+  "sdfSpread": 8,
   "size": 56.0,
   "styleName": "Regular",
   "textureGroupId": {
@@ -145,4 +147,5 @@
     "path": "texturegroups/Default",
   },
   "TTFName": "",
+  "usesSDF": false,
 }

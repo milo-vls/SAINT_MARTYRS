@@ -69,6 +69,22 @@ switch(ID)
 	
 	
 	#endregion
+	#region MENUS ET SYSTEME
+		case OBS_ID_RECAP_NOUVEAUX_CRIMES_FAIT :{
+			if oMiseAJourCarte.nbNouveauxCrimes == 0
+			{
+				obs(text("RECAP SANS CRIMES"));
+			}
+			if oMiseAJourCarte.nbNouveauxCrimes == 1
+			{
+				obs(text("RECAP UN CRIME"));
+			}
+			else
+			{
+				obs(text("RECAP CRIMES", oMiseAJourCarte.nbNouveauxCrimes));
+			}
+		}break;
+	#endregion
 }
 		
 }
