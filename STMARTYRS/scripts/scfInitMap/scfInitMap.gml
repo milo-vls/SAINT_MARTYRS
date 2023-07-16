@@ -39,6 +39,8 @@ function add_lieu(_room, _x, _y, _connection = [], _connu = CONNAISSANCE_LIEU.VI
 
 function init_map()
 { 
+	mapIsUpdated = false;
+	
 	nbLieux = 0;
 	add_lieu(P_AMANDINE_DEADEND, 838, 826);
 	add_lieu(P_RUE_BLUE, 922, 757);

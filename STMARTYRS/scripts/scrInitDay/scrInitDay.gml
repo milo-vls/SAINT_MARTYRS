@@ -16,6 +16,10 @@ global.char[_personnage].mapX = _mapx;
 //ROOM DE CHAQUE PERSOS
 //tout ce que tu veux en fait, selon le jour
 function init_day(){
+
+ojeu.mapIsUpdated = false;
+
+
 //reset usi
 for (var i = 0; i!=6;i++)
 {

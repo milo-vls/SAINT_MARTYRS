@@ -49,14 +49,29 @@ if !position_meeting(mouse_x, mouse_y, self)
 	
 }
 
+function plusVieuxCrime(_indexCrime1, _indexCrime2)
+{
+	var _crime1 = ojeu.crime[_indexCrime1];
+	var _crime2 = ojeu.crime[_indexCrime2];
+	
+	if _crime1.date != _crime2.date
+	{
+		return 	_crime1.date - _crime2.date;
+	}
+	if _crime1.heure != _crime2.heure
+	{
+		return _crime1.heure - _crime2.heure;
+	}
+	return _crime1.minute - _crime2.minute;
+}
 
 function jourHeureMinuteComparaison(_jour1, _jour2, _heure1, _heure2, _minute1, _minute2)
 {
-//Est ce que date 1 est plus grande que date 2?
+//Est ce que date 1 est plus vieux que date 2?
 
-if _jour1 != _jour2 return _jour1 > _jour2;
-if _heure1 != _heure2 return _heure1 > _heure2;
- return _minute1 > _minute2;
+if _jour1 != _jour2 return _jour1 < _jour2;
+if _heure1 != _heure2 return _heure1 < _heure2;
+return _minute1 < _minute2;
 
 }
 

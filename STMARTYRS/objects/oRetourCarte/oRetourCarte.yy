@@ -9,7 +9,7 @@
   ],
   "parent": {
     "name": "DÉPLACEMENT",
-    "path": "folders/OBJETS/EXPLO/DÉPLACEMENT.yy",
+    "path": "folders/OBJETS/META/EXPLO/DÉPLACEMENT.yy",
   },
   "parentObjectId": {
     "name": "oParentButton",

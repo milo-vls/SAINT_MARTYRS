@@ -12,7 +12,7 @@
   ],
   "parent": {
     "name": "OBSERVABLES",
-    "path": "folders/OBJETS/EXPLO/OBSERVABLES.yy",
+    "path": "folders/OBJETS/META/EXPLO/OBSERVABLES.yy",
   },
   "parentObjectId": {
     "name": "oParentButton",

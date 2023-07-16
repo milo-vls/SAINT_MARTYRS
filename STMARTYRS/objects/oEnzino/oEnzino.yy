@@ -9,7 +9,7 @@
   ],
   "parent": {
     "name": "PNJS",
-    "path": "folders/OBJETS/EXPLO/PNJS.yy",
+    "path": "folders/OBJETS/META/EXPLO/PNJS.yy",
   },
   "parentObjectId": {
     "name": "oNPCparent",

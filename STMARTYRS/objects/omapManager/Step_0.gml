@@ -3,6 +3,16 @@ maj_meurtre();
 
 
 
+//-------MISE  A JOUR CARTE------//
+if !instance_exists(oDial) and ojeu.mapIsUpdated
+{
+	ojeu.mapIsUpdated = true;
+	instance_create_depth(0, 0, 0, oMiseAJourCarte);
+	
+}
+
+
+
 //-------MENU------//
 switch (currentMenu)
 {

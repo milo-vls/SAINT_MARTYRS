@@ -210,7 +210,7 @@ mapOption[4] = {
 	txt : text("TERMINER"),
 	fonction : function()
 	{
-		startTenseNight();
+		dormir();
 	},
 	pressed : false,
 }

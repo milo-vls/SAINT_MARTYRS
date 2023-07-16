@@ -11,7 +11,7 @@
   ],
   "parent": {
     "name": "CLIQUABLES",
-    "path": "folders/OBJETS/EXPLO/CLIQUABLES.yy",
+    "path": "folders/OBJETS/META/EXPLO/CLIQUABLES.yy",
   },
   "parentObjectId": {
     "name": "oParentButton",

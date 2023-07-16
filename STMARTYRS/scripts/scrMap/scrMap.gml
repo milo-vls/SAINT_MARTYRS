@@ -1,4 +1,15 @@
 
+//-----------FAIRE APPAÎTRE CRIME					-----------//
+function ocrime_instance_create(_index_crime)
+{
+with instance_create_layer(ojeu.crime[_index_crime].x, ojeu.crime[_index_crime].y, "crime", ocrime)
+{
+		crimeID = _index_crime;
+		crimeType = ojeu.crime;
+		tueurType = ojeu.tueur;
+}
+}
+
 //-----------	compte tueurs actifs						-----------//
 function maj_nb_tueur_proc()
 {
@@ -130,20 +141,17 @@ function load_usi()
 //-----------	chargement psc 									-----------//
 function load_psc()
 {
-	for (var i = 0; i < array_length(ojeu.crime);i++)
+	
+for (var i = 0; i < array_length(ojeu.crime);i++)
+{
+	var _tueurId = ojeu.crime[i].tueur;
+	var _tueurState = ojeu.tueur[_tueurId].etat
+	if ojeu.crime[i].appeared and _tueurState == KILLER_STATE.ACTIVE and ojeu.crime[i].date > ojeu.numeroJour
 	{
-		var _tueurId = ojeu.crime[i].tueur;
-		var _tueurState = ojeu.tueur[_tueurId].etat
-		if ojeu.crime[i].appeared and _tueurState == KILLER_STATE.ACTIVE and ojeu.crime[i].date > ojeu.numeroJour
-		{
-			with instance_create_layer(ojeu.crime[i].x, ojeu.crime[i].y, "crime", ocrime)
-			{
-				crimeID = i;
-				crimeType = ojeu.crime;
-				tueurType = ojeu.tueur;
-			}
-		}
+		ocrime_instance_create(i);
 	}
+}
+
 }
 
 

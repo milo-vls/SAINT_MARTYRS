@@ -1,3 +1,6 @@
+global.inputOn = false;
+
+
 enum MISE_A_JOUR_CARTE_ETATS
 {
 BASE,
@@ -19,16 +22,19 @@ for (var i = 0; i < array_length(ojeu.crime);i++)
 	{
 		array_push(indexsNouveauxCrimes, i);
 	}
-		
+	
 }
 nbNouveauxCrimes  = array_length(indexsNouveauxCrimes);
 
 
 if (nbNouveauxCrimes > 0)
 {
+	
+	array_sort(indexsNouveauxCrimes, plusVieuxCrime);
+	
 	//REPARTIR LES DUREES DES DIFFERENTS FOCUS
-	dureeFocusTotale = TPS_SECONDES_MIN + sqrt(nbNouveauxCrimes);
-	 listeDureesFocus = array_create(nbNouveauxCrimes);
+	dureeFocusTotale = (TPS_SECONDES_MIN + sqrt(nbNouveauxCrimes)) * room_speed;
+	listeDureesFocus = array_create(nbNouveauxCrimes);
 	channelFocusIndividuel = animcurve_get_channel(acCourbes, "cDuréeFocusSeul"); 
 	tpsFocusIndividuel = 0;
 	currentIndexIndexsCrimeFocus = 0;
@@ -49,11 +55,11 @@ if (nbNouveauxCrimes > 0)
 	//CAMERA
 	function getTarXCamPosWithPointZoom(_xCentre)
 	{
-		return _xCentre - global.lcamZoom/2;
+		return _xCentre - (ocam.camera_l/TARZOOM_MAX)/2;
 	}
 	function getTarYCamPosWithPointZoom(_yCentre)
 	{
-		return _yCentre - global.hcamZoom/2;
+		return _yCentre - (ocam.camera_h/TARZOOM_MAX)/2;
 	}
 
 	startingXCam = ocam.xCam;
@@ -61,7 +67,7 @@ if (nbNouveauxCrimes > 0)
 	tarXCam = getTarXCamPosWithPointZoom(ojeu.crime[indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]].x);
 	tarYCam = getTarYCamPosWithPointZoom(ojeu.crime[indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]].y);
 
-
+	ocam.tarTauxZoom = TARZOOM_MAX;
 
 
 
