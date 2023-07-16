@@ -1,7 +1,6 @@
 
 var _crime = crimeType[crimeID]
 var _tueur = tueurType[_crime.tueur]
-
 var _isNotProc = !_crime.estProcedural
 //------CAPTURE-------//
 if !checkCapture
@@ -35,7 +34,7 @@ if !checkCapture
 
 
 //--------FUITE-----------------------//
-if _crime.last
+if _crime.last and !instance_exists(oMiseAJourCarte)
 {
 	_tueur.etat = KILLER_STATE.FLED;
 }
@@ -50,6 +49,9 @@ if _tueur.etat == KILLER_STATE.CAUGHT or _tueur.etat == KILLER_STATE.FLED
 
 
 //------AFFICHAGE------------//
-
-
 visible = (_isNotProc and !ojeu.tenseNight) or (!_isNotProc and ojeu.tenseNight)
+
+
+
+
+

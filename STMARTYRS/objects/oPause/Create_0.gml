@@ -6,7 +6,11 @@ function optionGetHeight(_option)
 	return (string_height("|") + MARGE_PAUSE_OPTION) * array_length(_option);
 	
 }
-
+function changePauseOptions(_options)
+{
+	oPause.currentOptions = _options;
+	oPause.hauteurOptions = oPause.optionGetHeight(_options);
+}
 
 depth = DEPTH_OJEU;
 
@@ -28,6 +32,7 @@ depause = function()
 		{
 			if omapManager.minuterieTenseNight != noone time_source_resume(omapManager.minuterieTenseNight);
 		}
+		instance_destroy(oPause);
  }
 
 
@@ -44,17 +49,15 @@ pauseOption[1] = {
 	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_MENU_OPTIONS")).align(fa_center, fa_top),
 	fonction : function()
 	{
-		oPause.currentOptions = oPause.parametersOptions;
-		oPause.hauteurOptions = oPause.optionGetHeight(oPause.currentOptions);
+		oPause.changePauseOptions(oPause.parametersOptions);
 	},
 }
 pauseOption[2] = {
 	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_MENU_SAVE")).align(fa_center, fa_top),
 	fonction : function()
 	{
-		oPause.depause();
 		sauvegarder();
-		
+		oPause.changePauseOptions(oPause.savingOption)	
 	},
 }
 pauseOption[3] = {
@@ -67,7 +70,6 @@ pauseOption[3] = {
 	}
 }
 
-
 parametersOptions[0] = {
 	scrbbl : scribble("[ftDial][shake]" + text("PAUSE_PARAMETERS_RETOUR")).align(fa_center, fa_top),
 	fonction : function()
@@ -76,6 +78,16 @@ parametersOptions[0] = {
 		oPause.hauteurOptions = oPause.optionGetHeight(oPause.currentOptions);
 	},
 }
+
+feedbackSavingText = "[ftDial][shake]" + "SAUVEGARDE EN COURS"
+savingOption[0] = {
+	scrbbl : scribble(feedbackSavingText).align(fa_center, fa_top),
+	fonction : function(){},
+}
+tpsDelayPoint = 0;
+#macro DELAY_BEFORE_NEW_POINT room_speed
+#macro NUMBER_OF_POINTS 3
+
 
 currentOptions = pauseOption;
 hauteurOptions = optionGetHeight(currentOptions);

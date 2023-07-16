@@ -8,8 +8,8 @@ attachable = indexCrimeAttachable(crimeType, _crime.col, _crime.date, _crime.tue
 
 if attachable != noone
 {
-	xfil = crimeType[attachable].x+sprite_width/2;
-	yfil = crimeType[attachable].y+sprite_width/2;
+	xfil = crimeType[attachable].x//+sprite_width/2;
+	yfil = crimeType[attachable].y//+sprite_width/2;
 	
 	draw_set_alpha(1);
 	if crimeType[attachable].col != c_white or crimeType == ojeu.crimeProc

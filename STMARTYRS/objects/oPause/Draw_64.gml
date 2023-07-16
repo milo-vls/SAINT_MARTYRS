@@ -22,3 +22,20 @@ for (var i = 0; i < array_length(currentOptions); i ++)
 		global.cPrLeft = false;
 	}
 }
+
+
+//FEEDBACK SAUVEGARDE
+if currentOptions == savingOption
+{
+	var _pointsDeSuspension = "";
+	var _secondsPast = tpsDelayPoint/DELAY_BEFORE_NEW_POINT
+	repeat(_secondsPast)
+	{
+		_pointsDeSuspension += ".";
+	}
+	savingOption[0].scrbbl = scribble(feedbackSavingText + _pointsDeSuspension).align(fa_center, fa_top)
+	if _secondsPast>= NUMBER_OF_POINTS
+	{
+		oPause.changePauseOptions(oPause.pauseOption);
+	}
+}

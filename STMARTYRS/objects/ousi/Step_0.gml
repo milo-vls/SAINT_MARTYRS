@@ -4,8 +4,8 @@
 
 
 #region position
-x = clamp(x, 0, room_width);
-y = clamp(y, 0, room_height);
+x = clamp(x, sprite_width, room_width - sprite_width);
+y = clamp(y, omapManager.hBarreSup + sprite_height, room_height - sprite_height);
 ojeu.usi[usiID].x = x;
 ojeu.usi[usiID].y = y;
 #endregion

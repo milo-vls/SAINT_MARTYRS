@@ -13,9 +13,7 @@ ocam.yCam = startingYCam + ((tarYCam - startingYCam) * animcurve_channel_evaluat
 
 if _quotientParcours >= 1
 {
-	
 	ocrime_instance_create(indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]);
-	
 	if (currentIndexIndexsCrimeFocus == nbNouveauxCrimes)
 	{
 		tarXCam = 0;

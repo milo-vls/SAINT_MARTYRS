@@ -2,6 +2,7 @@
 //-----------FAIRE APPAÎTRE CRIME					-----------//
 function ocrime_instance_create(_index_crime)
 {
+ojeu.crime[_index_crime].appeared = true;
 with instance_create_layer(ojeu.crime[_index_crime].x, ojeu.crime[_index_crime].y, "crime", ocrime)
 {
 		crimeID = _index_crime;
