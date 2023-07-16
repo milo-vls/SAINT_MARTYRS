@@ -51,6 +51,11 @@ if !position_meeting(mouse_x, mouse_y, self)
 
 function plusVieuxCrime(_indexCrime1, _indexCrime2)
 {
+	
+//RENVOIE POSITIF SI crime 1 PLUS JEUNE
+//RENVOIE NEGATIF SI CRIME 1 PLUS VIEUX
+
+
 	var _crime1 = ojeu.crime[_indexCrime1];
 	var _crime2 = ojeu.crime[_indexCrime2];
 	
@@ -121,3 +126,34 @@ function indexCrimeAttachable(_typeDeCrime, _color, _date, _tueur)
 		return _ARenvoyer;
 		
 }
+
+
+function indexCrimePrecedentSelonTueur(_crimeId)
+{
+
+var _toReturn = noone;
+var _tueur = ojeu.crime[_crimeId].tueur;
+
+
+for (var i = 0; i < array_length(ojeu.crime); i ++)
+{
+	var _inspectedCrime = ojeu.crime[i];
+	if _tueur == _inspectedCrime.tueur and _inspectedCrime.x != noone and plusVieuxCrime(_crimeId, i) > 0
+	{
+		if _toReturn == noone then _toReturn = i;
+		else if plusVieuxCrime(_toReturn, i) > 0 then _toReturn = i;
+	}
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+

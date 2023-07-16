@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "oRefletBlaise",
   "eventList": [],
-  "managed": true,
+  "managed": false,
   "overriddenProperties": [],
   "parent": {
     "name": "INTRO",
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprRefletBlaise",
-    "path": "sprites/sprRefletBlaise/sprRefletBlaise.yy",
+    "name": "portBlaiseCivil",
+    "path": "sprites/portBlaiseCivil/portBlaiseCivil.yy",
   },
   "spriteMaskId": null,
   "visible": true,

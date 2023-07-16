@@ -46,6 +46,10 @@ if _tueur.etat == KILLER_STATE.CAUGHT or _tueur.etat == KILLER_STATE.FLED
 	crimeType[crimeID].col = c_white
 	instance_destroy();
 }
+if _tueur.etat == KILLER_STATE.CAUGHT
+{
+	
+}
 
 
 //------AFFICHAGE------------//
