@@ -30,8 +30,8 @@ if currentIndexIndexsCrimeFocus < nbNouveauxCrimes
 		
 			if currentIndexIndexsCrimeFocus < nbNouveauxCrimes
 			{
-				tarXCam = getTarXCamPosWithPointZoom(CRIME_VISE.x);
-				tarYCam = getTarYCamPosWithPointZoom(CRIME_VISE.y);	
+				tarXCam = getTarXCamPosWithPointZoom(CRIME_VISE.x - semiCrimeWidth);
+				tarYCam = getTarYCamPosWithPointZoom(CRIME_VISE.y - semiCrimeWidth);	
 			}
 
 		

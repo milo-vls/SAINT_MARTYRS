@@ -39,8 +39,6 @@ if deplacementFait
 		//initialisation de la journée
 		if !setup
 		{
-			
-			ojeu.numeroJour ++;
 			init_day();
 			setup = true;
 		}

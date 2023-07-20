@@ -12,6 +12,7 @@ DESTROY,
 #macro TARZOOM_MAX 5
 #macro TPS_SECONDES_MIN 0.5
 timeLastScreen = 0;
+semiCrimeWidth = sprite_get_width(sprCrime)/2;
 
 //LISTER LES CRIMES
 indexsNouveauxCrimes = array_create(0);
@@ -66,8 +67,8 @@ if (nbNouveauxCrimes > 0)
 
 	startingXCam = ocam.xCam;
 	startingYCam = ocam.yCam;
-	tarXCam = getTarXCamPosWithPointZoom(ojeu.crime[indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]].x);
-	tarYCam = getTarYCamPosWithPointZoom(ojeu.crime[indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]].y);
+	tarXCam = getTarXCamPosWithPointZoom(ojeu.crime[indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]].x - semiCrimeWidth);
+	tarYCam = getTarYCamPosWithPointZoom(ojeu.crime[indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]].y - semiCrimeWidth);
 
 	ocam.tarTauxZoom = TARZOOM_MAX;
 
