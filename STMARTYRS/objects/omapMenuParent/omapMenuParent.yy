@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "META",
-    "path": "folders/OBJETS/CARTE/META.yy",
+    "name": "UNUSED",
+    "path": "folders/OBJETS/CARTE/UNUSED.yy",
   },
   "parentObjectId": null,
   "persistent": false,

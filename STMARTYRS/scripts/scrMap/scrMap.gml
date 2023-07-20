@@ -147,7 +147,7 @@ for (var i = 0; i < array_length(ojeu.crime);i++)
 {
 	var _tueurId = ojeu.crime[i].tueur;
 	var _tueurState = ojeu.tueur[_tueurId].etat
-	if ojeu.crime[i].appeared and _tueurState == KILLER_STATE.ACTIVE and ojeu.crime[i].date > ojeu.numeroJour
+	if ojeu.crime[i].appeared and _tueurState == KILLER_STATE.ACTIVE and ojeu.crime[i].date < ojeu.numeroJour
 	{
 		ocrime_instance_create(i);
 	}

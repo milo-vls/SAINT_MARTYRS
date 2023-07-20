@@ -9,8 +9,9 @@ DEZOOM,
 DESTROY,
 }
 
-#macro TARZOOM_MAX 3
-#macro TPS_SECONDES_MIN 4
+#macro TARZOOM_MAX 5
+#macro TPS_SECONDES_MIN 0.5
+timeLastScreen = 0;
 
 //LISTER LES CRIMES
 indexsNouveauxCrimes = array_create(0);
@@ -18,7 +19,7 @@ for (var i = 0; i < array_length(ojeu.crime);i++)
 {
 	var _tueurId = ojeu.crime[i].tueur;
 	var _tueurState = ojeu.tueur[_tueurId].etat
-	if !ojeu.crime[i].appeared and _tueurState == KILLER_STATE.ACTIVE and ojeu.crime[i].date > ojeu.numeroJour
+	if !ojeu.crime[i].appeared and _tueurState == KILLER_STATE.ACTIVE and ojeu.crime[i].date < ojeu.numeroJour
 	{
 		array_push(indexsNouveauxCrimes, i);
 	}
@@ -33,7 +34,7 @@ if (nbNouveauxCrimes > 0)
 	array_sort(indexsNouveauxCrimes, plusVieuxCrime);
 	
 	//REPARTIR LES DUREES DES DIFFERENTS FOCUS
-	dureeFocusTotale = (TPS_SECONDES_MIN + sqrt(nbNouveauxCrimes)) * room_speed;
+	dureeFocusTotale = (TPS_SECONDES_MIN + sqrt(nbNouveauxCrimes)/2) * room_speed;
 	listeDureesFocus = array_create(nbNouveauxCrimes);
 	channelFocusIndividuel = animcurve_get_channel(acCourbes, "cDuréeFocusSeul"); 
 	tpsFocusIndividuel = 0;
@@ -47,7 +48,8 @@ if (nbNouveauxCrimes > 0)
 		var _pastQuotientParcours = (i/nbNouveauxCrimes);
 		
 		listeDureesFocus[i] = (animcurve_channel_evaluate(_channelDureeFocus, _quotientParcours)  - animcurve_channel_evaluate(_channelDureeFocus, _pastQuotientParcours)) * dureeFocusTotale;
-		
+		show_debug_message("listeDureesFocus :")
+		show_debug_message(listeDureesFocus);
 		
 	}
 
@@ -69,7 +71,7 @@ if (nbNouveauxCrimes > 0)
 
 	ocam.tarTauxZoom = TARZOOM_MAX;
 
-
+	
 
 }
 else

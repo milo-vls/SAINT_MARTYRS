@@ -1,4 +1,8 @@
 
+show_debug_overlay(debug_mode);	
+
+
+
 #macro DEPTH_OJEU 0
 #macro DEPTH_TEXT 5
 

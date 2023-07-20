@@ -4,11 +4,13 @@ maj_meurtre();
 
 
 //-------MISE  A JOUR CARTE------//
-if !instance_exists(oDial) and ojeu.mapIsUpdated
+if !instance_exists(oDial) and !ojeu.mapIsUpdated
 {
 	ojeu.mapIsUpdated = true;
-	instance_create_depth(0, 0, 0, oMiseAJourCarte);
-	
+	if !instance_exists(oMiseAJourCarte)
+	{
+		instance_create_depth(0, 0, 0, oMiseAJourCarte);
+	}
 }
 
 
@@ -213,23 +215,6 @@ switch (currentMenu)
 	
 }
 
-
-//-----TENSE NIGHT-----//
-if ojeu.tenseNight
-{
-	//-----CALCUL NOMBRE DE TUEURS ACTIFS-----//
-	ojeu.nbTueurProcActifs =  maj_nb_tueur_proc();
-	//-----CALCUL TEMPS PASSÉ-----//
-	var _checkTimeRemaining = time_source_get_time_remaining(minuterieTenseNight);
-	minuterieTenseNightTimeSpent = currentNightDiff.dureeSeconde - _checkTimeRemaining ;
-	
-	//-----ENCLENCHEMENT GAME OVER------//
-	if ojeu.nbTueurProcActifs > currentNightDiff.nbTueursMax and (currentMenu != MAP_MENU.RETRY and currentMenu != MAP_MENU.GAME_OVER_QUIT)
-	{
-		 currentMenu = MAP_MENU.GAME_OVER;
-	}
-
-}
 
 
 //-----NOT TENSE NIGHT RELATED-------//
