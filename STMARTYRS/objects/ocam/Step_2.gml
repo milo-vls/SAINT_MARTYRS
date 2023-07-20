@@ -1,13 +1,13 @@
 if resetingPosition
 {
-	xCam = approach(xCam, 0, 20);
-	yCam = approach(yCam, 0, 20);
+	xCam = approach(xCam, 0, 80);
+	yCam = approach(yCam, 0, 80);
 	
 	if xCam == 0 and yCam == 0 then resetingPosition = false;
 	
 }
 
-TauxZoom = approach(TauxZoom, tarTauxZoom, 25)
+TauxZoom = approach(TauxZoom, tarTauxZoom, 0.3)
 
 
 

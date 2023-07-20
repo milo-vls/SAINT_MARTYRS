@@ -65,9 +65,11 @@ if instanceCrimeSurvole != noone
 }
 	
 //---COORDONNÉES---//
-
-drawCoordinates(10, hBarreSup + 10, room_width, room_height);	
-
+#macro COORDO_MAP_X 10
+#macro COORDO_MAP_Y hBarreSup + 10
+#macro MINIMIZED_SHOWN_DATE_Y COORDO_MAP_Y + 75
+drawCoordinates(COORDO_MAP_X, COORDO_MAP_Y, room_width, room_height);	
+drawDate(COORDO_MAP_X, MINIMIZED_SHOWN_DATE_Y);
 
 
 

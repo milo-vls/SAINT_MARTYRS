@@ -217,11 +217,7 @@ switch (currentMenu)
 
 
 
-//-----NOT TENSE NIGHT RELATED-------//
-else
-{
-	ojeu.nbTueurActifs = maj_nb_tueurs();
-}
+ ojeu.nbTueurActifs = maj_nb_tueurs();
 
 //DEBUG
 if keyboard_check(vk_down) then currentMenu = MAP_MENU.GAME_OVER;
