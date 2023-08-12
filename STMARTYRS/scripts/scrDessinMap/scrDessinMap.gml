@@ -36,7 +36,7 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 	
 	var _x1 = _xInstance;
 	var _y1 = _yInstance;
-	var _x2, _y2, _xLeft, _yTop;
+	var _x2, _y2, _xLeft, _yTop, _yBot;
 	
 	if _xInstance < GAME_WIDTH/2
 	{
@@ -53,17 +53,19 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 	{
 		 _y2 = _y1 + _hauteurVolet;
 		 _yTop = _y1;
+		 _yBot = _y2;
 	}
 	else
 	{
 		_y2 = _y1 - _hauteurVolet;
 		_yTop = _y2;
+		_yBot = _y1;
 	}
 	
 	
 	draw_set_alpha(1);
 	//draw_roundrect_color_ext(_x1, _y1, _x2, _y2, _marge, _marge, c_black, c_black, false);
-	draw_rectangle_color(_x1, _y1, _x2, _y2 + _marge, c_black, c_black, c_black, c_black, false);
+	draw_rectangle_color(_x1, _yTop - _marge/4 , _x2, _yBot + _marge/2, c_black, c_black, c_black, c_black, false);
 	
 	draw_set_color(c_white); draw_set_font(ftDial);draw_set_valign(fa_top); draw_set_halign(fa_left);
 	//DESSIN NOM ET PRENOM
@@ -80,11 +82,11 @@ function drawCrimeDetails(_crimeID, _xInstance, _yInstance)
 	var _xHeure = _xPrenom;
 	var _yHeure = _yDate + string_height("W")*0.75;
 	draw_text(_xHeure, _yHeure, heureStringFromDate(_crime.heure, _crime.minute));
-	
+ 	
 	//PORTRAIT
 	if _crime.portraitVictime != noone
 	{
-		var _largeurPortrait = _hauteurVoletMinimale/1 - _marge;
+		var _largeurPortrait = _hauteurVoletMinimale - _marge;
 		var _xPortrait = _xLeft + _largeurVolet - _marge/2 - _largeurPortrait;
 		var _yPortrait = _yTop + _marge/2;
 		//var _hauteurPortrait = sprite_get_height(_crime.portraitVictime) * (_largeurPortrait/sprite_get_width(_crime.portraitVictime));

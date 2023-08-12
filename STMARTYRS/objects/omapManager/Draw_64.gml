@@ -61,7 +61,7 @@ for(var i = 0 ; i < nbMapOption ; i ++)
 //---VOLET DÉTAIL CRIME---//
 if instanceCrimeSurvole != noone
 {
-	drawCrimeDetails(instanceCrimeSurvole.crimeID, instanceCrimeSurvole.x, instanceCrimeSurvole.y);
+	drawCrimeDetails(instanceCrimeSurvole.crimeID, mouse_x, mouse_y);
 }
 	
 //---COORDONNÉES---//
