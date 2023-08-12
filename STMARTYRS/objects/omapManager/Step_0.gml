@@ -1,8 +1,3 @@
-//----MISE A JOUR ÉLÉMENTS SUR LA CARTE---//
-maj_meurtre();
-
-
-
 //-------MISE  A JOUR CARTE------//
 if !instance_exists(oDial) and !ojeu.mapIsUpdated
 {

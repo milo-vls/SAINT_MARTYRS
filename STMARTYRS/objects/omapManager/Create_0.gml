@@ -13,16 +13,7 @@ enum MAP_MENU
 
 currentMenu = noone;
 
-#region tueur
-nbTueurProcActifs = 0;
-nbTueurProc = 0;
-nbCrimeProc = 0;
-tueurProc	= []		//liste tueurs procéduraux, reset chaque matin
-crimeProc	= []		//liste crimes procéduraux, reset chaque matin
 
-currentNightDiff = noone;
-
-#endregion
 
 #region OLD MENU USI
 //fond noir
@@ -51,12 +42,12 @@ backbuttonPressed = false;
 //demoHboxRot = 0;
 #endregion
 
-#region modif usi
+
+
+// ---- USI MODIFICATIONS -----//
 selectedUsi = noone;
 drawUsiModification = false;
-rotateHeld = false;
-outPressed = false;
-#endregion
+
 
 #region psc
 

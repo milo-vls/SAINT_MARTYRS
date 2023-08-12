@@ -35,9 +35,13 @@ tueur				= []		//liste tueurs scriptés
 crime				= []		//liste crimes scriptés 
 
 addScriptedKiller(startingDate);
+addScriptedKiller(startingDate);
 
 addScriptedCrime(0, "Milo Vilas", -1, false, 500, 600, 14, 10, sprPortraitVictimePlaceHolder);
-addScriptedCrime(0, "R.G.", -1, false, 800, 470, 14, 15);
+addScriptedCrime(0, "R.G.", 1, false, 800, 470, 14, 15);
+addScriptedCrime(0, "R.G.", 2, false, 850, 470, 14, 15);
+addScriptedCrime(0, "R.G.", 2, false, 900, 470, 14, 15);
+addScriptedCrime(0, "R.G.", 2, false, 950, 470, 14, 15);
 addScriptedCrime(0, "Clipper", -3, false, 360, 900, 14, 15);
 
 

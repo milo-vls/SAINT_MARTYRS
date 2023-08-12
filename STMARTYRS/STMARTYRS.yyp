@@ -502,6 +502,7 @@
     {"id":{"name":"P_FLOWER_POT_STAIRS","path":"rooms/P_FLOWER_POT_STAIRS/P_FLOWER_POT_STAIRS.yy",},},
     {"id":{"name":"P_Y_CROSSROAD_TO_DARK","path":"rooms/P_Y_CROSSROAD_TO_DARK/P_Y_CROSSROAD_TO_DARK.yy",},},
     {"id":{"name":"__scribble_get_anim_properties","path":"scripts/__scribble_get_anim_properties/__scribble_get_anim_properties.yy",},},
+    {"id":{"name":"scrInitNewCrimes","path":"scripts/scrInitNewCrimes/scrInitNewCrimes.yy",},},
     {"id":{"name":"scribble_font_delete","path":"scripts/scribble_font_delete/scribble_font_delete.yy",},},
     {"id":{"name":"sprEnglishFlag","path":"sprites/sprEnglishFlag/sprEnglishFlag.yy",},},
     {"id":{"name":"front_bench","path":"sprites/front_bench/front_bench.yy",},},

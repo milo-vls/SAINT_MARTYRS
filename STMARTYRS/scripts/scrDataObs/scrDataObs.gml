@@ -75,13 +75,15 @@ switch(ID)
 			{
 				obs(text("RECAP SANS CRIMES"));
 			}
-			if oMiseAJourCarte.nbNouveauxCrimes == 1
 			{
-				obs(text("RECAP UN CRIME"));
-			}
-			else
-			{
-				obs(text("RECAP CRIMES", oMiseAJourCarte.nbNouveauxCrimes));
+				if oMiseAJourCarte.nbNouveauxCrimes == 1
+				{
+					obs(text("RECAP UN CRIME"));
+				}
+				else
+				{
+					obs(text("RECAP CRIMES", oMiseAJourCarte.nbNouveauxCrimes));
+				}
 			}
 		}break;
 	#endregion

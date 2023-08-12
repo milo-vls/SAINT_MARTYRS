@@ -1,42 +1,32 @@
 
 if currentIndexIndexsCrimeFocus < nbNouveauxCrimes 
 {
-	if   !instance_exists(oDial)
+	if   !instance_exists(oDial) and !instance_exists(oGoToRoom)
 	{
-		ocrime_instance_create(indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]);
-	
+		if tpsFocusIndividuel == 0
+		{
+			ocrime_instance_create(indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]);
+		}
 		var _currentDuree = listeDureesFocus[currentIndexIndexsCrimeFocus]
 		var _quotientParcours = tpsFocusIndividuel/_currentDuree;
 		#macro CRIME_VISE ojeu.crime[indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]]
 
-		tpsFocusIndividuel ++;
-
-
-		ocam.xCam = startingXCam + ((tarXCam - startingXCam) * animcurve_channel_evaluate(channelFocusIndividuel, _quotientParcours));
-		ocam.yCam = startingYCam + ((tarYCam - startingYCam) * animcurve_channel_evaluate(channelFocusIndividuel, _quotientParcours));
-
-	
+		tpsFocusIndividuel ++;	
 	
 
 		if _quotientParcours >= 1
 		{
+			
+			if ojeu.tueur[ojeu.crime[indexsNouveauxCrimes[currentIndexIndexsCrimeFocus]].tueur].etat == KILLER_STATE.CAUGHT then initoMiseAJourCarte();
+						
 			currentIndexIndexsCrimeFocus ++;
 			tpsFocusIndividuel = 0;
-		
-			ocam.xCam = tarXCam;
-			ocam.yCam = tarYCam;
-			startingXCam = ocam.xCam;
-			startingYCam = ocam.yCam;
-		
-			if currentIndexIndexsCrimeFocus < nbNouveauxCrimes
-			{
-				tarXCam = getTarXCamPosWithPointZoom(CRIME_VISE.x - semiCrimeWidth);
-				tarYCam = getTarYCamPosWithPointZoom(CRIME_VISE.y - semiCrimeWidth);	
-			}
-
-		
+			
 		}
 	
+		
+
+		
 	}
 }
 else 
