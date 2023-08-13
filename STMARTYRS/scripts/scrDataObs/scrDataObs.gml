@@ -49,12 +49,15 @@ switch(ID)
 	#region CINÉMATIQUE
 		#region SCENE 1 & 2
 			case OBS_ID_TABLEAU_DE_NUIT:{
-				obs("Il fait déjà nuit.");
-				obs("Le rendez-vous est pour bientôt.");
-				obs("...");
-				obs("Je dois aller mettre mon uniforme.");
+				obs(text("SC1_OBS_END_1"));
+				obs(text("SC1_OBS_END_2"));
 			}break;
 			case OBS_ID_SANITAIRE:{
+				
+				obsText("SC1 OBS 1");
+				obs("...");
+				obsText("SC1 OBS 3")
+				/*
 				obs("...");
 				obs("C’est pas la mer à boire. Tu t’es investi et maintenant tu y es.");
 				obs("...", function(){oRefletBlaise.image_index = BLAISES_SMILING_FACE});
@@ -64,6 +67,7 @@ switch(ID)
 				obs("Bientôt l’heure, reste pas là trop longtemps à parler seul tu vas ficher la trouille à tes très chers futurs collègues.");
 				obs("...", function(){oRefletBlaise.image_index = BLAISES_NEUTRAL_FACE});
 				obs(" . . . ");
+				*/
 			}break;
 		#endregion
 	

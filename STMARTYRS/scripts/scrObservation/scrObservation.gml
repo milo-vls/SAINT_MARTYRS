@@ -8,6 +8,13 @@ function obs(_str, _function = noone)
 	nbPages ++;
 }
 
+
+function obsText(_obsID, _function = noone)
+{
+	obs(text(_obsID), _function);
+}
+
+
 function startObs(_obsID)
 {
 	if !instance_exists(oDial)
