@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Enzino",
-    "path": "folders/SPRITES/CHARACTERS/VILLE/Enzino.yy",
+    "name": "ENZINO",
+    "path": "folders/SPRITES/CHARACTERS/VILLE/ENZINO.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

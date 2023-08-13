@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "VICTIMS PORTRAIT",
-    "path": "folders/SPRITES/CHARACTERS/VICTIMS PORTRAIT.yy",
+    "path": "folders/SPRITES/UI/VICTIMS PORTRAIT.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
