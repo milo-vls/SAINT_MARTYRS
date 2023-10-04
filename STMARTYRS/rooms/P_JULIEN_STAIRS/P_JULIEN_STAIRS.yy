@@ -24,7 +24,7 @@
           ],"rotation":-82.476746,"scaleX":0.30981594,"scaleY":0.43077344,"x":1335.106,"y":1077.8525,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F3DC0E5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"propertyId":{"name":"destination","path":"objects/omoveArrow/omoveArrow.yy",},"value":"P_BLUR_DARK_TO_LIGHT",},
-          ],"rotation":138.64783,"scaleX":0.27789515,"scaleY":0.17572622,"x":918.92975,"y":644.1759,},
+          ],"rotation":138.64783,"scaleX":0.27789515,"scaleY":0.17572622,"x":893.9298,"y":-93.8241,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"fx2","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"npc","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},

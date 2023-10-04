@@ -17,9 +17,9 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"arrow","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F1ED8F3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"propertyId":{"name":"destination","path":"objects/omoveArrow/omoveArrow.yy",},"value":"P_BLUR_DARK_TO_LIGHT",},
-          ],"rotation":-143.8676,"scaleX":0.42024538,"scaleY":0.6206897,"x":887.0,"y":1018.38403,},
+          ],"rotation":-143.8676,"scaleX":0.42024538,"scaleY":0.6206897,"x":889.0,"y":1033.384,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_E8E1E0A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"propertyId":{"name":"destination","path":"objects/omoveArrow/omoveArrow.yy",},"value":"P_PLANT_V_CROSSROADS",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"propertyId":{"name":"destination","path":"objects/omoveArrow/omoveArrow.yy",},"value":"P_STONE_AND_YELLOW_WALL",},
           ],"rotation":106.679,"scaleX":0.19631903,"scaleY":0.27394637,"x":1454.4116,"y":445.49738,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"fx2","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
@@ -28,8 +28,8 @@
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"dilapidated_hallway","path":"sprites/dilapidated_hallway/dilapidated_hallway.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "V1",
-    "path": "folders/PIECES/EXPLORABLE/V1.yy",
+    "name": "GROUPE MARTINE",
+    "path": "folders/PIECES/EXPLORABLE/GROUPE MARTINE.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

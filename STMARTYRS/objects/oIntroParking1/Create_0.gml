@@ -1,5 +1,6 @@
 enum INTRO_STATE
 {
+	SANITAIRES,
 	BLACK_SCREEN,
 	BUS_DRIVING_BGS,
 	WAIT_BEFORE_STOP,
@@ -9,12 +10,13 @@ enum INTRO_STATE
 	WAIT_BEFORE_TITLE,
 	TITLE_SHOWN,
 	TRAVEL_TO,
+	SEARCH_FOR_COMMISSARIAT,
 	GENDARMERIE,
 	TUTO_MAP,
 	
 }
 
-currentIntroState = 9;
+currentIntroState = 0;
 
 
 col1Rec = c_black;

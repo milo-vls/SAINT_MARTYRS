@@ -1,6 +1,14 @@
 draw_set_alpha(1);
 switch(currentIntroState)
 {
+case INTRO_STATE.SANITAIRES :{
+	if room == P_SANITAIRES and !instance_exists(oObservation)
+	{
+		 if !instance_exists(oGoToRoom) GoToRoom(P_PARKING_1);
+		 currentIntroState = INTRO_STATE.BLACK_SCREEN;
+	}
+}break;
+	
 case INTRO_STATE.BLACK_SCREEN :{
 	changeBackgroundMusic(noone);
 	draw_rectangle_color(0, 0, GAME_WIDTH, GAME_HEIGHT, col1Rec, col2Rec, col3Rec, col4Rec, false);
@@ -71,15 +79,12 @@ case INTRO_STATE.TITLE_SHOWN:{
 case INTRO_STATE.TRAVEL_TO:{
 	if room == P_TABLEAU_DE_NUIT and !instance_exists(oObservation)
 	{
-		GoToRoom(P_SANITAIRES);
-		currentIntroState = INTRO_STATE.GENDARMERIE;
+		GoToRoom(P_DILAPILATED_HALLWAY);
+		currentIntroState = INTRO_STATE.SEARCH_FOR_COMMISSARIAT;
 	}
 }break;
 case INTRO_STATE.GENDARMERIE:{
-	if room == P_SANITAIRES and !instance_exists(oObservation)
-	{
-		 if !instance_exists(oGoToRoom) GoToRoom(P_CORRIDOR);
-	}
+
 	if (!instance_exists(oGoToRoom) and !instance_exists(oDial))
 	{
 		currentIntroState = INTRO_STATE.TUTO_MAP;

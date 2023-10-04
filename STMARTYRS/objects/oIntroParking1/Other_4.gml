@@ -11,10 +11,17 @@ switch room
 		startDial(DIAL_ID_SCENE_3);
 	}break;
 	case pcarte : {
+		if currentIntroState == INTRO_STATE.SEARCH_FOR_COMMISSARIAT
+		{
+			currentIntroState = INTRO_STATE.GENDARMERIE
+			GoToRoom(P_CORRIDOR);
+		}
+		currentIntroState = INTRO_STATE.GENDARMERIE
 		if tutoMapState == 0
 		{
 			startDial(DIAL_ID_SCENE_4, false);
 			tutoMapState ++;
 		}
+	
 	}
 }

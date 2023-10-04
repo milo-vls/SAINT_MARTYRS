@@ -18,10 +18,10 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"arrow","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D848AA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"propertyId":{"name":"destination","path":"objects/omoveArrow/omoveArrow.yy",},"value":"P_URBAN_X_CROSSROADS",},
-          ],"rotation":-93.24897,"scaleX":0.28832874,"scaleY":0.41956073,"x":1054.2854,"y":1074.4834,},
+          ],"rotation":-78.81508,"scaleX":0.28832874,"scaleY":0.41956073,"x":1204.3347,"y":1068.4834,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39338282","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"propertyId":{"name":"destination","path":"objects/omoveArrow/omoveArrow.yy",},"value":"P_RUE_BLUE",},
-          ],"rotation":91.429405,"scaleX":0.17352149,"scaleY":0.17352149,"x":1039.0652,"y":591.6315,},
+          ],"rotation":134.10297,"scaleX":0.15818405,"scaleY":0.1945943,"x":1032.968,"y":616.7875,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"fx2","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"npc","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
@@ -31,8 +31,8 @@
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"fake_rue_rouge","path":"sprites/fake_rue_rouge/fake_rue_rouge.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "V2",
-    "path": "folders/PIECES/EXPLORABLE/V2.yy",
+    "name": "GROUPE MARTINE",
+    "path": "folders/PIECES/EXPLORABLE/GROUPE MARTINE.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

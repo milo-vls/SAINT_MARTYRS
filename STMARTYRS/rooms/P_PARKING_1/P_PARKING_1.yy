@@ -7,13 +7,11 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_3837FAE","path":"rooms/P_PARKING_1/P_PARKING_1.yy",},
     {"name":"inst_36830A59","path":"rooms/P_PARKING_1/P_PARKING_1.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"meta","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3837FAE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oIntroParking1","path":"objects/oIntroParking1/oIntroParking1.yy",},"properties":[],"rotation":0.0,"scaleX":7.240368,"scaleY":7.4375,"x":662.0,"y":-119.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_36830A59","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"omoveArrow","path":"objects/omoveArrow/omoveArrow.yy",},"propertyId":{"name":"destination","path":"objects/omoveArrow/omoveArrow.yy",},"value":"P_PARKING_2",},
           ],"rotation":0.0,"scaleX":0.22392638,"scaleY":0.15900382,"x":1892.0,"y":587.8888,},

@@ -5,7 +5,7 @@
 global.alphaBlackScreen = 0
 global.blackScreen = false;
 global.lastRoom = noone;
-global.startingRoom = P_PARKING_1;
+global.startingRoom = P_SANITAIRES;
 global.canPause = false;
 
 randomize();
