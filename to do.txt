@@ -1,6 +1,12 @@
-A FAIRE		écrire le .txt première affaire
+FAIT		initialiser et structurer un ensemble de feuilles de calcul pour le jeu
+FAIT		écrire le .txt première affaire
 A FAIRE		écrire le script de la première affaire
 A FAIRE		concevoir Melvin
 A FAIRE 	sous traiter le curseur
 A FAIRE		finir de concevoir le navigateur web
 A FAIRE		plannifier la réalisation du navigateur web
+A FAIRE		coder coordo.sm
+A FAIRE 	retirer les variables tueurs et patterns du code
+A FAIRE		fonction permettant d'attribuer aux membres de la liste crime s'il sont premiers d'une affaire.
+A FAIRE		écrire le .txt de la deuxième affaire
+A FAIRE		trouver un twist à l'aide

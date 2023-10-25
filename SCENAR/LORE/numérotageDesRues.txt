@@ -1,0 +1,1 @@
+LEs rues sont numérotées dans l'ordre de l'origine de la rue, cest-à-dire le point le plus au nord/ouest.
