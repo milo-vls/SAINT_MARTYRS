@@ -1,3 +1,51 @@
+// Feather disable GM1009
+function Crime() constructor
+{
+	/**
+	 * @param {struct.Crime} _crime
+	 * @returns {real} 1 if true, -1 if false, 0 if simultaneous
+	 */
+	static is_more_recent_than = function(_crime)
+	{
+		if self.day_number > _crime.day_number return 1;
+		if self.day_number < _crime.day_number return -1;
+		if self.hour > _crime.hour return 1;
+		if self.hour < _crime.hour return -1;
+		if self.minute > _crime.minute return 1;
+		if self.minute < _crime.minute return -1;
+		return 0;
+	}
+	
+	
+	
+	/**
+	 * @param {struct.crime} _crime Description
+	 * @returns {real} Description
+	 */
+	static is_older_than = function(_crime)
+	{
+		var _is_more_recent = self.is_more_recent_than(_crime);
+		if _is_more_recent == 0 return 0;
+		if _is_more_recent == 1 return -1;
+		return 1;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 /// @desc Function Description
 /// @param {real} _id_case Description
 /// @param {real} _id_char_victim Description

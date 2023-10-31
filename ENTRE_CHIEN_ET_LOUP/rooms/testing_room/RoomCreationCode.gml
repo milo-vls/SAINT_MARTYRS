@@ -1,0 +1,1 @@
+init_data_from_csvs();

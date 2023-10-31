@@ -1,16 +1,15 @@
 
-/// @desc  import alla parameters set in the included CSV files
+
+/// @desc  import all the parameters set in the included CSV files
 function init_data_from_csvs()
 {
-	global.street_types = [];
-	global.characters = [];
-	global.phone_numbers = [];
-	global.streets = [];
-	global.addresses = [];
-	global.cases = [];
-	global.crime = [];
-	
-	global.street_types = ds_grid_to_array(load_csv("street_types.csv"));
-	global.phone_numbers = ds_grid_to_array(load_csv("phone_numbers.csv"));
-	
+
+	global.street_types = csv_to_1d_array("street_types.csv");
+	global.characters = csv_to_structs_of_constructor("characters.csv", Character);
+	global.phone_numbers = csv_to_structs_of_constructor("phone_numbers.csv", PhoneNumber);
+	global.streets = csv_to_structs_of_constructor("streets.csv", Street);
+	global.addresses = csv_to_structs_of_constructor("addresses.csv", Address);
+	global.cases = csv_to_structs_of_constructor("cases.csv", Case);
+	global.crimes = csv_to_structs_of_constructor("crimes.csv",Crime);
+
 }
