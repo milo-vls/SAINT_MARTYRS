@@ -12,4 +12,8 @@ function init_data_from_csvs()
 	global.cases = csv_to_structs_of_constructor("cases.csv", Case);
 	global.crimes = csv_to_structs_of_constructor("crimes.csv",Crime);
 
+	enum LANGUAGES{FR, EN}
+	global.language = LANGUAGES.FR;
+	global.map_texts = csv_to_map_of_arrays("texts.csv");
+	
 }

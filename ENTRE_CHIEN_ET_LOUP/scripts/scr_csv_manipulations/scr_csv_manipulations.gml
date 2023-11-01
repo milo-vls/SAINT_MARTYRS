@@ -54,3 +54,46 @@ function csv_to_structs_of_constructor(_file_name, _constructor)
 	 return _structs;
 	 
 }
+
+
+
+
+function csv_to_map_of_arrays(_file_name)
+{
+	var _ds_grid = load_csv(_file_name);
+	if _ds_grid == -1
+	{
+		show_error("The file " + _file_name +" have not been found", 1);	
+	}
+	
+	var _ds_map_to_return = ds_map_create();
+	var _ds_grid_height = ds_grid_height(_ds_grid);
+	var _ds_grid_width = ds_grid_width(_ds_grid);
+	
+	for (var _i = 0; _i < _ds_grid_height; _i ++)
+	{
+		ds_map_add(_ds_map_to_return, _ds_grid[# 0, _i], [_ds_grid[# 1, _i], _ds_grid[# 2, _i]]);
+	}
+	
+	return _ds_map_to_return;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

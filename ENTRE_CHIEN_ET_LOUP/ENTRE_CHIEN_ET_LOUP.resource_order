@@ -2,15 +2,18 @@
   "FolderOrderSettings": [
     {"name":"SCRIPTS","order":1,"path":"folders/SCRIPTS.yy",},
     {"name":"CLASSES","order":4,"path":"folders/SCRIPTS/CLASSES.yy",},
-    {"name":"SPRITES","order":3,"path":"folders/SPRITES.yy",},
     {"name":"FROM CSVs","order":8,"path":"folders/SCRIPTS/CLASSES/FROM CSVs.yy",},
+    {"name":"ROOMS","order":2,"path":"folders/ROOMS.yy",},
+    {"name":"OBJECTS","order":3,"path":"folders/OBJECTS.yy",},
+    {"name":"CSV","order":5,"path":"folders/SCRIPTS/CSV.yy",},
+    {"name":"TEXT","order":6,"path":"folders/SCRIPTS/TEXT.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"scr_Crime","order":3,"path":"scripts/scr_Crime/scr_Crime.yy",},
     {"name":"scr_Street","order":5,"path":"scripts/scr_Street/scr_Street.yy",},
     {"name":"scr_PhoneNumber","order":4,"path":"scripts/scr_PhoneNumber/scr_PhoneNumber.yy",},
-    {"name":"scr_csv_manipulations","order":1,"path":"scripts/scr_csv_manipulations/scr_csv_manipulations.yy",},
     {"name":"scr_Case","order":1,"path":"scripts/scr_Case/scr_Case.yy",},
     {"name":"scr_Character","order":2,"path":"scripts/scr_Character/scr_Character.yy",},
+    {"name":"scr_init_data_from_csvs","order":1,"path":"scripts/scr_init_data_from_csvs/scr_init_data_from_csvs.yy",},
   ],
 }

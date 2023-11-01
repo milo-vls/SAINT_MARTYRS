@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_csv_manipulations",
+  "name": "scr_text_translation",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "CSV",
-    "path": "folders/SCRIPTS/CSV.yy",
+    "name": "TEXT",
+    "path": "folders/SCRIPTS/TEXT.yy",
   },
 }
