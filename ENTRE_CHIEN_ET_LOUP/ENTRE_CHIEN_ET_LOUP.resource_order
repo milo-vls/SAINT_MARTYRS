@@ -1,10 +1,5 @@
 {
   "FolderOrderSettings": [
-    {"name":"ROOMS","order":1,"path":"folders/ROOMS.yy",},
-    {"name":"TITLE SCREEN","order":2,"path":"folders/ROOMS/TITLE SCREEN.yy",},
-    {"name":"FROM CSVs","order":8,"path":"folders/SCRIPTS/CLASSES/FROM CSVs.yy",},
-    {"name":"GUI","order":9,"path":"folders/SCRIPTS/CLASSES/GUI.yy",},
-    {"name":"CSV","order":1,"path":"folders/SCRIPTS/CSV.yy",},
     {"name":"GUI","order":2,"path":"folders/GUI.yy",},
     {"name":"TEXT","order":1,"path":"folders/GUI/TEXT.yy",},
     {"name":"SCRIBBLE","order":1,"path":"folders/GUI/TEXT/SCRIBBLE.yy",},
@@ -22,6 +17,11 @@
     {"name":"Miscellaneous","order":7,"path":"folders/GUI/TEXT/SCRIBBLE/Miscellaneous.yy",},
     {"name":"Quick Functions","order":8,"path":"folders/GUI/TEXT/SCRIBBLE/Quick Functions.yy",},
     {"name":"Superfonts","order":9,"path":"folders/GUI/TEXT/SCRIBBLE/Superfonts.yy",},
+    {"name":"ROOMS","order":1,"path":"folders/ROOMS.yy",},
+    {"name":"TITLE SCREEN","order":2,"path":"folders/ROOMS/TITLE SCREEN.yy",},
+    {"name":"FROM CSVs","order":8,"path":"folders/SCRIPTS/CLASSES/FROM CSVs.yy",},
+    {"name":"GUI","order":9,"path":"folders/SCRIPTS/CLASSES/GUI.yy",},
+    {"name":"CSV","order":1,"path":"folders/SCRIPTS/CSV.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"scribble_font_force_bilinear_filtering","order":8,"path":"scripts/scribble_font_force_bilinear_filtering/scribble_font_force_bilinear_filtering.yy",},
