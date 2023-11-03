@@ -24,19 +24,30 @@ function TextOptionsMenu( _options, _guide_line, _priority, _room_presence = roo
 		var _y_starting_point = guide_line.get_starting_y();
 		var _width_offset = guide_line.get_width() / _nb_options;
 		var _height_offset = guide_line.get_height() / _nb_options;
-		var _x_menu_option, _y_menu_option;
 	
 		for (var _i = 0; _i < _nb_options; _i ++)
 		{
-			_x_menu_option = _x_starting_point + _width_offset * _i;
-			_y_menu_option = _height_offset/2 + _y_starting_point + _height_offset * _i;
+			options[_i].x = _x_starting_point + _width_offset * _i;
+			options[_i].y = _height_offset/2 + _y_starting_point + _height_offset * _i;
 			if options[_i].is_mouse_over()
 			{
-				options[_i].scribble_text.blend(c_yellow).draw(_x_menu_option, _y_menu_option);
-				
+				options[_i].scribble_text.blend(c_yellow).draw(options[_i].x, options[_i].y);
 			}
-			options[_i].scribble_text.draw(_x_menu_option, _y_menu_option);
+			else
+			{
+				options[_i].scribble_text.blend(c_white).draw(options[_i].x, options[_i].y);
+			}
 		}
 	}
-	
+	activity = function()
+	{
+		var _nb_options = array_length(options);
+		for (var _i = 0; _i < _nb_options; _i ++)
+		{
+			if options[_i].is_clicked() 
+			{
+				options[_i].function_when_clicked();
+			}
+		}
+	}
 }

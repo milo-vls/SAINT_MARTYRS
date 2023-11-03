@@ -25,6 +25,7 @@ function rm_title_screen_init()
 																													0,
 																													room,
 																													true,
-																													false
-																													))
+																													false)
+	);
+	
 }

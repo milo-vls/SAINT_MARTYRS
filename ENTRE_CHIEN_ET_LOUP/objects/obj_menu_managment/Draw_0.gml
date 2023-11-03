@@ -15,5 +15,5 @@ for (var _i = 0; _i < _menus_length; _i ++)
 
 if _highest_priority_menu_index > -1
 {
-
+	menus[_highest_priority_menu_index].activity();
 }

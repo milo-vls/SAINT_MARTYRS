@@ -6,7 +6,8 @@
     {"name":"FROM CSVs","order":8,"path":"folders/SCRIPTS/CLASSES/FROM CSVs.yy",},
     {"name":"GUI","order":9,"path":"folders/SCRIPTS/CLASSES/GUI.yy",},
     {"name":"CSV","order":1,"path":"folders/SCRIPTS/CSV.yy",},
-    {"name":"TEXT","order":3,"path":"folders/SCRIPTS/TEXT.yy",},
+    {"name":"ROOM INITIALISATION","order":3,"path":"folders/SCRIPTS/ROOM INITIALISATION.yy",},
+    {"name":"TEXT","order":2,"path":"folders/SCRIPTS/TEXT.yy",},
     {"name":"SCRIBBLE","order":1,"path":"folders/SCRIPTS/TEXT/SCRIBBLE.yy",},
     {"name":"(System - don't call these functions)","order":1,"path":"folders/SCRIPTS/TEXT/SCRIBBLE/(System - don't call these functions).yy",},
     {"name":"Classes","order":1,"path":"folders/SCRIPTS/TEXT/SCRIBBLE/(System - don't call these functions)/Classes.yy",},
@@ -22,7 +23,7 @@
     {"name":"Miscellaneous","order":7,"path":"folders/SCRIPTS/TEXT/SCRIBBLE/Miscellaneous.yy",},
     {"name":"Quick Functions","order":8,"path":"folders/SCRIPTS/TEXT/SCRIBBLE/Quick Functions.yy",},
     {"name":"Superfonts","order":9,"path":"folders/SCRIPTS/TEXT/SCRIBBLE/Superfonts.yy",},
-    {"name":"ROOM INITIALISATION","order":4,"path":"folders/SCRIPTS/ROOM INITIALISATION.yy",},
+    {"name":"INPUTS","order":4,"path":"folders/SCRIPTS/INPUTS.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"scribble_font_force_bilinear_filtering","order":8,"path":"scripts/scribble_font_force_bilinear_filtering/scribble_font_force_bilinear_filtering.yy",},
