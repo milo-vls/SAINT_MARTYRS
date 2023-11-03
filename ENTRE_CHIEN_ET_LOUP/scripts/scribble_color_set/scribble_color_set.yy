@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Colours",
-    "path": "folders/GUI/TEXT/SCRIBBLE/Colours.yy",
+    "path": "folders/SCRIPTS/TEXT/SCRIBBLE/Colours.yy",
   },
 }

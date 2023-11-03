@@ -120,7 +120,7 @@
   "maintainGms1Font": false,
   "parent": {
     "name": "(System - don't call these functions)",
-    "path": "folders/GUI/TEXT/SCRIBBLE/(System - don't call these functions).yy",
+    "path": "folders/SCRIPTS/TEXT/SCRIBBLE/(System - don't call these functions).yy",
   },
   "pointRounding": 0,
   "ranges": [

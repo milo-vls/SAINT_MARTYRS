@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "SCRIBBLE",
-    "path": "folders/GUI/TEXT/SCRIBBLE.yy",
+    "path": "folders/SCRIPTS/TEXT/SCRIBBLE.yy",
   },
 }

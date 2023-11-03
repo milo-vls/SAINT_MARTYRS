@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_show_menu_options",
+  "name": "scr_Menu",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
     "name": "GUI",
-    "path": "folders/GUI.yy",
+    "path": "folders/SCRIPTS/CLASSES/GUI.yy",
   },
 }

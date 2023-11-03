@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "TEXT",
-    "path": "folders/GUI/TEXT.yy",
+    "path": "folders/SCRIPTS/TEXT.yy",
   },
 }

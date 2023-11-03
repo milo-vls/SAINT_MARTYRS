@@ -1,0 +1,1 @@
+rm_title_screen_init();

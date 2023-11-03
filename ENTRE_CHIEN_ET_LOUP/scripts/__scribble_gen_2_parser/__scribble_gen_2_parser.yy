@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Generator",
-    "path": "folders/GUI/TEXT/SCRIBBLE/(System - don't call these functions)/Generator.yy",
+    "path": "folders/SCRIPTS/TEXT/SCRIBBLE/(System - don't call these functions)/Generator.yy",
   },
 }
