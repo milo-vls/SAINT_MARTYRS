@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "ROOM INITIALISATION",
-    "path": "folders/SCRIPTS/ROOM INITIALISATION.yy",
+    "name": "INITIALISATIONS",
+    "path": "folders/SCRIPTS/ROOM MANAGMENT/INITIALISATIONS.yy",
   },
 }

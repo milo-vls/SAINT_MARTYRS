@@ -17,8 +17,8 @@ function TextMenuOption(_text_id, _function_when_clicked) constructor
 	{
 		if pressed and left_click_released()
 		{
-			return true;
 			pressed = false;
+			return true;
 		}
 		
 		if is_mouse_over() and left_click_pressed()

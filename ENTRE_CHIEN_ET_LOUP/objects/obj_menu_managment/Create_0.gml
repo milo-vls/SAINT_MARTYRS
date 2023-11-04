@@ -16,7 +16,7 @@ add_menu = function(_menu)
 	
 	for (var _i = 0; _i < _menus_length; _i ++)
 	{
-		if _menu.priority < menus[_i].priority
+		if _menu.priority < obj_menu_managment.menus[_i].priority
 		{
 			array_insert(menus, _i, _menu);
 			return;

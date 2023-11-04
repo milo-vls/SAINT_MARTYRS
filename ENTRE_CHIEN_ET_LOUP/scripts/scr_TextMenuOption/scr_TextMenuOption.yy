@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "GUI",
-    "path": "folders/SCRIPTS/CLASSES/GUI.yy",
+    "name": "TEXT OPTIONS MENU",
+    "path": "folders/SCRIPTS/CLASSES/GUI/MENU TYPES/TEXT OPTIONS MENU.yy",
   },
 }
