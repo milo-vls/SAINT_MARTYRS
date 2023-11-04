@@ -26,6 +26,7 @@
     {"name":"Miscellaneous","order":7,"path":"folders/SCRIPTS/TEXT/SCRIBBLE/Miscellaneous.yy",},
     {"name":"Quick Functions","order":8,"path":"folders/SCRIPTS/TEXT/SCRIBBLE/Quick Functions.yy",},
     {"name":"Superfonts","order":9,"path":"folders/SCRIPTS/TEXT/SCRIBBLE/Superfonts.yy",},
+    {"name":"ROOM TRANSITION","order":1,"path":"folders/SCRIPTS/CLASSES/GUI/MENU TYPES/ROOM TRANSITION.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"scribble_font_force_bilinear_filtering","order":8,"path":"scripts/scribble_font_force_bilinear_filtering/scribble_font_force_bilinear_filtering.yy",},

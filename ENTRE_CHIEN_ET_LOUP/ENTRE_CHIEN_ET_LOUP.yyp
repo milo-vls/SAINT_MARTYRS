@@ -40,6 +40,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Miscellaneous","folderPath":"folders/SCRIPTS/TEXT/SCRIBBLE/Miscellaneous.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Quick Functions","folderPath":"folders/SCRIPTS/TEXT/SCRIBBLE/Quick Functions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Superfonts","folderPath":"folders/SCRIPTS/TEXT/SCRIBBLE/Superfonts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ROOM TRANSITION","folderPath":"folders/SCRIPTS/CLASSES/GUI/MENU TYPES/ROOM TRANSITION.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"addresses.csv","CopyToMask":-1,"filePath":"datafiles",},
@@ -75,6 +76,7 @@
     {"id":{"name":"scribble_font_bake_outline_8dir_2px","path":"scripts/scribble_font_bake_outline_8dir_2px/scribble_font_bake_outline_8dir_2px.yy",},},
     {"id":{"name":"__scribble_get_buffer_b","path":"scripts/__scribble_get_buffer_b/__scribble_get_buffer_b.yy",},},
     {"id":{"name":"scribble_font_add_all","path":"scripts/scribble_font_add_all/scribble_font_add_all.yy",},},
+    {"id":{"name":"scr_RoomTransition","path":"scripts/scr_RoomTransition/scr_RoomTransition.yy",},},
     {"id":{"name":"scr_Crime","path":"scripts/scr_Crime/scr_Crime.yy",},},
     {"id":{"name":"__scribble_effects_maps_initialize","path":"scripts/__scribble_effects_maps_initialize/__scribble_effects_maps_initialize.yy",},},
     {"id":{"name":"scr_Menu","path":"scripts/scr_Menu/scr_Menu.yy",},},

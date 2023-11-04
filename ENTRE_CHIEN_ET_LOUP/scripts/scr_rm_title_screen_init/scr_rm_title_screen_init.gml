@@ -6,9 +6,9 @@ function rm_title_screen_init()
 	{
 	
 	}
-	var _start = function()
+	var _start = function(_id_menu)
 	{
-	
+		_id_menu.end_reached = true;
 	}
 	var _quit = function()
 	{

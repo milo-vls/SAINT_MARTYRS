@@ -1,6 +1,5 @@
-// Les actifs du script ont changé pour v2.3.0 Voir
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 pour plus d’informations
-function change_room()
+function change_room(_room_destination)
 {
+	var _room_transition = new RoomTransition(_room_destination);
 	
 }

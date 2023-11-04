@@ -46,7 +46,7 @@ function TextOptionsMenu( _options, _guide_line, _priority, _room_presence = roo
 		{
 			if options[_i].is_clicked() 
 			{
-				options[_i].function_when_clicked();
+				options[_i].function_when_clicked(self);
 			}
 		}
 	}

@@ -11,23 +11,24 @@ function TextMenuOption(_text_id, _function_when_clicked) constructor
 	
 	is_mouse_over = function()
 	{
-		return point_in_rectangle(mouse_x, mouse_y,  scribble_text.get_left(x), scribble_text.get_top(y), scribble_text.get_right(x), scribble_text.get_bottom(y));
+		return point_in_rectangle(mouse_x, mouse_y,  self.scribble_text.get_left(x), self.scribble_text.get_top(y), self.scribble_text.get_right(x), self.scribble_text.get_bottom(y));
 	}
 	is_clicked = function()
 	{
-		if pressed and left_click_released()
+		// Feather disable once GM1011
+		if self.pressed and left_click_released()
 		{
-			pressed = false;
+			self.pressed = false;
 			return true;
 		}
 		
-		if is_mouse_over() and left_click_pressed()
+		if self.is_mouse_over() and left_click_pressed()
 		{
-			pressed = true;	
+			self.pressed = true;	
 		}
-		if !is_mouse_over() or !left_click()
+		if !self.is_mouse_over() or !left_click()
 		{
-			pressed = false;
+			self.pressed = false;
 		}
 
 		return false;
