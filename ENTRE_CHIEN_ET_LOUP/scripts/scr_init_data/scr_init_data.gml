@@ -1,4 +1,5 @@
-
+#macro GAME_WIDTH 1920
+#macro GAME_HEIGHT 1080
 
 /// @desc  import all the parameters set in the included CSV files
 function init_data_from_csvs()

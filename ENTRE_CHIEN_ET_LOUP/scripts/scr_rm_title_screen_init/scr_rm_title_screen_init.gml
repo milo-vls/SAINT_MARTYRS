@@ -4,7 +4,7 @@ function rm_title_screen_init()
 {
 	var _new_start = function()
 	{
-	
+		change_room(rm_dev);
 	}
 	var _start = function(_id_menu)
 	{

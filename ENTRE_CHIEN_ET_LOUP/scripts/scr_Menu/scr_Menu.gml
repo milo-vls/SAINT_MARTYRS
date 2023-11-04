@@ -12,7 +12,8 @@ function Menu(_priority, _room_presence = room, _is_persistent = false, _end_wit
 	room_presence = _room_presence;
 	is_persistent = _is_persistent;//shall it be active outside of its room_presence ?
 	end_with_room = _end_with_room;//shall it be deleted at the end of the room
-	parallelism = _parallelism;
+	parallelism = _parallelism;//ignore priority and so is always active
+	
 	end_reached = false;
 	
 	

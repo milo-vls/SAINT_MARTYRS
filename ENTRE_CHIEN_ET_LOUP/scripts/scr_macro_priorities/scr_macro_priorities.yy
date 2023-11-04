@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_init_data_from_csvs",
+  "name": "scr_macro_priorities",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "CSV",
-    "path": "folders/SCRIPTS/CSV.yy",
+    "name": "MENU TYPES",
+    "path": "folders/SCRIPTS/CLASSES/GUI/MENU TYPES.yy",
   },
 }
