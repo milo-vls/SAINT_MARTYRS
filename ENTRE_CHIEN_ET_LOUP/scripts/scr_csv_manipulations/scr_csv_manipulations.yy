@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "CSV",
-    "path": "folders/SCRIPTS/CSV.yy",
+    "path": "folders/SCRIPTS/DATAS/CSV.yy",
   },
 }

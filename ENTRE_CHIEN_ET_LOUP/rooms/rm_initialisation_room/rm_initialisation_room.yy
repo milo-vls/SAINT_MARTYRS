@@ -1,13 +1,13 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "rm_first_room",
-  "creationCodeFile": "rooms/rm_first_room/RoomCreationCode.gml",
+  "name": "rm_initialisation_room",
+  "creationCodeFile": "rooms/rm_initialisation_room/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_739A4A05","path":"rooms/rm_first_room/rm_first_room.yy",},
+    {"name":"inst_739A4A05","path":"rooms/rm_initialisation_room/rm_initialisation_room.yy",},
   ],
   "isDnd": false,
   "layers": [

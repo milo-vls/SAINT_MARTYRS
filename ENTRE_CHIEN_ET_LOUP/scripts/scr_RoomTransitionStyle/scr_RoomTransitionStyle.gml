@@ -7,6 +7,11 @@ enum ROOM_TRANSITION_STYLES
 	SLIDE_RIGHT_LEFT,*/
 }
 
+/**
+ * Function Description
+ * @param {constant.ROOM_TRANSITION_STYLES} _room_transition_style Description
+ * @param {constant.color} [_color]=c_black Description
+ */
 function RoomTransitionStyle(_room_transition_style, _color = c_black) constructor 
 {
 	room_transition_style = _room_transition_style;
