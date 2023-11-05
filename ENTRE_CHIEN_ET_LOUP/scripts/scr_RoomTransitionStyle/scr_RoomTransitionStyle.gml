@@ -9,7 +9,7 @@ enum ROOM_TRANSITION_STYLES
 
 /**
  * Function Description
- * @param {constant.ROOM_TRANSITION_STYLES} _room_transition_style Description
+ * @param {Constant.ROOM_TRANSITION_STYLES} _room_transition_style Description
  * @param {constant.color} [_color]=c_black Description
  */
 function RoomTransitionStyle(_room_transition_style, _color = c_black) constructor 

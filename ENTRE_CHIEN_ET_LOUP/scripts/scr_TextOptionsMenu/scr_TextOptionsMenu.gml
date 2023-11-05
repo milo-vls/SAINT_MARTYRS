@@ -10,9 +10,11 @@
  * @param {real} _priority Description
  * @param {asset.GMRoom} [_room_presence]=room Description
  * @param {bool} [_end_with_room]=true Description
- * @param {bool} [_is_persistent]=false Description
+ * @param {bool} [_is_persistent]=false 
+ * @param {bool} [_parallelism]=false 
+ * @param {real} [_channel]=-1
  */
-function TextOptionsMenu( _options, _guide_line, _priority, _room_presence = room, _end_with_room = true, _is_persistent = false) : Menu(_priority, _room_presence, _is_persistent, _end_with_room) constructor
+function TextOptionsMenu( _options, _guide_line, _priority, _room_presence = room, _end_with_room = true, _is_persistent = false, _parallelism = false, _channel = -1) : Menu(_priority, _room_presence, _is_persistent, _end_with_room, _parallelism, _channel) constructor
 {
 	options = _options;
 	guide_line = _guide_line

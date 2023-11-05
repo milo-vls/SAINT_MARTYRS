@@ -1,11 +1,26 @@
 var _menus_length = array_length(menus);
 var _highest_priority_menu_index = -1;
-
-
-
+var _occupied_channels = [];
+var _authorized_menus = [];
+for (var _i = _menus_length - 1; _i > -1; _i --)
+{	
+	if menus[_i].channel != -1 and !array_contains(_occupied_channels, menus[_i].channel)
+	{
+		_occupied_channels[array_length(_occupied_channels)] = menus[_i].channel;
+	}
+}
+for (var _i = _menus_length - 1; _i > -1; _i --)
+{	
+	var _menu = menus[_i];
+	if _menu.channel == -1 or array_contains(_occupied_channels, _menu.channel)
+	{
+		_authorized_menus[array_length(_authorized_menus)] = _i;
+		array_delete(_occupied_channels, array_get_index(_occupied_channels, _menu.channel), 1);
+	}
+}
 for (var _i = 0; _i < _menus_length; _i ++)
 {	
-	if menus[_i].must_be_drawn()
+	if menus[_i].must_be_drawn() and array_contains(_authorized_menus, _i)
 	{
 		menus[_i].draw();
 		

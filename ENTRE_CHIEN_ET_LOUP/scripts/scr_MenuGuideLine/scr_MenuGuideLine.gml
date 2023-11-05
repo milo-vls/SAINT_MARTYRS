@@ -30,3 +30,5 @@ function MenuGuideLine(_x1, _y1, _x2, _y2) constructor
 	}
 	
 }
+
+#macro CENTERED_GUIDE_LINE new MenuGuideLine(room_width/2, 0, room_width/2, room_height)

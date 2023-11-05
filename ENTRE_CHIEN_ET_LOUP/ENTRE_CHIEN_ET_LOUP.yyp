@@ -63,6 +63,7 @@
   "resources": [
     {"id":{"name":"scribble_font_force_bilinear_filtering","path":"scripts/scribble_font_force_bilinear_filtering/scribble_font_force_bilinear_filtering.yy",},},
     {"id":{"name":"__shd_scribble","path":"shaders/__shd_scribble/__shd_scribble.yy",},},
+    {"id":{"name":"scr_show_parameters","path":"scripts/scr_show_parameters/scr_show_parameters.yy",},},
     {"id":{"name":"scribble_anim_cycle","path":"scripts/scribble_anim_cycle/scribble_anim_cycle.yy",},},
     {"id":{"name":"scribble_font_delete","path":"scripts/scribble_font_delete/scribble_font_delete.yy",},},
     {"id":{"name":"obj_menu_managment","path":"objects/obj_menu_managment/obj_menu_managment.yy",},},
