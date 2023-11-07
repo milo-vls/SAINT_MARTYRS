@@ -2,7 +2,7 @@
 /// @param {string} _file_name
 function csv_to_1d_array(_file_name)
 {	
-	var _ds_grid = load_csv(_file_name)
+	var _ds_grid = load_csv("CSVs\\" + _file_name)
 	if _ds_grid == -1
 	{
 		show_error("The file " + _file_name +" have not been found", 1);	
@@ -31,7 +31,7 @@ function csv_to_1d_array(_file_name)
 function csv_to_structs_of_constructor(_file_name, _constructor)
 {
 	
-	var _ds_grid = load_csv(_file_name);
+	var _ds_grid = load_csv("CSVs\\" + _file_name);
 	if _ds_grid == -1
 	{
 		show_error("The file \"" + _file_name +"\" have not been found", 1);	
@@ -60,7 +60,7 @@ function csv_to_structs_of_constructor(_file_name, _constructor)
 
 function csv_to_map_of_arrays(_file_name)
 {
-	var _ds_grid = load_csv(_file_name);
+	var _ds_grid = load_csv("CSVs\\" + _file_name);
 	if _ds_grid == -1
 	{
 		show_error("The file " + _file_name +" have not been found", 1);	
