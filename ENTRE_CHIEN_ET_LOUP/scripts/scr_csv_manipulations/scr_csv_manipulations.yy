@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "CSV",
-    "path": "folders/SCRIPTS/DATAS/CSV.yy",
+    "name": "DATAS",
+    "path": "folders/SCRIPTS/DATAS.yy",
   },
 }

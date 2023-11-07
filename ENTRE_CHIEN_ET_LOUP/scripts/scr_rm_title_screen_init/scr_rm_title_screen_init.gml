@@ -1,7 +1,4 @@
 
-#macro TITLE_SCREEN_CHANNEL 44
-#macro TITLE_SCREEN_PRIORITY 0
-
 function rm_title_screen_init()
 {
 	var _title_screen_options = [];
@@ -13,17 +10,17 @@ function rm_title_screen_init()
 	{
 		_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN START", function(_id_menu){change_room(rm_dev)});
 	}
-	_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN PARAMETERS", function(_id_menu){show_parameters(TITLE_SCREEN_CHANNEL, TITLE_SCREEN_PRIORITY + 1)}); 
+	_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN PARAMETERS", function(_id_menu){show_parameters(MENU_CHANNELS.TITLE_SCREEN, MENU_PRIORITIES.TITLE_SCREEN + 1)}); 
 	_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN QUIT", game_end); 
 	
 	obj_menu_managment.add_menu( new TextOptionsMenu(	_title_screen_options,
 																													CENTERED_GUIDE_LINE,
-																													TITLE_SCREEN_PRIORITY,
+																													MENU_PRIORITIES.TITLE_SCREEN,
 																													room,
 																													true,
 																													false,
 																													false,
-																													TITLE_SCREEN_CHANNEL)
+																													MENU_CHANNELS.TITLE_SCREEN)
 	);
 	
 }

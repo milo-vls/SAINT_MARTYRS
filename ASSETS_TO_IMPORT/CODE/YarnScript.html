@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=introduction -->
+<html lang="en" class="themeable" style="--sidebar-nav-pagelink-background-image--collapse: url(&quot;data:image/svg+xml,%0A%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;7&#39; height=&#39;11.2&#39; viewBox=&#39;0 0 7 11.2&#39;%3E%3Cpath d=&#39;M1.5 1.5l4 4.1 -4 4.1&#39; stroke-width=&#39;1.5&#39; stroke=&#39;hsl(47, 100%, 47%)&#39; fill=&#39;none&#39; stroke-linecap=&#39;square&#39; stroke-linejoin=&#39;miter&#39; vector-effect=&#39;non-scaling-stroke&#39;/%3E%3C/svg%3E&quot;); --sidebar-nav-pagelink-background-image--active: url(&quot;data:image/svg+xml,%0A%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;11.2&#39; height=&#39;7&#39; viewBox=&#39;0 0 11.2 7&#39;%3E%3Cpath d=&#39;M1.5 1.5l4.1 4 4.1-4&#39; stroke-width=&#39;1.5&#39; stroke=&#39;hsl(47, 100%, 47%)&#39; fill=&#39;none&#39; stroke-linecap=&#39;square&#39; stroke-linejoin=&#39;miter&#39; vector-effect=&#39;non-scaling-stroke&#39;/%3E%3C/svg%3E&quot;); --sidebar-nav-pagelink-background-image--loaded: url(&quot;data:image/svg+xml,%0A%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;11.2&#39; height=&#39;7&#39; viewBox=&#39;0 0 11.2 7&#39;%3E%3Cpath d=&#39;M1.5 1.5l4.1 4 4.1-4&#39; stroke-width=&#39;1.5&#39; stroke=&#39;hsl(47, 100%, 47%)&#39; fill=&#39;none&#39; stroke-linecap=&#39;square&#39; stroke-linejoin=&#39;miter&#39; vector-effect=&#39;non-scaling-stroke&#39;/%3E%3C/svg%3E&quot;);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">:root{--docsifytabs-border-color:#ededed;--docsifytabs-border-px:1px;--docsifytabs-border-radius-px: ;--docsifytabs-margin:1.5em 0;--docsifytabs-tab-background:#f8f8f8;--docsifytabs-tab-background--active:var(--docsifytabs-content-background);--docsifytabs-tab-color:#999;--docsifytabs-tab-color--active:inherit;--docsifytabs-tab-highlight-px:3px;--docsifytabs-tab-highlight-color:var(--theme-color,currentColor);--docsifytabs-tab-padding:0.6em 1em;--docsifytabs-content-background:inherit;--docsifytabs-content-padding:1.5rem}.docsify-tabs:before,.docsify-tabs__tab{z-index:1}.docsify-tabs__tab--active,.docsify-tabs__tab:focus{z-index:2}.docsify-tabs{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;position:relative}.docsify-tabs:before{-ms-flex-order:0;content:"";-ms-flex:1 1;flex:1 1;order:0}.docsify-tabs__tab{-ms-flex-order:-1;appearance:none;font-size:inherit;margin:0;order:-1;position:relative}.docsify-tabs__content[class]{height:0;overflow:hidden;position:absolute;visibility:hidden;width:100%}.docsify-tabs__content[class]>:first-child{margin-top:0}.docsify-tabs__content[class]>:last-child{margin-bottom:0}.docsify-tabs__tab--active+.docsify-tabs__content[class]{height:auto;overflow:auto;position:relative;visibility:visible}[class*=docsify-tabs--]{margin:1.5em 0;margin:var(--docsifytabs-margin)}[class*=docsify-tabs--]>.docsify-tabs__tab{background:#f8f8f8;background:var(--docsifytabs-tab-background);color:#999;color:var(--docsifytabs-tab-color);padding:.6em 1em;padding:var(--docsifytabs-tab-padding)}[class*=docsify-tabs--]>.docsify-tabs__tab--active{background:inherit;background:var(--docsifytabs-tab-background--active);color:inherit;color:var(--docsifytabs-tab-color--active)}[class*=docsify-tabs--]>.docsify-tabs__content{background:inherit;background:var(--docsifytabs-content-background)}[class*=docsify-tabs--]>.docsify-tabs__tab--active+.docsify-tabs__content{padding:1.5rem;padding:var(--docsifytabs-content-padding)}.docsify-tabs--classic:before,.docsify-tabs--classic>.docsify-tabs__content,.docsify-tabs--classic>.docsify-tabs__tab{border-color:#ededed;border-color:var(--docsifytabs-border-color);border-style:solid;border-width:1px;border-width:var(--docsifytabs-border-px)}.docsify-tabs--classic:before{border-left-width:0;border-right-width:0;border-top-width:0;margin-right:1px;margin-right:var(--docsifytabs-border-px)}.docsify-tabs--classic>.docsify-tabs__tab:first-of-type{border-top-left-radius:var(--docsifytabs-border-radius-px)}.docsify-tabs--classic>.docsify-tabs__tab:last-of-type{border-top-right-radius:var(--docsifytabs-border-radius-px)}.docsify-tabs--classic>.docsify-tabs__tab~.docsify-tabs__tab{margin-left:-1px;margin-left:calc(0px - var(--docsifytabs-border-px))}.docsify-tabs--classic>.docsify-tabs__tab--active{border-bottom-width:0;box-shadow:inset 0 3px 0 0 currentColor;box-shadow:inset 0 var(--docsifytabs-tab-highlight-px) 0 0 var(--docsifytabs-tab-highlight-color)}.docsify-tabs--classic>.docsify-tabs__content{border-radius:0;border-radius:0 var(--docsifytabs-border-radius-px) var(--docsifytabs-border-radius-px) var(--docsifytabs-border-radius-px);border-top:0;margin-top:-1px;margin-top:calc(0px - var(--docsifytabs-border-px))}.docsify-tabs--material>.docsify-tabs__tab{background:transparent;border:0;margin-bottom:2px;margin-bottom:calc(var(--docsifytabs-tab-highlight-px) - var(--docsifytabs-border-px))}.docsify-tabs--material>.docsify-tabs__tab--active{background:transparent;box-shadow:0 3px 0 0 currentColor;box-shadow:0 var(--docsifytabs-tab-highlight-px) 0 0 var(--docsifytabs-tab-highlight-color)}.docsify-tabs--material>.docsify-tabs__content{border-color:#ededed;border-color:var(--docsifytabs-border-color);border-style:solid;border-width:1px 0;border-width:var(--docsifytabs-border-px) 0}</style>
+		
+		<title>YarnScript</title>
+		<link rel="shortcut icon" type="image/jpg" href="https://www.jujuadams.com/Chatterbox/assets/favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="GameMaker Studio 2 implementation of the Yarn narrative design language">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<!-- Theme: Simple Dark -->
+		<link rel="stylesheet" href="./YarnScript_files/theme-simple-dark.css">
+		<link rel="stylesheet" href="./YarnScript_files/dracula-prism.min.css">
+	<style type="text/css">.docsify-copy-code-button,.docsify-copy-code-button span{cursor:pointer;transition:all .25s ease}.docsify-copy-code-button{position:absolute;z-index:1;top:0;right:0;overflow:visible;padding:.65em .8em;border:0;border-radius:0;outline:0;font-size:1em;background:grey;background:var(--theme-color,grey);color:#fff;opacity:0}.docsify-copy-code-button span{border-radius:3px;background:inherit;pointer-events:none}.docsify-copy-code-button .error,.docsify-copy-code-button .success{position:absolute;z-index:-100;top:50%;right:0;padding:.5em .65em;font-size:.825em;opacity:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.docsify-copy-code-button.error .error,.docsify-copy-code-button.success .success{right:100%;opacity:1;-webkit-transform:translate(-115%,-50%);transform:translate(-115%,-50%)}.docsify-copy-code-button:focus,pre:hover .docsify-copy-code-button{opacity:1}</style><style>
+.sidebar {
+  padding-top: 0;
+}
+
+.search {
+  margin-bottom: 20px;
+  padding: 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.search .input-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.search .results-panel {
+  display: none;
+}
+
+.search .results-panel.show {
+  display: block;
+}
+
+.search input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0.6em 7px;
+  font-size: inherit;
+  border: 1px solid transparent;
+}
+
+.search input:focus {
+  box-shadow: 0 0 5px var(--theme-color, #42b983);
+  border: 1px solid var(--theme-color, #42b983);
+}
+
+.search input::-webkit-search-decoration,
+.search input::-webkit-search-cancel-button,
+.search input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.search input::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.search .clear-button {
+  cursor: pointer;
+  width: 36px;
+  text-align: right;
+  display: none;
+}
+
+.search .clear-button.show {
+  display: block;
+}
+
+.search .clear-button svg {
+  transform: scale(.5);
+}
+
+.search h2 {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.search a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.search .matching-post {
+  border-bottom: 1px solid #eee;
+}
+
+.search .matching-post:last-child {
+  border-bottom: 0;
+}
+
+.search p {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.search p.empty {
+  text-align: center;
+}
+
+.app-name.hide, .sidebar-nav.hide {
+  display: none;
+}</style><style></style></head>
+	<body data-platform="Win32" class="ready-transition ready sticky ready-spinner ready-fix" data-page="latest/concept-yarn-script.md">
+		<nav class="app-nav no-badge"><!-- _navbar.md -->
+
+<ul><li>  <a href="https://github.com/JujuAdams/Chatterbox/releases" target="_blank" rel="noopener" title="Releases">Releases</a></li><li>  <a href="https://github.com/JujuAdams/Chatterbox/issues" target="_blank" rel="noopener" title="Report a bug">Report a bug</a></li></ul></nav><main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><div class="search"><div class="input-wrap">
+      <input type="search" value="" aria-label="Search text" placeholder="Type to search">
+      <div class="clear-button">
+        <svg width="26" height="24">
+          <circle cx="12" cy="12" r="11" fill="#ccc"></circle>
+          <path stroke="white" stroke-width="2" d="M8.25,8.25,15.75,15.75"></path>
+          <path stroke="white" stroke-width="2" d="M8.25,15.75,15.75,8.25"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="results-panel"></div>
+    </div><h1 class="app-name"><a class="app-name-link" data-nosearch=""></a><a id="home-link" class="app-name-link" data-nosearch="" href="https://www.jujuadams.com/Chatterbox/#/latest/"><span id="home-text">Chatterbox Docs</span><br></a><select id="version-selector" name="version"><option value="latest" selected="">v2.11</option><option value="2.10">v2.10</option><option value="2.9">v2.9</option><option value="2.8">v2.8</option><option value="2.7">v2.7</option><option value="2.6">v2.6</option><option value="2.5">v2.5</option><option value="2.4">v2.4</option><option value="2.3">v2.3</option><option value="2.2">v2.2</option><option value="2.1">v2.1</option><option value="1.1">v1.1</option></select></h1><div class="sidebar-nav"><ul><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/README" title="Introduction">Introduction</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/Alternatives" title="Alternatives">Alternatives</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/getting-started" title="Getting Started">Getting Started</a></li><li>  <a href="https://spiderlilystudios.medium.com/chatterbox-branching-dialogue-for-game-maker-studio-2-6834b4452f3b" target="_blank" rel="noopener" title="Spider Lily’s Tutorial">Spider Lily’s Tutorial</a></li></ul><hr>
+<p><strong>Concepts</strong></p><ul><li class="">  <a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script" title="YarnScript">YarnScript</a><ul class="app-sub-sidebar"><li class="active"><a class="section-link" href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=introduction" title="Introduction">Introduction</a></li><li class=""><a class="section-link" href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=nodes" title="Nodes">Nodes</a></li><li><a class="section-link" href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=options" title="Options">Options</a></li><li><a class="section-link" href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=links-between-nodes" title="Links Between Nodes">Links Between Nodes</a></li><li><a class="section-link" href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=actions" title="Actions">Actions</a></li><li class=""><a class="section-link" href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=variables-amp-conditionals" title="Variables &amp; Conditionals">Variables &amp; Conditionals</a></li><li><a class="section-link" href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=functions" title="Functions">Functions</a></li><li><a class="section-link" href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=fast-forwarding" title="Fast-Forwarding">Fast-Forwarding</a></li></ul></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-source-files" title="Source Files">Source Files</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-chatterboxes" title="Chatterboxes">Chatterboxes</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-metadata-and-speakers" title="Metadata and Speakers">Metadata and Speakers</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-actions-functions" title="Actions and Functions">Actions and Functions</a></li></ul><hr>
+<p><strong>API Reference</strong></p><ul><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-configuration" title="Configuration">Configuration</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-setup" title="Setup">Setup</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-chatterboxes" title="Chatterboxes">Chatterboxes</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-content-getters" title="Content Getters">Content Getters</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-option-getters" title="Option Getters">Option Getters</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-flow" title="Flow Control">Flow Control</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-variables" title="Variables and Constants">Variables and Constants</a></li><li>  <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-localisation" title="Localisation">Localisation</a></li></ul></div></aside><section class="content"><article class="markdown-section" id="main"><h1 id="yarnscript"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=yarnscript" data-id="yarnscript" class="anchor"><span>YarnScript</span></a></h1><hr>
+<p class="warn">This is an edited copy of the <a href="https://github.com/thesecretlab/YarnSpinner/blob/master/Documentation/YarnSpinner-Dialogue/Yarn-Syntax.md" target="_blank" rel="noopener">YarnSpinner Quick Refence Guide</a> (retrieved 2019-04-18)</p><h2 id="introduction"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=introduction" data-id="introduction" class="anchor"><span>Introduction</span></a></h2><p>Chatterbox is an implementation of the YarnScripting language. However, Chatterbox does slightly extend its functionality,
+adding more control to variable handling. This enables convenient direct access of GML variables from inside the dialogue script.
+Please see the <a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=variables-amp-conditionals">Variables &amp; Conditionals</a> and <a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=functions">Functions</a> sections for more information. Chatterbox additionally allows redirects and options to
+point to nodes found in other <a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-source-files">source files</a>.</p><p>This document is intended to act as a comprehensive and concise reference for Yarn syntax and structure, for use by programmers
+and designers. It assumes a working knowledge of modern programming/scripting languages. For a more thorough explanation
+of Yarn usage, see the <a href="https://yarnspinner.dev/docs/tutorial" target="_blank" rel="noopener">offical Yarn tutorial</a>.</p><p class="tip"><strong>Note</strong>: As of 29/07/2021, the official Yarn tutorials show syntax from version 1 of Yarn, while Chatterbox v2 implements the updated version 2 of the Yarn specification. The syntax listed here is the most up to date for what Chatterbox v2 uses.</p><h2 id="nodes"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=nodes" data-id="nodes" class="anchor"><span>Nodes</span></a></h2><p>Nodes act as containers for YarnScript, and must have unique titles within each <a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-source-files">source file</a>. The script in the body of a node is processed line by line. A node’s header contains its metadata - by default, Yarn only uses the title field, but can be extended to use arbitrary fields.</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn"><span class="token name">title:</span> ExampleNodeName
+<span class="token name">tags:</span> foo, bar
+---
+
+Yarn content goes here.
+This is the second line.
+
+===</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><p>A script file can contain multiple nodes. In this case, nodes are delineated using three equals (<code>===</code>) characters.
+Additionally, Yarn can check if a node has been visited by calling <code>visited("NodeName")</code> in an if-statement
+(i.e. <code>&lt;&lt;if visited("NodeName") == true&gt;&gt;</code>).</p><h2 id="options"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=options" data-id="options" class="anchor"><span>Options</span></a></h2><p>Options allow for small branches in YarnScripts without requiring extra nodes. Options can have any number of sub-branches, but it’s recommended that branching is kept somewhat limited for the sake of script readability.</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn"><span class="token name">Mae:</span> What did you say to her?
+<span class="token symbol">-&gt;</span> Nothing.
+    <span class="token name">Mae:</span> Oh, man. Maybe you should have.
+<span class="token symbol">-&gt;</span> That she was a jerk.
+    <span class="token name">Mae:</span> Hah! I bet that pissed her off.
+    <span class="token name">Mae:</span> How'd she react?
+    <span class="token symbol">-&gt;</span> She didn't.
+        <span class="token name">Mae:</span> Booooo. That's boring.
+    <span class="token symbol">-&gt;</span> Furiously.
+        <span class="token name">Mae:</span> That's what I like to hear!
+<span class="token name">Mae:</span> Anyway, I'd better get going.</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><p>Additionally, shortcut options can utilize conditional logic, actions, and functions (detailed below), and can include standard node
+links:</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn"><span class="token name">Bob:</span> What would you like?
+<span class="token symbol">-&gt;</span> A burger. &lt;&lt;<span class="token prolog"><span class="token keyword">if</span> <span class="token variable">$money</span> &gt; <span class="token number">5</span></span>&gt;&gt;
+    <span class="token name">Bob:</span> Nice. Enjoy!
+    &lt;&lt;<span class="token prolog"><span class="token keyword">jump</span> <span class="token operator">AteABurger</span></span>&gt;&gt;
+<span class="token symbol">-&gt;</span> A soda. &lt;&lt;<span class="token prolog"><span class="token keyword">if</span> <span class="token variable">$money</span> &gt; <span class="token number">2</span></span>&gt;&gt;
+    <span class="token name">Bob:</span> Yum!
+    &lt;&lt;<span class="token prolog"><span class="token keyword">jump</span> <span class="token operator">DrankASoda</span></span>&gt;&gt;
+<span class="token symbol">-&gt;</span> Nothing.
+    <span class="token name">Bob:</span> Okay.
+<span class="token name">Bob:</span> Thanks for coming!</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><h2 id="links-between-nodes"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=links-between-nodes" data-id="links-between-nodes" class="anchor"><span>Links Between Nodes</span></a></h2><p>Moving between nodes can be done using a <code>&lt;&lt;jump&gt;&gt;</code> action (other action are available, see below):</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">After this text is shown, we'll move to another node.
+&lt;&lt;<span class="token prolog"><span class="token keyword">jump</span> <span class="token operator">DestinationNode</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><p>Jump actions can be placed after options which allows for branching dialogue organised across multiple nodes.</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn"><span class="token symbol">-&gt;</span> This is a link to a node.
+&lt;&lt;<span class="token prolog"><span class="token keyword">jump</span> <span class="token operator">DestinationNode</span></span>&gt;&gt;
+<span class="token symbol">-&gt;</span> This is a link to a different node.
+&lt;&lt;<span class="token prolog"><span class="token keyword">jump</span> <span class="token operator">DifferentNode</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><p>Chatterbox adds the ability to target nodes in other files:</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn"><span class="token symbol">-&gt;</span> A link to a node in another file.
+   &lt;&lt;<span class="token prolog"><span class="token keyword">jump</span> TheOtherFile.json:<span class="token operator">DestinationNode</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><p>The name of the file (with that file’s extension!) comes first, followed by a colon (<code>:</code>), followed by the name of the node.</p><p class="warn"><strong>Please note:</strong> Referencing nodes in other <a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-source-files">source files</a> is not officially supported by Yarn and this feature is an addition unique to Chatterbox.</p><p>You can also opt to “hop” out of a node to some other destination node. A hop is a reversible jump; you can hop back from your destination node back to your origin node at exactly the place you hopped out. You can call <code>&lt;&lt;hopback&gt;&gt;</code> to return to the node you came from. You can hop back and forth as much as you want. If you call <code>&lt;&lt;hopback&gt;&gt;</code> without any node to hop to then Chatterbox will instead interpret that command as a <code>&lt;&lt;stop&gt;&gt;</code>.</p><h4 id="origin"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=origin" data-id="origin" class="anchor"><span>Origin</span></a></h4><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">I wonder what I should have for breakfast.
+<span class="token symbol">-&gt;</span> We have something tasty in the fridge I think?
+    &lt;&lt;<span class="token prolog"><span class="token function">hop</span> <span class="token operator">BreakfastNode</span></span>&gt;&gt;
+<span class="token symbol">-&gt;</span> I don't have time for this!
+Time to start my day.</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><h4 id="destination"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=destination" data-id="destination" class="anchor"><span>Destination</span></a></h4><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn"><span class="token symbol">-&gt;</span> Pineapple juice
+    Refreshing!
+<span class="token symbol">-&gt;</span> Ham and cheese
+    Sustaining!
+<span class="token symbol">-&gt;</span> Fresh milk
+    Creamy!
+&lt;&lt;<span class="token prolog"><span class="token function">hopback</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><p>Hopping to a node counts as visiting a node for the purposes of the <code>visited()</code> function. If a node doesn’t have <code>&lt;&lt;stop&gt;&gt;</code> or <code>&lt;&lt;hopback&gt;&gt;</code> at the end and Chatterbox reaches the very bottom of a node then it’ll assume that you want to call <code>&lt;&lt;hopback&gt;&gt;</code> (and if there’re no nodes to hop back to then this will stop execution). You can change this behaviour by changing the value of the config macro <code>CHATTERBOX_END_OF_NODE_HOPBACK</code>.</p><p class="tip">Hops are not serialized by Chatterbox. If you save in the middle of a hop you might find that the game is in an invalid state and the player cannot continue playing. Use hops carefully!</p><h2 id="actions"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=actions" data-id="actions" class="anchor"><span>Actions</span></a></h2><p>Chatterbox has the following native actions:</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">&lt;&lt;<span class="token prolog"><span class="token keyword">if</span> <span class="token string">"expression"</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token keyword">else</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token keyword">elseif</span> <span class="token string">"expression"</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token keyword">endif</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token keyword">set</span> <span class="token string">"expression"</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token keyword">stop</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token keyword">wait</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token function">forcewait</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token function">fastforward</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token function">fastmark</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><p>Custom actions can be added to Chatterbox by using the <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-configuration?id=chatterboxaddfunctionname-function"><code>ChatterboxAddFunction()</code></a> script. Custom actions should be added before
+calling <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-chatterboxes?id=chatterboxcreatefilename-singletontext-localscope"><code>ChatterboxCreate()</code></a>.</p><div class="docsify-tabs docsify-tabs--classic">
+<button class="docsify-tabs__tab docsify-tabs__tab--active" data-tab="gml">GML</button>
+<div class="docsify-tabs__content" data-tab-content="gml">
+
+<pre v-pre="" data-lang="gml" class="language-gml"><code class="lang-gml language-gml"><span class="token function">ChatterboxLoad</span><span class="token punctuation">(</span><span class="token string">"example.json"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">ChatterboxAddFunction</span><span class="token punctuation">(</span><span class="token string">"playMusic"</span><span class="token punctuation">,</span> play_background_music<span class="token punctuation">)</span><span class="token punctuation">;</span></code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre></div>
+<button class="docsify-tabs__tab" data-tab="yarnscript">YarnScript</button>
+<div class="docsify-tabs__content" data-tab-content="yarnscript">
+
+<pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">Here's some text!
+&lt;&lt;<span class="token prolog"><span class="token function">playMusic</span></span>&gt;&gt;
+The music will have started now.</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre></div>
+</div>
+
+<p>By adding the custom action <code>playMusic</code> and binding it to the script <code>play_background_music()</code>, Chatterbox will now call this script
+whenever <code>&lt;&lt;playMusic&gt;&gt;</code> is processed by Chatterbox.</p><p>Custom actions can also have parameters. These parameters can be any Chatterbox value - a real number, a string, or a variable.
+Parameters should separated by spaces. Parameters are passed into a script as an array of values in argument0.</p><div class="docsify-tabs docsify-tabs--classic">
+<button class="docsify-tabs__tab docsify-tabs__tab--active" data-tab="gml">GML</button>
+<div class="docsify-tabs__content" data-tab-content="gml">
+
+<pre v-pre="" data-lang="gml" class="language-gml"><code class="lang-gml language-gml"><span class="token function">ChatterboxLoad</span><span class="token punctuation">(</span><span class="token string">"example.json"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">ChatterboxAddFunction</span><span class="token punctuation">(</span><span class="token string">"gotoRoom"</span><span class="token punctuation">,</span> go_to_room<span class="token punctuation">)</span><span class="token punctuation">;</span></code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre></div>
+<button class="docsify-tabs__tab" data-tab="yarnscript">YarnScript</button>
+<div class="docsify-tabs__content" data-tab-content="yarnscript">
+
+<pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">Let's go see what the priest is up to.
+&lt;&lt;<span class="token prolog"><span class="token function">gotoRoom</span> <span class="token string">"rChapel"</span> <span class="token operator">$entrance</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token keyword">stop</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre></div>
+</div>
+
+<p>Chatterbox will execute the script <code>go_to_room()</code> whenever <code>&lt;&lt;gotoRoom&gt;&gt;</code> is processed. In this case, <code>go_to_room()</code> will receive an array
+of two values from Chatterbox. The first (index 0) element of the array will be <code>"rChapel"</code> and the second (index 1) element will
+hold whatever value is in the <code>$entrance</code> variable.</p><h2 id="variables-amp-conditionals"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=variables-amp-conditionals" data-id="variables-amp-conditionals" class="anchor"><span>Variables &amp; Conditionals</span></a></h2><p>Declaring and Setting Variables:
+This statement serves to set a variable’s value. No declarative statement is required; setting a variable’s value brings it into existence.</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">&lt;&lt;<span class="token prolog"><span class="token keyword">set</span> <span class="token variable">$ExampleVariable</span> <span class="token keyword">to</span> <span class="token number">1</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><p>All variables must start with a dollar sign. Internal Yarn variables are, in reality, key:value pairs stored in a global ds_map. Chatterbox has <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-variables">a handful of functions</a> dedicated to handling variables, including importing and exporting them.</p><p>If needed, you can access this ds_map via the <code>CHATTERBOX_VARIABLES_MAP</code> macro, found in <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-configuration?id=__chatterboxconfig"><code>__ChatterboxConfig()</code></a>.</p><h3 id="ifelse-statements"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=ifelse-statements" data-id="ifelse-statements" class="anchor"><span>If/Else Statements: </span></a></h3><p>Yarn supports standard if/else/elseif statements.</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">&lt;&lt;<span class="token prolog"><span class="token keyword">if</span> <span class="token string">"hi"</span> == <span class="token string">"hi"</span></span>&gt;&gt;
+    The two strings are the same!
+&lt;&lt;<span class="token prolog"><span class="token keyword">endif</span></span>&gt;&gt;
+&lt;&lt;<span class="token prolog"><span class="token keyword">if</span> <span class="token variable">$variable</span> == <span class="token number">1</span></span>&gt;&gt;
+    Success!
+&lt;&lt;<span class="token prolog"><span class="token keyword">elseif</span> <span class="token variable">$variable</span> == <span class="token string">"hello"</span></span>&gt;&gt;
+    Success...?
+&lt;&lt;<span class="token prolog"><span class="token keyword">else</span></span>&gt;&gt;
+    No success. :(
+&lt;&lt;<span class="token prolog"><span class="token keyword">endif</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><h3 id="expressions"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=expressions" data-id="expressions" class="anchor"><span>Expressions: </span></a></h3><p>There are four different types of variable in Yarn: strings, floating-point numbers, booleans, and null.</p><p>Yarn will automatically convert between types. For example:</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">&lt;&lt;<span class="token prolog"><span class="token keyword">if</span> <span class="token string">"hi"</span> == <span class="token string">"hi"</span></span>&gt;&gt;
+    The two strings are the same!
+&lt;&lt;<span class="token prolog"><span class="token keyword">endif</span></span>&gt;&gt;
+
+&lt;&lt;<span class="token prolog"><span class="token keyword">if</span> <span class="token number">1</span>+<span class="token number">1</span>+<span class="token string">"hi"</span> == <span class="token string">"2hi"</span></span>&gt;&gt;
+    Strings get joined together with other values!
+&lt;&lt;<span class="token prolog"><span class="token keyword">endif</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><h2 id="functions"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=functions" data-id="functions" class="anchor"><span>Functions</span></a></h2><p>By default, Chatterbox includes a <code>visited()</code> function which returns the number of times a node has been entered.</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">&lt;&lt;<span class="token prolog"><span class="token keyword">if</span> <span class="token function">visited</span>(<span class="token string">"GoToCity"</span>)</span>&gt;&gt;
+    We have gone to the city before!
+&lt;&lt;<span class="token prolog"><span class="token keyword">endif</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><p>Chatterbox also includes the <code>optionChosen()</code> function. This works similarly to <code>visited()</code> but can only be used in the condition for an option, like so:</p><pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">How can I help?
+<span class="token symbol">-&gt;</span> Can I buy some green eggs please? &lt;&lt;<span class="token prolog"><span class="token keyword">if</span> !<span class="token function">optionChosen</span>()</span>&gt;&gt;
+    No... This is a stationery shop.
+<span class="token symbol">-&gt;</span> Do you have any ham for sale? &lt;&lt;<span class="token prolog"><span class="token keyword">if</span> !<span class="token function">optionChosen</span>()</span>&gt;&gt;
+    Huh? We mostly sell birthday cards.</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre><p>Using <code>optionChosen()</code> outside of an option condition is invalid and will throw an error. What options have been chosen is not intended to persist between gameplay sessions and is not included in the data returned by <code>ChatterboxVariablesExport()</code>. If you want to track which options have been chosen, you will instead need to write your own system.</p><p>Other custom functions can be added to Chatterbox using the <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-configuration?id=chatterboxaddfunctionname-function"><code>ChatterboxAddFunction()</code></a> script. Much like custom actions, custom functions can have parameters. Custom functions should be defined before calling <a href="https://www.jujuadams.com/Chatterbox/#/latest/reference-chatterboxes?id=chatterboxcreatefilename-singletontext-localscope"><code>ChatterboxCreate()</code></a>.</p><div class="docsify-tabs docsify-tabs--classic">
+<button class="docsify-tabs__tab docsify-tabs__tab--active" data-tab="gml">GML</button>
+<div class="docsify-tabs__content" data-tab-content="gml">
+
+<pre v-pre="" data-lang="gml" class="language-gml"><code class="lang-gml language-gml"><span class="token function">ChatterboxLoad</span><span class="token punctuation">(</span><span class="token string">"example.json"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">ChatterboxAddFunction</span><span class="token punctuation">(</span><span class="token string">"AmIDead"</span><span class="token punctuation">,</span> am_i_dead<span class="token punctuation">)</span><span class="token punctuation">;</span></code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre></div>
+<button class="docsify-tabs__tab" data-tab="yarnscript">YarnScript</button>
+<div class="docsify-tabs__content" data-tab-content="yarnscript">
+
+<pre v-pre="" data-lang="yarn" class="language-yarn"><code class="lang-yarn language-yarn">Am I dead?
+&lt;&lt;<span class="token prolog"><span class="token keyword">if</span> <span class="token function">AmIDead</span>(<span class="token string">"player"</span>)</span>&gt;&gt;
+    Yup. Definitely dead.
+&lt;&lt;<span class="token prolog"><span class="token keyword">else</span></span>&gt;&gt;
+    No, not yet!
+&lt;&lt;<span class="token prolog"><span class="token keyword">endif</span></span>&gt;&gt;</code><button class="docsify-copy-code-button"><span class="label">📋</span><span class="error">Error</span><span class="success">Copied</span></button></pre></div>
+</div>
+
+<p>This example shows how the script <code>am_i_dead()</code> is called by Chatterbox in an if statement. The value returned from <code>am_i_dead()</code> determines which text is displayed.</p><p>&nbsp;</p><p>Here’s a list of supported operators (in no particular order) that are supported in expressions:</p>
+                    <div class="table-wrapper">
+                        <table id="_ha7kylzec">
+                            <thead><tr>
+<th align="center">Word</th>
+<th align="center">Symbol</th>
+<th>Use</th>
+</tr>
+</thead>
+                            <tbody><tr>
+<td align="center"><code>not</code></td>
+<td align="center"><code>!</code></td>
+<td>Logical negation</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>+</code></td>
+<td>Real addition, or string concatenation</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>-</code></td>
+<td>Real substraction, or negative</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>*</code></td>
+<td>Real multiplication</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>/</code></td>
+<td>Real division</td>
+</tr>
+<tr>
+<td align="center"><em>Assignment</em></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><code>to</code></td>
+<td align="center"><code>=</code></td>
+<td>Assignment</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>+=</code></td>
+<td>Add or concatenate, then assign</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>-=</code></td>
+<td>Subtract, then assign</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>*=</code></td>
+<td>Multiply, then assign</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>/=</code></td>
+<td>Divide, then assign</td>
+</tr>
+<tr>
+<td align="center"><em>Comparison</em></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><code>and</code></td>
+<td align="center"><code>&amp;&amp;</code></td>
+<td>Logical AND</td>
+</tr>
+<tr>
+<td align="center"><code>le</code></td>
+<td align="center"><code>&lt;</code></td>
+<td>Less than</td>
+</tr>
+<tr>
+<td align="center"><code>gt</code></td>
+<td align="center"><code>&gt;</code></td>
+<td>Greater than</td>
+</tr>
+<tr>
+<td align="center"><code>or</code></td>
+<td align="center"><code>||</code></td>
+<td>Logical OR</td>
+</tr>
+<tr>
+<td align="center"><code>leq</code></td>
+<td align="center"><code>&lt;=</code></td>
+<td>Less-than-or-equal-to</td>
+</tr>
+<tr>
+<td align="center"><code>geq</code></td>
+<td align="center"><code>&gt;=</code></td>
+<td>Greater-than-or-equal-to</td>
+</tr>
+<tr>
+<td align="center"><code>eq</code></td>
+<td align="center"><code>==</code></td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td align="center"><code>is</code></td>
+<td align="center"><code>==</code></td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td align="center"><code>neq</code></td>
+<td align="center"><code>!=</code></td>
+<td>Not equal to</td>
+</tr>
+</tbody>
+                        </table>
+                    </div><h2 id="fast-forwarding"><a href="https://www.jujuadams.com/Chatterbox/#/latest/concept-yarn-script?id=fast-forwarding" data-id="fast-forwarding" class="anchor"><span>Fast-Forwarding</span></a></h2><p>Chatterbox allows you to, at will, fast-forward past content strings. This is handy for games with a ton of content, or with a lot of replayability value as it allows players to skip past things they’ve seen before. Fast-forwarding will speed allow, skipping content strings, until hitting one of the following:</p><ol><li><p>The end of a Chatterbox or <code>&lt;&lt;stop&gt;&gt;</code></p></li><li><p>An option <code>-&gt;</code></p></li><li><p>A <code>&lt;&lt;forcewait&gt;&gt;</code> action</p></li></ol><p>Fast-forwarding is typically triggered by calling <code>ChatterboxFastForward()</code> but you may also find it useful to trigger a fast-forward from YarnScript. You can do this using <code>&lt;&lt;fastforward&gt;&gt;</code> in YarnScript as you would other actions.</p><p>You can also turn fast-forwarding off from inside YarnScript as well; this is done with the <code>&lt;&lt;fastmark&gt;&gt;</code> action. Content <strong>after</strong> <code>&lt;&lt;fastmark&gt;&gt;</code> will still appear but any content between triggering fast-forwarding and <code>&lt;&lt;fastmark&gt;&gt;</code> will not appear.</p><br><hr><footer style="text-align: right;"><span>Chatterbox © 2023</span> by <a href="https://twitter.com/jujuadams/" target="_blank">JujuAdams</a><br>Docs created by <a href="https://twitter.com/faultyfunctions/" target="_blank">Faulty</a> with <a href="https://github.com/docsifyjs/docsify/" target="_blank">Docsify</a></footer></article></section></main>
+		<script>
+			/* APP INFO */
+			const appName = 'Chatterbox';
+			const latestVersion = '2.11';
+			const otherVersions = ['2.10', '2.9', '2.8', '2.7', '2.6', '2.5', '2.4', '2.3', '2.2', '2.1', '1.1'];
+
+			/* DOCSIFY CONFIG */
+			window.$docsify = {
+				name:
+					'<a id="home-link" class="app-name-link" data-nosearch href="/"><span id="home-text">' +
+					appName +
+					' Docs</span><br></a>' +
+					'<select id="version-selector" name="version">' +
+					'</select>',
+				nameLink: false,
+				loadSidebar: true,
+				loadNavbar: true,
+				subMaxLevel: 3,
+				relativePath: true,
+				auto2top: true,
+				footer: {
+					pre: '<br><hr>',
+					copy: '<span>' + appName + ' &copy; ' + new Date().getFullYear() + '</span>',
+					auth:
+						'by <a href="https://twitter.com/jujuadams/" target="_blank">JujuAdams</a>' +
+						'<br>Docs created by <a href="https://twitter.com/faultyfunctions/" target="_blank">Faulty</a> ' +
+						'with <a href="https://github.com/docsifyjs/docsify/" target="_blank">Docsify</a>',
+					style: 'text-align: right;',
+				},
+				tabs: {
+					persist: false,
+					sync: false,
+					theme: 'classic',
+					tabComments: false,
+					tabHeadings: true,
+				},
+				copyCode: {
+					buttonText: '📋',
+				},
+				search: {
+					paths: 'auto',
+					namespace: 'chatterbox',
+					hideOtherSidebarContent: true,
+					depth: 3,
+					pathNamespaces: (() => {
+						let pathNamespacesArray = ['/latest'];
+						for (const version of otherVersions) {
+							pathNamespacesArray.push('/' + version);
+						}
+						return pathNamespacesArray;
+					})(), // Run a self executed function to construct our pathNamespaces
+				},
+				namespaces: [
+					{
+						id: 'version',
+						values: ['latest', ...otherVersions],
+						optional: true,
+						default: 'latest',
+						selector: '#version-selector',
+					},
+				],
+				plugins: [
+					function (hook, vm) {
+						// ENSURE CLICKING THE LOGO TAKES US TO THE CORRECT VERSION DOCS
+						hook.doneEach(() => {
+							var appNameLink = Docsify.dom.find('#home-link');
+
+							if (appNameLink) {
+								appNameLink.href = vm.config.currentNamespace;
+							}
+
+							// ENSURE ANCHOR LINKS WILL STILL SCROLL INTO VIEW AS MANY TIMES AS NEEDED
+							var sidebarLinks = document.getElementsByTagName('a');
+							for (let link of sidebarLinks) {
+								if (Docsify.util.isExternal(link.href) === false) {
+									link.addEventListener('click', e => {
+										// Only trigger hash changes on parent "A" link elements
+										if (e.target.tagName == 'A') {
+											location.hash = '#dummy-hash'; // Dummy hash to change URL
+											history.replaceState(null, null, e.currentTarget.href); // Replace dummy hash so the browser can jump to actual target
+										} else {
+											e.preventDefault();
+											e.stopPropagation();
+											e.currentTarget.click(); // Manually trigger a click event for the current target.
+										}
+									});
+								}
+							}
+						});
+
+						hook.mounted(() => {
+							const versionSelector = Docsify.dom.find('#version-selector');
+
+							// CONSTRUCT DATA FOR OUR VERSION SELECTOR
+							const versionSelections = [];
+							versionSelections.push({ text: 'v' + latestVersion, value: 'latest', isDefault: true });
+							for (const version of otherVersions) {
+								versionSelections.push({
+									text: 'v' + version,
+									value: version,
+									isDefault: false,
+								});
+							}
+
+							// POPULATE VERSION SELECTOR DROP DOWN
+							versionSelections.map((version, index) => {
+								versionSelector.options[index] = new Option(
+									version.text,
+									version.value,
+									version.isDefault
+								);
+							});
+
+							// COLOR THE SIDEBAR ARROWS
+							const themeColor = window
+								.getComputedStyle(document.documentElement)
+								.getPropertyValue('--theme-color');
+
+							document.documentElement.style.setProperty(
+								'--sidebar-nav-pagelink-background-image--collapse',
+								"url(\"data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='11.2' viewBox='0 0 7 11.2'%3E%3Cpath d='M1.5 1.5l4 4.1 -4 4.1' stroke-width='1.5' stroke='" +
+									themeColor +
+									"' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E\")"
+							);
+
+							document.documentElement.style.setProperty(
+								'--sidebar-nav-pagelink-background-image--active',
+								"url(\"data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.2' height='7' viewBox='0 0 11.2 7'%3E%3Cpath d='M1.5 1.5l4.1 4 4.1-4' stroke-width='1.5' stroke='" +
+									themeColor +
+									"' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E\")"
+							);
+
+							document.documentElement.style.setProperty(
+								'--sidebar-nav-pagelink-background-image--loaded',
+								"url(\"data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.2' height='7' viewBox='0 0 11.2 7'%3E%3Cpath d='M1.5 1.5l4.1 4 4.1-4' stroke-width='1.5' stroke='" +
+									themeColor +
+									"' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E\")"
+							);
+						});
+					},
+				],
+			};
+		</script>
+		<!-- Docsify v4 -->
+		<script src="./YarnScript_files/docsify.min.js.téléchargement"></script>
+		<script src="./YarnScript_files/search.min.js.téléchargement"></script>
+		<script src="./YarnScript_files/docsify-namespaced.min.js.téléchargement"></script>
+		<script src="./YarnScript_files/docsify-themeable.min.js.téléchargement"></script>
+		<script src="./YarnScript_files/docsify-footer-enh.min.js.téléchargement"></script>
+		<script src="./YarnScript_files/docsify-tabs@1"></script>
+		<script src="./YarnScript_files/prism-gml.min.js.téléchargement"></script>
+		<script src="./YarnScript_files/docsify-copy-code@2"></script>
+		<script src="./YarnScript_files/prism-yarn.js.téléchargement"></script>
+		<style>
+			:root {
+				/* Theme */
+				--background: #242e33;
+				--theme-hue: 47;
+				--theme-saturation: 100%;
+				--theme-lightness: 47%;
+
+				/* Content */
+				--content-max-width: 62em;
+				--link-color--hover: var(--theme-color);
+				--heading-h1-color: var(--theme-color);
+				--heading-h2-color: var(--theme-color);
+				--heading-h2-border-color: var(--theme-color);
+				--table-head-border-width: 1px;
+				--table-cell-border-width: 1px;
+
+				/* Navbar */
+				--navbar-root-border-color: var(--theme-color);
+				--navbar-root-color: var(--theme-color);
+				--navbar-root-color--hover: var(--background);
+				--navbar-root-background--hover: var(--theme-color);
+				--navbar-root-border-width: 1px;
+				--navbar-root-border-radius: 5px;
+				--navbar-root-padding: 5px;
+				--navbar-root-margin: 0 0 0 1em;
+			}
+			#version-selector {
+				background: var(--base-background-color);
+				color: var(--theme-color);
+				border-color: var(--blockquote-border-color);
+				border-radius: 5px;
+				margin-top: 0.75em;
+				padding: 0 5px;
+			}
+			pre[class*='language-'] {
+				border: 1px solid #1f282d;
+				overflow: auto;
+				position: relative;
+			}
+			a code:hover {
+				color: var(--theme-color) !important;
+			}
+			footer a {
+				text-decoration: none !important;
+				font-weight: bold;
+			}
+			.token.name {
+				/* This is specific to yarn syntax highlighting, can be removed if copying over to other repos */
+				color: #a2a5cc !important;
+			}
+		</style>
+	
+
+<div class="progress" style="opacity: 0; width: 0%;"></div></body></html>

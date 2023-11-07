@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_macro_priorities",
+  "name": "scr_start_dialogue",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "MENU TYPES",
-    "path": "folders/SCRIPTS/CLASSES/GUI/MENU TYPES.yy",
+    "name": "MENU STARTERS",
+    "path": "folders/SCRIPTS/MENU STARTERS.yy",
   },
 }

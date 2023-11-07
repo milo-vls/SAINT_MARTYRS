@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "ROOM TRANSITION",
-    "path": "folders/SCRIPTS/CLASSES/GUI/MENU TYPES/ROOM TRANSITION.yy",
+    "path": "folders/SCRIPTS/CLASSES/MENU/MENU TYPES/ROOM TRANSITION.yy",
   },
 }

@@ -1,7 +1,7 @@
 
 
 /// @desc  import all the parameters set in the included CSV files
-function init_data_from_csvs()
+function rm_initialisation_room_init()
 {
 	#macro GAME_WIDTH 1920
 	#macro GAME_HEIGHT 1080
@@ -22,4 +22,7 @@ function init_data_from_csvs()
 	global.map_texts = csv_to_map_of_arrays("texts.csv");
 	
 	
+	
+	
+	room_goto(rm_title_screen);
 }

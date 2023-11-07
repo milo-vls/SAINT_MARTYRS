@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_change_room",
+  "name": "scr_rm_dev_init",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "MENU STARTERS",
-    "path": "folders/SCRIPTS/MENU STARTERS.yy",
+    "name": "DEV",
+    "path": "folders/ROOMS/DEV.yy",
   },
 }

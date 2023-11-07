@@ -1,3 +1,2 @@
-init_data_from_csvs();
+rm_initialisation_room_init();
 
-room_goto(rm_title_screen);
