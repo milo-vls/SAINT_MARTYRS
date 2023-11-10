@@ -24,5 +24,9 @@ function rm_initialisation_room_init()
 	
 	
 	
+	display_set_gui_size(GAME_WIDTH, GAME_HEIGHT);
+	
+	surface_resize(application_surface, GAME_WIDTH, GAME_HEIGHT);
+	scribble_font_set_default("fnt_test");
 	room_goto(rm_title_screen);
 }

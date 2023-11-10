@@ -1,7 +1,7 @@
 {
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
-  "name": "ft_test",
+  "name": "fnt_test",
   "AntiAlias": 1,
   "applyKerning": 0,
   "ascender": 23,

@@ -1,0 +1,1 @@
+rm_dev_init();
