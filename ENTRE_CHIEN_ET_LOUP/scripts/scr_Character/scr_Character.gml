@@ -1,27 +1,14 @@
 function Character() constructor{}
 
 
-
-
-/*
-/// @desc Constructor of the Character class
-/// @param {string} _nickname
-/// @param {string} _firstname 
-/// @param {string} _lastname
-/// @param {real} _address_id
-/// @param {real} _phone_number_id
-/// @param {bool} _may_appear 
-/// @param {string} _sprite_name_portrait 
-/// @param {asset.GMRoom} _room
-function Character(_nickname, _firstname, _lastname, _address_id, _phone_number_id, _may_appear, _sprite_name_portrait, _room) constructor
+function get_character_by_nickname(_nickname)
 {
-	nickname = _nickname;
-	firstname = _firstname;
-	lastname = _lastname;
-	address = _address_id;
-	phone_number = _phone_number_id;
-	may_appear = _may_appear;
-	sprite_name_portrait = _sprite_name_portrait;
-	room = _room;
+	var _character_id = -1;
+	var _nb_characters = array_length(global.characters);
+	for (var _i = 0; _i < _nb_characters; _i ++)
+	{
+		if global.characters[_i].nickname == _nickname then return _i;
+	}
+	
+	show_error("The " + _nickname + " nicknamed oesn't exist.", true);
 }
- */

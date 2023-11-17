@@ -1,9 +1,17 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: -2151,-23
+__PrivCrochet_position: -2329,-165
 __PrivCrochet_tags: 
 title: Start
 ---
-Ryuto: SALUT, MOI C'EST RYUTO! JE SUIS AUJOURD'HUI ICI AVEC VOUS POUR TESTER CES TOUTES NOUVELLES BULLES DE DIALOGUES CRÉES POUR CETTE NOUVELLE VERSION DE SAINTS MARTYRS.
-Milo: Bonjour Ryuto la tchatche. J'ai {$argent} euros sur moi.
+Blaise:Bonjour je suis Blaise ! 
+Blaise:Je suis aujourd'hui avec vous pour tester ces toutes nouvelles bulles de dialogues crées pour cette nouvelle version de saints martyrs.
+Hepriz:Salut Blaise, comment vas-tu ?
+-> Je vais bien.
+    Blaise: Tout va bien de mon côté.
+-> Je ne vais pas bien.
+    Blaise: J'ai connu de meilleurs soirées.
+-> Je suis triste.
+    Blaise: Je ne suis pas d'humeur, excuse moi.
+Hepriz: Okay, content d'avoir de tes nouvelles.
 ===

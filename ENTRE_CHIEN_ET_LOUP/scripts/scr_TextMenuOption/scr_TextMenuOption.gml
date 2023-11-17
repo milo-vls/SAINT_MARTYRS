@@ -11,7 +11,11 @@ function TextMenuOption(_text_id, _function_when_clicked) constructor
 	
 	is_mouse_over = function()
 	{
-		return point_in_rectangle(mouse_x, mouse_y,  self.scribble_text.get_left(x), self.scribble_text.get_top(y), self.scribble_text.get_right(x), self.scribble_text.get_bottom(y));
+		var _x1 =  self.scribble_text.get_left(x);
+		var _y1 =  self.scribble_text.get_top(y);
+		var _x2 = self.scribble_text.get_right(x) 
+		var _y2 = self.scribble_text.get_bottom(y)
+		return point_in_rectangle(mouse_x, mouse_y, _x1, _y1, _x2, _y2);
 	}
 	is_clicked = function()
 	{
