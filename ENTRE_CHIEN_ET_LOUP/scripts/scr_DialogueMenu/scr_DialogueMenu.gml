@@ -11,6 +11,8 @@ function next_text_bubble()
 	var _nb_text_bubbles = array_length(text_bubbles);
 	var _speaker = ChatterboxGetContentSpeaker(chatterbox, 0);
 	var _speech = ChatterboxGetContentSpeech(chatterbox, 0);
+	//IF THE TEXT IS EMPTY, THEN ENDS THE DIALOGUE
+	if _speech == "" {end_reached = true; return}
 	var _side;
 	if _nb_text_bubbles < 1
 	{
@@ -37,8 +39,7 @@ function next_text_bubble()
 		left_character_nickname = _speaker;
 	}
 	
-	//IF THE TEXT IS EMPTY, THEN ENDS THE DIALOGUE
-	if _speech == "" then end_reached = true;
+
 	
 }
 

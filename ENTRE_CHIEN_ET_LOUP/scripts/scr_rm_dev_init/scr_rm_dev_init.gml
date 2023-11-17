@@ -1,4 +1,4 @@
 function rm_dev_init()
 {
-	start_dialogue("test.yarn");
+	//start_dialogue("test.yarn");
 }

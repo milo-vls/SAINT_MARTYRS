@@ -4,5 +4,5 @@
 function change_room(_room_destination, _transition_style = new RoomTransitionStyle(ROOM_TRANSITION_STYLES.FADE))
 {
 	var _room_transition = new RoomTransition(_room_destination, _transition_style);
-	obj_menu_managment.add_menu(_room_transition);
+	obj_menu_management.add_menu(_room_transition);
 }

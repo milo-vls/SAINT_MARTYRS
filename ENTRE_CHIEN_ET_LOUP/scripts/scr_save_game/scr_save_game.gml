@@ -4,6 +4,7 @@ function save_game()
 {
 	var _struct_to_save =
 	{
+		sequence : global.current_sequence,
 		language : global.language,
 		day_number : global.day_number,
 		nb_ids_obtained_phone_numbers : array_length(global.ids_obtained_phone_numbers),

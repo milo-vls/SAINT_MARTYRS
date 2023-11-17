@@ -8,6 +8,7 @@ function rm_initialisation_room_init()
 
 	global.day_number = 0;
 	global.ids_obtained_phone_numbers = [];
+	global.current_sequence = noone;
 
 	global.street_types = csv_to_1d_array("street_types.csv");
 	global.characters = csv_to_structs_of_constructor("characters.csv", Character);
