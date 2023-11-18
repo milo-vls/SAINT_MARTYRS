@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "PERMANENT OBJECTS",
-    "path": "folders/PERMANENT OBJECTS.yy",
+    "path": "folders/OBJETCS/PERMANENT OBJECTS.yy",
   },
   "parentObjectId": null,
   "persistent": true,

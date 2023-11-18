@@ -6,9 +6,12 @@ function start_cutscene_test()
 		["test.yarn"],
 		function()
 		{
-			return obj_menu_management.dialogue_exists == false;
+			return obj_menu_management.dialogue_exists() == false;
 		});
-	
+	_steps[1] = new Step(
+		obj_menu_management.add_menu,
+		[new Exploration()],
+		function(){});
 	var _sequence = new Sequence(_steps);
 	
 	obj_sequence_management.set_sequence(_sequence);

@@ -1,0 +1,45 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_navigation_arrow",
+  "eventList": [],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_interactables_exploration","path":"objects/obj_interactables_exploration/obj_interactables_exploration.yy",},"propertyId":{"name":"function_when_pressed","path":"objects/obj_interactables_exploration/obj_interactables_exploration.yy",},"value":"navigation_arrow_pressed",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_interactables_exploration","path":"objects/obj_interactables_exploration/obj_interactables_exploration.yy",},"propertyId":{"name":"activity_parallelism","path":"objects/obj_interactables_exploration/obj_interactables_exploration.yy",},"value":"navigation_arrow_activity_parallelism",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_interactables_exploration","path":"objects/obj_interactables_exploration/obj_interactables_exploration.yy",},"propertyId":{"name":"activity_no_parallelism","path":"objects/obj_interactables_exploration/obj_interactables_exploration.yy",},"value":"navigation_arrow_activity_no_parallelism",},
+  ],
+  "parent": {
+    "name": "NAVIGATION ARROW",
+    "path": "folders/OBJETCS/INTERACTABLES EXPLORATION/NAVIGATION ARROW.yy",
+  },
+  "parentObjectId": {
+    "name": "obj_interactables_exploration",
+    "path": "objects/obj_interactables_exploration/obj_interactables_exploration.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"room_destination","filters":[
+        "GMRoom",
+      ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"room","varType":5,},
+  ],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_navigation_arrow",
+    "path": "sprites/spr_navigation_arrow/spr_navigation_arrow.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}

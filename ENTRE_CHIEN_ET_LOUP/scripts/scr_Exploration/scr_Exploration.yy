@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_inputs",
+  "name": "scr_Exploration",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "INPUTS",
-    "path": "folders/SCRIPTS/INPUTS.yy",
+    "name": "EXPLORATION",
+    "path": "folders/SCRIPTS/CLASSES/MENU/MENU TYPES/EXPLORATION.yy",
   },
 }
