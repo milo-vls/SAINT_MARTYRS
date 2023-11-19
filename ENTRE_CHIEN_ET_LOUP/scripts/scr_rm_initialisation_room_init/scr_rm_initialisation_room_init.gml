@@ -1,4 +1,8 @@
-
+enum DEPTHS 
+{
+	MENU_MANAGEMENT,
+	INTERACTABLES_EXPLORATION,
+}
 
 /// @desc  import all the parameters set in the included CSV files
 function rm_initialisation_room_init()
@@ -6,10 +10,10 @@ function rm_initialisation_room_init()
 	#macro GAME_WIDTH 1920
 	#macro GAME_HEIGHT 1080
 
+
 	global.day_number = 0;
 	global.ids_obtained_phone_numbers = [];
 	global.current_sequence = noone;
-
 	global.street_types = csv_to_1d_array("street_types.csv");
 	global.characters = csv_to_structs_of_constructor("characters.csv", Character);
 	var _nb_characters = array_length(global.characters);
@@ -23,16 +27,16 @@ function rm_initialisation_room_init()
 	global.addresses = csv_to_structs_of_constructor("addresses.csv", Address);
 	global.cases = csv_to_structs_of_constructor("cases.csv", Case);
 	global.crimes = csv_to_structs_of_constructor("crimes.csv",Crime);
-
 	enum LANGUAGES{FR, EN}
 	global.language = LANGUAGES.FR;
 	global.map_texts = csv_to_map_of_arrays("texts.csv");
 	
 	
+	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_menu_management);
+	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_sequence_management);
 	
 	
 	display_set_gui_size(GAME_WIDTH, GAME_HEIGHT);
-	
 	surface_resize(application_surface, GAME_WIDTH, GAME_HEIGHT);
 	scribble_font_set_default("fnt_test");
 	room_goto(rm_title_screen);
