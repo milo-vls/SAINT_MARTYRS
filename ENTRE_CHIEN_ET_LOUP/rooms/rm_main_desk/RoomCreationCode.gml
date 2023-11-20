@@ -1,0 +1,1 @@
+rm_main_desk_init();

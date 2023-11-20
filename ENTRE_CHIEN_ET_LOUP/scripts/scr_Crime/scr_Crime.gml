@@ -1,6 +1,14 @@
+#macro CRIME_BASE_COLOR c_white
+
+
 // Feather disable GM1009
 function Crime() constructor
 {
+	
+	
+	color = CRIME_BASE_COLOR;
+	
+	
 	/**
 	 * @param {struct.Crime} _crime
 	 * @returns {real} 1 if true, -1 if false, 0 if simultaneous
