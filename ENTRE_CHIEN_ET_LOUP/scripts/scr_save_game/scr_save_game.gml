@@ -1,14 +1,20 @@
 #macro SAVE_FILE_NAME "blaises.pov"
 
+enum SWITCHES
+{
+	
+	NUMBER_OF_SWITCHES,
+}
+
 function save_game()
 {
 	var _struct_to_save =
 	{
-		sequence : global.current_sequence,
 		language : global.language,
 		day_number : global.day_number,
 		nb_ids_obtained_phone_numbers : array_length(global.ids_obtained_phone_numbers),
 		ids_obtained_phone_numbers : [],
+		switches : array_create(SWITCHES.NUMBER_OF_SWITCHES),
 	}
 	
 	var _nb_ids_obtained_phone_numbers = array_length(global.ids_obtained_phone_numbers);
@@ -21,8 +27,10 @@ function save_game()
 	{
 		_struct_to_save.cases[_case].day_caught = global.cases[_case].day_caught;
 	}
-	
-	
+	for (var _switch = 0; _switch < SWITCHES.NUMBER_OF_SWITCHES; _switch ++)
+	{
+		_struct_to_save.switches[_switch] = global.switches[_switch];
+	}
 	
 	string_to_file(SAVE_FILE_NAME, json_stringify(_struct_to_save));
 }

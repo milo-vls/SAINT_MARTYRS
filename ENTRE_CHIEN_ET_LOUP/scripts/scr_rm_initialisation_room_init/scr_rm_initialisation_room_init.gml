@@ -10,7 +10,11 @@ function rm_initialisation_room_init()
 	#macro GAME_WIDTH 1920
 	#macro GAME_HEIGHT 1080
 
-
+	var _switches_init = function() 
+	{
+		return false;
+	}
+	global.switches = array_create_ext(SWITCHES.NUMBER_OF_SWITCHES, _switches_init);
 	global.day_number = 0;
 	global.ids_obtained_phone_numbers = [];
 	global.current_sequence = noone;
