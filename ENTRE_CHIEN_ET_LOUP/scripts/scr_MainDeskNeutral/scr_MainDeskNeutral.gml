@@ -15,7 +15,7 @@ function MainDeskNeutral() : Menu(MENU_PRIORITIES.MAIN_DESK_NEUTRAL, room, false
 		{
 			obj_menu_management.add_menu(new MainDeskCrimeFocus(pressed_crime.crime_id));
 		}		
-		pressed_crime = _mouse_is_over_crime > -1 and left_click_pressed() ? _mouse_is_over_crime : !left_click() ? noone : pressed_crime;
+		pressed_crime = (_mouse_is_over_crime > -1 and left_click_pressed()) ? _mouse_is_over_crime : (!left_click() ? noone : pressed_crime);
 		
 	}
 }
