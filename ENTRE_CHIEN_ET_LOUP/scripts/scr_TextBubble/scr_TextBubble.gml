@@ -4,7 +4,7 @@
 enum SIDES
 {
 	LEFT,
-	RIGHT
+	RIGHT,
 }
 
 function TextBubble(_text, _speaking_character, _side) constructor

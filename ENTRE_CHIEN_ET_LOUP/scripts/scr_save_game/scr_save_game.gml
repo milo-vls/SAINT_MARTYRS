@@ -2,7 +2,7 @@
 
 enum SWITCHES
 {
-	
+	CRIMES_UP_TO_DATE,
 	NUMBER_OF_SWITCHES,
 }
 

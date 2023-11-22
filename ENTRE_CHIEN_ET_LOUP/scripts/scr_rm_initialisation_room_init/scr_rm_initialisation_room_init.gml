@@ -2,6 +2,7 @@ enum DEPTHS
 {
 	MENU_MANAGEMENT,
 	INTERACTABLES_EXPLORATION,
+	CRIMES,
 }
 
 /// @desc  import all the parameters set in the included CSV files
@@ -31,6 +32,7 @@ function rm_initialisation_room_init()
 	global.addresses = csv_to_structs_of_constructor("addresses.csv", Address);
 	global.cases = csv_to_structs_of_constructor("cases.csv", Case);
 	global.crimes = csv_to_structs_of_constructor("crimes.csv",Crime);
+	global.nb_crimes = array_length(global.crimes);
 	enum LANGUAGES{FR, EN}
 	global.language = LANGUAGES.FR;
 	global.map_texts = csv_to_map_of_arrays("texts.csv");

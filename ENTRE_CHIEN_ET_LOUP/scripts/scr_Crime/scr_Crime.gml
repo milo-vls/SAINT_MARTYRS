@@ -4,10 +4,7 @@
 // Feather disable GM1009
 function Crime() constructor
 {
-	
-	
 	color = CRIME_BASE_COLOR;
-	
 	
 	/**
 	 * @param {struct.Crime} _crime
@@ -24,8 +21,6 @@ function Crime() constructor
 		return 0;
 	}
 	
-	
-	
 	/**
 	 * @param {struct.crime} _crime Description
 	 * @returns {real} Description
@@ -37,7 +32,12 @@ function Crime() constructor
 		if _is_more_recent == 1 return -1;
 		return 1;
 	}
-
+	
+	create = function(_crime_id)
+	{
+		instance_create_depth(x, y, DEPTHS.CRIMES, obj_crime, {crime_id : _crime_id});
+	}
+	
 }
 
 
