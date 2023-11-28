@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Card",
+  "name": "scr_CardsSet",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

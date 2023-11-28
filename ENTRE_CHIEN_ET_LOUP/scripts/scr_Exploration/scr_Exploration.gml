@@ -1,7 +1,7 @@
 function Exploration() : Menu(MENU_PRIORITIES.EXPLORATION, room, true, false, false, MENU_CHANNELS.EXPLORATION) constructor 
 {
 	pressed_interactable = noone;
-	return_to_desk_card = new Card();
+	//return_to_desk_card = new Card();
 	
 	draw = function()
 	{

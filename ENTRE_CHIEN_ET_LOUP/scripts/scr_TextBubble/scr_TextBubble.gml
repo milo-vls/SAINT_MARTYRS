@@ -1,5 +1,6 @@
-#macro DIALOGUES_FORMATING_TEXT "[fnt_dialogues][c_white]" +
-
+#macro DIALOGUES_FORMATING_TEXT "[fnt_dialogues]" +
+#macro DIALOGUES_BASE_FONT_COLOR c_white
+#macro MOUSE_OVER_TEXT_FONT_COLOR c_yellow
 
 enum SIDES
 {
@@ -7,15 +8,16 @@ enum SIDES
 	RIGHT,
 }
 
-function TextBubble(_text, _speaking_character, _side) constructor
+function TextBubble(_text, _speaking_character, _side, _text_color = DIALOGUES_BASE_FONT_COLOR) constructor
 {
 	speaking_character = _speaking_character
 	scribble_text = scribble(DIALOGUES_FORMATING_TEXT _text).wrap(TEXT_BUBBLE_WIDTH - TEXT_BUBBLE_MARGIN*2).align(fa_left, fa_middle);
 	side = _side;
+	text_color = _text_color;
+
 
 	typist = scribble_typist().in(1.3, 4);
 	y_bot = GAME_HEIGHT - 10;
-	
 	get_height = function()
 	{
 		return scribble_text.get_height() + TEXT_BUBBLE_MARGIN;
@@ -24,6 +26,9 @@ function TextBubble(_text, _speaking_character, _side) constructor
 	{
 		return typist.get_state() == 1;
 	}
+	
+	
+	
 	draw = function()
 	{
 		draw_set_alpha(1); draw_set_color(c_black); draw_set_circle_precision(64);
@@ -35,6 +40,6 @@ function TextBubble(_text, _speaking_character, _side) constructor
 		
 		var _x_text_left = _x_rec_left + TEXT_BUBBLE_MARGIN;
 		var _y_text_middle = _y_rec_top + self.get_height()/2;
-		scribble_text.draw(_x_text_left, _y_text_middle, typist);
+		scribble_text.blend(text_color).draw(_x_text_left, _y_text_middle, typist);
 	}
 }

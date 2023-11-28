@@ -1,3 +1,4 @@
+// Feather disable GM1041
 #macro TEXT_BUBBLE_WIDTH (GAME_WIDTH/4)
 #macro TEXT_BUBBLE_X_OFFSET (-TEXT_BUBBLE_WIDTH/8)
 #macro TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET (5 * GAME_HEIGHT/6)
@@ -53,7 +54,7 @@ function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, 
 
 	chatterbox = ChatterboxCreate(_file_name, true, 100000);
 	ChatterboxJump(chatterbox, "Start");
-	next_text_bubble()
+	next_text_bubble();
 	
 	draw = function()
 	{

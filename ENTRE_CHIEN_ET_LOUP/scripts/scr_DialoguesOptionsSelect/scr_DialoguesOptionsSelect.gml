@@ -6,9 +6,24 @@ function DialoguesOptionsSelect(_options_array, _dialogue_menu, _side) : Menu(ME
 	options_array = _options_array;
 	dialogue_menu = _dialogue_menu;
 	side = _side;
-
+	
+	pressed_option = -1;
 	nb_options = array_length(_options_array);
-	option_shown = 0;
+	var _cards = array_create(nb_options);
+	for (var _option = 0; _option < nb_options; _option ++)
+	{
+		var _scribble = scribble(DIALOGUES_FORMATING_TEXT options_array[_option].text).blend(DIALOGUES_BASE_FONT_COLOR)
+		_cards[_option] = new Card(_scribble);
+	}
+	cards_set = new CardsSet(_cards, ORIENTATION.BOT_DOWN_PIN, CIRCLE_DIRECTION.NEGATIVE);//side == SIDES.LEFT ? CIRCLE_DIRECTION.NEGATIVE : CIRCLE_DIRECTION.POSITIVE);
+	
+	draw = function()
+	{
+		cards_set.draw();
+	}
+	#region OLDER SYSTEM
+	/*
+
 	options_bubbles_width = min(TEXT_BUBBLE_WIDTH, (GAME_WIDTH - ((nb_options + 1) * GAP_BETWEEN_OPTION_BUBBLES )) /nb_options);
 	options_bubbles_height = 0;
 	
@@ -58,8 +73,28 @@ function DialoguesOptionsSelect(_options_array, _dialogue_menu, _side) : Menu(ME
 			
 		}
 	}
+	*/
+	#endregion
 	activity = function()
 	{
+		var _card_mouse_over = cards_set.get_card_mouse_over();
+		if pressed_option > -1 and left_click_released()
+		{
+			dialogue_menu.selected_option_index = pressed_option;
+			end_reached = true;
+		}
+		pressed_option = (_card_mouse_over > -1 and left_click_pressed()) ? _card_mouse_over : (!left_click() ? -1 : pressed_option);
+	}
+}
+
+
+
+
+
+
+
+
+/*
 		for (var _i = 0; _i < nb_options; _i ++)
 		{
 			if left_click_released() and pressed[_i]
@@ -82,5 +117,3 @@ function DialoguesOptionsSelect(_options_array, _dialogue_menu, _side) : Menu(ME
 
 			
 		}
-	}
-}
