@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "DIALOGUES",
-    "path": "folders/SCRIPTS/CLASSES/MENU/MENU TYPES/DIALOGUES.yy",
+    "path": "folders/SCRIPTS/MENUS/MENU TYPES/DIALOGUES.yy",
   },
 }

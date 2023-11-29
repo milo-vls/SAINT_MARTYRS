@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "SEQUENCE",
-    "path": "folders/SCRIPTS/CLASSES/SEQUENCE.yy",
+    "name": "SEQUENCES",
+    "path": "folders/SCRIPTS/SEQUENCES.yy",
   },
 }

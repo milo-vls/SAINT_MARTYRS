@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "TEXT OPTIONS MENU",
-    "path": "folders/SCRIPTS/CLASSES/MENU/MENU TYPES/TEXT OPTIONS MENU.yy",
+    "path": "folders/SCRIPTS/MENUS/MENU TYPES/TEXT OPTIONS MENU.yy",
   },
 }

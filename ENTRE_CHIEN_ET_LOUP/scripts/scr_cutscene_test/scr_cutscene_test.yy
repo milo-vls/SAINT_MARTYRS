@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "CUTSCENES",
-    "path": "folders/SCRIPTS/CUTSCENES.yy",
+    "path": "folders/SCRIPTS/SEQUENCES/CUTSCENES.yy",
   },
 }

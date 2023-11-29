@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "EXPLORATION",
-    "path": "folders/SCRIPTS/CLASSES/MENU/MENU TYPES/EXPLORATION.yy",
+    "path": "folders/SCRIPTS/MENUS/MENU TYPES/EXPLORATION.yy",
   },
 }

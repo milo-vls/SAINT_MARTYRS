@@ -107,6 +107,16 @@ function CardsSet(_cards, _orientation = ORIENTATION.BOT_DOWN_PIN, _circle_direc
 		}
 		return -1;
 	}
+	get_highest_card_height = function()
+	{
+		var _max_height = 0;
+		for (var _card = 0; _card < nb_cards; _card ++)
+		{
+			_max_height = _max_height < CARD.height ? CARD.height : _max_height;
+		}
+		return _max_height;
+	}
+	
 	draw = function()
 	{
 		for (var _card = 0; _card < nb_cards; _card ++)

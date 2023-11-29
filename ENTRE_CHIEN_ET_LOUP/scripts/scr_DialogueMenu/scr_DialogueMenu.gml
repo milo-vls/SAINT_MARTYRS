@@ -50,7 +50,6 @@ function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, 
 	left_character_nickname = NO_ONE;
 	text_bubbles = array_create(0);
 	selected_option_index = -1;
-	y_bottom_target_minimum_bubble = TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET;
 
 	chatterbox = ChatterboxCreate(_file_name, true, 100000);
 	ChatterboxJump(chatterbox, "Start");
@@ -58,6 +57,8 @@ function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, 
 	
 	draw = function()
 	{
+		var _option_select_menu = obj_menu_management.get_active_menu(DialoguesOptionsSelect);
+		
 		draw_set_alpha(0.45); draw_set_color(c_black);
 		draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);
 		draw_set_alpha(1);
@@ -73,7 +74,7 @@ function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, 
 		
 		var _nb_text_bubbles = array_length(text_bubbles);
 		var _last_bubble = _nb_text_bubbles - 1;
-		self.text_bubbles[_last_bubble].y_bot  = y_bottom_target_minimum_bubble;
+		self.text_bubbles[_last_bubble].y_bot  = min(TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET, _option_select_menu!=-1 ? GAME_HEIGHT - _option_select_menu.cards_set.get_highest_card_height() - GAP_BETWEEN_TEXT_BUBBLES*2.5 : TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET);
 		for (var _i = _last_bubble - 1; _i >= 0; _i --)
 		{
 			text_bubbles[_i].y_bot = text_bubbles[_i + 1].y_bot  - text_bubbles[_i + 1].get_height() - GAP_BETWEEN_TEXT_BUBBLES;
@@ -85,7 +86,6 @@ function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, 
 	}
 	activity = function()
 	{
-		y_bottom_target_minimum_bubble = TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET;
 		var _nb_text_bubbles = array_length(text_bubbles);
 		if  text_bubbles[_nb_text_bubbles-1].is_fully_shown()
 		{

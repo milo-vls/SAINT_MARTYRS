@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "MENU STARTERS",
-    "path": "folders/SCRIPTS/MENU STARTERS.yy",
+    "path": "folders/SCRIPTS/MENUS/MENU STARTERS.yy",
   },
 }

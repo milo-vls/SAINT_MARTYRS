@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "MENU TYPES",
-    "path": "folders/SCRIPTS/CLASSES/MENU/MENU TYPES.yy",
+    "path": "folders/SCRIPTS/MENUS/MENU TYPES.yy",
   },
 }

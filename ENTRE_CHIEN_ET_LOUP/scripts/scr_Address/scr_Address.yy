@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "FROM CSVs",
-    "path": "folders/SCRIPTS/CLASSES/FROM CSVs.yy",
+    "path": "folders/SCRIPTS/FROM CSVs.yy",
   },
 }

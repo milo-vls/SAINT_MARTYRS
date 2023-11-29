@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "MAIN DESK",
-    "path": "folders/SCRIPTS/CLASSES/MENU/MENU TYPES/MAIN DESK.yy",
+    "path": "folders/SCRIPTS/MENUS/MENU TYPES/MAIN DESK.yy",
   },
 }
