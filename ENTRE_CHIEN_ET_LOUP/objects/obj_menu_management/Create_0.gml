@@ -40,3 +40,12 @@ dialogue_exists = function()
 	return false;
 	
 }
+get_active_menu = function(_constructor)
+{
+	var _menus_length = array_length(menus);
+	for (var _menu = _menus_length-1; _menu != -1; _menu --)
+	{
+		if is_instanceof(menus[_menu], _constructor) then return menus[_menu];
+	}
+	return -1;
+}

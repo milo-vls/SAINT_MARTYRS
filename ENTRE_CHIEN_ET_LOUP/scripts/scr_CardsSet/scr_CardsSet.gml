@@ -20,89 +20,84 @@ function CardsSet(_cards, _orientation = ORIENTATION.BOT_DOWN_PIN, _circle_direc
 	cards = _cards;
 	orientation = _orientation;
 	circle_direction = _circle_direction;
-	nb_cards = array_length(cards);
-	cards_height = 0;for (var _card = 0; _card < nb_cards; _card ++)
-	{
-		var _card_height = cards[_card].scribble_title.get_height();
-		if _card_height > cards_height
-		{
-			cards_height = _card_height;
-		}
-		
-	}cards_height += TEXT_BUBBLE_MARGIN*2;
-	cards_width = TEXT_BUBBLE_WIDTH - TEXT_BUBBLE_MARGIN*2; for (var _card = 0; _card < nb_cards; _card ++)
-	{
-		var _card_width = cards[_card].scribble_title.get_width();
-		if _card_width > cards_width then cards_width = _card_width;
-	}cards_width += TEXT_BUBBLE_MARGIN * 2;
 	
-
-	var _x_origin, _y_origin;
-	for (var _card = 0; _card < nb_cards; _card ++)
+	pressed_card = -1;
+	nb_cards = array_length(cards);	
+	for (_card = 0; _card < nb_cards; _card ++)
 	{
+		
+		var _hidden_scribble_height = CARD.get_hidden_scribble_height();
+		
+		var _hidden_sprite = CARD.hidden_sprite;
+		var _hidden_sprite_width = _hidden_sprite != noone ? sprite_get_width(_hidden_sprite) : 1;
+		var _hidden_sprite_height = _hidden_sprite != noone ? sprite_get_height(_hidden_sprite) : 1;
+		CARD.hidden_sprite_scale = (CARD.width - TEXT_BUBBLE_MARGIN*2)/max(_hidden_sprite_width, _hidden_sprite_height);
+		
+		var _hidden_part_height = CARD.get_hidden_part_height();
+		
 		switch(orientation)
 		{
 			case ORIENTATION.BOT_LEFT_PIN :
-			_x_origin = 0;
-			_y_origin = circle_direction == CIRCLE_DIRECTION.POSITIVE ? GAME_HEIGHT - GAP_BETWEEN_TEXT_BUBBLES/2 : GAP_BETWEEN_TEXT_BUBBLES/2;
-			CARD.x_left = _x_origin;
-			CARD.x_right = _x_origin + cards_height;
-			CARD.y_top = (circle_direction == CIRCLE_DIRECTION.POSITIVE ? _y_origin - cards_width : _y_origin)
-			+ (circle_direction == CIRCLE_DIRECTION.POSITIVE ? -(cards_width + GAP_BETWEEN_TEXT_BUBBLES) : (cards_width + GAP_BETWEEN_TEXT_BUBBLES));
-			CARD.y_bot = circle_direction == CIRCLE_DIRECTION.POSITIVE ? _y_origin : _y_origin + cards_width
-			+ (circle_direction == CIRCLE_DIRECTION.POSITIVE ? -(cards_width + GAP_BETWEEN_TEXT_BUBBLES) : (cards_width + GAP_BETWEEN_TEXT_BUBBLES));
 			break;
 			case ORIENTATION.BOT_RIGHT_PIN :
-			_x_origin = GAME_WIDTH;
-			_y_origin = circle_direction != CIRCLE_DIRECTION.POSITIVE ? GAME_HEIGHT - GAP_BETWEEN_TEXT_BUBBLES/2 : GAP_BETWEEN_TEXT_BUBBLES/2;
-			CARD.x_left = _x_origin - cards_height;
-			CARD.x_right = _x_origin;
-			CARD.y_top = circle_direction == CIRCLE_DIRECTION.POSITIVE ? _y_origin - cards_width : _y_origin
-			+ (circle_direction != CIRCLE_DIRECTION.POSITIVE ? -(cards_width + GAP_BETWEEN_TEXT_BUBBLES) : (cards_width + GAP_BETWEEN_TEXT_BUBBLES));
-			CARD.y_bot = circle_direction == CIRCLE_DIRECTION.POSITIVE ? _y_origin : _y_origin + cards_width
-			+ (circle_direction != CIRCLE_DIRECTION.POSITIVE ? -(cards_width + GAP_BETWEEN_TEXT_BUBBLES) : (cards_width + GAP_BETWEEN_TEXT_BUBBLES));
 			break;
 			case ORIENTATION.BOT_UP_PIN :
-			CARD.y_top = 0;
-			CARD.y_bot = cards_height;
-			if _card == 0
-			{
-				CARD.x_left = circle_direction == CIRCLE_DIRECTION.POSITIVE ? GAME_WIDTH - GAP_BETWEEN_TEXT_BUBBLES/2 - cards_width : GAP_BETWEEN_TEXT_BUBBLES/2;
-				CARD.x_right = CARD.x_left + cards_width;
-			}
-			else
-			{
-				CARD.x_left = cards[_card-1].x_left
-				+ (circle_direction == CIRCLE_DIRECTION.POSITIVE ? -(cards_width + GAP_BETWEEN_TEXT_BUBBLES) : cards_width + GAP_BETWEEN_TEXT_BUBBLES);
-				CARD.x_right = cards[_card-1].x_right
-				+ (circle_direction == CIRCLE_DIRECTION.POSITIVE ? -(cards_width + GAP_BETWEEN_TEXT_BUBBLES) : cards_width + GAP_BETWEEN_TEXT_BUBBLES);
-			}
-			CARD.x_left_title = CARD.x_left + TEXT_BUBBLE_MARGIN;
-			CARD.y_middle_title = CARD.y_top + TEXT_BUBBLE_MARGIN;
 			break;
-			case ORIENTATION.BOT_DOWN_PIN :
-			CARD.y_top = GAME_HEIGHT - cards_height;
-			CARD.y_bot = GAME_HEIGHT;
-			if _card == 0
-			{
-				CARD.x_left = circle_direction == CIRCLE_DIRECTION.POSITIVE ? GAME_WIDTH - GAP_BETWEEN_TEXT_BUBBLES/2 - cards_width : GAP_BETWEEN_TEXT_BUBBLES/2;
-				CARD.x_right = CARD.x_left + cards_width;
+
+			case ORIENTATION.BOT_DOWN_PIN :{
+				CARD.y_top_hidden = GAME_HEIGHT - CARD.height;
+				CARD.y_top_revealed = CARD.y_top_hidden - _hidden_part_height;
+				CARD.y_top = CARD.y_top_hidden;
+				
+				CARD.y_bot_hidden = GAME_HEIGHT;
+				CARD.y_bot_revealed = GAME_HEIGHT;
+				CARD.y_bot = GAME_HEIGHT;
+				
+				if _card == 0
+				{
+					CARD.x_left_hidden = circle_direction == CIRCLE_DIRECTION.POSITIVE ? GAME_WIDTH - GAP_BETWEEN_TEXT_BUBBLES/2 - CARD.width : GAP_BETWEEN_TEXT_BUBBLES/2;
+					CARD.x_right_hidden = CARD.x_left_hidden + CARD.width;	
+				}
+				else
+				{
+					CARD.x_left_hidden = cards[_card-1].x_left_hidden + (circle_direction == CIRCLE_DIRECTION.POSITIVE ? -(cards[_card-1].width + GAP_BETWEEN_TEXT_BUBBLES) : cards[_card-1].width + GAP_BETWEEN_TEXT_BUBBLES);
+					CARD.x_right_hidden = CARD.x_left_hidden + CARD.width;
+				}
+				CARD.x_left_revealed = CARD.x_left_hidden;
+				CARD.x_left = CARD.x_left_hidden;
+				
+				CARD.x_right_revealed = CARD.x_right_hidden;
+				CARD.x_right = CARD.x_right_revealed;	
+				
+				CARD.x_left_title_hidden = CARD.x_left_hidden + TEXT_BUBBLE_MARGIN;
+				CARD.x_left_title_revealed = CARD.x_left_title_hidden;
+				CARD.x_left_title = CARD.x_left_title_hidden;
+				
+				CARD.y_top_title_hidden = CARD.y_top_hidden + TEXT_BUBBLE_MARGIN;
+				CARD.y_top_title_revealed = CARD.y_top_title_hidden - _hidden_part_height;
+				CARD.y_top_title = CARD.y_top_title_hidden;
+				
+				CARD.x_left_hidden_scribble_hidden = CARD.x_left_title;
+				CARD.x_left_hidden_scribble_revealed = CARD.x_left_title;
+				CARD.x_left_hidden_scribble = CARD.x_left_title;
+				
+				CARD.y_top_hidden_scribble_hidden = GAME_HEIGHT;
+				CARD.y_top_hidden_scribble_revealed = GAME_HEIGHT - _hidden_part_height;
+				CARD.y_top_hidden_scribble = CARD.y_top_hidden_scribble_hidden;
+				
+				CARD.x_left_hidden_sprite_hidden = CARD.x_left_hidden_scribble;
+				CARD.x_left_hidden_sprite_revealed = CARD.x_left_hidden_sprite_hidden;
+				CARD.x_left_hidden_sprite = CARD.x_left_hidden_sprite_revealed;
+				
+				CARD.y_top_hidden_sprite_hidden = GAME_HEIGHT + _hidden_scribble_height;
+				CARD.y_top_hidden_sprite_revealed = CARD.y_top_hidden_scribble_revealed + _hidden_scribble_height;
+				CARD.y_top_hidden_sprite = CARD.y_top_hidden_sprite_hidden;
 			}
-			else
-			{
-				CARD.x_left = cards[_card-1].x_left
-				+ (circle_direction == CIRCLE_DIRECTION.POSITIVE ? -(cards_width + GAP_BETWEEN_TEXT_BUBBLES) : cards_width + GAP_BETWEEN_TEXT_BUBBLES);
-				CARD.x_right = cards[_card-1].x_right
-				+ (circle_direction == CIRCLE_DIRECTION.POSITIVE ? -(cards_width + GAP_BETWEEN_TEXT_BUBBLES) : cards_width + GAP_BETWEEN_TEXT_BUBBLES);
-			}
-			CARD.x_left_title = CARD.x_left + TEXT_BUBBLE_MARGIN;
-			CARD.y_middle_title = CARD.y_top + TEXT_BUBBLE_MARGIN;		
 			break;
 		}
 	}
 	
-	
-	get_card_mouse_over = function()
+	static get_card_mouse_over = function()
 	{
 		for (var _card_id = 0; _card_id < nb_cards; _card_id ++)
 		{
@@ -112,7 +107,6 @@ function CardsSet(_cards, _orientation = ORIENTATION.BOT_DOWN_PIN, _circle_direc
 		}
 		return -1;
 	}
-	
 	draw = function()
 	{
 		for (var _card = 0; _card < nb_cards; _card ++)
@@ -120,6 +114,20 @@ function CardsSet(_cards, _orientation = ORIENTATION.BOT_DOWN_PIN, _circle_direc
 			CARD.draw();
 		}
 		
+	}
+	activity = function()
+	{
+		var _card_mouse_over = get_card_mouse_over();
+		if pressed_card > -1 and left_click_released()
+		{
+			cards[_card_mouse_over].function_when_clicked(_card_mouse_over);
+		}
+		pressed_card = (_card_mouse_over > -1 and left_click_pressed()) ? _card_mouse_over : (!left_click() ? -1 : pressed_card);
+		
+		for (var _card = 0; _card < nb_cards; _card ++)
+		{
+			CARD.update_points_of_draw(_card_mouse_over == _card);
+		}
 	}
 }
 
