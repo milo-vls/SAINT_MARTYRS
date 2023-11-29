@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "MENUS",
-    "path": "folders/SCRIPTS/MENUS.yy",
+    "name": "MENU SUB ELEMENTS",
+    "path": "folders/SCRIPTS/MENUS/MENU SUB ELEMENTS.yy",
   },
 }

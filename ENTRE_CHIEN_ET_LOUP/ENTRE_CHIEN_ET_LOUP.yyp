@@ -64,6 +64,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Superfonts","folderPath":"folders/SCRIPTS/TEXT/SCRIBBLE/Superfonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPRITES","folderPath":"folders/SPRITES.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MAP & MAIN DESK","folderPath":"folders/SPRITES/MAP & MAIN DESK.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MENU SUB ELEMENTS","folderPath":"folders/SCRIPTS/MENUS/MENU SUB ELEMENTS.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"addresses.csv","CopyToMask":-1,"filePath":"datafiles/CSVs",},

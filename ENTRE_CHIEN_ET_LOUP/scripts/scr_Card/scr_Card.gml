@@ -74,9 +74,13 @@ function Card(_scribble_title, _function = function(){}, _hidden_scribble = noon
 	static update_points_of_draw = function(_is_hidden)
 	{
 		x_left = !_is_hidden ? x_left_hidden : x_left_revealed;
+		x_right = !_is_hidden ? x_right_hidden : x_right_revealed;
 		y_top = !_is_hidden ? y_top_hidden : y_top_revealed;
+		y_bot = !_is_hidden ? y_bot_hidden : y_bot_revealed;
+		
 		x_left_title = !_is_hidden ? x_left_title_hidden : x_left_title_revealed;
 		y_top_title = !_is_hidden ? y_top_title_hidden : y_top_title_revealed;
+		
 		y_top_hidden_scribble = !_is_hidden ? y_top_hidden_scribble_hidden : y_top_hidden_scribble_revealed;
 		y_top_hidden_sprite = !_is_hidden ? y_top_hidden_sprite_hidden : y_top_hidden_sprite_revealed;
 	}
