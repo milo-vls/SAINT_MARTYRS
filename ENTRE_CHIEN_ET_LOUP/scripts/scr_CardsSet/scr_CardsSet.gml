@@ -1,5 +1,4 @@
 #macro CARDS_COLOR c_black
-
 #macro CARD cards[_card]
 
 enum ORIENTATION
@@ -25,16 +24,7 @@ function CardsSet(_cards, _orientation = ORIENTATION.BOT_DOWN_PIN, _circle_direc
 	nb_cards = array_length(cards);	
 	for (var _card = 0; _card < nb_cards; _card ++)
 	{
-		
-		var _hidden_scribble_height = CARD.get_hidden_scribble_height();
-		
-		var _hidden_sprite = CARD.hidden_sprite;
-		var _hidden_sprite_width = _hidden_sprite != noone ? sprite_get_width(_hidden_sprite) : 1;
-		var _hidden_sprite_height = _hidden_sprite != noone ? sprite_get_height(_hidden_sprite) : 1;
-		CARD.hidden_sprite_scale = (CARD.width - TEXT_BUBBLE_MARGIN*2)/max(_hidden_sprite_width, _hidden_sprite_height);
-		
 		var _hidden_part_height = CARD.get_hidden_part_height();
-		
 		switch(orientation)
 		{
 			case ORIENTATION.BOT_LEFT_PIN :
@@ -104,7 +94,6 @@ function CardsSet(_cards, _orientation = ORIENTATION.BOT_DOWN_PIN, _circle_direc
 				{
 					CARD.x_left_hidden = cards[_card-1].x_left_hidden + (circle_direction == CIRCLE_DIRECTION.POSITIVE ? -(cards[_card-1].width + GAP_BETWEEN_TEXT_BUBBLES) : cards[_card-1].width + GAP_BETWEEN_TEXT_BUBBLES);
 				}
-				
 				CARD.x_left_revealed = CARD.x_left_hidden;
 				CARD.x_left = CARD.x_left_hidden;
 				
@@ -112,7 +101,7 @@ function CardsSet(_cards, _orientation = ORIENTATION.BOT_DOWN_PIN, _circle_direc
 				CARD.x_right_revealed = CARD.x_right_hidden;
 				CARD.x_right = CARD.x_right_revealed;	
 				
-				CARD.y_top_hidden = GAME_HEIGHT - CARD.height;
+				CARD.y_top_hidden = GAME_HEIGHT - CARD.sub_elements[0].get_height() - TEXT_BUBBLE_MARGIN;
 				CARD.y_top_revealed = CARD.y_top_hidden - _hidden_part_height;
 				CARD.y_top = CARD.y_top_hidden;
 				
@@ -121,33 +110,29 @@ function CardsSet(_cards, _orientation = ORIENTATION.BOT_DOWN_PIN, _circle_direc
 				CARD.y_bot = GAME_HEIGHT;
 				
 				
-				CARD.x_left_title_hidden = CARD.x_left_hidden + TEXT_BUBBLE_MARGIN;
-				CARD.x_left_title_revealed = CARD.x_left_title_hidden;
-				CARD.x_left_title = CARD.x_left_title_hidden;
+				CARD.sub_elements[0].x_left = CARD.x_left + TEXT_BUBBLE_MARGIN;
+				CARD.sub_elements[0].x_left_hidden = CARD.sub_elements[0].x_left;
+				CARD.sub_elements[0].x_left_revealed = CARD.sub_elements[0].x_left;
 				
-				CARD.y_top_title_hidden = CARD.y_top_hidden + TEXT_BUBBLE_MARGIN;
-				CARD.y_top_title_revealed = CARD.y_top_title_hidden - _hidden_part_height;
-				CARD.y_top_title = CARD.y_top_title_hidden;
-				
-				CARD.x_left_hidden_scribble_hidden = CARD.x_left_title;
-				CARD.x_left_hidden_scribble_revealed = CARD.x_left_title;
-				CARD.x_left_hidden_scribble = CARD.x_left_title;
-				
-				CARD.y_top_hidden_scribble_hidden = GAME_HEIGHT;
-				CARD.y_top_hidden_scribble_revealed = GAME_HEIGHT - _hidden_part_height;
-				CARD.y_top_hidden_scribble = CARD.y_top_hidden_scribble_hidden;
-				
-				CARD.x_left_hidden_sprite_hidden = CARD.x_left_hidden_scribble;
-				CARD.x_left_hidden_sprite_revealed = CARD.x_left_hidden_sprite_hidden;
-				CARD.x_left_hidden_sprite = CARD.x_left_hidden_sprite_revealed;
-				
-				CARD.y_top_hidden_sprite_hidden = GAME_HEIGHT + _hidden_scribble_height;
-				CARD.y_top_hidden_sprite_revealed = CARD.y_top_hidden_scribble_revealed + _hidden_scribble_height;
-				CARD.y_top_hidden_sprite = CARD.y_top_hidden_sprite_hidden;
+				CARD.sub_elements[0].y_top = CARD.y_top + TEXT_BUBBLE_MARGIN;
+				CARD.sub_elements[0].y_top_hidden = CARD.sub_elements[0].y_top;
+				CARD.sub_elements[0].y_top_revealed = CARD.sub_elements[0].y_top - _hidden_part_height;
+				for (var _sub_element = 1; _sub_element < CARD.nb_sub_elements; _sub_element ++)
+				{
+					CARD.sub_elements[_sub_element].x_left = CARD.x_left + TEXT_BUBBLE_MARGIN;
+					CARD.sub_elements[_sub_element].x_left_hidden = CARD.x_left + TEXT_BUBBLE_MARGIN;
+					CARD.sub_elements[_sub_element].x_left_revealed = CARD.x_left + TEXT_BUBBLE_MARGIN;
+					
+					CARD.sub_elements[_sub_element].y_top = CARD.sub_elements[_sub_element-1].y_top + CARD.sub_elements[_sub_element-1].get_height();
+					CARD.sub_elements[_sub_element].y_top_hidden = CARD.sub_elements[_sub_element].y_top;
+					CARD.sub_elements[_sub_element].y_top_revealed = CARD.sub_elements[_sub_element].y_top - _hidden_part_height;
+				}
 			}
 			break;
 		}
 	}
+	
+	
 	
 	static get_card_mouse_over = function()
 	{
