@@ -23,7 +23,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MAIN DESK","folderPath":"folders/ROOMS/MAIN DESK.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TITLE SCREEN","folderPath":"folders/ROOMS/TITLE SCREEN.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SCRIPTS","folderPath":"folders/SCRIPTS.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"FROM CSVs","folderPath":"folders/SCRIPTS/FROM CSVs.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"FROM CSVs","folderPath":"folders/SCRIPTS/DATAS/FROM CSVs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MENUS","folderPath":"folders/SCRIPTS/MENUS.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MENU TYPES","folderPath":"folders/SCRIPTS/MENUS/MENU TYPES.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"DIALOGUES","folderPath":"folders/SCRIPTS/MENUS/MENU TYPES/DIALOGUES.yy",},
