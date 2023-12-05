@@ -27,7 +27,7 @@ function DialoguesOptionsSelect(_options_array, _dialogue_menu, _side) : Menu(ME
 		];
 		_cards[_option] = new Card(_sub_elements, option_card_clicked);
 	}
-	cards_set = new CardsSet(_cards, ORIENTATION.BOT_UP_PIN, side == SIDES.LEFT ? CIRCLE_DIRECTION.NEGATIVE : CIRCLE_DIRECTION.POSITIVE);
+	cards_set = new CardsSet(_cards, ORIENTATION.BOT_DOWN_PIN, side == SIDES.LEFT ? CIRCLE_DIRECTION.NEGATIVE : CIRCLE_DIRECTION.POSITIVE);
 	
 	
 	draw = cards_set.draw;

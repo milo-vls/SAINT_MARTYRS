@@ -1,11 +1,30 @@
 #macro CRIME_BASE_COLOR c_white
 
+function crime_disappear(_crime_id)
+{
+	var _nb_obj_crimes = instance_number(obj_crime);
+	for (var _obj_crime_index = 0; _obj_crime_index < _nb_obj_crimes; _obj_crime_index ++)
+	{
+		var _obj_crime = instance_find(obj_crime, _obj_crime_index);
+		if _obj_crime_index == _crime_id
+		{
+			instance_destroy(_obj_crime);
+			global.crimes[_crime_id].appeard = false;
+		}
+	}
+}
+function crime_appear(_crime_id)
+{
+	var _crime = global.crimes[_crime_id];
+	instance_create_depth(_crime.x, _crime.y, DEPTHS.CRIMES, obj_crime, {crime_id : _crime_id});
+	global.crimes[_crime_id].appeard = true;
 
+}
 // Feather disable GM1009
 function Crime() constructor
 {
 	color = CRIME_BASE_COLOR;
-	
+	appeard = false;
 	/**
 	 * @param {struct.Crime} _crime
 	 * @returns {real} 1 if true, -1 if false, 0 if simultaneous
@@ -32,12 +51,7 @@ function Crime() constructor
 		if _is_more_recent == 1 return -1;
 		return 1;
 	}
-	
-	create = function(_crime_id)
-	{
-		instance_create_depth(x, y, DEPTHS.CRIMES, obj_crime, {crime_id : _crime_id});
-	}
-	
+ 
 }
 
 
