@@ -16,9 +16,12 @@ function crime_disappear(_crime_id)
 function crime_appear(_crime_id)
 {
 	var _crime = global.crimes[_crime_id];
-	instance_create_depth(_crime.x, _crime.y, DEPTHS.CRIMES, obj_crime, {crime_id : _crime_id});
-	global.crimes[_crime_id].appeard = true;
-
+	var _case = global.cases[_crime.case_id];
+	if _case.is_free()
+	{
+		instance_create_depth(_crime.x, _crime.y, DEPTHS.CRIMES, obj_crime, {crime_id : _crime_id});
+		global.crimes[_crime_id].appeard = true;
+	}
 }
 // Feather disable GM1009
 function Crime() constructor
