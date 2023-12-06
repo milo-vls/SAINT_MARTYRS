@@ -20,6 +20,10 @@ function CardSubElement(_element, _type) constructor
 	scale = 1.0;
 	rotation = 0.0;
 	
+	sub_image = 0;
+	sprite_fsp_speed = type == CARD_SUB_ELEMENT_TYPES.ANIMATED_SPRITE ? sprite_get_speed(_element) :
+	0;
+	
 	set_width = function(_new_width)
 	{
 		switch(type)
@@ -70,8 +74,11 @@ function CardSubElement(_element, _type) constructor
 		switch (type)
 		{
 			case CARD_SUB_ELEMENT_TYPES.SPRITE:
+			draw_sprite_ext(element, sub_image, x_left, y_top, scale, scale, rotation, c_white, 1);
+			break;
 			case CARD_SUB_ELEMENT_TYPES.ANIMATED_SPRITE:
-			draw_sprite_ext(element, 0, x_left, y_top, scale, scale, rotation, c_white, 1);
+			sub_image = sub_image + sprite_fsp_speed / game_get_speed(gamespeed_fps);
+			draw_sprite_ext(element, sub_image, x_left, y_top, scale, scale, rotation, c_white, 1);
 			return;
 			case CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT:
 			element.blend(_color).draw(x_left, y_top)
