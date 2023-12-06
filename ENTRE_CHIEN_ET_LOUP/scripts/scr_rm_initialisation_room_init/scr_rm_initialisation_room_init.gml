@@ -30,8 +30,11 @@ function rm_initialisation_room_init()
 	global.nb_crimes = array_length(global.crimes);enum LANGUAGES{FR, EN}
 	global.language = LANGUAGES.FR;
 	global.map_texts = csv_to_map_of_arrays("texts.csv");
-	global.units = csv_to_structs_of_constructor("units.csv", Unit);
-	global.available_units = global.units[0];
+	global.units = csv_to_structs_of_constructor("units.csv", Unit);for (var _unit_id = 0; _unit_id < array_length(global.units); _unit_id ++)
+	{
+		global.units[_unit_id].nickname = global.characters[global.units[_unit_id].character_id].nickname;
+	}
+	global.available_units = first_available_units();
 	
 	
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_menu_management);

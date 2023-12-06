@@ -1,7 +1,7 @@
 function Character() constructor{}
 
 
-function get_character_by_nickname(_nickname)
+function get_character_id_by_nickname(_nickname)
 {
 	var _character_id = -1;
 	var _nb_characters = array_length(global.characters);
@@ -10,5 +10,5 @@ function get_character_by_nickname(_nickname)
 		if global.characters[_i].nickname == _nickname then return _i;
 	}
 	
-	show_error("The " + _nickname + " nicknamed oesn't exist.", true);
+	show_error("The nickname \"" + _nickname + "\" doesn't exist.", true);
 }

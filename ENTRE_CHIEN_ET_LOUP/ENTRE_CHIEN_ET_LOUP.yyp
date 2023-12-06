@@ -75,6 +75,7 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"street_types.csv","CopyToMask":-1,"filePath":"datafiles/CSVs",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"streets.csv","CopyToMask":-1,"filePath":"datafiles/CSVs",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"texts.csv","CopyToMask":-1,"filePath":"datafiles/CSVs",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"units.csv","CopyToMask":-1,"filePath":"datafiles/CSVs",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"dataSaintsMartyrs.ods","CopyToMask":-1,"filePath":"datafiles/DEV",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ECELdata.odb","CopyToMask":-1,"filePath":"datafiles/DEV",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"test.yarn","CopyToMask":-1,"filePath":"datafiles/DIALOGUES/FR",},
