@@ -16,9 +16,7 @@ function rm_initialisation_room_init()
 	global.ids_obtained_phone_numbers = [];
 	global.current_sequence = noone;
 	global.street_types = csv_to_1d_array("street_types.csv");
-	global.characters = csv_to_structs_of_constructor("characters.csv", Character);
-	var _nb_characters = array_length(global.characters);
-	for (var _character_id = 0; _character_id < _nb_characters; _character_id ++)
+	global.characters = csv_to_structs_of_constructor("characters.csv", Character);var _nb_characters = array_length(global.characters);for (var _character_id = 0; _character_id < _nb_characters; _character_id ++)
 	{
 		var _character_sprite = asset_get_index("spr_char_" + global.characters[_character_id].nickname);
 		global.characters[_character_id].sprite = asset_get_type(_character_sprite) == asset_sprite ? _character_sprite : spr_character_noone;
@@ -28,10 +26,11 @@ function rm_initialisation_room_init()
 	global.addresses = csv_to_structs_of_constructor("addresses.csv", Address);
 	global.cases = csv_to_structs_of_constructor("cases.csv", Case);
 	global.crimes = csv_to_structs_of_constructor("crimes.csv",Crime);
-	global.nb_crimes = array_length(global.crimes);
-	enum LANGUAGES{FR, EN}
+	global.nb_crimes = array_length(global.crimes);enum LANGUAGES{FR, EN}
 	global.language = LANGUAGES.FR;
 	global.map_texts = csv_to_map_of_arrays("texts.csv");
+	global.units = csv_to_structs_of_constructor("units.csv", Unit);
+	global.available_units = global.units[0];
 	
 	
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_menu_management);
@@ -41,5 +40,7 @@ function rm_initialisation_room_init()
 	display_set_gui_size(GAME_WIDTH, GAME_HEIGHT);
 	surface_resize(application_surface, GAME_WIDTH, GAME_HEIGHT);
 	scribble_font_set_default("fnt_test");
+	
+	
 	room_goto(rm_title_screen);
 }

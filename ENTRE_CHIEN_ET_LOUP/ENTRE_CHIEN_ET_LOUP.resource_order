@@ -63,6 +63,7 @@
     {"name":"scribble_font_scale","order":13,"path":"scripts/scribble_font_scale/scribble_font_scale.yy",},
     {"name":"scribble_markdown_set_styles","order":4,"path":"scripts/scribble_markdown_set_styles/scribble_markdown_set_styles.yy",},
     {"name":"scr_show_options","order":4,"path":"scripts/scr_show_options/scr_show_options.yy",},
+    {"name":"scr_Unit","order":6,"path":"scripts/scr_Unit/scr_Unit.yy",},
     {"name":"scribble_font_duplicate","order":6,"path":"scripts/scribble_font_duplicate/scribble_font_duplicate.yy",},
     {"name":"scr_DialoguesOptionsSelect","order":2,"path":"scripts/scr_DialoguesOptionsSelect/scr_DialoguesOptionsSelect.yy",},
     {"name":"__scribble_gen_9_write_vbuffs","order":9,"path":"scripts/__scribble_gen_9_write_vbuffs/__scribble_gen_9_write_vbuffs.yy",},

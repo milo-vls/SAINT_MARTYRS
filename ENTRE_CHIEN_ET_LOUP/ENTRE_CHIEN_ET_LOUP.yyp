@@ -100,6 +100,7 @@
     {"id":{"name":"scribble_font_scale","path":"scripts/scribble_font_scale/scribble_font_scale.yy",},},
     {"id":{"name":"scribble_markdown_set_styles","path":"scripts/scribble_markdown_set_styles/scribble_markdown_set_styles.yy",},},
     {"id":{"name":"scr_show_options","path":"scripts/scr_show_options/scr_show_options.yy",},},
+    {"id":{"name":"scr_Unit","path":"scripts/scr_Unit/scr_Unit.yy",},},
     {"id":{"name":"scribble_font_duplicate","path":"scripts/scribble_font_duplicate/scribble_font_duplicate.yy",},},
     {"id":{"name":"scr_DialoguesOptionsSelect","path":"scripts/scr_DialoguesOptionsSelect/scr_DialoguesOptionsSelect.yy",},},
     {"id":{"name":"__scribble_gen_9_write_vbuffs","path":"scripts/__scribble_gen_9_write_vbuffs/__scribble_gen_9_write_vbuffs.yy",},},
