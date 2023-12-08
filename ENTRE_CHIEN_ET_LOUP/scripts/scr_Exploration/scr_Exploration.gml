@@ -1,6 +1,7 @@
 function return_to_main_desk()
 {
 	change_room(rm_main_desk);
+	obj_menu_management.get_active_menu(Exploration).end_reached = true;
 }
 
 function Exploration() : Menu(MENU_PRIORITIES.EXPLORATION, room, true, false, false, MENU_CHANNELS.EXPLORATION) constructor 

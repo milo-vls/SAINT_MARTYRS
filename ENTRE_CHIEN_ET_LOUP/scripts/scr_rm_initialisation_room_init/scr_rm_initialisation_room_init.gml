@@ -32,6 +32,7 @@ function rm_initialisation_room_init()
 	global.map_texts = csv_to_map_of_arrays("texts.csv");
 	global.units = csv_to_structs_of_constructor("units.csv", Unit);for (var _unit_id = 0; _unit_id < array_length(global.units); _unit_id ++)
 	{
+		global.units[_unit_id].character_id = int64(global.units[_unit_id].character_id);
 		global.units[_unit_id].nickname = global.characters[global.units[_unit_id].character_id].nickname;
 	}
 	global.available_units = first_available_units();

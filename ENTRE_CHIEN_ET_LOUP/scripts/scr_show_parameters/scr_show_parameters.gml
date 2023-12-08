@@ -21,5 +21,5 @@ function show_parameters(_channel, _priority)
 	_parameters_options[1] = new TextMenuOption("BACK", function(_id_menu){_id_menu.end_reached = true});
 	
 	var _text_options_menu = new TextOptionsMenu( _parameters_options, CENTERED_GUIDE_LINE, _priority);
-	obj_menu_management.add_menu(_text_options_menu)
+	add_menu(_text_options_menu)
 }

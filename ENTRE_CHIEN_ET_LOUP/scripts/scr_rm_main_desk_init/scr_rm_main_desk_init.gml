@@ -14,16 +14,18 @@ function spawn_todays_crimes()
 		then crime_appear(_crime_id);
 	}
 }
-
 function start_crime_update()
 {
 	//TO DO - ANIMATION
 	global.switches[SWITCHES.CRIMES_UP_TO_DATE] = true;
 	spawn_todays_crimes();
 }
+
+
+
 function rm_main_desk_init()
 {
-	obj_menu_management.add_menu(new MainDeskNeutral());
+	add_menu(new MainDeskNeutral());
 	spawn_yerstedays_crimes();
 	if global.switches[SWITCHES.CRIMES_UP_TO_DATE] == false
 	then start_crime_update();

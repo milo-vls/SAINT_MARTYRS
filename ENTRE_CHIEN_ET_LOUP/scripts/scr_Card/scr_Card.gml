@@ -1,17 +1,19 @@
 #macro FIRST_SUB_ELEMENT sub_elements[0]
 #macro SUB_ELEMENT sub_elements[_sub_element]
 
-function Card(_sub_elements, _function = function(){}) constructor 
+function Card(_sub_elements, _function = function(){}, _always_revealed = false) constructor 
 {
 	sub_elements = _sub_elements;
 	function_when_clicked = _function;	
+	always_revealed = _always_revealed;
+	
 	
 	nb_sub_elements = array_length(_sub_elements);
 	width = min(FIRST_SUB_ELEMENT.get_width() + TEXT_BUBBLE_MARGIN*2, TEXT_BUBBLE_WIDTH);
 	
 	for (var _sub_element = 0; _sub_element < nb_sub_elements; _sub_element ++)
 	{
-		SUB_ELEMENT.set_width(width - TEXT_BUBBLE_MARGIN*2);
+		sub_elements[_sub_element].set_width(width - TEXT_BUBBLE_MARGIN*2);
 	}
 	
 	height = FIRST_SUB_ELEMENT.get_height() + TEXT_BUBBLE_MARGIN*2;
@@ -49,7 +51,8 @@ function Card(_sub_elements, _function = function(){}) constructor
 	
 	static update_points_of_draw = function(_is_hidden)
 	{
-		if _is_hidden
+		
+		if _is_hidden or always_revealed
 		{
 			x_left = x_left_revealed;
 			x_right = x_right_revealed;

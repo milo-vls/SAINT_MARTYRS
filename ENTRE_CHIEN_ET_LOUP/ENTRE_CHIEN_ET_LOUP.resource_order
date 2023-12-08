@@ -171,6 +171,7 @@
     {"name":"scribble","order":10,"path":"scripts/scribble/scribble.yy",},
     {"name":"ChatterboxFastForward","order":1,"path":"scripts/ChatterboxFastForward/ChatterboxFastForward.yy",},
     {"name":"scr_rm_main_desk_init","order":1,"path":"scripts/scr_rm_main_desk_init/scr_rm_main_desk_init.yy",},
+    {"name":"scr_add_menu","order":5,"path":"scripts/scr_add_menu/scr_add_menu.yy",},
     {"name":"scr_rm_dev_init","order":1,"path":"scripts/scr_rm_dev_init/scr_rm_dev_init.yy",},
     {"name":"scribble_anim_pulse","order":3,"path":"scripts/scribble_anim_pulse/scribble_anim_pulse.yy",},
     {"name":"ChatterboxStop","order":8,"path":"scripts/ChatterboxStop/ChatterboxStop.yy",},

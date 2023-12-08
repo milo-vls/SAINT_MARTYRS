@@ -4,7 +4,7 @@ menus = array_create(0);
 /**
  * @param {struct.Menu} _menu 
  */
-add_menu = function(_menu)
+add_menu_to_manage = function(_menu)
 {
 	var _menus_length = array_length(obj_menu_management.menus);
 	

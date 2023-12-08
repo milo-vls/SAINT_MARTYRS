@@ -5,7 +5,7 @@ function start_cutscene_test()
 		{
 			return obj_menu_management.dialogue_exists() == false;
 		});
-	_steps[1] = new Step(obj_menu_management.add_menu, [new Exploration()], function(){ return true});
+	_steps[1] = new Step(add_menu, [new Exploration()], function(){ return true});
 	//_steps[2] = new Step(change_room, [rm_main_desk], function(){return true});
 	var _sequence = new Sequence(_steps);
 	

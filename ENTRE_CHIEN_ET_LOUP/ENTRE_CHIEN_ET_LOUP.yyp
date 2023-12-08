@@ -235,6 +235,7 @@
     {"id":{"name":"scribble","path":"scripts/scribble/scribble.yy",},},
     {"id":{"name":"ChatterboxFastForward","path":"scripts/ChatterboxFastForward/ChatterboxFastForward.yy",},},
     {"id":{"name":"scr_rm_main_desk_init","path":"scripts/scr_rm_main_desk_init/scr_rm_main_desk_init.yy",},},
+    {"id":{"name":"scr_add_menu","path":"scripts/scr_add_menu/scr_add_menu.yy",},},
     {"id":{"name":"scr_rm_dev_init","path":"scripts/scr_rm_dev_init/scr_rm_dev_init.yy",},},
     {"id":{"name":"scribble_anim_pulse","path":"scripts/scribble_anim_pulse/scribble_anim_pulse.yy",},},
     {"id":{"name":"rm_main_desk","path":"rooms/rm_main_desk/rm_main_desk.yy",},},
