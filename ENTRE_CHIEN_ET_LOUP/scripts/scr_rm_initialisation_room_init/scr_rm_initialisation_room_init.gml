@@ -1,8 +1,15 @@
 enum DEPTHS 
 {
+	GUI,
+	
+	
 	MENU_MANAGEMENT,
 	INTERACTABLES_EXPLORATION,
+	UNITS,
 	CRIMES,
+	
+	
+	BACKGROUND
 }
 
 /// @desc  import all the parameters set in the included CSV files
@@ -35,7 +42,6 @@ function rm_initialisation_room_init()
 		global.units[_unit_id].character_id = int64(global.units[_unit_id].character_id);
 		global.units[_unit_id].nickname = global.characters[global.units[_unit_id].character_id].nickname;
 	}
-	global.available_units = first_available_units();
 	
 	
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_menu_management);

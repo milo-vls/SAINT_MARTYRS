@@ -1,5 +1,15 @@
 function Unit() constructor 
-{}
+{
+	real_x = -1;
+	real_y =  -1;
+	rotation = 0;
+	
+	is_available = function()
+	{
+		return available == "true";
+	}
+}
+
 
 function get_unit_id_by_nickname(_nickname)
 {
@@ -13,11 +23,22 @@ function get_unit_id_by_nickname(_nickname)
 	show_error("The nickname \"" + _nickname + "\" doesn't exist for any unit.", true);
 }
 
-function first_available_units()
+function unit_appear(_unit_id, _real_x, _real_y, _rotation)
 {
-	var _first_units = array_create(0);
-	array_push(_first_units, 
-	global.units[get_unit_id_by_nickname("Didier")]
-	);
-	return _first_units;
+	return instance_create_depth(_real_x, _real_y, DEPTHS.UNITS, obj_unit, {unit_id : _unit_id}) 
+}
+
+function unit_disappear(_unit_id)
+{
+	var _nb_obj_units = instance_number(obj_unit);
+	for (var _obj_unit_index = 0; _obj_unit_index < _nb_obj_units; _obj_unit_index ++)
+	{
+		var _obj_unit = instance_find(obj_unit, _obj_unit_index);
+		if _obj_unit_index == _unit_id
+		{
+			instance_destroy(_obj_unit);
+			global.units[_unit_id].real_x = -1;
+			global.units[_unit_id].real_y = -1;
+		}
+	}
 }

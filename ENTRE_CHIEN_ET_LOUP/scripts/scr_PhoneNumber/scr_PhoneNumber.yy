@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "FROM CSVs",
-    "path": "folders/SCRIPTS/DATAS/FROM CSVs.yy",
+    "name": "OTHER CLASSES",
+    "path": "folders/SCRIPTS/CLASSES/OTHER CLASSES.yy",
   },
 }

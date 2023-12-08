@@ -9,7 +9,9 @@ function Card(_sub_elements, _function = function(){}, _always_revealed = false)
 	
 	
 	nb_sub_elements = array_length(_sub_elements);
-	width = min(FIRST_SUB_ELEMENT.get_width() + TEXT_BUBBLE_MARGIN*2, TEXT_BUBBLE_WIDTH);
+	width = 
+	min(sub_elements[0].get_width() 
+	+ TEXT_BUBBLE_MARGIN*2, TEXT_BUBBLE_WIDTH);
 	
 	for (var _sub_element = 0; _sub_element < nb_sub_elements; _sub_element ++)
 	{

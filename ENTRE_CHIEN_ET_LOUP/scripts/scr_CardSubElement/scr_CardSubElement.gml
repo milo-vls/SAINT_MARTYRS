@@ -49,8 +49,7 @@ function CardSubElement(_element, _type) constructor
 			case CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT:
 			return TEXT_BUBBLE_MARGIN + element.get_height();
 			
-			default:
-			return 0;
+
 		}
 	}
 	get_width = function()
@@ -60,12 +59,8 @@ function CardSubElement(_element, _type) constructor
 			case CARD_SUB_ELEMENT_TYPES.SPRITE:
 			case CARD_SUB_ELEMENT_TYPES.ANIMATED_SPRITE:
 			return sprite_get_width(element) * scale;
-			
 			case CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT:
 			return element.get_width();
-			
-			default :
-			return 0;
 		}
 	}
 	
