@@ -7,7 +7,7 @@ function MainDeskCrimeFocus(_crime_id) : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FO
 	var _scribble_change_color = scribble("[fnt_small_titles]" + text_id_to_string("CRIME NEXT COLOR"));
 	var _cards = 
 	[
-		new Card([new CardSubElement(_scribble_nickname, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT), new CardSubElement(spr_arrow, CARD_SUB_ELEMENT_TYPES.SPRITE)], function(){}),
+		new Card([new CardSubElement(_scribble_nickname, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT), new CardSubElement(spr_arrow, CARD_SUB_ELEMENT_TYPES.SPRITE)], function(){}, true),
 		new Card([new CardSubElement(_scribble_change_color, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], change_crime_color_next)
 	]
 	cards_set = new CardsSet(_cards , ORIENTATION.BOT_UP_PIN, CIRCLE_DIRECTION.NEGATIVE);
