@@ -1,29 +1,28 @@
-import sys
 import sqlite3
 import pygame
 import tkinter as tk
 from tkinter import simpledialog
 from tkinter import ttk
+import sys
 
 conn = None
 cursor = None
-fenetre_tk = None
+tk_window = None
 
-def init_bdd(chemin_access_bdd) : 
+def init_bdd(access_path) : 
     global conn 
     global cursor
-    conn = sqlite3.connect(chemin_access_bdd)
+    conn = sqlite3.connect(access_path)
     cursor = conn.cursor()
     
-def cloture_bdd() : 
+def close_bdd() : 
     global conn
     conn.close()
 
 # Redimensionner la carte en conservant le ratio
-def redimensionner_carte(carte, ratio_image, nouvelle_largeur):
-    nouvelle_hauteur = int(nouvelle_largeur / ratio_image)
-    return pygame.transform.scale(carte, (nouvelle_largeur, nouvelle_hauteur))
-
+def map_resize(map, image_ratio, new_width):
+    new_height = int(new_width / image_ratio)
+    return pygame.transform.scale(map, (new_width, new_height))
 
 def isTheFirstCrime(case_id):
     global cursor
@@ -41,10 +40,10 @@ def findCharID(nickname):
     cursor.execute(charRequest)
     result = cursor.fetchall()
     for char_id in result : 
-        victime_id = char_id[0]
-    return victime_id    
+        victim_id = char_id[0]
+    return victim_id    
 
-def enregistrementCrime(inputData) :    
+def writeNewCrime(inputData) :    
     global cursor
     inputData[1] = findCharID(inputData[1])
     inputData[12] = isTheFirstCrime(inputData[0])
@@ -60,24 +59,34 @@ def enregistrementCrime(inputData) :
         print("Erreur")
     return True
 
-def lirePersonnages() :
+def readCharacters() :
     global cursor
-    victimes = list()
+    characters = list()
     cursor.execute("SELECT nickname FROM Characters")
     result = cursor.fetchall()
     
-    for perso in result :
-        victimes.append(perso[0])    
-    return victimes
+    for ch in result :
+        characters.append(ch[0])    
+    return characters
+
+def readCases() :
+    global cursor
+    cases = list()
+    cursor.execute("SELECT idCa FROM Cases")
+    result = cursor.fetchall()
+    
+    for case in result : 
+        cases.append(case[0])
+    return cases
 
 def init_tk() :
-    global fenetre_tk
-    fenetre_tk = tk.Tk()
-    fenetre_tk.withdraw()  # Masquer la fenêtre Tkinter principale
-    fenetre_tk.title("Nouveau crime")
+    global tk_window
+    tk_window = tk.Tk()
+    tk_window.withdraw()  # Masquer la fenêtre Tkinter principale
+    tk_window.title("Nouveau crime")
 
-def afficher_popup(x, y):
-    global fenetre_tk
+def fetch_popup(x, y):
+    global tk_window
     class PopupDialog(simpledialog.Dialog):
         def body(self, master):
             tk.Label(master, text="Case ID :").grid(row=0, sticky=tk.W)
@@ -91,27 +100,29 @@ def afficher_popup(x, y):
             tk.Label(master, text="Sprite 3 :").grid(row=8, sticky=tk.W)
             tk.Label(master, text="Sprite 4 :").grid(row=9, sticky=tk.W)
 
-            self.caseid_entry = tk.Entry(master)
-            victimes = lirePersonnages()
-            self.victime_var = tk.StringVar()
-            self.victime_menu = ttk.Combobox(master, textvariable=self.victime_var, values=victimes)
-            self.jour_entry = tk.Entry(master)
-            self.heure_entry = tk.Entry(master)
+            cases = readCases()
+            self.cases_var = tk.StringVar()
+            self.cases_menu = ttk.Combobox(master, textvariable=self.cases_var, values=cases)
+            victims = readCharacters()
+            self.victim_var = tk.StringVar()
+            self.victim_menu = ttk.Combobox(master, textvariable=self.victim_var, values=victims)
+            self.day_entry = tk.Entry(master)
+            self.hour_entry = tk.Entry(master)
             self.minute_entry = tk.Entry(master)
-            dernier_crime = ["true", "false"]
-            self.dernier_crime_var = tk.StringVar()
-            self.dernier_crime_menu = ttk.Combobox(master, textvariable=self.dernier_crime_var, values=dernier_crime)
+            last_crime = ["true", "false"]
+            self.last_crime_var = tk.StringVar()
+            self.last_crime_menu = ttk.Combobox(master, textvariable=self.last_crime_var, values=last_crime)
             self.sprite1_entry = tk.Entry(master)
             self.sprite2_entry = tk.Entry(master)
             self.sprite3_entry = tk.Entry(master)
             self.sprite4_entry = tk.Entry(master)
 
-            self.caseid_entry.grid(row=0, column=1)
-            self.victime_menu.grid(row=1, column=1, sticky=tk.W)
-            self.jour_entry.grid(row=2, column=1)
-            self.heure_entry.grid(row=3, column=1)
+            self.cases_menu.grid(row=0, column=1, sticky=tk.W)
+            self.victim_menu.grid(row=1, column=1, sticky=tk.W)
+            self.day_entry.grid(row=2, column=1)
+            self.hour_entry.grid(row=3, column=1)
             self.minute_entry.grid(row=4, column=1)
-            self.dernier_crime_menu.grid(row=5, column=1, sticky=tk.W)
+            self.last_crime_menu.grid(row=5, column=1, sticky=tk.W)
             self.sprite1_entry.grid(row=6, column=1)
             self.sprite2_entry.grid(row=7, column=1)
             self.sprite3_entry.grid(row=8, column=1)
@@ -119,14 +130,14 @@ def afficher_popup(x, y):
 
         def apply(self):
             inputData = list()
-            inputData.append(self.caseid_entry.get())
-            inputData.append(self.victime_var.get())
-            inputData.append(self.jour_entry.get())
-            inputData.append(self.heure_entry.get())
+            inputData.append(self.cases_var.get())
+            inputData.append(self.victim_var.get())
+            inputData.append(self.day_entry.get())
+            inputData.append(self.hour_entry.get())
             inputData.append(self.minute_entry.get())
             inputData.append(x)
             inputData.append(y)
-            inputData.append(self.dernier_crime_var.get())
+            inputData.append(self.last_crime_var.get())
             inputData.append(self.sprite1_entry.get())
             inputData.append(self.sprite2_entry.get())
             inputData.append(self.sprite3_entry.get())
@@ -134,6 +145,6 @@ def afficher_popup(x, y):
             inputData.append(False)
             
             # Ecriture dans le fichier CSV
-            enregistrementCrime(inputData)
+            writeNewCrime(inputData)
             
-    popup = PopupDialog(fenetre_tk)
+    popup = PopupDialog(tk_window)
