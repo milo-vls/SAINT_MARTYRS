@@ -1,0 +1,27 @@
+fonction sleep (int jour) : int
+
+
+Début
+Si il n'y a pas d'affaire en cours	
+		établir la liste des affaires en cours
+		si jour évènements avant premier affaires
+				se réveiller jour évènement
+		sinon
+				se réveiller le jour du premier crime de  l'affaire
+sinon
+		si tout les crimes des affaires sont couverts
+				se réveiller jour du crime le plus avancé dans le temps de toutes les affaires en cours
+				ajouter à la liste des évènements 
+		sinon
+				écran game over 
+				réveiller même jour
+
+
+
+Dépendances :
+1. faire la liste des crimes en cours
+2. obtenir prochain crime des affaires (ordre chronologique d'apparition)
+3. liste des évènements de journée
+4. tous les crimes sont couverts
+5. liste des évènements de la carte
+6. écran de game over

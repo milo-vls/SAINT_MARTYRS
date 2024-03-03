@@ -20,9 +20,12 @@ function rm_initialisation_room_init()
 
 
 	global.switches = array_create(SWITCHES.NUMBER_OF_SWITCHES);
-	global.day_number = 0;
+	global.day_number = 01;
 	global.ids_obtained_phone_numbers = [];
 	global.current_sequence = noone;
+	global.current_cases = [];
+	
+	
 	global.street_types = csv_to_1d_array("street_types.csv");
 	global.characters = csv_to_structs_of_constructor("characters.csv", Character);var _nb_characters = array_length(global.characters);for (var _character_id = 0; _character_id < _nb_characters; _character_id ++)
 	{
@@ -46,11 +49,14 @@ function rm_initialisation_room_init()
 	
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_menu_management);
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_sequence_management);
-	
+	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_input_delay);
 	
 	display_set_gui_size(GAME_WIDTH, GAME_HEIGHT);
 	surface_resize(application_surface, GAME_WIDTH, GAME_HEIGHT);
 	scribble_font_set_default("fnt_test");
+	
+	
+	global.day_events = set_day_events();
 	
 	
 	room_goto(rm_title_screen);

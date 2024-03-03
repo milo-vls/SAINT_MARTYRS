@@ -160,7 +160,7 @@ function CardsSet(_cards, _orientation = ORIENTATION.BOT_DOWN_PIN, _circle_direc
 		var _card_mouse_over = get_card_mouse_over();
 		if pressed_card > -1 and left_click_released() and _card_mouse_over > -1
 		{
-			cards[_card_mouse_over].function_when_clicked(_card_mouse_over);
+			cards[_card_mouse_over].function_when_clicked(_card_mouse_over, cards[_card_mouse_over].data);
 		}
 		pressed_card = (_card_mouse_over > -1 and left_click_pressed()) ? _card_mouse_over : (!left_click() ? -1 : pressed_card);
 		

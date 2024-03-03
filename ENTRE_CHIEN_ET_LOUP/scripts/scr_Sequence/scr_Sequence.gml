@@ -1,5 +1,5 @@
-function Sequence(_steps) constructor 
+function Sequence(_steps, _starting_room = room) constructor 
 {
 	steps = _steps;
-	starting_room = room;
+	starting_room = _starting_room;
 }

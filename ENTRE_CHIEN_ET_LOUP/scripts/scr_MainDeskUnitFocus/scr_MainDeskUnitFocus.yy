@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_inputs",
+  "name": "scr_MainDeskUnitFocus",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "INPUTS",
-    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM/INPUTS.yy",
+    "name": "MAIN DESK",
+    "path": "folders/SCRIPTS/MENUS/MENU TYPES/MAIN DESK.yy",
   },
 }

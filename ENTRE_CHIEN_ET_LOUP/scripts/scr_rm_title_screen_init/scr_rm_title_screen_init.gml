@@ -2,18 +2,14 @@
 function rm_title_screen_init()
 {
 	var _title_screen_options = [];
-	if !file_exists(SAVE_FILE_NAME)
+	_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption(
+	"TITLE SCREEN NEW START",  
+	function()
 	{
-		_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption(
-		"TITLE SCREEN NEW START",  
-		function()
-		{
-			save_game();
-			change_room(rm_dev);
-			start_cutscene_test();
-		});
-	}
-	else
+		save_game();
+		sleep_to(0);
+	});
+	if file_exists(SAVE_FILE_NAME)
 	{
 		_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN START", function(_id_menu){start_cutscene_test();change_room(rm_dev)});
 	}

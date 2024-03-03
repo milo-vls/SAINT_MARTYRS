@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_inputs",
+  "name": "scr_set_current_cases",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "INPUTS",
-    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM/INPUTS.yy",
+    "name": "SLEEP",
+    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM/SLEEP.yy",
   },
 }

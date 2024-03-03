@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_inputs",
+  "name": "scr_set_day_events",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "INPUTS",
-    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM/INPUTS.yy",
+    "name": "DATA",
+    "path": "folders/SCRIPTS/DATA.yy",
   },
 }

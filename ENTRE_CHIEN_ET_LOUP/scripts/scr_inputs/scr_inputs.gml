@@ -36,3 +36,22 @@ function click_released()
 {
 	return left_click_released() or right_click_released();
 }
+
+
+
+function get_regrab_timer()
+{
+	return obj_input_delay.regrab_timer/REGRAB_FRAMES_DELAY;
+}
+function reset_regrab_timer()
+{
+	obj_input_delay.regrab_timer = 0;
+}
+function get_release_timer()
+{
+	return obj_input_delay.release_timer/RELEASE_FRAMES_DELAY;
+}
+function reset_release_timer()
+{
+	obj_input_delay.release_timer = 0;
+}

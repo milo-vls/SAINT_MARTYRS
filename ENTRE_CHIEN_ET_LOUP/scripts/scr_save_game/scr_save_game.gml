@@ -14,6 +14,7 @@ function save_game()
 		day_number : global.day_number,
 		nb_ids_obtained_phone_numbers : array_length(global.ids_obtained_phone_numbers),
 		ids_obtained_phone_numbers : [],
+		cases : array_create(array_length(global.cases)),
 		switches : array_create(SWITCHES.NUMBER_OF_SWITCHES),
 	}
 	

@@ -1,7 +1,7 @@
 if nb_steps == step_id
 {
-	SEQUENCE = noone
-;}
+	SEQUENCE = noone;
+}
 
 if  SEQUENCE != noone
 {

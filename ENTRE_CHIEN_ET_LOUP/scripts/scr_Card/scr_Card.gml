@@ -1,12 +1,12 @@
 #macro FIRST_SUB_ELEMENT sub_elements[0]
 #macro SUB_ELEMENT sub_elements[_sub_element]
 
-function Card(_sub_elements, _function = function(){}, _always_revealed = false) constructor 
+function Card(_sub_elements, _function = function(){}, _always_revealed = false, _data = []) constructor 
 {
 	sub_elements = _sub_elements;
 	function_when_clicked = _function;	
 	always_revealed = _always_revealed;
-	
+	data = _data;
 	
 	nb_sub_elements = array_length(_sub_elements);
 	width = 
