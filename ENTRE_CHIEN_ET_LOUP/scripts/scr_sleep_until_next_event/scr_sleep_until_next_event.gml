@@ -13,6 +13,5 @@ function sleep_until_next_event()
 		return sleep_to(get_cases_last_crime_day());
 	}
 	
-	sleep_to();
-	return change_room(rm_main_desk);
+	return change_room(rm_game_over);
 }
