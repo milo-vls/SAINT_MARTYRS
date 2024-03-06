@@ -35,7 +35,27 @@ function Crime() constructor
 	{
 		return global.characters[victim_char_id].nickname;
 	}
-	
+	get_x = function()
+	{
+		return real(x)
+	}
+	get_y = function()
+	{
+		return real(y);
+	}
+	get_day_number = function()
+	{
+		return int64(day_number);
+	}
+	get_case_id = function()
+	{
+		var _to_return = int64(case_id);
+		return _to_return;
+	}
+	get_first_of_case = function()
+	{
+		return first_of_case == "1";
+	}
 
 	is_more_recent_than = function(_crime)
 	{
@@ -54,7 +74,8 @@ function Crime() constructor
 		if _is_more_recent == 1 return -1;
 		return 1;
 	}
- 
+	
+
 }
 
 function crime_disappear(_crime_id)
@@ -76,7 +97,7 @@ function crime_appear(_crime_id)
 	var _case = global.cases[_crime.case_id];
 	if _case.is_free()
 	{
-		instance_create_depth(_crime.x, _crime.y, DEPTHS.CRIMES, obj_crime, {crime_id : _crime_id});
+		instance_create_depth(_crime.get_x(), _crime.get_y(), DEPTHS.CRIMES, obj_crime, {crime_id : _crime_id});
 		global.crimes[_crime_id].appeard = true;
 	}
 }

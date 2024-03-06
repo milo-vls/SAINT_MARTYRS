@@ -9,7 +9,7 @@ enum ROOM_TRANSITION_STATES
 
 
 
-function RoomTransition(_room_destination, _transition_style) : Menu(MENU_PRIORITIES.ROOM_TRANSITION, room, true, false, false) constructor 
+function RoomTransition(_room_destination, _transition_style) : Menu(MENU_PRIORITIES.ROOM_TRANSITION, room, true, false, false ) constructor 
 {
 	room_destination = _room_destination;
 	transition_style = _transition_style;

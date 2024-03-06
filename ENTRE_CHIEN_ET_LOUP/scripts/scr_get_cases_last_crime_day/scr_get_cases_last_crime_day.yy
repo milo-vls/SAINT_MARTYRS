@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Case",
+  "name": "scr_get_cases_last_crime_day",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "MAIN CLASSES",
-    "path": "folders/SCRIPTS/CLASSES/MAIN CLASSES.yy",
+    "name": "GAMEPLAY SYSTEM",
+    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM.yy",
   },
 }

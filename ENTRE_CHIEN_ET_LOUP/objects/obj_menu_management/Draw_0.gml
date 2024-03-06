@@ -46,3 +46,21 @@ for (var _i = 0; _i < _menus_length; _i ++)
 		menus[_i].activity();
 	}
 }
+
+
+
+
+
+
+
+
+
+/*
+if room == rm_main_desk
+{
+	for (var _crime_id = 0; _crime_id < global.nb_crimes; _crime_id ++)
+	{
+		if crime_is_covered(_crime_id)
+		then show_message("yo le wrap");
+	}
+}

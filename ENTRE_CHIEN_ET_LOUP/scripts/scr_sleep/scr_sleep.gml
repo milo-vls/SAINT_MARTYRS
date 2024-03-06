@@ -11,5 +11,5 @@ function sleep_to(_day_number = global.day_number + 1)
 		obj_sequence_management.set_sequence(_sequence_of_the_day);
 	}
 	
-	change_room(_room_to_get_up);
+	change_room(_room_to_get_up, new RoomTransitionStyle(ROOM_TRANSITION_STYLES.SHOW_DATE, c_blue));
 }

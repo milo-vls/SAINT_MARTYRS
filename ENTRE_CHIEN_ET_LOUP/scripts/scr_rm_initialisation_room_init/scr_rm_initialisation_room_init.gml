@@ -20,10 +20,11 @@ function rm_initialisation_room_init()
 
 
 	global.switches = array_create(SWITCHES.NUMBER_OF_SWITCHES);
-	global.day_number = 01;
+	global.day_number = 0;
+	global.starting_date = date_create_datetime(2012, 09, 17, 19, 30, 0);
 	global.ids_obtained_phone_numbers = [];
 	global.current_sequence = noone;
-	global.current_cases = [];
+	global.current_cases_ids = array_create(0);
 	
 	
 	global.street_types = csv_to_1d_array("street_types.csv");
