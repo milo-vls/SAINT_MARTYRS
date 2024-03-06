@@ -73,6 +73,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Superfonts","folderPath":"folders/SCRIPTS/TEXT/SCRIBBLE/Superfonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPRITES","folderPath":"folders/SPRITES.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MAP & MAIN DESK","folderPath":"folders/SPRITES/MAP & MAIN DESK.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"CRIME MANAGEMENT","folderPath":"folders/SCRIPTS/GAMEPLAY SYSTEM/CRIME MANAGEMENT.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"CASE MANAGEMENT","folderPath":"folders/SCRIPTS/GAMEPLAY SYSTEM/CASE MANAGEMENT.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"EXPLORATION","folderPath":"folders/SCRIPTS/GAMEPLAY SYSTEM/EXPLORATION.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"addresses.csv","CopyToMask":-1,"filePath":"datafiles/CSVs",},
@@ -215,6 +218,7 @@
     {"id":{"name":"__scribble_gen_2_parser","path":"scripts/__scribble_gen_2_parser/__scribble_gen_2_parser.yy",},},
     {"id":{"name":"__ChatterboxExpressionFuncs","path":"scripts/__ChatterboxExpressionFuncs/__ChatterboxExpressionFuncs.yy",},},
     {"id":{"name":"scribble_color_get","path":"scripts/scribble_color_get/scribble_color_get.yy",},},
+    {"id":{"name":"rm_dev2","path":"rooms/rm_dev2/rm_dev2.yy",},},
     {"id":{"name":"scribble_is_text_element","path":"scripts/scribble_is_text_element/scribble_is_text_element.yy",},},
     {"id":{"name":"__ChatterboxBufferBatch","path":"scripts/__ChatterboxBufferBatch/__ChatterboxBufferBatch.yy",},},
     {"id":{"name":"ChatterboxAddFunction","path":"scripts/ChatterboxAddFunction/ChatterboxAddFunction.yy",},},
@@ -237,6 +241,7 @@
     {"id":{"name":"scribble_anim_wobble","path":"scripts/scribble_anim_wobble/scribble_anim_wobble.yy",},},
     {"id":{"name":"__scribble_get_effects_map","path":"scripts/__scribble_get_effects_map/__scribble_get_effects_map.yy",},},
     {"id":{"name":"__scribble_gen_3_devanagari","path":"scripts/__scribble_gen_3_devanagari/__scribble_gen_3_devanagari.yy",},},
+    {"id":{"name":"scr_main_deck_to_exploration","path":"scripts/scr_main_deck_to_exploration/scr_main_deck_to_exploration.yy",},},
     {"id":{"name":"scribble_typewriter_add_event","path":"scripts/scribble_typewriter_add_event/scribble_typewriter_add_event.yy",},},
     {"id":{"name":"scribble_super_create","path":"scripts/scribble_super_create/scribble_super_create.yy",},},
     {"id":{"name":"ChatterboxVariableDefault","path":"scripts/ChatterboxVariableDefault/ChatterboxVariableDefault.yy",},},
@@ -373,6 +378,7 @@
     {"roomId":{"name":"rm_dev","path":"rooms/rm_dev/rm_dev.yy",},},
     {"roomId":{"name":"rm_main_desk","path":"rooms/rm_main_desk/rm_main_desk.yy",},},
     {"roomId":{"name":"rm_game_over","path":"rooms/rm_game_over/rm_game_over.yy",},},
+    {"roomId":{"name":"rm_dev2","path":"rooms/rm_dev2/rm_dev2.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

@@ -15,8 +15,10 @@ function MainDeskNeutral() : Menu(MENU_PRIORITIES.MAIN_DESK_NEUTRAL, room, false
 	}
 	units_cards_set = new CardsSet(_units_cards, ORIENTATION.BOT_DOWN_PIN, CIRCLE_DIRECTION.NEGATIVE);
 	
-	var _advance_sleep_button_card = [new Card([new CardSubElement(scribble("yo DORMIR"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], sleep_until_next_event, true)];
-	advanced_sleep_button_set = new CardsSet(_advance_sleep_button_card, ORIENTATION.BOT_UP_PIN, CIRCLE_DIRECTION.POSITIVE);
+	
+	var _exploration_button_card = new Card([new CardSubElement(scribble("Exploration"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], main_deck_to_exploration);
+	var _advance_sleep_button_card = new Card([new CardSubElement(scribble("Finir la journée"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], sleep_until_next_event, true);
+	main_desk_upper_buttons_set = new CardsSet([_advance_sleep_button_card, _exploration_button_card], ORIENTATION.BOT_UP_PIN, CIRCLE_DIRECTION.POSITIVE);
 	
 	
 	draw = main_desk_neutral_draw;
@@ -26,7 +28,7 @@ function MainDeskNeutral() : Menu(MENU_PRIORITIES.MAIN_DESK_NEUTRAL, room, false
 function main_desk_neutral_activity()
 {		
 	//SLEEP
-	advanced_sleep_button_set.activity();
+	main_desk_upper_buttons_set.activity();
 	
 	
 	//UNITS
@@ -60,7 +62,7 @@ function main_desk_neutral_activity()
 }
 function main_desk_neutral_draw()
 {
-	advanced_sleep_button_set.draw();
+	main_desk_upper_buttons_set.draw();
 	units_cards_set.draw();
 }
 

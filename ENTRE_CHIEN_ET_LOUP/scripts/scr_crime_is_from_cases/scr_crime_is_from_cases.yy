@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "GAMEPLAY SYSTEM",
-    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM.yy",
+    "name": "CRIME MANAGEMENT",
+    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM/CRIME MANAGEMENT.yy",
   },
 }

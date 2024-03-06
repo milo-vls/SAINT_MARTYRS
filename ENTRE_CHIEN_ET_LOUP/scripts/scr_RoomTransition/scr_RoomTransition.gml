@@ -9,10 +9,11 @@ enum ROOM_TRANSITION_STATES
 
 
 
-function RoomTransition(_room_destination, _transition_style) : Menu(MENU_PRIORITIES.ROOM_TRANSITION, room, true, false, false ) constructor 
+function RoomTransition(_room_destination, _transition_style, _function_when_room_entered) : Menu(MENU_PRIORITIES.ROOM_TRANSITION, room, true, false, true ) constructor 
 {
 	room_destination = _room_destination;
 	transition_style = _transition_style;
+	function_when_room_entered = _function_when_room_entered;
 	
 	transition_state = ROOM_TRANSITION_STATES.COVERING_SCREEN;
 	
@@ -41,6 +42,7 @@ function RoomTransition(_room_destination, _transition_style) : Menu(MENU_PRIORI
 		}
 		if self.transition_state == ROOM_TRANSITION_STATES.DISCOVERING_SCREEN
 		{
+			function_when_room_entered();
 			self.parallelism = true;
 			return;
 		}

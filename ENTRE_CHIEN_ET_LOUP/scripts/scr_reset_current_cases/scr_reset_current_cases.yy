@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "GAMEPLAY SYSTEM",
-    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM.yy",
+    "name": "CASE MANAGEMENT",
+    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM/CASE MANAGEMENT.yy",
   },
 }
