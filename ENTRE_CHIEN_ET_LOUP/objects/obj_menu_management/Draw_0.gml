@@ -1,11 +1,11 @@
-var _menus_length = array_length(menus);
-var _highest_priority_menu_index = -1;
+
+/*
 var _occupied_channels = [];
 for (var _i = _menus_length - 1; _i > -1; _i --)
 {	
 	if menus[_i].channel != -1 and !array_contains(_occupied_channels, menus[_i].channel)
 	{
-		_occupied_channels[array_length(_occupied_channels)] = menus[_i].channel;
+		array_push(_occupied_channels, menus[_i].channel)
 	}
 }
 var _authorized_menus = [];
@@ -18,7 +18,15 @@ for (var _i = _menus_length - 1; _i > -1; _i --)
 		array_delete(_occupied_channels, array_get_index(_occupied_channels, _menu.channel), 1);
 	}
 }
+*/
 
+
+
+
+
+var _menus_length = array_length(menus);
+var _highest_priority_menu_index = -1;
+var _authorized_menus = get_authorized_menus_id();
 
 for (var _i = 0; _i < _menus_length; _i ++)
 {	
@@ -55,12 +63,8 @@ for (var _i = 0; _i < _menus_length; _i ++)
 
 
 
-/*
-if room == rm_main_desk
+if debug_mode
 {
-	for (var _crime_id = 0; _crime_id < global.nb_crimes; _crime_id ++)
-	{
-		if crime_is_covered(_crime_id)
-		then show_message("yo le wrap");
-	}
+	draw_text(50, 50, "nb menus:" + string(array_length(menus)))
+	draw_text(50, 200, "nb menus authorisés:" + string(array_length(_authorized_menus)))
 }

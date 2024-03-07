@@ -1,6 +1,4 @@
 menus = array_create(0);
-
-
 /**
  * @param {struct.Menu} _menu 
  */
@@ -25,8 +23,6 @@ add_menu_to_manage = function(_menu)
 	
 	menus[_menus_length] = _menu;
 }
-
-
 
 //GETERS
 dialogue_exists = function()
