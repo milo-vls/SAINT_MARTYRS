@@ -1,0 +1,1 @@
+rm_game_over_init();

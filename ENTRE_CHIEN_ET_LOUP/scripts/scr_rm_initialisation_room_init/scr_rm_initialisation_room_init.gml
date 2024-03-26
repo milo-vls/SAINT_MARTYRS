@@ -52,6 +52,7 @@ function rm_initialisation_room_init()
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_sequence_management);
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_input_delay);
 	
+	
 	display_set_gui_size(GAME_WIDTH, GAME_HEIGHT);
 	surface_resize(application_surface, GAME_WIDTH, GAME_HEIGHT);
 	scribble_font_set_default("fnt_test");

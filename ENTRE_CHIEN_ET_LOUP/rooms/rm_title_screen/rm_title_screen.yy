@@ -14,7 +14,7 @@
   ],
   "parent": {
     "name": "TITLE SCREEN",
-    "path": "folders/ROOMS/TITLE SCREEN.yy",
+    "path": "folders/ROOMS/MENU ROOMS/TITLE SCREEN.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

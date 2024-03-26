@@ -64,7 +64,7 @@ function CardSubElement(_element, _type) constructor
 		}
 	}
 	
-	draw = function(_color = DIALOGUES_BASE_FONT_COLOR)
+	draw = function(_mouse_is_over = false)
 	{
 		switch (type)
 		{
@@ -76,7 +76,7 @@ function CardSubElement(_element, _type) constructor
 			draw_sprite_ext(element, sub_image, x_left, y_top, scale, scale, rotation, c_white, 1);
 			return;
 			case CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT:
-			element.blend(_color).draw(x_left, y_top)
+			element.blend(_mouse_is_over ? MOUSE_OVER_TEXT_FONT_COLOR : DIALOGUES_BASE_FONT_COLOR).draw(x_left, y_top);
 			return;
 			default:
 			return;

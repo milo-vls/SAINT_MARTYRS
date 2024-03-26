@@ -86,11 +86,11 @@ function Card(_sub_elements, _function = function(){}, _always_revealed = false,
 	static draw = function()
 	{
 		draw_set_color(CARDS_COLOR); draw_set_alpha(1);
-		draw_rectangle(x_left, y_top, x_right, y_bot, false);
+		draw_rectangle_color(x_left, y_top, x_right, y_bot, CARDS_COLOR, CARDS_COLOR, CARDS_COLOR, CARDS_COLOR, false);
 		FIRST_SUB_ELEMENT.draw(point_in_rectangle(mouse_x, mouse_y, self.x_left, self.y_top, self.x_right, self.y_bot) ? MOUSE_OVER_TEXT_FONT_COLOR : DIALOGUES_BASE_FONT_COLOR);
-		for (var _sub_element = 1; _sub_element < nb_sub_elements; _sub_element++)
+		for (var _sub_element = 0; _sub_element < nb_sub_elements; _sub_element++)
 		{
-			SUB_ELEMENT.draw();
+			SUB_ELEMENT.draw(mouse_is_over());
 		}
 	}
 }

@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_rm_title_screen_init",
+  "name": "scr_GameOver",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "TITLE SCREEN",
-    "path": "folders/ROOMS/MENU ROOMS/TITLE SCREEN.yy",
+    "name": "GAME OVER",
+    "path": "folders/SCRIPTS/MENUS/MENU TYPES/GAME OVER.yy",
   },
 }
