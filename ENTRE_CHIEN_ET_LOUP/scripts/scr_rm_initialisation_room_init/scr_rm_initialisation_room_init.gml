@@ -21,6 +21,7 @@ function rm_initialisation_room_init()
 
 	global.switches = array_create(SWITCHES.NUMBER_OF_SWITCHES);
 	global.day_number = 0;
+	global.minimum_days_prediction = 1;
 	global.starting_date = date_create_datetime(2012, 09, 17, 19, 30, 0);
 	global.ids_obtained_phone_numbers = [];
 	global.current_sequence = noone;

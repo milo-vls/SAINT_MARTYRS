@@ -1,4 +1,4 @@
-idCa,guilty_char_id,name
-0,1,
-1,1,
-2,1,
+idCa,guilty_char_id,name,minimum_days_prediction
+0,1,,1
+1,1,,1
+2,1,,1

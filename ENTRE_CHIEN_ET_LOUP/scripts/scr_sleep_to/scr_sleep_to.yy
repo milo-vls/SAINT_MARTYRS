@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_sleep",
+  "name": "scr_sleep_to",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
