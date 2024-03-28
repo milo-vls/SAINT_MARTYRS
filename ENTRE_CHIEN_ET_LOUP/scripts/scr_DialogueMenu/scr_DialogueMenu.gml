@@ -34,20 +34,39 @@ function next_text_bubble()
 	if text_bubbles[_nb_text_bubbles].side == SIDES.RIGHT
 	{
 		right_character_nickname = _speaker;
+		right_character_protrait = get_character_portrait_sprite(_speaker);
+		
 	}
 	if text_bubbles[_nb_text_bubbles].side == SIDES.LEFT
 	{
 		left_character_nickname = _speaker;
+		left_character_portrait = get_character_portrait_sprite(_speaker);
 	}
 	
 
 	
 }
 
+function draw_portraits(_left_sprite_portrait = -1, _right_sprite_portrait = -1)
+{
+	if _left_sprite_portrait != -1
+	{
+		draw_sprite(_left_sprite_portrait, 0, GAME_WIDTH/6, GAME_HEIGHT);
+	}
+	if _right_sprite_portrait != -1
+	{
+		draw_sprite(_right_sprite_portrait, 0, (GAME_WIDTH*5)/6, GAME_HEIGHT);
+	}
+}
+
 function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, false, false, MENU_CHANNELS.DIALOGUES) constructor
 {
 	right_character_nickname = NO_ONE;
+	right_character_protrait = -1;
 	left_character_nickname = NO_ONE;
+	left_character_portrait = -1;
+	
+	
 	text_bubbles = array_create(0);
 	selected_option_index = -1;
 
@@ -59,18 +78,12 @@ function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, 
 	{
 		var _option_select_menu = obj_menu_management.get_active_menu(DialoguesOptionsSelect);
 		
-		draw_set_alpha(0.45); draw_set_color(c_black);
+		draw_set_alpha(0.78); draw_set_color(c_black);
 		draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);
 		draw_set_alpha(1);
 		
-		if right_character_nickname != NO_ONE
-		{
-			
-		}
-		if left_character_nickname != NO_ONE
-		{
-				
-		}
+		
+		draw_portraits(left_character_portrait, right_character_protrait);
 		
 		var _nb_text_bubbles = array_length(text_bubbles);
 		var _last_bubble = _nb_text_bubbles - 1;

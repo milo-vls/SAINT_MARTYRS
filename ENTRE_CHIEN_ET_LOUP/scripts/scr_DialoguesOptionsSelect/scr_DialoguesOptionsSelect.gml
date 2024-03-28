@@ -21,13 +21,11 @@ function DialoguesOptionsSelect(_options_array, _dialogue_menu, _side) : Menu(ME
 		var _scribble = scribble(DIALOGUES_FORMATING_TEXT options_array[_option].text).blend(DIALOGUES_BASE_FONT_COLOR)
 		var _sub_elements = 
 		[
-			new CardSubElement(_scribble, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT),
-			new CardSubElement(scribble("test"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT), 
-			new CardSubElement(spr_crime_idle, CARD_SUB_ELEMENT_TYPES.ANIMATED_SPRITE)
+			new CardSubElement(_scribble, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)
 		];
 		_cards[_option] = new Card(_sub_elements, option_card_clicked);
 	}
-	cards_set = new CardsSet(_cards, ORIENTATION.BOT_DOWN_PIN, side == SIDES.LEFT ? CIRCLE_DIRECTION.NEGATIVE : CIRCLE_DIRECTION.POSITIVE);
+	cards_set = new CardsSet(_cards, ORIENTATION.BOT_DOWN_PIN, CIRCLE_DIRECTION.NEGATIVE);
 	
 	
 	draw = cards_set.draw;

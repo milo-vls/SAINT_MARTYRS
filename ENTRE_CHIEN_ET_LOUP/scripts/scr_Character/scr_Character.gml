@@ -10,5 +10,13 @@ function get_character_id_by_nickname(_nickname)
 		if global.characters[_i].nickname == _nickname then return _i;
 	}
 	
-	show_error("The nickname \"" + _nickname + "\" doesn't exist.", true);
+	return show_error("The nickname \"" + _nickname + "\" doesn't exist.", true);
+}
+function get_character_by_nickname(_nickname)
+{
+	return global.characters[get_character_id_by_nickname(_nickname)];
+}
+function get_character_portrait_sprite(_nickname)
+{
+	return asset_get_index("spr_"+_nickname+"_portrait");
 }

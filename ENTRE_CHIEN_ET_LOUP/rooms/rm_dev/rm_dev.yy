@@ -8,6 +8,7 @@
   "inheritLayers": false,
   "instanceCreationOrder": [
     {"name":"inst_7E6CE59","path":"rooms/rm_dev/rm_dev.yy",},
+    {"name":"inst_77200CA0","path":"rooms/rm_dev/rm_dev.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -15,6 +16,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E6CE59","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_navigation_arrow","path":"objects/obj_navigation_arrow/obj_navigation_arrow.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_navigation_arrow","path":"objects/obj_navigation_arrow/obj_navigation_arrow.yy",},"propertyId":{"name":"room_destination","path":"objects/obj_navigation_arrow/obj_navigation_arrow.yy",},"value":"rm_dev2",},
           ],"rotation":89.82745,"scaleX":0.30842912,"scaleY":0.35276073,"x":1806.8352,"y":585.77106,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_77200CA0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enzino_npc","path":"objects/obj_enzino_npc/obj_enzino_npc.yy",},"properties":[],"rotation":0.0,"scaleX":0.8592915,"scaleY":0.85929143,"x":599.0,"y":381.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"bgd_rm_dev","path":"sprites/bgd_rm_dev/bgd_rm_dev.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
