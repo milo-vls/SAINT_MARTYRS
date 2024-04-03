@@ -1,7 +1,7 @@
 function option_card_clicked(_card_id)
 {
-	var _dialogue_option_select = obj_menu_management.get_active_menu(DialoguesOptionsSelect);
-	var _dialogue_menu = obj_menu_management.get_active_menu(DialogueMenu);
+	var _dialogue_option_select = obj_menu_manager.get_active_menu(DialoguesOptionsSelect);
+	var _dialogue_menu = obj_menu_manager.get_active_menu(DialogueMenu);
 	_dialogue_menu.selected_option_index = _card_id;
 	_dialogue_option_select.end_reached = true;
 }

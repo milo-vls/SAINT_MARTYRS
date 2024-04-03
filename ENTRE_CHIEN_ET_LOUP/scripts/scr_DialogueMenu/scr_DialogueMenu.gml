@@ -76,7 +76,7 @@ function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, 
 	
 	draw = function()
 	{
-		var _option_select_menu = obj_menu_management.get_active_menu(DialoguesOptionsSelect);
+		var _option_select_menu = obj_menu_manager.get_active_menu(DialoguesOptionsSelect);
 		
 		draw_set_alpha(0.78); draw_set_color(c_black);
 		draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);

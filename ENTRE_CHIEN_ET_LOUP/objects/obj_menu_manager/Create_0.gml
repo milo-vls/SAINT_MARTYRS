@@ -4,7 +4,7 @@ menus = array_create(0);
  */
 add_menu_to_manage = function(_menu)
 {
-	var _menus_length = array_length(obj_menu_management.menus);
+	var _menus_length = array_length(obj_menu_manager.menus);
 	
 	if _menus_length == 0 
 	{
@@ -14,7 +14,7 @@ add_menu_to_manage = function(_menu)
 	
 	for (var _i = 0; _i < _menus_length; _i ++)
 	{
-		if _menu.priority < obj_menu_management.menus[_i].priority
+		if _menu.priority < obj_menu_manager.menus[_i].priority
 		{
 			array_insert(menus, _i, _menu);
 			return;

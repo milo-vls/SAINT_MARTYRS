@@ -1,7 +1,7 @@
 function get_authorized_menus_id()
 {
 	var _channels = array_create(MENU_CHANNELS.NB_CHANNELS, -1);
-	var _menus = obj_menu_management.menus;
+	var _menus = obj_menu_manager.menus;
 	var _authorized_menus_id = [];
 	var _nb_menus = array_length(_menus);
 	

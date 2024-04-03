@@ -1,0 +1,23 @@
+{
+  "resourceType": "GMParticleSystem",
+  "resourceVersion": "1.0",
+  "name": "ps_crime_appearing_2",
+  "backdropHeight": 1080,
+  "backdropImageOpacity": 0.5,
+  "backdropImagePath": "",
+  "backdropWidth": 1920,
+  "backdropXOffset": 0.0,
+  "backdropYOffset": 0.0,
+  "drawOrder": 0,
+  "emitters": [
+    {"resourceType":"GMPSEmitter","resourceVersion":"1.0","name":"em_braise","additiveBlend":false,"directionIncrease":0.0,"directionMax":360.0,"directionMin":0.0,"directionWiggle":0.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":90,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":4278222847,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":40.0,"lifetimeMin":22.0,"linkedEmitter":{"name":"em_braise","path":"particlelib/em_braise/em_braise.yy",},"locked":false,"midColour":4278190335,"mode":1,"orientationIncrease":5.0,"orientationMax":358.0,"orientationMin":330.0,"orientationRelative":false,"orientationWiggle":6.0,"regionH":64.0,"regionW":64.0,"regionX":0.0,"regionY":0.0,"scaleX":1.5,"scaleY":1.5,"shape":1,"sizeIncrease":0.0,"sizeMax":0.05000001,"sizeMin":0.1,"sizeWiggle":0.0,"spawnOnDeathCount":0,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":0,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":-0.4,"speedMax":12.0,"speedMin":5.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4294967295,"texture":7,},
+  ],
+  "parent": {
+    "name": "CRIME APPEARING",
+    "path": "folders/PARTICLE SYSTEMS/CRIME APPEARING.yy",
+  },
+  "showBackdrop": true,
+  "showBackdropImage": false,
+  "xorigin": 0,
+  "yorigin": 0,
+}

@@ -1,6 +1,7 @@
-#macro SEQUENCE global.current_sequence
-#macro STEP global.current_sequence.steps[step_id]
+#macro SEQUENCE current_sequence
+#macro STEP current_sequence.steps[step_id]
 
+current_sequence = noone;
 step_id = 0;
 step_started = false;
 nb_steps = 0;

@@ -6,7 +6,7 @@
   "isDnD": false,
   "parent": {
     "name": "CRIME MANAGEMENT",
-    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM/CRIME MANAGEMENT.yy",
+    "path": "folders/SCRIPTS/CLASSES/CRIME MANAGEMENT.yy",
   },
   "tags": [
     "to_complete",

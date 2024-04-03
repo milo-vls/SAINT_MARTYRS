@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "MAIN CLASSES",
-    "path": "folders/SCRIPTS/CLASSES/MAIN CLASSES.yy",
+    "name": "CRIME MANAGEMENT",
+    "path": "folders/SCRIPTS/CLASSES/CRIME MANAGEMENT.yy",
   },
 }

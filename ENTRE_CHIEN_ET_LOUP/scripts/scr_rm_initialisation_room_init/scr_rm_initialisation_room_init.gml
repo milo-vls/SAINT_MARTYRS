@@ -24,8 +24,8 @@ function rm_initialisation_room_init()
 	global.minimum_days_prediction = 1;
 	global.starting_date = date_create_datetime(2012, 09, 17, 19, 30, 0);
 	global.ids_obtained_phone_numbers = [];
-	global.current_sequence = noone;
 	global.current_cases_ids = array_create(0);
+	global.map_steps = array_create(0);
 	
 	
 	global.street_types = csv_to_1d_array("street_types.csv");
@@ -49,9 +49,13 @@ function rm_initialisation_room_init()
 	}
 	
 	
-	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_menu_management);
-	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_sequence_management);
+	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_menu_manager);
+	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_sequence_manager);
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_input_delay);
+	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_sound_manager);
+	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_map_events_manager);
+	
+	
 	
 	
 	display_set_gui_size(GAME_WIDTH, GAME_HEIGHT);
