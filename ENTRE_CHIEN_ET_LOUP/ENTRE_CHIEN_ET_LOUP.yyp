@@ -131,6 +131,7 @@
     {"id":{"name":"get_authorized_menus","path":"scripts/get_authorized_menus/get_authorized_menus.yy",},},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
     {"id":{"name":"scr_add_sound_to_play","path":"scripts/scr_add_sound_to_play/scr_add_sound_to_play.yy",},},
+    {"id":{"name":"scr_Sound","path":"scripts/scr_Sound/scr_Sound.yy",},},
     {"id":{"name":"scribble_font_add_msdf","path":"scripts/scribble_font_add_msdf/scribble_font_add_msdf.yy",},},
     {"id":{"name":"ChatterboxGetContent","path":"scripts/ChatterboxGetContent/ChatterboxGetContent.yy",},},
     {"id":{"name":"ChatterboxVariableSetConstant","path":"scripts/ChatterboxVariableSetConstant/ChatterboxVariableSetConstant.yy",},},

@@ -82,6 +82,7 @@
     {"name":"scribble_font_delete","order":5,"path":"scripts/scribble_font_delete/scribble_font_delete.yy",},
     {"name":"scr_rm_title_screen_init","order":1,"path":"scripts/scr_rm_title_screen_init/scr_rm_title_screen_init.yy",},
     {"name":"get_authorized_menus","order":5,"path":"scripts/get_authorized_menus/get_authorized_menus.yy",},
+    {"name":"scr_Sound","order":2,"path":"scripts/scr_Sound/scr_Sound.yy",},
     {"name":"scribble_font_add_msdf","order":3,"path":"scripts/scribble_font_add_msdf/scribble_font_add_msdf.yy",},
     {"name":"ChatterboxGetContent","order":1,"path":"scripts/ChatterboxGetContent/ChatterboxGetContent.yy",},
     {"name":"ChatterboxVariableSetConstant","order":6,"path":"scripts/ChatterboxVariableSetConstant/ChatterboxVariableSetConstant.yy",},
