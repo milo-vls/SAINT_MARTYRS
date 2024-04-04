@@ -389,6 +389,7 @@
     {"id":{"name":"__scribble_class_null_element","path":"scripts/__scribble_class_null_element/__scribble_class_null_element.yy",},},
     {"id":{"name":"scr_show_date","path":"scripts/scr_show_date/scr_show_date.yy",},},
     {"id":{"name":"__ChatterboxMetadataStringIsLineHash","path":"scripts/__ChatterboxMetadataStringIsLineHash/__ChatterboxMetadataStringIsLineHash.yy",},},
+    {"id":{"name":"scr_set_music","path":"scripts/scr_set_music/scr_set_music.yy",},},
     {"id":{"name":"scr_MenuGuideLine","path":"scripts/scr_MenuGuideLine/scr_MenuGuideLine.yy",},},
     {"id":{"name":"scr_CrimeAppearance","path":"scripts/scr_CrimeAppearance/scr_CrimeAppearance.yy",},},
     {"id":{"name":"__ChatterboxVM","path":"scripts/__ChatterboxVM/__ChatterboxVM.yy",},},

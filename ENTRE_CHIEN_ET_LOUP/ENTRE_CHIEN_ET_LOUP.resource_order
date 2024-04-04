@@ -290,6 +290,7 @@
     {"name":"__scribble_class_null_element","order":4,"path":"scripts/__scribble_class_null_element/__scribble_class_null_element.yy",},
     {"name":"scr_show_date","order":3,"path":"scripts/scr_show_date/scr_show_date.yy",},
     {"name":"__ChatterboxMetadataStringIsLineHash","order":12,"path":"scripts/__ChatterboxMetadataStringIsLineHash/__ChatterboxMetadataStringIsLineHash.yy",},
+    {"name":"scr_set_music","order":1,"path":"scripts/scr_set_music/scr_set_music.yy",},
     {"name":"scr_CrimeAppearance","order":3,"path":"scripts/scr_CrimeAppearance/scr_CrimeAppearance.yy",},
     {"name":"__ChatterboxVM","order":15,"path":"scripts/__ChatterboxVM/__ChatterboxVM.yy",},
     {"name":"ChatterboxVariablesResetAll","order":10,"path":"scripts/ChatterboxVariablesResetAll/ChatterboxVariablesResetAll.yy",},
