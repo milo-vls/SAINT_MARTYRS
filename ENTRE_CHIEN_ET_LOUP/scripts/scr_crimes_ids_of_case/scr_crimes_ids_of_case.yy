@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Crime",
+  "name": "scr_crimes_ids_of_case",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

@@ -21,7 +21,7 @@ function Crime() constructor
 {
 	color_id = CRIME_BASE_COLOR_ID;
 	appeard = false;
-	
+	discovered = false;
 	
 	get_color = function()
 	{

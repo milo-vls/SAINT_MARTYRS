@@ -7,12 +7,11 @@ function load_units()
 		if _unit.real_x > -1 and _unit.is_available() then unit_appear(_unit_id, _unit.real_x, _unit.real_y, _unit.rotation);
 	}
 }
-function load_crimes(_excludes_todays_crimes)
+function load_crimes(_excluded_crimes_ids)
 {
-	var _day_until_crimes_must_appear = _excludes_todays_crimes ? global.day_number - 1 : global.day_number;
 	for (var _crime_id = 0; _crime_id < global.nb_crimes; _crime_id ++)
 	{	
-		if global.crimes[_crime_id].day_number <= _day_until_crimes_must_appear
+		if global.crimes[_crime_id].day_number <= global.day_number and !array_contains(_excluded_crimes_ids, _crime_id)
 		{
 			crime_appear(_crime_id, false);
 		}
@@ -24,5 +23,6 @@ function rm_main_desk_init()
 {
 	add_menu(new MainDeskNeutral());
 	load_units();
-	load_crimes(obj_menu_manager.get_active_menu(CrimeAppearance) != -1);
+	var _crime_appearance_menu = obj_menu_manager.get_active_menu(CrimeAppearance);
+	load_crimes(_crime_appearance_menu != -1 ? _crime_appearance_menu.sorted_crimes_ids : []);
 }

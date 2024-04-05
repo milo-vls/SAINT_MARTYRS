@@ -19,6 +19,7 @@ function crime_appear(_crime_id, _appearing_animation)
 	{
 		instance_create_depth(_crime.get_x(), _crime.get_y(), DEPTHS.CRIMES, obj_crime, {crime_id : _crime_id, appearing_animation : _appearing_animation});
 		global.crimes[_crime_id].appeard = true;
+		global.crimes[_crime_id].discovered = true;
 	}
 }
 function crime_appeard(_crime_id)
