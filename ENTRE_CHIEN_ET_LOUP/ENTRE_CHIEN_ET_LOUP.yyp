@@ -296,6 +296,7 @@
     {"id":{"name":"scr_crimes_ids_of_case","path":"scripts/scr_crimes_ids_of_case/scr_crimes_ids_of_case.yy",},},
     {"id":{"name":"__scribble_get_krutidev_matra_lookup_map","path":"scripts/__scribble_get_krutidev_matra_lookup_map/__scribble_get_krutidev_matra_lookup_map.yy",},},
     {"id":{"name":"__scribble_get_font_data_map","path":"scripts/__scribble_get_font_data_map/__scribble_get_font_data_map.yy",},},
+    {"id":{"name":"snd_game_over","path":"sounds/snd_game_over/snd_game_over.yy",},},
     {"id":{"name":"__scribble_get_buffer_a","path":"scripts/__scribble_get_buffer_a/__scribble_get_buffer_a.yy",},},
     {"id":{"name":"scribble_font_exists","path":"scripts/scribble_font_exists/scribble_font_exists.yy",},},
     {"id":{"name":"scribble_external_sound_remove","path":"scripts/scribble_external_sound_remove/scribble_external_sound_remove.yy",},},
