@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "CRIME MANAGEMENT",
-    "path": "folders/SCRIPTS/CLASSES/CRIME MANAGEMENT.yy",
+    "name": "CASE MANAGEMENT",
+    "path": "folders/SCRIPTS/CLASSES/CASE MANAGEMENT.yy",
   },
 }

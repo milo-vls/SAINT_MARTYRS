@@ -17,7 +17,10 @@ function set_current_cases(_day_number = global.day_number)
 			}
 		}
 	}
-	
+	if _minimal_crime_id == -1
+	{
+		return _day_number +1;
+	}
 	
 	var _minimal_day = global.crimes[_minimal_crime_id].day_number;
 	

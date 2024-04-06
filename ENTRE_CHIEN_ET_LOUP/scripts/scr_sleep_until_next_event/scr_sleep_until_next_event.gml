@@ -9,8 +9,15 @@ function sleep_until_next_event()
 	}
 	
 	//THEIR ARE CRIMES TO BE RESOLVED (the player must resolved them)
-	if crimes_are_covered() 
+	var _day_crimes_are_covered_until = crimes_are_covered_until()
+	if _day_crimes_are_covered_until >= global.day_number + global.minimum_days_prediction
 	{
+		//the case is done ? if so delete the case from current cases
+		if _day_crimes_are_covered_until == get_cases_last_crime_day()
+		{
+			//END OF CURRENT CASES
+		}
+		
 		return sleep_to(get_cases_last_crime_day());
 	}
 	

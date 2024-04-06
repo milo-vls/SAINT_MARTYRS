@@ -51,7 +51,7 @@ function crime_appearance_activity()
 		
 		if !crime_appeard(sorted_crimes_ids[appearing_crime_id])
 		{
-			crime_appear(sorted_crimes_ids[appearing_crime_id], true);
+			crime_appear(sorted_crimes_ids[appearing_crime_id], true, !_is_first_of_case);
 			crime_timer = 0;
 			last_crime_is_first = _is_first_of_case;
 		}

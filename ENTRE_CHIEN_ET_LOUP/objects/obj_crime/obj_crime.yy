@@ -30,6 +30,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"crime_id","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-1","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"pressed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"appearing_animation","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"covered","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
   ],
   "solid": false,
   "spriteId": {

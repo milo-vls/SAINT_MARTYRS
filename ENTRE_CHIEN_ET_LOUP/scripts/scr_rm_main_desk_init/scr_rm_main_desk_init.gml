@@ -13,7 +13,7 @@ function load_crimes(_excluded_crimes_ids)
 	{	
 		if global.crimes[_crime_id].day_number <= global.day_number and !array_contains(_excluded_crimes_ids, _crime_id)
 		{
-			crime_appear(_crime_id, false);
+			crime_appear(_crime_id, false, false);
 		}
 	}
 }
