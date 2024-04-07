@@ -92,6 +92,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SPRITES","folderPath":"folders/SPRITES.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"FULL BODIES","folderPath":"folders/SPRITES/FULL BODIES.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MAP & MAIN DESK","folderPath":"folders/SPRITES/MAP & MAIN DESK.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/SOUNDS/SOUND EFFECTS/UI.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"addresses.csv","CopyToMask":-1,"filePath":"datafiles/CSVs",},
@@ -399,6 +400,7 @@
     {"id":{"name":"__scribble_font_add_msdf_from_project","path":"scripts/__scribble_font_add_msdf_from_project/__scribble_font_add_msdf_from_project.yy",},},
     {"id":{"name":"string_length_scribble","path":"scripts/string_length_scribble/string_length_scribble.yy",},},
     {"id":{"name":"__ChatterboxClassNode","path":"scripts/__ChatterboxClassNode/__ChatterboxClassNode.yy",},},
+    {"id":{"name":"snd_sf_hover_1","path":"sounds/snd_sf_hover_1/snd_sf_hover_1.yy",},},
     {"id":{"name":"obj_navigation_arrow","path":"objects/obj_navigation_arrow/obj_navigation_arrow.yy",},},
     {"id":{"name":"ChatterboxHopBack","path":"scripts/ChatterboxHopBack/ChatterboxHopBack.yy",},},
     {"id":{"name":"ChatterboxGetVisited","path":"scripts/ChatterboxGetVisited/ChatterboxGetVisited.yy",},},

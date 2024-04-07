@@ -4,12 +4,12 @@ function MainDeskCrimeFocus(_crime_id) : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FO
 	crime_id = _crime_id;
 	
 	
-	var _scribble_nickname = scribble("[fnt_small_titles]" + global.crimes[crime_id].get_victim_nickname());
-	var _scribble_change_color = scribble("[fnt_small_titles]" + text_id_to_string("CRIME NEXT COLOR"));
+	var _text_nickname = "[fnt_small_titles]" + global.crimes[crime_id].get_victim_nickname();
+	var _text_change_color = "[fnt_small_titles]" + text_id_to_string("CRIME NEXT COLOR");
 	var _cards = 
 	[
-		new Card([new CardSubElement(_scribble_nickname, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT), new CardSubElement(spr_arrow, CARD_SUB_ELEMENT_TYPES.SPRITE)], function(){}, true),
-		new Card([new CardSubElement(_scribble_change_color, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], change_crime_color_next)
+		new Card([new CardSubElement(_text_nickname, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT), new CardSubElement(spr_arrow, CARD_SUB_ELEMENT_TYPES.SPRITE)], function(){}, true),
+		new Card([new CardSubElement(_text_change_color, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], change_crime_color_next)
 	]
 	cards_set = new CardsSet(_cards , ORIENTATION.BOT_UP_PIN, CIRCLE_DIRECTION.NEGATIVE);
 	

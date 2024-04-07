@@ -7,7 +7,7 @@ function return_to_main_desk()
 function Exploration() : Menu(MENU_PRIORITIES.EXPLORATION, room, true, false, false, MENU_CHANNELS.EXPLORATION) constructor 
 {
 	pressed_interactable = noone;
-	var _sub_elements = [new CardSubElement(scribble("[fnt_small_titles]" + text_id_to_string("RETURN POLICE STATION")), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT) ];
+	var _sub_elements = [new CardSubElement("[fnt_small_titles]" + text_id_to_string("RETURN POLICE STATION"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT) ];
 	var _cards = [new Card(_sub_elements, return_to_main_desk)]
 	cards_set = new CardsSet(_cards, ORIENTATION.BOT_DOWN_PIN, CIRCLE_DIRECTION.POSITIVE); 
 	

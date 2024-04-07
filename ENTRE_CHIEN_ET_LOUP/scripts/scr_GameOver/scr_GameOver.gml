@@ -1,6 +1,6 @@
 function GameOver() : Menu(MENU_PRIORITIES.EXPLORATION, room, true, true, false) constructor 
 {
-	cards_set = new CardsSet([new Card([new CardSubElement(scribble("abandonner"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], function(){game_end(0) }),new Card([new CardSubElement(scribble("réessayer"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)],function(){change_room(rm_main_desk)})], ORIENTATION.BOT_UP_PIN, CIRCLE_DIRECTION.NEGATIVE);
+	cards_set = new CardsSet([new Card([new CardSubElement("abandonner", CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], function(){game_end(0) }),new Card([new CardSubElement("réessayer", CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)],function(){change_room(rm_main_desk)})], ORIENTATION.BOT_UP_PIN, CIRCLE_DIRECTION.NEGATIVE);
 	
 	
 	draw = function()

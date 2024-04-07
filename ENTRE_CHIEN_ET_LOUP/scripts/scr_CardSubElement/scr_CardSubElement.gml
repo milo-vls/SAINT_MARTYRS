@@ -19,6 +19,19 @@ function CardSubElement(_element, _type) constructor
 	y_top_revealed = -1.0;
 	scale = 1.0;
 	rotation = 0.0;
+	switch(type)
+	{
+		case CARD_SUB_ELEMENT_TYPES.SPRITE :
+		case CARD_SUB_ELEMENT_TYPES.ANIMATED_SPRITE :
+		{
+			width = sprite_get_width(element);
+		}break;
+		case CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT:
+		{
+			var _scribble = scribble(element)
+			width = _scribble.get_width();
+		}break;
+	}
 	
 	sub_image = 0;
 	sprite_fsp_speed = type == CARD_SUB_ELEMENT_TYPES.ANIMATED_SPRITE ? sprite_get_speed(_element) :
@@ -33,7 +46,7 @@ function CardSubElement(_element, _type) constructor
 			scale = _new_width/max(sprite_get_width(element), sprite_get_height(element));
 			return;
 			case CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT:
-			element = element.align(fa_left, fa_top).wrap(_new_width);
+			width = _new_width;
 			return;
 		}
 	}
@@ -47,7 +60,7 @@ function CardSubElement(_element, _type) constructor
 			return TEXT_BUBBLE_MARGIN + sprite_get_height(element) * scale;
 			
 			case CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT:
-			return TEXT_BUBBLE_MARGIN + element.get_height();
+			return TEXT_BUBBLE_MARGIN + scribble(element).wrap(width).get_height();
 			
 
 		}
@@ -60,7 +73,7 @@ function CardSubElement(_element, _type) constructor
 			case CARD_SUB_ELEMENT_TYPES.ANIMATED_SPRITE:
 			return sprite_get_width(element) * scale;
 			case CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT:
-			return element.get_width();
+			return scribble(element).wrap(width).get_width();
 		}
 	}
 	
@@ -76,7 +89,9 @@ function CardSubElement(_element, _type) constructor
 			draw_sprite_ext(element, sub_image, x_left, y_top, scale, scale, rotation, c_white, 1);
 			return;
 			case CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT:
-			element.blend(_mouse_is_over ? MOUSE_OVER_TEXT_FONT_COLOR : DIALOGUES_BASE_FONT_COLOR).draw(x_left, y_top);
+			var _shake = _mouse_is_over ? "[shake]" : "";
+			var _color = _mouse_is_over ? "[c_yellow]" : "[c_white]"
+			scribble(_shake + _color + element).draw(x_left, _mouse_is_over ? y_top - TEXT_BUBBLE_MARGIN : y_top);
 			return;
 			default:
 			return;

@@ -9,15 +9,14 @@ function MainDeskNeutral() : Menu(MENU_PRIORITIES.MAIN_DESK_NEUTRAL, room, false
 		var _unit = global.units[_unit_id];
 		if _unit.is_available()
 		{
-			var _scribble_unit_nickname = scribble("[fnt_small_titles]" + global.characters[_unit.character_id].nickname);
-			_units_cards[array_length(_units_cards)] = new Card([new CardSubElement(_scribble_unit_nickname, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], unit_card_clicked, false, [_unit_id]);
+			_units_cards[array_length(_units_cards)] = new Card([new CardSubElement("[fnt_small_titles]" + global.characters[_unit.character_id].nickname, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], unit_card_clicked, false, [_unit_id]);
 		}
 	}
 	units_cards_set = new CardsSet(_units_cards, ORIENTATION.BOT_DOWN_PIN, CIRCLE_DIRECTION.NEGATIVE);
 	
 	
-	var _exploration_button_card = new Card([new CardSubElement(scribble(SMALL_TITLE_FORMATIING_TEXT"Exploration"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], main_deck_to_exploration);
-	var _advance_sleep_button_card = new Card([new CardSubElement(scribble(SMALL_TITLE_FORMATIING_TEXT"Finir la journée"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], sleep_until_next_event, true);
+	var _exploration_button_card = new Card([new CardSubElement(SMALL_TITLE_FORMATIING_TEXT"Exploration", CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], main_deck_to_exploration);
+	var _advance_sleep_button_card = new Card([new CardSubElement(SMALL_TITLE_FORMATIING_TEXT"Finir la journée", CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], sleep_until_next_event, true);
 	main_desk_upper_buttons_set = new CardsSet([_advance_sleep_button_card, _exploration_button_card], ORIENTATION.BOT_UP_PIN, CIRCLE_DIRECTION.POSITIVE);
 	
 	

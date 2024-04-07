@@ -74,6 +74,7 @@
     {"name":"SPRITES","order":18,"path":"folders/SPRITES.yy",},
     {"name":"FULL BODIES","order":3,"path":"folders/SPRITES/FULL BODIES.yy",},
     {"name":"MAP & MAIN DESK","order":2,"path":"folders/SPRITES/MAP & MAIN DESK.yy",},
+    {"name":"UI","order":2,"path":"folders/SOUNDS/SOUND EFFECTS/UI.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"scr_sleep_until_next_event","order":2,"path":"scripts/scr_sleep_until_next_event/scr_sleep_until_next_event.yy",},

@@ -8,16 +8,13 @@ function Card(_sub_elements, _function = function(){}, _always_revealed = false,
 	always_revealed = _always_revealed;
 	data = _data;
 	
+	hovering_sound_played = false;
 	nb_sub_elements = array_length(_sub_elements);
-	width = 
-	min(sub_elements[0].get_width() 
-	+ TEXT_BUBBLE_MARGIN*2, TEXT_BUBBLE_WIDTH);
-	
+	width = min(sub_elements[0].get_width() + TEXT_BUBBLE_MARGIN*2, TEXT_BUBBLE_WIDTH);
 	for (var _sub_element = 0; _sub_element < nb_sub_elements; _sub_element ++)
 	{
 		sub_elements[_sub_element].set_width(width - TEXT_BUBBLE_MARGIN*2);
 	}
-	
 	height = FIRST_SUB_ELEMENT.get_height() + TEXT_BUBBLE_MARGIN*2;
 	
 	x_left = -1.0;
@@ -36,7 +33,7 @@ function Card(_sub_elements, _function = function(){}, _always_revealed = false,
 	y_bot_hidden = -1.0;
 	y_bot_revealed = -1.0;
 	
-
+	
 	static mouse_is_over = function()
 	{
 		return point_in_rectangle(mouse_x, mouse_y, self.x_left_hidden, self.y_top_hidden, self.x_right_hidden, self.y_bot_hidden);
@@ -85,10 +82,23 @@ function Card(_sub_elements, _function = function(){}, _always_revealed = false,
 	
 	static draw = function()
 	{
+		if mouse_is_over()
+		{
+			if mouse_is_over() and !hovering_sound_played 
+			{
+				add_sound_to_play(new Sound(snd_sf_hover_1, x_left + width/2, y_bot - height/2, 0, false, 0.6, true));
+				hovering_sound_played = true;
+			} 
+		}
+		else 
+		{
+			hovering_sound_played = false;
+		}
+
 		draw_set_color(CARDS_COLOR); draw_set_alpha(1);
-		draw_rectangle_color(x_left, y_top, x_right, y_bot, CARDS_COLOR, CARDS_COLOR, CARDS_COLOR, CARDS_COLOR, false);
-		FIRST_SUB_ELEMENT.draw(point_in_rectangle(mouse_x, mouse_y, self.x_left, self.y_top, self.x_right, self.y_bot) ? MOUSE_OVER_TEXT_FONT_COLOR : DIALOGUES_BASE_FONT_COLOR);
-		for (var _sub_element = 0; _sub_element < nb_sub_elements; _sub_element++)
+		draw_rectangle_color(x_left, mouse_is_over() ? y_top - TEXT_BUBBLE_MARGIN : y_top, x_right, y_bot, CARDS_COLOR, CARDS_COLOR, CARDS_COLOR, CARDS_COLOR, false);
+		FIRST_SUB_ELEMENT.draw(mouse_is_over());
+		for (var _sub_element = 1; _sub_element < nb_sub_elements; _sub_element++)
 		{
 			SUB_ELEMENT.draw(mouse_is_over());
 		}

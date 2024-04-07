@@ -18,10 +18,9 @@ function DialoguesOptionsSelect(_options_array, _dialogue_menu, _side) : Menu(ME
 	var _cards = array_create(nb_options);
 	for (var _option = 0; _option < nb_options; _option ++)
 	{
-		var _scribble = scribble(DIALOGUES_FORMATING_TEXT options_array[_option].text).blend(DIALOGUES_BASE_FONT_COLOR)
 		var _sub_elements = 
 		[
-			new CardSubElement(_scribble, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)
+			new CardSubElement(DIALOGUES_FORMATING_TEXT options_array[_option].text, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)
 		];
 		_cards[_option] = new Card(_sub_elements, option_card_clicked);
 	}
