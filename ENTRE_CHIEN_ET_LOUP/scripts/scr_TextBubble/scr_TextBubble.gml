@@ -1,4 +1,4 @@
-#macro DIALOGUES_FORMATING_TEXT "[fnt_dialogues]" +
+
 #macro DIALOGUES_BASE_FONT_COLOR c_white
 #macro MOUSE_OVER_TEXT_FONT_COLOR c_yellow
 

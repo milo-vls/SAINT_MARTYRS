@@ -9,5 +9,6 @@ function get_cases_last_crime_day(_cases_ids = global.current_cases_ids)
 			_max_day_found = _crime.day_number;
 		}
 	}
-	return _max_day_found;
+	var _int = int64(_max_day_found);
+	return _int;
 }

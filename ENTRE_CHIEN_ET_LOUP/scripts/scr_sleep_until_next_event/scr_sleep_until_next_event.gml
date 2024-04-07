@@ -18,7 +18,7 @@ function sleep_until_next_event()
 			//END OF CURRENT CASES
 		}
 		
-		return sleep_to(get_cases_last_crime_day());
+		return sleep_to(_day_crimes_are_covered_until);
 	}
 	
 	return change_room(rm_game_over);

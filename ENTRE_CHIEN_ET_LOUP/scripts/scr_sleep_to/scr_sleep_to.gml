@@ -5,14 +5,14 @@ function sleep_to(_day_number = global.day_number + 1)
 	
 	global.day_number = _day_number;
 	
-	var _todays_crimes_ids = crimes_ids_from_day_number(_day_number)
-	if array_length(_todays_crimes_ids) > 0
+	todays_crimes_ids = crimes_ids_from_day_number(_day_number)
+	if array_length(todays_crimes_ids) > 0
 	{
 		//CRIME APPEARANCE
 		var _crimes_of_current_cases_ids = crimes_ids_of_cases(global.current_cases_ids);
 		var _crimes_undiscovered = array_filter(_crimes_of_current_cases_ids, function(_crime_id)
 		{
-			return !global.crimes[_crime_id].discovered
+			return !global.crimes[_crime_id].discovered and array_contains(todays_crimes_ids, _crime_id);
 		});
 		add_map_step(step_crimes_appearance(_crimes_undiscovered));
 		//END OF CASE(S) ANIMATION
