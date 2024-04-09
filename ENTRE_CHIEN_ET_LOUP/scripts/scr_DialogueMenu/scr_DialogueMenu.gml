@@ -122,5 +122,11 @@ function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, 
 				next_text_bubble();
 			}
 		}
+		{
+			if left_click_pressed()
+			{
+				text_bubbles[_nb_text_bubbles-1].typist.skip();
+			}
+		}
 	}
 }

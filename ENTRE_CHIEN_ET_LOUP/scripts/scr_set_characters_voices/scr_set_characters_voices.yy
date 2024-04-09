@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_PhoneNumber",
+  "name": "scr_set_characters_voices",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "OTHER CLASSES",
-    "path": "folders/SCRIPTS/MAIN CLASSES/OTHER CLASSES.yy",
+    "name": "SOUNDS",
+    "path": "folders/SCRIPTS/SOUNDS.yy",
   },
 }

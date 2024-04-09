@@ -64,7 +64,7 @@ function rm_initialisation_room_init()
 	
 	
 	global.day_events = set_day_events();
-	
+	global.character_id_to_voices_map = set_characters_voices();
 	
 	room_goto(rm_title_screen);
 }

@@ -14,9 +14,9 @@ function TextBubble(_text, _speaking_character, _side, _text_color = DIALOGUES_B
 	scribble_text = scribble(DIALOGUES_FORMATING_TEXT _text).wrap(TEXT_BUBBLE_WIDTH - TEXT_BUBBLE_MARGIN*2).align(fa_left, fa_middle);
 	side = _side;
 	text_color = _text_color;
-
-
-	typist = scribble_typist().in(1.3, 4);
+	var _char_id = get_character_id_by_nickname(_speaking_character)
+	var _sounds = _char_id == -1 ? [] : ds_map_find_value(global.character_id_to_voices_map, _char_id);
+	typist = scribble_typist().in(1.3, 4).sound(_sounds, 100, 1, 1, .2);
 	y_bot = GAME_HEIGHT - 10;
 	get_height = function()
 	{

@@ -1,6 +1,7 @@
 idC,nickname,first_name,last_name,address_id,phone_number_id,may_appear,room
-0,Hepriz,Hepriz,Second,,,false,
-1,Blaise,Blaise,Vaurel,,,false,
-2,Ernest,Ernest,Fremder,,,false,
-3,Rosalie,Rosalie,Valrez,,,false,
-4,Didier,Didier,Lagranger,,,false,
+1,Hepriz,Hepriz,Second,,,0,
+2,Blaise,Blaise,Vaurel,,,0,
+3,Ernest,Ernest,Fremder,,,0,
+4,Rosalie,Rosalie,Valrez,,,0,
+5,Didier,Didier,Lagranger,,,0,
+6,Enzino,Enzino,Neroni,,,1,rm_dev

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "MAIN CLASSES",
-    "path": "folders/SCRIPTS/CASES AND CRIMES/MAIN CLASSES.yy",
+    "path": "folders/SCRIPTS/MAIN CLASSES.yy",
   },
 }
