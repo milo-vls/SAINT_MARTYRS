@@ -8,7 +8,7 @@ function crimes_are_covered_until(_cases_ids = global.current_cases_ids)
 		var _nb_crimes_ids_of_day = array_length(_crimes_ids_of_day);
 		for (var _index = 0; _index < _nb_crimes_ids_of_day; _index ++)
 		{
-			if crime_is_from_cases(_crimes_ids_of_day[_index], _cases_ids) and false ==crime_is_covered(_crimes_ids_of_day[_index])
+			if crime_is_from_cases(_crimes_ids_of_day[_index], _cases_ids) and false ==crime_is_covered(_crimes_ids_of_day[_index]) and global.crimes[_crimes_ids_of_day[_index]].discovered == false
 			{
 				return _last_day_covered;
 			}
