@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_add_menu",
+  "name": "scr_BlackScreen",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "MENUS",
-    "path": "folders/SCRIPTS/MENUS.yy",
+    "name": "VISUAL ANNEXES",
+    "path": "folders/SCRIPTS/MENUS/MENU TYPES/VISUAL ANNEXES.yy",
   },
 }

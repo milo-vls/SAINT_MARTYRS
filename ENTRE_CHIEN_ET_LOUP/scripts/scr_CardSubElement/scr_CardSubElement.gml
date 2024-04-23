@@ -91,7 +91,8 @@ function CardSubElement(_element, _type) constructor
 			case CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT:
 			var _shake = _mouse_is_over ? "[shake]" : "";
 			var _color = _mouse_is_over ? "[c_yellow]" : "[c_white]"
-			scribble(_shake + _color + element).draw(x_left, _mouse_is_over ? y_top - TEXT_BUBBLE_MARGIN : y_top);
+			var _width = width;
+			scribble(_shake + _color + element).wrap(width).draw(x_left, _mouse_is_over ? y_top - TEXT_BUBBLE_MARGIN : y_top);
 			return;
 			default:
 			return;

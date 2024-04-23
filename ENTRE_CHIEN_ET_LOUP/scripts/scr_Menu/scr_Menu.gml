@@ -20,7 +20,7 @@ function Menu(_priority, _room_presence = room, _is_persistent = false, _end_wit
 	///@returns {bool} Description
 	static must_be_drawn = function()
 	{
-		return is_persistent or (room_presence == room);
+		return (is_persistent or (room_presence == room)) and end_reached == false;
 	}
 	
 }
