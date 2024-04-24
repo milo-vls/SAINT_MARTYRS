@@ -11,7 +11,8 @@ function load_crimes(_excluded_crimes_ids)
 {
 	for (var _crime_id = 0; _crime_id < global.nb_crimes; _crime_id ++)
 	{	
-		if global.crimes[_crime_id].day_number <= global.day_number and !array_contains(_excluded_crimes_ids, _crime_id)
+		var _crime = global.crimes[_crime_id];
+		if _crime.day_number <= global.day_number and !array_contains(_excluded_crimes_ids, _crime_id) and !global.cases[_crime.case_id].day_caught > -1
 		{
 			crime_appear(_crime_id, false, false);
 		}

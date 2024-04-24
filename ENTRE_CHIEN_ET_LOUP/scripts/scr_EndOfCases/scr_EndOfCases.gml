@@ -38,6 +38,7 @@ function end_of_cases_activity()
 		}
 		array_foreach(cases_ids, function(_case_id)
 		{
+			global.cases[_case_id].day_caught = global.day_number;
 			array_delete_by_value(global.current_cases_ids, _case_id);
 		});
 		
