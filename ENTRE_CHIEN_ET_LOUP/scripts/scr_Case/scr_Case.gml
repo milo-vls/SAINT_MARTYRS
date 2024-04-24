@@ -20,6 +20,7 @@ function case_is_caught()
 function Case() constructor
 {
 	day_caught = CASE_STATE.FREE;
+	maluses = array_create(0);
 	
 	has_fled = case_has_fled;
 	is_free = case_is_free;

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Case",
+  "name": "scr_malus_distribution_init",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
