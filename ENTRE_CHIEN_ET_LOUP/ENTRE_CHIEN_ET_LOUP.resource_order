@@ -245,6 +245,7 @@
     {"name":"ChatterboxStop","order":8,"path":"scripts/ChatterboxStop/ChatterboxStop.yy",},
     {"name":"ChatterboxGetOptionArray","order":1,"path":"scripts/ChatterboxGetOptionArray/ChatterboxGetOptionArray.yy",},
     {"name":"snd_voice_Enzino_6","order":5,"path":"sounds/snd_voice_Enzino_6/snd_voice_Enzino_6.yy",},
+    {"name":"spr_dialogue_background","order":4,"path":"sprites/spr_dialogue_background/spr_dialogue_background.yy",},
     {"name":"__ChatterboxCompile","order":7,"path":"scripts/__ChatterboxCompile/__ChatterboxCompile.yy",},
     {"name":"__scribble_get_glyph_data","order":10,"path":"scripts/__scribble_get_glyph_data/__scribble_get_glyph_data.yy",},
     {"name":"scribble_typewriter_add_character_delay","order":6,"path":"scripts/scribble_typewriter_add_character_delay/scribble_typewriter_add_character_delay.yy",},

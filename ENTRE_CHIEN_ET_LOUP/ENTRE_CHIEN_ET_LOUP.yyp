@@ -338,6 +338,7 @@
     {"id":{"name":"ChatterboxLocalizationBuild","path":"scripts/ChatterboxLocalizationBuild/ChatterboxLocalizationBuild.yy",},},
     {"id":{"name":"ChatterboxGetOptionArray","path":"scripts/ChatterboxGetOptionArray/ChatterboxGetOptionArray.yy",},},
     {"id":{"name":"snd_voice_Enzino_6","path":"sounds/snd_voice_Enzino_6/snd_voice_Enzino_6.yy",},},
+    {"id":{"name":"spr_dialogue_background","path":"sprites/spr_dialogue_background/spr_dialogue_background.yy",},},
     {"id":{"name":"__ChatterboxCompile","path":"scripts/__ChatterboxCompile/__ChatterboxCompile.yy",},},
     {"id":{"name":"__scribble_get_glyph_data","path":"scripts/__scribble_get_glyph_data/__scribble_get_glyph_data.yy",},},
     {"id":{"name":"scribble_typewriter_add_character_delay","path":"scripts/scribble_typewriter_add_character_delay/scribble_typewriter_add_character_delay.yy",},},

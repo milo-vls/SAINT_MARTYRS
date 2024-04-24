@@ -15,6 +15,7 @@ function BlackScreen(_end_reached_method_condition, _alpha) : Menu(MENU_PRIORITI
 	draw = function()
 	{
 		draw_set_alpha(alpha); draw_set_color(c_white);
-		draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);
+		//draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);
+		draw_sprite(spr_dialogue_background, 0, 0, 0);
 	}
 }
