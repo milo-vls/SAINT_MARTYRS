@@ -97,6 +97,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"DIALOGUES","folderPath":"folders/SPRITES/DIALOGUES.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"FULL BODIES","folderPath":"folders/SPRITES/FULL BODIES.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MAP & MAIN DESK","folderPath":"folders/SPRITES/MAP & MAIN DESK.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"DISAPPEARING","folderPath":"folders/PARTICLE SYSTEMS/CRIME APPEARING/DISAPPEARING.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"addresses.csv","CopyToMask":-1,"filePath":"datafiles/CSVs",},
@@ -275,6 +276,7 @@
     {"id":{"name":"obj_sequence_manager","path":"objects/obj_sequence_manager/obj_sequence_manager.yy",},},
     {"id":{"name":"ChatterboxSelect","path":"scripts/ChatterboxSelect/ChatterboxSelect.yy",},},
     {"id":{"name":"scr_crime_is_covered","path":"scripts/scr_crime_is_covered/scr_crime_is_covered.yy",},},
+    {"id":{"name":"ps_explosion","path":"particles/ps_explosion/ps_explosion.yy",},},
     {"id":{"name":"scribble_super_glyph_copy_all","path":"scripts/scribble_super_glyph_copy_all/scribble_super_glyph_copy_all.yy",},},
     {"id":{"name":"ps_circle_centered_out","path":"particles/ps_circle_centered_out/ps_circle_centered_out.yy",},},
     {"id":{"name":"__scribble_system","path":"scripts/__scribble_system/__scribble_system.yy",},},

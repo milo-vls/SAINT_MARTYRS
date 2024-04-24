@@ -12,7 +12,7 @@ function sleep_to(_day_number = global.day_number + 1)
 		var _crimes_of_current_cases_ids = crimes_ids_of_cases(global.current_cases_ids);
 		var _crimes_undiscovered = array_filter(_crimes_of_current_cases_ids, function(_crime_id)
 		{
-			return !global.crimes[_crime_id].discovered and array_contains(todays_crimes_ids, _crime_id);
+			return !global.crimes[_crime_id].discovered and global.crimes[_crime_id].day_number <= global.day_number ;
 		});
 		add_map_step(step_crimes_appearance(_crimes_undiscovered));
 		//END OF CASE(S) ANIMATION

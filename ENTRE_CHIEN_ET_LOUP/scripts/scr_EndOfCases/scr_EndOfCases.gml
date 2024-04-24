@@ -28,10 +28,22 @@ function end_of_cases_activity()
 {
 	if animation_is_finished
 	{
+		for (var _i = 0; _i < instance_number(obj_crime); ++ _i;)
+		{
+			var _crime_instance = instance_find(obj_crime, _i);
+			if array_contains(cases_ids, global.crimes[_crime_instance.crime_id].case_id)
+			{
+				_crime_instance.disappearing = true;
+			}
+		}
 		array_foreach(cases_ids, function(_case_id)
 		{
 			array_delete_by_value(global.current_cases_ids, _case_id);
 		});
+		
+		
+		
+		
 		end_reached = true;
 		return;
 	}
