@@ -22,14 +22,18 @@ for (var _i = _menus_length - 1; _i > -1; _i --)
 
 
 
-
-
 var _menus_length = array_length(menus);
 var _highest_priority_menu_index = -1;
 var _authorized_menus = get_authorized_menus_id();
 
 for (var _i = 0; _i < _menus_length; _i ++)
 {	
+	if menus[_i].end_reached
+	{
+		array_delete(menus, _i, 1);
+		_menus_length -= 1;
+		break;
+	}
 	if menus[_i].must_be_drawn() and array_contains(_authorized_menus, _i)
 	{
 		menus[_i].draw();
@@ -40,12 +44,7 @@ for (var _i = 0; _i < _menus_length; _i ++)
 		}
 	}
 	
-	if menus[_i].end_reached
-	{
-		array_delete(menus, _i, 1);
-		_i = 0;
-		_menus_length -= 1;
-	}
+	
 }
 for (var _i = 0; _i < _menus_length; _i ++)
 {

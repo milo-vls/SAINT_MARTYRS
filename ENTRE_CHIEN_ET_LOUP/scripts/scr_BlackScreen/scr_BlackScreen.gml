@@ -3,7 +3,7 @@
 function BlackScreen(_end_reached_method_condition, _alpha) : Menu(MENU_PRIORITIES.BLACK_SCREEN, room, false, false, true, MENU_CHANNELS.BLACK_SCREEN) constructor 
 {
 	end_reached_method_condition = _end_reached_method_condition;
-	alpha = 1//_alpha;
+	alpha = 0.95//_alpha;
 	
 	activity = function()
 	{

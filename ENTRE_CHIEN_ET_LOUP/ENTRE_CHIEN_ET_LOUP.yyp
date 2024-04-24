@@ -286,6 +286,7 @@
     {"id":{"name":"__scribble_system","path":"scripts/__scribble_system/__scribble_system.yy",},},
     {"id":{"name":"__scribble_font_add_sprite","path":"scripts/__scribble_font_add_sprite/__scribble_font_add_sprite.yy",},},
     {"id":{"name":"ChatterboxGetOption","path":"scripts/ChatterboxGetOption/ChatterboxGetOption.yy",},},
+    {"id":{"name":"spr_text_bubble_tail","path":"sprites/spr_text_bubble_tail/spr_text_bubble_tail.yy",},},
     {"id":{"name":"spr_map","path":"sprites/spr_map/spr_map.yy",},},
     {"id":{"name":"ChatterboxGetContentSpeaker","path":"scripts/ChatterboxGetContentSpeaker/ChatterboxGetContentSpeaker.yy",},},
     {"id":{"name":"ChatterboxAddFindReplace","path":"scripts/ChatterboxAddFindReplace/ChatterboxAddFindReplace.yy",},},

@@ -21,10 +21,13 @@ function next_text_bubble()
 	}
 	else
 	{
+		//SAME SPEAKER
 		if text_bubbles[_nb_text_bubbles-1].speaking_character == _speaker
 		{
+			text_bubbles[_nb_text_bubbles-1].is_last_speaker_bubble = false;
 			_side = text_bubbles[_nb_text_bubbles-1].side;
 		}
+		//DIFFERENT SPEAKER
 		else
 		{
 			_side = text_bubbles[_nb_text_bubbles-1].side == SIDES.LEFT ? SIDES.RIGHT : SIDES.LEFT;
