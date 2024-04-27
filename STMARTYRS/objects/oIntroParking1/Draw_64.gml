@@ -94,7 +94,7 @@ case INTRO_STATE.GENDARMERIE:{
 case INTRO_STATE.TUTO_MAP:{
 	if room == P_CORRIDOR and !instance_exists(oDial)
 	{
-		GoToRoom(pcarte);	
+		//GoToRoom(pcarte);	
 	}
 	
 	switch(tutoMapState)

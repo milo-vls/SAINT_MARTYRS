@@ -1,6 +1,7 @@
 function MainDeskNeutral() : Menu(MENU_PRIORITIES.MAIN_DESK_NEUTRAL, room, false, true, false, MENU_CHANNELS.MAIN_DESK_NEUTRAL) constructor 
 {
 	pressed_crime = noone;
+	pressed_upper_icone = noone; 
 	
 	var _units_cards = array_create(0);
 	var _nb_units = array_length(global.units);
@@ -14,11 +15,11 @@ function MainDeskNeutral() : Menu(MENU_PRIORITIES.MAIN_DESK_NEUTRAL, room, false
 	}
 	units_cards_set = new CardsSet(_units_cards, ORIENTATION.BOT_DOWN_PIN, CIRCLE_DIRECTION.NEGATIVE);
 	
-	
+	/*
 	var _exploration_button_card = new Card([new CardSubElement(SMALL_TITLE_FORMATIING_TEXT"Exploration", CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], main_deck_to_exploration);
 	var _advance_sleep_button_card = new Card([new CardSubElement(SMALL_TITLE_FORMATIING_TEXT"Finir la journée", CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], sleep_until_next_event, true);
 	main_desk_upper_buttons_set = new CardsSet([_advance_sleep_button_card, _exploration_button_card], ORIENTATION.BOT_UP_PIN, CIRCLE_DIRECTION.POSITIVE);
-	
+	*/
 	
 	draw = main_desk_neutral_draw;
 	activity = main_desk_neutral_activity;
@@ -26,9 +27,24 @@ function MainDeskNeutral() : Menu(MENU_PRIORITIES.MAIN_DESK_NEUTRAL, room, false
 
 function main_desk_neutral_activity()
 {		
-	//SLEEP
-	main_desk_upper_buttons_set.activity();
-	
+	//UPPER BUTTONS
+	var _mouse_is_over_upper_icone = instance_position(mouse_x, mouse_y, obj_upper_map_icone);
+	if _mouse_is_over_upper_icone == pressed_upper_icone and left_click_released() and _mouse_is_over_upper_icone > -1
+	{
+		_mouse_is_over_upper_icone.function_when_clicked();
+	}
+	if _mouse_is_over_upper_icone > -1 and left_click_pressed()
+	{
+		pressed_upper_icone = _mouse_is_over_upper_icone;
+	}
+	if !left_click() or _mouse_is_over_upper_icone == noone
+	{
+		pressed_upper_icone = noone;
+	}
+	if pressed_upper_icone != noone
+	{
+		pressed_upper_icone.pressed = true;
+	}
 	
 	//UNITS
 	units_cards_set.activity();
@@ -43,12 +59,9 @@ function main_desk_neutral_activity()
 	//CRIMES	
 	//crime selection
 	var _mouse_is_over_crime = instance_position(mouse_x, mouse_y, obj_crime);
-	if _mouse_is_over_crime > -1
+	if _mouse_is_over_crime == pressed_crime and left_click_released() and _mouse_is_over_crime > -1
 	{
-		if _mouse_is_over_crime == pressed_crime and left_click_released()
-		{
-			return add_menu(new MainDeskCrimeFocus(pressed_crime.crime_id));
-		}
+		return add_menu(new MainDeskCrimeFocus(pressed_crime.crime_id));
 	}
 	if _mouse_is_over_crime > -1 and left_click_pressed() 
 	{
@@ -61,7 +74,7 @@ function main_desk_neutral_activity()
 }
 function main_desk_neutral_draw()
 {
-	main_desk_upper_buttons_set.draw();
+	obj_upper_map_icone.shown = true;
 	units_cards_set.draw();
 }
 

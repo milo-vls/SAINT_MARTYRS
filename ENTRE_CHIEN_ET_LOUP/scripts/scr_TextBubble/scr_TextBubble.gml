@@ -52,8 +52,6 @@ function TextBubble(_text, _speaking_character, _side, _text_color = DIALOGUES_B
 		var _y_rec_bottom = self.y_bot;
 		var _y_rec_top = _y_rec_bottom - self.get_height();
 		draw_roundrect(_x_rec_left, _y_rec_top, _x_rec_right, _y_rec_bottom, false);
-		//A faire
-		//draw_sprite_ext(spr_text_bubble, 0, )
 		
 		if is_last_speaker_bubble
 		{
@@ -75,7 +73,6 @@ function TextBubble(_text, _speaking_character, _side, _text_color = DIALOGUES_B
 			}
 			draw_line_width(starting_link_x, _y_rec_bottom - TEXT_BUBBLE_MARGIN, ending_link_x, _y_rec_bottom + TEXT_BUBBLE_MARGIN*2, irandom_range(5, 20));
 		}
-		
 		
 		var _x_text_left = _x_rec_left + TEXT_BUBBLE_MARGIN;
 		var _y_text_middle = _y_rec_top + self.get_height()/2;
