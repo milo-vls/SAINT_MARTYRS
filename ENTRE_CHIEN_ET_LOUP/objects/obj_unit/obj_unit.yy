@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "MAIN DESK",
-    "path": "folders/OBJETCS/MAIN DESK.yy",
+    "name": "UNITS",
+    "path": "folders/OBJETCS/DESK/MAP/UNITS.yy",
   },
   "parentObjectId": null,
   "persistent": false,

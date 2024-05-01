@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "MAIN DESK",
-    "path": "folders/OBJETCS/MAIN DESK.yy",
+    "name": "MAP",
+    "path": "folders/OBJETCS/DESK/MAP.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -36,8 +36,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_crime_idle",
-    "path": "sprites/spr_crime_idle/spr_crime_idle.yy",
+    "name": "spr_crime_idle_old",
+    "path": "sprites/spr_crime_idle_old/spr_crime_idle_old.yy",
   },
   "spriteMaskId": null,
   "visible": true,

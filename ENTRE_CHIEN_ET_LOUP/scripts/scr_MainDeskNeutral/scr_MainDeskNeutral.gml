@@ -13,13 +13,7 @@ function MainDeskNeutral() : Menu(MENU_PRIORITIES.MAIN_DESK_NEUTRAL, room, false
 			_units_cards[array_length(_units_cards)] = new Card([new CardSubElement("[fnt_small_titles]" + global.characters[_unit.character_id].nickname, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], unit_card_clicked, false, [_unit_id]);
 		}
 	}
-	units_cards_set = new CardsSet(_units_cards, ORIENTATION.BOT_DOWN_PIN, CIRCLE_DIRECTION.NEGATIVE);
 	
-	/*
-	var _exploration_button_card = new Card([new CardSubElement(SMALL_TITLE_FORMATIING_TEXT"Exploration", CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], main_deck_to_exploration);
-	var _advance_sleep_button_card = new Card([new CardSubElement(SMALL_TITLE_FORMATIING_TEXT"Finir la journée", CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], sleep_until_next_event, true);
-	main_desk_upper_buttons_set = new CardsSet([_advance_sleep_button_card, _exploration_button_card], ORIENTATION.BOT_UP_PIN, CIRCLE_DIRECTION.POSITIVE);
-	*/
 	
 	draw = main_desk_neutral_draw;
 	activity = main_desk_neutral_activity;
@@ -28,7 +22,7 @@ function MainDeskNeutral() : Menu(MENU_PRIORITIES.MAIN_DESK_NEUTRAL, room, false
 function main_desk_neutral_activity()
 {		
 	//UPPER BUTTONS
-	var _mouse_is_over_upper_icone = instance_position(mouse_x, mouse_y, obj_upper_map_icone);
+	var _mouse_is_over_upper_icone = instance_position(mouse_x, mouse_y, obj_map_icone);
 	if _mouse_is_over_upper_icone == pressed_upper_icone and left_click_released() and _mouse_is_over_upper_icone > -1
 	{
 		_mouse_is_over_upper_icone.function_when_clicked();
@@ -46,8 +40,7 @@ function main_desk_neutral_activity()
 		pressed_upper_icone.pressed = true;
 	}
 	
-	//UNITS
-	units_cards_set.activity();
+
 	//units slection
 	var _mouse_is_over_unit = instance_position(mouse_x, mouse_y, obj_unit);
 	if _mouse_is_over_unit > -1 and left_click_pressed()
@@ -74,8 +67,7 @@ function main_desk_neutral_activity()
 }
 function main_desk_neutral_draw()
 {
-	obj_upper_map_icone.shown = true;
-	units_cards_set.draw();
+	obj_map_icone.shown = true;
 }
 
 
@@ -87,6 +79,7 @@ function unit_card_clicked(_void, _data)
 	{
 		instance_create_depth(mouse_x, mouse_y, DEPTHS.UNITS, obj_unit, {unit_id : _unit_id});
 		add_menu(new MainDeskUnitFocus(_unit_id));
+		end_reached = true;
 	}
 	
 }

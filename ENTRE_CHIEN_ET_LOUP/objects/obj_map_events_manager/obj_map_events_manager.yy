@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "MAIN DESK",
-    "path": "folders/OBJETCS/MAIN DESK.yy",
+    "name": "MAP",
+    "path": "folders/OBJETCS/DESK/MAP.yy",
   },
   "parentObjectId": null,
   "persistent": true,

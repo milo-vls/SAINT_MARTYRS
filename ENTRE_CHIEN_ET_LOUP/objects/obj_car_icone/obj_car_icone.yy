@@ -5,15 +5,15 @@
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_upper_map_icone","path":"objects/obj_upper_map_icone/obj_upper_map_icone.yy",},"propertyId":{"name":"function_when_clicked","path":"objects/obj_upper_map_icone/obj_upper_map_icone.yy",},"value":"main_deck_to_exploration",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_map_icone","path":"objects/obj_map_icone/obj_map_icone.yy",},"propertyId":{"name":"function_when_clicked","path":"objects/obj_map_icone/obj_map_icone.yy",},"value":"main_deck_to_exploration",},
   ],
   "parent": {
-    "name": "MAIN DESK",
-    "path": "folders/OBJETCS/MAIN DESK.yy",
+    "name": "UPPER ICONE",
+    "path": "folders/OBJETCS/DESK/MAP/UPPER ICONE.yy",
   },
   "parentObjectId": {
-    "name": "obj_upper_map_icone",
-    "path": "objects/obj_upper_map_icone/obj_upper_map_icone.yy",
+    "name": "obj_map_icone",
+    "path": "objects/obj_map_icone/obj_map_icone.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
