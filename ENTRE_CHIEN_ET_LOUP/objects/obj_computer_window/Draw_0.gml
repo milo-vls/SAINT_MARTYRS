@@ -5,7 +5,12 @@ if !surface_exists(surface)
 surface_set_target(surface);
 draw_content(surface_width, surface_height);
 surface_reset_target();
-draw_surface(surface, x + border_width, y + border_height);
+draw_surface(surface, x + border_width, y + border_height_top);
 draw_self();
 
 
+depth = origin_depth;
+if position_meeting(obj_computer_cursor.x, obj_computer_cursor.y, self)
+{
+	obj_computer_manager.hovered_window = self;
+}

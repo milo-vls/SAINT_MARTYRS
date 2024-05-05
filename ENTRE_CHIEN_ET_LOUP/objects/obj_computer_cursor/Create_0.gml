@@ -1,3 +1,6 @@
+#macro CURSOR_X obj_computer_cursor.x
+#macro CURSOR_Y obj_computer_cursor.y
+
 enum COMPUTER_CURSOR_STATES
 {
 	DEFAULT, 

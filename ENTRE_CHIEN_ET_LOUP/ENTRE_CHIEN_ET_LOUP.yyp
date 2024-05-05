@@ -222,6 +222,7 @@
     {"id":{"name":"__shd_scribble_bake_outline_4dir","path":"shaders/__shd_scribble_bake_outline_4dir/__shd_scribble_bake_outline_4dir.yy",},},
     {"id":{"name":"scr_PhoneNumber","path":"scripts/scr_PhoneNumber/scr_PhoneNumber.yy",},},
     {"id":{"name":"ps_crime_appearing_1","path":"particles/ps_crime_appearing_1/ps_crime_appearing_1.yy",},},
+    {"id":{"name":"obj_computer_manager","path":"objects/obj_computer_manager/obj_computer_manager.yy",},},
     {"id":{"name":"scribble_anim_wheel","path":"scripts/scribble_anim_wheel/scribble_anim_wheel.yy",},},
     {"id":{"name":"__scribble_config_behaviours","path":"scripts/__scribble_config_behaviours/__scribble_config_behaviours.yy",},},
     {"id":{"name":"spr_navigation_arrow","path":"sprites/spr_navigation_arrow/spr_navigation_arrow.yy",},},
