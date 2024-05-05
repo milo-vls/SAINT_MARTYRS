@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "MAIN DESK",
-    "path": "folders/ROOMS/MAIN DESK.yy",
+    "name": "MAP",
+    "path": "folders/ROOMS/MAP.yy",
   },
 }

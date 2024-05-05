@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "MAP & MAIN DESK",
-    "path": "folders/SPRITES/MAP & MAIN DESK.yy",
+    "name": "UPPER ICONES",
+    "path": "folders/SPRITES/MAIN DESK/MAP/UPPER ICONES.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

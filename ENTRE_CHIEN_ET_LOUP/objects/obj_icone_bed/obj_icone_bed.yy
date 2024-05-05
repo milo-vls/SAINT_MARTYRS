@@ -1,11 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_car_icone",
+  "name": "obj_icone_bed",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_map_icone","path":"objects/obj_map_icone/obj_map_icone.yy",},"propertyId":{"name":"function_when_clicked","path":"objects/obj_map_icone/obj_map_icone.yy",},"value":"main_deck_to_exploration",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_map_icone","path":"objects/obj_map_icone/obj_map_icone.yy",},"propertyId":{"name":"function_when_clicked","path":"objects/obj_map_icone/obj_map_icone.yy",},"value":"sleep_until_next_event",},
   ],
   "parent": {
     "name": "UPPER ICONE",
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_icone_car",
-    "path": "sprites/spr_icone_car/spr_icone_car.yy",
+    "name": "spr_icone_bed",
+    "path": "sprites/spr_icone_bed/spr_icone_bed.yy",
   },
   "spriteMaskId": null,
   "visible": true,

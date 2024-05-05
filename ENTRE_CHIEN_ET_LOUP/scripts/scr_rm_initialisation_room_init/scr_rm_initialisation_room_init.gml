@@ -1,17 +1,3 @@
-enum DEPTHS 
-{
-	GUI,
-	
-	
-	MENU_MANAGEMENT,
-	INTERACTABLES_EXPLORATION,
-	CRIME_SHEETS,
-	UNITS,
-	CRIMES,
-	
-	
-	BACKGROUND
-}
 
 /// @desc  import all the parameters set in the included CSV files
 function rm_initialisation_room_init()

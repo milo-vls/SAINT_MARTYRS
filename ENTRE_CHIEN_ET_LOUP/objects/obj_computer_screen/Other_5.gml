@@ -1,0 +1,2 @@
+application_surface_draw_enable(true);
+window_set_cursor(cr_default);

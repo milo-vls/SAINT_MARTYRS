@@ -1,11 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bed_icone",
+  "name": "obj_icone_computer",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_map_icone","path":"objects/obj_map_icone/obj_map_icone.yy",},"propertyId":{"name":"function_when_clicked","path":"objects/obj_map_icone/obj_map_icone.yy",},"value":"sleep_until_next_event",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_map_icone","path":"objects/obj_map_icone/obj_map_icone.yy",},"propertyId":{"name":"function_when_clicked","path":"objects/obj_map_icone/obj_map_icone.yy",},"value":"go_to_computer",},
   ],
   "parent": {
     "name": "UPPER ICONE",
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_icone_bed",
-    "path": "sprites/spr_icone_bed/spr_icone_bed.yy",
+    "name": "spr_icone_computer",
+    "path": "sprites/spr_icone_computer/spr_icone_computer.yy",
   },
   "spriteMaskId": null,
   "visible": true,

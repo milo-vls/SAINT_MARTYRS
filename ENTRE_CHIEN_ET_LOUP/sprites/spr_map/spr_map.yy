@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "MAP & MAIN DESK",
-    "path": "folders/SPRITES/MAP & MAIN DESK.yy",
+    "name": "BACKGROUNDS",
+    "path": "folders/SPRITES/MAIN DESK/MAP/BACKGROUNDS.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

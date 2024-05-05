@@ -18,6 +18,7 @@
     {"name":"inst_7F9CC3CF","path":"rooms/rm_main_desk/rm_main_desk.yy",},
     {"name":"inst_DEC6742","path":"rooms/rm_main_desk/rm_main_desk.yy",},
     {"name":"inst_F8BFC50","path":"rooms/rm_main_desk/rm_main_desk.yy",},
+    {"name":"inst_16B2EEC4","path":"rooms/rm_main_desk/rm_main_desk.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -43,9 +44,10 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7F9CC3CF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_unit_sheet","path":"objects/obj_unit_sheet/obj_unit_sheet.yy",},"properties":[],"rotation":3.7811322,"scaleX":0.42824993,"scaleY":0.42824993,"x":1514.4412,"y":742.2168,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"ui","depth":400,"effectEnabled":true,"effectType":"_filter_rgbnoise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_A8373AB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_car_icone","path":"objects/obj_car_icone/obj_car_icone.yy",},"properties":[],"rotation":0.0,"scaleX":0.47370407,"scaleY":0.47370413,"x":1268.4302,"y":69.57991,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_31AA0157","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bed_icone","path":"objects/obj_bed_icone/obj_bed_icone.yy",},"properties":[],"rotation":0.0,"scaleX":0.19600447,"scaleY":0.25957292,"x":1669.0,"y":92.08951,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_A8373AB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_icone_car","path":"objects/obj_icone_car/obj_icone_car.yy",},"properties":[],"rotation":0.0,"scaleX":0.4899491,"scaleY":0.4980634,"x":1210.1721,"y":67.530304,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_31AA0157","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_icone_bed","path":"objects/obj_icone_bed/obj_icone_bed.yy",},"properties":[],"rotation":0.0,"scaleX":0.2041046,"scaleY":0.27504644,"x":1577.5,"y":87.73152,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2C4180BE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_units_folder","path":"objects/obj_units_folder/obj_units_folder.yy",},"properties":[],"rotation":0.0,"scaleX":0.86520773,"scaleY":0.709879,"x":71.03909,"y":1071.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16B2EEC4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_icone_computer","path":"objects/obj_icone_computer/obj_icone_computer.yy",},"properties":[],"rotation":0.0,"scaleX":0.75934005,"scaleY":0.6543416,"x":859.5,"y":91.88792,},
       ],"layers":[],"properties":[
         {"name":"g_RGBNoiseIntensity","type":0,"value":"0.175",},
         {"name":"g_RGBNoiseAnimation","type":0,"value":"1",},
@@ -58,8 +60,8 @@
       ],"spriteId":{"name":"spr_map","path":"sprites/spr_map/spr_map.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "MAIN DESK",
-    "path": "folders/ROOMS/MAIN DESK.yy",
+    "name": "MAP",
+    "path": "folders/ROOMS/MAP.yy",
   },
   "parentRoom": null,
   "physicsSettings": {
