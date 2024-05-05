@@ -1,5 +1,5 @@
-border_width = sprite_get_xoffset(sprite_index);
-border_height = sprite_get_yoffset(sprite_index);
+border_width = 49;
+border_height = 49;
 surface_width = sprite_width - border_width * 2;
 surface_height = sprite_height - border_height * 2;
 surface = surface_create(surface_width, surface_height);
