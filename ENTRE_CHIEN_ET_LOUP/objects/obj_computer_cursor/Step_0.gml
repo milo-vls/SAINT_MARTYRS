@@ -1,2 +1,2 @@
-x = clamp(mouse_x, COMPUTER_SCREEN_X_1- 100, COMPUTER_SCREEN_X_2 + 100);
-y = clamp(mouse_y, COMPUTER_SCREEN_Y_1 - 100, COMPUTER_SCREEN_Y_2 + 100);
+x = COMPUTER_SCREEN_X_1+ ( (COMPUTER_SCREEN_X_2- COMPUTER_SCREEN_X_1) *  (window_mouse_get_x()/window_get_width()));
+y = COMPUTER_SCREEN_Y_1 + ((COMPUTER_SCREEN_Y_2- COMPUTER_SCREEN_Y_1) *  (window_mouse_get_y()/window_get_height()));

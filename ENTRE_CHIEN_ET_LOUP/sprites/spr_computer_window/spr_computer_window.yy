@@ -25,7 +25,7 @@
   "nineSlice": {
     "resourceType": "GMNineSliceData",
     "resourceVersion": "1.0",
-    "bottom": 49,
+    "bottom": 50,
     "enabled": true,
     "guideColour": [
       4294902015,
@@ -35,7 +35,7 @@
     ],
     "highlightColour": 1728023040,
     "highlightStyle": 0,
-    "left": 50,
+    "left": 51,
     "right": 150,
     "tileMode": [
       0,
@@ -44,9 +44,9 @@
       0,
       0,
     ],
-    "top": 50,
+    "top": 51,
   },
-  "origin": 0,
+  "origin": 9,
   "parent": {
     "name": "COMPUTER",
     "path": "folders/SPRITES/MAIN DESK/COMPUTER.yy",
@@ -82,7 +82,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
+    "xorigin": 1,
     "yorigin": 0,
   },
   "swatchColours": null,
