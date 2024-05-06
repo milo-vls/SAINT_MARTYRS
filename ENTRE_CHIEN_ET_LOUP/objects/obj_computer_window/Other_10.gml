@@ -20,7 +20,7 @@ if move_x_offset > -1
 {
 	x = CURSOR_X - move_x_offset;
 	y = CURSOR_Y - move_y_offset;
-	show_debug_message(move_x_offset, move_y_offset);
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.MOVE_CROSS;
 }
 
 //

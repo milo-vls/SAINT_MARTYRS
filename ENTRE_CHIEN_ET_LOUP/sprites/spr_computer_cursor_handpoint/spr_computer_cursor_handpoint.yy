@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "CURSORS",
-    "path": "folders/SPRITES/MAIN DESK/COMPUTER/CURSORS.yy",
+    "path": "folders/SPRITES/COMPUTER/CURSORS.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

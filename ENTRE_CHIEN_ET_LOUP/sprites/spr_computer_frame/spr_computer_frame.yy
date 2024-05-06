@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "COMPUTER",
-    "path": "folders/SPRITES/MAIN DESK/COMPUTER.yy",
+    "path": "folders/SPRITES/COMPUTER.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
