@@ -68,6 +68,18 @@ if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y + border_height_top/2, x + border
 		resize_x_offset = CURSOR_X - x;
 	}
 }
+//e
+if point_in_rectangle(CURSOR_X, CURSOR_Y, x + sprite_width - border_width, y + border_height_top/2, x + sprite_width, y + sprite_height - border_height_bottom/2)
+{
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_W_E;
+	if left_click_pressed()
+	{
+		origin_width = sprite_width;
+		origin_bottom_right_x = x + sprite_width;
+		origin_bottom_right_y = y + sprite_height;
+		resize_x_offset = CURSOR_X - (x + sprite_width);
+	}
+}
 
 if move_x_offset > -1
 {
@@ -99,11 +111,21 @@ if origin_height != -1
 }
 if origin_width != -1
 {
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_W_E;
+	//w
 	if origin_top_left_x != -1 and origin_top_left_y != -1
 	{
 		x =  min(CURSOR_X - resize_x_offset, origin_top_left_x + origin_width - minimum_width);
 		var _added_width = origin_top_left_x - x;
 		var _new_width = origin_width + _added_width;
+		resize(_new_width, sprite_height);
+	}
+	//e
+	if origin_bottom_right_y != -1 and origin_bottom_right_x != -1
+	{
+		var _new_bottom_x = CURSOR_X - resize_x_offset;
+		var _added_width = origin_bottom_right_x - _new_bottom_x;
+		var _new_width = origin_width - _added_width;
 		resize(_new_width, sprite_height);
 	}
 }
