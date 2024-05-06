@@ -32,7 +32,7 @@ switch(state)
 	break;
 	case COMPUTER_CURSOR_STATES.RESIZE_W_E :
 	{
-		sprite_index = COMPUTER_CURSOR_STATES.RESIZE_W_E;
+		sprite_index = spr_computer_cursor_resize_w_e;
 	}
 	break;
 }

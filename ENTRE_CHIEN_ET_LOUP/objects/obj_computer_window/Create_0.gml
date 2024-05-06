@@ -38,5 +38,5 @@ origin_top_left_x = -1;
 origin_top_left_y = -1;
 origin_bottom_right_x = -1;
 origin_bottom_right_y = -1;
-origin_x_scale = -1;
 origin_height = -1;
+origin_width = -1;
