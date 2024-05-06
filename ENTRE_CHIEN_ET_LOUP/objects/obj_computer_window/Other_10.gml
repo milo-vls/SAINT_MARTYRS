@@ -29,7 +29,8 @@ if point_in_rectangle(CURSOR_X, CURSOR_Y, x + border_width, y + border_width/2, 
 }
 
 
-//	TOP south to north reisizing
+//SN reisizing
+//n
 if point_in_rectangle(CURSOR_X, CURSOR_Y, x + border_width, y, x + sprite_width - border_width, y + border_width/2)
 {
 	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_N_S;
@@ -42,6 +43,21 @@ if point_in_rectangle(CURSOR_X, CURSOR_Y, x + border_width, y, x + sprite_width 
 		resize_y_offset = CURSOR_Y - y;
 	}
 }
+//s
+if point_in_rectangle(CURSOR_X, CURSOR_Y, x + border_width, y + sprite_height - border_width/2, x + sprite_width - border_width, y + sprite_height)
+{
+	
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_N_S;
+	
+	if click_pressed()
+	{
+		origin_height = sprite_height;
+		origin_bottom_right_x = x + sprite_width;
+		origin_bottom_right_y = y + sprite_height;
+		resize_y_offset = CURSOR_Y - (y + sprite_height);
+	}
+}
+
 
 
 if move_x_offset > -1
@@ -53,7 +69,7 @@ if move_x_offset > -1
 if origin_height != -1 and origin_x_scale == -1
 {
 	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_N_S;
-	//TOP SIDE RESIZING
+	//n
 	if origin_top_left_y != -1 and origin_top_left_x != -1
 	{
 		
@@ -63,7 +79,14 @@ if origin_height != -1 and origin_x_scale == -1
 		var _new_height = origin_height + _added_height;
 		resize(sprite_width, _new_height);
 	}
-	
+	//s
+	if origin_bottom_right_x != -1 and origin_bottom_right_y != -1
+	{
+		var _new_bottom_y = CURSOR_Y - resize_y_offset;
+		var _added_height = origin_bottom_right_y - _new_bottom_y;
+		var _new_height = origin_height - _added_height;
+		resize(sprite_width, _new_height);
+	}
 }
 
 
