@@ -1,5 +1,7 @@
 if !left_click()
 {
+	give_cursor = false;
+	
 	move_y_offset = -1;
 	move_x_offset = -1;
 	
@@ -15,21 +17,21 @@ if !left_click()
 	origin_width = -1;
 }
 
-//moving the window
-if point_in_rectangle(CURSOR_X, CURSOR_Y, x + border_width, y + border_width/2, x + sprite_width - border_width, y + border_height_top)
-{
-	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.MOVE_CROSS;
-	
-	if left_click_pressed()
-	{
-		move_x_offset = CURSOR_X - x;
-		move_y_offset = CURSOR_Y - y;
-	}
 
-}
+
+
+
+
 
 if left_click_pressed()
 {
+	give_cursor = true;
+	//moving the window
+	if point_in_rectangle(CURSOR_X, CURSOR_Y, x + border_width, y + border_width/2, x + sprite_width - border_width, y + border_height_top)
+	{	
+		move_x_offset = CURSOR_X - x;
+		move_y_offset = CURSOR_Y - y;	
+	}
 	//SN reisizing
 	//n
 	if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + sprite_width, y + border_height_top/2)
@@ -113,3 +115,140 @@ if origin_width != -1
 }
 
 
+obj_computer_cursor.state = given_cursor;
+
+
+if give_cursor == false
+{
+	if point_in_rectangle(CURSOR_X, CURSOR_Y, x + border_width, y + border_width/2, x + sprite_width - border_width, y + border_height_top)
+	{	
+		given_cursor = COMPUTER_CURSOR_STATES.MOVE_CROSS;
+		return;
+	}
+	//SN
+	//n
+	if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + sprite_width, y + border_height_top/2)
+	{
+		//and w ?
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + border_width, y + sprite_height)
+		{
+			given_cursor = COMPUTER_CURSOR_STATES.RESIZE_NW_SE;
+			return;
+		}
+		//and e ?
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x + sprite_width - border_width, y, x + sprite_width, y + sprite_height)
+		{
+			given_cursor = COMPUTER_CURSOR_STATES.RESIZE_NE_SW;
+			return;
+		}
+		given_cursor = COMPUTER_CURSOR_STATES.RESIZE_N_S;
+		return;
+	}
+	//s
+	if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y + sprite_height - border_height_bottom, x + sprite_width, y + sprite_height)
+	{
+		//w ?
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + border_width, y + sprite_height)
+		{
+			given_cursor = COMPUTER_CURSOR_STATES.RESIZE_NE_SW;
+			return;
+		}
+		//e ?
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x + sprite_width - border_width, y, x + sprite_width, y + sprite_height)
+		{
+			given_cursor = COMPUTER_CURSOR_STATES.RESIZE_NW_SE;
+			return;
+		}
+		given_cursor = COMPUTER_CURSOR_STATES.RESIZE_N_S;
+		return;
+	}
+	//WE
+	//w
+	if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + border_width, y + sprite_height)
+	{
+		//n ?
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + sprite_width, y + border_height_top/2)
+		{
+			given_cursor = COMPUTER_CURSOR_STATES.RESIZE_NW_SE;
+			return;
+		}
+		//s
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y + sprite_height - border_height_bottom, x + sprite_width, y + sprite_height)
+		{
+			given_cursor = COMPUTER_CURSOR_STATES.RESIZE_NE_SW;
+			return;
+		}
+		given_cursor = COMPUTER_CURSOR_STATES.RESIZE_W_E;
+		return;
+	}
+	//e
+	if point_in_rectangle(CURSOR_X, CURSOR_Y, x + sprite_width - border_width, y, x + sprite_width, y + sprite_height)
+	{
+		//n ?
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + sprite_width, y + border_height_top/2)
+		{
+			given_cursor = COMPUTER_CURSOR_STATES.RESIZE_NE_SW;
+			return;
+		}
+		//s ?
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y + sprite_height - border_height_bottom, x + sprite_width, y + sprite_height)
+		{
+			given_cursor = COMPUTER_CURSOR_STATES.RESIZE_NW_SE;
+			return;
+		}
+		given_cursor = COMPUTER_CURSOR_STATES.RESIZE_W_E;
+		return;
+	}
+	given_cursor = COMPUTER_CURSOR_STATES.DEFAULT;
+}
+
+
+
+
+
+
+
+
+
+/*
+if origin_bottom_right_y > -1 and origin_bottom_right_x > -1
+{
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_NW_SE;
+	return;
+}
+if origin_bottom_right_x > -1 and origin_bottom_right_y == -1
+{
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_W_E;
+	return;
+}
+if origin_bottom_right_y > -1 and origin_bottom_right_x == -1
+{
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_N_S;
+	return;
+}
+if origin_top_left_y > -1 and origin_top_left_x > -1
+{
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_NW_SE;
+	return;
+}
+if origin_top_left_x > -1 and origin_top_left_y == -1
+{
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_W_E;
+	return;
+}
+if origin_top_left_x > -1 and origin_bottom_right_y > -1
+{
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_NE_SW;
+	return;
+}
+if origin_bottom_right_x > -1 and origin_top_left_y > -1
+{
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_NE_SW;
+	return;
+}
+if origin_top_left_y > -1 and origin_top_left_x == -1
+{
+	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.RESIZE_N_S;
+	return;
+}
+*/

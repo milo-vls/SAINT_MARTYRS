@@ -23,7 +23,8 @@ resize = function(_new_width, _new_height)
 }
 
 
-
+given_cursor = COMPUTER_CURSOR_STATES.DEFAULT;
+give_cursor = false;
 //move & resize infos
 
 move_x_offset = -1;
