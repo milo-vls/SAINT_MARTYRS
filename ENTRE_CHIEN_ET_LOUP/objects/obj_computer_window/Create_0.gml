@@ -30,6 +30,7 @@ give_cursor = false;
 move_x_offset = -1;
 move_y_offset = -1;
 
+
 resize_x_offset = -1;
 resize_y_offset = -1;
 

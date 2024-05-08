@@ -1,0 +1,2 @@
+#macro MAP_WIDTH 2000
+#macro MAP_HEIGHT 1124

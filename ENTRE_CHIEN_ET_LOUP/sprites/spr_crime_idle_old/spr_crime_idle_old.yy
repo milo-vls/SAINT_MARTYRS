@@ -28,7 +28,7 @@
   "origin": 4,
   "parent": {
     "name": "MAP",
-    "path": "folders/SPRITES/MAIN DESK/MAP.yy",
+    "path": "folders/SPRITES/MAP.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

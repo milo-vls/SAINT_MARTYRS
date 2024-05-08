@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "UNITS HITBOXES",
-    "path": "folders/SPRITES/MAIN DESK/MAP/UNITS HITBOXES.yy",
+    "path": "folders/SPRITES/MAP/UNITS HITBOXES.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

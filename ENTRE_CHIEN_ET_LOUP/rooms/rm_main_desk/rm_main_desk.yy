@@ -19,6 +19,7 @@
     {"name":"inst_DEC6742","path":"rooms/rm_main_desk/rm_main_desk.yy",},
     {"name":"inst_F8BFC50","path":"rooms/rm_main_desk/rm_main_desk.yy",},
     {"name":"inst_16B2EEC4","path":"rooms/rm_main_desk/rm_main_desk.yy",},
+    {"name":"inst_1376D617","path":"rooms/rm_main_desk/rm_main_desk.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -34,7 +35,9 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_crime_focus_sheet","path":"objects/obj_crime_focus_sheet/obj_crime_focus_sheet.yy",},"propertyId":{"name":"left_side","path":"objects/obj_crime_focus_sheet/obj_crime_focus_sheet.yy",},"value":"True",},
           ],"rotation":-2.1059856,"scaleX":1.0,"scaleY":1.0,"x":-91.000244,"y":205.00006,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"coordinates","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1376D617","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_show_cursor_coordinates","path":"objects/obj_show_cursor_coordinates/obj_show_cursor_coordinates.yy",},"properties":[],"rotation":0.0,"scaleX":-0.4762947,"scaleY":0.47629473,"x":1939.0,"y":212.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"units_sheets","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4FD1AFBB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_unit_sheet","path":"objects/obj_unit_sheet/obj_unit_sheet.yy",},"properties":[],"rotation":1.8736707,"scaleX":0.41918457,"scaleY":0.430585,"x":-19.999908,"y":812.1663,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_26424214","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_unit_sheet","path":"objects/obj_unit_sheet/obj_unit_sheet.yy",},"properties":[],"rotation":-2.6185312,"scaleX":0.42918748,"scaleY":0.42918748,"x":296.0,"y":721.9326,},

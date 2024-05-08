@@ -10,10 +10,7 @@ function ComputerMenu() : Menu(MENU_PRIORITIES.COMPUTER_MENU, room, false, true)
 
 function computer_activity()
 {
-	if keyboard_check(vk_escape)
-	{
-		
-	}
+	
 }
 function computer_draw()
 {

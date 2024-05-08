@@ -49,7 +49,7 @@
   "origin": 0,
   "parent": {
     "name": "BACKGROUNDS",
-    "path": "folders/SPRITES/MAIN DESK/MAP/BACKGROUNDS.yy",
+    "path": "folders/SPRITES/MAP/BACKGROUNDS.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

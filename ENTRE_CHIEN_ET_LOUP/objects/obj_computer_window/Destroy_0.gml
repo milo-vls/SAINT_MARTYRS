@@ -1,0 +1,1 @@
+obj_computer_manager.window_with_focus = noone;

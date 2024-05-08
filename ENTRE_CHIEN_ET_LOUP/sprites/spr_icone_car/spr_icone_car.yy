@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "UPPER ICONES",
-    "path": "folders/SPRITES/MAIN DESK/MAP/UPPER ICONES.yy",
+    "path": "folders/SPRITES/MAP/UPPER ICONES.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

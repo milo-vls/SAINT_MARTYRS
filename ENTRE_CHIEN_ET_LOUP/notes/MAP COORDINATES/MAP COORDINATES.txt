@@ -1,0 +1,3 @@
+la map est un répère cart° allant 
+pour x de -1000 à 1000, 
+pour y allant de -562 à 562.
