@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "MAP",
-    "path": "folders/OBJETCS/DESK/MAP.yy",
+    "name": "PAPER UI",
+    "path": "folders/OBJETCS/DESK/MAP/PAPER UI.yy",
   },
   "parentObjectId": null,
   "persistent": false,

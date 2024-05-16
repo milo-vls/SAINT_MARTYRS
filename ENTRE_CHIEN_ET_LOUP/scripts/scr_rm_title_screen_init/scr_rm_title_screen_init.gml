@@ -6,7 +6,6 @@ function rm_title_screen_init()
 	"TITLE SCREEN NEW START",  
 	function()
 	{
-		save_game();
 		sleep_to(0);
 	});
 	if file_exists(SAVE_FILE_NAME)
