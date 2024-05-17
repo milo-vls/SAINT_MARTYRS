@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_go_to_computer",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "COMPUTER",
-    "path": "folders/SCRIPTS/GAMEPLAY SYSTEM/COMPUTER.yy",
+  "$GMScript":"",
+  "%Name":"scr_go_to_computer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_go_to_computer",
+  "parent":{
+    "name":"COMPUTER",
+    "path":"folders/SCRIPTS/GAMEPLAY SYSTEM/COMPUTER.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

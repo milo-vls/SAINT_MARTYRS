@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_RoomTransitionStyle",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "ROOM TRANSITION",
-    "path": "folders/SCRIPTS/MENUS/MENU TYPES/ROOM TRANSITION.yy",
+  "$GMScript":"",
+  "%Name":"scr_RoomTransitionStyle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_RoomTransitionStyle",
+  "parent":{
+    "name":"ROOM TRANSITION",
+    "path":"folders/SCRIPTS/MENUS/MENU TYPES/ROOM TRANSITION.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Sequence",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "SEQUENCES",
-    "path": "folders/SCRIPTS/SEQUENCES.yy",
+  "$GMScript":"",
+  "%Name":"scr_Sequence",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Sequence",
+  "parent":{
+    "name":"SEQUENCES",
+    "path":"folders/SCRIPTS/SEQUENCES.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

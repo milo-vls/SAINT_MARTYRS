@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "ChatterboxGetOptionArray",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Option Getters",
-    "path": "folders/SCRIPTS/TEXT/CHATTERBOX/Option Getters.yy",
+  "$GMScript":"",
+  "%Name":"ChatterboxGetOptionArray",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ChatterboxGetOptionArray",
+  "parent":{
+    "name":"Option Getters",
+    "path":"folders/SCRIPTS/TEXT/CHATTERBOX/Option Getters.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_step_add_menu_crimes_appearance",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "STEPS",
-    "path": "folders/SCRIPTS/SEQUENCES/STEPS.yy",
+  "$GMScript":"",
+  "%Name":"scr_step_add_menu_crimes_appearance",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_step_add_menu_crimes_appearance",
+  "parent":{
+    "name":"STEPS",
+    "path":"folders/SCRIPTS/SEQUENCES/STEPS.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

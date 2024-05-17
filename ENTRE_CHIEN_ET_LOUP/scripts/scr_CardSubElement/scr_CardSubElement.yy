@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_CardSubElement",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "MENU SUB ELEMENTS",
-    "path": "folders/SCRIPTS/MENUS/MENU SUB ELEMENTS.yy",
+  "$GMScript":"",
+  "%Name":"scr_CardSubElement",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_CardSubElement",
+  "parent":{
+    "name":"MENU SUB ELEMENTS",
+    "path":"folders/SCRIPTS/MENUS/MENU SUB ELEMENTS.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

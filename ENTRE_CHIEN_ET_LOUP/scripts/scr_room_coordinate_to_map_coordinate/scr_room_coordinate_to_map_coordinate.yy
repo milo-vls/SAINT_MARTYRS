@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_room_coordinate_to_map_coordinate",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "MAP",
-    "path": "folders/SCRIPTS/MATH & OTHER/MAP.yy",
+  "$GMScript":"",
+  "%Name":"scr_room_coordinate_to_map_coordinate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_room_coordinate_to_map_coordinate",
+  "parent":{
+    "name":"MAP",
+    "path":"folders/SCRIPTS/MATH & OTHER/MAP.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

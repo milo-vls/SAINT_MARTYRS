@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_set_characters_voices",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "SOUNDS",
-    "path": "folders/SCRIPTS/SOUNDS.yy",
+  "$GMScript":"",
+  "%Name":"scr_set_characters_voices",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_set_characters_voices",
+  "parent":{
+    "name":"SOUNDS",
+    "path":"folders/SCRIPTS/SOUNDS.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

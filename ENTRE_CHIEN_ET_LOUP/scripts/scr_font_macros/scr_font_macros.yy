@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_font_macros",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "TEXT",
-    "path": "folders/SCRIPTS/TEXT.yy",
+  "$GMScript":"",
+  "%Name":"scr_font_macros",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_font_macros",
+  "parent":{
+    "name":"TEXT",
+    "path":"folders/SCRIPTS/TEXT.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

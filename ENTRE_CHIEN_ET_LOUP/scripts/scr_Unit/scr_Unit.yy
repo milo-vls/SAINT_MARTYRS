@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Unit",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "MAIN CLASSES",
-    "path": "folders/SCRIPTS/MAIN CLASSES.yy",
+  "$GMScript":"",
+  "%Name":"scr_Unit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Unit",
+  "parent":{
+    "name":"MAIN CLASSES",
+    "path":"folders/SCRIPTS/MAIN CLASSES.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

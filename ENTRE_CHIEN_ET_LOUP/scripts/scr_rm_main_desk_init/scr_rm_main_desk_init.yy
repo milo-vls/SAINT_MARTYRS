@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_rm_main_desk_init",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "MAP",
-    "path": "folders/ROOMS/MAP.yy",
+  "$GMScript":"",
+  "%Name":"scr_rm_main_desk_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_rm_main_desk_init",
+  "parent":{
+    "name":"MAP",
+    "path":"folders/ROOMS/MAP.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

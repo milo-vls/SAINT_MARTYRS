@@ -1,10 +1,12 @@
 {
-  "resourceType": "GMShader",
-  "resourceVersion": "1.0",
-  "name": "sh_crt_screen",
-  "parent": {
-    "name": "SHADERS",
-    "path": "folders/SHADERS.yy",
+  "$GMShader":"",
+  "%Name":"sh_crt_screen",
+  "name":"sh_crt_screen",
+  "parent":{
+    "name":"SHADERS",
+    "path":"folders/SHADERS.yy",
   },
-  "type": 1,
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }

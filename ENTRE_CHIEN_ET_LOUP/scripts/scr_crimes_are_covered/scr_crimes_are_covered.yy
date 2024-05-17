@@ -1,14 +1,16 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_crimes_are_covered",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "CRIME MANAGEMENT",
-    "path": "folders/SCRIPTS/CASES AND CRIMES/CRIME MANAGEMENT.yy",
+  "$GMScript":"",
+  "%Name":"scr_crimes_are_covered",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_crimes_are_covered",
+  "parent":{
+    "name":"CRIME MANAGEMENT",
+    "path":"folders/SCRIPTS/CASES AND CRIMES/CRIME MANAGEMENT.yy",
   },
-  "tags": [
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+  "tags":[
     "to_complete",
   ],
 }

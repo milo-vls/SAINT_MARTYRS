@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_cutscene_test",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "CUTSCENES",
-    "path": "folders/SCRIPTS/SEQUENCES/CUTSCENES.yy",
+  "$GMScript":"",
+  "%Name":"scr_cutscene_test",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_cutscene_test",
+  "parent":{
+    "name":"CUTSCENES",
+    "path":"folders/SCRIPTS/SEQUENCES/CUTSCENES.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

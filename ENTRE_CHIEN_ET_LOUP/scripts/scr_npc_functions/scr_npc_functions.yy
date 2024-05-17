@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_npc_functions",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "NPC",
-    "path": "folders/OBJETCS/INTERACTABLES EXPLORATION/NPC.yy",
+  "$GMScript":"",
+  "%Name":"scr_npc_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_npc_functions",
+  "parent":{
+    "name":"NPC",
+    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NPC.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

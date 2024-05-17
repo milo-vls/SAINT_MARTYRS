@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_DialoguesOptionsSelect",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "DIALOGUES",
-    "path": "folders/SCRIPTS/MENUS/MENU TYPES/DIALOGUES.yy",
+  "$GMScript":"",
+  "%Name":"scr_DialoguesOptionsSelect",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_DialoguesOptionsSelect",
+  "parent":{
+    "name":"DIALOGUES",
+    "path":"folders/SCRIPTS/MENUS/MENU TYPES/DIALOGUES.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

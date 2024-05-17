@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_rm_computer_init",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "COMPUTER ROOM",
-    "path": "folders/ROOMS/COMPUTER ROOM.yy",
+  "$GMScript":"",
+  "%Name":"scr_rm_computer_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_rm_computer_init",
+  "parent":{
+    "name":"COMPUTER ROOM",
+    "path":"folders/ROOMS/COMPUTER ROOM.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

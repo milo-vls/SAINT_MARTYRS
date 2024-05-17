@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_set_day_events",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "DATA",
-    "path": "folders/SCRIPTS/DATA.yy",
+  "$GMScript":"",
+  "%Name":"scr_set_day_events",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_set_day_events",
+  "parent":{
+    "name":"DATA",
+    "path":"folders/SCRIPTS/DATA.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
