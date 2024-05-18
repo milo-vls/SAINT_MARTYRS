@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"LIZANDRE",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NPC/RESIDENTS/LIZANDRE.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NPC/RESIDENTS/LIZANDRE.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

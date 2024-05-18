@@ -1,10 +1,12 @@
 {
-  "resourceType": "GMShader",
-  "resourceVersion": "1.0",
-  "name": "shdBktGlitch",
-  "parent": {
-    "name": "SHADERS",
-    "path": "folders/SHADERS.yy",
+  "$GMShader":"",
+  "%Name":"shdBktGlitch",
+  "name":"shdBktGlitch",
+  "parent":{
+    "name":"SHADERS",
+    "path":"folders/SHADERS.yy",
   },
-  "type": 1,
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }

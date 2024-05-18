@@ -9,7 +9,7 @@
   ],
   "parent":{
     "name":"LIZANDRE",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NPC/RESIDENTS/LIZANDRE.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NPC/RESIDENTS/LIZANDRE.yy",
   },
   "parentObjectId":{
     "name":"obj_npc",

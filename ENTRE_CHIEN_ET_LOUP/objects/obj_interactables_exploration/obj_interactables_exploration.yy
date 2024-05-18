@@ -10,8 +10,8 @@
   "name":"obj_interactables_exploration",
   "overriddenProperties":[],
   "parent":{
-    "name":"INTERACTABLES EXPLORATION",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION.yy",
+    "name":"EXPLORATION",
+    "path":"folders/OBJETCS/EXPLORATION.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "optimisations possibles",
-  "parent": {
-    "name": "NOTES",
-    "path": "folders/NOTES.yy",
+  "$GMNotes":"",
+  "%Name":"optimisations possibles",
+  "name":"optimisations possibles",
+  "parent":{
+    "name":"NOTES",
+    "path":"folders/NOTES.yy",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }

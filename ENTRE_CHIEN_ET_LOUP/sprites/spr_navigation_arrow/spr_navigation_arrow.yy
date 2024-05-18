@@ -31,7 +31,7 @@
   "origin":0,
   "parent":{
     "name":"NAVIGATION ARROW",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NAVIGATION ARROW.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NAVIGATION ARROW.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,6 +1,6 @@
 function npc_pressed()
 {
-	start_dialogue(nickname);
+	start_dialogue(nickname, "Start" + nickname);
 }
 
 function npc_activity_parallelism()

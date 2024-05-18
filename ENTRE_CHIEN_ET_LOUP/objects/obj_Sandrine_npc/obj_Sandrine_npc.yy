@@ -9,7 +9,7 @@
   ],
   "parent":{
     "name":"SANDRINE",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NPC/RESIDENTS/SANDRINE.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NPC/RESIDENTS/SANDRINE.yy",
   },
   "parentObjectId":{
     "name":"obj_npc",

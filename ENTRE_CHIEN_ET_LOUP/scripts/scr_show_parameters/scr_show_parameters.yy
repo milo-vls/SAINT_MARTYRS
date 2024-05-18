@@ -6,7 +6,7 @@
   "name":"scr_show_parameters",
   "parent":{
     "name":"MENU STARTERS",
-    "path":"folders/SCRIPTS/MENUS/MENU STARTERS.yy",
+    "path":"folders/SCRIPTS/MENU/MENU STARTERS.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

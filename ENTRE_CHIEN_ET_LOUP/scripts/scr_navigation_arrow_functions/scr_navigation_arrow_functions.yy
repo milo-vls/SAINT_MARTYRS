@@ -6,7 +6,7 @@
   "name":"scr_navigation_arrow_functions",
   "parent":{
     "name":"NAVIGATION ARROW",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NAVIGATION ARROW.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NAVIGATION ARROW.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

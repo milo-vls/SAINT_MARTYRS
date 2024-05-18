@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrSave",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "SAUVEGARDE",
-    "path": "folders/SCRIPTS/SAUVEGARDE.yy",
+  "$GMScript":"",
+  "%Name":"scrSave",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrSave",
+  "parent":{
+    "name":"SAUVEGARDE",
+    "path":"folders/SCRIPTS/SAUVEGARDE.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

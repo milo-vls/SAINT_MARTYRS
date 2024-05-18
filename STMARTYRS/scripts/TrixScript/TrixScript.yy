@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "TrixScript",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "MATHS & CONDITIONS",
-    "path": "folders/SCRIPTS/MATHS & CONDITIONS.yy",
+  "$GMScript":"",
+  "%Name":"TrixScript",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TrixScript",
+  "parent":{
+    "name":"MATHS & CONDITIONS",
+    "path":"folders/SCRIPTS/MATHS & CONDITIONS.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

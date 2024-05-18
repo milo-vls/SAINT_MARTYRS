@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"DIALOGUES",
-    "path":"folders/SCRIPTS/MENUS/MENU TYPES/DIALOGUES.yy",
+    "path":"folders/SCRIPTS/MENU/MENUS/DIALOGUES.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

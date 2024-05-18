@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"SANDRINE",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NPC/RESIDENTS/SANDRINE.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NPC/RESIDENTS/SANDRINE.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

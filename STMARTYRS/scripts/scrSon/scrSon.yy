@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrSon",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "SON",
-    "path": "folders/SCRIPTS/SON.yy",
+  "$GMScript":"",
+  "%Name":"scrSon",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrSon",
+  "parent":{
+    "name":"SON",
+    "path":"folders/SCRIPTS/SON.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

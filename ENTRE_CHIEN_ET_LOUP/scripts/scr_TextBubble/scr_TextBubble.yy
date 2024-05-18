@@ -6,7 +6,7 @@
   "name":"scr_TextBubble",
   "parent":{
     "name":"DIALOGUES",
-    "path":"folders/SCRIPTS/MENUS/MENU TYPES/DIALOGUES.yy",
+    "path":"folders/SCRIPTS/MENU/MENUS/DIALOGUES.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

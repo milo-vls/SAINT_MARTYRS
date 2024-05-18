@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_rm_phone_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_rm_phone_init",
+  "parent":{
+    "name":"PHONE",
+    "path":"folders/ROOMS/PHONE.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

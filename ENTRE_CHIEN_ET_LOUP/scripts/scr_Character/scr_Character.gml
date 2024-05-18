@@ -1,7 +1,14 @@
 function Character() constructor
 {
 
-
+	get_phone_number_id = function()
+	{
+		if phone_number_id == ""
+		{
+			return -1
+		}
+		return int64(phone_number_id);
+	}
 }
 
 

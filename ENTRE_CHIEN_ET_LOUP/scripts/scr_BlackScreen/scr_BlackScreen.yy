@@ -6,7 +6,7 @@
   "name":"scr_BlackScreen",
   "parent":{
     "name":"VISUAL ANNEXES",
-    "path":"folders/SCRIPTS/MENUS/MENU TYPES/VISUAL ANNEXES.yy",
+    "path":"folders/SCRIPTS/MENU/MENUS/VISUAL ANNEXES.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

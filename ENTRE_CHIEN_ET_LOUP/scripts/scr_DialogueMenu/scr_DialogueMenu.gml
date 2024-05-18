@@ -62,7 +62,7 @@ function draw_portraits(_left_sprite_portrait = -1, _right_sprite_portrait = -1)
 	}
 }
 
-function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, false, false, MENU_CHANNELS.DIALOGUES) constructor
+function DialogueMenu(_file_name, _starting_node) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, false, false, MENU_CHANNELS.DIALOGUES) constructor
 {
 	right_character_nickname = NO_ONE;
 	right_character_protrait = -1;
@@ -75,7 +75,7 @@ function DialogueMenu(_file_name) : Menu(MENU_PRIORITIES.DIALOGUES, room, true, 
 	chatterbox = ChatterboxCreate(_file_name, true, 100000);
 	
 	add_menu(new BlackScreen(function(){ return false == obj_menu_manager.dialogue_exists()}, 0.89));
-	ChatterboxJump(chatterbox, "Start");
+	ChatterboxJump(chatterbox, _starting_node);
 	next_text_bubble();
 	
 	draw = function()

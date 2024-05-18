@@ -9,7 +9,7 @@
   ],
   "parent":{
     "name":"ENZINO",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NPC/RESIDENTS/ENZINO.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NPC/RESIDENTS/ENZINO.yy",
   },
   "parentObjectId":{
     "name":"obj_npc",

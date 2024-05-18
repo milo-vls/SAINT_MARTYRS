@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "gestiontexture",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "META",
-    "path": "folders/SCRIPTS/META.yy",
+  "$GMScript":"",
+  "%Name":"gestiontexture",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"gestiontexture",
+  "parent":{
+    "name":"META",
+    "path":"folders/SCRIPTS/META.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

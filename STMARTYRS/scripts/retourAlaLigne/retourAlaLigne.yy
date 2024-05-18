@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "retourAlaLigne",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "PERSO",
-    "path": "folders/SCRIPTS/TEXTE/PERSO.yy",
+  "$GMScript":"",
+  "%Name":"retourAlaLigne",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"retourAlaLigne",
+  "parent":{
+    "name":"PERSO",
+    "path":"folders/SCRIPTS/TEXTE/PERSO.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

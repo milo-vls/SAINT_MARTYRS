@@ -1,8 +1,15 @@
 /// @desc Phone numbers' contructor
 /// @param {real} _number 
-function PhoneNumber(_number) constructor
+function PhoneNumber() constructor
 {
-	number = _number;	
 	
+	get_number_string = function()
+	{
+		return number;
+	}
+	get_number_int = function()
+	{
+		return int64(number);
+	}
 	
 }

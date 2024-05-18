@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"ENZINO",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NPC/RESIDENTS/ENZINO.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NPC/RESIDENTS/ENZINO.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

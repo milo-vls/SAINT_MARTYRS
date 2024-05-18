@@ -11,7 +11,7 @@
   ],
   "parent":{
     "name":"NAVIGATION ARROW",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NAVIGATION ARROW.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NAVIGATION ARROW.yy",
   },
   "parentObjectId":{
     "name":"obj_interactables_exploration",

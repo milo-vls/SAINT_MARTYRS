@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrNewDialogueLine",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "PERSO",
-    "path": "folders/SCRIPTS/TEXTE/PERSO.yy",
+  "$GMScript":"",
+  "%Name":"scrNewDialogueLine",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrNewDialogueLine",
+  "parent":{
+    "name":"PERSO",
+    "path":"folders/SCRIPTS/TEXTE/PERSO.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -11,7 +11,7 @@
   ],
   "parent":{
     "name":"NPC",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NPC.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NPC.yy",
   },
   "parentObjectId":{
     "name":"obj_interactables_exploration",

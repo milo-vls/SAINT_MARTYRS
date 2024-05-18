@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrDessinMap",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "CARTE",
-    "path": "folders/SCRIPTS/CARTE.yy",
+  "$GMScript":"",
+  "%Name":"scrDessinMap",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrDessinMap",
+  "parent":{
+    "name":"CARTE",
+    "path":"folders/SCRIPTS/CARTE.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

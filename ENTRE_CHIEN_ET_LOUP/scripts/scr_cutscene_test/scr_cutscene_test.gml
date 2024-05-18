@@ -5,7 +5,7 @@ function start_cutscene_test()
 function get_cutscene_test()
 {
 	var _steps = array_create(0)
-	_steps[0] = new Step(start_dialogue, ["test"], function()
+	_steps[0] = new Step(start_dialogue, ["test", "Start"], function()
 		{
 			return obj_menu_manager.dialogue_exists() == false;
 		});

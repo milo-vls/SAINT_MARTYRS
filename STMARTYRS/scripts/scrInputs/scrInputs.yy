@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrInputs",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "ACTIONS & MÉCANIQUE",
-    "path": "folders/SCRIPTS/ACTIONS & MÉCANIQUE.yy",
+  "$GMScript":"",
+  "%Name":"scrInputs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrInputs",
+  "parent":{
+    "name":"ACTIONS & MÉCANIQUE",
+    "path":"folders/SCRIPTS/ACTIONS & MÉCANIQUE.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -6,7 +6,7 @@
   "name":"scr_ComputerMenu",
   "parent":{
     "name":"COMPUTER",
-    "path":"folders/SCRIPTS/MENUS/MENU TYPES/COMPUTER.yy",
+    "path":"folders/SCRIPTS/MENU/MENUS/COMPUTER.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

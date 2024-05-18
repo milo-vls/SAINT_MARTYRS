@@ -1,5 +1,5 @@
-title : Start
-position: -30,-11
+title : StartEnzino
+position: -252,-19
 ---
 Enzino : J'ai trop de flow. 
 Enzino: Tu trouves pas ?
@@ -7,6 +7,11 @@ Enzino: Tu trouves pas ?
 ->Non vraiment pas t trop moche kakou kakou
 Enzino: C'est bien ce que je pensais...
 ->Bof je sais pas.
+<<jump Phone>>
 
-
+===
+title: PhoneEnzino
+position: 67,142
+---
+Enzino: Bonjour c'est Enzino, mais comment vous avez eu mon numéro au fait ?
 ===

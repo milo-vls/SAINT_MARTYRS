@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrInitiPersos",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "DATA",
-    "path": "folders/SCRIPTS/DATA.yy",
+  "$GMScript":"",
+  "%Name":"scrInitiPersos",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrInitiPersos",
+  "parent":{
+    "name":"DATA",
+    "path":"folders/SCRIPTS/DATA.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

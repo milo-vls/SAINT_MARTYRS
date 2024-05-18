@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"OLIVIA",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NPC/RESIDENTS/OLIVIA.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NPC/RESIDENTS/OLIVIA.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

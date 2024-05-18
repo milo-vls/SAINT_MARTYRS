@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_Menu",
   "parent":{
-    "name":"MENUS",
-    "path":"folders/SCRIPTS/MENUS.yy",
+    "name":"MENU",
+    "path":"folders/SCRIPTS/MENU.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

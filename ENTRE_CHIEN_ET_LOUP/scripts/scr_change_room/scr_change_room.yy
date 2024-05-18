@@ -6,7 +6,7 @@
   "name":"scr_change_room",
   "parent":{
     "name":"MENU STARTERS",
-    "path":"folders/SCRIPTS/MENUS/MENU STARTERS.yy",
+    "path":"folders/SCRIPTS/MENU/MENU STARTERS.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

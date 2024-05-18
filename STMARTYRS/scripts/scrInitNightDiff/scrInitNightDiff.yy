@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrInitNightDiff",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "GENERATION PROC",
-    "path": "folders/SCRIPTS/CARTE/GENERATION PROC.yy",
+  "$GMScript":"",
+  "%Name":"scrInitNightDiff",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrInitNightDiff",
+  "parent":{
+    "name":"GENERATION PROC",
+    "path":"folders/SCRIPTS/CARTE/GENERATION PROC.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

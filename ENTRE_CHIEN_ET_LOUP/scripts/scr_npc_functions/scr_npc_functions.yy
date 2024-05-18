@@ -6,7 +6,7 @@
   "name":"scr_npc_functions",
   "parent":{
     "name":"NPC",
-    "path":"folders/OBJETCS/INTERACTABLES EXPLORATION/NPC.yy",
+    "path":"folders/OBJETCS/EXPLORATION/NPC.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

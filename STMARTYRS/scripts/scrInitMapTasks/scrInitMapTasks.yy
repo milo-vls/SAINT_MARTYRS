@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrInitMapTasks",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "DATA",
-    "path": "folders/SCRIPTS/DATA.yy",
+  "$GMScript":"",
+  "%Name":"scrInitMapTasks",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrInitMapTasks",
+  "parent":{
+    "name":"DATA",
+    "path":"folders/SCRIPTS/DATA.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

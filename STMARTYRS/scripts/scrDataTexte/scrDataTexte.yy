@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrDataTexte",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "DATA DIALOGUES",
-    "path": "folders/SCRIPTS/TEXTE/DATA DIALOGUES.yy",
+  "$GMScript":"",
+  "%Name":"scrDataTexte",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrDataTexte",
+  "parent":{
+    "name":"DATA DIALOGUES",
+    "path":"folders/SCRIPTS/TEXTE/DATA DIALOGUES.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
