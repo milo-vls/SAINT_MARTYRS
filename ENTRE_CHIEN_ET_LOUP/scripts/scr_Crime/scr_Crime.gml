@@ -35,6 +35,11 @@ function Crime() constructor
 	{
 		return global.characters[victim_char_id].nickname;
 	}
+	get_victim_first_and_last_name = function()
+	{
+		var _char = global.characters[victim_char_id];
+		return string_concat(_char.first_name," ",_char.last_name);
+	}
 	get_x = function()
 	{
 		return real(x)
@@ -42,6 +47,18 @@ function Crime() constructor
 	get_y = function()
 	{
 		return real(y);
+	}
+	get_map_x = function()
+	{
+		return room_x_to_map_x(get_x());
+	}
+	get_map_y = function()
+	{
+		return room_y_to_map_y(get_y());
+	}
+	get_position_string = function()
+	{
+		return string_concat("(", string(get_map_x()), " x ", string(get_map_y()), ")");
 	}
 	get_day_number = function()
 	{

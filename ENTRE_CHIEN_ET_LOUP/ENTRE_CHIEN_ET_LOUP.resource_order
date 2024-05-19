@@ -108,6 +108,7 @@
     {"name":"DIALOGUES","order":1,"path":"folders/SPRITES/DIALOGUES.yy",},
     {"name":"MAP","order":3,"path":"folders/SPRITES/MAP.yy",},
     {"name":"BACKGROUNDS","order":7,"path":"folders/SPRITES/MAP/BACKGROUNDS.yy",},
+    {"name":"VICTIM FACES","order":11,"path":"folders/SPRITES/MAP/VICTIM FACES.yy",},
     {"name":"MALUS SYMBOLS","order":10,"path":"folders/SPRITES/MAP/MALUS SYMBOLS.yy",},
     {"name":"UNITS HITBOXES","order":6,"path":"folders/SPRITES/MAP/UNITS HITBOXES.yy",},
     {"name":"UPPER ICONES","order":5,"path":"folders/SPRITES/MAP/UPPER ICONES.yy",},
@@ -425,5 +426,8 @@
     {"name":"spr_rec_hitbox","order":4,"path":"sprites/spr_rec_hitbox/spr_rec_hitbox.yy",},
     {"name":"spr_Sandrine_portrait","order":1,"path":"sprites/spr_Sandrine_portrait/spr_Sandrine_portrait.yy",},
     {"name":"spr_text_bubble_tail","order":1,"path":"sprites/spr_text_bubble_tail/spr_text_bubble_tail.yy",},
+    {"name":"spr_victim_face_1","order":1,"path":"sprites/spr_victim_face_1/spr_victim_face_1.yy",},
+    {"name":"spr_victim_face_2","order":2,"path":"sprites/spr_victim_face_2/spr_victim_face_2.yy",},
+    {"name":"spr_victim_face_3","order":3,"path":"sprites/spr_victim_face_3/spr_victim_face_3.yy",},
   ],
 }

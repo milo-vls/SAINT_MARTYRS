@@ -11,16 +11,8 @@ function MainDeskCrimeFocus(_crime_id) : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FO
 		var _crime_sheet_instance = instance_find(obj_crime_focus_sheet, _crime_sheet_index);
 		if _crime_sheet_instance.left_side != _crime_instance_is_left_sided then crime_sheet_to_use = _crime_sheet_instance;
 	}
-	/*
-	var _text_nickname = "[fnt_small_titles]" + global.crimes[crime_id].get_victim_nickname();
-	var _text_change_color = "[fnt_small_titles]" + text_id_to_string("CRIME NEXT COLOR");
-	var _cards = 
-	[
-		new Card([new CardSubElement(_text_nickname, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT), new CardSubElement(spr_arrow, CARD_SUB_ELEMENT_TYPES.SPRITE)], function(){}, true),
-		new Card([new CardSubElement(_text_change_color, CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT)], change_crime_color_next)
-	]
-	cards_set = new CardsSet(_cards , ORIENTATION.BOT_UP_PIN, CIRCLE_DIRECTION.NEGATIVE);
-	*/
+	crime_sheet_to_use.set_crime_id(_crime_id);
+	
 	
 	pressed_crime = -1;
 	void_is_pressed = false;
