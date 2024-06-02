@@ -7,3 +7,6 @@ idC,nickname,first_name,last_name,address_id,phone_number_id,may_appear,room
 5,Didier,Didier,Lagranger,,,0,
 6,Enzino,Enzino,Neroni,,0,1,rm_explo_enzino_street
 7,Olivia,Olivia,Faucart,,1,1,rm_explo_olivia_street
+8,Armand,Armand,Lunain,,,,
+9,Liza,Liza,Marty,,,,
+10,Julien,Julien,Mauguillot,,,,

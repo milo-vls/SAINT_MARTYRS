@@ -16,13 +16,16 @@ function MainDeskUnitSelection() : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, r
 				var _unit_id = pressed_unit_sheet.unit_id;
 				if destroy_existing_instance_of_unit_id(_unit_id) == false
 				{
-					instance_create_depth(mouse_x, mouse_y, DEPTHS.UNITS, obj_unit, {unit_id : _unit_id});
+					instance_create_depth(mouse_x, mouse_y, DEPTHS.UNITS, obj_unit, {unit_id : _unit_id, sprite_index : asset_get_index("spr_unit_hitbox_" + string(_unit_id))});
 					add_menu(new MainDeskUnitFocus(_unit_id));
 				}
 			}
 			if left_click_pressed()
 			{
-				pressed_unit_sheet = _mouse_over_unit_sheet;
+				if _mouse_over_unit_sheet.available
+				{
+					pressed_unit_sheet = _mouse_over_unit_sheet;
+				}
 			}
 			if !left_click() or _mouse_over_unit_sheet == noone
 			{
@@ -31,6 +34,7 @@ function MainDeskUnitSelection() : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, r
 		}
 		else
 		{
+			obj_unit_sheet.mouse_over = false;
 			if left_click_released() then end_reached = true;
 		}
 	}

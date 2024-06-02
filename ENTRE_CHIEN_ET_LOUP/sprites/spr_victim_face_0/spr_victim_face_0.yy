@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"VICTIM FACES",
-    "path":"folders/SPRITES/MAP/VICTIM FACES.yy",
+    "name":"VICTIM",
+    "path":"folders/SPRITES/MAP/FACES/VICTIM.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
