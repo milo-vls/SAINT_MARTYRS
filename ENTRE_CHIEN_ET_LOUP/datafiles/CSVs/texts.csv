@@ -40,10 +40,12 @@ MONTH12,décembre,december
 ,,
 MALUS TEXT IDS,,
 MALUS UNSTOPPABLE, inarrêtable, unstoppable
+MALUS CONFUSION, confusion, confusion
 
 ,,
 ,,
 TEXT END OF CASES, Affaires résolues !, Cases resolved!
+CHANGE COLOR, Changer couleur, Change color
 ,,
 ,,
 CRIME FOCUS CRIME ID, crime #, crime #

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_MainDeskNeutral",
   "parent":{
-    "name":"MAIN DESK",
-    "path":"folders/SCRIPTS/MENU/MENUS/MAIN DESK.yy",
+    "name":"MAP",
+    "path":"folders/SCRIPTS/MENU/MENUS/MAP.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

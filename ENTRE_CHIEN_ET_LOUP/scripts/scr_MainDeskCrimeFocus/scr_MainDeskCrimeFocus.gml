@@ -27,7 +27,7 @@ function MainDeskCrimeFocus(_crime_id) : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FO
 function main_desk_crime_focus_activity()
 {
 	var _mouse_is_over_crime = instance_position(mouse_x, mouse_y, obj_crime);
-	
+	var _mouse_over_change_color = crime_sheet_to_use.mouse_over_change_color;
 	if left_click_released()
 	{
 		if pressed_crime > -1 
@@ -43,8 +43,12 @@ function main_desk_crime_focus_activity()
 	}
 	if left_click_pressed()
 	{
+		if _mouse_over_change_color and obj_malus_canvas.malus_exists("confusion")
+		{
+			change_crime_color_next(crime_id);
+		}
 		pressed_crime = _mouse_is_over_crime;
-		void_is_pressed =  (_mouse_is_over_crime == noone);
+		void_is_pressed =  (_mouse_is_over_crime == noone and _mouse_over_change_color == false);
 	}
 	if _mouse_is_over_crime != noone  then void_is_pressed = false;
 	pressed_crime = _mouse_is_over_crime == noone ? noone : pressed_crime;

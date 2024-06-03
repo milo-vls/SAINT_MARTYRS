@@ -27,6 +27,7 @@ function rm_initialisation_room_init()
 	global.cases = csv_to_structs_of_constructor("cases.csv", Case);
 	global.crimes = csv_to_structs_of_constructor("crimes.csv",Crime);
 	global.malus = csv_to_structs_of_constructor("malus.csv", Malus); malus_distribution_init();
+	global.nb_malus = array_length(global.malus);
 	global.nb_crimes = array_length(global.crimes);enum LANGUAGES{FR, EN}
 	global.language = LANGUAGES.FR;
 	global.map_texts = csv_to_map_of_arrays("texts.csv");

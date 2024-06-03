@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_rm_dev_init",
   "parent":{
-    "name":"DEV",
-    "path":"folders/ROOMS/DEV.yy",
+    "name":"_DEV",
+    "path":"folders/_DEV.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

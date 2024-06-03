@@ -22,3 +22,15 @@ add_malus = function(_malus_id)
 	added_height += element_vertical_offset + sprite_get_height(_malus_sprite);
 	nb_active_malus ++;
 }
+malus_exists = function(_malus_name)
+{
+	var _malus_id_to_found = get_malus_id(_malus_name);
+	for (var _active_malus_id_index = 0; _active_malus_id_index < nb_active_malus; _active_malus_id_index ++)
+	{
+		if malus_ids[_active_malus_id_index] == _malus_id_to_found
+		{
+			return true;
+		}
+	}
+	return false;
+}

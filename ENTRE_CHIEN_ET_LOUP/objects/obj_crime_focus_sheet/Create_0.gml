@@ -14,6 +14,13 @@ x_left_spr_victim_face = 195;
 y_top_spr_victim_face = 105;
 width_spr_victim_face = 180;
 
+x_center_scribble_change_color = x_left_spr_victim_face + width_spr_victim_face/2;
+y_top_scribble_change_color = y_top_spr_victim_face + width_spr_victim_face * 1.3;
+scribble_change_color = scribble("[fnt_dialogues][shake]" + text_id_to_string("CHANGE COLOR")).wrap(width_spr_victim_face).align(fa_center, fa_top);
+scribble_width = scribble_change_color.get_width();
+scribble_height = scribble_change_color.get_height();
+mouse_over_change_color = false;
+
 x_left_victim_name = 407;
 y_top_victim_name = 140;
 

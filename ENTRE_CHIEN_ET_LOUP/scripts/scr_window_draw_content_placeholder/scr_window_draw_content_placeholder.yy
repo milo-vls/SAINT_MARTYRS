@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_window_draw_content_placeholder",
   "parent":{
-    "name":"DEV",
-    "path":"folders/SCRIPTS/DEV.yy",
+    "name":"_DEV",
+    "path":"folders/SCRIPTS/_DEV.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

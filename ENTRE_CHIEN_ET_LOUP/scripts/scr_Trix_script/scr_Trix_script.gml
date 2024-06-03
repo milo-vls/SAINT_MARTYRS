@@ -157,7 +157,7 @@ function pixelscale(_amt) {
 ///@param max
 
 
-function wrap(_value, _min, _max) {
+function trix_wrap(_value, _min, _max) {
 	
 	while (_value < _min) _value += (_max - _min);
 	while (_value > _max) _value -= (_max - _min);

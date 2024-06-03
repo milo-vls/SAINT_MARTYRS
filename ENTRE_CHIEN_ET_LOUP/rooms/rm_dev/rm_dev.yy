@@ -21,8 +21,8 @@
   ],
   "name":"rm_dev",
   "parent":{
-    "name":"DEV",
-    "path":"folders/ROOMS/DEV.yy",
+    "name":"_DEV",
+    "path":"folders/_DEV.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
