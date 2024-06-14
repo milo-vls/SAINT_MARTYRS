@@ -1,3 +1,4 @@
+
 function load_units()
 {
 	var _nb_units = array_length(global.units);
@@ -6,6 +7,7 @@ function load_units()
 		var _unit = global.units[_unit_id];
 		if _unit.real_x > -1 and _unit.is_available() then unit_appear(_unit_id, _unit.real_x, _unit.real_y, _unit.rotation);
 	}
+
 }
 function load_crimes(_excluded_crimes_ids)
 {
@@ -43,7 +45,7 @@ function load_maluses()
 		}
 	}
 	obj_malus_canvas.maluses = _active_maluses_found;
-
+	
 	
 }
 
@@ -51,8 +53,8 @@ function load_maluses()
 function rm_main_desk_init()
 {
 	add_menu(new MainDeskNeutral());
+	load_maluses();
 	load_units();
 	var _crime_appearance_menu = obj_menu_manager.get_active_menu(CrimeAppearance);
 	load_crimes(_crime_appearance_menu != -1 ? _crime_appearance_menu.sorted_crimes_ids : []);
-	load_maluses();
 }

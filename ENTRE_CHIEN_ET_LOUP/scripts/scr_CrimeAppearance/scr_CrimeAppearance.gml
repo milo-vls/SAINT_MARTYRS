@@ -62,5 +62,3 @@ function crime_appearance_activity()
 
 }
 
-
-

@@ -11,10 +11,12 @@ malus_sprites_heights = array_create(0);
 nb_active_malus = 0;
 all_malus = global.malus;
 text_y = y + (top_nineslice_y);
-
+confusion_on = false;
 
 add_malus = function(_malus_id)
 {
+	if _malus_id == 1
+		confusion_on = true;
 	array_push(malus_ids, _malus_id);
 	var _malus_sprite = asset_get_index("spr_malus_" + all_malus[_malus_id].name);
 	array_push(malus_sprites, _malus_sprite);

@@ -23,6 +23,10 @@ function Crime() constructor
 	appeard = false;
 	discovered = false;
 	
+	get_color_id = function()
+	{
+		return color_id;
+	}
 	get_color = function()
 	{
 		return global.crime_colors[color_id];
@@ -87,9 +91,12 @@ function Crime() constructor
 	is_older_than = function(_crime)
 	{
 		var _is_more_recent = self.is_more_recent_than(_crime);
+		return _is_more_recent * -1;
+		/*
 		if _is_more_recent == 0 return 0;
 		if _is_more_recent == 1 return -1;
 		return 1;
+		*/
 	}
 	
 

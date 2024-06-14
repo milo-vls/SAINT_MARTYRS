@@ -1,3 +1,5 @@
+
+
 draw_set_alpha(1);
 draw_self();
 image_yscale = (origin_height + added_height) / sprite_get_height(sprite_index);

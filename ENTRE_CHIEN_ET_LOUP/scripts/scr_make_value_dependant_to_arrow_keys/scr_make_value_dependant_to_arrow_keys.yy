@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_make_value_dependant_to_arrow_keys",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_make_value_dependant_to_arrow_keys",
+  "parent":{
+    "name":"_DEV",
+    "path":"folders/SCRIPTS/_DEV.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
