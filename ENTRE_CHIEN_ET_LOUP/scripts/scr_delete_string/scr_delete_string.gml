@@ -14,7 +14,7 @@ function delete_string(_string_instance)
 	if _string_instance.crime_instance_id_src.instance_giving_string_id == _string_instance
 		_string_instance.crime_instance_id_src.instance_giving_string_id = noone;
 	
-	instance_destroy(_string_instance);
+	_string_instance.deployment_state = CASE_STRING_DEPLOYMENT_STATE.DESTROYING;
 	return true;
 }
 

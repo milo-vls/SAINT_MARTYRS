@@ -52,6 +52,10 @@ mouse_over_change_color = false;
 
 set_crime_id = function(_crime_id)
 {
+	x = hidden_x;
+	y = hidden_y;
+	shown_animation_timer = 0;
+	
 	static _crimes = global.crimes;
 	var _str_crime_id = string(_crime_id);
 	var _crime = _crimes[_crime_id];
