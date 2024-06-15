@@ -1,0 +1,9 @@
+à la création d'un fil
+
+SI le crime source à un coming string ALORS
+	SI ce coming string est pleinement déployé ALORS
+		commencer déploiement 
+	FIN SI
+SINON
+	commencer déploiement
+FIN SI

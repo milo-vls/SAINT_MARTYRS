@@ -1,3 +1,8 @@
-string_sprite = spr_case_string;
-string_sprite_height = sprite_get_height(spr_case_string);
-angle_ajustement = -90;
+enum CASE_STRING_DEPLOYMENT_STATE
+{
+	WAITING_FOR_DEPLOYMENT,
+	DEPLOYMENT_STARTED,
+	DEPLOYMENT_DONE,
+	DESTROYING,
+	
+}

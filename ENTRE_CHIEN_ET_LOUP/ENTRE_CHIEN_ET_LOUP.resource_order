@@ -124,6 +124,7 @@
     {"name":"fnt_pally","order":1,"path":"fonts/fnt_pally/fnt_pally.yy",},
     {"name":"fnt_small_titles","order":3,"path":"fonts/fnt_small_titles/fnt_small_titles.yy",},
     {"name":"scribble_fallback_font","order":13,"path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},
+    {"name":"ALGO FIL","order":2,"path":"notes/ALGO FIL/ALGO FIL.yy",},
     {"name":"MAP COORDINATES","order":1,"path":"notes/MAP COORDINATES/MAP COORDINATES.yy",},
     {"name":"obj_case_string","order":4,"path":"objects/obj_case_string/obj_case_string.yy",},
     {"name":"obj_computer_cursor","order":2,"path":"objects/obj_computer_cursor/obj_computer_cursor.yy",},
