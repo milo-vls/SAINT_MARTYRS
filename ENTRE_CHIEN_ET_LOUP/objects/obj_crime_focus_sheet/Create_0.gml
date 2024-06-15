@@ -1,16 +1,16 @@
 depth = DEPTHS.CRIME_SHEETS;
 
-surface_left_x = 145;
-surface_top_y = 41;
-surface_right_x = 854;
-surface_bottom_y = 958;
+surface_left_x = 145 * image_xscale;
+surface_top_y = 41 * image_yscale;
+surface_right_x = 854// * image_xscale;
+surface_bottom_y = 958 * image_yscale;
 surface_width = surface_right_x - surface_left_x;
 surface_height = surface_bottom_y - surface_top_y;
 surface_sheet = surface_create(surface_width, surface_height);
 
 var _offset =  (sprite_width - (surface_left_x + surface_width))/2;
-shown_x = left_side ? - _offset : room_width - sprite_width + _offset;
-shown_y = 0;
+shown_x = left_side ? - _offset : room_width - sprite_width + _offset/2;
+shown_y = 500;
 shown_angle = 0;
 hidden_x = x;
 hidden_y = y;
@@ -63,39 +63,4 @@ set_crime_id = function(_crime_id)
 	text_crime_id = text_id_to_string("CRIME FOCUS CRIME ID") + _str_crime_id;
 	spr_victim_face = asset_get_index("spr_victim_face_" + _str_crime_id);
 }
-
-
-/*
-
-
-
-x_left_victim_name = 407;
-y_top_victim_name = 140;
-
-x_left_date = x_left_victim_name;
-y_top_date = 224;
-
-x_left_position = x_left_victim_name;
-y_top_position = y_top_date * 2 - y_top_victim_name;
-set_crime_id = function(_crime_id)
-{
-	
-	var _crime = global.crimes[_crime_id];
-	
-	
-	
-	
-	x_scale_spr_victim_face = width_spr_victim_face/sprite_get_width(spr_victim_face);
-	y_scale_spr_victim_face = width_spr_victim_face/sprite_get_height(spr_victim_face);
-	
-	victim_first_and_last_name = _crime.get_victim_first_and_last_name();
-	
-	date = get_date_string(_crime.get_day_number());
-	
-	position = _crime.get_position_string();
-}
-set_crime_id(0);
-
-
-
 
