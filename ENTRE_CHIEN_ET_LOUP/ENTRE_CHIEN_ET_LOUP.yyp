@@ -548,6 +548,7 @@
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
     {"id":{"name":"spr_bg_tile_game_over","path":"sprites/spr_bg_tile_game_over/spr_bg_tile_game_over.yy",},},
+    {"id":{"name":"spr_case_string","path":"sprites/spr_case_string/spr_case_string.yy",},},
     {"id":{"name":"spr_character_noone","path":"sprites/spr_character_noone/spr_character_noone.yy",},},
     {"id":{"name":"spr_circle","path":"sprites/spr_circle/spr_circle.yy",},},
     {"id":{"name":"spr_comp_screen_effect","path":"sprites/spr_comp_screen_effect/spr_comp_screen_effect.yy",},},

@@ -415,6 +415,7 @@
     {"name":"scribble_fallback_bulletpoint","order":12,"path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},
     {"name":"spr_arrow","order":3,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_bg_tile_game_over","order":1,"path":"sprites/spr_bg_tile_game_over/spr_bg_tile_game_over.yy",},
+    {"name":"spr_case_string","order":14,"path":"sprites/spr_case_string/spr_case_string.yy",},
     {"name":"spr_comp_screen_effect","order":1,"path":"sprites/spr_comp_screen_effect/spr_comp_screen_effect.yy",},
     {"name":"spr_computer_cursor_handpoint","order":1,"path":"sprites/spr_computer_cursor_handpoint/spr_computer_cursor_handpoint.yy",},
     {"name":"spr_computer_cursor_move_cross","order":2,"path":"sprites/spr_computer_cursor_move_cross/spr_computer_cursor_move_cross.yy",},
