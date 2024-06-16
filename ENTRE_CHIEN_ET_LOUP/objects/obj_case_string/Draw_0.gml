@@ -45,8 +45,5 @@ var _deployment_quotient = animcurve_channel_evaluate(deployment_animcurve_chann
 
 
 string_y_scale = (_crimes_distance/string_sprite_height) * _deployment_quotient;
-draw_sprite_ext(string_sprite, 0, _crime_src_x, _crime_src_y, 1, string_y_scale, _crimes_angle + angle_ajustement, color, 0.8);
-
-
-
+draw_sprite_ext(string_sprite, 0, _crime_src_x, _crime_src_y, 0.5, string_y_scale, _crimes_angle + angle_ajustement, color, 0.8);
 
