@@ -2,14 +2,14 @@
 function MainDeskCrimeFocus(_crime_id) : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, room, false, true, false, MENU_CHANNELS.MAIN_DESK_NEUTRAL) constructor 
 {
 	crime_id = _crime_id;
-	
 	crime_instance = crime_instance_by_crime_id(_crime_id);
 	
 	var _crime_instance_is_left_sided = crime_instance.x <  (GAME_WIDTH/2);
 	for (var _crime_sheet_index = 0; _crime_sheet_index < 2; _crime_sheet_index ++)
 	{
 		var _crime_sheet_instance = instance_find(obj_crime_focus_sheet, _crime_sheet_index);
-		if _crime_sheet_instance.left_side != _crime_instance_is_left_sided then crime_sheet_to_use = _crime_sheet_instance;
+		if _crime_sheet_instance.left_side != _crime_instance_is_left_sided 
+			crime_sheet_to_use = _crime_sheet_instance;
 	}
 	crime_sheet_to_use.set_crime_id(_crime_id);
 	
@@ -35,24 +35,23 @@ function main_desk_crime_focus_activity()
 		if pressed_crime > -1 
 		{
 			if pressed_crime == crime_instance
-			{
 				return;
-			}
 			end_reached = true;
 			add_menu(new MainDeskCrimeFocus(pressed_crime.crime_id));
 		}
-		else if void_is_pressed then end_reached = true;
+		else 
+			if void_is_pressed
+				end_reached = true;
 	}
 	if left_click_pressed()
 	{
 		if _mouse_over_change_color and obj_malus_canvas.confusion_on
-		{
 			change_crime_color_next(crime_id, crime_instance);
-		}
 		pressed_crime = _mouse_is_over_crime;
-		void_is_pressed =  (_mouse_is_over_crime == noone and _mouse_over_change_color == noone);
+		void_is_pressed =  (_mouse_is_over_crime == noone and _mouse_over_change_color == false);
 	}
-	if _mouse_is_over_crime != noone  then void_is_pressed = false;
+	if _mouse_is_over_crime != noone
+		void_is_pressed = false;
 	pressed_crime = _mouse_is_over_crime == noone ? noone : pressed_crime;
 }
 
