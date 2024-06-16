@@ -16,7 +16,6 @@ function MainDeskUnitSelection() : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, r
 				var _unit_id = pressed_unit_sheet.unit_id;
 				if destroy_existing_instance_of_unit_id(_unit_id) == false
 				{
-					//instance_create_depth(mouse_x, mouse_y, DEPTHS.UNITS, obj_unit, {unit_id : _unit_id, sprite_index : asset_get_index("spr_unit_hitbox_" + string(_unit_id))});
 					unit_appear(_unit_id, mouse_x, mouse_y, 0);
 					add_menu(new MainDeskUnitFocus(_unit_id));
 				}
