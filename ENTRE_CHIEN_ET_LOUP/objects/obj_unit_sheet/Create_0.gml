@@ -21,14 +21,15 @@ sheet_width = sheet_right_x - sheet_left_x;
 sheet_height = sheet_bottom_y - sheet_top_y;
 surface_sheet = surface_create(sheet_width, sheet_height);
 
-portrait_x = 50;
-portrait_y = 50;
+portrait_x = 25;
+portrait_y = 25;
 portrait_sprite = asset_get_index("spr_unit_face_"+string(unit_id));
-portrait_width = 150;
+portrait_height = 290;
+portrait_width = portrait_height * 4 / 5;
 
-name_x = portrait_x;
-name_y = portrait_y * 1.5 + portrait_width;
-name_text = character.last_name + " " + character.first_name;
+name_x = portrait_x * 2 + portrait_width;
+name_y = portrait_y;
+name_text = character.last_name + "\n" + character.first_name;
 
 hitbox_x = sheet_width/2
 hitbox_y = 150;
