@@ -1,2 +1,2 @@
-#macro MAP_WIDTH 2000
-#macro MAP_HEIGHT 1124
+#macro MAP_WIDTH 250
+#macro MAP_HEIGHT 100
