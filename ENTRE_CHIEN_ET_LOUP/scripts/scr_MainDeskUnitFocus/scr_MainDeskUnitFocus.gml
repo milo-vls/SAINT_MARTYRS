@@ -3,15 +3,18 @@ function MainDeskUnitFocus(_unit_id) : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCU
 	unit_instance_focus = get_unit_instance_focus(_unit_id);
 	
 	
-	draw = function()
-	{
-		
-	}
+	draw = function(){};
 	activity = function()
 	{
+
+		
+		
 		//EXIT CONDITIONS
 		if (left_click_released() or unit_instance_focus == noone) and get_release_timer() >= 1
 		{
+			if position_meeting(unit_instance_focus.x, unit_instance_focus.y, obj_units_ben)
+				instance_destroy(unit_instance_focus);
+			
 			reset_regrab_timer();
 			end_reached = true;
 			return;

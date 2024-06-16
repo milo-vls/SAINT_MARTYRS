@@ -22,6 +22,7 @@
     {"name":"inst_71B6F6E3","path":"rooms/rm_main_desk/rm_main_desk.yy",},
     {"name":"inst_1503CA62","path":"rooms/rm_main_desk/rm_main_desk.yy",},
     {"name":"inst_7F9CC3CF","path":"rooms/rm_main_desk/rm_main_desk.yy",},
+    {"name":"inst_6AB40746","path":"rooms/rm_main_desk/rm_main_desk.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -92,6 +93,7 @@
         {"$GMRInstance":"","%Name":"inst_2C4180BE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2C4180BE","objectId":{"name":"obj_units_folder","path":"objects/obj_units_folder/obj_units_folder.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.86520773,"scaleY":0.709879,"x":71.03909,"y":1071.0,},
         {"$GMRInstance":"","%Name":"inst_16B2EEC4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_16B2EEC4","objectId":{"name":"obj_icone_computer","path":"objects/obj_icone_computer/obj_icone_computer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.75934005,"scaleY":0.6543416,"x":912.5,"y":98.464264,},
         {"$GMRInstance":"","%Name":"inst_4FF796D0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4FF796D0","objectId":{"name":"obj_icone_phone","path":"objects/obj_icone_phone/obj_icone_phone.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.16882908,"scaleX":0.5222222,"scaleY":0.4014944,"x":597.9507,"y":94.809616,},
+        {"$GMRInstance":"","%Name":"inst_6AB40746","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6AB40746","objectId":{"name":"obj_units_ben","path":"objects/obj_units_ben/obj_units_ben.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.61833334,"scaleY":0.52666664,"x":284.74716,"y":1080.0,},
       ],"layers":[],"name":"ui","properties":[
         {"name":"g_RGBNoiseIntensity","type":0,"value":"0.175",},
         {"name":"g_RGBNoiseAnimation","type":0,"value":"1",},

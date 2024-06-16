@@ -212,6 +212,7 @@
     {"id":{"name":"obj_sound_manager","path":"objects/obj_sound_manager/obj_sound_manager.yy",},},
     {"id":{"name":"obj_unit_sheet","path":"objects/obj_unit_sheet/obj_unit_sheet.yy",},},
     {"id":{"name":"obj_unit","path":"objects/obj_unit/obj_unit.yy",},},
+    {"id":{"name":"obj_units_ben","path":"objects/obj_units_ben/obj_units_ben.yy",},},
     {"id":{"name":"obj_units_folder","path":"objects/obj_units_folder/obj_units_folder.yy",},},
     {"id":{"name":"ps_circle_centered_out","path":"particles/ps_circle_centered_out/ps_circle_centered_out.yy",},},
     {"id":{"name":"ps_covered_crime_appearing","path":"particles/ps_covered_crime_appearing/ps_covered_crime_appearing.yy",},},

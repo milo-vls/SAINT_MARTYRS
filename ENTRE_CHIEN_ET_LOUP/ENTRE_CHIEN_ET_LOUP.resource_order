@@ -151,6 +151,7 @@
     {"name":"obj_sequence_manager","order":1,"path":"objects/obj_sequence_manager/obj_sequence_manager.yy",},
     {"name":"obj_sound_manager","order":3,"path":"objects/obj_sound_manager/obj_sound_manager.yy",},
     {"name":"obj_unit_sheet","order":2,"path":"objects/obj_unit_sheet/obj_unit_sheet.yy",},
+    {"name":"obj_units_ben","order":3,"path":"objects/obj_units_ben/obj_units_ben.yy",},
     {"name":"obj_units_folder","order":1,"path":"objects/obj_units_folder/obj_units_folder.yy",},
     {"name":"ps_circle_centered_out","order":1,"path":"particles/ps_circle_centered_out/ps_circle_centered_out.yy",},
     {"name":"ps_crime_appearing_2","order":1,"path":"particles/ps_crime_appearing_2/ps_crime_appearing_2.yy",},

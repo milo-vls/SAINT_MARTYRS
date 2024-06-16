@@ -6,6 +6,10 @@ function MainDeskUnitSelection() : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, r
 	
 	activity = function()
 	{
+		//SHOW UNIT BEN
+		obj_units_ben.shown = true;
+		
+		
 		var _mouse_over_unit_sheet = instance_position(mouse_x, mouse_y, obj_unit_sheet);
 		if _mouse_over_unit_sheet > -1
 		{
