@@ -77,7 +77,9 @@ function unit_card_clicked(_void, _data)
 	
 	if destroy_existing_instance_of_unit_id(_unit_id) == false
 	{
-		instance_create_depth(mouse_x, mouse_y, DEPTHS.UNITS, obj_unit, {unit_id : _unit_id});
+		//instance_create_depth(mouse_x, mouse_y, DEPTHS.UNITS, obj_unit, {unit_id : _unit_id});
+		unit_appear(_unit_id, mouse_x, mouse_y, 0);
+		
 		add_menu(new MainDeskUnitFocus(_unit_id));
 		end_reached = true;
 	}

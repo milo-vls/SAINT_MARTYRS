@@ -33,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_unit_default",
+    "path":"sprites/spr_unit_default/spr_unit_default.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

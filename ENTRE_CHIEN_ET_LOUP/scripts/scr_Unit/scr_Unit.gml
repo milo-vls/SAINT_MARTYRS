@@ -29,7 +29,7 @@ function get_unit_id_by_nickname(_nickname)
 
 function unit_appear(_unit_id, _real_x, _real_y, _rotation)
 {
-	return instance_create_depth(_real_x, _real_y, DEPTHS.UNITS, obj_unit, {unit_id : _unit_id, sprite_index : asset_get_index("spr_unit_hitbox_" + string(_unit_id))}) 
+	return instance_create_layer(_real_x, _real_y, "units", obj_unit, {unit_id : _unit_id, sprite_index : asset_get_index("spr_unit_hitbox_" + string(_unit_id))}) 
 }
 
 function unit_disappear(_unit_id)
