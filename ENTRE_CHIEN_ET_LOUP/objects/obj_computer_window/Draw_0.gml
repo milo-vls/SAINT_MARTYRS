@@ -7,7 +7,21 @@ surface_set_target(surface);
 draw_content(surface_width, surface_height);
 surface_reset_target();
 draw_surface(surface, x + border_width - 1 * image_xscale, y + border_height_top);
+draw_set_alpha(1);
+draw_set_color(c_black);
 draw_self();
+
+//icon and title
+if icon != noone
+	draw_sprite_stretched(icon, 0, x, y, border_width, border_width);
+if title != ""
+{
+	draw_set_alpha(1);
+	draw_set_color(c_dkgrey); draw_set_font(fnt_retron_for_comp_sys);
+	draw_text_transformed(x + border_width*1.4, y, title, title_scale, title_scale, 0);
+}
+	
+
 
 
 depth = origin_depth;

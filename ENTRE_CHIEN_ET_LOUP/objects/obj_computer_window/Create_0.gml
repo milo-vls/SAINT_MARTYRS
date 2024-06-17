@@ -42,3 +42,14 @@ origin_bottom_right_x = -1;
 origin_bottom_right_y = -1;
 origin_height = -1;
 origin_width = -1;
+
+draw_set_font(fnt_retron_for_comp_sys);
+title_scale = border_height_top/string_height("TLW");
+
+if string_width(title) > minimum_width
+	minimum_width = string_width(title) + border_width * 6;
+
+
+
+
+resize(minimum_width, minimum_height);

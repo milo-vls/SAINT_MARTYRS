@@ -32,6 +32,10 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"draw_content","filters":[],"listItems":[],"multiselect":false,"name":"draw_content","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"window_draw_content_placeholder","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"title","filters":[],"listItems":[],"multiselect":false,"name":"title","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Bonjour !!!!!!!!!!!!!!","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"icon","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"icon","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
