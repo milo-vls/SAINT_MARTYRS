@@ -1,6 +1,6 @@
 if !left_click()
 {
-	if move_x_offset > -1 and position_meeting(CURSOR_X, CURSOR_Y, obj_computer_icone_ben)
+	if move_x_offset > -1 and position_meeting(CURSOR_X, CURSOR_Y, obj_computer_icon_ben)
 	{
 		instance_destroy();
 	}
@@ -76,7 +76,7 @@ if move_x_offset > -1
 	x = CURSOR_X - move_x_offset;
 	y = CURSOR_Y - move_y_offset;
 	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.MOVE_CROSS;
-	obj_computer_icone_ben.shown = true;
+	obj_computer_icon_ben.shown = true;
 	return;
 }
 if origin_height != -1

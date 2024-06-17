@@ -131,7 +131,7 @@
     {"name":"MAP COORDINATES","order":1,"path":"notes/MAP COORDINATES/MAP COORDINATES.yy",},
     {"name":"obj_case_string","order":4,"path":"objects/obj_case_string/obj_case_string.yy",},
     {"name":"obj_computer_cursor","order":2,"path":"objects/obj_computer_cursor/obj_computer_cursor.yy",},
-    {"name":"obj_computer_icone_ben","order":4,"path":"objects/obj_computer_icone_ben/obj_computer_icone_ben.yy",},
+    {"name":"obj_computer_icon_ben","order":4,"path":"objects/obj_computer_icon_ben/obj_computer_icon_ben.yy",},
     {"name":"obj_computer_manager","order":3,"path":"objects/obj_computer_manager/obj_computer_manager.yy",},
     {"name":"obj_computer_screen","order":1,"path":"objects/obj_computer_screen/obj_computer_screen.yy",},
     {"name":"obj_crime_focus_sheet","order":2,"path":"objects/obj_crime_focus_sheet/obj_crime_focus_sheet.yy",},

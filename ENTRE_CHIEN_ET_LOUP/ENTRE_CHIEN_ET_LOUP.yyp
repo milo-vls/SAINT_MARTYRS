@@ -182,7 +182,7 @@
     {"id":{"name":"MAP COORDINATES","path":"notes/MAP COORDINATES/MAP COORDINATES.yy",},},
     {"id":{"name":"obj_case_string","path":"objects/obj_case_string/obj_case_string.yy",},},
     {"id":{"name":"obj_computer_cursor","path":"objects/obj_computer_cursor/obj_computer_cursor.yy",},},
-    {"id":{"name":"obj_computer_icone_ben","path":"objects/obj_computer_icone_ben/obj_computer_icone_ben.yy",},},
+    {"id":{"name":"obj_computer_icon_ben","path":"objects/obj_computer_icon_ben/obj_computer_icon_ben.yy",},},
     {"id":{"name":"obj_computer_manager","path":"objects/obj_computer_manager/obj_computer_manager.yy",},},
     {"id":{"name":"obj_computer_screen","path":"objects/obj_computer_screen/obj_computer_screen.yy",},},
     {"id":{"name":"obj_computer_window","path":"objects/obj_computer_window/obj_computer_window.yy",},},

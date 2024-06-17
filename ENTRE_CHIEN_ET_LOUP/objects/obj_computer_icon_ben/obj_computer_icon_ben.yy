@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_computer_icone_ben",
+  "%Name":"obj_computer_icon_ben",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_computer_icone_ben",
+  "name":"obj_computer_icon_ben",
   "overriddenProperties":[],
   "parent":{
     "name":"COMPUTER",
