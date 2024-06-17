@@ -6,7 +6,7 @@ if !surface_exists(surface)
 surface_set_target(surface);
 draw_content(surface_width, surface_height);
 surface_reset_target();
-draw_surface(surface, x + border_width, y + border_height_top);
+draw_surface(surface, x + border_width - 1 * image_xscale, y + border_height_top);
 draw_self();
 
 

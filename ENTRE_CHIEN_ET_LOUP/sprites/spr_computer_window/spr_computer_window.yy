@@ -24,15 +24,15 @@
   "name":"spr_computer_window",
   "nineSlice":{
     "$GMNineSliceData":"",
-    "bottom":50,
+    "bottom":21,
     "enabled":true,
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
     "highlightStyle":0,
-    "left":51,
+    "left":21,
     "resourceType":"GMNineSliceData",
     "resourceVersion":"2.0",
-    "right":150,
+    "right":21,
     "tileMode":[
       0,
       0,
