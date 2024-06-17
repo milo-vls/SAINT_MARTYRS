@@ -1,5 +1,5 @@
 function MainDeskUnitSelection() : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, room, false, true, false, MENU_CHANNELS.MAIN_DESK_NEUTRAL) constructor 
-{
+{ 
 	reset_release_timer();
 	pressed_unit_sheet = noone;
 	
@@ -22,6 +22,9 @@ function MainDeskUnitSelection() : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, r
 				{
 					unit_appear(_unit_id, mouse_x, mouse_y, 0);
 					add_menu(new MainDeskUnitFocus(_unit_id));
+					end_reached = true;
+					pressed_unit_sheet.mouse_over = false;
+					return;
 				}
 			}
 			if left_click_pressed()
@@ -39,7 +42,8 @@ function MainDeskUnitSelection() : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, r
 		else
 		{
 			obj_unit_sheet.mouse_over = false;
-			if left_click_released() then end_reached = true;
+			if left_click_released() 
+				end_reached = true;
 		}
 	}
 	draw = function()
