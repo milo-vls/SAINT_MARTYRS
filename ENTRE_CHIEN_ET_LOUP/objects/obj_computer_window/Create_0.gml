@@ -3,14 +3,13 @@ unchanged_sprite_height = sprite_get_height(sprite_index);
 border_width = 20;
 border_height_top = 49;
 border_height_bottom = 20;
-surface_width = sprite_width - border_width * 2;
-surface_height = sprite_height - (border_height_top + border_height_bottom);
+surface_width = minimum_width//sprite_width - border_width * 2;
+surface_height = minimum_height//sprite_height - (border_height_top + border_height_bottom);
 surface = surface_create(surface_width, surface_height);
-minimum_width = sprite_get_width(sprite_index);
-minimum_height = sprite_get_height(sprite_index);
 origin_depth = depth;
 resize = function(_new_width, _new_height)
 {
+	
 	image_xscale = _new_width/sprite_get_width(sprite_index);
 	image_yscale = _new_height/sprite_get_height(sprite_index);
 	

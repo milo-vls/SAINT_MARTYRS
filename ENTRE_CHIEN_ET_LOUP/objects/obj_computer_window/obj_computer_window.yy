@@ -31,10 +31,17 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"draw_content","filters":[],"listItems":[],"multiselect":false,"name":"draw_content","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"window_draw_content_placeholder","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"title","filters":[],"listItems":[],"multiselect":false,"name":"title","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Bonjour !!!!!!!!!!!!!!","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"title","filters":[],"listItems":[],"multiselect":false,"name":"title","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"icon","filters":[
         "GMSprite",
       ],"listItems":[],"multiselect":false,"name":"icon","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"minimum_width","filters":[],"listItems":[],"multiselect":false,"name":"minimum_width","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprite_get_width(sprite_index)","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"minimum_height","filters":[],"listItems":[],"multiselect":false,"name":"minimum_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprite_get_height(sprite_index)","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"maximum_width","filters":[],"listItems":[],"multiselect":false,"name":"maximum_width","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_width","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"maximum_height","filters":[],"listItems":[],"multiselect":false,"name":"maximum_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_height","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"can_be_resizable","filters":[],"listItems":[],"multiselect":false,"name":"can_be_resizable","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"surface_x","filters":[],"listItems":[],"multiselect":false,"name":"surface_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"surface_y","filters":[],"listItems":[],"multiselect":false,"name":"surface_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

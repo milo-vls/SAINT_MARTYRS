@@ -37,35 +37,39 @@ if left_click_pressed()
 		move_x_offset = CURSOR_X - x;
 		move_y_offset = CURSOR_Y - y;	
 	}
-	//SN reisizing
-	//n
-	if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + sprite_width, y + border_height_top/2)
+	
+	if can_be_resizable
 	{
-		origin_height = sprite_height;
-		origin_top_left_y = y;
-		resize_y_offset = CURSOR_Y - y;
-	}
-	//s
-	if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y + sprite_height - border_height_bottom, x + sprite_width, y + sprite_height)
-	{
-		origin_height = sprite_height;
-		origin_bottom_right_y = y + sprite_height;
-		resize_y_offset = CURSOR_Y - (y + sprite_height);
-	}
-	//WE
-	//w
-	if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + border_width, y + sprite_height)
-	{
-		origin_width = sprite_width;
-		origin_top_left_x = x;
-		resize_x_offset = CURSOR_X - x;
-	}
-	//e
-	if point_in_rectangle(CURSOR_X, CURSOR_Y, x + sprite_width - border_width, y, x + sprite_width, y + sprite_height)
-	{
-		origin_width = sprite_width;
-		origin_bottom_right_x = x + sprite_width;
-		resize_x_offset = CURSOR_X - (x + sprite_width);
+		//SN reisizing
+		//n
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + sprite_width, y + border_height_top/2)
+		{
+			origin_height = sprite_height;
+			origin_top_left_y = y;
+			resize_y_offset = CURSOR_Y - y;
+		}
+		//s
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y + sprite_height - border_height_bottom, x + sprite_width, y + sprite_height)
+		{
+			origin_height = sprite_height;
+			origin_bottom_right_y = y + sprite_height;
+			resize_y_offset = CURSOR_Y - (y + sprite_height);
+		}
+		//WE
+		//w
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x, y, x + border_width, y + sprite_height)
+		{
+			origin_width = sprite_width;
+			origin_top_left_x = x;
+			resize_x_offset = CURSOR_X - x;
+		}
+		//e
+		if point_in_rectangle(CURSOR_X, CURSOR_Y, x + sprite_width - border_width, y, x + sprite_width, y + sprite_height)
+		{
+			origin_width = sprite_width;
+			origin_bottom_right_x = x + sprite_width;
+			resize_x_offset = CURSOR_X - (x + sprite_width);
+		}
 	}
 }
 
@@ -126,9 +130,17 @@ obj_computer_cursor.state = given_cursor;
 
 if give_cursor == false
 {
+	//move
 	if point_in_rectangle(CURSOR_X, CURSOR_Y, x + border_width, y + border_width/2, x + sprite_width - border_width, y + border_height_top)
 	{	
 		given_cursor = COMPUTER_CURSOR_STATES.MOVE_CROSS;
+		return;
+	}
+	
+	
+	if can_be_resizable == false
+	{
+		given_cursor = COMPUTER_CURSOR_STATES.DEFAULT;
 		return;
 	}
 	//SN
