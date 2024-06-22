@@ -47,6 +47,7 @@ function reset_regrab_timer()
 {
 	obj_input_delay.regrab_timer = 0;
 }
+
 function get_release_timer()
 {
 	return obj_input_delay.release_timer/RELEASE_FRAMES_DELAY;

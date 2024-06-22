@@ -28,7 +28,7 @@ if hovered_window != noone
 }
 else
 {
-	if left_click_released()
+	if left_click_released() and get_release_timer() >= 1
 		window_with_focus = noone;
 	if hovered_desktop_icon != noone
 	{
