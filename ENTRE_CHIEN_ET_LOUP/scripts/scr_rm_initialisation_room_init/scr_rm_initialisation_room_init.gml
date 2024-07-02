@@ -2,6 +2,12 @@
 /// @desc  import all the parameters set in the included CSV files
 function rm_initialisation_room_init()
 {
+	if debug_mode
+		show_debug_overlay(true);
+	
+	
+	
+	
 	#macro GAME_WIDTH 1920
 	#macro GAME_HEIGHT 1080
 

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_give_cursor_state",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_give_cursor_state",
+  "parent":{
+    "name":"WINDOWS",
+    "path":"folders/SCRIPTS/COMPUTER/WINDOWS.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

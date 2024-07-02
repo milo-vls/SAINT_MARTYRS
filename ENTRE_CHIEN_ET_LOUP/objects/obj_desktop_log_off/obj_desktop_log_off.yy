@@ -5,7 +5,7 @@
   "managed":true,
   "name":"obj_desktop_log_off",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_desktop_icon","path":"objects/obj_desktop_icon/obj_desktop_icon.yy",},"propertyId":{"name":"on_double_click","path":"objects/obj_desktop_icon/obj_desktop_icon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"computer_log_off",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_desktop_icon","path":"objects/obj_desktop_icon/obj_desktop_icon.yy",},"propertyId":{"name":"on_click","path":"objects/obj_desktop_icon/obj_desktop_icon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"computer_log_off",},
   ],
   "parent":{
     "name":"DESKTOP ICONS",

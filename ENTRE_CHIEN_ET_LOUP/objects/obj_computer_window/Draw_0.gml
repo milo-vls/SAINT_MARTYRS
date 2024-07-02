@@ -1,6 +1,9 @@
 draw_set_alpha(1);
 surface_x = x + border_width - 1 * image_xscale;
 surface_y = y + border_height_top;
+
+
+
 if !surface_exists(surface)
 {
 	surface = surface_create(surface_width, surface_height);

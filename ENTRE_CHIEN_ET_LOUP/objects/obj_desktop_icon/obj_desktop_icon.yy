@@ -1,10 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_desktop_icon",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_desktop_icon",
   "overriddenProperties":[],
@@ -29,7 +26,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"double_click_timer_frames","filters":[],"listItems":[],"multiselect":false,"name":"double_click_timer_frames","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"double_click_delay_frames","filters":[],"listItems":[],"multiselect":false,"name":"double_click_delay_frames","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_speed * 0.5","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"on_double_click","filters":[],"listItems":[],"multiselect":false,"name":"on_double_click","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"on_click","filters":[],"listItems":[],"multiselect":false,"name":"on_click","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -1,6 +1,10 @@
 function computer_log_off()
 {
-	static _log_off_window_height = 300;
-	static _log_off_window_width = 700;
-	create_computer_window({title : text_id_to_string("SYSTEM MESSAGE"), icon : spr_log_off, draw_content : log_off_window_draw_content, minimum_width : _log_off_window_width, minimum_height : _log_off_window_height, can_be_resizable : false});
+	static log_off_window_height = 300;
+	static log_off_window_width = 700;
+	var _pos = get_nb_windows_in_intial_position(0);
+	add_window
+	(
+		new ComputerWindow(false, _pos, _pos, log_off_window_width, log_off_window_height, log_off_window_width, log_off_window_height, log_off_window_width, log_off_window_height, log_off_window_draw_content)
+	)
 }

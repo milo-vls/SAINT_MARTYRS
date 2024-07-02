@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_least_deep_instance_at_given_position",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_least_deep_instance_at_given_position",
+  "parent":{
+    "name":"INSTANCES",
+    "path":"folders/SCRIPTS/INSTANCES.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

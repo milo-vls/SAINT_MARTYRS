@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_Window",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Window",
+  "parent":{
+    "name":"WINDOWS",
+    "path":"folders/SCRIPTS/COMPUTER/WINDOWS.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

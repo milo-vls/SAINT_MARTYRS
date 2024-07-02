@@ -36,5 +36,5 @@ switch(state)
 	}
 	break;
 }
-state = COMPUTER_CURSOR_STATES.DEFAULT;
+//state = COMPUTER_CURSOR_STATES.DEFAULT;
 draw_self();
