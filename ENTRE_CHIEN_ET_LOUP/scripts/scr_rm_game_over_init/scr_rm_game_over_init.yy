@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_rm_game_over_init",
   "isCompatibility":false,
   "isDnD":false,

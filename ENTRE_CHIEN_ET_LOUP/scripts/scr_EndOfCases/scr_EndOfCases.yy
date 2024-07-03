@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_EndOfCases",
   "isCompatibility":false,
   "isDnD":false,

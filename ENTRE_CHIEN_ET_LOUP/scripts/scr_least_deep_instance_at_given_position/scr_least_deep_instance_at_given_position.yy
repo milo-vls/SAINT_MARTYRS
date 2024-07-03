@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_least_deep_instance_at_given_position",
   "isCompatibility":false,
   "isDnD":false,

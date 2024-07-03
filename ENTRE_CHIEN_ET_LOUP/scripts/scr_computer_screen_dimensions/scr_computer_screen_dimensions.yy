@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_computer_screen_dimensions",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_precedent_crime_instance_of_same_case",
   "isCompatibility":false,
   "isDnD":false,

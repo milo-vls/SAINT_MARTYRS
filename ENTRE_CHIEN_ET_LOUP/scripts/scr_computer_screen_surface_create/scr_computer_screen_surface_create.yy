@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_computer_screen_surface_create",
   "isCompatibility":false,
   "isDnD":false,

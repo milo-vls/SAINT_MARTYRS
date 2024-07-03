@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_char_id_by_phone_number",
   "isCompatibility":false,
   "isDnD":false,

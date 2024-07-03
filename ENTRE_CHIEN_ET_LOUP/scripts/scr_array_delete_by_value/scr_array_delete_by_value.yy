@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_array_delete_by_value",
   "isCompatibility":false,
   "isDnD":false,

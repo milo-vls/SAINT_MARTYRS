@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_step_add_menu_end_of_current_cases",
   "isCompatibility":false,
   "isDnD":false,

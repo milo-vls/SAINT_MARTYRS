@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_delete_string",
   "isCompatibility":false,
   "isDnD":false,

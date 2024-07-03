@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_set_characters_voices",
   "isCompatibility":false,
   "isDnD":false,

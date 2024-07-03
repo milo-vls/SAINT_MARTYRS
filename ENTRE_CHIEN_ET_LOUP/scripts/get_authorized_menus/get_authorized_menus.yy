@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"get_authorized_menus",
   "isCompatibility":false,
   "isDnD":false,

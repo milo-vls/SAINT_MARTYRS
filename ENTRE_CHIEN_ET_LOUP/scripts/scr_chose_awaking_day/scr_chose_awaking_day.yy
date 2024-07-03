@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_chose_awaking_day",
   "isCompatibility":false,
   "isDnD":false,

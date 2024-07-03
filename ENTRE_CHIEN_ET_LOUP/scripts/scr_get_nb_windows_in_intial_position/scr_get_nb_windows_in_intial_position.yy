@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_get_nb_windows_in_intial_position",
   "isCompatibility":false,
   "isDnD":false,

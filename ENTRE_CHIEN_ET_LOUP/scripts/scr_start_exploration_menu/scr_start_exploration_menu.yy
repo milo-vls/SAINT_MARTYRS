@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_start_exploration_menu",
   "isCompatibility":false,
   "isDnD":false,

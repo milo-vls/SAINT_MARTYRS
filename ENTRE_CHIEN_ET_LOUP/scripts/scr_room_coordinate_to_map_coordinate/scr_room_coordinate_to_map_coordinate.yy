@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_room_coordinate_to_map_coordinate",
   "isCompatibility":false,
   "isDnD":false,

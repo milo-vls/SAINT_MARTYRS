@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_sleep_until_next_event",
   "isCompatibility":false,
   "isDnD":false,

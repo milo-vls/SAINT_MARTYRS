@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_add_map_step",
   "isCompatibility":false,
   "isDnD":false,

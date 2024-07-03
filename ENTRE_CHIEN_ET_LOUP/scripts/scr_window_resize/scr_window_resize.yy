@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_window_resize",
   "isCompatibility":false,
   "isDnD":false,

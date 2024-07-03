@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_log_off_window_draw_content",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_navigation_arrow_functions",
   "isCompatibility":false,
   "isDnD":false,

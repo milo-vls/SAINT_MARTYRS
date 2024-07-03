@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_give_window_focus",
   "isCompatibility":false,
   "isDnD":false,

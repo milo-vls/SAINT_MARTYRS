@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_csv_manipulations",
   "isCompatibility":false,
   "isDnD":false,

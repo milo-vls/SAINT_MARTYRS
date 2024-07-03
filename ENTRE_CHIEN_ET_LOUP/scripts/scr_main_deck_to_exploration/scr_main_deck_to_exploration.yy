@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_main_deck_to_exploration",
   "isCompatibility":false,
   "isDnD":false,

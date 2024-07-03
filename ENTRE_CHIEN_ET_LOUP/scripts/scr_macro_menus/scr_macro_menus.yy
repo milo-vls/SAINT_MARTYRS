@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_macro_menus",
   "isCompatibility":false,
   "isDnD":false,

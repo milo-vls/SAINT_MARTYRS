@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_window_draw_content_placeholder",
   "isCompatibility":false,
   "isDnD":false,

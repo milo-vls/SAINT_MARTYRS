@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_get_highest_minimum_day_prediction_of_cases",
   "isCompatibility":false,
   "isDnD":false,

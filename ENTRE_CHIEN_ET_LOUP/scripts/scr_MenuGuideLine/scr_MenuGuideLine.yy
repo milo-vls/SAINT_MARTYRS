@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_MenuGuideLine",
   "isCompatibility":false,
   "isDnD":false,

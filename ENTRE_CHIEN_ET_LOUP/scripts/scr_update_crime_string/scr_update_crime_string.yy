@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_update_crime_string",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_windowed_app_utils",
   "isCompatibility":false,
   "isDnD":false,

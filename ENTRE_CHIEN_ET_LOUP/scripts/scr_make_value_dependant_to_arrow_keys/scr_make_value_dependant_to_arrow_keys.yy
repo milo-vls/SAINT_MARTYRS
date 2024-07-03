@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_make_value_dependant_to_arrow_keys",
   "isCompatibility":false,
   "isDnD":false,

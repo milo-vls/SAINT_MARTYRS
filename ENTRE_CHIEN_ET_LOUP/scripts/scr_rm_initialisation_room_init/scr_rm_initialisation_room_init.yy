@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_rm_initialisation_room_init",
   "isCompatibility":false,
   "isDnD":false,

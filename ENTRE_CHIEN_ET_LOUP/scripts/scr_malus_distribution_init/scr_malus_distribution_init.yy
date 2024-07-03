@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_malus_distribution_init",
   "isCompatibility":false,
   "isDnD":false,

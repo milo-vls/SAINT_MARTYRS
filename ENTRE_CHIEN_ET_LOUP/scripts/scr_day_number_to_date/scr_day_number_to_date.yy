@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_day_number_to_date",
   "isCompatibility":false,
   "isDnD":false,

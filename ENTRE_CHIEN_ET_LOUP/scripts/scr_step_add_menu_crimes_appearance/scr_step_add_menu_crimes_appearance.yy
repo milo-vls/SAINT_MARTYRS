@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_step_add_menu_crimes_appearance",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_give_cursor_state",
   "isCompatibility":false,
   "isDnD":false,
