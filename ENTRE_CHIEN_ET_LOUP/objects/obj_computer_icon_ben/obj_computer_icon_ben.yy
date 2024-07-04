@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_computer_icone_ben",
-    "path":"sprites/spr_computer_icone_ben/spr_computer_icone_ben.yy",
+    "name":"spr_computer_icon_ben",
+    "path":"sprites/spr_computer_icon_ben/spr_computer_icon_ben.yy",
   },
   "spriteMaskId":null,
   "visible":true,

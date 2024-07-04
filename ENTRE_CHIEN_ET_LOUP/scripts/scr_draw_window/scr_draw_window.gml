@@ -20,7 +20,7 @@ function draw_window(_window)
 	{
 		draw_set_alpha(1); draw_set_halign(fa_left);  draw_set_valign(fa_top);
 		draw_set_color(c_dkgrey); draw_set_font(fnt_retron_for_comp_sys);
-		draw_text_transformed(x + COMPUTER_WINDOW_BORDER_TOP_HEIGHT * 1.2, y, _window.title, _window.title_scale, _window.title_scale, 0);	
+		draw_text_transformed(_window.pos_x + COMPUTER_WINDOW_BORDER_TOP_HEIGHT * 1.2, _window.pos_y, _window.title, _window.title_scale, _window.title_scale, 0);	
 	}
 	
 	//draw_rectangle_color(_window.surface_x, _window.surface_y, _window.surface_x + _window.surface_width, _window.surface_y + _window.surface_height, c_blue, c_blue, c_blue, c_blue, true);
