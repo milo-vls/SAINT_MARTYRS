@@ -423,6 +423,7 @@
     {"id":{"name":"scr_give_cursor_state","path":"scripts/scr_give_cursor_state/scr_give_cursor_state.yy",},},
     {"id":{"name":"scr_give_window_focus","path":"scripts/scr_give_window_focus/scr_give_window_focus.yy",},},
     {"id":{"name":"scr_go_to_computer","path":"scripts/scr_go_to_computer/scr_go_to_computer.yy",},},
+    {"id":{"name":"scr_hovered_computer_window_input","path":"scripts/scr_hovered_computer_window_input/scr_hovered_computer_window_input.yy",},},
     {"id":{"name":"scr_inputs","path":"scripts/scr_inputs/scr_inputs.yy",},},
     {"id":{"name":"scr_int_array_to_string","path":"scripts/scr_int_array_to_string/scr_int_array_to_string.yy",},},
     {"id":{"name":"scr_least_deep_instance_at_given_position","path":"scripts/scr_least_deep_instance_at_given_position/scr_least_deep_instance_at_given_position.yy",},},
