@@ -1,7 +1,7 @@
 function get_window(_window_id)
 {
 	var _windows = obj_computer_manager.windows;
-	var _nb_windows = obj_computer_manager.nb_windows;
+	var _nb_windows = array_length(_windows);
 	for (var _i = 0; _i < _nb_windows; _i ++)
 		if _windows[_i].id == _window_id
 			return _windows[_i];

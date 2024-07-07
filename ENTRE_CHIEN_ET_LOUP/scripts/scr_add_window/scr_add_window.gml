@@ -2,5 +2,5 @@
 function add_window(_window)
 {
 	with obj_computer_manager
-		windows[nb_windows ++] = _window;
+		array_insert(windows, 0, _window);
 }

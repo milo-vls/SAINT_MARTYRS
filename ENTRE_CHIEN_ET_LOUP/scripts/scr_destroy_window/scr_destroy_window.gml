@@ -3,15 +3,14 @@ function destroy_window(_window_id)
 	with obj_computer_manager
 	{
 		var _index_found = -1;
-		for (var _i = 0; _i < nb_windows; _i ++) 
+		var _nb_windows = array_length(windows);
+		for (var _i = 0; _i < _nb_windows; _i ++) 
 		{
 		    if windows[_i].id == _window_id
 			{
-				_index_found = _i;
-				break;
+				return array_delete(windows, _index_found, 1);
 			}
 		}
-		nb_windows --;
-		array_delete(windows, _index_found, 1);
+		
 	}
 }

@@ -1,6 +1,7 @@
 ///@param {struct.ComputerWindow} [_window]
 function draw_window(_window)
 {
+	
 	//APP
 	if !surface_exists(_window.surface)
 		_window = computer_window_create_surface(_window);

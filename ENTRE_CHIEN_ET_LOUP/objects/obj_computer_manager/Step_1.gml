@@ -20,21 +20,33 @@ if hovered_window_id == -1
 //WINDOW MOVE AND RESIZE
 if !left_click()
 {
+	if (cursor_locked == COMPUTER_WINDOW_BORDER_REGIONS.MOVE_AREA or cursor_locked == COMPUTER_WINDOW_BORDER_REGIONS.TOP_CENTER) 
+	{
+		if instance_position(CURSOR_X, CURSOR_Y, obj_computer_icon_ben) != noone
+		{
+			destroy_window(hovered_window_id);
+			hovered_window_id = -1;
+			return;
+		}
+	}
 	cursor_locked = noone;
 }
 if cursor_locked == noone
 	obj_computer_cursor.state = COMPUTER_CURSOR_STATES.DEFAULT;
 if hovered_window_id >= 0 
 {
+	//WE CAN CHANGE THE CURSOR IF IT'S NOT LOCKED
 	if cursor_locked == noone
 	{
 		hovered_region = border_region_hovered(get_window(hovered_window_id), CURSOR_X, CURSOR_Y);
+		//NOW SHOULD WE LOCK IT ?
 		if left_click_pressed()
 		{
 			cursor_locked = hovered_region;
 			if hovered_region == COMPUTER_WINDOW_BORDER_REGIONS.MOVE_AREA or hovered_region == COMPUTER_WINDOW_BORDER_REGIONS.TOP_CENTER or hovered_region == COMPUTER_WINDOW_BORDER_REGIONS.CENTER
 				windows = give_window_focus(hovered_window_id);
 		}
+		//CHOSE THE CURSOR
 		switch hovered_region
 		{
 			/*
@@ -65,6 +77,15 @@ if hovered_window_id >= 0
 			break;
 		}
 	}
+	//check for deletion
+	
+	/*else if (cursor_locked == COMPUTER_WINDOW_BORDER_REGIONS.MOVE_AREA or cursor_locked == COMPUTER_WINDOW_BORDER_REGIONS.TOP_CENTER) 
+		if instance_place(CURSOR_X, CURSOR_Y, obj_computer_icon_ben) != noone
+		{
+			destroy_window(hovered_window_id);
+			return;
+		}
+	*/
 }
 else
 {

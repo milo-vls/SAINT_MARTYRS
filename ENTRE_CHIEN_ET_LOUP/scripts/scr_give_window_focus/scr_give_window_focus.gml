@@ -4,7 +4,7 @@
 
 function give_window_focus(_window_id)
 {
-	var _nb_windows = nb_windows;
+	var _nb_windows = array_length(windows);
 	var _windows_copy = array_create(0);
 	var _initial_index = -1;
 	var _window = noone;

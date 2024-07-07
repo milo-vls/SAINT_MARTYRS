@@ -9,8 +9,8 @@
   "name":"obj_computer_icon_ben",
   "overriddenProperties":[],
   "parent":{
-    "name":"COMPUTER",
-    "path":"folders/OBJETCS/DESK/COMPUTER.yy",
+    "name":"DESKTOP ICONS",
+    "path":"folders/OBJETCS/DESK/COMPUTER/DESKTOP ICONS.yy",
   },
   "parentObjectId":null,
   "persistent":false,
