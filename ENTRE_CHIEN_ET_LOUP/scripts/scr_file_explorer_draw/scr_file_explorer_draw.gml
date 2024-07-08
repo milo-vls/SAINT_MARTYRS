@@ -29,7 +29,10 @@ function file_explorer_draw(_manager_id, _window)
 	
 	
 	//SELECTION CONFIRMATION
-	if keyboard_check_pressed(vk_enter) or hovered_click_pressed(_window.id) and _nb_files > 0
+	if keyboard_check_pressed(vk_enter) 
+	or hovered_click_pressed(_window.id) 
+	and _nb_files > 0
+	if border_region_hovered(_window, CURSOR_X, CURSOR_Y) == COMPUTER_WINDOW_BORDER_REGIONS.CENTER
 	{
 		var _selected_file = _files_to_show[_selected_floor];
 		switch _selected_file.type
