@@ -1,13 +1,22 @@
-function TextFile(_title, _text) constructor
+function File(_title, _data, _type) constructor
 {
-	static extension = ".text";
+	type = _type;
+	
 	
 	title = _title;
-	text = _text;
+	data = _data;
 }
 
-///@param {struct.TextFile} _text_file
-function get_text_file_title(_text_file)
+function get_file_extension(_file_type)
 {
-	return _text_file.title + TextFile.extension;
+	if _file_type == FILE_EXPLORER_FOLDER_TYPES.FOLDER
+		return "/";
+	if _file_type == FILE_EXPLORER_FOLDER_TYPES.TEXT
+		return ".text";
+}
+
+///@param {struct.File} _text_file
+function get_file_title(_text_file)
+{
+	return _text_file.title + get_file_extension(_text_file.type);
 }
