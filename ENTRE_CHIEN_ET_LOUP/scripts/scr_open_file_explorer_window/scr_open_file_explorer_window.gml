@@ -3,7 +3,6 @@ enum FILE_EXPLORER_WINDOW_STRUCT
 	PLACE,
 	USER,
 	SHOWN_FILES,
-	SELECTED_FLOOR,
 	
 	
 }
@@ -49,7 +48,6 @@ function open_file_explorer_window(_starting_place = FILE_EXPLORER_PLACES.HOME)
 		[FILE_EXPLORER_WINDOW_STRUCT.PLACE, _starting_place],
 		[FILE_EXPLORER_WINDOW_STRUCT.USER, "Blaise"],
 		[FILE_EXPLORER_WINDOW_STRUCT.SHOWN_FILES, get_files_of_place(_starting_place)],
-		[FILE_EXPLORER_WINDOW_STRUCT.SELECTED_FLOOR, 0]
 	
 	]
 	set_struct_variables(_variables_to_give_to_window, _file_explorer_window);
