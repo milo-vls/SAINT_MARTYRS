@@ -1,3 +1,4 @@
+#macro MOUSE_WHEEL_SPEED 10
 
 
 

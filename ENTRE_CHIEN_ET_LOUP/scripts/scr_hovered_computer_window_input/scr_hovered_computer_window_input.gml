@@ -39,3 +39,11 @@ function hovered_click_released(_id)
 }
 
 
+function hovered_mouse_wheel_down(_id)
+{
+	return mouse_wheel_down() and obj_computer_manager.hovered_window_id == _id;
+}
+function hovered_mouse_wheel_up(_id)
+{
+	return mouse_wheel_up() and obj_computer_manager.hovered_window_id == _id;
+}
