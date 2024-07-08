@@ -13,6 +13,6 @@ function notpad_draw(_manager_id, _window)
 	_y_offset = clamp(_y_offset + _scroll_speed, -struct_get(_window, NOTPAD_WINDOW_STRUCT.MAX_Y_OFFSET), 0);
 	variable_struct_set(_window, NOTPAD_WINDOW_STRUCT.Y_OFFSET, _y_offset);
 	
-	draw_text_ext(NOTPAD_MARGIN, _y_offset, _text_file.text, NOTPAD_TEXT_SEP, NOTPAD_MAX_TEXT_WIDTH);
+	draw_text_ext(NOTPAD_MARGIN, _y_offset, _text_file.data, NOTPAD_TEXT_SEP, NOTPAD_MAX_TEXT_WIDTH);
 	
 }

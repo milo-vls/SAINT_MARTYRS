@@ -1,0 +1,49 @@
+
+///@param {struct.File} _file
+///@param {real} _y
+function draw_file(_file, _y)
+{
+	draw_text(NOTPAD_MARGIN, _y, get_file_title(_file));
+}
+
+function file_explorer_draw(_manager_id, _window)
+{
+	draw_clear(c_black);
+	draw_set_alpha(1); draw_set_color(c_white); draw_set_halign(fa_left); draw_set_valign(fa_top);
+	draw_set_font(fnt_notpad);
+	static floor_height = string_height("T");
+	
+	var _files_to_show = struct_get(_window, FILE_EXPLORER_WINDOW_STRUCT.SHOWN_FILES);
+	var _nb_files = array_length(_files_to_show);
+	
+	//selection highlightment
+	var _selected_floor = struct_get(_window, FILE_EXPLORER_WINDOW_STRUCT.SELECTED_FLOOR);
+	_selected_floor = clamp(_selected_floor + (mouse_wheel_down() ? 1 : (mouse_wheel_up() ? -1 : 0)), 0, max(_nb_files - 1, 0) );
+	variable_struct_set(_window, FILE_EXPLORER_WINDOW_STRUCT.SELECTED_FLOOR, _selected_floor);
+	draw_rectangle_color(0, NOTPAD_MARGIN + floor_height * _selected_floor, FILE_EXPLORER_WINDOW_WIDTH, NOTPAD_MARGIN + floor_height * (_selected_floor + 1 ), c_blue, c_blue, c_blue, c_blue, false);
+	
+
+	//FILES DRAW
+	for (var _nb_floors_drawn = 0; _nb_floors_drawn < _nb_files; _nb_floors_drawn ++)
+		draw_file(_files_to_show[_nb_floors_drawn], NOTPAD_MARGIN + ( floor_height * _nb_floors_drawn ) );
+	
+	
+	//SELECTION CONFIRMATION
+	if keyboard_check_pressed(vk_enter) or hovered_click_pressed(_window.id) and _nb_files > 0
+	{
+		var _selected_file = _files_to_show[_selected_floor];
+		switch _selected_file.type
+		{
+			case FILE_EXPLORER_FOLDER_TYPES.FOLDER :
+				variable_struct_set(_window, FILE_EXPLORER_WINDOW_STRUCT.PLACE, _selected_file.data);
+				variable_struct_set(_window, FILE_EXPLORER_WINDOW_STRUCT.SHOWN_FILES, get_files_of_place(_selected_file.data));
+				variable_struct_set(_window, FILE_EXPLORER_WINDOW_STRUCT.SELECTED_FLOOR, 0);
+				
+			break;
+			case FILE_EXPLORER_FOLDER_TYPES.TEXT :
+				open_text_file(_selected_file);
+			break;
+		}
+	}
+	
+}

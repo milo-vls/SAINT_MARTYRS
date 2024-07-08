@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_TextFile",
+  "%Name":"scr_File",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_TextFile",
+  "name":"scr_File",
   "parent":{
     "name":"FILE SYSTEM",
     "path":"folders/SCRIPTS/COMPUTER/FILE SYSTEM.yy",
