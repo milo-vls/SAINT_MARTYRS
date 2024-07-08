@@ -468,6 +468,7 @@
     {"id":{"name":"scr_set_day_events","path":"scripts/scr_set_day_events/scr_set_day_events.yy",},},
     {"id":{"name":"scr_set_music","path":"scripts/scr_set_music/scr_set_music.yy",},},
     {"id":{"name":"scr_set_new_string","path":"scripts/scr_set_new_string/scr_set_new_string.yy",},},
+    {"id":{"name":"scr_set_struct_variables","path":"scripts/scr_set_struct_variables/scr_set_struct_variables.yy",},},
     {"id":{"name":"scr_show_date","path":"scripts/scr_show_date/scr_show_date.yy",},},
     {"id":{"name":"scr_show_options","path":"scripts/scr_show_options/scr_show_options.yy",},},
     {"id":{"name":"scr_show_parameters","path":"scripts/scr_show_parameters/scr_show_parameters.yy",},},

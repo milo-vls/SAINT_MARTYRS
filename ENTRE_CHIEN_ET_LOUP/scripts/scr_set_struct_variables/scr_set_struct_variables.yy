@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_set_struct_variables",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_set_struct_variables",
+  "parent":{
+    "name":"DATA",
+    "path":"folders/SCRIPTS/DATA.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

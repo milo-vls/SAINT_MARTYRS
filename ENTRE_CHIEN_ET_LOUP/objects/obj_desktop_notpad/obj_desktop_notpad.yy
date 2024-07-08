@@ -5,7 +5,7 @@
   "managed":true,
   "name":"obj_desktop_notpad",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_desktop_icon","path":"objects/obj_desktop_icon/obj_desktop_icon.yy",},"propertyId":{"name":"on_click","path":"objects/obj_desktop_icon/obj_desktop_icon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"notpad_create_window",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_desktop_icon","path":"objects/obj_desktop_icon/obj_desktop_icon.yy",},"propertyId":{"name":"on_click","path":"objects/obj_desktop_icon/obj_desktop_icon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"open_text_file",},
   ],
   "parent":{
     "name":"DESKTOP ICONS",
