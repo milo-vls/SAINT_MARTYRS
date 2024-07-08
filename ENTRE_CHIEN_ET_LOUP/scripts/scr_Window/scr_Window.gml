@@ -3,7 +3,7 @@
 #macro COMPUTER_WINDOW_BORDER_TOP_HEIGHT 49
 #macro COMPUTER_WINDOW_BORDER_BOTTOM_HEIGHT 20
 function ComputerWindow
-(_resizable, _x, _y, _width, _height, _min_width, _min_height, _max_width, _max_height, _app_draw, _icon = noone, _title = noone) 
+(_x, _y, _width, _height, _app_draw, _icon = noone, _title = noone) 
 constructor
 {	
 	draw_set_font(fnt_retron_for_comp_sys);
@@ -13,14 +13,9 @@ constructor
 	id = windows_count;
 	windows_count ++;
 	
-	
-	resizable = _resizable;
+		
 	pos_x = _x;
 	pos_y = _y;
-	minimum_width = _min_width;
-	minimum_height = _min_height;
-	maximum_width = _max_width;
-	maximum_height = _max_height;
 	icon = _icon;
 	title = _title;
 	

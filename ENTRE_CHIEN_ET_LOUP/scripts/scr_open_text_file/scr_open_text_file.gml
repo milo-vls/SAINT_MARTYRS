@@ -16,7 +16,7 @@ enum NOTPAD_WINDOW_STRUCT
 function open_text_file(_text_file)
 {
 	draw_set_font(fnt_notpad);
-	var _notpad_window = new ComputerWindow(false, 0, 0, NOTPAD_WINDOW_WIDTH, NOTPAD_WINDOW_HEIGHT, NOTPAD_WINDOW_WIDTH, NOTPAD_WINDOW_HEIGHT, NOTPAD_WINDOW_WIDTH, NOTPAD_WINDOW_HEIGHT, notpad_draw, spr_computer_icon_notpad, get_text_file_title(_text_file));	
+	var _notpad_window = new ComputerWindow(0, 0, NOTPAD_WINDOW_WIDTH, NOTPAD_WINDOW_HEIGHT, notpad_draw, spr_computer_icon_notpad, get_text_file_title(_text_file));	
 	var _notpad_window_struct_array = 
 	[
 		[NOTPAD_WINDOW_STRUCT.TEXT_FILE, _text_file],

@@ -5,6 +5,6 @@ function computer_log_off()
 	var _pos = get_nb_windows_in_intial_position(0);
 	add_window
 	(
-		new ComputerWindow(false, _pos, _pos, log_off_window_width, log_off_window_height, log_off_window_width, log_off_window_height, log_off_window_width, log_off_window_height, log_off_window_draw_content)
-	)
+		new ComputerWindow(_pos, _pos, log_off_window_width, log_off_window_height, log_off_window_draw_content)
+	);
 }
