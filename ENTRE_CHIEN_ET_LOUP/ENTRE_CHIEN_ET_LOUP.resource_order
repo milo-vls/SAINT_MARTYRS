@@ -158,7 +158,7 @@
     {"name":"obj_map_events_manager","order":4,"path":"objects/obj_map_events_manager/obj_map_events_manager.yy",},
     {"name":"obj_map_icone","order":5,"path":"objects/obj_map_icone/obj_map_icone.yy",},
     {"name":"obj_Olivia_npc","order":3,"path":"objects/obj_Olivia_npc/obj_Olivia_npc.yy",},
-    {"name":"obj_point_of_interest","order":9,"path":"objects/obj_point_of_interest/obj_point_of_interest.yy",},
+    {"name":"obj_point_of_interest","order":5,"path":"objects/obj_point_of_interest/obj_point_of_interest.yy",},
     {"name":"obj_Sandrine_npc","order":2,"path":"objects/obj_Sandrine_npc/obj_Sandrine_npc.yy",},
     {"name":"obj_sequence_manager","order":1,"path":"objects/obj_sequence_manager/obj_sequence_manager.yy",},
     {"name":"obj_sound_manager","order":3,"path":"objects/obj_sound_manager/obj_sound_manager.yy",},
