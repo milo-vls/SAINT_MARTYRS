@@ -27,7 +27,7 @@ function file_explorer_draw(_manager_id, _window)
 	for (var _nb_floors_drawn = 0; _nb_floors_drawn < _nb_files; _nb_floors_drawn ++)
 	{
 		var _y = NOTPAD_MARGIN + ( floor_height * _nb_floors_drawn )
-		if cursor_in_rectangle_in_window(0, _y + floor_height, _window.surface_width, floor_height, _window)
+		if cursor_in_rectangle_in_window(0, _y + floor_height, _window.surface_width, floor_height, _window) and _manager_id.hovered_window_id == _window.id
 		{
 			_selected_floor =_nb_floors_drawn;
 			draw_rectangle_color(0, NOTPAD_MARGIN + floor_height * _selected_floor, FILE_EXPLORER_WINDOW_WIDTH, NOTPAD_MARGIN + floor_height * (_selected_floor + 1 ), c_blue, c_blue, c_blue, c_blue, false);
