@@ -6,7 +6,7 @@
   "name":"scr_get_crime_string_mode",
   "parent":{
     "name":"CASE STRINGS",
-    "path":"folders/SCRIPTS/CASE STRINGS.yy",
+    "path":"folders/SCRIPTS/CASES AND CRIMES/CASE STRINGS.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
