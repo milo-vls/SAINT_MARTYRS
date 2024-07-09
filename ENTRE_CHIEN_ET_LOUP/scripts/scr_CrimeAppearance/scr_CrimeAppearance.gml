@@ -4,7 +4,7 @@ function CrimeAppearance(_crimes_ids) : Menu(MENU_PRIORITIES.CRIME_APPEARANCE, r
 	nb_crimes = array_length(_crimes_ids);
 	appearing_crime_id = 0;
 	crime_timer = 0;
-	crime_delay_frames = int64(room_speed * 0.75);
+	crime_delay_frames = int64(room_speed * 0.2);
 	room_transition_ended = false;
 	last_crime_is_first = false;
 	

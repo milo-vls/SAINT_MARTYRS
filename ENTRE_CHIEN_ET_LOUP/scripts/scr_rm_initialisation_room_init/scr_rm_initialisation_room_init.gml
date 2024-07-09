@@ -49,6 +49,8 @@ function rm_initialisation_room_init()
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_input_delay);
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_sound_manager);
 	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_map_events_manager);
+	instance_create_depth(0, 0, DEPTHS.MENU_MANAGEMENT, obj_camera);
+	
 	
 	
 	
