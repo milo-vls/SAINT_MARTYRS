@@ -1,3 +1,8 @@
+if zoom_target != -1
+	zoom_coeff = approach(zoom_coeff, zoom_target, zoom_speed);
+if zoom_coeff == zoom_target
+	zoom_target = -1;
+
 camera_set_view_size(VIEW, room_width * zoom_coeff, room_height * zoom_coeff);
 
 cam_x_focus = mouse_x;

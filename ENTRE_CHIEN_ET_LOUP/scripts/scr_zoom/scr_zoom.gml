@@ -4,15 +4,26 @@
 
 function zoom_in(_zoom_speed = ZOOM_SPEED_DEFAULT)
 {
-	with obj_camera
-	{
-		var _projected_zoom = max(zoom_coeff - _zoom_speed, MINIMAL_ZOOM);
-		zoom_coeff = _projected_zoom;
-	}
+	var _projected_zoom = max(obj_camera.zoom_coeff - _zoom_speed, MINIMAL_ZOOM);
+	obj_camera.zoom_coeff = _projected_zoom;
+	return _projected_zoom;
 }
 
 function zoom_out(_zoom_speed = ZOOM_SPEED_DEFAULT)
 {
-	with obj_camera
-	 zoom_coeff = min(zoom_coeff + _zoom_speed, MAXIMAL_ZOOM);
+	var _projected_zoom = obj_camera.zoom_coeff + _zoom_speed;
+	obj_camera.zoom_coeff = min(_projected_zoom, MAXIMAL_ZOOM);
+	return _projected_zoom;
+}
+
+function zoom(_zoom_speed)
+{
+	var _projected_zoom = obj_camera.zoom_coeff + _zoom_speed;
+	obj_camera.zoom_coeff = clamp(_projected_zoom , MINIMAL_ZOOM, MAXIMAL_ZOOM);
+	return _projected_zoom;
+}
+
+function set_camera_zoom_target()
+{
+	
 }

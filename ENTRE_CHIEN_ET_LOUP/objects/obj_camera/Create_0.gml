@@ -7,3 +7,5 @@ cam_x_focus = room_width/2;
 cam_y_focus = room_height/2;
 
 zoom_coeff = 1;
+zoom_target = -1;
+zoom_speed = ZOOM_SPEED_DEFAULT;
