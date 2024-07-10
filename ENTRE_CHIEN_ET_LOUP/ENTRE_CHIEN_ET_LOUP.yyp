@@ -469,6 +469,7 @@
     {"id":{"name":"scr_RoomTransitionStyle","path":"scripts/scr_RoomTransitionStyle/scr_RoomTransitionStyle.yy",},},
     {"id":{"name":"scr_save_game","path":"scripts/scr_save_game/scr_save_game.yy",},},
     {"id":{"name":"scr_Sequence","path":"scripts/scr_Sequence/scr_Sequence.yy",},},
+    {"id":{"name":"scr_set_camera_focus_point","path":"scripts/scr_set_camera_focus_point/scr_set_camera_focus_point.yy",},},
     {"id":{"name":"scr_set_characters_voices","path":"scripts/scr_set_characters_voices/scr_set_characters_voices.yy",},},
     {"id":{"name":"scr_set_current_cases","path":"scripts/scr_set_current_cases/scr_set_current_cases.yy",},},
     {"id":{"name":"scr_set_day_events","path":"scripts/scr_set_day_events/scr_set_day_events.yy",},},

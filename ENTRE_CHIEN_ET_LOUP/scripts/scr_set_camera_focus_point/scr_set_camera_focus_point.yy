@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_set_camera_focus_point",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_set_camera_focus_point",
+  "parent":{
+    "name":"CAMERA",
+    "path":"folders/SCRIPTS/CAMERA.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
