@@ -4,7 +4,7 @@ function CrimeAppearance(_crimes_ids) : Menu(MENU_PRIORITIES.CRIME_APPEARANCE, r
 	nb_crimes = array_length(_crimes_ids);
 	appearing_crime_id = 0;
 	crime_timer = 0;
-	crime_delay_frames = int64(room_speed * 0.2);
+	crime_delay_frames = int64(room_speed * 0.5);
 	room_transition_ended = false;
 	last_crime_is_first = false;
 	
@@ -16,6 +16,9 @@ function crime_appearance_activity()
 {
 	if appearing_crime_id == nb_crimes
 	{
+		cam_lock(false);
+		obj_camera.zoom_speed = ZOOM_SPEED_DEFAULT;
+		set_camera_zoom_target(MAXIMAL_ZOOM);
 		end_reached = true;
 		return;
 	}
@@ -25,7 +28,10 @@ function crime_appearance_activity()
 	{
 		if obj_menu_manager.get_active_menu(RoomTransition) == -1
 		{
-			room_transition_ended = true
+			room_transition_ended = true;
+			set_camera_zoom_target(.4);
+			obj_camera.zoom_speed = 1;
+			set_cam_pos(global.crimes[sorted_crimes_ids[0]].get_x(), global.crimes[sorted_crimes_ids[0]].get_y());
 		}
 		else
 		{

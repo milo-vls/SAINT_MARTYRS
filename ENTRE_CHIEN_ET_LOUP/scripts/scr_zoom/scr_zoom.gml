@@ -1,4 +1,4 @@
-#macro ZOOM_SPEED_DEFAULT 0.025
+#macro ZOOM_SPEED_DEFAULT 0.075
 #macro MINIMAL_ZOOM 0.25
 #macro MAXIMAL_ZOOM 1
 
@@ -23,7 +23,7 @@ function zoom(_zoom_speed)
 	return _projected_zoom;
 }
 
-function set_camera_zoom_target()
+function set_camera_zoom_target(_zoom_target)
 {
-	
+	obj_camera.zoom_target = _zoom_target
 }
