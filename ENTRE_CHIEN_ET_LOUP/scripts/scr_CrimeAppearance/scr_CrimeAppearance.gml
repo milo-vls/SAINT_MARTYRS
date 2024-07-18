@@ -1,12 +1,17 @@
 function CrimeAppearance(_crimes_ids) : Menu(MENU_PRIORITIES.CRIME_APPEARANCE, rm_main_desk, false, true, false) constructor 
 {
+	#macro CRIME_DELAY_FRAMES (room_speed * 0.5)
+	
 	sorted_crimes_ids = sorted_crimes_ids_by_appearance(_crimes_ids);
 	nb_crimes = array_length(_crimes_ids);
 	appearing_crime_id = 0;
 	crime_timer = 0;
-	crime_delay_frames = int64(room_speed * 0.5);
 	room_transition_ended = false;
 	last_crime_is_first = false;
+	
+	inter_end_reached = false;
+	end_duration = room_speed * 1.5;
+	end_timer = 0;
 	
 	activity = crime_appearance_activity;
 	draw = function(){};
@@ -14,12 +19,21 @@ function CrimeAppearance(_crimes_ids) : Menu(MENU_PRIORITIES.CRIME_APPEARANCE, r
 }
 function crime_appearance_activity()
 {
+	if inter_end_reached
+	{
+		end_timer ++;
+		if end_timer >= end_duration
+		{
+			obj_camera.zoom_speed = ZOOM_SPEED_DEFAULT;
+			set_camera_zoom_target(MAXIMAL_ZOOM);
+			end_reached = true;	
+		}
+	}
+	
 	if appearing_crime_id == nb_crimes
 	{
-		cam_lock(false);
-		obj_camera.zoom_speed = ZOOM_SPEED_DEFAULT;
-		set_camera_zoom_target(MAXIMAL_ZOOM);
-		end_reached = true;
+		
+		inter_end_reached = true;
 		return;
 	}
 	
@@ -29,9 +43,8 @@ function crime_appearance_activity()
 		if obj_menu_manager.get_active_menu(RoomTransition) == -1
 		{
 			room_transition_ended = true;
-			set_camera_zoom_target(.4);
-			obj_camera.zoom_speed = 1;
-			set_cam_pos(global.crimes[sorted_crimes_ids[0]].get_x(), global.crimes[sorted_crimes_ids[0]].get_y());
+			set_camera_zoom_target(.75);
+			obj_camera.zoom_speed = 0.5;
 		}
 		else
 		{
@@ -44,12 +57,12 @@ function crime_appearance_activity()
 	}
 	
 
-	if crime_timer > crime_delay_frames
+	if crime_timer > CRIME_DELAY_FRAMES
 	{
 		var _is_first_of_case = global.crimes[sorted_crimes_ids[appearing_crime_id]].get_first_of_case();
 		if !_is_first_of_case and last_crime_is_first
 		{
-			end_reached = true
+			inter_end_reached = true;
 			return;
 		}
 		

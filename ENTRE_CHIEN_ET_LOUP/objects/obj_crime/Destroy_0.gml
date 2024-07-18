@@ -1,4 +1,7 @@
 if instance_coming_string_id != noone
-	instance_destroy(instance_coming_string_id);
+{
+	instance_coming_string_id.deployment_state = CASE_STRING_DEPLOYMENT_STATE.DESTROYING;
+	instance_coming_string_id.crime_instance_id_dst = noone;
+}
 if instance_giving_string_id != noone
-	instance_destroy(instance_giving_string_id);
+	delete_string(instance_giving_string_id);

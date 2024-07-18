@@ -1,25 +1,32 @@
 
 
 
-function set_new_string(_crime_instance_id_src, _crime_instance_id_dst, _crime_color_id)
+function set_new_string(_crime_instance_id_src, _crime_instance_id_dst, _crime_color_id, _no_animation)
 {	
-	var _new_string_data = {
-		crime_instance_id_src : _crime_instance_id_src,
-		crime_instance_id_dst : _crime_instance_id_dst,
-		color : global.crime_colors[_crime_color_id],
-	}
+	
 	
 	//IS CREATING A NEW STRING NEEDED ? => check if a string exists and if it points to the correct crime instance
 	var _crime_source_string = _crime_instance_id_src.instance_giving_string_id;
 	if _crime_source_string != -4
 	{
 		
-		if _crime_source_string.crime_instance_id_dst == _crime_instance_id_dst and _crime_source_string.color == _new_string_data.color
+		if _crime_source_string.crime_instance_id_dst == _crime_instance_id_dst and _crime_source_string.color == global.crime_colors[_crime_color_id]
 			return;
 	}
 	
 	
-	
+	var _new_string_data = {
+		crime_instance_id_src : _crime_instance_id_src,
+		crime_instance_id_dst : _crime_instance_id_dst,
+		color : global.crime_colors[_crime_color_id],
+		no_animation : _no_animation,
+		
+		crime_src_x : _crime_instance_id_src.x,
+		crime_src_y : _crime_instance_id_src.y,
+		crime_dst_x : _crime_instance_id_dst.x,
+		crime_dst_y : _crime_instance_id_dst.y,
+		
+	}
 	
 	var _new_string = instance_create_depth(_crime_instance_id_src.x, _crime_instance_id_src.y, DEPTHS.STRINGS, obj_case_string, _new_string_data);
 	

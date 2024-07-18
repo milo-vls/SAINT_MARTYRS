@@ -81,7 +81,7 @@ function change_crime_color_next(_crime_id, _crime_instance)
 	}
 	//new strings of precedent color
 	if _next_crime_before_update != noone and _precedent_crime_before_update != noone
-		set_new_string(_precedent_crime_before_update, _next_crime_before_update, global.crimes[_next_crime_before_update.crime_id].color_id)
+		set_new_string(_precedent_crime_before_update, _next_crime_before_update, global.crimes[_next_crime_before_update.crime_id].color_id, false)
 	
 	
 	//find precedent crime to get crime linked to	AND delete its string to its next crime if both exists AND link it to crime + link crime to new precedent if it exists
@@ -94,32 +94,20 @@ function change_crime_color_next(_crime_id, _crime_instance)
 		{
 			_next_crime_of_precedent_crime_to_be_linked_to = _precedent_crime_to_be_linked_to.instance_giving_string_id.crime_instance_id_dst;
 			delete_string(_precedent_crime_to_be_linked_to.instance_giving_string_id);
-			set_new_string(_crime_instance, _next_crime_of_precedent_crime_to_be_linked_to, _new_color_id);
+			set_new_string(_crime_instance, _next_crime_of_precedent_crime_to_be_linked_to, _new_color_id, false);
 		}
 		//link crime to his new precedent
-		set_new_string(_precedent_crime_to_be_linked_to, _crime_instance, _new_color_id);
+		set_new_string(_precedent_crime_to_be_linked_to, _crime_instance, _new_color_id, false);
 	}
 	
 	if _crime_instance.instance_giving_string_id == noone
 	{
 		var _next_crime_to_be_linked_to = next_crime_instance_of_same_color(_crime_instance, _crime_instances_number);
 		if _next_crime_to_be_linked_to != noone
-			set_new_string(_crime_instance, _next_crime_to_be_linked_to, _new_color_id);
+			set_new_string(_crime_instance, _next_crime_to_be_linked_to, _new_color_id, false);
 	}
 		
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 

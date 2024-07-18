@@ -234,6 +234,7 @@
     {"id":{"name":"ps_covered_crime_appearing","path":"particles/ps_covered_crime_appearing/ps_covered_crime_appearing.yy",},},
     {"id":{"name":"ps_crime_appearing_1","path":"particles/ps_crime_appearing_1/ps_crime_appearing_1.yy",},},
     {"id":{"name":"ps_crime_appearing_2","path":"particles/ps_crime_appearing_2/ps_crime_appearing_2.yy",},},
+    {"id":{"name":"ps_explosion_1","path":"particles/ps_explosion_1/ps_explosion_1.yy",},},
     {"id":{"name":"ps_explosion","path":"particles/ps_explosion/ps_explosion.yy",},},
     {"id":{"name":"ps_smoke_following_string","path":"particles/ps_smoke_following_string/ps_smoke_following_string.yy",},},
     {"id":{"name":"rm_computer","path":"rooms/rm_computer/rm_computer.yy",},},
