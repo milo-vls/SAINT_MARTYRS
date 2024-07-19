@@ -8,10 +8,10 @@ function crime_appear(_crime_id, _appearing_animation, _covered)
 		with _crime_instance
 		{
 			crime = global.crimes[_crime_id];
-			if appearing_animation
+			if _appearing_animation
 			{
-				appearing_animation_part_sys =  part_system_create(covered ? ps_covered_crime_appearing : ps_crime_appearing_1);
-				part_system_position(appearing_animation_part_sys, x, y);
+				var  _appearing_animation_part_sys =  part_system_create(covered ? ps_covered_crime_appearing : ps_crime_appearing_1);
+				part_system_position(_appearing_animation_part_sys, x, y);
 				add_sound_to_play(new Sound(snd_sf_wind_crime, x, y, 0, false));
 			}
 		}
