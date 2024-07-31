@@ -6,10 +6,12 @@ if debug_mode
 
 var _crimes_distance = point_distance(crime_src_x, crime_src_y, crime_dst_x, crime_dst_y);
 var _crimes_angle = point_direction(crime_src_x, crime_src_y, crime_dst_x, crime_dst_y);
-
+var _duration_quotient = deployment_timer/DEPLOYMENT_DURATION;
+var _deployment_quotient = animcurve_channel_evaluate(deployment_animcurve_channel, _duration_quotient);
+var _angle = _crimes_angle + angle_ajustement;
 
 //SETTING STRING LENGTH
-var _duration_quotient = deployment_timer/DEPLOYMENT_DURATION;
+
 switch(deployment_state)
 {
 	case CASE_STRING_DEPLOYMENT_STATE.WAITING_FOR_DEPLOYMENT :
@@ -20,7 +22,10 @@ switch(deployment_state)
 				deployment_state = CASE_STRING_DEPLOYMENT_STATE.DEPLOYMENT_STARTED;
 		}
 		else
+		{
 			deployment_state = CASE_STRING_DEPLOYMENT_STATE.DEPLOYMENT_STARTED;
+			screen_shake(16, _angle);
+		}
 	break;
 	case CASE_STRING_DEPLOYMENT_STATE.DEPLOYMENT_STARTED :
 		deployment_timer ++;
@@ -47,10 +52,9 @@ switch(deployment_state)
 		}
 	break;
 }
-var _deployment_quotient = animcurve_channel_evaluate(deployment_animcurve_channel, _duration_quotient);
 
 string_y_scale = (_crimes_distance/string_sprite_height) * _deployment_quotient;
-var _angle = _crimes_angle + angle_ajustement;
+
 draw_sprite_ext(string_sprite, 0, crime_src_x, crime_src_y, 0.25, string_y_scale, _angle, color, 0.8);
 
 
@@ -64,5 +68,13 @@ if deployment_timer > 0 and deployment_timer < DEPLOYMENT_DURATION
     part_system_position(_part_sys, _x_end, _y_end);
 }
 
-
+//SCREEN SHAKE
+if screen_shake_done == false
+{
+	if deployment_timer >= DEPLOYMENT_DURATION/2
+	{
+		screen_shake_done = true;
+		screen_shake(10, _angle);
+	}
+}
 

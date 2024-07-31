@@ -14,3 +14,11 @@ cam_speed = DEFAULT_CAM_SPEED;
 zoom_coeff = 1;
 zoom_target = -1;
 zoom_speed = ZOOM_SPEED_DEFAULT;
+
+shake_force = 0;
+shake_angle = 0;
+shake_offset_x = 0;
+shake_offset_y = 0;
+shake_damping = 0.5;
+shake_frequency = 0.1;
+

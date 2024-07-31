@@ -45,6 +45,7 @@
     {"$GMObjectProperty":"v1","%Name":"crime_dst_x","filters":[],"listItems":[],"multiselect":false,"name":"crime_dst_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"crime_dst_y","filters":[],"listItems":[],"multiselect":false,"name":"crime_dst_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"no_animation","filters":[],"listItems":[],"multiselect":false,"name":"no_animation","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"screen_shake_done","filters":[],"listItems":[],"multiselect":false,"name":"screen_shake_done","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

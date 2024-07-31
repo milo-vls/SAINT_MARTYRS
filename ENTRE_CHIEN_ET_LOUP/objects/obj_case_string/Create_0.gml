@@ -9,6 +9,7 @@ enum CASE_STRING_DEPLOYMENT_STATE
 #macro DEPLOYMENT_DURATION CRIME_DELAY_FRAMES
 if no_animation
 {
+	screen_shake_done = true;
 	deployment_timer = DEPLOYMENT_DURATION;
 	deployment_state = CASE_STRING_DEPLOYMENT_STATE.DEPLOYMENT_DONE;
 }
