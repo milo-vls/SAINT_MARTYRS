@@ -5,3 +5,7 @@ if instance_coming_string_id != noone
 }
 if instance_giving_string_id != noone
 	delete_string(instance_giving_string_id);
+else
+	screen_shake(40, 0);
+	
+add_sound_to_play(new Sound(snd_sf_wind_crime, 0, 0, 0, true, 1, true) );

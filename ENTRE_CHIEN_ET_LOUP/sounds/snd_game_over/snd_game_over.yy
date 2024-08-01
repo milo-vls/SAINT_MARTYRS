@@ -12,8 +12,8 @@
   "duration":13.392,
   "name":"snd_game_over",
   "parent":{
-    "name":"SOUND EFFECTS",
-    "path":"folders/SOUNDS/SOUND EFFECTS.yy",
+    "name":"SCENERY",
+    "path":"folders/SOUNDS/SOUND EFFECTS/SCENERY.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

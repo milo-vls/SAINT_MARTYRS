@@ -12,7 +12,8 @@ function crime_appear(_crime_id, _appearing_animation, _covered)
 			{
 				var  _appearing_animation_part_sys =  part_system_create(covered ? ps_covered_crime_appearing : ps_crime_appearing_1);
 				part_system_position(_appearing_animation_part_sys, x, y);
-				add_sound_to_play(new Sound(snd_sf_wind_crime, x, y, 0, false));
+				add_sound_to_play(new Sound(covered ? snd_sf_wind_crime : snd_crime_appearance, x, y, 0, false));
+				
 			}
 		}
 		

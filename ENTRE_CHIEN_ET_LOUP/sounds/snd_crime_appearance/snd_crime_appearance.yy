@@ -1,16 +1,16 @@
 {
   "$GMSound":"",
-  "%Name":"snd_sf_wind_crime",
+  "%Name":"snd_crime_appearance",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "bitRate":144,
+  "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.192676,
-  "name":"snd_sf_wind_crime",
+  "duration":4.851474,
+  "name":"snd_crime_appearance",
   "parent":{
     "name":"SCENERY",
     "path":"folders/SOUNDS/SOUND EFFECTS/SCENERY.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_sf_wind_crime.wav",
-  "type":2,
+  "soundFile":"snd_crime_appearance.wav",
+  "type":0,
   "volume":1.0,
 }

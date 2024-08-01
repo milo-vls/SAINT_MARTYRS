@@ -34,7 +34,10 @@ switch(deployment_state)
 	break;
 	case CASE_STRING_DEPLOYMENT_STATE.DEPLOYMENT_DONE :
 		if to_be_destroyed
+		{
 			deployment_state = CASE_STRING_DEPLOYMENT_STATE.DESTROYING;
+			screen_shake_done = false;
+		}
 	break;
 	case CASE_STRING_DEPLOYMENT_STATE.DESTROYING :
 		deployment_timer --;
@@ -71,7 +74,8 @@ if deployment_timer > 0 and deployment_timer < DEPLOYMENT_DURATION
 //SCREEN SHAKE
 if screen_shake_done == false
 {
-	if deployment_timer >= DEPLOYMENT_DURATION/2
+	if (deployment_timer >= DEPLOYMENT_DURATION/2 and deployment_state == CASE_STRING_DEPLOYMENT_STATE.DEPLOYMENT_STARTED)
+	or (deployment_timer <= DEPLOYMENT_DURATION and deployment_state == CASE_STRING_DEPLOYMENT_STATE.DESTROYING)
 	{
 		screen_shake_done = true;
 		screen_shake(10, _angle);
