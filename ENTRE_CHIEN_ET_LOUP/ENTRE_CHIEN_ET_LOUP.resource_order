@@ -314,6 +314,7 @@
     {"name":"scr_depths","order":4,"path":"scripts/scr_depths/scr_depths.yy",},
     {"name":"scr_destroy_window","order":8,"path":"scripts/scr_destroy_window/scr_destroy_window.yy",},
     {"name":"scr_DialoguesOptionsSelect","order":2,"path":"scripts/scr_DialoguesOptionsSelect/scr_DialoguesOptionsSelect.yy",},
+    {"name":"scr_download_file","order":6,"path":"scripts/scr_download_file/scr_download_file.yy",},
     {"name":"scr_draw_window","order":3,"path":"scripts/scr_draw_window/scr_draw_window.yy",},
     {"name":"scr_EndOfCases","order":4,"path":"scripts/scr_EndOfCases/scr_EndOfCases.yy",},
     {"name":"scr_file_explorer_draw","order":3,"path":"scripts/scr_file_explorer_draw/scr_file_explorer_draw.yy",},

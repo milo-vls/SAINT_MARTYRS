@@ -18,8 +18,10 @@ function rm_initialisation_room_init()
 	global.current_cases_ids = array_create(0);
 	global.map_steps = array_create(0);
 	global.downloaded_files_index = array_create(0);
-	global.downloaded_files_index = [0, 1];
-	global.nb_downloaded_files = 2;
+	global.nb_downloaded_files = 0;
+	
+	try_download_file(0);
+	try_download_file(1);
 	
 	
 	global.street_types = csv_to_1d_array("street_types.csv");
