@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_paper_wind_0",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.126032,
+  "name":"snd_paper_wind_0",
+  "parent":{
+    "name":"WINDS",
+    "path":"folders/SOUNDS/SOUND EFFECTS/UI/PAPER/WINDS.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_paper_wind_0.wav",
+  "type":0,
+  "volume":0.3,
+}

@@ -8,4 +8,4 @@ if instance_giving_string_id != noone
 else
 	screen_shake(40, 0);
 	
-add_sound_to_play(new Sound(snd_sf_wind_crime, 0, 0, 0, true, 1, true) );
+add_sound_to_play(new Sound(snd_sf_wind_crime, x, y, 0, true, 1, true) );

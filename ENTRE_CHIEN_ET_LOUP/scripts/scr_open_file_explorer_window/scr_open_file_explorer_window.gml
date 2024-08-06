@@ -9,13 +9,15 @@ enum FILE_EXPLORER_WINDOW_STRUCT
 enum FILE_EXPLORER_PLACES
 {
 	HOME,
-	TEXT, 
+	TEXT,
+	PICTURE
 	
 }
 enum FILE_EXPLORER_FOLDER_TYPES
 {
 	FOLDER,
 	TEXT,
+	PICTURE,
 	
 }
 
@@ -27,10 +29,16 @@ function get_files_of_place(_file_explorer_place)
 	{
 		case FILE_EXPLORER_PLACES.HOME:
 			array_push(_files_to_return, new File("TEXTS", FILE_EXPLORER_PLACES.TEXT, FILE_EXPLORER_FOLDER_TYPES.FOLDER));
+			array_push(_files_to_return, new File("PICTURES", FILE_EXPLORER_PLACES.PICTURE, FILE_EXPLORER_FOLDER_TYPES.FOLDER));
 		break;
 		case FILE_EXPLORER_PLACES.TEXT:
 			array_push(_files_to_return, new File("<-", FILE_EXPLORER_PLACES.HOME, FILE_EXPLORER_FOLDER_TYPES.FOLDER));
 			array_push(_files_to_return, new File("yo le rap titre", "yo le rap", FILE_EXPLORER_FOLDER_TYPES.TEXT));
+			
+		break;
+		case FILE_EXPLORER_PLACES.PICTURE:
+			array_push(_files_to_return, new File("<-", FILE_EXPLORER_PLACES.HOME, FILE_EXPLORER_FOLDER_TYPES.FOLDER));
+			array_push(_files_to_return, new File("yo le rap titre", spr_file_night_in_indonesia, FILE_EXPLORER_FOLDER_TYPES.PICTURE));
 		break;
 	}
 	return _files_to_return;

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_open_file_explorer_window",
   "parent":{
-    "name":"DESKTOP ICONS",
-    "path":"folders/SCRIPTS/COMPUTER/DESKTOP ICONS.yy",
+    "name":"FILE SYSTEM",
+    "path":"folders/SCRIPTS/COMPUTER/FILE SYSTEM.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

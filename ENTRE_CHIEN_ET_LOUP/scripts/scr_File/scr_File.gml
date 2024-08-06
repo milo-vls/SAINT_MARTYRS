@@ -13,6 +13,9 @@ function get_file_extension(_file_type)
 		return "/";
 	if _file_type == FILE_EXPLORER_FOLDER_TYPES.TEXT
 		return ".text";
+	if _file_type == FILE_EXPLORER_FOLDER_TYPES.PICTURE
+		return ".picture";
+	
 }
 
 ///@param {struct.File} _text_file

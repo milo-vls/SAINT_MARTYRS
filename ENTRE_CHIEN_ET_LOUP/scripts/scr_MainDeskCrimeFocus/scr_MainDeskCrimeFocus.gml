@@ -22,10 +22,14 @@ function MainDeskCrimeFocus(_crime_id) : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FO
 		crime_sheet_to_use.shown = true;
 	}
 	activity = main_desk_crime_focus_activity;
+	
+	play_paper_wind(_crime_instance_is_left_sided ? 0 : room_width, room_height/2, false);
+	
 }
 
 function main_desk_crime_focus_activity()
 {
+	obj_units_ben.y = UNITS_BEN_HIDDEN_Y;
 	var _mouse_is_over_crime = instance_position(mouse_x, mouse_y, obj_crime);
 	var _mouse_over_change_color = crime_sheet_to_use.mouse_over_change_color;
 	if _mouse_is_over_crime != noone

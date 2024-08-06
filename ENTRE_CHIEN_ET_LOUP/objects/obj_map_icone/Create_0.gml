@@ -1,4 +1,4 @@
-#macro SHIFTING_SPEED 12
+#macro SHIFTING_SPEED 30
 
 first_y = y;
 if !shown 

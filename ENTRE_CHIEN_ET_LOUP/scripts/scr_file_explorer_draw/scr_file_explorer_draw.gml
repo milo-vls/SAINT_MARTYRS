@@ -54,6 +54,9 @@ function file_explorer_draw(_manager_id, _window)
 			case FILE_EXPLORER_FOLDER_TYPES.TEXT :
 				open_text_file(_selected_file);
 			break;
+			case FILE_EXPLORER_FOLDER_TYPES.PICTURE:
+				open_picture_file(_selected_file);
+			break;			
 		}
 	}
 	

@@ -1,8 +1,10 @@
 function MainDeskUnitSelection() : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, room, false, true, false, MENU_CHANNELS.MAIN_DESK_NEUTRAL) constructor 
 { 
+	static sound_to_play = new Sound(snd_paper_0, room_width/2, room_height, 0, false, 1, true);
+	
 	reset_release_timer();
 	pressed_unit_sheet = noone;
-	
+	add_sound_to_play(sound_to_play);
 	
 	activity = function()
 	{
