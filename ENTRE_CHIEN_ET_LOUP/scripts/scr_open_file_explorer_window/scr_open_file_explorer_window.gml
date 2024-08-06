@@ -32,14 +32,23 @@ function get_files_of_place(_file_explorer_place)
 			array_push(_files_to_return, new File("PICTURES", FILE_EXPLORER_PLACES.PICTURE, FILE_EXPLORER_FOLDER_TYPES.FOLDER));
 		break;
 		case FILE_EXPLORER_PLACES.TEXT:
+		case FILE_EXPLORER_PLACES.PICTURE:
 			array_push(_files_to_return, new File("<-", FILE_EXPLORER_PLACES.HOME, FILE_EXPLORER_FOLDER_TYPES.FOLDER));
-			array_push(_files_to_return, new File("yo le rap titre", "yo le rap", FILE_EXPLORER_FOLDER_TYPES.TEXT));
 			
-		break;
+			
+			
+			var _downloaded_text_files
+				= get_downloaded_files_of_given_type
+				( _file_explorer_place == FILE_EXPLORER_PLACES.TEXT ? FILE_EXPLORER_FOLDER_TYPES.TEXT : FILE_EXPLORER_FOLDER_TYPES.PICTURE);	
+			var _nb_files = array_length(_downloaded_text_files);
+			for (var _i = 0; _i < _nb_files; _i ++)
+				array_push(_files_to_return, _downloaded_text_files[_i]);
+			
+		break;/*
 		case FILE_EXPLORER_PLACES.PICTURE:
 			array_push(_files_to_return, new File("<-", FILE_EXPLORER_PLACES.HOME, FILE_EXPLORER_FOLDER_TYPES.FOLDER));
 			array_push(_files_to_return, new File("yo le rap titre", spr_file_night_in_indonesia, FILE_EXPLORER_FOLDER_TYPES.PICTURE));
-		break;
+		break;*/
 	}
 	return _files_to_return;
 }
