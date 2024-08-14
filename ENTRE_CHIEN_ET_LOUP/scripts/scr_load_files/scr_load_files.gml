@@ -9,7 +9,7 @@ function load_files()
 	var _files = array_create(0);
 	
 	//PICTURES
-	ADD_FILE "default", spr_file_night_in_indonesia F_PIC ;
+	ADD_FILE "default", spr_rec_hitbox F_PIC ;
 	
 	//TEXTS
 	ADD_FILE "infoOS", "Goupunix V1.45.4" T_PIC ;

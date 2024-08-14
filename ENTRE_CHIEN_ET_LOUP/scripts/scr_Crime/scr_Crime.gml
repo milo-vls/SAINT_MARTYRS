@@ -12,7 +12,7 @@ enum CRIME_COLORS
 	NB_OF_CRIME_COLORS
 }
 global.crime_colors[CRIME_COLORS.WHITE] = c_white;
-global.crime_colors[CRIME_COLORS.RED] = c_red;
+global.crime_colors[CRIME_COLORS.RED] = make_color_rgb(160,47,64);
 global.crime_colors[CRIME_COLORS.PINK] = c_fuchsia;
 global.crime_colors[CRIME_COLORS.BLACK] = c_black;
 global.crime_colors[CRIME_COLORS.YELLOW] = c_yellow;

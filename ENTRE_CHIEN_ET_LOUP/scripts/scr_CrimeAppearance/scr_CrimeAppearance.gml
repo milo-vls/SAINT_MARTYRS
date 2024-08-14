@@ -13,8 +13,17 @@ function CrimeAppearance(_crimes_ids) : Menu(MENU_PRIORITIES.CRIME_APPEARANCE, r
 	end_duration = room_speed * 1.5;
 	end_timer = 0;
 	
+	//DRAW METHOD VARIABLES
+	thorns_color = c_black;
+	thorns_alpha = 0;
+	thorns_sprite_height = sprite_get_height(spr_thorns);
+	thorns_sprite_width = sprite_get_width(spr_thorns);
+	nb_crimes_appeard_so_far = 0;
+	
+	
+	//METHODS
 	activity = crime_appearance_activity;
-	draw = function(){};
+	draw = crime_appearance_draw;
 	
 }
 function crime_appearance_activity()
@@ -43,7 +52,7 @@ function crime_appearance_activity()
 		if obj_menu_manager.get_active_menu(RoomTransition) == -1
 		{
 			room_transition_ended = true;
-			set_camera_zoom_target(.75);
+			set_camera_zoom_target(.65);
 			obj_camera.zoom_speed = 0.5;
 		}
 		else
@@ -73,6 +82,11 @@ function crime_appearance_activity()
 			crime_appear(sorted_crimes_ids[appearing_crime_id], true, !_is_first_of_case);
 			crime_timer = 0;
 			last_crime_is_first = _is_first_of_case;
+			
+			thorns_alpha = 1;
+			nb_crimes_appeard_so_far ++;
+
+			
 		}
 		
 		appearing_crime_id ++;
@@ -80,4 +94,33 @@ function crime_appearance_activity()
 	
 
 }
+
+function crime_appearance_draw()
+{
+	var _cam_x = camera_get_view_x(VIEW);
+	var _cam_y = camera_get_view_y(VIEW);
+	var _cam_width = camera_get_view_width(VIEW);
+	var _cam_height = camera_get_view_height(VIEW);
+	thorns_alpha = approach(thorns_alpha, 0, 0.05);
+	draw_set_alpha(thorns_alpha);
+	draw_set_color(make_color_rgb(160,47,64));
+	
+	draw_rectangle(_cam_x, _cam_y, _cam_x + _cam_width, _cam_y + _cam_height, false);
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -7,7 +7,6 @@ if zoom_coeff == zoom_target
 camera_set_view_size(VIEW, room_width * zoom_coeff, room_height * zoom_coeff);
 
 
-
 //POSITION
 //thx chtgpt
 if shake_force > 0
