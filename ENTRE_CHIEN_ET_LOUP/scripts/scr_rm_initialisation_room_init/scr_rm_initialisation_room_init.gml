@@ -10,7 +10,7 @@ function rm_initialisation_room_init()
 	#macro GAME_HEIGHT 1080
 
 
-	global.switches = array_create(SWITCHES.NUMBER_OF_SWITCHES);
+	global.switches = switches_init();
 	global.day_number = 0;
 	global.minimum_days_prediction = 1;
 	global.starting_date = date_create_datetime(2012, 09, 17, 19, 30, 0);

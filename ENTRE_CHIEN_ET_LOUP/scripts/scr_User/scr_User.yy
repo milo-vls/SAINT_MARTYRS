@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_User",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_User",
+  "parent":{
+    "name":"USER",
+    "path":"folders/SCRIPTS/COMPUTER/USER.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_switches_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_switches_init",
+  "parent":{
+    "name":"DATA",
+    "path":"folders/SCRIPTS/DATA.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

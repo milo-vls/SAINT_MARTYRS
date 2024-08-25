@@ -1,10 +1,6 @@
 #macro SAVE_FILE_NAME "blaises.pov"
 
-enum SWITCHES
-{
-	CRIMES_UP_TO_DATE,
-	NUMBER_OF_SWITCHES,
-}
+
 
 function save_game()
 {

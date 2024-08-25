@@ -16,8 +16,6 @@ function CrimeAppearance(_crimes_ids) : Menu(MENU_PRIORITIES.CRIME_APPEARANCE, r
 	//DRAW METHOD VARIABLES
 	thorns_color = c_black;
 	thorns_alpha = 0;
-	thorns_sprite_height = sprite_get_height(spr_thorns);
-	thorns_sprite_width = sprite_get_width(spr_thorns);
 	nb_crimes_appeard_so_far = 0;
 	
 	

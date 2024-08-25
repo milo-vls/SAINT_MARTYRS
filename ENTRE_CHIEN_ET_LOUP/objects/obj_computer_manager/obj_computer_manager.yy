@@ -38,6 +38,8 @@
     {"$GMObjectProperty":"v1","%Name":"cursor_y_offset","filters":[],"listItems":[],"multiselect":false,"name":"cursor_y_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"cursor_locked","filters":[],"listItems":[],"multiselect":false,"name":"cursor_locked","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"hovered_region","filters":[],"listItems":[],"multiselect":false,"name":"hovered_region","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"files","filters":[],"listItems":[],"multiselect":false,"name":"files","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"load_files()","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"users","filters":[],"listItems":[],"multiselect":false,"name":"users","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"get_users()","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

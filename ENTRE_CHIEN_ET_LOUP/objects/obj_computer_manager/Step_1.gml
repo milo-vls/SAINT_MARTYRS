@@ -1,3 +1,9 @@
+if keyboard_check(vk_escape)
+	logging_off_confirmation();
+
+if global.switches[SWITCHES.COMPUTER_UNLOCKED] == false
+	return;
+
 
 
 hovered_desktop_icon_instance = noone;
@@ -17,7 +23,7 @@ if hovered_window_id == -1
 }
 
 
-//WINDOW MOVE AND RESIZE
+//WINDOW MOVE
 if !left_click()
 {
 	if (cursor_locked == COMPUTER_WINDOW_BORDER_REGIONS.MOVE_AREA or cursor_locked == COMPUTER_WINDOW_BORDER_REGIONS.TOP_CENTER) 
