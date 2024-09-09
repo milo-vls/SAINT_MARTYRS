@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_custom_chatterbox_function_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_custom_chatterbox_function_init",
+  "parent":{
+    "name":"CHATTERBOX",
+    "path":"folders/SCRIPTS/TEXT/CHATTERBOX.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

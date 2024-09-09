@@ -21,6 +21,10 @@ function PhoneMenu() : Menu(MENU_PRIORITIES.PHONE_MENU, room, false, true, false
 	pressed_phone_key = noone;
 	map_icone_is_pressed = false;
 	
+	var _sub_elements = [new CardSubElement("[fnt_small_titles]" + text_id_to_string("REPERTORY"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT) ];
+	var _cards = [new Card(_sub_elements, function(){change_room(rm_phonebook)} )];
+	cards_set = new CardsSet(_cards, ORIENTATION.BOT_DOWN_PIN, CIRCLE_DIRECTION.NEGATIVE); 
+	
 	add_digit = function(_int)
 	{
 		if number_of_digits == 10
@@ -123,6 +127,7 @@ function PhoneMenu() : Menu(MENU_PRIORITIES.PHONE_MENU, room, false, true, false
 		{
 			map_icone_is_pressed = false;
 		}
+		cards_set.activity();
 		
 		
 	}
@@ -130,5 +135,7 @@ function PhoneMenu() : Menu(MENU_PRIORITIES.PHONE_MENU, room, false, true, false
 	{
 		draw_set_alpha(1); draw_set_color(c_black); draw_set_font(fnt_small_titles); draw_set_valign(fa_middle); draw_set_halign(fa_center);
 		draw_text(1010, 859, string(typed_digits));
+		
+		cards_set.draw();
 	}
 }

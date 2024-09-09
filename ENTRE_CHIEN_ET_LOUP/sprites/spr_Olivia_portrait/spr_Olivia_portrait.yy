@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"OLIVIA",
-    "path":"folders/OBJETCS/EXPLORATION/NPC/RESIDENTS/OLIVIA.yy",
+    "name":"PORTRAITS",
+    "path":"folders/SPRITES/DIALOGUES/PORTRAITS.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

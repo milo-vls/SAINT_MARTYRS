@@ -1,0 +1,118 @@
+title : PhoneExe
+position: -319,-295
+---
+<<if get_exe_dialogue_state()  == 0>>
+<<jump BlaiseFindHisName>>
+<<elseif get_exe_dialogue_state() == 1>>
+<<jump BlaiseInsists>>
+<<else>>
+Phone:Le numéro que vous souhaitez joindre est indisponible.
+<<endif>>
+===
+title: BlaiseFindHisName
+position: -5,-243
+---
+Exe:Allo ? Qui est à l'appareil ?
+->...
+        Blaise:...
+        Exe:C'est pas drôle.
+        Exe:22 heures n'est pas une heure pour appeler.
+        ->Oh merde j'avais pas vu l'heure désolé.
+                Blaise:Oh merde j'avais pas vu l'heure désolé.
+        ->Y'en a qui bosse. 
+                Blaise:Y'en a qui bosse.
+                Blaise:La justice ne dort jamais, sale ingrate.
+->Heu oulah je sais pas moi même.
+        Blaise:Heu oulah je sais pas moi même.
+->Salut madame tu es qui ?
+        Blaise:Salut madame, tu es qui ?
+Exe:Blaise ?! C'est bien toi ?
+Blaise:Ça dépend.
+Blaise:Est-ce que je suis policier dans le trou du cul du monde à tendances amnésiques ?
+Exe:J'y crois pas... 
+Exe:T'utilises ton téléphone de service pour m'appeler ?
+->C'est Blaise mon nom ?
+        Blaise:C'est Blaise mon nom du coup ?
+        Exe:...
+        Exe:Oui c'est ton nom. Maintenant dis moi pour quoi tu m'appelles. Après je bloque ce numéro. 
+->J'ai appelé un numéro écrit sur mon répertoire.
+Blaise:Ton numéro est écrit sur mon répertoire. C'est accompagné d'un petit cœur ...?
+Exe:Seigneur...
+Blaise:Dis moi j'ai zéro souvenirs là, est-ce que ...
+->...tu es une fille bien fichue ?
+        Blaise:...tu es une fille bien fichue ?
+        Exe:Va chier.
+->...tu es ma fiancée ou on est juste en flirt ?
+        Blaise:...tu es ma fiancée ou on est juste en flirt ?
+        Exe:Ni l'un ni l'autre.
+->...je te manque ?
+        Blaise:...je te manque ?
+        Exe:Non t'en fais pas pour moi.
+Exe:Il n'y a plus rien entre nous Blaise. On s'est séparé.
+Blaise:Ah mince.
+Blaise:Mh.
+Blaise:Le petit cœur doit dater d'avant la rupture pas d'inquiétudes !
+Exe:C'était il y a 3 ans.
+Blaise:Wow tu dois sacrément manquer au nul à qui appartient ce répertoire ^^.
+Exe:Ne rappelle pas.
+->Excuse moi...
+        Blaise:Excuse moi...
+        Exe:Prends soin de toi Blaise...
+->Attends je peux rayer le cœur si c'est ça qui te gêne !
+        Blaise:Attends je peux rayer le cœur si c'est ça qui te gêne !
+        Exe:Laisse tomber. Fais attention Blaise.
+->La pitié c'est pour les chiens ?
+        Blaise:La pitié c'est pour les chiens ?
+        Exe:C'est ta dernière chance cette ville.
+<<set_exe_met()>>
+===
+title: BlaiseInsists
+position: 36,-424
+---
+Exe:Quoi encore ?
+Blaise:Dis moi tout ce que tu sais de moi. Je n'ai aucun souvenir. 
+Exe:...
+->Tiens donc tu m'as pas bloqué ?
+        Blaise:Tiens donc tu m'as pas bloqué ?
+        Exe:Ne me mets pas au défi.
+        Exe:Tu veux de mon aide oui ou non ?
+        ->Oui, s'il te plaît.
+        ->Non, j'aurais jamais dû te rappeler.
+                Exe:Ahahah. Parfait, bon vent bouffon.
+->Je te laisse tranquille juste après je te jure !!!
+        Blaise:Je te laisse tranquille juste après je te jure !!!
+        Exe:Ça ne marche plus le coup du chien battu. Écoute bien, c'est la dernière fois que tu vas entendre ma voix.
+        <<jump ExeTellsAboutBlaise>>
+->Je mérite rien. Je suis misérable. Sauve-moi.
+        Blaise:Je mérite rien. Je suis misérable. Sauve-moi.
+        Exe:Profite pour la denière fois de ma voix, je vais te livrer la dure vérité.
+        Exe:Tu auras matière de quoi gamberger.
+        <<jump ExeTellsAboutBlaise>>
+===
+title: ExeTellsAboutBlaise
+position: 279,-341
+---
+Exe:Tu t'appelles Blaise. Tu as fait des études en droit, à la capitale.
+Exe:Après les révoltes de Mai, le ministère de l'ordre t'a muté en province, il y a 3 ans.
+Exe:Tu laisses rentrer les gens dans ta vie comme dans un moulin. Tu séduis le temps que ça dure, tu profites sans te soucier du reste.
+Exe:Aucune précautions, tu fais gaffe à rien...
+Blaise:Revenons sur une description socio-professionnelle je te prie.
+Exe:Je sais pas ce que tu fais maintenant. 
+Exe:En Mai 2009 t'étais encore que de la chair à cannon. T'es vite grimpé. T'as dû te mouiller les mains...
+Exe:Depuis tu ères de patelin en patelin. Parfois tu m'appellais depuis une cabine... Je pensais que tu étais passé à autre chose pour être franche.
+Exe:Je t'ai surestimé, faut croire.
+Blaise:Je suis un raté depuis trois ans...
+Exe:Oulah, non.
+Exe:Bien avant encore.
+Blaise:C'est tout ?
+Exe:Dans les grandes lignes.
+Blaise:T'en sais peu pour mon exe...
+Exe:Notre *couple* a duré un mois.
+Blaise:Qu'est-ce qu'il y a de bien chez moi ?
+Exe:On rit facilement de toi.
+Blaise:Génial...
+Exe:Le prends pas mal ahahah. Ça te donne un charme.
+Exe:...
+Exe:Bon je vais te laisser là. Ne rappelle pas.
+<<set_exe_met()>>
+===

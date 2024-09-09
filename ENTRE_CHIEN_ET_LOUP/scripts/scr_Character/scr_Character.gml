@@ -29,5 +29,10 @@ function get_character_by_nickname(_nickname)
 }
 function get_character_portrait_sprite(_nickname)
 {
-	return asset_get_index("spr_"+_nickname+"_portrait");
+	if _nickname == NO_ONE
+		return spr_character_noone;
+	var _sprite = asset_get_index(get_character_by_nickname(_nickname).sprite);
+	if sprite_exists(_sprite)
+		return _sprite;
+	return spr_character_noone;
 }

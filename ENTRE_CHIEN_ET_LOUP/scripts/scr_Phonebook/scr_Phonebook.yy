@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Phonebook",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Phonebook",
+  "parent":{
+    "name":"PHONE",
+    "path":"folders/SCRIPTS/MENU/MENUS/PHONE.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

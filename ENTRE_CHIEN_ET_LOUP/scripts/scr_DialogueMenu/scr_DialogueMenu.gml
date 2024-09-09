@@ -72,7 +72,12 @@ function DialogueMenu(_file_name, _starting_node) : Menu(MENU_PRIORITIES.DIALOGU
 	
 	text_bubbles = array_create(0);
 	selected_option_index = -1;
-	chatterbox = ChatterboxCreate(_file_name, true, 100000);
+	
+	
+	
+	chatterbox = ChatterboxCreate(_file_name, true, self);
+	
+	
 	
 	add_menu(new BlackScreen(function(){ return false == obj_menu_manager.dialogue_exists()}, 0.89));
 	ChatterboxJump(chatterbox, _starting_node);
@@ -121,11 +126,9 @@ function DialogueMenu(_file_name, _starting_node) : Menu(MENU_PRIORITIES.DIALOGU
 				next_text_bubble();
 			}
 		}
+		else if left_click_pressed()
 		{
-			if left_click_pressed()
-			{
-				text_bubbles[_nb_text_bubbles-1].typist.skip();
-			}
+			text_bubbles[_nb_text_bubbles-1].typist.skip();
 		}
 	}
 }

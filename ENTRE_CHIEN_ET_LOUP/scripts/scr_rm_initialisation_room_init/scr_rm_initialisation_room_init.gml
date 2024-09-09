@@ -25,11 +25,12 @@ function rm_initialisation_room_init()
 	
 	
 	global.street_types = csv_to_1d_array("street_types.csv");
-	global.characters = csv_to_structs_of_constructor("characters.csv", Character);var _nb_characters = array_length(global.characters);for (var _character_id = 0; _character_id < _nb_characters; _character_id ++)
+	global.characters = csv_to_structs_of_constructor("characters.csv", Character);
+	/*var _nb_characters = array_length(global.characters);for (var _character_id = 0; _character_id < _nb_characters; _character_id ++)
 	{
 		var _character_sprite = asset_get_index("spr_char_" + global.characters[_character_id].nickname);
 		global.characters[_character_id].sprite = asset_get_type(_character_sprite) == asset_sprite ? _character_sprite : spr_character_noone;
-	}
+	}*/
 	global.phone_numbers = csv_to_structs_of_constructor("phone_numbers.csv", PhoneNumber);
 	global.streets = csv_to_structs_of_constructor("streets.csv", Street);
 	global.addresses = csv_to_structs_of_constructor("addresses.csv", Address);
@@ -61,10 +62,12 @@ function rm_initialisation_room_init()
 	display_set_gui_size(GAME_WIDTH, GAME_HEIGHT);
 	surface_resize(application_surface, GAME_WIDTH, GAME_HEIGHT);
 	scribble_font_set_default("fnt_test");
+	custom_chatterbox_function_init();
 	
 	
 	global.day_events = set_day_events();
 	global.character_id_to_voices_map = set_characters_voices();
+	
 	
 	room_goto(rm_title_screen);
 }

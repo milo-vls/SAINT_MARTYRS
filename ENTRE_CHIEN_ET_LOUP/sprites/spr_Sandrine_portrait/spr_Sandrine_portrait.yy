@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"SANDRINE",
-    "path":"folders/OBJETCS/EXPLORATION/NPC/RESIDENTS/SANDRINE.yy",
+    "name":"PORTRAITS",
+    "path":"folders/SPRITES/DIALOGUES/PORTRAITS.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
