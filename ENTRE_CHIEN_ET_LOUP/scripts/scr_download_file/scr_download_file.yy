@@ -6,7 +6,7 @@
   "name":"scr_download_file",
   "parent":{
     "name":"FILE SYSTEM",
-    "path":"folders/SCRIPTS/COMPUTER/FILE SYSTEM.yy",
+    "path":"folders/SCRIPTS/GAMEPLAY SYSTEM/COMPUTER/FILE SYSTEM.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

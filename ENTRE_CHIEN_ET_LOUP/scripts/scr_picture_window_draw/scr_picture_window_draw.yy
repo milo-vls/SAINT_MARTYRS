@@ -6,7 +6,7 @@
   "name":"scr_picture_window_draw",
   "parent":{
     "name":"WINDOWED APPS DRAW CONTENT",
-    "path":"folders/SCRIPTS/COMPUTER/WINDOWS/WINDOWED APPS DRAW CONTENT.yy",
+    "path":"folders/SCRIPTS/GAMEPLAY SYSTEM/COMPUTER/WINDOWS/WINDOWED APPS DRAW CONTENT.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

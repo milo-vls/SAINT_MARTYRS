@@ -6,7 +6,7 @@
   "name":"scr_give_cursor_state",
   "parent":{
     "name":"WINDOWS",
-    "path":"folders/SCRIPTS/COMPUTER/WINDOWS.yy",
+    "path":"folders/SCRIPTS/GAMEPLAY SYSTEM/COMPUTER/WINDOWS.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

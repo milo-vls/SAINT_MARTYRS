@@ -6,7 +6,7 @@
   "name":"scr_get_window",
   "parent":{
     "name":"WINDOWS",
-    "path":"folders/SCRIPTS/COMPUTER/WINDOWS.yy",
+    "path":"folders/SCRIPTS/GAMEPLAY SYSTEM/COMPUTER/WINDOWS.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

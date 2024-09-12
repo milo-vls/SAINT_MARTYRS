@@ -1,4 +1,4 @@
-idPN,number
-0,1234
-1,0000
-2,0708
+idPN,number,text_id
+0,1234,
+1,0000,
+2,0708,EXE NUMBER

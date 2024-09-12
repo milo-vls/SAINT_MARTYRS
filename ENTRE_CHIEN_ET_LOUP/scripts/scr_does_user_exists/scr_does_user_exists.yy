@@ -6,7 +6,7 @@
   "name":"scr_does_user_exists",
   "parent":{
     "name":"USER",
-    "path":"folders/SCRIPTS/COMPUTER/USER.yy",
+    "path":"folders/SCRIPTS/GAMEPLAY SYSTEM/COMPUTER/USER.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

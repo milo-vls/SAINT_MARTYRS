@@ -6,7 +6,7 @@
   "name":"scr_computer_log_off",
   "parent":{
     "name":"LOG OFF",
-    "path":"folders/SCRIPTS/COMPUTER/DESKTOP ICONS/LOG OFF.yy",
+    "path":"folders/SCRIPTS/GAMEPLAY SYSTEM/COMPUTER/DESKTOP ICONS/LOG OFF.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
