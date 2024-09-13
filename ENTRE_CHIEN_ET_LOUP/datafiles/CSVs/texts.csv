@@ -56,10 +56,10 @@ UNIT DEPLOYED,DÉPLOYÉ,DEPLOYED
 COMPUTER,ORINATEUR,COMPUTER
 SYSTEM MESSAGE,Message système,System message
 LOG OFF CONFIRMATION,Voulez-vous vous déconnecter ?,Would you like to log off ?
-CMD WELCOME,Bonjour! Initialisation de votre ordinateur en cours...,Welcome, your computer is initializing...
+CMD WELCOME,Bonjour! Initialisation de votre ordinateur en cours...,Welcome. Your computer is initializing...
 CMD ASK USERNAME,Veuillez renseigner votre nom d'utilisateur :,PLease enter your user name:
 CMD ASK PSW,Veuillez renseigner le mot de passe :,PLease enter the password:
-CMD WRONG PSW,Mauvais mot de passe, veuillez réessayer:,Wrong password, please try again:
+CMD WRONG PSW,Mauvais mot de passe veuillez réessayer:,Wrong password please try again:
 CMD ESC QUIT,Echap pour quitter l'ordinateur.,Escape to quit to quit computer.
 ,,
 ,,
@@ -69,8 +69,8 @@ CMD ESC QUIT,Echap pour quitter l'ordinateur.,Escape to quit to quit computer.
 ,,
 PHONE,TÉLÉPHONE,PHONE
 REPERTORY,répertoire,phonebook
-EXE NUMBER, <3<3<3 07 08
-
+EXE NUMBER,♥ 07-08-33,♥ 07-08-33
+MOM NUMBER,Numéro de maman 48-75-30,Mom's number 48-75-30
 
 
 
