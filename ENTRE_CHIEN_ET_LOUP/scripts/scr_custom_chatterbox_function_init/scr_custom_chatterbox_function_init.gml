@@ -1,32 +1,34 @@
-function get_exe_dialogue_state()
-{
-	//0 : first call to be done
-	//1 : Blaise insists
-	//2 : Blaise is blocked
 
-		
-	if global.switches[SWITCHES.EXE_MET] == false
-		return 0;
-	if global.switches[SWITCHES.EXE_BLOCKED] == true
-		return 2
-	return 1
-			
-		
-}
-function set_exe_met()
+function set_switch_off()
 {
-	if global.switches[SWITCHES.EXE_MET] == false
-		global.switches[SWITCHES.EXE_MET] = true;
-	else
-		global.switches[SWITCHES.EXE_BLOCKED] = true;
+	variable_struct_set(global.switches, argument0[0], false);
 }
-	
+
+function set_switch_on()
+{
+	variable_struct_set(global.switches, argument0[0], true);
+}
+
+function set_switch()
+{
+	variable_struct_set(global.switches, argument0[0], argument0[1]);
+}
+
+function get_switch_state()
+{
+	var _result = variable_struct_get(global.switches, argument0[0]) ? 1 : 0;
+	return _result;
+}
+
+
 function custom_chatterbox_function_init()
 {
 	
-	ChatterboxAddFunction("set_exe_met", set_exe_met);
-	ChatterboxAddFunction("get_exe_dialogue_state", get_exe_dialogue_state);
-	
+	ChatterboxAddFunction("set_switch_off", set_switch_off);
+	ChatterboxAddFunction("set_switch_on", set_switch_on);
+	ChatterboxAddFunction("set_switch", set_switch);
+	ChatterboxAddFunction("get_switch_state", get_switch_state);
+
 }
 
 

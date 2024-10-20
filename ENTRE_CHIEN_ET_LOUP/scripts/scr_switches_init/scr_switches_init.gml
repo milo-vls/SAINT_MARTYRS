@@ -1,25 +1,27 @@
-enum SWITCHES
-{
-	CRIMES_UP_TO_DATE,
-	COMPUTER_UNLOCKED,
-	
-	#region DIALOGUES AND RELATIONS
-		#region EXE
-			EXE_MET,
-			EXE_BLOCKED,
-		#endregion
-	#endregion
-	
-	
-	NUMBER_OF_SWITCHES,
-	
-}
 
 
 
 function switches_init()
 {
-	var _array = array_create(SWITCHES.NUMBER_OF_SWITCHES, false);
+	var _struct = 
+	{
+		crimes_up_to_date : false,
+		computer_unlocked : false,
+		exe_met : false,
+		exe_blocked : false,
+		blaise_knows_his_last_name : false,
+	}
 	
-	return _array;
+	return _struct;
 }
+
+
+
+
+
+
+
+
+
+
+

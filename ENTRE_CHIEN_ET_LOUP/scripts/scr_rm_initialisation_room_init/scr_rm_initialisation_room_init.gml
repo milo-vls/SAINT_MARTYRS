@@ -25,6 +25,7 @@ function rm_initialisation_room_init()
 	obtain_phone_number_by_number_id(0);
 	obtain_phone_number_by_number_id(1);
 	obtain_phone_number_by_number_id(2);
+	obtain_phone_number_by_number_id(3);
 	
 	
 	global.street_types = csv_to_1d_array("street_types.csv");

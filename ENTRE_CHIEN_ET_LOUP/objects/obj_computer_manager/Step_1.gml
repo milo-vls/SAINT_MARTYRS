@@ -1,7 +1,7 @@
 if keyboard_check(vk_escape)
 	logging_off_confirmation();
 
-if global.switches[SWITCHES.COMPUTER_UNLOCKED] == false
+if global.switches.computer_unlocked == false
 	return;
 
 
@@ -50,7 +50,7 @@ if hovered_window_id >= 0
 		{
 			cursor_locked = hovered_region;
 			if hovered_region == COMPUTER_WINDOW_BORDER_REGIONS.MOVE_AREA or hovered_region == COMPUTER_WINDOW_BORDER_REGIONS.TOP_CENTER or hovered_region == COMPUTER_WINDOW_BORDER_REGIONS.CENTER
-				windows = give_window_focus(hovered_window_id);
+				give_window_focus(hovered_window_id);
 		}
 		//CHOSE THE CURSOR
 		switch hovered_region

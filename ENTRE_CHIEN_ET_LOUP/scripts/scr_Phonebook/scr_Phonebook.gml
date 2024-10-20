@@ -64,7 +64,7 @@ function draw_phonebook()
 	
 	for (var _i = 0; _i < _nb_phone_numbers_obtained; _i ++)
 	{
-		var _string_height = string_height(string_phone_numbers_to_show[_i]);
+		var _string_height = string_height(string_phone_numbers_to_show[_i])*2;
 		#macro CURRENT_PAGE 
 		var _occupied_height_on_current_page = _cumulated_height % surface_height;
 		var _remaining_height_on_current_page = surface_height - _occupied_height_on_current_page;

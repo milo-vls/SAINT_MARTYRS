@@ -7,4 +7,5 @@ Mom:Bonjour-
 Blaise:Ah salut Maman tu-
 Mom:Vous êtes bien sur le répondeur de Simone Vaurel, laissez un message, je prendrai le temps de vous répondre ultérieuement. Bonne journée.
 Blaise:...
+<<blaise_learns_his_last_name()>>
 ===

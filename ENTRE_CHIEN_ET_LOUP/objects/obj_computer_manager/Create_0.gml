@@ -1,4 +1,4 @@
-if global.switches[SWITCHES.COMPUTER_UNLOCKED] == true
+if global.switches.computer_unlocked == true
 	return;
 io_clear();
 user_input = "";
@@ -9,7 +9,6 @@ cmd_lines = array_create(0);
 array_push(cmd_lines, text_id_to_string("CMD WELCOME"));
 array_push(cmd_lines, text_id_to_string("CMD ASK USERNAME"));
 array_push(cmd_lines, text_id_to_string("CMD ESC QUIT"));
-array_push(cmd_lines, "");
 
 
 

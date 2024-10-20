@@ -1,1 +1,3 @@
-idA,idStreet,number,x,y
+idA,street_id,number,x,y
+0,0,5,461,600
+1,1,9,572,828

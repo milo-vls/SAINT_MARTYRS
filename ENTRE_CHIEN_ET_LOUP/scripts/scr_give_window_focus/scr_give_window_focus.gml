@@ -20,5 +20,5 @@ function give_window_focus(_window_id)
 	}
 	array_delete(_windows_copy, _initial_index, 1);
 	array_push(_windows_copy, _window);
-	return _windows_copy;
+	windows = _windows_copy;
 }

@@ -17,3 +17,6 @@ idC,nickname,first_name,last_name,address_id,phone_number_id,may_appear,room,spr
 15,Andrée,Andrée,Blanqui,,,1,rm_lovers_column,spr_Andree_portrait
 16,Hanz,Hanz,Raspail,,,1,rm_lovers_column,spr_Hanz_portrait
 17,Mom,Simone,Vaurel,,0,0,,spr_Phone_portrait
+18,Aaron,Aaron,Wonnik,,,0,,spr_Phone_portrait
+19,Pierre,Pierre,Étienne,0,,0,,spr_Phone_portrait
+20,Émilie,Émilie H.,Hiegel,1,,0,,spr_Phone_portrait

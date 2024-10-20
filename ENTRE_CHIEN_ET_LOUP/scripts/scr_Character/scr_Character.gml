@@ -36,3 +36,49 @@ function get_character_portrait_sprite(_nickname)
 		return _sprite;
 	return spr_character_noone;
 }
+function get_characters_by_address_id(_address_id)
+{
+	var _chars = global.characters;
+	var _nb_chars = array_length(_chars);
+	var _chars_found = array_create(0);
+	for (var _char_id = 0; _char_id < _nb_chars; _char_id ++)
+		if _chars[_char_id].address_id == string(_address_id)
+		 array_push(_chars_found, _char_id);
+		 
+	return _chars_found;
+}
+
+///@param {String} _first_name
+function character_of_this_first_name_exists(_first_name)
+{
+	var _chars = global.characters;
+	var _nb_chars = array_length(_chars);
+	
+	for (var _char_i = 0; _char_i < _nb_chars; _char_i ++)
+	{
+		if _chars[_char_i].first_name == _first_name
+			return true;
+	}
+	
+	return false;
+}
+
+
+///@param {String} _first_name
+///@param {String} _last_name
+
+function get_character_id_from_full_name(_first_name, _last_name)
+{
+	var _chars = global.characters;
+	var _nb_chars = array_length(_chars);
+	
+	for (var _char_i = 0; _char_i < _nb_chars; _char_i ++)
+	{
+		var _char = _chars[_char_i]
+		if _char.first_name == _first_name
+		and _char.last_name == _last_name
+			return _char_id;
+	}
+	
+	return -1;
+}

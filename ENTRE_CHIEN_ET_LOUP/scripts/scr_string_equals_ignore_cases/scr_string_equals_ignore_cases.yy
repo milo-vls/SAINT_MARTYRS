@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_string_equals_ignore_cases",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_string_equals_ignore_cases",
+  "parent":{
+    "name":"TEXT",
+    "path":"folders/SCRIPTS/TEXT.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

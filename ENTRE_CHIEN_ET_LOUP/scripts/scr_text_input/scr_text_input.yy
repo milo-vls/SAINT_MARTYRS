@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_text_input",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_text_input",
+  "parent":{
+    "name":"SCRIBBLE",
+    "path":"folders/SCRIPTS/TEXT/SCRIBBLE.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

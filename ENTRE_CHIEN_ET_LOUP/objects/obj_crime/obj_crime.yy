@@ -43,8 +43,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_crime_pin",
-    "path":"sprites/spr_crime_pin/spr_crime_pin.yy",
+    "name":"spr_crime_idle",
+    "path":"sprites/spr_crime_idle/spr_crime_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

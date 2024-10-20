@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_crime_pin",
   "bboxMode":0,
-  "bbox_bottom":162,
-  "bbox_left":18,
-  "bbox_right":199,
+  "bbox_bottom":121,
+  "bbox_left":13,
+  "bbox_right":149,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":188,
+  "height":141,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"aab65da0-275a-492a-ab7c-b00bc9344f7c","blendMode":0,"displayName":"default","isLocked":false,"name":"aab65da0-275a-492a-ab7c-b00bc9344f7c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":200,
+  "width":150,
 }

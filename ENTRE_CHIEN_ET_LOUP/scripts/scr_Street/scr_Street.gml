@@ -1,10 +1,16 @@
 function Street() constructor{}
 
 
-
-/*
-function Street(_name, _id_street_type) constructor
+///@param {String} _street_name_text_id
+function get_street_id_by_name(_street_name_text_id)
 {
-	name = _name;
-	id_street_type = _id_street_type;
+	var _streets = global.streets;
+	var _nb_streets = array_length(_streets);
+	
+	for (var _street_id = 0; _street_id < _nb_streets; _street_id ++)
+		if _streets[_street_id].name_text_id == _street_name_text_id
+			return _street_id;
+	
+	return -1;
 }
+

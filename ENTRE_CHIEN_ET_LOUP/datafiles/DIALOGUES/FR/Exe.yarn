@@ -1,12 +1,16 @@
 title : PhoneExe
 position: -319,-295
 ---
-<<if get_exe_dialogue_state()  == 0>>
-<<jump BlaiseFindHisName>>
-<<elseif get_exe_dialogue_state() == 1>>
-<<jump BlaiseInsists>>
-<<else>>
+
+<<if get_switch_state("exe_blocked")>>
 Phone:Le numéro que vous souhaitez joindre est indisponible.
+<<stop>>
+<<endif>>
+
+<<if get_switch_state("exe_met")  == 0>>
+<<jump BlaiseFindHisName>>
+<<else>>
+<<jump BlaiseInsists>>
 <<endif>>
 ===
 title: BlaiseFindHisName
@@ -28,7 +32,7 @@ Exe:Allo ? Qui est à l'appareil ?
         Blaise:Salut madame, tu es qui ?
 Exe:Blaise ?! C'est bien toi ?
 Blaise:Ça dépend.
-Blaise:Est-ce que je suis policier dans le trou du cul du monde à tendances amnésiques ?
+Blaise:Est-ce que je suis policier ?
 Exe:J'y crois pas... 
 Exe:T'utilises ton téléphone de service pour m'appeler ?
 ->C'est Blaise mon nom ?
@@ -64,7 +68,7 @@ Exe:Ne rappelle pas.
 ->La pitié c'est pour les chiens ?
         Blaise:La pitié c'est pour les chiens ?
         Exe:C'est ta dernière chance cette ville.
-<<set_exe_met()>>
+<<set_switch_on("exe_met")>>
 ===
 title: BlaiseInsists
 position: 36,-424
@@ -85,8 +89,8 @@ Exe:...
         <<jump ExeTellsAboutBlaise>>
 ->Je mérite rien. Je suis misérable. Sauve-moi.
         Blaise:Je mérite rien. Je suis misérable. Sauve-moi.
-        Exe:Profite pour la denière fois de ma voix, je vais te livrer la dure vérité.
-        Exe:Tu auras matière de quoi gamberger.
+        Exe:Profite pour la denière fois de ma voixn, Blaise.
+        Exe:T'auras matière à gamberger.
         <<jump ExeTellsAboutBlaise>>
 ===
 title: ExeTellsAboutBlaise
@@ -99,8 +103,8 @@ Exe:Aucune précautions, tu fais gaffe à rien...
 Blaise:Revenons sur une description socio-professionnelle je te prie.
 Exe:Je sais pas ce que tu fais maintenant. 
 Exe:En Mai 2009 t'étais encore que de la chair à cannon. T'es vite grimpé. T'as dû te mouiller les mains...
-Exe:Depuis tu ères de patelin en patelin. Parfois tu m'appellais depuis une cabine... Je pensais que tu étais passé à autre chose pour être franche.
-Exe:Je t'ai surestimé, faut croire.
+Exe:Depuis tu ères de patelin en patelin. Parfois tu m'appelles depuis une cabine... Je pensais que tu étais passé à autre chose pour être franche.
+Exe:je suis encore loin du compte on dirait.
 Blaise:Je suis un raté depuis trois ans...
 Exe:Oulah, non.
 Exe:Bien avant encore.
@@ -114,5 +118,5 @@ Blaise:Génial...
 Exe:Le prends pas mal ahahah. Ça te donne un charme.
 Exe:...
 Exe:Bon je vais te laisser là. Ne rappelle pas.
-<<set_exe_met()>>
+<<set_switch_on("exe_blocked")>>
 ===

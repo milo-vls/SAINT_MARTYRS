@@ -10,6 +10,8 @@ if disappearing
 }
 
 image_blend = global.crimes[crime_id].get_color();
+image_xscale = 0.75;
+image_yscale = image_xscale;
 draw_self();
 
 
