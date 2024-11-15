@@ -1,14 +1,14 @@
 #macro ADDRESS_SEARCH_ENGINE_WINDOW_WIDTH 1775
-#macro ADDRESS_SEARCH_ENGINE_WINDOW_HEIGHT 500
+#macro ADDRESS_SEARCH_ENGINE_WINDOW_HEIGHT 970
 
 enum ADDRESS_SEARCH_ENGINE_WINDOW_STRUCT
 {
 	SCREEN, //0 = HOME, 1 = WHO, 2 = WHERE
 	USER_INPUT,
 	TEXT_LINES,
-	FIRST_NAME,
+	LAST_NAME,
 	STREET_ID,
-	ADDRESSES,
+	
 	
 }
 
@@ -41,6 +41,54 @@ function address_search_engine_get_starting_lines(_screen_state)
 	
 	
 }
+
+
+
+function address_search_engine_last_name_command_handler(_command, _window, _lines_to_draw)
+{
+	var _characters_ids_having_command_as_last_name = get_characters_ids_by_last_name(_command);	
+	if array_length(_characters_ids_having_command_as_last_name) > 0
+	{
+		var _last_name = global.characters[_characters_ids_having_command_as_last_name[0]].last_name
+		array_push(_lines_to_draw, _last_name);
+		array_push(_lines_to_draw, text_id_to_string("ASE WHERE 2"));
+		
+		struct_set(_window, ADDRESS_SEARCH_ENGINE_WINDOW_STRUCT.LAST_NAME, _last_name);
+		
+		return;
+	}
+	var _error_text = text_id_to_string("ASE WHERE 1");
+	if array_last(_lines_to_draw) != _error_text
+		array_push(_lines_to_draw, _error_text);
+}
+
+function address_search_engine_first_name_command_handler(_command, _window, _lines_to_draw, _last_name)
+{
+	var _char_id = get_character_id_by_full_name(_command, _last_name);
+	
+	if _char_id == -1
+	{
+		var _error_text = text_id_to_string("ASE WHERE 3");
+		if array_last(_lines_to_draw) == _error_text
+			array_push(_lines_to_draw, _error_text);
+		return false;
+	}
+	
+	var _character = global.characters[_char_id];
+	var _address_id = _character.address_id;
+	
+	
+	array_delete(_lines_to_draw, 0, array_length(_lines_to_draw));
+	array_push(_lines_to_draw, get_character_full_name(_char_id));
+	array_push(_lines_to_draw, text_id_to_string("RESULTS"));
+	array_push(_lines_to_draw, get_address_full_name(_address_id));
+	array_push(_lines_to_draw, get_address_position_text(_address_id));
+	
+	
+	return true;
+	
+}
+
 
 
 ///@param _manager_id 
@@ -77,10 +125,16 @@ function address_search_engine_draw(_manager_id, _window)
 			_screen_state = int64(_command);
 		}
 		break;
-		case 1/*WHO*/:
+		case 1/*WHO*/:{
+		
+		
 		var _street_id = struct_get(_window, ADDRESS_SEARCH_ENGINE_WINDOW_STRUCT.STREET_ID)
 		if _command == ""
 			break;
+		
+		
+		
+		
 		if _street_id == -1
 		{
 			var _street_name_text_id = string_to_text_id(_command)
@@ -89,7 +143,6 @@ function address_search_engine_draw(_manager_id, _window)
 			{
 				array_push(_lines_to_draw, text_id_to_string(_street_name_text_id), text_id_to_string("ASE WHO 2"));
 				struct_set(_window, ADDRESS_SEARCH_ENGINE_WINDOW_STRUCT.STREET_ID, _street_id);
-				struct_set(_window, ADDRESS_SEARCH_ENGINE_WINDOW_STRUCT.STREET_ID, get_addresses_ids_of_given_street_id(_street_id));
 			}
 			else
 			{
@@ -97,14 +150,65 @@ function address_search_engine_draw(_manager_id, _window)
 				if array_last(_lines_to_draw) != _no_street_has_this_name_text
 					array_push(_lines_to_draw, _no_street_has_this_name_text);
 			}
+			
+			break;
 		}
-		else if address_id_of_number_from_given_ids(struct_get(_window, ADDRESS_SEARCH_ENGINE_WINDOW_STRUCT.ADDRESSES), _command) > -1
-			
-			
 		
-		break;
+		
+		
+		var _address_id = address_id_of_number_from_given_street(_street_id, real(_command))
+		var _characters = get_characters_by_address_id(_address_id);
+		
+		var _nb_chars = array_length(_characters);
+		
+		//delete warning message and signal success/faillure
+		if _nb_chars > 0
+		{
+			if array_last(_lines_to_draw) == text_id_to_string("ASE WHO 3")
+				array_delete(_lines_to_draw, array_length(_lines_to_draw)-1, 1);
+			
+			
+			array_push(_lines_to_draw, _command);
+			
+			_lines_to_draw = array_create(0);
+			var _results_header = string_concat(text_id_to_string(global.streets[_street_id].name_text_id)," ",_command, ". " ,  text_id_to_string("RESULTS"));
+			
+			array_push(_lines_to_draw, _results_header);
+			
+		}
+		else if array_last(_lines_to_draw) != text_id_to_string("ASE WHO 3")
+			array_push(_lines_to_draw, text_id_to_string("ASE WHO 3"));
+
+			
+		//show found chars	
+		for (var _i = 0; _i < _nb_chars; _i ++)
+			array_push(_lines_to_draw, get_character_full_name(_characters[_i]));
+		
+		var _starting_lines_to_push = address_search_engine_get_starting_lines(0);
+		for (var _i = 0; _i < array_length(_starting_lines_to_push); _i ++)
+			array_push(_lines_to_draw, _starting_lines_to_push[_i]);
+		
+		_screen_state = 0;
+		}break;
 		case 2:
-		
+		{
+			if _command == ""
+				break;
+			
+			
+			var _given_last_name = struct_get(_window, ADDRESS_SEARCH_ENGINE_WINDOW_STRUCT.LAST_NAME);
+			if _given_last_name == ""
+			{
+				address_search_engine_last_name_command_handler(_command, _window, _lines_to_draw)
+				break;
+			}
+			
+			
+			//LAST NAME OBTAINED
+			if address_search_engine_first_name_command_handler(_command, _window, _lines_to_draw, _given_last_name);
+				_screen_state = 0;
+			
+		}
 		break;
 	}
 	
@@ -115,6 +219,6 @@ function address_search_engine_draw(_manager_id, _window)
 	
 	draw_set_font(fnt_notpad);
 	draw_set_color(c_white);
-	draw_lines(array_func_push(_lines_to_draw, _user_input), 0, 27, 2, 1, "> ");
+	draw_lines(array_func_push(_lines_to_draw, _user_input), 0, 35, 2, 1, "> ");
 	
 }

@@ -1,6 +1,14 @@
 function Street() constructor{}
 
 
+
+function get_street_full_name(_street_id)
+{
+	//	
+}
+
+
+
 ///@param {String} _street_name_text_id
 function get_street_id_by_name(_street_name_text_id)
 {

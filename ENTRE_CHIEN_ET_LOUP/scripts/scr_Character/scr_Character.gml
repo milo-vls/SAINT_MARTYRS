@@ -12,6 +12,43 @@ function Character() constructor
 }
 
 
+function get_character_full_name(_char_id)
+{
+	var _char = global.characters[_char_id];
+	return string_concat(_char.first_name, " ",_char.last_name);
+}
+
+
+///@param {String} _last_name
+function get_characters_ids_by_last_name(_last_name)
+{
+	var _chars = global.characters;
+	var _chars_ids_by_last_name = array_create(0);
+	var _nb_chars = array_length(global.characters);
+	
+	for (var _char_id = 0; _char_id < _nb_chars; _char_id ++)
+		if string_equals_ignore_cases(_chars[_char_id].last_name, _last_name)
+			array_push(_chars_ids_by_last_name, _char_id);
+	
+	return _chars_ids_by_last_name;
+	
+}
+
+///@param {String} _first_name
+///@param {String} _last_name
+function get_character_id_by_full_name(_first_name, _last_name)
+{
+	var _shearched_full_name = string_concat(_first_name, " ", _last_name)
+	var _chars = global.characters;
+	var _nb_chars = array_length(global.characters);
+	
+	for (var _char_id = 0; _char_id < _nb_chars; _char_id ++)
+		if string_equals_ignore_cases(get_character_full_name(_char_id), _shearched_full_name)
+			return _char_id;
+	return -1;
+}
+
+
 function get_character_id_by_nickname(_nickname)
 {
 	var _character_id = -1;
@@ -41,6 +78,11 @@ function get_characters_by_address_id(_address_id)
 	var _chars = global.characters;
 	var _nb_chars = array_length(_chars);
 	var _chars_found = array_create(0);
+	
+	if _address_id < 0 
+		return _chars_found
+	
+	
 	for (var _char_id = 0; _char_id < _nb_chars; _char_id ++)
 		if _chars[_char_id].address_id == string(_address_id)
 		 array_push(_chars_found, _char_id);
@@ -66,7 +108,6 @@ function character_of_this_first_name_exists(_first_name)
 
 ///@param {String} _first_name
 ///@param {String} _last_name
-
 function get_character_id_from_full_name(_first_name, _last_name)
 {
 	var _chars = global.characters;

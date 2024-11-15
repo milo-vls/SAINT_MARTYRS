@@ -63,6 +63,8 @@ CMD WRONG PSW,Mauvais mot de passe veuillez réessayer:,Wrong password please tr
 CMD ESC QUIT,Echap pour quitter l'ordinateur.,Escape to quit to quit computer.
 APP TITLES,,
 ADDRESS SEARCH ENGINE TITLE,Chercheur d'adresse,Address Search Engine
+
+RESULTS,Résultats :,Results:
 ASE HOME 0,Que recherchez-vous ?,What are you looking for?
 ASE HOME 1,Tapez 1 pour savoir qui habite à l'adresse renseignée.,Type 1 to know who live at the given address.
 ASE HOME 2,Tapez 2 pour savoir à quelle adresse habite la personne renseignée.,Type 2 to know where the given person lives.
@@ -72,7 +74,7 @@ ASE WHO 2,Tapez le numéro de l'adresse recherchée.,Type the number of the desi
 ASE WHO 3,Numéro inconnu ou habitant non renseigné.,Unknown number or inhabitant not in database.
 ASE WHERE 0,Tapez le nom de famille de la personne habitant le lieu recherché.,Type the last name of the person living in the searched address.
 ASE WHERE 1,Nom de famille inconnu.,Last name unknown.
-ASE WHERE 2,Tapez le prénom de personne.,Type the first name of the person.
+ASE WHERE 2,Tapez le prénom de la personne.,Type the first name of the person.
 ASE WHERE 3,Prénom inconnu.,First name unknown.
 ,,
 ,,
@@ -94,7 +96,11 @@ COMP SERVICES NUMBER,44-71-06 (si problèmes ordi),44-71-06 (for computer issues
 ,,
 STREET TYPE,type de rue,street type
 ST STREET,rue,street
+ST BOULEVARD,boulevard,boulevard
+ST AVENUE,avenue,avenue
 ST CUL DE SAC,impasse,impasse
+ST SQUARE,place,square
+ST ROAD,route,road
 ,,
 ,,
 ,,
