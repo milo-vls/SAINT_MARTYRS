@@ -18,7 +18,7 @@ position: 156,168
 ---
 Blaise:J'ai besoin d'aide...
 ->J'ai plus mon mot de passe pour mon ordinateur.
-        <<>>//METTRE DIALOGUE PLUS COURT SI DEJA DONNÉ
+        //METTRE DIALOGUE PLUS COURT SI DEJA DONNÉ
 
         Blaise:J'ai plus mon mot de passe pour mon ordinateur. Je suis inspecteur détective de police, vous pouvez m'aider ?
         Phone:Bof pas vraiment.
@@ -31,7 +31,7 @@ Blaise:J'ai besoin d'aide...
                 Phone:Le tout en MAJUSCULES !! Retenez bien ça, j'ai plein d'abrutis qui arrivent pas à comprendre qu'un ordinateur fait la différence entre les majuscules et les minuscules.
                
                 ->Je connais mon nom d'utilisateur. 
-                        <<if get_exe_dialogue_state() == 0>>
+                        <<if get_switch_state("exe_met") == 0>>
                         Blaise:Trop facile, je m'appelle...
                         Blaise:Mon nom c'est...
                         Blaise:...
@@ -47,7 +47,7 @@ Blaise:J'ai besoin d'aide...
                         Blaise:Mon prénom c'est Blaise.
                         Phone:Okay. Bravo mon bon monsieur, puis-je savoir la première lettre de votre nom ?
 
-                        <<if blaise_knows_his_last_name() == 0>>
+                        <<if get_switch_state("blaise_knows_his_first_name") == 0>>
                         Blaise:Je suis vraiment désolé je le connais pas.
                         Phone:... Fallait le dire plutôt. J'ai du travail. Rappelez quand vous saurez votre nom de famille.
                         Blaise:Désolé hihi.
@@ -80,11 +80,11 @@ Blaise:J'ai besoin d'aide...
                         Blaise:B-l-a-i-s-e-T-a-M-e-r ?
                         Phone:Tout à fait.
                         Phone:C'est de très bon goût, si je peux me permettre.
-                        Blaise:BlaiseTaMer...C'est mon mot de passe...
+                        Blaise:BlaiseTaMer...C'est donc mon mot de passe...
                         Phone:Répétez le encore 3 fois pour voir ?
                         Blaise:BlaiseTaMer, BlaiseTaMer, BlaiseTa-
-                        Blaise:Une minute.
-                        Blaise:Il a racroché ! Sombre bâtard.
+                        Blaise:Allo ?
+                        Blaise:Il a racroché...
                         <<stop>>
 
                 ->Je vous rappelle quand je l'aurai en tête.
