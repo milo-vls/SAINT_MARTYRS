@@ -23,7 +23,6 @@ function rm_initialisation_room_init()
 	try_download_file(0);
 	try_download_file(1);
 	obtain_phone_number_by_number_id(0);
-	obtain_phone_number_by_number_id(1);
 	obtain_phone_number_by_number_id(2);
 	obtain_phone_number_by_number_id(3);
 	

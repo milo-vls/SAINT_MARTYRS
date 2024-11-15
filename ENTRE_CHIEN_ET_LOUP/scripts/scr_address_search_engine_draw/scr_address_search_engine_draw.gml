@@ -205,7 +205,7 @@ function address_search_engine_draw(_manager_id, _window)
 			
 			
 			//LAST NAME OBTAINED
-			if address_search_engine_first_name_command_handler(_command, _window, _lines_to_draw, _given_last_name);
+			if address_search_engine_first_name_command_handler(_command, _window, _lines_to_draw, _given_last_name)
 				_screen_state = 0;
 			
 		}
