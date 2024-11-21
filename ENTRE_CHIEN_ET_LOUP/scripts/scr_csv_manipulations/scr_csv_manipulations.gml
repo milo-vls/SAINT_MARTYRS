@@ -5,7 +5,7 @@ function csv_to_1d_array(_file_name)
 	var _ds_grid = load_csv("CSVs\\" + _file_name)
 	if _ds_grid == -1
 	{
-		show_error("The file " + _file_name +" have not been found", 1);	
+		show_error("The file " + _file_name +" has not been found", 1);	
 	}
 	
 	var _ds_grid_height = ds_grid_height(_ds_grid);

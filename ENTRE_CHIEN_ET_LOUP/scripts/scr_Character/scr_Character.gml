@@ -12,6 +12,13 @@ function Character() constructor
 }
 
 
+function character_may_appear(_char_id)
+{
+	var _to_return = global.characters[_char_id].may_appear == "1";
+	
+	return _to_return;
+}
+
 function get_character_full_name(_char_id)
 {
 	var _char = global.characters[_char_id];

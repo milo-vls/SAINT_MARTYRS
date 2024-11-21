@@ -29,6 +29,7 @@ function rm_initialisation_room_init()
 	
 	global.street_types = csv_to_1d_array("street_types.csv");
 	global.characters = csv_to_structs_of_constructor("characters.csv", Character);
+	global.presences =  csv_to_structs_of_constructor("presences.csv", Presence);
 	global.phone_numbers = csv_to_structs_of_constructor("phone_numbers.csv", PhoneNumber);
 	global.streets = csv_to_structs_of_constructor("streets.csv", Street);
 	global.addresses = csv_to_structs_of_constructor("addresses.csv", Address);

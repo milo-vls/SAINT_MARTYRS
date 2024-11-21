@@ -1,11 +1,15 @@
-function MainDesKPointsOfInterest() : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, room, false, true, false) constructor 
+function MainDesKPointsOfInterest(_visitable_rooms) : Menu(MENU_PRIORITIES.MAIN_DESK_CRIME_FOCUS, room, false, true, false) constructor 
 {
+	visitable_rooms_names = _visitable_rooms;
 	void_is_pressed = false;
 	pressed_point_of_interest = noone;
 	
 	draw = function()
 	{
-		obj_point_of_interest.shown = true;
+		var _rooms_names = visitable_rooms_names;
+		with obj_point_of_interest
+			if array_contains(_rooms_names, room_get_name(room_to_go))
+				shown = true;
 	}
 	activity = function()
 	{
