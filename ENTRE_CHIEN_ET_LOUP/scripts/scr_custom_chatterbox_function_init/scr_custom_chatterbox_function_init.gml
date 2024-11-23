@@ -31,6 +31,11 @@ function dialogue_set_background()
 	*/
 }
 
+function dialogue_get_day_number()
+{
+	return global.day_number;
+}
+
 function custom_chatterbox_function_init()
 {
 	
@@ -39,6 +44,7 @@ function custom_chatterbox_function_init()
 	ChatterboxAddFunction("set_switch", set_switch);
 	ChatterboxAddFunction("get_switch_state", get_switch_state);
 	ChatterboxAddFunction("background", dialogue_set_background);
+	ChatterboxAddFunction("get_day_number", dialogue_get_day_number);
 
 }
 
