@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_draw_background",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_draw_background",
+  "parent":{
+    "name":"MENU",
+    "path":"folders/SCRIPTS/MENU.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

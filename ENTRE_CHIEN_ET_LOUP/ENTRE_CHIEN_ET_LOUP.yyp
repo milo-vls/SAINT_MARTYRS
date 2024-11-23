@@ -446,6 +446,7 @@
     {"id":{"name":"scr_DialoguesOptionsSelect","path":"scripts/scr_DialoguesOptionsSelect/scr_DialoguesOptionsSelect.yy",},},
     {"id":{"name":"scr_does_user_exists","path":"scripts/scr_does_user_exists/scr_does_user_exists.yy",},},
     {"id":{"name":"scr_download_file","path":"scripts/scr_download_file/scr_download_file.yy",},},
+    {"id":{"name":"scr_draw_background","path":"scripts/scr_draw_background/scr_draw_background.yy",},},
     {"id":{"name":"scr_draw_window","path":"scripts/scr_draw_window/scr_draw_window.yy",},},
     {"id":{"name":"scr_EndOfCases","path":"scripts/scr_EndOfCases/scr_EndOfCases.yy",},},
     {"id":{"name":"scr_Exploration","path":"scripts/scr_Exploration/scr_Exploration.yy",},},

@@ -1,11 +1,16 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -254,38
+__PrivCrochet_tags: 
 title: First call
-position: 74,291
 ---
+<<background(0)>>
+
 Phone:Inspecteur.
 Phone:On se lève inspecteur. Il y a du neuf. Du boulot. De quoi justifier votre salaire.
 Phone:Vous trouverez sur la carte de votre bureau l'emplacement du crime commis la veille.
-Phone:Vous pouvez remercier vos collaborateurs.
-Phone:... Vous êtes là ?
+Phone:Vous pouvez remercier vos collaborateurs, ils ont placé une jolie punaise pour le marquer.
+Phone:...Vous êtes là ?
 Phone:Faites au moins semblant de vous occupez de cette affaire.
 Phone:Une dernière chose.
 Phone:Je vous rappelle que vous avez à votre entière disposition une voiture de fonction pour adresser toutes vos questions aux habitants présents en ville.
@@ -13,5 +18,5 @@ Phone:Bien sûr vous avez un ordinateur connectée à notre base de données et 
 Phone:Faites de votre mieux.
 Phone:...
 Phone:Dites, inspecteur, ça vous tuerait de répondre ?
-Phone:Cette affaire c'est votre dernière chance avant votre renvoie. Je le dis comme pour vous. Faites en ce que vous voulez. Bon vent. 
+Phone:Cette affaire c'est votre dernière chance avant votre renvoie. Faites en ce que vous voulez. Bon vent.
 ===
