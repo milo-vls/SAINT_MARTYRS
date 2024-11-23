@@ -36,6 +36,13 @@ function dialogue_get_day_number()
 	return global.day_number;
 }
 
+function dialogue_get_character_nb_interactions_today()
+{
+	var _nickname = argument0[0];
+	return get_character_by_nickname(_nickname).nb_interactions_today;
+}
+
+
 function custom_chatterbox_function_init()
 {
 	
@@ -45,6 +52,7 @@ function custom_chatterbox_function_init()
 	ChatterboxAddFunction("get_switch_state", get_switch_state);
 	ChatterboxAddFunction("background", dialogue_set_background);
 	ChatterboxAddFunction("get_day_number", dialogue_get_day_number);
+	ChatterboxAddFunction("get_nb_interactions_of", dialogue_get_character_nb_interactions_today);
 
 }
 

@@ -508,6 +508,7 @@
     {"id":{"name":"scr_precedent_crime_instance_of_same_color","path":"scripts/scr_precedent_crime_instance_of_same_color/scr_precedent_crime_instance_of_same_color.yy",},},
     {"id":{"name":"scr_Presence","path":"scripts/scr_Presence/scr_Presence.yy",},},
     {"id":{"name":"scr_reset_current_cases","path":"scripts/scr_reset_current_cases/scr_reset_current_cases.yy",},},
+    {"id":{"name":"scr_reset_nb_interactions","path":"scripts/scr_reset_nb_interactions/scr_reset_nb_interactions.yy",},},
     {"id":{"name":"scr_rm_computer_init","path":"scripts/scr_rm_computer_init/scr_rm_computer_init.yy",},},
     {"id":{"name":"scr_rm_dev_init","path":"scripts/scr_rm_dev_init/scr_rm_dev_init.yy",},},
     {"id":{"name":"scr_rm_game_over_init","path":"scripts/scr_rm_game_over_init/scr_rm_game_over_init.yy",},},

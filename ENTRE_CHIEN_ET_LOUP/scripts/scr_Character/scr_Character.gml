@@ -1,16 +1,15 @@
 function Character() constructor
 {
-
-	get_phone_number_id = function()
-	{
-		if phone_number_id == ""
-		{
-			return -1
-		}
-		return int64(phone_number_id);
-	}
+	nb_interactions_today = 0;
 }
 
+function phone_number_id_by_character_id(_char_id)
+{
+	var _char = global.characters[_char_id];
+	if _char.phone_number_id == ""
+		return -1;
+	return int64(phone_number_id);
+}
 
 function character_may_appear(_char_id)
 {

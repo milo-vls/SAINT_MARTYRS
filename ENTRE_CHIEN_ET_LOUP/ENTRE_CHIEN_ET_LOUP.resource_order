@@ -377,6 +377,7 @@
     {"name":"scr_precedent_crime_instance_of_same_case","order":13,"path":"scripts/scr_precedent_crime_instance_of_same_case/scr_precedent_crime_instance_of_same_case.yy",},
     {"name":"scr_precedent_crime_instance_of_same_color","order":12,"path":"scripts/scr_precedent_crime_instance_of_same_color/scr_precedent_crime_instance_of_same_color.yy",},
     {"name":"scr_Presence","order":6,"path":"scripts/scr_Presence/scr_Presence.yy",},
+    {"name":"scr_reset_nb_interactions","order":2,"path":"scripts/scr_reset_nb_interactions/scr_reset_nb_interactions.yy",},
     {"name":"scr_rm_computer_init","order":1,"path":"scripts/scr_rm_computer_init/scr_rm_computer_init.yy",},
     {"name":"scr_rm_dev_init","order":1,"path":"scripts/scr_rm_dev_init/scr_rm_dev_init.yy",},
     {"name":"scr_rm_game_over_init","order":1,"path":"scripts/scr_rm_game_over_init/scr_rm_game_over_init.yy",},
