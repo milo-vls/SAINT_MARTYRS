@@ -29,7 +29,7 @@
   "name":"rm_game_over",
   "parent":{
     "name":"GAME OVER",
-    "path":"folders/ROOMS/MENU ROOMS/GAME OVER.yy",
+    "path":"folders/ROOMS/SYSTEM ROOMS/GAME OVER.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

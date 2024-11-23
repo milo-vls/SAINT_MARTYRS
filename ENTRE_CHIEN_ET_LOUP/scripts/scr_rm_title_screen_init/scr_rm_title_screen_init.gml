@@ -6,8 +6,10 @@ function rm_title_screen_init()
 	"TITLE SCREEN NEW START",  
 	function()
 	{
-		sleep_to(0);
+		start_first_call_cutscene();
 	});
+	
+	
 	if file_exists(SAVE_FILE_NAME)
 	{
 		_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN START", function(_id_menu){start_cutscene_test();change_room(rm_dev)});

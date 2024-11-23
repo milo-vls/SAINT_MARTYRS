@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_first_call_cutscene",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_first_call_cutscene",
+  "parent":{
+    "name":"CUTSCENES",
+    "path":"folders/SCRIPTS/SEQUENCES/CUTSCENES.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

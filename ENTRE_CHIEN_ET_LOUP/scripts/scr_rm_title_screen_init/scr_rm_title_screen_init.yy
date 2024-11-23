@@ -6,7 +6,7 @@
   "name":"scr_rm_title_screen_init",
   "parent":{
     "name":"TITLE SCREEN",
-    "path":"folders/ROOMS/MENU ROOMS/TITLE SCREEN.yy",
+    "path":"folders/ROOMS/SYSTEM ROOMS/TITLE SCREEN.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
