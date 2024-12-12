@@ -304,6 +304,7 @@
     {"name":"scr_CardsSet","order":1,"path":"scripts/scr_CardsSet/scr_CardsSet.yy",},
     {"name":"scr_CardSubElement","order":2,"path":"scripts/scr_CardSubElement/scr_CardSubElement.yy",},
     {"name":"scr_Case","order":4,"path":"scripts/scr_Case/scr_Case.yy",},
+    {"name":"scr_change_day_number","order":4,"path":"scripts/scr_change_day_number/scr_change_day_number.yy",},
     {"name":"scr_change_room","order":2,"path":"scripts/scr_change_room/scr_change_room.yy",},
     {"name":"scr_char_id_by_phone_number","order":1,"path":"scripts/scr_char_id_by_phone_number/scr_char_id_by_phone_number.yy",},
     {"name":"scr_check_pswd","order":3,"path":"scripts/scr_check_pswd/scr_check_pswd.yy",},

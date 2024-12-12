@@ -1,11 +1,97 @@
-title : StartOlivia
-position: -74,0
- ---
- Olivia: Salut.
- ===
-title: PhoneOlivia
-position: 99,205
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -560,80
+__PrivCrochet_tags: 
+title: Init
 ---
-Olivia: Bonsoir vous êtes bien sur le répondeur d'Olivia n'hésitez pas à laisser un message.
- ===
+<<background(3)>>
 
+<<hopback>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -440,-440
+__PrivCrochet_tags: 
+title: Day1
+---
+<<hop Init>>
+
+
+<<if visited("Day1Inter1") is false>>
+<<jump Day1Inter1>>
+<<endif>>
+
+
+
+<<if visited("OliviaTellsAboutEnzino") is false >>
+Blaise:Excusez moi, je crains de paraître insistant mais la moindre information sur le crime qui a eu lieu non loin d'ici serait précieuse.
+Olivia:...
+Olivia:Je m'en fiche des histoires comme ça.
+Olivia:Par contre.
+<<jump OliviaTellsAboutEnzino>>
+<<endif>>
+
+
+
+<<if visited("Day1Inter2") is false>>
+<<jump Day1Inter2>>
+<<endif>>
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -40,-320
+__PrivCrochet_tags: 
+title: Day1Inter1
+---
+Blaise:Bonsoir madame.
+Olivia:Salut.
+Blaise:Vous faites quoi assise par terre ?
+Olivia:Rien... Sinon prendre en humilité.
+Blaise:Mais ça va ?
+Olivia:Oui.
+Blaise:Très bien...
+
+Blaise:Dites moi, sinon ça, je voulais savoir...
+->Vous avez entendu dire pour la meurtre qui a eu lieu en ville ?
+    Blaise:Vous avez entendu dire pour la meurtre qui a eu lieu en ville ?
+    Olivia:Je crois oui.
+    Blaise:C'est un peu inquiétant vous trouvez pas ?
+    Olivia:Oui je trouve.
+    Blaise:Et vous en sauriez pas plus ? Vous étiez dans le coins ?
+    Olivia:Moi non.
+    Olivia:Et puis je m'en fiche un peu.
+    <<jump OliviaTellsAboutEnzino>>
+->Vous vous mettez souvent au sol, seule, la nuit ?
+    Blaise:Vous vous mettez souvent au sol, seule, la nuit ?
+    Olivia:Pourquoi je me pose seule pour méditer dans le calme et le bleu de la nuit ?
+    Olivia:C'est évident.
+    Olivia:Voilà la raison inspecteur.
+    Olivia:J'attends qu'un nabot vienne me casser les pieds avec des questions débiles.
+    Blaise:Ben pas la peine d'être désagréable comme ça madame.
+    Blaise:Les temps sont pas faciles. Faut se serrer les coudes.
+    Olivia:Mais tout va très bien.
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -200,40
+__PrivCrochet_tags: 
+title: Day1Inter2
+---
+Olivia:Je crois vous avoir déjà suffisamment aider.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -800,-160
+__PrivCrochet_tags: 
+title: OliviaTellsAboutEnzino
+---
+Olivia:Enzino en sait plus je crois.
+
+<<if visited("Enzino.yarn:Day1") == 0 >>
+Blaise:C'est qui lui ?
+Olivia:Il traîne le soir. Vous le trouverez facilement.
+<<else>>
+Blaise:Ah tiens je croyais qu'il savait rien lui.
+<<endif>>
+
+Blaise:Mais sinon il raconte quoi ?
+Olivia:J'en sais rien. Demandez lui.
+Blaise:Ah bon okay.
+Blaise:Bonne soirée.
+===

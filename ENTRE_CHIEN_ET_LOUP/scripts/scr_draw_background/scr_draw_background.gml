@@ -15,7 +15,7 @@ switch _background_index
 		draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);
 	break;
 	case 3:
-		draw_set_alpha(1); draw_set_color(c_black);
+		draw_set_alpha(0.9); draw_set_color(c_black);
 		draw_rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, false);
 	break;
 }

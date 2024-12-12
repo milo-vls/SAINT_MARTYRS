@@ -1,4 +1,8 @@
 
+				////////////////
+				//* SWITCHES *//
+				////////////////
+
 function set_switch_off()
 {
 	variable_struct_set(global.switches, argument0[0], false);
@@ -20,6 +24,12 @@ function get_switch_state()
 	return _result;
 }
 
+
+
+				///////////////
+				//* SCENERY *//
+				///////////////
+
 function dialogue_set_background()
 {
 	background_index = argument0[0];
@@ -31,17 +41,46 @@ function dialogue_set_background()
 	*/
 }
 
+
+
+				/////////////////////
+				//* OTHER GETTERS *//
+				/////////////////////
+
 function dialogue_get_day_number()
 {
 	return global.day_number;
 }
+
+
+
+				/////////////////////////////////////////
+				//* NUMBER OF INTERACTIONS MANAGEMENT *//
+				/////////////////////////////////////////
 
 function dialogue_get_character_nb_interactions_today()
 {
 	var _nickname = argument0[0];
 	return get_character_by_nickname(_nickname).nb_interactions_today;
 }
+function dialogue_increase_character_nb_interactions()
+{
+	var _nickname = argument0[0];
+	return global.characters[get_character_id_by_nickname(_nickname)].nb_interactions_today ++;
+}
+function dialogue_set_character_nb_interactions()
+{
+	var _nickname = argument0[0];
+	var _increament = argument0[1];
+	
+	return global.characters[get_character_id_by_nickname(_nickname)].nb_interactions_today + _increament;
+}
 
+
+
+				//////////////////////////////////
+				//* ADDING FUNCTION AT STARTUP *//
+				//////////////////////////////////
 
 function custom_chatterbox_function_init()
 {
@@ -53,6 +92,9 @@ function custom_chatterbox_function_init()
 	ChatterboxAddFunction("background", dialogue_set_background);
 	ChatterboxAddFunction("get_day_number", dialogue_get_day_number);
 	ChatterboxAddFunction("get_nb_interactions_of", dialogue_get_character_nb_interactions_today);
+	ChatterboxAddFunction("increase_nb_interactions_of", dialogue_increase_character_nb_interactions);
+	ChatterboxAddFunction("set_nb_interactions_of", dialogue_set_character_nb_interactions);
+	
 
 }
 

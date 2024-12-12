@@ -6,7 +6,8 @@ function sleep_to(_day_number = global.day_number + 1)
 	var _room_to_get_up = rm_main_desk;
 	var _reseting_day = _day_number == global.day_number; //for game overs 
 	
-	global.day_number = _day_number;
+	change_day_number(_day_number);
+	
 	
 	todays_crimes_ids = crimes_ids_from_day_number(_day_number)
 	if array_length(todays_crimes_ids) > 0

@@ -1,21 +1,245 @@
 #__PrivCrochet_version:1
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 840,400
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: -160,-240
 __PrivCrochet_tags: 
-title: StartEnzino
+title: Day1
 ---
-<<set $day_number to get_day_number()>>
+<<hop Init>>
 
-<<if $day_number is 1>>
-<<jump Day1>>
+
+<<if visited("Day1Inter1") is false>>
+
+<<jump Day1Inter1>>
+
+<<endif>>
+
+
+
+<<jump Day1Inter2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 160,160
+__PrivCrochet_tags: 
+title: Init
+---
+<<set $nb_interactions to get_nb_interactions_of("Enzino")>>
+
+
+<<background(3)>>
+
+
+
+<<hopback>>
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -120,-200
+__PrivCrochet_tags: 
+title: Day1Inter1
+---
+Blaise:Bonsoir monsieur, vous êtes au courant pour ce qui s'est passé pas loin d'ici ?
+Enzino:Mmmh je sais pas. Vous pourriez préciser, monsieur l'agent ?
+Blaise:Je parle d'un meurtre.
+Enzino:De vue.
+Enzino:C'est la première fois que je vous vois. Pourtant la nouvelle d'un nouveau inspecteur arrivé en ville date d'il y a plusieurs semaines déjà.
+Enzino:Vous vous cachiez ?
+
+->Pas spécialement.
+    Blaise:Non pas spécialement.
+    Enzino:Pas ce chance alors.
+    Blaise:Le sort nous éloigne.
+    Enzino:Fêtons ce soir la chute du sort et notre liberté nouvelle.
+    Blaise:Que faire de ce fardeau ?
+->Oui, à cause des question comme les vôtres.
+    Blaise:Oui, pour éviter les question dans ce genre.
+    Enzino:Se cacher par peur qu'on nous demande pourquoi on se cache c'est stupide comme idée.
+    Blaise:Outrage à agent.
+    Enzino:Vous êtes resplendissant monsieur le flic.
+    Blaise:Bien dit ça par exemple.
+->T'es aveugle.
+    Blaise:T'es aveugle, je sors tous les soirs parler à des inconnus figure toi.
+    Enzino:Ah oui tiens donc. Je débute, vous avez des conseils ?
+    Blaise:Non.
+
+
+Blaise:Sinon ça, je vais vous demander de décliner votre identité.
+Enzino:Enzino.
+->C'est tout ?
+    Blaise:C'est tout ?
+    Enzino:Vous avez le droit de faire des contrôles ?
+    ->Bien sûr je suis flic.
+        Blaise:Bien sûr je suis flic.
+        Enzino:Bon très bien.
+        Enzino:Neroni Enzino, 25 ans. J'habite juste là.
+        ->T'es plus vieux que moi tu rigoles ?
+            Enzino:Je fais de l'exercice et mes nuits durent 9 heures !
+            ->Tu t'habilles surtout comme un gamin.
+                Blaise:Tu t'habilles surtout comme un gamin.
+                Enzino:Chacun fuit l'âge comme il l'entends.
+            ->Je travaille à temps plein.
+                Blaise:Je travaille à plein temps.
+                Blaise:J'ai un appartement à entretenir.
+                Blaise:Je ne connais pas l'odeur de l'argent des aides de l'État.
+                Enzino:Vous êtes un sacré con.
+                Blaise:Ah bah je vous permets pas.
+                Enzino:Excusez moi.
+        ->J'adore mon taf.
+            Blaise:J'adore mon taf.
+            Blaise:Ce contrôle était nécessaire.
+            Blaise:Pour la préservation de notre civilisation.
+    ->Je crois pas. Je vais vous faire confiance.
+        Blaise:Je crois pas. Dans le doute je vais vous donner raison.
+        Blaise:Enzino c'est déjà bien suffisant.
+        Enzino:Cette confiance que vous m'accordez ne sera pas facilement oublié.
+
+
+Blaise:On s'est un peu perdu. 
+Blaise:Vous ne savez donc rien de notre petite affaire ?
+Enzino:Du tout. Rien.
+Blaise:Bon...
+
+
+<<if visited("Olivia:OlivaTellsAboutEnzino")>>
+<<jump BlaiseAsksEnzinoFirstCrime>>
+<<endif>>
+
+Blaise:On se connaît toi et moi maintenant.
+Blaise:On peut se tutoyer Enzino ?
+Enzino:D'accord.
+Blaise:Parfait. 
+Blaise:Bonne soirée.
+Enzino:Bonne soirée inspecteur.
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -80,-160
+__PrivCrochet_tags: 
+title: Day1Inter2
+---
+<<if visited("Olivia:OliviaTellsAboutEnzino") is true>>
+<<jump BlaiseAsksEnzinoFirstCrime>>
+<<endif>>
+
+
+<<if visited("BlaiseAsksEnzinoFirstCrime") is false>>
+
+
+
+
+
+Blaise:Rebonsoir... 
+Blaise:Enzino... mon ami.
+Enzino:Rebonsoir.
+Blaise:C'est quand même bizarre que t'aies aucune infos. T'es sûr de chez sûr ?
+Enzino:Rien à vous dire non.
+Enzino:Désolé.
+Blaise:Enzino... mon très cher ami...
+
+Blaise:Ils vont me virer si j'avance pas sur ce dossier, tu dois m'aider, tu comprends ?
+Enzino:Vraiment navré je ne sais rien inspecteur.
+Blaise: :(
+
+
+<<else>>
+Blaise:Merci encore Enzino. Je suis content de pouvoir compter sur toi.
+Enzino:Ouep. T'inquiètes.
+Blaise:Je suis sérieux. Nous sommes lié par le destin toi et moi. La justice va régner.
+Enzino:Okay.
+Blaise:Comment elle s'appelle la meuf qui va mourir déjà ?
+Enzino:Émilie, comme éléphant. Hiegel, comme Hegel.
+Blaise:C'est quoi Hegel ?
+Enzino:Un voisin.
+Blaise:C'est pas un mnémotechnique si je le connais pas.
+Enzino:Mais ils sont pas pour toi les mnémotechniques.
+Blaise:Ah désolé.
 
 
 <<endif>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 1120,120
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: 120,-400
 __PrivCrochet_tags: 
-title: Day1
+title: BlaiseAsksEnzinoFirstCrime
 ---
-Enzino:Bonsoir.
+Blaise:Olivia t'as balancé.
+Blaise:Elle m'a dit que t'avais bossé l'affaire. Donc envoie ce que tu sais.
+
+Enzino:Super...
+Enzino:J'ai fait tout le travail. Et monsieur qui se cache profite.
+
+Blaise:Je suis venu faire l'interrogatoire quand même !
+Blaise:Je suis sur le terrain.
+
+Enzino:Vous allez nous laisser comme les autres.
+
+Blaise:Bah pourquoi je ferais ça ? Je suis pas «les autres», je suis moi.
+Blaise:Ah ça te rassure hein p'tit gars ? Garde tout, reste sur toi. Tu dois avoir raison, ne t'ouvres pas.
+Blaise:Mais tu te trompes. Cette ville c'est moi, Enzino.
+Blaise:...Souris au monde et le monde te sourira.
+Blaise:Alors sors de te zone de confort mec.
+Blaise:Et maintenant...
+
+->Tu sais ce qu'il te reste à faire...
+    Blaise:Tu sais ce qu'il te reste à faire...
+->Dis moi tout sinon mon boss menace de me virer pitié pitié pitié 
+    Blaise:Dis moi tout sinon mon boss menace de me virer pitié.
+    Blaise:Pitié.
+    Blaise:Ce taf c'est tout ce que j'ai. 
+    Enzino:...
+    Blaise:Tu peux pas me faire ça !
+
+Enzino:Pouah la dégaine...
+Enzino:C'est bon je vais te dire ce que j'ai trouvé.
+Enzino:Vous voyez la victime ? Son nom ?
+
+->Julie ?
+    Enzino:Non...
+    Enzino:C'est Pierre.
+->Clément !
+    Enzino:Non...
+    Enzino:C'est Pierre.
+->Aurore...
+    Enzino:Non...
+    Enzino:C'est Pierre.
+->Pénélope.
+    Enzino:Non...
+    Enzino:C'est Pierre.
+->Olivier.
+    Enzino:Non...
+    Enzino:C'est Pierre.
+->Marc...?
+    Enzino:Non...
+    Enzino:C'est Pierre.
+->Pierre ?
+    Enzino:Exact. C'est lui qui est mort.
+->Pas Julie.
+    Enzino:Oui ?
+    Blaise:J'ai rien dit de faux là.
+    Enzino:Oui bravo.
+    Enzino:C'est Pierre la victime.
+
+Enzino:Mais ce qu'on veut savoir...
+
+Blaise:C'est le prochain à y passer.
+
+Enzino:Voilà.
+Enzino:Je vais la faire courte, la prochaine s'appelle Émilie Hiegel.
+
+Blaise:T'as eu ça où ?
+
+Enzino:Si ça t'intéresse demande au chat. Il bosse avec le meurtrier.
+
+Blaise:La chance moi j'ai pas des pistes comme ça...
+
+Enzino:Émilie Hiegel. Retiens ça. Maintenant tu fais tes trucs de flics et tu protège la dame.
+
+Blaise:Émilie Hiegel... Mais je sais comment où est-ce qu'elle habite celle là ?
+
+Enzino:T'as pas une base de donnée d'enquêteur ? Je sais pas où elle habite désolé.
+Blaise:Oui t'as raison je dois avoir ça depuis mon ordinateur.
+Enzino:Très bien.
+Blaise:Tu me sauves la vie.
+Enzino:Je te t'en prie.
+
+Blaise:Mais pourquoi tu t'es intéressé à cette affaire en premier lieu ?
+Enzino:Je voulais savoir si j'étais le prochain, histoire de savoir si je dois éviter la ville un soir ou deux.
+Blaise:Ooh logique oui.
 ===

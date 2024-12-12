@@ -411,6 +411,7 @@
     {"id":{"name":"scr_CardsSet","path":"scripts/scr_CardsSet/scr_CardsSet.yy",},},
     {"id":{"name":"scr_CardSubElement","path":"scripts/scr_CardSubElement/scr_CardSubElement.yy",},},
     {"id":{"name":"scr_Case","path":"scripts/scr_Case/scr_Case.yy",},},
+    {"id":{"name":"scr_change_day_number","path":"scripts/scr_change_day_number/scr_change_day_number.yy",},},
     {"id":{"name":"scr_change_room","path":"scripts/scr_change_room/scr_change_room.yy",},},
     {"id":{"name":"scr_char_id_by_phone_number","path":"scripts/scr_char_id_by_phone_number/scr_char_id_by_phone_number.yy",},},
     {"id":{"name":"scr_Character","path":"scripts/scr_Character/scr_Character.yy",},},
