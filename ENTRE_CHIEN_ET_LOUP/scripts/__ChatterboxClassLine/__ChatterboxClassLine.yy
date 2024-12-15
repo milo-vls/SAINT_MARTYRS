@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__ChatterboxClassLine",
   "parent":{
-    "name":"omg i can't believe you looked in here",
-    "path":"folders/SCRIPTS/TEXT/CHATTERBOX/(System) (Don't look in here)/omg i can't believe you looked in here.yy",
+    "name":"Classes",
+    "path":"folders/SCRIPTS/TEXT/CHATTERBOX/(System) (Don't look in here)/omg i can't believe you looked in here/Classes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

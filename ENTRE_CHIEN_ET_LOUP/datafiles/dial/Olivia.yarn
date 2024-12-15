@@ -8,8 +8,8 @@ title: Init
 
 <<hopback>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -440,-440
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: -480,-400
 __PrivCrochet_tags: 
 title: Day1
 ---
@@ -37,7 +37,7 @@ Olivia:Par contre.
 <<endif>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -40,-320
+__PrivCrochet_position: -440,-360
 __PrivCrochet_tags: 
 title: Day1Inter1
 ---
@@ -70,20 +70,20 @@ Blaise:Dites moi, sinon ça, je voulais savoir...
     Olivia:Mais tout va très bien.
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -200,40
+__PrivCrochet_position: -400,-320
 __PrivCrochet_tags: 
 title: Day1Inter2
 ---
 Olivia:Je crois vous avoir déjà suffisamment aider.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -800,-160
+__PrivCrochet_position: -720,-400
 __PrivCrochet_tags: 
 title: OliviaTellsAboutEnzino
 ---
 Olivia:Enzino en sait plus je crois.
 
-<<if visited("Enzino.yarn:Day1") == 0 >>
+<<if visited("dial/Enzino.yarn:Day1Inter1") == 0 >>
 Blaise:C'est qui lui ?
 Olivia:Il traîne le soir. Vous le trouverez facilement.
 <<else>>

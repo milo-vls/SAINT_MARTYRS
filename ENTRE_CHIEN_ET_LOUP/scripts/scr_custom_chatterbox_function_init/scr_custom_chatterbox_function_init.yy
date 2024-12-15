@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_custom_chatterbox_function_init",
   "parent":{
-    "name":"CHATTERBOX",
-    "path":"folders/SCRIPTS/TEXT/CHATTERBOX.yy",
+    "name":"TEXT",
+    "path":"folders/SCRIPTS/TEXT.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

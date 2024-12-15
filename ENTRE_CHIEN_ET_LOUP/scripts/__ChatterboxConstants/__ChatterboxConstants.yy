@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"__ChatterboxConfig",
+  "%Name":"__ChatterboxConstants",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__ChatterboxConfig",
+  "name":"__ChatterboxConstants",
   "parent":{
     "name":"CHATTERBOX",
     "path":"folders/SCRIPTS/TEXT/CHATTERBOX.yy",

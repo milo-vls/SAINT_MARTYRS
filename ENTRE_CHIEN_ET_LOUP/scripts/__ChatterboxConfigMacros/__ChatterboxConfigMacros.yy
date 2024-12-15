@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__ChatterboxConfigMacros",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__ChatterboxConfigMacros",
+  "parent":{
+    "name":"CHATTERBOX",
+    "path":"folders/SCRIPTS/TEXT/CHATTERBOX.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

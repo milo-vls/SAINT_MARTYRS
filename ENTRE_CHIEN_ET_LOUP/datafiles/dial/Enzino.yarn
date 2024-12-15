@@ -98,7 +98,7 @@ Enzino:Du tout. Rien.
 Blaise:Bon...
 
 
-<<if visited("Olivia:OlivaTellsAboutEnzino")>>
+<<if visited("dial/Olivia.yarn:OliviaTellsAboutEnzino") > 0>>
 <<jump BlaiseAsksEnzinoFirstCrime>>
 <<endif>>
 
@@ -114,11 +114,6 @@ __PrivCrochet_position: -80,-160
 __PrivCrochet_tags: 
 title: Day1Inter2
 ---
-<<if visited("Olivia:OliviaTellsAboutEnzino") is true>>
-<<jump BlaiseAsksEnzinoFirstCrime>>
-<<endif>>
-
-
 <<if visited("BlaiseAsksEnzinoFirstCrime") is false>>
 
 
@@ -136,6 +131,10 @@ Blaise:Enzino... mon très cher ami...
 Blaise:Ils vont me virer si j'avance pas sur ce dossier, tu dois m'aider, tu comprends ?
 Enzino:Vraiment navré je ne sais rien inspecteur.
 Blaise: :(
+<<if visited("dial/Olivia.yarn:OliviaTellsAboutEnzino") > 0>>
+<<jump BlaiseAsksEnzinoFirstCrime>>
+<<endif>>
+
 
 
 <<else>>

@@ -14,6 +14,8 @@
 
 function ChatterboxLocalizationBuild(_yarn_path_array, _csv_path_array)
 {
+    static _system = __ChatterboxSystem();
+    
     if (!CHATTERBOX_LOCALIZATION_ACKNOWLEDGE_WARNING)
     {
         __ChatterboxError("THIS FUNCTION WILL MODIFY SOURCE FILES ON DISK INSIDE YOUR PROJECT\nENSURE YOU HAVE BACKED UP YOUR WORK IN SOURCE CONTROL\n \nSet CHATTERBOX_LOCALIZATION_ACKNOWLEDGE_WARNING to <true> to turn off this warning");
@@ -30,7 +32,7 @@ function ChatterboxLocalizationBuild(_yarn_path_array, _csv_path_array)
     {
         __ChatterboxError("ChatterboxLocalizationBuild() only available when running from the IDE");
     }
-    var _root_directory = filename_dir(GM_project_filename) + "/datafiles/" + global.__chatterboxDirectory;
+    var _root_directory = filename_dir(GM_project_filename) + "/datafiles/" + _system.__directory;
     
     if (!directory_exists(_root_directory))
     {
@@ -68,8 +70,8 @@ function ChatterboxLocalizationBuild(_yarn_path_array, _csv_path_array)
     var _i = 0;
     repeat(_count)
     {
-        var _local_path = _yarn_path_array[_i];
-        var _absolute_path = _root_directory + _local_path;
+        var _local_path    = __ChatterboxReplaceBackslashes(_yarn_path_array[_i]);
+        var _absolute_path = __ChatterboxReplaceBackslashes(_root_directory + _local_path);
         
         var _buffer = buffer_load(_absolute_path);
         var _source = new __ChatterboxClassSource(_local_path, _buffer, false);
@@ -96,8 +98,8 @@ function ChatterboxLocalizationBuild(_yarn_path_array, _csv_path_array)
         buffer_seek(_output_buffer, buffer_seek_start, 0);
         buffer_write(_output_buffer, buffer_text, "Status,File,Node,Line ID,Hash,Text\n");
         
-        var _local_path = _csv_path_array[_c];
-        var _absolute_path = _root_directory + _local_path;
+        var _local_path    = __ChatterboxReplaceBackslashes(_csv_path_array[_c]);
+        var _absolute_path = __ChatterboxReplaceBackslashes(_root_directory + _local_path);
         
         ds_map_clear(_csv_loc_map);
         __ChatterboxLocalizationLoadIntoMap(_absolute_path, _csv_loc_map, true);
@@ -165,7 +167,7 @@ function ChatterboxLocalizationBuild(_yarn_path_array, _csv_path_array)
                     buffer_write(_output_buffer, buffer_text, "\",\"");
                     buffer_write(_output_buffer, buffer_text, _new_hash);
                     buffer_write(_output_buffer, buffer_text, "\",\"");
-                    buffer_write(_output_buffer, buffer_text, _write_text);
+                    buffer_write(_output_buffer, buffer_text, __ChatterboxEscapeForCSV(_write_text));
                     buffer_write(_output_buffer, buffer_text, "\"\n");
                     
                     ++_s;
