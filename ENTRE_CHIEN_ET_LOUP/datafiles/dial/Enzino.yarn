@@ -25,7 +25,7 @@ title: Init
 <<set $nb_interactions to get_nb_interactions_of("Enzino")>>
 
 
-<<background(3)>>
+//<<background(3)>>
 
 
 

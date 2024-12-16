@@ -21,10 +21,12 @@ function TextBubble(_text, _speaking_character, _side, _text_color = DIALOGUES_B
 	starting_link_x = -1;
 	ending_link_x = -1;
 	
-	static left_side_bubble_x_rec_left = (GAME_WIDTH/2) - TEXT_BUBBLE_WIDTH - TEXT_BUBBLE_X_OFFSET;
-	static right_side_bubble_x_rec_left = (GAME_WIDTH/2)  + TEXT_BUBBLE_X_OFFSET;
+	static left_side_bubble_x_rec_left = (GAME_WIDTH/2) - TEXT_BUBBLE_WIDTH/2 + TEXT_BUBBLE_X_OFFSET;
+	static right_side_bubble_x_rec_left = (GAME_WIDTH/2) - TEXT_BUBBLE_WIDTH/2 - TEXT_BUBBLE_X_OFFSET;
+	
 	static left_side_bubble_x_rec_right = left_side_bubble_x_rec_left + TEXT_BUBBLE_WIDTH;
 	static right_side_bubble_x_rec_right = right_side_bubble_x_rec_left + TEXT_BUBBLE_WIDTH;
+	
 	static left_side_bubble_tail_x = left_side_bubble_x_rec_left + sprite_get_width(spr_text_bubble_tail)/2 + 10 ;
 	static right_side_bubble_tail_x = right_side_bubble_x_rec_right - sprite_get_width(spr_text_bubble_tail)/2 - 10;
 	

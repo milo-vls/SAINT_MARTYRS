@@ -185,13 +185,6 @@
     {"$GMIncludedFile":"","%Name":"Olivia.yarn","CopyToMask":-1,"filePath":"datafiles/dial","name":"Olivia.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"otherPhoneNumbers.yarn","CopyToMask":-1,"filePath":"datafiles/dial","name":"otherPhoneNumbers.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"test.yarn","CopyToMask":-1,"filePath":"datafiles/dial","name":"test.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"Cutscenes.yarn","CopyToMask":-1,"filePath":"datafiles/DIALOGUES","name":"Cutscenes.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"Enzino.yarn","CopyToMask":-1,"filePath":"datafiles/DIALOGUES","name":"Enzino.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"Exe.yarn","CopyToMask":-1,"filePath":"datafiles/DIALOGUES","name":"Exe.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"Mom.yarn","CopyToMask":-1,"filePath":"datafiles/DIALOGUES","name":"Mom.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"Olivia.yarn","CopyToMask":-1,"filePath":"datafiles/DIALOGUES","name":"Olivia.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"otherPhoneNumbers.yarn","CopyToMask":-1,"filePath":"datafiles/DIALOGUES","name":"otherPhoneNumbers.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"test.yarn","CopyToMask":-1,"filePath":"datafiles/DIALOGUES","name":"test.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[

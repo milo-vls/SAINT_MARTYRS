@@ -13,7 +13,13 @@ function next_text_bubble()
 	var _speaker = ChatterboxGetContentSpeaker(chatterbox, 0);
 	var _speech = ChatterboxGetContentSpeech(chatterbox, 0);
 	//IF THE TEXT IS EMPTY, THEN ENDS THE DIALOGUE
-	if _speech == "" {end_reached = true; return}
+	if _speech == "" 
+	{
+		end_reached = true;
+		with obj_npc
+			alpha_target = 1; 
+		return;
+		}
 	var _side;
 	if _nb_text_bubbles < 1
 	{
@@ -66,6 +72,14 @@ function draw_portraits(_left_sprite_portrait = -1, _right_sprite_portrait = -1)
 
 function dialogue_menu_draw_method()
 {	
+	/////////////////
+	//* HIDE NPCs *//
+	/////////////////
+	
+	with obj_npc
+		alpha_target = 0;
+	
+	
 	///////////////////
 	//* BACK GROUND *//
 	///////////////////
