@@ -6,9 +6,14 @@
 #macro GAP_BETWEEN_TEXT_BUBBLES (TEXT_BUBBLE_MARGIN/2)
 #macro GAP_BETWEEN_OPTION_BUBBLES GAP_BETWEEN_TEXT_BUBBLES
 #macro NO_ONE ""
+#macro SCROLLING_IN_DIALOGUES_SPEED  50
+
 
 function next_text_bubble()
 {
+	pixels_scrolled = 0;
+	
+	
 	var _nb_text_bubbles = array_length(text_bubbles);
 	var _speaker = ChatterboxGetContentSpeaker(chatterbox, 0);
 	var _speech = ChatterboxGetContentSpeech(chatterbox, 0);
@@ -100,7 +105,8 @@ function dialogue_menu_draw_method()
 	var _option_select_menu = obj_menu_manager.get_active_menu(DialoguesOptionsSelect);	
 	var _nb_text_bubbles = array_length(text_bubbles);
 	var _last_bubble = _nb_text_bubbles - 1;
-	self.text_bubbles[_last_bubble].y_bot  = min(TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET, _option_select_menu!=-1 ? GAME_HEIGHT - _option_select_menu.cards_set.get_highest_card_height() - GAP_BETWEEN_TEXT_BUBBLES*2.5 : TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET);
+	self.text_bubbles[_last_bubble].y_bot = min(TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET, _option_select_menu!=-1 ? GAME_HEIGHT - _option_select_menu.cards_set.get_highest_card_height() - GAP_BETWEEN_TEXT_BUBBLES*2.5 : TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET);
+	self.text_bubbles[_last_bubble].y_bot -= pixels_scrolled;
 	for (var _i = _last_bubble - 1; _i >= 0; _i --)
 	{
 		text_bubbles[_i].y_bot = text_bubbles[_i + 1].y_bot  - text_bubbles[_i + 1].get_height() - GAP_BETWEEN_TEXT_BUBBLES;
@@ -114,6 +120,25 @@ function dialogue_menu_draw_method()
 
 function dialogue_menu_activity_method()
 {
+	/////////////////
+	//* SCROLLING *//
+	/////////////////
+	if mouse_wheel_up()
+	{
+		var _y_top_first_bubble = text_bubbles[0].y_bot - text_bubbles[0].get_height();
+		if _y_top_first_bubble < 0
+			pixels_scrolled -= SCROLLING_IN_DIALOGUES_SPEED;
+	}
+	if mouse_wheel_down() 
+		pixels_scrolled += SCROLLING_IN_DIALOGUES_SPEED;
+	
+	pixels_scrolled = min(pixels_scrolled, 0);
+	
+	/////////////////////////
+	//* CONTINUE DIALOGUE *//
+	/////////////////////////
+	
+	
 	var _nb_text_bubbles = array_length(text_bubbles);
 	if  text_bubbles[_nb_text_bubbles-1].is_fully_shown()
 	{
@@ -151,7 +176,7 @@ function DialogueMenu(_file_name, _starting_node) : Menu(MENU_PRIORITIES.DIALOGU
 {
 	
 	background_index = -1;
-	
+	pixels_scrolled  = 0;
 	
 	
 	right_character_nickname = NO_ONE;
