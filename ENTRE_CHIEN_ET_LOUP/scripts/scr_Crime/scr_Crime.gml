@@ -77,7 +77,31 @@ function Crime() constructor
 	{
 		return first_of_case == "1";
 	}
-
+	get_hour = function()
+	{
+		return self.hour;
+	}
+	get_hour_string = function()
+	{
+		var _hour_string = string(self.get_hour());
+		return string_length(_hour_string) == 1 ? "0" + _hour_string : _hour_string;
+	}
+	get_minute = function()
+	{
+		return self.minute;
+	}
+	get_minute_string = function()
+	{
+		var _minute_string = string(self.get_minute());
+		return string_length(_minute_string) == 1 ? "0" + _minute_string : _minute_string;
+	}
+	get_hour_minute_string = function()
+	{
+		return self.get_hour_string() + ":" + self.get_minute_string();
+	}
+	
+	
+	
 	is_more_recent_than = function(_crime)
 	{
 		if self.day_number > _crime.day_number return 1;
@@ -101,6 +125,39 @@ function Crime() constructor
 	
 
 }
+
+function crime_get_clues_sprite(_crime_id)
+{
+	var _to_return = array_create(0);
+	var _crime = global.crimes[_crime_id];
+	
+	if _crime.sprite_name_clue_1 != ""
+		array_push(_to_return, asset_get_index(_crime.sprite_name_clue_1));
+	if _crime.sprite_name_clue_2 != ""
+		array_push(_to_return, asset_get_index(_crime.sprite_name_clue_1));
+	if _crime.sprite_name_clue_3 != ""
+		array_push(_to_return, asset_get_index(_crime.sprite_name_clue_1));
+	if _crime.sprite_name_clue_4 != ""
+		array_push(_to_return, asset_get_index(_crime.sprite_name_clue_1));
+	
+	return _to_return;
+}
+
+function crime_get_portrait(_crime_id)
+{
+	return asset_get_index(global.crimes[_crime_id].portrait);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

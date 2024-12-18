@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_MainDeskCrimeFocusSimple",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_MainDeskCrimeFocusSimple",
+  "parent":{
+    "name":"MAP",
+    "path":"folders/SCRIPTS/MENU/MENUS/MAP.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

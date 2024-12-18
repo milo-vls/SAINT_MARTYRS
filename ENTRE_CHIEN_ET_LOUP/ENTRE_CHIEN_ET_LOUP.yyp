@@ -193,7 +193,7 @@
     {"name":"em_circle_centered_out","path":"particlelib/em_circle_centered_out/em_circle_centered_out.yy",},
   ],
   "MetaData":{
-    "IDEVersion":"2024.6.0.157",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"ENTRE_CHIEN_ET_LOUP",
   "resources":[
@@ -512,6 +512,7 @@
     {"id":{"name":"scr_main_deck_to_exploration","path":"scripts/scr_main_deck_to_exploration/scr_main_deck_to_exploration.yy",},},
     {"id":{"name":"scr_main_desk_to_phone","path":"scripts/scr_main_desk_to_phone/scr_main_desk_to_phone.yy",},},
     {"id":{"name":"scr_MainDeskCrimeFocus","path":"scripts/scr_MainDeskCrimeFocus/scr_MainDeskCrimeFocus.yy",},},
+    {"id":{"name":"scr_MainDeskCrimeFocusSimple","path":"scripts/scr_MainDeskCrimeFocusSimple/scr_MainDeskCrimeFocusSimple.yy",},},
     {"id":{"name":"scr_MainDeskNeutral","path":"scripts/scr_MainDeskNeutral/scr_MainDeskNeutral.yy",},},
     {"id":{"name":"scr_MainDesKPointsOfInterest","path":"scripts/scr_MainDesKPointsOfInterest/scr_MainDesKPointsOfInterest.yy",},},
     {"id":{"name":"scr_MainDeskUnitFocus","path":"scripts/scr_MainDeskUnitFocus/scr_MainDeskUnitFocus.yy",},},
@@ -519,6 +520,7 @@
     {"id":{"name":"scr_make_value_dependant_to_arrow_keys","path":"scripts/scr_make_value_dependant_to_arrow_keys/scr_make_value_dependant_to_arrow_keys.yy",},},
     {"id":{"name":"scr_malus_distribution_init","path":"scripts/scr_malus_distribution_init/scr_malus_distribution_init.yy",},},
     {"id":{"name":"scr_Malus","path":"scripts/scr_Malus/scr_Malus.yy",},},
+    {"id":{"name":"scr_map_coordinates_string","path":"scripts/scr_map_coordinates_string/scr_map_coordinates_string.yy",},},
     {"id":{"name":"scr_Menu","path":"scripts/scr_Menu/scr_Menu.yy",},},
     {"id":{"name":"scr_MenuGuideLine","path":"scripts/scr_MenuGuideLine/scr_MenuGuideLine.yy",},},
     {"id":{"name":"scr_navigation_arrow_functions","path":"scripts/scr_navigation_arrow_functions/scr_navigation_arrow_functions.yy",},},

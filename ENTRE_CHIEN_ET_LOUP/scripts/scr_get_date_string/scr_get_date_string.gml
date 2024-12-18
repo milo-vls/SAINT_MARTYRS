@@ -1,4 +1,4 @@
-function get_date_string(_day_number = global.day_number)
+function get_date_string(_day_number = global.day_number, _show_year = true, _show_month = true)
 {
 	var _date = day_number_to_date(_day_number);
 	var _month_string = text_id_to_string("MONTH"+string(date_get_month(_date)));
@@ -7,8 +7,19 @@ function get_date_string(_day_number = global.day_number)
 	switch(global.language)
 	{
 		case LANGUAGES.EN:
-		return _month_string + " " + _day_string + " " + _year_string;
+		return 
+		( _show_month ? _month_string + " " : "" ) 
+		+ 
+		_day_string
+		+ 
+		( _show_year ?  (" " + _year_string) : "" );
+		
 		case LANGUAGES.FR:
-		return _day_string + " " + _month_string + " " + _year_string;
+		return 
+		_day_string 
+		+ 
+		( _show_month ? " " + _month_string : "" ) 
+		+
+		( _show_year ?  (" " + _year_string) : "" );
 	}
 }

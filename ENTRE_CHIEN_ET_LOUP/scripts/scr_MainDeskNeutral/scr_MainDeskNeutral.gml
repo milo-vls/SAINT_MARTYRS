@@ -54,7 +54,7 @@ function main_desk_neutral_activity()
 	var _mouse_is_over_crime = instance_position(mouse_x, mouse_y, obj_crime);
 	if _mouse_is_over_crime == pressed_crime and left_click_released() and _mouse_is_over_crime > -1
 	{
-		return add_menu(new MainDeskCrimeFocus(pressed_crime.crime_id));
+		return add_menu(new MainDeskCrimeFocusSimple(pressed_crime.crime_id));
 	}
 	if _mouse_is_over_crime > -1 and left_click_pressed() 
 	{

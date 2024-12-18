@@ -24,6 +24,15 @@ function get_character_full_name(_char_id)
 	return string_concat(_char.first_name, " ",_char.last_name);
 }
 
+function character_get_first_name(_char_id)
+{
+	return global.characters[_char_id].first_name;
+}
+
+function character_get_last_name(_char_id)
+{
+	return global.characters[_char_id].last_name;
+}
 
 ///@param {String} _last_name
 function get_characters_ids_by_last_name(_last_name)
