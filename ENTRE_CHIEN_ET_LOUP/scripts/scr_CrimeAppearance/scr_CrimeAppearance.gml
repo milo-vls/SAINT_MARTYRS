@@ -1,4 +1,4 @@
-function CrimeAppearance(_crimes_ids) : Menu(MENU_PRIORITIES.CRIME_APPEARANCE, rm_main_desk, false, true, false) constructor 
+function CrimeAppearance(_crimes_ids) : Menu(MENU_PRIORITIES.CRIME_APPEARANCE, rm_main_desk, false, false, false) constructor 
 {
 	#macro CRIME_DELAY_FRAMES (room_speed * 0.5)
 	

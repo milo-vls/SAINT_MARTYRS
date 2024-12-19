@@ -5,7 +5,7 @@ function switches_init()
 {
 	var _struct = 
 	{
-		crimes_up_to_date : false,
+		day_intro_done : false,
 		computer_unlocked : false,
 		exe_met : false,
 		exe_blocked : false,
