@@ -1,24 +1,30 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -160,-240
+__PrivCrochet_position: -200,-520
 __PrivCrochet_tags: 
 title: Day1
 ---
 <<hop Init>>
 
 
+<<if visited("BlaiseAsksEnzinoFirstCrime") is true and visited("Day1BlaiseThanksEnzino") is false >>
+<<jump Day1BlaiseThanksEnzino>>
+<<endif>>
+
 <<if visited("Day1Inter1") is false>>
 
 <<jump Day1Inter1>>
 
-<<endif>>
-
-
+<<elseif visited("Day1Inter2") is false>>
 
 <<jump Day1Inter2>>
+
+<<endif>>
+
+<<jump Day1Inter3>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 160,160
+__PrivCrochet_position: 560,240
 __PrivCrochet_tags: 
 title: Init
 ---
@@ -32,7 +38,7 @@ title: Init
 <<hopback>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -120,-200
+__PrivCrochet_position: -480,-320
 __PrivCrochet_tags: 
 title: Day1Inter1
 ---
@@ -110,15 +116,11 @@ Blaise:Bonne soirée.
 Enzino:Bonne soirée inspecteur.
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -80,-160
+__PrivCrochet_position: -200,-280
 __PrivCrochet_tags: 
 title: Day1Inter2
 ---
 <<if visited("BlaiseAsksEnzinoFirstCrime") is false>>
-
-
-
-
 
 Blaise:Rebonsoir... 
 Blaise:Enzino... mon ami.
@@ -128,33 +130,24 @@ Enzino:Rien à vous dire non.
 Enzino:Désolé.
 Blaise:Enzino... mon très cher ami...
 
-Blaise:Ils vont me virer si j'avance pas sur ce dossier, tu dois m'aider, tu comprends ?
-Enzino:Vraiment navré je ne sais rien inspecteur.
-Blaise: :(
 <<if visited("dial/Olivia.yarn:OliviaTellsAboutEnzino") > 0>>
 <<jump BlaiseAsksEnzinoFirstCrime>>
 <<endif>>
 
+Blaise:Ils vont me virer si j'avance pas sur ce dossier, tu dois m'aider, tu comprends ?
+Enzino:Vraiment navré je ne sais rien inspecteur.
+Blaise: :(
 
 
 <<else>>
-Blaise:Merci encore Enzino. Je suis content de pouvoir compter sur toi.
-Enzino:Ouep. T'inquiètes.
-Blaise:Je suis sérieux. Nous sommes lié par le destin toi et moi. La justice va régner.
-Enzino:Okay.
-Blaise:Comment elle s'appelle la meuf qui va mourir déjà ?
-Enzino:Émilie, comme éléphant. Hiegel, comme Hegel.
-Blaise:C'est quoi Hegel ?
-Enzino:Un voisin.
-Blaise:C'est pas un mnémotechnique si je le connais pas.
-Enzino:Mais ils sont pas pour toi les mnémotechniques.
-Blaise:Ah désolé.
+
+<<jump Day1Inter3>>
 
 
 <<endif>>
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: 120,-400
+__PrivCrochet_position: -200,0
 __PrivCrochet_tags: 
 title: BlaiseAsksEnzinoFirstCrime
 ---
@@ -241,4 +234,59 @@ Enzino:Je te t'en prie.
 Blaise:Mais pourquoi tu t'es intéressé à cette affaire en premier lieu ?
 Enzino:Je voulais savoir si j'étais le prochain, histoire de savoir si je dois éviter la ville un soir ou deux.
 Blaise:Ooh logique oui.
+===
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: 320,-440
+__PrivCrochet_tags: 
+title: Day1Rappel
+---
+Blaise:Comment elle s'appelle la meuf qui va mourir déjà ?
+Enzino:Émilie, comme éléphant. Hiegel, comme Hegel.
+Blaise:C'est quoi Hegel ?
+Enzino:Un voisin.
+Blaise:C'est pas un mnémotechnique si je le connais pas.
+Enzino:Mais ils sont pas pour toi les mnémotechniques.
+Blaise:Ah désolé.
+===
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: 320,40
+__PrivCrochet_tags: 
+title: Day1EnzinoMadAboutOlivia
+---
+Blaise:T'es fâché ?
+Enzino:Pourquoi ?
+Blaise:Pour Olivia qui t’a balancé.
+Enzino:Non, ça va. C'est la famille. C'est une tante.
+Blaise:Qu'est-ce que ça change ? On peut plus se confier ici ? Cette ville ne manque pas de problèmes...
+Enzino:Mis à part les jobs, on vit bien.
+Blaise:Du comérage abusif...Du chômage... Seigneur… On dirait que j'ai du pain sur la planche.
+Blaise:Qu’il est malheureux, le peuple qui a besoin d’un héros...
+Enzino:Vous serez à la hauteur inspecteur ?
+Blaise:Rien n'est moins sûr l'ami.
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: 320,-200
+__PrivCrochet_tags: 
+title: Day1Inter3
+---
+Blaise:Rebonsoir.
+Enzino:Re.
+
+->Olivia t'a balancé. <<if visited("dial/Olivia.yarn:OliviaTellsAboutEnzino")>>
+    <<jump BlaiseAsksEnzinoFirstCrime>>
+->T'es fâché ? <<if visited("Day1EnzinoMadAboutOlivia")>>
+    <<jump Day1EnzinoMadAboutOlivia>>
+->Je veux pas te parler.
+    Blaise:Je veux pas te parler finalement.
+    Enzino:Ça roule.
+===
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: -440,-560
+__PrivCrochet_tags: 
+title: Day1BlaiseThanksEnzino
+---
+Blaise:Merci encore Enzino. Je suis content de pouvoir compter sur toi.
+Enzino:Ouep. T'inquiètes.
+Blaise:Je suis sérieux. Nous sommes lié par le destin toi et moi. Tu œuvres pour l'intérêt général.
+Enzino:Okay.
 ===

@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_phone_ring.mp3",
   "type":1,
-  "volume":1.0,
+  "volume":0.05,
 }
