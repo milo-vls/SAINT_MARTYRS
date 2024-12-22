@@ -1,7 +1,12 @@
-title : PhoneExe
-position: -319,-295
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -320,-280
+__PrivCrochet_tags: title : PhoneExe
+title:
+:
+PhoneExe:
+title: Node
 ---
-
 <<if get_switch_state("exe_blocked")>>
 Phone:Le numéro que vous souhaitez joindre est indisponible.
 <<stop>>
@@ -13,45 +18,47 @@ Phone:Le numéro que vous souhaitez joindre est indisponible.
 <<jump BlaiseInsists>>
 <<endif>>
 ===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -40,-160
+__PrivCrochet_tags: 
 title: BlaiseFindHisName
-position: -5,-243
 ---
 Exe:Allo ? Qui est à l'appareil ?
 ->...
-        Blaise:...
-        Exe:C'est pas drôle.
-        Exe:22 heures n'est pas une heure pour appeler.
-        ->Oh merde j'avais pas vu l'heure désolé.
-                Blaise:Oh merde j'avais pas vu l'heure désolé.
-        ->Y'en a qui bosse. 
-                Blaise:Y'en a qui bosse.
-                Blaise:La justice ne dort jamais, sale ingrate.
+    Blaise:...
+    Exe:C'est pas drôle.
+    Exe:22 heures n'est pas une heure pour appeler.
+    ->Oh merde j'avais pas vu l'heure désolé.
+        Blaise:Oh merde j'avais pas vu l'heure désolé.
+    ->Y'en a qui bosse. 
+        Blaise:Y'en a qui bosse.
+        Blaise:La justice ne dort jamais, sale ingrate.
 ->Heu oulah je sais pas moi même.
-        Blaise:Heu oulah je sais pas moi même.
+    Blaise:Heu oulah je sais pas moi même.
 ->Salut madame tu es qui ?
-        Blaise:Salut madame, tu es qui ?
+    Blaise:Salut madame, tu es qui ?
 Exe:Blaise ?! C'est bien toi ?
 Blaise:Ça dépend.
 Blaise:Est-ce que je suis policier ?
 Exe:J'y crois pas... 
 Exe:T'utilises ton téléphone de service pour m'appeler ?
 ->C'est Blaise mon nom ?
-        Blaise:C'est Blaise mon nom du coup ?
-        Exe:...
-        Exe:Oui c'est ton nom. Maintenant dis moi pour quoi tu m'appelles. Après je bloque ce numéro. 
+    Blaise:C'est Blaise mon nom du coup ?
+    Exe:...
+    Exe:Oui c'est ton nom. Maintenant dis moi pour quoi tu m'appelles. Après je bloque ce numéro. 
 ->J'ai appelé un numéro écrit sur mon répertoire.
-Blaise:Ton numéro est écrit sur mon répertoire. C'est accompagné d'un petit cœur ...?
-Exe:Seigneur...
-Blaise:Dis moi j'ai zéro souvenirs là, est-ce que ...
+    Blaise:Ton numéro est écrit sur mon répertoire. C'est accompagné d'un petit cœur ...?
+    Exe:Seigneur...
+    Blaise:Dis moi j'ai zéro souvenirs là, est-ce que ...
 ->...tu es une fille bien fichue ?
-        Blaise:...tu es une fille bien fichue ?
-        Exe:Va chier.
+    Blaise:...tu es une fille bien fichue ?
+    Exe:Va chier.
 ->...tu es ma fiancée ou on est juste en flirt ?
-        Blaise:...tu es ma fiancée ou on est juste en flirt ?
-        Exe:Ni l'un ni l'autre.
+    Blaise:...tu es ma fiancée ou on est juste en flirt ?
+    Exe:Ni l'un ni l'autre.
 ->...je te manque ?
-        Blaise:...je te manque ?
-        Exe:Non t'en fais pas pour moi.
+    Blaise:...je te manque ?
+    Exe:T'en fais pas pour moi.
 Exe:Il n'y a plus rien entre nous Blaise. On s'est séparé.
 Blaise:Ah mince.
 Blaise:Mh.
@@ -60,18 +67,20 @@ Exe:C'était il y a 3 ans.
 Blaise:Wow tu dois sacrément manquer au nul à qui appartient ce répertoire ^^.
 Exe:Ne rappelle pas.
 ->Excuse moi...
-        Blaise:Excuse moi...
-        Exe:Prends soin de toi Blaise...
+    Blaise:Excuse moi...
+    Exe:Prends soin de toi Blaise...
 ->Attends je peux rayer le cœur si c'est ça qui te gêne !
-        Blaise:Attends je peux rayer le cœur si c'est ça qui te gêne !
-        Exe:Laisse tomber. Fais attention Blaise.
+    Blaise:Attends je peux rayer le cœur si c'est ça qui te gêne !
+    Exe:Laisse tomber. Fais attention Blaise.
 ->La pitié c'est pour les chiens ?
-        Blaise:La pitié c'est pour les chiens ?
-        Exe:C'est ta dernière chance cette ville.
+    Blaise:La pitié c'est pour les chiens ?
+    Exe:C'est ta dernière chance cette ville.
 <<set_switch_on("exe_met")>>
 ===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 36,-424
+__PrivCrochet_tags: 
 title: BlaiseInsists
-position: 36,-424
 ---
 Exe:Quoi encore ?
 Blaise:Dis moi tout ce que tu sais de moi. Je n'ai aucun souvenir. 
@@ -93,8 +102,10 @@ Exe:...
         Exe:T'auras matière à gamberger.
         <<jump ExeTellsAboutBlaise>>
 ===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 280,-360
+__PrivCrochet_tags: 
 title: ExeTellsAboutBlaise
-position: 279,-341
 ---
 Exe:Tu t'appelles Blaise. Tu as fait des études en droit, à la capitale.
 Exe:Après les révoltes de Mai, le ministère de l'ordre t'a muté en province, il y a 3 ans.
