@@ -41,6 +41,10 @@ function dialogue_set_background()
 	*/
 }
 
+function start_observation_from_dialogue()
+{
+	start_observation_by_text(argument0[0]);
+}
 
 
 				/////////////////////
@@ -94,7 +98,7 @@ function custom_chatterbox_function_init()
 	ChatterboxAddFunction("get_nb_interactions_of", dialogue_get_character_nb_interactions_today);
 	ChatterboxAddFunction("increase_nb_interactions_of", dialogue_increase_character_nb_interactions);
 	ChatterboxAddFunction("set_nb_interactions_of", dialogue_set_character_nb_interactions);
-	
+	ChatterboxAddFunction("observation", start_observation_from_dialogue)
 
 }
 

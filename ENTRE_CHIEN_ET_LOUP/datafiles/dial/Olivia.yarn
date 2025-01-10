@@ -1,6 +1,6 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1000,-440
+__PrivCrochet_position: -1000,-520
 __PrivCrochet_tags: 
 title: Init
 ---
@@ -9,7 +9,7 @@ title: Init
 <<hopback>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -760,-440
+__PrivCrochet_position: -760,-520
 __PrivCrochet_tags: 
 title: Day1
 ---
@@ -36,12 +36,10 @@ Olivia:Par contre.
 <<jump Day1Inter2>>
 <<endif>>
 
-Blaise:Bonsoir !
-Olivia:Je crois vous avoir déjà suffisamment aider.
-Blaise:Pardon madame...
+<<observation("On dirait qu'elle n'a plus rien à me dire")>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -480,-600
+__PrivCrochet_position: -520,-680
 __PrivCrochet_tags: 
 title: Day1Inter1
 ---
@@ -74,14 +72,19 @@ Blaise:Dites moi, sinon ça, je voulais savoir...
     Olivia:Mais tout va très bien.
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -760,-200
+__PrivCrochet_position: -760,-280
 __PrivCrochet_tags: 
 title: Day1Inter2
 ---
+Blaise:Bonsoir !
 Olivia:Je crois vous avoir déjà suffisamment aider.
+Blaise:Pardon madame...
+Olivia:M'appelle pas comme ça...
+Blaise:Pardon Monsieur.
+Olivia: ?
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -480,-360
+__PrivCrochet_position: -520,-440
 __PrivCrochet_tags: 
 title: OliviaTellsAboutEnzino
 ---
@@ -98,4 +101,11 @@ Blaise:Mais sinon il raconte quoi ?
 Olivia:J'en sais rien. Demandez lui.
 Blaise:Ah bon okay.
 Blaise:Bonne soirée.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1240,-320
+__PrivCrochet_tags: 
+title: Node
+---
+Empty Text
 ===

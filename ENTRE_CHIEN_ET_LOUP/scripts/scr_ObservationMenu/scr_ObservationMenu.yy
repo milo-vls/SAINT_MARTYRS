@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_ObservationMenu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_ObservationMenu",
+  "parent":{
+    "name":"OBSERVATION",
+    "path":"folders/SCRIPTS/MENU/MENUS/OBSERVATION.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
