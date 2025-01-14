@@ -755,6 +755,7 @@
     {"id":{"name":"spr_Phone_portrait","path":"sprites/spr_Phone_portrait/spr_Phone_portrait.yy",},},
     {"id":{"name":"spr_picture_window_icon","path":"sprites/spr_picture_window_icon/spr_picture_window_icon.yy",},},
     {"id":{"name":"spr_pinned_note","path":"sprites/spr_pinned_note/spr_pinned_note.yy",},},
+    {"id":{"name":"spr_point_of_interest","path":"sprites/spr_point_of_interest/spr_point_of_interest.yy",},},
     {"id":{"name":"spr_rec_hitbox","path":"sprites/spr_rec_hitbox/spr_rec_hitbox.yy",},},
     {"id":{"name":"spr_Sandrine_fb","path":"sprites/spr_Sandrine_fb/spr_Sandrine_fb.yy",},},
     {"id":{"name":"spr_Sandrine_portrait","path":"sprites/spr_Sandrine_portrait/spr_Sandrine_portrait.yy",},},

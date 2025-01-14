@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_crime_idle",
-    "path":"sprites/spr_crime_idle/spr_crime_idle.yy",
+    "name":"spr_point_of_interest",
+    "path":"sprites/spr_point_of_interest/spr_point_of_interest.yy",
   },
   "spriteMaskId":null,
   "visible":true,

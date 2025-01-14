@@ -582,6 +582,7 @@
     {"name":"spr_Phone_portrait","order":4,"path":"sprites/spr_Phone_portrait/spr_Phone_portrait.yy",},
     {"name":"spr_picture_window_icon","order":4,"path":"sprites/spr_picture_window_icon/spr_picture_window_icon.yy",},
     {"name":"spr_pinned_note","order":8,"path":"sprites/spr_pinned_note/spr_pinned_note.yy",},
+    {"name":"spr_point_of_interest","order":18,"path":"sprites/spr_point_of_interest/spr_point_of_interest.yy",},
     {"name":"spr_rec_hitbox","order":4,"path":"sprites/spr_rec_hitbox/spr_rec_hitbox.yy",},
     {"name":"spr_Sandrine_portrait","order":2,"path":"sprites/spr_Sandrine_portrait/spr_Sandrine_portrait.yy",},
     {"name":"spr_sheet","order":17,"path":"sprites/spr_sheet/spr_sheet.yy",},
