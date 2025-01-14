@@ -4,7 +4,7 @@ function return_to_main_desk()
 	obj_menu_manager.get_active_menu(Exploration).end_reached = true;
 }
 
-function Exploration() : Menu(MENU_PRIORITIES.EXPLORATION, room, true, true, false, MENU_CHANNELS.DIALOGUES) constructor 
+function Exploration() : Menu(MENU_PRIORITIES.EXPLORATION, room, false, true, false, MENU_CHANNELS.DIALOGUES) constructor 
 {
 	pressed_interactable = noone;
 	var _sub_elements = [new CardSubElement("[fnt_small_titles]" + text_id_to_string("RETURN POLICE STATION"), CARD_SUB_ELEMENT_TYPES.SCRIBBLE_TEXT) ];
