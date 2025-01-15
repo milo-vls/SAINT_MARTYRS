@@ -206,7 +206,12 @@ function address_search_engine_draw(_manager_id, _window)
 			
 			//LAST NAME OBTAINED
 			if address_search_engine_first_name_command_handler(_command, _window, _lines_to_draw, _given_last_name)
+			{
 				_screen_state = 0;
+				var _starting_lines_to_push = address_search_engine_get_starting_lines(0);
+				for (var _i = 0; _i < array_length(_starting_lines_to_push); _i ++)
+					array_push(_lines_to_draw, _starting_lines_to_push[_i]);
+			}
 			
 		}
 		break;

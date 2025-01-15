@@ -17,8 +17,8 @@ function get_address_full_name(_address_id)
 function get_address_position_text(_address_id)
 {
 	var _address = global.addresses[_address_id];
-	var _x_text = string_concat("x = ", string(_address.x));
-	var _y_text = string_concat("y = ", string(_address.y));
+	var _x_text = string_concat("x = ", string(int64(room_x_to_map_x(_address.x))));
+	var _y_text = string_concat("y = ", string(int64(room_y_to_map_y(_address.y))));
 	
 	return string_concat(_x_text, "    ", _y_text);
 }
