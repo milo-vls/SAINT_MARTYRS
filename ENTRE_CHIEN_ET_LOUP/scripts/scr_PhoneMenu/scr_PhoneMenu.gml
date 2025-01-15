@@ -127,7 +127,10 @@ function PhoneMenu() : Menu(MENU_PRIORITIES.PHONE_MENU, room, false, true, false
 		{
 			map_icone_is_pressed = false;
 		}
-		cards_set.activity();
+		
+		
+		if obj_menu_manager.dialogue_exists() == false
+			cards_set.activity();
 		
 		
 	}
@@ -135,7 +138,7 @@ function PhoneMenu() : Menu(MENU_PRIORITIES.PHONE_MENU, room, false, true, false
 	{
 		draw_set_alpha(1); draw_set_color(c_black); draw_set_font(fnt_small_titles); draw_set_valign(fa_middle); draw_set_halign(fa_center);
 		draw_text(1010, 859, string(typed_digits));
-		
-		cards_set.draw();
+		if obj_menu_manager.dialogue_exists() == false
+			cards_set.draw();
 	}
 }

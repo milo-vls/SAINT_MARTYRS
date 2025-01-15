@@ -4,8 +4,6 @@ __PrivCrochet_position: -1000,-520
 __PrivCrochet_tags: 
 title: Init
 ---
-<<background(3)>>
-
 <<hopback>>
 ===
 __PrivCrochet_colorID: 1
