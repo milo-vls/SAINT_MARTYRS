@@ -516,6 +516,7 @@
     {"name":"__shd_scribble_bake_shadow","order":4,"path":"shaders/__shd_scribble_bake_shadow/__shd_scribble_bake_shadow.yy",},
     {"name":"__shd_scribble_msdf","order":5,"path":"shaders/__shd_scribble_msdf/__shd_scribble_msdf.yy",},
     {"name":"sh_crt_screen","order":1,"path":"shaders/sh_crt_screen/sh_crt_screen.yy",},
+    {"name":"snd_computer_on","order":4,"path":"sounds/snd_computer_on/snd_computer_on.yy",},
     {"name":"snd_crime_appearance","order":2,"path":"sounds/snd_crime_appearance/snd_crime_appearance.yy",},
     {"name":"snd_paper_1","order":1,"path":"sounds/snd_paper_1/snd_paper_1.yy",},
     {"name":"snd_paper_2","order":2,"path":"sounds/snd_paper_2/snd_paper_2.yy",},

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_phone_ring",
+  "%Name":"snd_computer_on",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":3.787755,
-  "name":"snd_phone_ring",
+  "duration":5.328,
+  "name":"snd_computer_on",
   "parent":{
     "name":"SCENERY",
     "path":"folders/SOUNDS/SOUND EFFECTS/SCENERY.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_phone_ring.mp3",
-  "type":1,
-  "volume":0.04,
+  "soundFile":"snd_computer_on.mp3",
+  "type":0,
+  "volume":0.36,
 }

@@ -669,6 +669,7 @@
     {"id":{"name":"__shd_scribble","path":"shaders/__shd_scribble/__shd_scribble.yy",},},
     {"id":{"name":"sh_crt_screen_old","path":"shaders/sh_crt_screen_old/sh_crt_screen_old.yy",},},
     {"id":{"name":"sh_crt_screen","path":"shaders/sh_crt_screen/sh_crt_screen.yy",},},
+    {"id":{"name":"snd_computer_on","path":"sounds/snd_computer_on/snd_computer_on.yy",},},
     {"id":{"name":"snd_crime_appearance","path":"sounds/snd_crime_appearance/snd_crime_appearance.yy",},},
     {"id":{"name":"snd_game_over","path":"sounds/snd_game_over/snd_game_over.yy",},},
     {"id":{"name":"snd_paper_0","path":"sounds/snd_paper_0/snd_paper_0.yy",},},

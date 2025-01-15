@@ -27,6 +27,7 @@ if !global.switches.computer_unlocked
 				global.switches.computer_unlocked = true;
 				keyboard_string = "";
 				user_input = "";
+				add_sound_to_play(new Sound(snd_computer_on, room_width/2, room_height/2, 0));
 			}
 			else
 				cmd_lines[array_length(cmd_lines) - 2] = text_id_to_string("CMD WRONG PSW");
