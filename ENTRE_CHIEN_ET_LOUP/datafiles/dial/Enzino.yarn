@@ -183,34 +183,36 @@ Enzino:C'est bon je vais te dire ce que j'ai trouvé.
 Enzino:Vous voyez la victime ? Son nom ?
 
 ->Julie ?
-    Enzino:Non...
-    Enzino:C'est Pierre.
+    Blaise:C'est Julie non ?
+    Enzino:Mais pas du tout c'est même pas une femme.
+    Enzino:C'est Pierre son prénom.
 ->Clément !
-    Enzino:Non...
+    Blaise:Clément !
+    Enzino:Non. Pas du tout. T'en sais rien en fait.
     Enzino:C'est Pierre.
 ->Aurore...
-    Enzino:Non...
-    Enzino:C'est Pierre.
-->Pénélope.
-    Enzino:Non...
-    Enzino:C'est Pierre.
-->Olivier.
-    Enzino:Non...
-    Enzino:C'est Pierre.
-->Marc...?
-    Enzino:Non...
-    Enzino:C'est Pierre.
+    Blaise:C'est Aurore...?
+    Enzino:Mais pas du tout c'est même pas une femme.
+    Enzino:C'est Pierre son prénom.
+
 ->Pierre ?
+    Blaise:Pierre.
     Enzino:Exact. C'est lui qui est mort.
-->Pas Julie.
-    Enzino:Oui ?
+->C'est pas Julie.
+    Blaise:C'est pas Julie.
+    Enzino:Euh ouais ?
     Blaise:J'ai rien dit de faux là.
     Enzino:Oui bravo.
-    Enzino:C'est Pierre la victime.
+    Enzino:...
+    Blaise:...
+    Enzino:Et tu connais pas son nom du coup ?
+    Blaise:Non désolé.
+    Enzino:Fallait le dire le plus tôt. C'est Pierre, son nom. Celui de la victime.
 
-Enzino:Mais ce qu'on veut savoir...
+Enzino:Mais ça nous aide pas tant que ça.
+Enzino:Finalement ce qu'on veut savoir c'est surtout...
 
-Blaise:C'est le prochain à y passer.
+Blaise:Qui sera le prochain à y passer.
 
 Enzino:Voilà.
 Enzino:Je vais la faire courte, la prochaine s'appelle Émilie Hiegel.
@@ -232,8 +234,8 @@ Blaise:Tu me sauves la vie.
 Enzino:Je te t'en prie.
 
 Blaise:Mais pourquoi tu t'es intéressé à cette affaire en premier lieu ?
-Enzino:Je voulais savoir si j'étais le prochain, histoire de savoir si je dois éviter la ville un soir ou deux.
-Blaise:Ooh logique oui.
+Enzino:Je voulais savoir si c'était moi le prochain. Voir si je dois éviter la ville un soir ou deux.
+Blaise:Je comprends. Logique.
 ===
 __PrivCrochet_colorID: 7
 __PrivCrochet_position: 320,-440
@@ -281,7 +283,7 @@ Enzino:Re.
     Enzino:Ça roule.
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: -440,-560
+__PrivCrochet_position: -480,-560
 __PrivCrochet_tags: 
 title: Day1BlaiseThanksEnzino
 ---

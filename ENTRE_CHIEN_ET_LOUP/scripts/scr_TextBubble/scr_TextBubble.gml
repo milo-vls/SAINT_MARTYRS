@@ -53,7 +53,8 @@ function TextBubble(_text, _speaking_character, _side, _text_color = DIALOGUES_B
 		var _x_rec_right = side == SIDES.LEFT ? left_side_bubble_x_rec_right : right_side_bubble_x_rec_right;
 		var _y_rec_bottom = self.y_bot;
 		var _y_rec_top = _y_rec_bottom - self.get_height();
-		draw_roundrect(_x_rec_left, _y_rec_top, _x_rec_right, _y_rec_bottom, false);
+		//draw_roundrect(_x_rec_left, _y_rec_top, _x_rec_right, _y_rec_bottom, false);
+		draw_rectangle(_x_rec_left, _y_rec_top, _x_rec_right, _y_rec_bottom, false);
 		
 		if is_last_speaker_bubble
 		{
