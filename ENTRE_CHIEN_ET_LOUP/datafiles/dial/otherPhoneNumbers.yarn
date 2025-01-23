@@ -1,6 +1,6 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -160,-160
+__PrivCrochet_position: -182,-152
 __PrivCrochet_tags: 
 title: NoNumberFound
 ---
@@ -16,7 +16,7 @@ Blaise:Salut.
 <<jump CompServicesHelp>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 120,160
+__PrivCrochet_position: 119,157
 __PrivCrochet_tags: 
 title: CompServicesHelp
 ---
@@ -51,7 +51,7 @@ Blaise:J'ai besoin d'aide...
             Blaise:Mon prénom c'est Blaise.
             Phone:Okay. Bravo mon bon monsieur, puis-je savoir la première lettre de votre nom ?
     
-            <<if get_switch_state("blaise_knows_his_first_name") == 0>>
+           <<if visited("dial/Mom.yarn:PhoneMom ") == false>>
             Blaise:Je suis vraiment désolé je le connais pas.
             Phone:... Fallait le dire plutôt. J'ai du travail. Rappelez quand vous saurez votre nom de famille.
             Blaise:Désolé hihi.
