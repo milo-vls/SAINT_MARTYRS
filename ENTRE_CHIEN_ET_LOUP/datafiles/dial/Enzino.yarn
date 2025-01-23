@@ -238,7 +238,7 @@ Enzino:Je voulais savoir si c'était moi le prochain. Voir si je dois éviter la
 Blaise:Je comprends. Logique.
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: 320,-440
+__PrivCrochet_position: 560,-200
 __PrivCrochet_tags: 
 title: Day1Rappel
 ---
@@ -274,13 +274,15 @@ title: Day1Inter3
 Blaise:Rebonsoir.
 Enzino:Re.
 
-->Olivia t'a balancé. <<if visited("dial/Olivia.yarn:OliviaTellsAboutEnzino")>>
+->Olivia t'a balancé. <<if visited("dial/Olivia.yarn:OliviaTellsAboutEnzino") and visited("BlaiseAsksEnzinoFirstCrime") == false >>
     <<jump BlaiseAsksEnzinoFirstCrime>>
-->T'es fâché ? <<if visited("Day1EnzinoMadAboutOlivia")>>
+->T'es fâché ? <<if visited("Day1EnzinoMadAboutOlivia") == false>>
     <<jump Day1EnzinoMadAboutOlivia>>
+->Elle s'appelle comment déjà la fille qui va se faire trucider ? <<if visited("dial/Olivia.yarn:OliviaTellsAboutEnzino")>>
+    <<jump Day1Rappel>>
 ->Je veux pas te parler.
     Blaise:Je veux pas te parler finalement.
-    Enzino:Ça roule.
+    Enzino:Ça roule mec.
 ===
 __PrivCrochet_colorID: 7
 __PrivCrochet_position: -480,-560
