@@ -1,112 +1,27 @@
-<<<<<<< Updated upstream
-
-
-title : NoNumberFound
-
-position: -140,14
-=======
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -182,-152
 __PrivCrochet_tags: 
 title: NoNumberFound
->>>>>>> Stashed changes
 ---
 Phone:Aucun numéro ne correspond.
 ===
-title :447106
-position: -138,168
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -120,160
+__PrivCrochet_tags: 
+title: 447106
 ---
 Phone:Bonsoir, Marc, centre informatique administratif des services publiques de Saints-Martyrs, comment j'peux vous aider ?
 Blaise:Salut.
 <<jump CompServicesHelp>>
 ===
-<<<<<<< Updated upstream
-=======
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: 119,157
 __PrivCrochet_tags: 
->>>>>>> Stashed changes
 title: CompServicesHelp
-position: 156,168
 ---
 Blaise:J'ai besoin d'aide...
 ->J'ai plus mon mot de passe pour mon ordinateur.
-<<<<<<< Updated upstream
-        //METTRE DIALOGUE PLUS COURT SI DEJA DONNÉ
-
-        Blaise:J'ai plus mon mot de passe pour mon ordinateur. Je suis inspecteur détective de police, vous pouvez m'aider ?
-        Phone:Bof pas vraiment.
-        Blaise:Ah ?
-        Phone:En fait ça dépend, donnez moi votre nom d'utilisateur et je vous redonnerai votre mot de passe.
-        ->Mon nom d'utilisateur ?
-                Blaise:Mon nom d'utilisateur ? Il est de quel forme ? Vous voulez mon nom ?
-                Phone:Les noms d'utilisateurs ils sont tous pareils.
-                Phone:Première lettre de votre nom de famille suivi de votre prénom en toute lettre.
-                Phone:Le tout en MAJUSCULES !! Retenez bien ça, j'ai plein d'abrutis qui arrivent pas à comprendre qu'un ordinateur fait la différence entre les majuscules et les minuscules.
-               
-                ->Je connais mon nom d'utilisateur. 
-                        <<if get_switch_state("exe_met") == 0>>
-                        Blaise:Trop facile, je m'appelle...
-                        Blaise:Mon nom c'est...
-                        Blaise:...
-                        Blaise:Vous allez rire.
-                        Blaise:Je crois que heu...
-                        Phone:Pardon monsieur mais j'ai pas tout votre temps.
-                        ->Deux minutes du con.
-                                Blaise:Deux minutes... mon bon monsieur. Je... me concentre.
-                                Phone:Concentrez-vous. Rappelez après.
-                                <<stop>>
-                        <<endif>>
-                        Blaise:C'est bon je le connais.
-                        Blaise:Mon prénom c'est Blaise.
-                        Phone:Okay. Bravo mon bon monsieur, puis-je savoir la première lettre de votre nom ?
-
-                        <<if get_switch_state("blaise_knows_his_first_name") == 0>>
-                        Blaise:Je suis vraiment désolé je le connais pas.
-                        Phone:... Fallait le dire plutôt. J'ai du travail. Rappelez quand vous saurez votre nom de famille.
-                        Blaise:Désolé hihi.
-                        <<stop>>
-                        <<endif>>
-                        Blaise:V, pour Vaurel.
-                        Phone:D'accord, je vais voir si on trouve quelque chose pour un certain VBLAISE. Un instant...
-                        Blaise:....................
-                        Phone:Bon notez :
-                        Blaise:J'écoute.
-                        Phone:B. Majuscule.
-                        Blaise:B.
-                        Phone:l, minuscule.
-                        Blaise:B-l.
-                        Phone:a, minuscule.
-                        Blaise:B-l-a. Vous pouvez pas juste préciser les majuscules ?
-                        Phone:Si vous voulez, vous trompez pas.
-                        Phone:i.
-                        Blaise:B-l-a-i.
-                        Phone:s.
-                        Blaise:B-l-a-i-s.
-                        Phone:e.
-                        Blaise:Blaise ?
-                        Phone:Non j'viens d'épeler misanthrope connard.
-                        Blaise:Pas besoin d'être méprisant.
-                        Phone:Concentrez-vous.
-                        Phone:T, majuscule, a.
-                        Blaise:B-l-a-i-s-e-T-a...
-                        Phone:M, majuscule, e, r. C'est tout.
-                        Blaise:B-l-a-i-s-e-T-a-M-e-r ?
-                        Phone:Tout à fait.
-                        Phone:C'est de très bon goût, si je peux me permettre.
-                        Blaise:BlaiseTaMer...C'est donc mon mot de passe...
-                        Phone:Répétez le encore 3 fois pour voir ?
-                        Blaise:BlaiseTaMer, BlaiseTaMer, BlaiseTa-
-                        Blaise:Allo ?
-                        Blaise:Il a racroché...
-                        <<stop>>
-
-                ->Je vous rappelle quand je l'aurai en tête.
-                        Blaise:Je vous rappelle quand je l'aurai en tête.
-                        Phone:Faites donc.
-                        <<stop>>
-=======
     //METTRE DIALOGUE PLUS COURT SI DEJA DONNÉ
     
     Blaise:J'ai plus mon mot de passe pour mon ordinateur. Je suis inspecteur détective de police, vous pouvez m'aider ?
@@ -180,5 +95,4 @@ Blaise:J'ai besoin d'aide...
             Blaise:Je vous rappelle quand je l'aurai en tête.
             Phone:Faites donc.
             <<stop>>
->>>>>>> Stashed changes
 ===
