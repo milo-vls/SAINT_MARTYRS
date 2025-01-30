@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_BasicCardsMenu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_BasicCardsMenu",
+  "parent":{
+    "name":"MENUS",
+    "path":"folders/SCRIPTS/MENU/MENUS.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

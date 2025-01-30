@@ -106,7 +106,7 @@ function dialogue_menu_draw_method()
 	var _option_select_menu = obj_menu_manager.get_active_menu(DialoguesOptionsSelect);	
 	var _nb_text_bubbles = array_length(text_bubbles);
 	var _last_bubble = _nb_text_bubbles - 1;
-	self.text_bubbles[_last_bubble].y_bot = min(TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET, _option_select_menu!=-1 ? GAME_HEIGHT - _option_select_menu.cards_set.get_highest_card_height() - GAP_BETWEEN_TEXT_BUBBLES*2.5 : TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET);
+	self.text_bubbles[_last_bubble].y_bot = min(TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET, _option_select_menu!=-1 ? GAME_HEIGHT - range_of_cards_get_highest_card_height(_option_select_menu.range_of_cards) - GAP_BETWEEN_TEXT_BUBBLES*2.5 : TEXT_BUBBLE_MINIMUM_Y_BOTTOM_TARGET);
 	self.text_bubbles[_last_bubble].y_bot -= pixels_scrolled;
 	for (var _i = _last_bubble - 1; _i >= 0; _i --)
 	{
