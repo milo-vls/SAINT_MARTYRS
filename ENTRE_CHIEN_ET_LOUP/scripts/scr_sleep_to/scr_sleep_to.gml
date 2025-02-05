@@ -51,7 +51,7 @@ function sleep_to(_day_number = global.day_number + 1)
 	
 	
 	
-	change_room(_room_to_get_up);
+	change_room(_room_to_get_up, sqc_transition_cover_fade_and_date);
 	
 	
 	

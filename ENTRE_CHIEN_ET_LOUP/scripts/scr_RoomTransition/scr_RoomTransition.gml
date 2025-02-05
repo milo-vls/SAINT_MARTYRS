@@ -9,6 +9,8 @@ function RoomTransition(_room_destination, _sequence_cover, _sequence_discover, 
 	sequence_discover = _sequence_discover;
 	function_when_room_entered = _function_when_room_entered;
 	
+	sequence_cover_id = noone;
+	sequence_discover_id = noone;
 	set_up_done = false;
 	
 	draw = function(){};
@@ -20,11 +22,11 @@ function RoomTransition(_room_destination, _sequence_cover, _sequence_discover, 
 				
 				
 			//cover sequence for current room
-			room_transition_place_sequence(sequence_cover);
+			sequence_cover_id = room_transition_place_sequence(sequence_cover);
 				
 			//discover sequence for destination room
 			layer_set_target_room(room_destination);
-			room_transition_place_sequence(sequence_discover);
+			sequence_discover_id = room_transition_place_sequence(sequence_discover);
 			layer_reset_target_room();
 			
 			set_up_done = true;
@@ -41,7 +43,7 @@ function room_transition_place_sequence(_sequence_type)
 		layer_destroy(ROOM_TRANSITION_LAYER_NAME);
 	
 	var _sequence_layer = layer_create(DEPTHS.GUI, ROOM_TRANSITION_LAYER_NAME);
-	layer_sequence_create(_sequence_layer, 0, 0, _sequence_type);
+	return layer_sequence_create(_sequence_layer, 0, 0, _sequence_type);
 }
 
 
