@@ -32,8 +32,8 @@
   },
   "name":"sqc_transition_cover_slide_up_down",
   "parent":{
-    "name":"SEQUENCES",
-    "path":"folders/SEQUENCES.yy",
+    "name":"COVER",
+    "path":"folders/SEQUENCES/TRANSITIONS/COVER.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -37,8 +37,8 @@
   },
   "name":"sqc_transition_discover_slide_up_down",
   "parent":{
-    "name":"SEQUENCES",
-    "path":"folders/SEQUENCES.yy",
+    "name":"TRANSITIONS",
+    "path":"folders/SEQUENCES/TRANSITIONS.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,
