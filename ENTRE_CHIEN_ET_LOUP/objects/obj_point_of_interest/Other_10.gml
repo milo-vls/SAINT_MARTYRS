@@ -1,1 +1,1 @@
-change_room(room_to_go, new TransitionStyleFade(), start_exploration_menu);
+change_room(room_to_go, sqc_transition_cover_slide_up_down, sqc_transition_discover_slide_up_down, start_exploration_menu);

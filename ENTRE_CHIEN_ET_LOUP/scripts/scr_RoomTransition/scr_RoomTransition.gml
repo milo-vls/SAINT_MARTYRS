@@ -1,54 +1,89 @@
-enum ROOM_TRANSITION_STATES
+
+
+global.room_transition = noone;
+
+function RoomTransition(_room_destination, _sequence_cover, _sequence_discover, _function_when_room_entered) : Menu(MENU_PRIORITIES.ROOM_TRANSITION, room, true, false, false ) constructor 
 {
-	COVERING_SCREEN,
-	SCREEN_IS_COVERED,
-	DISCOVERING_SCREEN,
-	SCREEN_IS_DISCOVERED,
+	room_destination = _room_destination;
+	sequence_cover = _sequence_cover;
+	sequence_discover = _sequence_discover;
+	function_when_room_entered = _function_when_room_entered;
+	
+	set_up_done = false;
+	
+	draw = function(){};
+	activity = function()
+	{
+		if false == set_up_done 
+		{
+			global.room_transition = self;
+				
+				
+			//cover sequence for current room
+			room_transition_place_sequence(sequence_cover);
+				
+			//discover sequence for destination room
+			layer_set_target_room(room_destination);
+			room_transition_place_sequence(sequence_discover);
+			layer_reset_target_room();
+			
+			set_up_done = true;
+		}
+	}
+}
+
+
+#macro ROOM_TRANSITION_LAYER_NAME "room_transition_layer_name"
+
+function room_transition_place_sequence(_sequence_type)
+{
+	if layer_exists(ROOM_TRANSITION_LAYER_NAME)
+		layer_destroy(ROOM_TRANSITION_LAYER_NAME);
+	
+	var _sequence_layer = layer_create(DEPTHS.GUI, ROOM_TRANSITION_LAYER_NAME);
+	layer_sequence_create(_sequence_layer, 0, 0, _sequence_type);
+}
+
+
+function room_transition_end_of_covering_sequence()
+{
+	room_goto(global.room_transition.room_destination);
+}
+
+function room_transition_start_of_discovering_sequence()
+{
+	global.room_transition.function_when_room_entered();
+}
+
+function room_transition_end_of_discovering_sequence()
+{
+	layer_sequence_destroy(self.elementID);
+	global.room_transition.end_reached = true;
+	global.room_transition = noone;
 }
 
 
 
-function RoomTransition(_room_destination, _transition_style, _function_when_room_entered) : Menu(MENU_PRIORITIES.ROOM_TRANSITION, room, true, false, false ) constructor 
+
+
+
+
+function room_transition_activity()
 {
-	room_destination = _room_destination;
-	transition_style = _transition_style;
-	function_when_room_entered = _function_when_room_entered;
-	
-	transition_state = ROOM_TRANSITION_STATES.COVERING_SCREEN;
-	
-	draw = function()
+	if self.transition_state == ROOM_TRANSITION_STATES.SCREEN_IS_COVERED
 	{
-		if transition_state == ROOM_TRANSITION_STATES.COVERING_SCREEN
-		{
-			if transition_style.cover_screen() transition_state = ROOM_TRANSITION_STATES.SCREEN_IS_COVERED
-		}
-		if transition_state == ROOM_TRANSITION_STATES.SCREEN_IS_COVERED
-		{
-			transition_style.cover_screen();
-		}
-		if transition_state == ROOM_TRANSITION_STATES.DISCOVERING_SCREEN
-		{
-			if transition_style.discover_screen() then transition_state = ROOM_TRANSITION_STATES.SCREEN_IS_DISCOVERED;
-		}
+		room_goto(self.room_destination);
+		self.transition_state = ROOM_TRANSITION_STATES.DISCOVERING_SCREEN;
+		return;
 	}
-	activity = function()
+	if self.transition_state == ROOM_TRANSITION_STATES.DISCOVERING_SCREEN
 	{
-		if self.transition_state == ROOM_TRANSITION_STATES.SCREEN_IS_COVERED
-		{
-			room_goto(self.room_destination);
-			self.transition_state = ROOM_TRANSITION_STATES.DISCOVERING_SCREEN;
-			return;
-		}
-		if self.transition_state == ROOM_TRANSITION_STATES.DISCOVERING_SCREEN
-		{
-			function_when_room_entered();
-			self.parallelism = true;
-			return;
-		}
-		if self.transition_state == ROOM_TRANSITION_STATES.SCREEN_IS_DISCOVERED
-		{
-			self.end_reached = true;
-		}
-		
+		function_when_room_entered();
+		self.parallelism = true;
+		return;
+	}
+	if self.transition_state == ROOM_TRANSITION_STATES.SCREEN_IS_DISCOVERED
+	{
+		self.end_reached = true;
 	}
 }

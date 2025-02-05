@@ -51,7 +51,7 @@ function sleep_to(_day_number = global.day_number + 1)
 	
 	
 	
-	change_room(_room_to_get_up, new TransitionStyleShowDate());
+	change_room(_room_to_get_up);
 	
 	
 	
