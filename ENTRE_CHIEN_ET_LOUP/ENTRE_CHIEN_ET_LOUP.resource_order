@@ -114,6 +114,7 @@
     {"name":"TRANSITIONS","order":2,"path":"folders/SEQUENCES/TRANSITIONS.yy",},
     {"name":"COVER","order":2,"path":"folders/SEQUENCES/TRANSITIONS/COVER.yy",},
     {"name":"DISCOVER","order":3,"path":"folders/SEQUENCES/TRANSITIONS/DISCOVER.yy",},
+    {"name":"MENU","order":4,"path":"folders/SEQUENCES/TRANSITIONS/MENU.yy",},
     {"name":"SHADERS","order":37,"path":"folders/SHADERS.yy",},
     {"name":"SOUNDS","order":35,"path":"folders/SOUNDS.yy",},
     {"name":"MUSICS","order":1,"path":"folders/SOUNDS/MUSICS.yy",},
