@@ -35,7 +35,7 @@ function RoomTransition(_room_destination, _sequence_cover, _sequence_discover, 
 }
 
 
-#macro ROOM_TRANSITION_LAYER_NAME "room_transition_layer_name"
+#macro ROOM_TRANSITION_LAYER_NAME "room_transition_layer"
 
 function room_transition_place_sequence(_sequence_type)
 {
