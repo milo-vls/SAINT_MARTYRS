@@ -4,6 +4,6 @@
 
 function RoomTransitionStyle() constructor 
 {	
-	cover_screen = function(){};;
+	cover_screen = function(){};
 	discover_screen = function(){};
 }
