@@ -1,2 +1,0 @@
-iconPressed = false;
-menuID = noone;

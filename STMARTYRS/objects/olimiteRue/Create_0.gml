@@ -1,2 +1,0 @@
-visible = debug_mode;
-
