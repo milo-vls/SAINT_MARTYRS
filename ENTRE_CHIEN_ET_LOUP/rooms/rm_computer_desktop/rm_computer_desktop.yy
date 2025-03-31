@@ -1,18 +1,16 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_computer",
-  "creationCodeFile":"rooms/rm_computer/RoomCreationCode.gml",
+  "%Name":"rm_computer_desktop",
+  "creationCodeFile":"rooms/rm_computer_desktop/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_52DD3979","path":"rooms/rm_computer/rm_computer.yy",},
-    {"name":"inst_666DB3C9","path":"rooms/rm_computer/rm_computer.yy",},
-    {"name":"inst_3DE38D42","path":"rooms/rm_computer/rm_computer.yy",},
-    {"name":"inst_7B973BE0","path":"rooms/rm_computer/rm_computer.yy",},
-    {"name":"inst_24FA45C2","path":"rooms/rm_computer/rm_computer.yy",},
-    {"name":"inst_320BEBF7","path":"rooms/rm_computer/rm_computer.yy",},
-    {"name":"inst_4EE450E3","path":"rooms/rm_computer/rm_computer.yy",},
+    {"name":"inst_3DE38D42","path":"rooms/rm_computer_desktop/rm_computer_desktop.yy",},
+    {"name":"inst_7B973BE0","path":"rooms/rm_computer_desktop/rm_computer_desktop.yy",},
+    {"name":"inst_24FA45C2","path":"rooms/rm_computer_desktop/rm_computer_desktop.yy",},
+    {"name":"inst_320BEBF7","path":"rooms/rm_computer_desktop/rm_computer_desktop.yy",},
+    {"name":"inst_4EE450E3","path":"rooms/rm_computer_desktop/rm_computer_desktop.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -23,27 +21,21 @@
             {"name":"g_VignetteSharpness","type":0,"value":"3.3",},
             {"name":"g_VignetteTexture","type":2,"value":"_filter_vignette_texture",},
           ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
-        {"$GMRInstanceLayer":"","%Name":"computer_screen","depth":98,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-            {"$GMRInstance":"v1","%Name":"inst_52DD3979","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52DD3979","objectId":{"name":"obj_computer_screen","path":"objects/obj_computer_screen/obj_computer_screen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":12.161022,"scaleY":10.283361,"x":0.0,"y":0.0,},
-          ],"layers":[],"name":"computer_screen","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
       ],"name":"frame_visuals","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"cursor","depth":198,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_666DB3C9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_666DB3C9","objectId":{"name":"obj_computer_cursor","path":"objects/obj_computer_cursor/obj_computer_cursor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":13.708334,"scaleY":9.916667,"x":490.63712,"y":19.833334,},
-      ],"layers":[],"name":"cursor","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"ben","depth":298,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRInstanceLayer":"","%Name":"ben","depth":98,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_7B973BE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B973BE0","objectId":{"name":"obj_computer_icon_ben","path":"objects/obj_computer_icon_ben/obj_computer_icon_ben.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5416666,"scaleY":0.5416666,"x":1757.5,"y":917.5,},
       ],"layers":[],"name":"ben","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"windows","depth":398,"effectEnabled":true,"effectType":null,"gridX":40,"gridY":40,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRInstanceLayer":"","%Name":"windows","depth":198,"effectEnabled":true,"effectType":null,"gridX":40,"gridY":40,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_3DE38D42","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3DE38D42","objectId":{"name":"obj_computer_manager","path":"objects/obj_computer_manager/obj_computer_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":12.506401,"scaleY":10.327471,"x":194.57635,"y":-0.7057495,},
       ],"layers":[],"name":"windows","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"desktop_apps","depth":498,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRInstanceLayer":"","%Name":"desktop_apps","depth":298,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_24FA45C2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_24FA45C2","objectId":{"name":"obj_desktop_log_off","path":"objects/obj_desktop_log_off/obj_desktop_log_off.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5933333,"scaleY":0.5933333,"x":0.0,"y":902.0,},
         {"$GMRInstance":"v1","%Name":"inst_320BEBF7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_320BEBF7","objectId":{"name":"obj_desktop_file_explorer","path":"objects/obj_desktop_file_explorer/obj_desktop_file_explorer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.34765625,"scaleY":0.34765625,"x":192.0,"y":192.0,},
         {"$GMRInstance":"v1","%Name":"inst_4EE450E3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4EE450E3","objectId":{"name":"obj_desktop_address_search_engine","path":"objects/obj_desktop_address_search_engine/obj_desktop_address_search_engine.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.29666665,"scaleY":0.29666677,"x":448.0,"y":192.0,},
       ],"layers":[],"name":"desktop_apps","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4284900966,"depth":598,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4284900966,"depth":398,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"rm_computer",
+  "name":"rm_computer_desktop",
   "parent":{
     "name":"COMPUTER ROOM",
     "path":"folders/ROOMS/COMPUTER ROOM.yy",

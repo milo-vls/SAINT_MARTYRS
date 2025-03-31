@@ -7,6 +7,7 @@ TITLE SCREEN NEW START,Nouvelle partie,Start new game
 TITLE SCREEN START,Continuer,Continue
 TITLE SCREEN QUIT,Quitter,Quit
 TITLE SCREEN PARAMETERS,Paramètres,Parameters
+TITLE SCREEN TEST COMPUTER,Tester l'ordinateur,Test computer
 ,,
 PARAMETERS LANGUAGE,Changer la langue pour l’anglais,Change langage to french
 ,,
@@ -54,6 +55,8 @@ UNIT DEPLOYED,DÉPLOYÉ,DEPLOYED
 ,,
 ,,
 COMPUTER,ORINATEUR,COMPUTER
+USER,Utilisateur,User
+PASSWORD,Mot de passe,Password
 SYSTEM MESSAGE,Message système,System message
 LOG OFF CONFIRMATION,Voulez-vous vous déconnecter ?,Would you like to log off ?
 CMD WELCOME,Bonjour! Initialisation de votre ordinateur en cours...,Welcome. Your computer is initializing...

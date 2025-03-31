@@ -1,21 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_computer_screen",
+  "%Name":"obj_computer_log_in",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":77,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_computer_screen",
+  "name":"obj_computer_log_in",
   "overriddenProperties":[],
   "parent":{
-    "name":"COMPUTER",
-    "path":"folders/OBJETCS/DESK/COMPUTER.yy",
+    "name":"DESKTOP ICONS",
+    "path":"folders/OBJETCS/DESK/COMPUTER/DESKTOP ICONS.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"obj_parent_cursor_can_focus",
+    "path":"objects/obj_parent_cursor_can_focus/obj_parent_cursor_can_focus.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -32,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_computer_icon_green_arrow",
+    "path":"sprites/spr_computer_icon_green_arrow/spr_computer_icon_green_arrow.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

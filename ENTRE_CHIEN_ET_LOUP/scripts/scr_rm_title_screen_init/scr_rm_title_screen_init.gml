@@ -16,6 +16,7 @@ function rm_title_screen_init()
 	}
 	_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN PARAMETERS", function(_id_menu){show_parameters(MENU_CHANNELS.TITLE_SCREEN, MENU_PRIORITIES.TITLE_SCREEN + 1)}); 
 	_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN QUIT", game_end); 
+	_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN TEST COMPUTER", go_to_computer); 
 	
 	add_menu( new TextOptionsMenu(			_title_screen_options,
 																													CENTERED_GUIDE_LINE,

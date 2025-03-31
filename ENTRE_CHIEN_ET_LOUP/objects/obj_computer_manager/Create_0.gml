@@ -1,5 +1,4 @@
-if global.switches.computer_unlocked == true
-	return;
+
 io_clear();
 user_input = "";
 wait_for_text_input = true;

@@ -13,6 +13,7 @@ enum COMPUTER_CURSOR_STATES
 }
 state = COMPUTER_CURSOR_STATES.DEFAULT;
 
+instance_id_focus = noone;
 
 image_xscale = 1.5;
 image_yscale = image_xscale;

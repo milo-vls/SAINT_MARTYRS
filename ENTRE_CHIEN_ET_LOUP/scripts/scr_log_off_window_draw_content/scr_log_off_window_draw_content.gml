@@ -1,6 +1,9 @@
-function logging_off_confirmation()
+function logging_off_computer()
 {
-	change_room(rm_main_desk);
+	instance_destroy(obj_computer_screen);
+	change_room(rm_main_desk, sqc_transition_cover_instant, sqc_transition_discover_instant);
+	application_surface_draw_enable(true);
+	window_set_cursor(cr_default);
 }
 function logging_off_cancel(_window)
 {
@@ -25,7 +28,7 @@ function log_off_window_draw_content(_computer_manager_instance, _window)
 	var _button_confirm_x = COMPUTER_WINDOW_SYSTEM_BORDER;
 	var _button_cancel_x = _window.surface_width - COMPUTER_WINDOW_SYSTEM_BORDER - _button_width;
 	draw_set_color(c_green);
-	draw_button_in_surface(_button_confirm_x, _button_y, _button_width, _button_height, surface_x, surface_y, logging_off_confirmation, _window);
+	draw_button_in_surface(_button_confirm_x, _button_y, _button_width, _button_height, surface_x, surface_y, logging_off_computer, _window);
 	draw_set_color(c_red);
 	draw_button_in_surface(_button_cancel_x, _button_y, _button_width, _button_height, surface_x, surface_y, logging_off_cancel, _window);
 }

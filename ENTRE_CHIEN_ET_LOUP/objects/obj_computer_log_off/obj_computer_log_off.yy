@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_desktop_log_off",
-  "eventList":[],
-  "managed":true,
-  "name":"obj_desktop_log_off",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_desktop_icon","path":"objects/obj_desktop_icon/obj_desktop_icon.yy",},"propertyId":{"name":"on_click","path":"objects/obj_desktop_icon/obj_desktop_icon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"logging_off_computer",},
+  "%Name":"obj_computer_log_off",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
+  "managed":true,
+  "name":"obj_computer_log_off",
+  "overriddenProperties":[],
   "parent":{
     "name":"DESKTOP ICONS",
     "path":"folders/OBJETCS/DESK/COMPUTER/DESKTOP ICONS.yy",
   },
   "parentObjectId":{
-    "name":"obj_desktop_icon",
-    "path":"objects/obj_desktop_icon/obj_desktop_icon.yy",
+    "name":"obj_parent_cursor_can_focus",
+    "path":"objects/obj_parent_cursor_can_focus/obj_parent_cursor_can_focus.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

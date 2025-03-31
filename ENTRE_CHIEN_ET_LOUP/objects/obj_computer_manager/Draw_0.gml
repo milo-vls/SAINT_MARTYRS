@@ -1,10 +1,12 @@
-if !global.switches.computer_unlocked
+/*
+/*if !global.switches.computer_unlocked
 {
 	/*
 	var _last_char = filtered_last_char();
 	if _last_char  != -1 and array_length(user_input) < 21
 		user_input += string_concat(user_input, _last_char)
 	*/
+	/*
 	user_input = text_input(user_input, 25);
 
 	
@@ -45,5 +47,6 @@ if !global.switches.computer_unlocked
 	
 	
 }
+*/
 
 array_foreach(windows, draw_window);

@@ -1,5 +1,5 @@
 if keyboard_check(vk_escape)
-	logging_off_confirmation();
+	logging_off_computer();
 
 if global.switches.computer_unlocked == false
 	return;

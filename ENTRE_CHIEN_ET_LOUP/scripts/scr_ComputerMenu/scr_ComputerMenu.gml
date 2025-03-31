@@ -1,4 +1,4 @@
-function ComputerMenu() : Menu(MENU_PRIORITIES.COMPUTER_MENU, room, false, true) constructor 
+function ComputerMenu() : Menu(MENU_PRIORITIES.COMPUTER_MENU, room, true, true) constructor 
 {
 	
 	surface = computer_screen_surface_create();
