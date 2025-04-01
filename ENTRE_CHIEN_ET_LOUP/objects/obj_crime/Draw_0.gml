@@ -19,7 +19,7 @@ if disappearing
 
 if false == in_sequence
 {
-	image_xscale = 0.75;
+	image_xscale = approach(image_xscale, target_scale, 0.06);
 	image_yscale = image_xscale;
 }
 

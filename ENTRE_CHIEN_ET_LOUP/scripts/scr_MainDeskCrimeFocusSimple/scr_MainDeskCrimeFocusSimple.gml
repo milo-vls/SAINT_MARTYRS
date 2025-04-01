@@ -69,12 +69,17 @@ function MainDeskCrimeFocusSimple(_crime_id) : Menu(MENU_PRIORITIES.MAIN_DESK_CR
 
 function crime_focus_simple_activity()
 {
+	obj_crime.target_scale = obj_crime.base_image_scale;
+	crime_instance.target_scale = crime_instance.max_image_scale;
 	
 	
 	obj_units_ben.y = UNITS_BEN_HIDDEN_Y;
 	var _mouse_is_over_crime = instance_position(mouse_x, mouse_y, obj_crime);
 	if _mouse_is_over_crime != noone
+	{
+		_mouse_is_over_crime.target_scale = _mouse_is_over_crime.max_image_scale;
 		void_is_pressed = false;
+	}
 	if left_click_released()
 	{
 		if pressed_crime > -1 

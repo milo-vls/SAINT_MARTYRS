@@ -1,3 +1,6 @@
+max_image_scale = 1.1;
+base_image_scale = .75;
+target_scale = .75;
 image_xscale = .75;
 image_yscale = .75;
 
