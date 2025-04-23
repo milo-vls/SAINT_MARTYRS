@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"ENTRE_CHIEN_ET_LOUP",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -170,6 +170,7 @@
     {"$GMFolder":"","%Name":"PARTICLES","folderPath":"folders/SPRITES/PARTICLES.yy","name":"PARTICLES","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PHONE","folderPath":"folders/SPRITES/PHONE.yy","name":"PHONE","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"chatterbox_license.txt","CopyToMask":-1,"filePath":"datafiles","name":"chatterbox_license.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"addresses.csv","CopyToMask":-1,"filePath":"datafiles/CSVs","name":"addresses.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -204,7 +205,7 @@
     {"name":"em_circle_centered_out","path":"particlelib/em_circle_centered_out/em_circle_centered_out.yy",},
   ],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"ENTRE_CHIEN_ET_LOUP",
   "resources":[

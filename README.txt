@@ -1,4 +1,5 @@
-IDE used : GameMaker v2024.11.0.227
+IDE V2024.13.1.193
+RUNTIME V2024.13.1.242
 
 
 dessins personnages : Anna D. et R.G
