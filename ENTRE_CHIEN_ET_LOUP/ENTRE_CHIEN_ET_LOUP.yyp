@@ -464,6 +464,7 @@
     {"id":{"name":"scr_change_day_number","path":"scripts/scr_change_day_number/scr_change_day_number.yy",},},
     {"id":{"name":"scr_change_room","path":"scripts/scr_change_room/scr_change_room.yy",},},
     {"id":{"name":"scr_char_id_by_phone_number","path":"scripts/scr_char_id_by_phone_number/scr_char_id_by_phone_number.yy",},},
+    {"id":{"name":"scr_character_presence","path":"scripts/scr_character_presence/scr_character_presence.yy",},},
     {"id":{"name":"scr_Character","path":"scripts/scr_Character/scr_Character.yy",},},
     {"id":{"name":"scr_check_pswd","path":"scripts/scr_check_pswd/scr_check_pswd.yy",},},
     {"id":{"name":"scr_chose_awaking_day","path":"scripts/scr_chose_awaking_day/scr_chose_awaking_day.yy",},},
