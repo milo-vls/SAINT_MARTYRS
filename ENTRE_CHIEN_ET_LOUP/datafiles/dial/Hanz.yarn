@@ -1,0 +1,151 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: -200,-520
+__PrivCrochet_tags: 
+title: Day1
+---
+<<hop Init>>
+
+
+
+<<if visited("Day1HanzIntroducesHimself") is false >>
+
+
+
+<<jump Day1Inter1>>
+
+
+<<endif>>
+
+<<if visited("Day1Inter2") is false>>
+
+<<jump Day1Inter2>>
+
+
+<<endif>>
+
+
+<<if visited("dial/Enzino.yarn:BlaiseAsksEnzinoFirstCrime") is true and visited("HanzLinkWithFirstCrime") is false>>
+
+<<jump HanzLinkWithFirstCrime>>
+
+<<else>>
+
+
+<<observation("J'ai rien à lui dire pour le moment")>>
+
+<<endif>>
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -440,-520
+__PrivCrochet_tags: 
+title: Day1Inter1
+---
+Blaise:Bonsoir.
+Hanz:Bonsoir.
+Blaise:Vous accepteriez de répondre à quelques questions ?
+Hanz:Vous vous appelez comment ?
+
+<<if visited("dial/Exe.yarn:BlaiseFindHisName") is false>>
+
+Blaise:Je sais pas. Et toi ?
+Hanz:Il me faudrait votre nom d'abord.
+
+
+<<else>>
+
+<<jump Day1HanzIntroducesHimself>>
+
+<<endif>>
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -200,-280
+__PrivCrochet_tags: 
+title: Day1Inter2
+---
+<<if visited("dial/Enzino.yarn:BlaiseAsksEnzinoFirstCrime") is true and visited("HanzLinkWithFirstCrime") is false>>
+
+<<jump HanzLinkWithFirstCrime>>
+
+<<stop>>
+<<endif>>
+
+
+
+Blaise:Re. Tu en sais plus ?
+Hanz:Non du tout désolé.
+===
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: -440,-280
+__PrivCrochet_tags: 
+title: Day1HanzIntroducesHimself
+---
+Blaise:Je m'appelle Blaise moi.
+Hanz:Mon nom est Hanz. Enchanté.
+Hanz:Tu avais une question Blaise ?
+Blaise:Oui. Je cherche des pistes pour l'affaire de meurtre survenue en ville.
+Hanz:Je ne sais rien, j'ai passé les derniers temps à bosser.
+->Moi c'est le contraire
+    Blaise:Je vis le contraire. J'avais beaucoup de travail et j'ai rien fait.
+    Hanz:Y'a pas mort d'homme. Y'a jamais mort d'homme.
+    Blaise:On me menace de me virer, ça c'est chiant.
+    Hanz:Si tu es viré je ne t'en voudrai pas.
+    Blaise:Merci mec.
+    Hanz:Si tu me promets de jouer à mon jeu de carte à collectionner.
+    Blaise:Si j'ai plus que ça à faire...
+->Quelle horreur.
+    Blaise:Quelle horreur, je t'apporte tout mon soutient.
+    Hanz:J'ai besoin de ce pognon...
+    ->Une dette ?
+        Blaise:Tu as une dette ?
+        Hanz:Non je collectionne des cartes à collectionner.
+        Hanz:Je revends les plus chères et je fructifie mon business.
+        Blaise:On dirait que ça prend pas ton affaire.
+        Hanz:La maison gagne toujours...
+    ->Tu économises ?
+        Blaise:Tu économises ?
+        Blaise:Le permis vu ton âge...
+        Hanz:Non je collectionne des cartes à collectionner.
+        Hanz:Je revends les plus chères et je fructifie mon business.
+        Blaise:On dirait que ça prend pas ton affaire.
+        Hanz:La maison gagne toujours...
+===
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: 40,-520
+__PrivCrochet_tags: 
+title: HanzLinkWithFirstCrime
+---
+Blaise:Yo. Enzino m'a dit que tu travailles avec le meurtrier et que c'est grâce à toi qu'on a le nom de la prochaine victime.
+Blaise:Comment tu savais ça ?
+
+Hanz:Comment ? J'en sais pas plus que toi vieux. De quoi tu parles ?
+
+->Tu as parlé avec Enzino récemment ?
+    Blaise: Tu as parlé avec Enzino récemment ? 
+    Hanz:Oui, mais pas de l'affaire je te jure.
+    Blaise:Tu lui as donné des infos ?
+    Hanz:Il voulait l'ardoise du bar où je fais mon service...Tu veux dire que ça a un lien avec le meurtre ?
+    Blaise:On dirait que Enzino a fait le lien entre la victime et l'ardoise.
+    Hanz:Ce Pierre tué la veille avait la plus grosse note de l'ardoise...
+    Blaise:Une Émilie ça te dit un truc ?
+    Hanz:C'est la deuxième plus importante note, après Pierre...
+    Blaise:Tu te doutais pas de ce que pouvais bien faire Enzino de ces informations ?
+    Hanz:Du tout. Je peux m'attendre à ce qu'il résolve un cas de je ne sais où...
+    Hanz:Mais comment tu sais que c'est le patron le coupable ?
+    Blaise:Je sais pas en vérité. Il est peut-être un peu trop près de ses sous.
+    Blaise:On verra bien. Si c'est Émilie qu'il veut, on le choppera sur le fait.
+    Hanz:Il est sympa ça m'embêterait qu'il aille en prison.
+    Blaise:Quoi qu'il en soit, et même si t'as rien suivi, je te remercie pour ta contribution.
+    Hanz:De rien.
+    Blaise:Je ne vais pas me faire virer. Tu as ma reconnaissance. J'adore mon boulot tu sais.
+    Hanz:Y a pas de quoi mec.
+    Blaise:Que tu es humble. Bon je dois te laisser. Je dois déployer mes hommes à l'adresse de cette Émilie.
+    Hanz:Ciao.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -800,-520
+__PrivCrochet_tags: 
+title: Init
+---
+<<hopback>>
+===

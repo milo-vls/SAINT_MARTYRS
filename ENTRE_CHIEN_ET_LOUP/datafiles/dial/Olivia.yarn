@@ -34,7 +34,7 @@ Olivia:Par contre.
 <<jump Day1Inter2>>
 <<endif>>
 
-<<observation("On dirait qu'elle n'a plus rien à me dire")>>
+<<observation("On dirait qu'elle n'a plus rien à me dire.")>>
 ===
 __PrivCrochet_colorID: 8
 __PrivCrochet_position: -480,-680
