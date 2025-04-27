@@ -4,6 +4,7 @@ __PrivCrochet_position: -1000,-520
 __PrivCrochet_tags: 
 title: Init
 ---
+<<background(3)>>
 <<hopback>>
 ===
 __PrivCrochet_colorID: 1
@@ -99,11 +100,4 @@ Blaise:Mais sinon il raconte quoi ?
 Olivia:J'en sais rien. Demandez lui.
 Blaise:Ah bon okay.
 Blaise:Bonne soirée.
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -1240,-320
-__PrivCrochet_tags: 
-title: Node
----
-Empty Text
 ===
