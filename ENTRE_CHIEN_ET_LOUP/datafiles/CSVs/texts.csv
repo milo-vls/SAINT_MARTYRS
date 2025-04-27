@@ -8,6 +8,7 @@ TITLE SCREEN START,Continuer,Continue
 TITLE SCREEN QUIT,Quitter,Quit
 TITLE SCREEN PARAMETERS,Paramètres,Parameters
 TITLE SCREEN TEST COMPUTER,Tester l'ordinateur,Test computer
+TITLE SCREEN TEST DIALOGUES,Tester les dialogues,Test dialogues
 ,,
 PARAMETERS LANGUAGE,Changer la langue pour l’anglais,Change langage to french
 ,,

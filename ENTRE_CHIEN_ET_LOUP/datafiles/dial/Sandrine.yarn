@@ -1,0 +1,21 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: -200,-520
+__PrivCrochet_tags: 
+title: Day1
+---
+<<hop Init>>
+
+
+Blaise:Bonjour Sandrine jour 1.
+
+Sandrine:Bonjour Blaise jour 1 :3
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -440,-520
+__PrivCrochet_tags: 
+title: Init
+---
+<<hopback>>
+<<background(3)>>
+===
