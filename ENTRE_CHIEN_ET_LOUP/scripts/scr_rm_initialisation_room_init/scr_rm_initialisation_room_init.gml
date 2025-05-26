@@ -19,6 +19,8 @@ function rm_initialisation_room_init()
 	global.map_steps = array_create(0);
 	global.downloaded_files_index = array_create(0);
 	global.nb_downloaded_files = 0;
+	global.current_computer_app_title = "";
+	global.computer_app_used_today = array_create(0);
 	
 	try_download_file(0);
 	try_download_file(1);

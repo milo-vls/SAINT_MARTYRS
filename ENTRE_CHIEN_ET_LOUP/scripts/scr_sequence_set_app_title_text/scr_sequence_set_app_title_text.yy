@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_sequence_set_app_title_text",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_sequence_set_app_title_text",
+  "parent":{
+    "name":"SCRIPTS",
+    "path":"folders/SEQUENCES/SCRIPTS.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
