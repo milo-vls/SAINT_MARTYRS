@@ -9,10 +9,10 @@ if left_click_pressed()
 	
 	if _number_can_be_focus_instances == 0
 	{
-		instance_id_focus = noone;
+		change_instance_id_focus(noone);
 	}else if _number_can_be_focus_instances == 1
 	{
-		instance_id_focus = _list_can_focus_instances[| 0];
+		change_instance_id_focus(_list_can_focus_instances[| 0]);
 	}
 	else
 	{
@@ -21,7 +21,7 @@ if left_click_pressed()
 			if _list_can_focus_instances[| _i].depth <_less_deep_instance.depth
 				_less_deep_instance = _list_can_focus_instances[| _i];
 		
-		instance_id_focus = _less_deep_instance;
+		change_instance_id_focus(_less_deep_instance);
 	}
 	
 	

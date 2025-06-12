@@ -86,6 +86,24 @@ ASE WHERE 3,Prénom inconnu.,First name unknown.
 ,,
 ,,
 ,,
+WEB PAGES,Pages web, web pages
+ENTER ADDRESS,Adresse web,Web Address
+PAGE NOT FOUND,[/][c_black][fnt_retron_for_comp_sys]Page introuvable. Essayez une autre adresse.,Cannot find page. Try another address.
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
 PHONE,TÉLÉPHONE,PHONE
 REPERTORY,répertoire,phonebook
 EXE NUMBER,♥ 07-08-33,♥ 07-08-33

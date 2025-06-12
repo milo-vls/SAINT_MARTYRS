@@ -18,7 +18,7 @@ function rm_title_screen_init()
 	_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN QUIT", game_end); 
 	if debug_mode
 	{
-		_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN TEST COMPUTER", go_to_computer); 
+		_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN TEST COMPUTER", function(){go_to_computer() /*draw_web_page(web_page_get_test(), 0, 0, room_width)*/}); 
 		_title_screen_options[array_length(_title_screen_options)] = new TextMenuOption("TITLE SCREEN TEST DIALOGUES", function(){change_day_number(1); change_room(rm_dev, sqc_transition_cover_slide_up_down, sqc_transition_discover_slide_up_down, start_exploration_menu);});
 		
 	}

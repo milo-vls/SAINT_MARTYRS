@@ -20,7 +20,7 @@
             {"name":"g_VignetteEdges","type":0,"value":"1.5",},
             {"name":"g_VignetteSharpness","type":0,"value":"3.3",},
             {"name":"g_VignetteTexture","type":2,"value":"_filter_vignette_texture",},
-          ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":false,},
+          ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
       ],"name":"frame_visuals","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ben","depth":98,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_7B973BE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B973BE0","objectId":{"name":"obj_computer_icon_ben","path":"objects/obj_computer_icon_ben/obj_computer_icon_ben.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5416666,"scaleY":0.40499997,"x":1742.5,"y":936.5,},

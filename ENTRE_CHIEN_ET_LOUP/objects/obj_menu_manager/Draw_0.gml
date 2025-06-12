@@ -62,7 +62,7 @@ for (var _i = 0; _i < _menus_length; _i ++)
 
 
 
-
+/*
 if debug_mode
 {
 	draw_text(50, 50, "nb menus:" + string(array_length(menus)))

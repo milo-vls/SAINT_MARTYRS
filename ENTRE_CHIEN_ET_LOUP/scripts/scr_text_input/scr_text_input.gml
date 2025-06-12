@@ -45,9 +45,9 @@ function text_input(_text, _char_limit = 50)
         if (_char_limit == -1) or (_current_length < _char_limit)
         {
             var _remaining_chars = _char_limit - _current_length;
-            var _chars_to_add = string_copy(keyboard_string, 0, _remaining_chars);
+            var _chars_to_add = keyboard_lastchar //array_last(keyboard_string);
             _returned_text += _chars_to_add;
-            keyboard_string = "";
+            keyboard_lastchar = "";
             
             // Forcer la limite au cas où (par sécurité)
             if (_char_limit != -1)
