@@ -1,6 +1,6 @@
 function start_cutscene_test()
 {
-	obj_sequence_manager.set_sequence(get_cutscene_test());	
+	start_sequence(get_cutscene_test());	
 }
 function get_cutscene_test()
 {

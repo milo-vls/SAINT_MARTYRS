@@ -1,6 +1,6 @@
 function start_first_call_cutscene()
 {
-	obj_sequence_manager.set_sequence(cutscene_first_call());
+	start_sequence(cutscene_first_call());
 }
 
 

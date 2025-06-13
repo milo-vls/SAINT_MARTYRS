@@ -46,7 +46,7 @@ function sleep_to(_day_number = global.day_number + 1)
 	if !is_undefined(_sequence_of_the_day)
 	{
 		_room_to_get_up = _sequence_of_the_day.starting_room;
-		obj_sequence_manager.set_sequence(_sequence_of_the_day);
+		start_sequence(_sequence_of_the_day);
 	}
 	
 	

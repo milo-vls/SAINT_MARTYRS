@@ -472,6 +472,7 @@
     {"name":"scr_start_dialogue","order":3,"path":"scripts/scr_start_dialogue/scr_start_dialogue.yy",},
     {"name":"scr_start_exploration_menu","order":6,"path":"scripts/scr_start_exploration_menu/scr_start_exploration_menu.yy",},
     {"name":"scr_start_observation","order":7,"path":"scripts/scr_start_observation/scr_start_observation.yy",},
+    {"name":"scr_start_sequence","order":4,"path":"scripts/scr_start_sequence/scr_start_sequence.yy",},
     {"name":"scr_step_add_menu_crimes_appearance","order":1,"path":"scripts/scr_step_add_menu_crimes_appearance/scr_step_add_menu_crimes_appearance.yy",},
     {"name":"scr_step_add_menu_end_of_current_cases","order":2,"path":"scripts/scr_step_add_menu_end_of_current_cases/scr_step_add_menu_end_of_current_cases.yy",},
     {"name":"scr_Step","order":1,"path":"scripts/scr_Step/scr_Step.yy",},
